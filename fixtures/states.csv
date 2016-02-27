@@ -1,0 +1,14 @@
+state_code,name,election_day,type,open_closed
+NV,Nevada,2/20/2016,Caucus,Closed
+SC,South Carolina,2/27/2016,Primary,Open
+AL,Alabama,3/1/2016,Primary,Open
+AR,Arkansas,3/1/2016,Primary,Open
+CO,Colorado,3/1/2016,Caucus,Closed
+GA,Georgia,3/1/2016,Primary,Open
+MA,Massachusetts,3/1/2016,Primary,Mixed
+MN,Minnesota,3/1/2016,Caucus,Open
+OK,Oklahoma,3/1/2016,Primary,Open
+TN,Tennasee,3/1/2016,Primary,Open
+TX,Texas,3/1/2016,Primary,Open
+VT,Vermont,3/1/2016,Primary,Open
+VA,Virginia,3/1/2016,Primary,Open

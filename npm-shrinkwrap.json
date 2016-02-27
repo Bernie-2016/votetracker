@@ -812,6 +812,11 @@
       "from": "d@>=0.1.1 <0.2.0",
       "resolved": "https://registry.npmjs.org/d/-/d-0.1.1.tgz"
     },
+    "d3-dsv": {
+      "version": "0.3.0",
+      "from": "d3-dsv@latest",
+      "resolved": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.3.0.tgz"
+    },
     "dashdash": {
       "version": "1.13.0",
       "from": "dashdash@>=1.10.1 <2.0.0",
@@ -905,6 +910,18 @@
       "version": "2.0.0",
       "from": "dotenv@latest",
       "resolved": "https://registry.npmjs.org/dotenv/-/dotenv-2.0.0.tgz"
+    },
+    "dsv-loader": {
+      "version": "1.0.3",
+      "from": "dsv-loader@latest",
+      "resolved": "https://registry.npmjs.org/dsv-loader/-/dsv-loader-1.0.3.tgz",
+      "dependencies": {
+        "d3-dsv": {
+          "version": "0.1.14",
+          "from": "d3-dsv@>=0.1.12 <0.2.0",
+          "resolved": "https://registry.npmjs.org/d3-dsv/-/d3-dsv-0.1.14.tgz"
+        }
+      }
     },
     "ecc-jsbn": {
       "version": "0.1.1",
@@ -3275,6 +3292,11 @@
       "version": "0.1.0",
       "from": "run-async@>=0.1.0 <0.2.0",
       "resolved": "https://registry.npmjs.org/run-async/-/run-async-0.1.0.tgz"
+    },
+    "rw": {
+      "version": "1.1.1",
+      "from": "rw@>=1.1.1 <1.2.0",
+      "resolved": "https://registry.npmjs.org/rw/-/rw-1.1.1.tgz"
     },
     "rx-lite": {
       "version": "3.1.2",

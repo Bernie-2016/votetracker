@@ -4,8 +4,9 @@ import bodyParser from 'body-parser';
 import routeBuilder from 'express-routebuilder';
 
 import * as statRoutes from '../endpoints/stat/routes';
+import * as statesRoutes from '../endpoints/states/routes';
 
-const endpoints = [statRoutes];
+const endpoints = [statRoutes, statesRoutes];
 const server = express();
 
 server.use(bodyParser.urlencoded({ extended: true }));
