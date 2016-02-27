@@ -25,6 +25,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # conflict with that of another project.
   config.vm.network :private_network, ip: '10.10.10.100'
 
+  # Forward local port 5432 to the VM
+  config.vm.network "forwarded_port", guest: 5432, host: 5432
+
   # Automatically add an entry to /etc/hosts for this Vagrant box (requires
   # sudo). This should match the Ansible host_vars/vagrant site_fqdn value.
   config.hostsupdater.aliases = ['votetracker.loc']
