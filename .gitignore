@@ -1,0 +1,6 @@
+node_modules
+npm-debug.log
+public
+
+# Used by the deployment workflow
+.vagrant

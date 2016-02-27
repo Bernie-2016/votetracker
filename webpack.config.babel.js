@@ -1,0 +1,64 @@
+import path from 'path';
+import webpack from 'webpack';
+import nib from 'nib';
+
+const isProduction = process.env.NODE_ENV === 'production';
+const isDevelopment = !isProduction;
+const getPath = (...args) => path.join(__dirname, ...args);
+// Remove any falsy values from the input args or array. Return an array.
+const getArray = (...args) => [].concat(...args).filter(Boolean);
+
+export default {
+  context: getPath('./'),
+  entry: './src/app',
+  output: {
+    path: getPath('public'),
+    filename: 'app.js',
+    pathinfo: isDevelopment,
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx', '.styl'],
+  },
+  devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
+  devServer: {
+    historyApiFallback: {
+      index: 'index.html',
+    },
+  },
+  plugins: getArray([
+    new webpack.optimize.OccurenceOrderPlugin(),
+    isProduction && new webpack.optimize.DedupePlugin(),
+    isProduction && new webpack.optimize.UglifyJsPlugin({ minimize: true, sourceMap: true }),
+    isDevelopment && new webpack.NoErrorsPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+      },
+    }),
+  ]),
+  stylus: {
+    use: [nib()],
+    import: ['~nib/lib/nib/index.styl'],
+  },
+  module: {
+    preLoaders: [
+      {
+        test: /\.jsx?$/,
+        loaders: getArray(isDevelopment && 'eslint-loader'),
+        include: getPath('src'),
+      },
+    ],
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        loaders: getArray(isDevelopment && 'react-hot', 'babel-loader'),
+        include: getPath('src'),
+      },
+      {
+        test: /\.styl$/,
+        loaders: ['style-loader', 'css-loader', 'stylus-loader'],
+        include: getPath('src'),
+      },
+    ],
+  },
+};
