@@ -1,3 +1,3 @@
 import fs from 'fs-extra';
 
-fs.copy('src/index.html', 'public/index.html');
+fs.copy('src/client/index.html', 'public/index.html');

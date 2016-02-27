@@ -6,7 +6,7 @@
     "build": "webpack",
     "build:assets": "babel-node tools/build-assets",
     "clean": "rimraf public",
-    "start": "webpack-dev-server --hot --inline --progress --colors --content-base src",
+    "start": "webpack-dev-server --hot --inline --progress --colors --content-base src/client",
     "lint": "eslint --ext .js,.jsx .",
     "prebuild": "npm run clean && npm run build:assets",
     "prestart": "npm run clean",
