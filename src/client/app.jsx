@@ -12,7 +12,9 @@ const routes = (
   <Router history={ browserHistory }>
     <Route path="/" component={ Layout }>
       <IndexRoute component={ Home } />
-      <Route {...ReportRoute} />
+      <IndexRoute { ...ReportRoute } />
+        <Route path="county" component={ County } />
+        <Route path="location" component={ Location } />
       <Route path="*" component={ PageNotFound } />
     </Route>
   </Router>
