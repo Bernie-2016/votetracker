@@ -18,7 +18,7 @@ const data = require(filepath);
 const pkg = require(getRootPath('package'));
 const optionals = Object.keys(pkg.optionalDependencies || []);
 optionals.forEach(name => {
-  console.log(`Ensuring optional dependency "${name}" is removed`);
+  console.log(`Ensuring optional dependency "${name}" is removed`); // eslint-disable-line
   delete data.dependencies[name];
 });
 

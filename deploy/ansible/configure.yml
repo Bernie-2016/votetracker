@@ -11,6 +11,7 @@
     - {role: postgresql, tags: postgresql}
     - {role: users, tags: users}
     - {role: nginx, tags: nginx}
+    - {role: services, tags: services}
   handlers:
     - name: restart nginx
       service: name=nginx state=restarted

@@ -12,3 +12,6 @@
     line: listen_addresses = '*'
     state: present
   notify: restart postgresql
+
+- name: ensure database exists
+  postgresql_db: name={{project_name}}

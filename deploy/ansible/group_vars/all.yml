@@ -42,6 +42,7 @@ apt_packages:
   - git
   - nodejs
   - postgresql-9.5
+  - python-psycopg2
 
 timezone: America/New_York
 
