@@ -9,3 +9,11 @@ const parsedStates = states.map(({ state_code, name, election_day, type, open_cl
 });
 
 export default parsedStates;
+
+export function validState(stateCode) {
+  return parsedStates.some(state => state.state_code === stateCode);
+}
+
+export function findState(stateCode) {
+  return parsedStates.find(state => state.state_code === stateCode);
+}
