@@ -1,0 +1,22 @@
+# In production, ensure all users have been added, along with any public keys.
+# If any user's state is "absent", they will be removed. If any keys are
+# removed, they will be deleted.
+
+- name: sync all users
+  user:
+    name: "{{item.name}}"
+    state: "{{item.state}}"
+    groups: "{{item.groups}}"
+    password: "{{item.shadow_pass}}"
+    shell: "{{item.shell | default('/bin/bash') }}"
+    force: yes
+  with_items: users
+
+- name: sync all users keys
+  authorized_key:
+    user: "{{item.0.name}}"
+    key: "{{item.1.key}}"
+    state: "{{item.1.state}}"
+  with_subelements:
+    - users
+    - keys

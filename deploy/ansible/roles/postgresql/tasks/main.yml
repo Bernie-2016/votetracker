@@ -1,0 +1,14 @@
+- name: postgresql version is known
+  shell: ls -r /etc/postgresql | head -1
+  register: postgresql_version
+
+- name: postgresql is configured
+  template: "src=pg_hba.conf dest=/etc/postgresql/{{postgresql_version.stdout}}/main/pg_hba.conf mode=0644"
+  notify: restart postgresql
+
+- name: postgresql is accepting tcp/ip connections
+  lineinfile:
+    dest: /etc/postgresql/{{postgresql_version.stdout}}/main/postgresql.conf
+    line: listen_addresses = '*'
+    state: present
+  notify: restart postgresql

@@ -1,0 +1,20 @@
+# this is a little boil-the-ocean but it allows entries in firewall_whitelist
+# to be added and removed without having to deal with idempotency issues
+- name: ensure firewall is reset
+  ufw: state=reset
+
+- name: ensure firewall is enabled and denies all by default
+  ufw: state=enabled policy=deny direction=incoming
+  notify: reload ufw
+
+- name: ensure firewall allows ssh
+  ufw: rule=allow to_port=22 proto=tcp
+  notify: reload ufw
+
+- name: ensure firewall allows http
+  ufw: rule=allow to_port=80 proto=tcp
+  notify: reload ufw
+
+- name: ensure firewall allows postgres access for whitelist
+  ufw: rule=allow src={{ item }} port=5432
+  with_items: firewall_whitelist

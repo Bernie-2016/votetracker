@@ -1,0 +1,176 @@
+#########
+# PROJECT
+#########
+
+# Certain tasks may operate in a less secure (but more convenient) manner, eg.
+# enabling passwordless sudo or generating self-signed ssl certs, when testing
+# locally, in Vagrant. But not in production!
+env: production
+
+# This var is referenced by a few other vars, eg. git_repo, hostname, site_fqdn.
+project_name: votetracker
+
+# This is what you'll see at the bash prompt if/when you ssh into your server.
+hostname: "{{project_name}}"
+
+# This is the fully qualified domain name of your production server. Because
+# nginx checks this value against the URL being requested, it must be the same
+# as the server's DNS name. This value is overridden for Vagrant and staging
+# servers.
+site_fqdn: "{{project_name}}.gnarf.net"
+
+##############
+# PROVISIONING
+##############
+
+# Keys to be added to apt.
+apt_keys:
+  - https://deb.nodesource.com/gpgkey/nodesource.gpg.key
+  - https://www.postgresql.org/media/keys/ACCC4CF8.asc
+
+# Ppas to be added to apt.
+apt_ppas:
+  - "deb https://deb.nodesource.com/node_5.x trusty main"
+  - "deb https://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main"
+  - ppa:git-core/ppa
+
+# Any apt packages to install. Apt package versions may be specified like
+# - git=2.1.0
+apt_packages:
+  - unattended-upgrades
+  - nginx
+  - git
+  - nodejs
+  - postgresql-9.5
+
+timezone: America/New_York
+
+############
+# WEB SERVER
+############
+
+# The directory that nginx will serve as the production site. This is typically
+# where your index.html file exists (or will exist after the build process).
+public_path: "{{site_path}}/public"
+
+# Nginx dir and conf dir.
+nginx_dir: /etc/nginx
+conf_dir: "{{nginx_dir}}/conf.d"
+
+# Nginx templated configuration files to create.
+shared:
+  - {file: gzip_params, directory: "{{nginx_dir}}"}
+confs:
+  - {file: site.conf, directory: "{{conf_dir}}"}
+
+#######
+# USERS
+#######
+
+# Specified users will be added to the remote server, along with all specified
+# public keys. Removing a user from this list does NOT remove them from the
+# remote server! You need to set their state to "absent", remove all the other
+# properties for that user, and re-run the "configure" playbook. Also, the
+# shadow password (that user's sudo password) should be a hash, and NOT plain
+# text!
+#
+# Generate a shadow password hash using the following command:
+# openssl passwd -1 -salt $(openssl rand -base64 6) yourpassword
+#
+users:
+  - name: tkellen
+    real_name: Tyler Kellen
+    state: present
+    shadow_pass: $1$SLUJWFxu$Zrq6t39fbas7duavaPLKb.
+    groups: sudo
+    shell: /bin/bash
+    keys:
+      - state: present
+        key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDASWvJsFUg1ONxaV64PSaZg9dM5xhml+oeSfetRHMeO+JtzLodFgLu+wc5UED29xYf0I7/jDPaQQFu8gEs7x6A91unjR2mZzpx4du+NrNpwj+TGTNEdf6VmbneKu/RqCxTLXvkga4DJ4uXpUfL97u6sEMZDKr1uDYjH1CXR9yhGmRnsVw0UDIbOUD9rw5ociqMSwlW362XDNJh+yRSeG80cyAYDU0YXopMc8jIzoJ8j6qVdawvnBoVUswGvjRHQbTaKNqp+tyhGKFQGdPzoSubtJ8pt6g7tldkLuxphqQ5/m5q/rb74BU48laGvl5ssigEfY2tuqN9jG35zIVJxo3J tyler@sleekcode.net
+  - name: gnarf
+    real_name: Corey Frang
+    state: present
+    shadow_pass: $6$xxiEpGcp$aZxv0.vQ5cxSo/kyxyxmqZt5bWg8qGp68HWdka6iiNYbjlLwJD1ZvTKwilHYcW/MzlHdojDKIYdYGXoZTx0be0
+    groups: sudo
+    shell: /bin/bash
+    keys:
+      - state: present
+        key: ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA1r3UZVe33a79OuDgz5KJXjC94qj/9dgTfbmiMUL5jQaj75l2VnNT8Lk04m5cHSYcYj7C/MHyiu1XgFni7fu1nZE9KVGLDvDijycR6j+F4oTZcIjM1PDf1g8ddokGx5MfFuigq1h/PXSxUnnmqDc6pzKXJ/1GLXToAeeR3iThre/uuUUdmpF0Ha4d2N3MZRAdcMtvvmzwK/AE1+WFl61f7s8bFY6k0MdHKwYajSqv8VKkIE91LKh6Tm46LtqLC8gpSaUP2Ikn8zIg55wCGqx6fvnVQA2RIIf+a2noElyq1yDlwhVr+FSZ1MLrLYUQbSBa+R9N6+2SwseI1wsTFOBLlw==
+  - name: lady3bean
+    real_name: Hawley Brett
+    state: present
+    groups: sudo
+    shadow_pass: $6$7s6nCNcd$ndn2qgx3Hy3ZHnc/fXDGcv7/4ct/RLrlFB2wAbkw1KtT3cYOQ28Pqe03Lm6zIkk/nUDOnGogkWn1vqMTnhwlF0
+    keys:
+      - state: present
+        key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDLHqUavdQVl4xZP4YTf/CDb4yWxQckTLxVQ0+r6OaOFzSc+ypzLk4Khai/c9iqzFJ3Dpqc+ote5fvVaYdIPPW8wsu7qZYcTUC0isiX29nVURslYkuW9Ffy9nB4kGwBSvmKjB4lYCPmlU/YetqhWgUt1LaBG6Ul4scuMJl3FRdHoD7EKm43LblsfwjBxkE21xMXFFXt6bY9L3GG7Cu4jST/QdTPbb/AMapsv/P5emAJHf705FZLwbpwuPzVZ4lrCcH79kRBQuS3S5XQEg+3TZEvwaxyzf0SRhezQHV1zaWL+YdcPhrv44NGpkCUh5KE3QLb0s3MS/hMml2CE/gOsGTv
+  - name: ben
+    real_name: Ben Muirhead
+    state: present
+    groups: sudo
+    shadow_pass: $6$xxiEpGcp$aZxv0.vQ5cxSo/kyxyxmqZt5bWg8qGp68HWdka6iiNYbjlLwJD1ZvTKwilHYcW/MzlHdojDKIYdYGXoZTx0be0
+    keys:
+      - state: present
+        key: ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAkiDZLBkaoGcKg1lUYEhRmsguKJTtcxHOnDPw9XlnlSiXmT056PH95zMaWdiGHVox/2rIdXROUvpkF3aUJPJNShz8dcoqLysDJLQPuwE/rgCQ7Zgaqqlrn5uWgWFxa191GrCGgmn8R7m9NDx7ZUkD8S3MhInoMn2/1WhBmNGGwA5ROvD7q/7EK0jOk4rRCvqSeW26BPdTCc92aFXqlK9JuefPztmuRWtoNX9ba8qUMXTXGfSTS7bRZD1bOq8fdjDfsLbNmt/3Se1pyhBefTb8MDu8lZ4Pa8jHeDT7S7Rw7c/XKA182ErsldwwSe36ryRrsCLJ995cNwyrPKE+Re36MQ== rsa-key-20160224
+
+
+##########
+# FIREWALL
+##########
+
+firewall_whitelist:
+  - 52.5.0.69/32 # DNC
+  - 98.229.3.48/32 # HQ
+
+########
+# DEPLOY
+########
+
+# Parent directory for cloned repository directories. The clone_path and
+# site_path should be children of this directory.
+base_path: /mnt
+
+# Temporary location where the Git repo will be cloned and the build scripts
+# will be run before going live.
+clone_path: "{{base_path}}/temp"
+
+# Where the production site symlink will exist.
+site_path: "{{base_path}}/site"
+
+# If defined, only this many of the most recent clone directories (including the
+# current specified commit) will be retained. Anything older will be removed,
+# once the current clone has been made live.
+keep_n_most_recent: 3
+
+# If this variable is defined, a file containing build information, including
+# the timestamp, commit, sha, and a few other useful values will be generated
+# after the build has completed. This file is relative to your project root.
+build_info_path: "public/build.txt"
+
+# If these variables are uncommented, add swap space to the machine when the
+# configure playbook is run. The swap configuration controlled by this is
+# meant to address installation problems on machines with minimal ram (e.g.
+# npm bails during install because it runs out of memory)
+swap_file_path: /swap
+swap_file_size: 2GB
+
+###################
+# DEPLOY EXTRA VARS
+###################
+
+# Specify any valid remote (typically a github user)
+remote: Bernie-2016
+
+# Specify any ref (eg. branch, tag, SHA) to be deployed. This ref must be
+# pushed to the remote git_repo before it can be deployed.
+commit: master
+
+# Git repo address.
+git_repo: https://github.com/{{remote}}/votetracker.git
+
+# Clone and build the specified commit SHA, regardless of prior build status.
+force: false
+
+# Use the local project Git repo instead of the remote git_repo. This option
+# only works with the vagrant inventory, and not with staging or production.
+local: false
