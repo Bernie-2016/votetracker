@@ -10,7 +10,7 @@ const getArray = (...args) => [].concat(...args).filter(Boolean);
 
 export default {
   context: getPath('./'),
-  entry: './src/app',
+  entry: './src/client/app',
   output: {
     path: getPath('public'),
     filename: 'app.js',
