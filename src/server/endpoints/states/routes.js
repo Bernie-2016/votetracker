@@ -6,5 +6,6 @@ export const prefix = thisFolderName;
 export const routes = {
   get: {
     '/': controller.read,
+    '/:state/counties': controller.counties,
   },
 };
