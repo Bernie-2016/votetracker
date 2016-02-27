@@ -13,5 +13,7 @@
     state: present
   notify: restart postgresql
 
+- meta: flush_handlers
+
 - name: ensure database exists
   postgresql_db: name={{project_name}}
