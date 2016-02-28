@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import superagent from 'superagent';
-import { findState } from '../../data/states';
 
 import Menu from '../simple-menu';
 import { Link } from 'react-router';
+
+import HowToPrimary from './how-to-primary';
+import HowToCaucus from './how-to-caucus';
 
 import './style';
 
@@ -26,7 +28,6 @@ export default class Report extends Component {
           this.setState({
             loading: false,
             counties: response.body,
-            state: findState(this.props.params.state),
           });
         }
       });
@@ -41,9 +42,7 @@ export default class Report extends Component {
     const error = this.state && this.state.error;
     return (
       <div>
-        <div className="how-to">
-          Write some instructions for the state here!  We need to split this into Primary / Caucus
-        </div>
+        { this.context.state.type === 'Primary' ? <HowToPrimary /> : <HowToCaucus /> }
         <div className="loading" hidden={!loading}>
           <h2>Loading</h2>
           Loading counties
@@ -67,6 +66,10 @@ export default class Report extends Component {
 
 Report.propTypes = {
   params: React.PropTypes.object.isRequired,
+};
+
+Report.contextTypes = {
+  state: React.PropTypes.object.isRequired,
 };
 
 export default Report;
