@@ -38,14 +38,29 @@ h1, h2, h3, h4
   display: block
   width: 135px;
   height: 57px;
+  margin: 0.5em;
   margin-right: 1em;
 
 .a11y-only {
   text-indent: -9999px;
 }
 
-header {
-  margin-bottom: 1em;
+.content-area {
+  margin: 0 0.5em;
+  position: relative;
+}
+
+header
+  position: relative
+  background-color: #fff
+  border-bottom: 1px solid #eeeeee
+  background-image: none
+  z-index: 0
+
+  h1
+    padding: 0 1em
+    box-sizing: border-box
+    margin-bottom: 25px
 
   ::after {
     content: '';
@@ -57,26 +72,6 @@ header {
     padding-top: 0.5em;
     a { text-decoration: none; color: #000000; }
   }
-}
-
-.content-area {
-  margin: 0 0.5em;
-  position: relative;
-}
-
-header
-  height: 5.75rem
-  min-height: 5.75rem
-  position: relative
-  background-color: #fff
-  border-bottom: 1px solid #eeeeee
-  background-image: none
-  z-index: 0
-
-  h1
-    padding: 0 1em
-    box-sizing: border-box
-    margin-bottom: 25px
 
 footer
   text-align: center
