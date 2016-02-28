@@ -29,11 +29,15 @@ export default class LocationSelect extends Component {
       });
   }
 
+  markInput(element) {
+    this.filterInput = element;
+  }
+
   render() {
     const locations = (this.state.locations || []);
 
     const updateFilter = debounce(() => {
-      this.setState({ filter: document.querySelector('#location-complete').value });
+      this.setState({ filter: this.filterInput.value });
     }, 250);
 
     const matches = fuzzy.filter(this.state.filter || '', locations, {
@@ -45,6 +49,9 @@ export default class LocationSelect extends Component {
       b.score - a.score || a.original.pollinglocation.localeCompare(b.original.pollinglocation)
     );
 
+    const markInput = element => {
+      if (element) this.markInput(element);
+    };
 
     const makeLink = match => {
       const { state, county } = this.props.params;
@@ -68,7 +75,7 @@ export default class LocationSelect extends Component {
     return (
       <div className="location-form">
         <h2>Select your Polling Location</h2>
-        <input id="location-complete"
+        <input ref={markInput}
           {...inputEvents}
           placeholder="Filter the list"
         />

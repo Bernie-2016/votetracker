@@ -8,7 +8,7 @@ const getPath = (...args) => path.join(__dirname, ...args);
 // Remove any falsy values from the input args or array. Return an array.
 const getArray = (...args) => [].concat(...args).filter(Boolean);
 
-export default {
+const config = {
   context: getPath('./'),
   entry: './src/client/app',
   output: {
@@ -76,3 +76,9 @@ export default {
     ],
   },
 };
+
+if (isDevelopment) {
+  config.output.publicPath = 'http://localhost:8080/';
+}
+
+export default config;

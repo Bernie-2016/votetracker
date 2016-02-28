@@ -1,18 +1,24 @@
 import React from 'react';
+import Submitable from './submitable';
 
-const PrimaryReport = () => (
+export default class PrimaryReport extends Submitable {
 
-  // select county
-  // select polling location
-
-  <div className="PrimaryReportForm">
-    <form>
-    <label>Total Democratic Ballots Cast
-      <input type="number" name="ballots-cast" />
-    </label>
-    </form>
-  </div>
-
-);
-
-export default PrimaryReport;
+  render() {
+    return (
+      <div className="PrimaryReportForm">
+        <form ref={this.trackForm}>
+        <label>Ballot Type
+          <select name="type">
+            <option value="dem">Democratic Ballots</option>
+            <option value="total">Total Ballots</option>
+          </select>
+        </label>
+        <label>Ballots Cast
+          <input type="number" name="ballots_cast" />
+        </label>
+        <label><button type="submit">Submit</button></label>
+        </form>
+      </div>
+    );
+  }
+}
