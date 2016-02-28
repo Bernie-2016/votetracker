@@ -1,3 +1,5 @@
+
+
 *
   box-sizing border-box
 
@@ -5,20 +7,53 @@ html
   font-family 'Helvetica Neue', sans-serif
 
 body
+  margin: 0
   font-weight 300
   overflow-y scroll
-  padding 2em 0
   background-color #f4f4f4
 
 a
   color rgba(195, 49, 49, 1)
 
 h1, h2, h3, h4
+  margin: 0
   font-weight 500
   color rgba(10, 10, 10, 1)
 
 .container
-  max-width 750px
-  margin auto
-  background-color #fff
-  padding 2em
+
+footer
+  text-align: center
+
+  .address
+    margin: 0.5rem auto
+    line-height: 1.5
+
+  .site-title
+    font-family: freight-sans-pro
+    font-weight: 500
+    text-transform: uppercase
+    border: 1px solid $text
+    font-size: 1rem
+    max-width: 300px
+    padding: 0.6rem 0
+    margin: 2rem auto 0
+
+  .billionaires
+    display: block
+    margin: 1rem auto 3rem
+    width: 197px
+    height: 28px
+    background-size: 197px 28px
+    text-indent: -999em
+    background-image: url('https://s.bsd.net/bernie16/main/page/-/website/billionaires-2x.png')
+
+  .copy a
+    text-decoration: none
+    margin-left: 5px
+
+  span.copyright
+    margin-right: 5px
+    color: $text
+
+
