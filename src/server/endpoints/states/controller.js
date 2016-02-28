@@ -12,8 +12,19 @@ export function read(req, res) {
 }
 
 export function counties(req, res) {
-  db.query('SELECT DISTINCT upper(county) as county FROM precinct_data WHERE state_code = $1', req.params.state)
+  db.query('SELECT DISTINCT upper(county) as county FROM precinct_data WHERE state_code = $1',
+    req.params.state)
   .then(result => {
     res.send(result.map(row => row.county).sort());
+  });
+}
+
+export function locations(req, res) {
+  db.query('SELECT DISTINCT' +
+    ' pollinglocation, pollingaddress, pollingcity, state_code, pollingzip' +
+    ' FROM precinct_data WHERE state_code = ${state} AND county = ${county}',
+    req.params)
+  .then(result => {
+    res.send(result);
   });
 }

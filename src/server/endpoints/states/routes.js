@@ -7,5 +7,6 @@ export const routes = {
   get: {
     '/': controller.read,
     '/:state/counties': controller.counties,
+    '/:state/:county/locations': controller.locations,
   },
 };
