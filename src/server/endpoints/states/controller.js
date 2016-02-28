@@ -1,9 +1,9 @@
 import db from '../../services/db';
 
 import memoize from 'lodash.memoize';
-import Debug from 'debug';
+import debugFactory from 'debug';
 
-const debug = Debug('states');
+const debug = debugFactory('states');
 
 import { dsvFormat } from 'd3-dsv';
 import fs from 'fs';
