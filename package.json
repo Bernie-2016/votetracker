@@ -50,6 +50,7 @@
     "rimraf": "^2.5.1",
     "style-loader": "^0.13.0",
     "stylus-loader": "^1.5.1",
+    "superagent": "^1.8.0-beta.2",
     "webpack": "^1.12.12"
   },
   "devDependencies": {

@@ -1,5 +1,7 @@
 import { validState } from '../../data/states';
 import Report from './index';
+import ReportLayout from './layout';
+import SelectLocation from './location';
 
 function validateState(nextState, redirect) {
   if (!validState(nextState.params.state)) {
@@ -8,7 +10,11 @@ function validateState(nextState, redirect) {
 }
 
 export default {
-  path: 'report/:state',
+  path: 'report/:state/',
   onEnter: validateState,
-  component: Report,
+  component: ReportLayout,
+  indexRoute: { component: Report },
+  childRoutes: [
+    { path: ':county/', component: SelectLocation },
+  ],
 };

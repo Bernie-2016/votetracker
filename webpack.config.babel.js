@@ -51,11 +51,11 @@ export default {
   },
   module: {
     preLoaders: [
-      {
-        test: /\.jsx?$/,
-        loaders: getArray(isDevelopment && 'eslint-loader'),
-        include: getPath('src'),
-      },
+      // {
+      //   test: /\.jsx?$/,
+      //   loaders: getArray(isDevelopment && 'eslint-loader'),
+      //   include: getPath('src'),
+      // },
     ],
     loaders: [
       {
