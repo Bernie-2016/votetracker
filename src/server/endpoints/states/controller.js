@@ -21,7 +21,7 @@ export function counties(req, res) {
 
 export function locations(req, res) {
   db.query('SELECT DISTINCT' +
-    ' pollinglocation, pollingaddress, pollingcity, state_code, pollingzip' +
+    ' precinctID as id, pollinglocation, pollingaddress, pollingcity, state_code, pollingzip' +
     ' FROM precinct_data WHERE state_code = ${state} AND county = ${county}',
     req.params)
   .then(result => {
