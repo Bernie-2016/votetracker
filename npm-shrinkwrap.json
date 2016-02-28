@@ -583,6 +583,23 @@
       "from": "caniuse-db@>=1.0.30000409 <2.0.0",
       "resolved": "https://registry.npmjs.org/caniuse-db/-/caniuse-db-1.0.30000411.tgz"
     },
+    "careen": {
+      "version": "0.1.1",
+      "from": "careen@*",
+      "resolved": "https://registry.npmjs.org/careen/-/careen-0.1.1.tgz",
+      "dependencies": {
+        "bluebird": {
+          "version": "2.10.2",
+          "from": "bluebird@>=2.9.14 <3.0.0",
+          "resolved": "https://registry.npmjs.org/bluebird/-/bluebird-2.10.2.tgz"
+        },
+        "ramda": {
+          "version": "0.15.1",
+          "from": "ramda@>=0.15.0 <0.16.0",
+          "resolved": "https://registry.npmjs.org/ramda/-/ramda-0.15.1.tgz"
+        }
+      }
+    },
     "caseless": {
       "version": "0.11.0",
       "from": "caseless@>=0.11.0 <0.12.0",
@@ -2397,6 +2414,11 @@
       "from": "lodash._isiterateecall@>=3.0.0 <4.0.0",
       "resolved": "https://registry.npmjs.org/lodash._isiterateecall/-/lodash._isiterateecall-3.0.9.tgz"
     },
+    "lodash._mapcache": {
+      "version": "4.1.2",
+      "from": "lodash._mapcache@>=4.0.0 <5.0.0",
+      "resolved": "https://registry.npmjs.org/lodash._mapcache/-/lodash._mapcache-4.1.2.tgz"
+    },
     "lodash._pickbyarray": {
       "version": "3.0.2",
       "from": "lodash._pickbyarray@>=3.0.0 <4.0.0",
@@ -2446,6 +2468,11 @@
       "version": "3.0.8",
       "from": "lodash.keysin@>=3.0.0 <4.0.0",
       "resolved": "https://registry.npmjs.org/lodash.keysin/-/lodash.keysin-3.0.8.tgz"
+    },
+    "lodash.memoize": {
+      "version": "4.0.1",
+      "from": "lodash.memoize@latest",
+      "resolved": "https://registry.npmjs.org/lodash.memoize/-/lodash.memoize-4.0.1.tgz"
     },
     "lodash.pick": {
       "version": "3.1.0",
@@ -2561,7 +2588,7 @@
     },
     "moment": {
       "version": "2.11.2",
-      "from": "moment@latest",
+      "from": "https://registry.npmjs.org/moment/-/moment-2.11.2.tgz",
       "resolved": "https://registry.npmjs.org/moment/-/moment-2.11.2.tgz"
     },
     "morgan": {
