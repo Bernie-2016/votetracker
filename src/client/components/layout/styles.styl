@@ -1,14 +1,20 @@
+@font-face
+  font-family: freight
+  font-style: normal
+  src url(./fonts/FreightSans-Book  .ttf)
 
+@font-face
+  font-family: jubilat
+  font-style: normal
+  src url(./fonts/JubilatMedium-Roman.otf)
 
 *
   box-sizing border-box
 
-html
-  font-family 'Helvetica Neue', sans-serif
-
 body
   margin: 0
   font-weight 300
+  font-family: freight
   overflow-y scroll
   background-color #f4f4f4
 
@@ -17,8 +23,9 @@ a
 
 h1, h2, h3, h4
   margin: 0
-  font-weight 500
-  color rgba(10, 10, 10, 1)
+  font-weight: 500
+  font-family: jubilat
+  color: rgba(10, 10, 10, 1)
 
 
 .logo
@@ -57,6 +64,20 @@ header {
   position: relative;
 }
 
+header
+  height: 5.75rem
+  min-height: 5.75rem
+  position: relative
+  background-color: #fff
+  border-bottom: 1px solid #eeeeee
+  background-image: none
+  z-index: 0
+
+  h1
+    padding: 0 1em
+    box-sizing: border-box
+    margin-bottom: 25px
+
 footer
   text-align: center
 
@@ -65,7 +86,6 @@ footer
     line-height: 1.5
 
   .site-title
-    font-family: freight-sans-pro
     font-weight: 500
     text-transform: uppercase
     border: 1px solid $text

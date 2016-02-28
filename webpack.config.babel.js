@@ -69,6 +69,11 @@ const config = {
         include: getPath('src'),
       },
       {
+        test: /\.(ttf|otf)$/,
+        loaders: ['file-loader'],
+        include: getPath('src'),
+      },
+      {
         test: /\.jsx?$/,
         loaders: getArray(isDevelopment && 'react-hot', 'babel-loader'),
         include: getPath('src'),
