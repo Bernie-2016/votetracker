@@ -51,17 +51,22 @@ const config = {
   },
   module: {
     preLoaders: [
-      // {
-      //   test: /\.jsx?$/,
-      //   loaders: getArray(isDevelopment && 'eslint-loader'),
-      //   include: getPath('src'),
-      // },
+      {
+        test: /\.jsx?$/,
+        loaders: getArray(isDevelopment && 'eslint-loader'),
+        include: getPath('src'),
+      },
     ],
     loaders: [
       {
         test: /\.csv$/,
         loaders: ['dsv-loader'],
         include: getPath('fixtures'),
+      },
+      {
+        test: /\.(svg|jpg|png)$/,
+        loaders: ['file-loader'],
+        include: getPath('src'),
       },
       {
         test: /\.jsx?$/,
