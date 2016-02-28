@@ -65,7 +65,7 @@ const config = {
       },
       {
         test: /\.(svg|jpg|png)$/,
-        loaders: ['file-loader'],
+        loaders: ['url-loader?limit=25000'],
         include: getPath('src'),
       },
       {
