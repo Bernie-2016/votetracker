@@ -20,16 +20,42 @@ h1, h2, h3, h4
   font-weight 500
   color rgba(10, 10, 10, 1)
 
-.container
 
-  .logo
-    float: left
-    background-size: 135px 57px
-    color:rgba(#fff, .6)
-    background-image: url('./images/logo.png')
-    background-repeat: no-repeat
-    background-size: 135px 57px
-    display: block
+.logo
+  float: left
+  background-size: 135px 57px
+  color:rgba(#fff, .6)
+  background-image: url('./images/logo.png')
+  background-repeat: no-repeat
+  background-size: 135px 57px
+  display: block
+  width: 135px;
+  height: 57px;
+  margin-right: 1em;
+
+.a11y-only {
+  text-indent: -9999px;
+}
+
+header {
+  margin-bottom: 1em;
+
+  ::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  h2 {
+    padding-top: 0.5em;
+    a { text-decoration: none; color: #000000; }
+  }
+}
+
+.content-area {
+  margin: 0 0.5em;
+  position: relative;
+}
 
 footer
   text-align: center

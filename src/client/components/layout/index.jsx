@@ -6,8 +6,9 @@ import Header from './header';
 const Layout = ({ children }) => (
   <div className="container">
     <Header />
-    <h1>VoteTracker</h1>
-    { children }
+    <div className="content-area">
+      { children }
+    </div>
     <Footer />
   </div>
 
