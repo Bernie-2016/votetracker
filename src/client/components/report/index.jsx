@@ -5,6 +5,8 @@ import { findState } from '../../data/states';
 import Menu from '../simple-menu';
 import { Link } from 'react-router';
 
+import './style';
+
 export default class Report extends Component {
 
   constructor() {
