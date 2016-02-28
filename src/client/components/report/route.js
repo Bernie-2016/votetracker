@@ -2,6 +2,7 @@ import { validState } from '../../data/states';
 import Report from './index';
 import ReportLayout from './layout';
 import SelectLocation from './location';
+import Caucus from './caucus';
 
 function validateState(nextState, redirect) {
   if (!validState(nextState.params.state)) {
@@ -15,6 +16,11 @@ export default {
   component: ReportLayout,
   indexRoute: { component: Report },
   childRoutes: [
-    { path: ':county/', component: SelectLocation },
+    { path: ':county/',
+      indexRoute: { component: SelectLocation },
+      childRoutes: [
+        { path: ':location', component: Caucus },
+      ],
+    },
   ],
 };
