@@ -6,6 +6,8 @@ export default class SubmitableForm extends Component {
   constructor() {
     super();
     this.trackForm = this.trackForm.bind(this);
+    const submitFn = this.submit || function empty() {};
+    this.submit = submitFn.bind(this);
     this.state = {
     };
   }
@@ -26,13 +28,18 @@ export default class SubmitableForm extends Component {
     }
     submitData.client_id = window.clientId;
     submitData.location_id = this.props.params.location;
-    console.log('Would submit', submitData, 'to /report');
+    console.log('Would submit', submitData, 'to /report'); // eslint-disable-line
     event.preventDefault();
   }
 
   trackForm(element) {
+    if (!element && this.formElement) {
+      this.formElement.removeEventListener('submit', this.submit);
+    }
     this.formElement = element;
-    this.formElement.addEventListener('submit', this.submit.bind(this));
+    if (element) {
+      element.addEventListener('submit', this.submit);
+    }
   }
 
 }

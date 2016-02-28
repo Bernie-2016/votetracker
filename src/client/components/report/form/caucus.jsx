@@ -1,5 +1,6 @@
 import React from 'react';
 import Submitable from './submitable';
+import TimeSelect from './timeselect';
 
 export default class CaucusReport extends Submitable {
   render() {
@@ -32,6 +33,7 @@ export default class CaucusReport extends Submitable {
           <label>Total Other Delegates:
             <input type="number" name="other_delegates" />
           </label>
+          <TimeSelect />
           <label><button type="submit">Submit</button></label>
         </form>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Submitable from './submitable';
+import TimeSelect from './timeselect';
 
 export default class PrimaryReport extends Submitable {
 
@@ -16,6 +17,7 @@ export default class PrimaryReport extends Submitable {
         <label>Ballots Cast
           <input type="number" name="ballots_cast" />
         </label>
+        <TimeSelect />
         <label><button type="submit">Submit</button></label>
         </form>
       </div>
