@@ -24,6 +24,15 @@ export default {
     historyApiFallback: {
       index: 'index.html',
     },
+    proxy: {
+      '/api/*': {
+        target: 'http://localhost:8000/',
+        secure: false,
+        rewrite: req => {
+          req.url = req.url.replace(/^\/api/, ''); // eslint-disable-line
+        },
+      },
+    },
   },
   plugins: getArray([
     new webpack.optimize.OccurenceOrderPlugin(),

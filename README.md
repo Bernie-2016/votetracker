@@ -32,6 +32,7 @@ required features may not be available in older versions.
 
 1. Run `npm install` to install local dependencies.
 2. Run `vagrant up` to set up postgresql database.
+3. Run `npm run migrate` to initialize the database model.
 3. Run `npm start` to start the file-watcher, api and live-reload process.
 4. Browse to <http://localhost:8080/> for the client.
 5. Browse to <http://localhost:8000/> for the server.
