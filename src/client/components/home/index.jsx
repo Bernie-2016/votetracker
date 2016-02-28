@@ -9,7 +9,7 @@ const statesFiltered = states.filter(state => state.election_day.isSame(moment('
 
 const Home = () => (
   <div>
-    <h1>Welcome home</h1>
+    <h1>Select Your State</h1>
     <Menu items={statesFiltered}
       makeLink={state => `/report/${state.state_code}/`} // eslint-disable-line
       renderItem={state => state.state_code} // eslint-disable-line
