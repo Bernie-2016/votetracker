@@ -18,6 +18,13 @@
   npm: path="{{clone_path}}"
   when: package_diff.rc != 0
 
+- name: migrate
+  shell: npm run migrate:up
+  args:
+      chdir: "{{clone_path}}"
+  environment:
+    NODE_ENV: "{{env}}"
+
 - name: build production version
   shell: npm run build
   args:
