@@ -24,6 +24,7 @@
     chdir: "{{clone_path}}"
   environment:
     NODE_ENV: "{{env}}"
+    API_URL: "{{api_url}}"
 
 - name: generate build info file
   template: src=build_info.txt dest={{clone_path}}/{{build_info_path}}
