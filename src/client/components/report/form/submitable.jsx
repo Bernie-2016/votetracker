@@ -33,9 +33,8 @@ export default class SubmitableForm extends Component {
       .send(submitData)
       .set('Accept', 'application/json')
       .end((err, res) => {
-        console.log(err, res);
+        console.log(err, res); // eslint-disable-line
       });
-    console.log('Would submit', submitData, 'to /api/report'); // eslint-disable-line
     event.preventDefault();
   }
 
