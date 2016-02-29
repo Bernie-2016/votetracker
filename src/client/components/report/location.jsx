@@ -67,11 +67,11 @@ export default class LocationSelect extends Component {
 
     return (
       <div className="location-form">
-        <h2>Select your Polling Location</h2>
-        <input ref={markInput}
-          {...inputEvents}
-          placeholder="Filter the list"
-        />
+        <h3>Select your Polling Location</h3>
+          <input ref={markInput}
+            {...inputEvents}
+            placeholder="Enter the name of your location to find matches"
+          />
         <Menu items={matches} makeLink={makeLink} renderItem={renderItem} />
       </div>
     );
