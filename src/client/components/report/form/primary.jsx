@@ -8,6 +8,7 @@ export default class PrimaryReport extends Submitable {
     return (
       <div className="PrimaryReportForm">
         <form ref={this.trackForm}>
+        <input type="hidden" value="primary" name="report_type" />
         <label>Ballot Type
           <select name="type">
             <option value="dem">Democratic Ballots</option>

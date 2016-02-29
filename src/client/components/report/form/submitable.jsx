@@ -28,7 +28,7 @@ export default class SubmitableForm extends Component {
     }
     submitData.client_id = window.clientId;
     submitData.location_id = this.props.params.location;
-    console.log('Would submit', submitData, 'to /report'); // eslint-disable-line
+    console.log('Would submit', submitData, 'to /api/report'); // eslint-disable-line
     event.preventDefault();
   }
 

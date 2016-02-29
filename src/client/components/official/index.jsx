@@ -52,6 +52,7 @@ export default class OfficialReport extends Submitable {
       <div className="official report">
         <h2>Official Results</h2>
         <form ref={this.trackForm}>
+          <input type="hidden" value="official" name="report_type" />
           <label>Select a State
             <select name="state"><option value="">---Select A State---</option>{states.map(state => { // eslint-disable-line
               return <option value={state.state_code} key={state.state_code}>{state.name}</option>; // eslint-disable-line

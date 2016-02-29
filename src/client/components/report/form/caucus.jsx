@@ -7,6 +7,7 @@ export default class CaucusReport extends Submitable {
     return (
       <div className="CaucusReportForm">
         <form ref={this.trackForm}>
+          <input type="hidden" value="caucus" name="report_type" />
           <label>Phase:
             <select name="phase">
               <option value="0">First Count</option>
