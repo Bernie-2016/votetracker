@@ -33,8 +33,8 @@ export default class LocationSelect extends Component {
     };
 
     const renderItem = location =>
-      `${location.pollinglocation} ${location.pollingaddress} ` +
-        `${location.pollingcity} ${this.props.params.state} ${location.pollingzip}`;
+      `${location.pollinglocation} — ${location.pollingaddress}, ` +
+        `${location.pollingcity}, ${this.props.params.state} ${location.pollingzip}`;
 
     return (
       <div className="location-form">
