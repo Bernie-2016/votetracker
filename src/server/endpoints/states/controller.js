@@ -19,7 +19,7 @@ export function read(req, res) {
 const countiesQuery = memoize(params => {
   debug('Caching Counties for', params);
   return db.query(
-    'SELECT DISTINCT upper(county) as county FROM precinct_data WHERE state_code = ${state}',
+    'SELECT DISTINCT upper(county) as county FROM precincts WHERE state_code = ${state}',
     params
   );
 }, params => params.state);
@@ -35,8 +35,8 @@ const locationsQuery = memoize(params => {
   debug('First Query', params);
   return db.query(
     'SELECT DISTINCT' +
-    ' precinctID as id, pollinglocation, pollingaddress, pollingcity, state_code, pollingzip' +
-    ' FROM precinct_data WHERE state_code = ${state} AND county = ${county}',
+    ' id, pollinglocation, pollingaddress, pollingcity, state_code, pollingzip' +
+    ' FROM polling_location WHERE state_code = ${state} AND county = ${county}',
     params
   );
 }, params => `${params.state},${params.county}`);
