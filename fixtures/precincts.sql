@@ -70,7 +70,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 67	VA	BEDFORD	504 - Suck Springs Baptist Church
 68	TN	MACON	2
 69	VA	COVINGTON CITY	201 - Precinct 2-1
-70	VT	Windsor	Chester Town Hall
+70	VT	WINDSOR	Chester Town Hall
 71	TN	WASHINGTON	15
 72	AR	CLEBURNE	14 - Healing Springs
 73	AR	HOT SPRING	Lone Hill
@@ -156,7 +156,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 153	VA	FAIRFAX	225 - Terraset
 154	AL	BALDWIN	Precinct 45
 155	MA	NORFOLK	Wellesley B
-156	VT	Washington	Woodbury Town Hall
+156	VT	WASHINGTON	Woodbury Town Hall
 157	AL	WALKER	Precinct 0701
 158	TN	SHELBY	Col07
 159	VA	WASHINGTON	204 Woodland Hills
@@ -192,7 +192,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 189	OK	TULSA	Precinct 720760
 190	AR	PRAIRIE	Hazen Ward 1
 191	TN	CUMBERLAND	Fgn
-192	VT	Orange	Corinth Town Hall
+192	VT	ORANGE	Corinth Town Hall
 193	TN	HAMBLEN	1102
 194	VA	SUFFOLK CITY	402 - Whaleyville
 195	GA	DEKALB	Rl
@@ -353,7 +353,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 350	AR	CONWAY	018 - Morrilton Ward 4
 351	MA	PLYMOUTH	Plymouth 05
 352	AR	PULASKI	Precinct 052
-353	VT	Windsor	Bethel Elementary Sch
+353	VT	WINDSOR	Bethel Elementary Sch
 354	MA	BRISTOL	New Bedford W02e
 355	TN	LOUDON	Ldn
 356	TN	CHEATHAM	1-Apr
@@ -419,7 +419,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 416	OK	WAGONER	Precinct 730202
 417	GA	FULTON	09d
 418	AL	PIKE	Precinct 19 - Galloway Road
-419	VT	Windsor	Baltimore Town Office
+419	VT	WINDSOR	Baltimore Town Office
 420	AL	TUSCALOOSA	Peterson Community Church
 421	GA	HANCOCK	01a
 422	VA	GRAYSON	203 - Independence
@@ -436,7 +436,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 433	GA	GWINNETT	83
 434	OK	KIOWA	Precinct 380007
 435	GA	BIBB	Wa2
-436	VT	Rutland	West Haven Community Hall
+436	VT	RUTLAND	West Haven Community Hall
 437	VA	ALLEGHANY	101 - Arritt
 438	GA	COLUMBIA	131
 439	VA	HAMPTON CITY	117 - Kecoughtan
@@ -468,7 +468,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 465	OK	CLEVELAND	Precinct 140056
 466	AR	CRAWFORD	Van Buren 4-1
 467	OK	PAYNE	Precinct 600016
-468	VT	Addison	Starksboro Robinson Sch
+468	VT	ADDISON	Starksboro Robinson Sch
 469	AR	LITTLE RIVER	Foreman Ward 3
 470	OK	OKLAHOMA	Precinct 550026
 471	GA	CHATHAM	4-10c
@@ -510,7 +510,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 507	MA	SUFFOLK	Revere W05 P03
 508	GA	HANCOCK	04c
 509	VA	FAIRFAX	240 - Colvin
-510	VT	Orleans	Irasburg Town Hall
+510	VT	ORLEANS	Irasburg Town Hall
 511	AL	DALLAS	Precinct 0101 Plantersville
 512	MN	RAMSEY	St. Paul W-2 P-15
 513	TN	WILLIAMSON	102
@@ -522,7 +522,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 519	TN	DAVIDSON	704
 520	AL	PIKE	Precinct 30 - Banks # 2
 521	OK	CLEVELAND	Precinct 140006
-522	VT	Franklin	Enosburgh Opera House
+522	VT	FRANKLIN	Enosburgh Opera House
 523	TN	HAMBLEN	601
 524	AR	LAWRENCE	13 - Dent
 525	OK	DELAWARE	Precinct 210015
@@ -578,7 +578,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 575	VA	APPOMATTOX	201 - Chap
 576	GA	MITCHELL	Cn
 577	VA	RICHMOND CITY	208 - Two Hundred Eight
-578	VT	Orange	Washington Mun Bldg
+578	VT	ORANGE	Washington Mun Bldg
 579	AL	CHOCTAW	Precinct 0131 -Butler D-1 H-65
 580	AR	LEE	Texas
 581	MA	NORFOLK	Brookline 05
@@ -606,7 +606,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 603	GA	COBB	Or03
 604	TN	DAVIDSON	2406
 605	OK	OKLAHOMA	Precinct 550227
-606	VT	Caledonia	Ryegate Town Hall
+606	VT	CALEDONIA	Ryegate Town Hall
 607	AR	IZARD	Violet Hill
 608	VA	PRINCE GEORGE	204 - Courts Bldg
 609	MA	MIDDLESEX	Lowell W07 P02
@@ -642,7 +642,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 639	GA	GWINNETT	133
 640	VA	FAIRFAX	115 - Ravensworth
 641	GA	COLUMBIA	105
-642	VT	Rutland	Hubbardton Town Hall
+642	VT	RUTLAND	Hubbardton Town Hall
 643	MN	CASS	Shingobee Twp P-1
 644	AL	FAYETTE	1501/Clear Creek/Phil Church
 645	MA	ESSEX	Ipswich 02
@@ -713,14 +713,14 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 710	TN	KNOX	12
 711	GA	CHATHAM	2-03c
 712	MN	RAMSEY	St. Paul W-2 P-11
-713	VT	Washington	Plainfield Town Hall
+713	VT	WASHINGTON	Plainfield Town Hall
 714	AL	JEFFERSON	Precinct 4230
 715	VA	LOUDOUN	616 - Eagle Ridge
 716	AL	JACKSON	Precinct 0200
 717	VA	LOUDOUN	626 - Ashby Ponds
 718	MA	BRISTOL	New Bedford W01e
 719	OK	ROGERS	Precinct 660033
-720	VT	Bennington	Readsboro School Gymnasium
+720	VT	BENNINGTON	Readsboro School Gymnasium
 721	VA	ARLINGTON	002 - Ashton Heights
 722	CO	ARAPAHOE	1310903502
 723	TN	DAVIDSON	3204
@@ -759,7 +759,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 756	GA	SUMTER	E-27
 757	GA	TELFAIR	Mi
 758	GA	GILMER	11
-759	VT	Rutland	Benson Town Hall
+759	VT	RUTLAND	Benson Town Hall
 760	MA	ESSEX	Peabody W06 P02
 761	VA	HOPEWELL CITY	301 - Ward Three
 762	AR	LONOKE	03 - Austin City
@@ -798,7 +798,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 795	VA	BUCKINGHAM	102 - Georgia Creek
 796	OK	MCCLAIN	Precinct 440023
 797	AR	PULASKI	Precinct 014
-798	VT	Rutland	Sudbury Town Hall
+798	VT	RUTLAND	Sudbury Town Hall
 799	AL	JEFFERSON	Precinct 2080
 800	AL	HOUSTON	Webb City Hall 343
 801	GA	COWETA	14
@@ -845,7 +845,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 842	VA	FAIRFAX CITY	003 - Three
 843	GA	GWINNETT	86
 844	TN	WAYNE	201
-845	VT	Orange	Newbury Newbury Town Office
+845	VT	ORANGE	Newbury Newbury Town Office
 846	VA	HENRICO	407 - Lakewood
 847	GA	COFFEE	6
 848	MA	WORCESTER	Mendon 01
@@ -880,7 +880,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 877	GA	FANNIN	Hoth
 878	OK	OKMULGEE	Precinct 560020
 879	VA	FAIRFAX	105 - Fairview
-880	VT	Chittenden	South Burlington Fht Middle Sch
+880	VT	CHITTENDEN	South Burlington Fht Middle Sch
 881	GA	HARRIS	Sk
 882	OK	MCCURTAIN	Precinct 450035
 883	AR	MONTGOMERY	01 - Alamo
@@ -1092,7 +1092,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 1089	VA	SCOTT	102 - Yuma
 1090	AR	NEVADA	Emmet Rural
 1091	VA	ALBEMARLE	307 - Yellow Mountain
-1092	VT	Chittenden	Jericho Elem School
+1092	VT	CHITTENDEN	Jericho Elem School
 1093	VA	PRINCE WILLIAM	104 - Nokesville
 1094	VA	STAFFORD	403 - Brooke
 1095	VA	LOUISA	601 - Bumpass
@@ -1225,7 +1225,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 1222	GA	COBB	Mt01
 1223	VA	CARROLL	101 - Mt Bethel
 1224	GA	FULTON	Sc16
-1225	VT	Orleans	Barton Orl Mem Bldg
+1225	VT	ORLEANS	Barton Orl Mem Bldg
 1226	OK	OKLAHOMA	Precinct 550165
 1227	AR	PULASKI	Precinct 071
 1228	TN	SHELBY	Col06
@@ -1258,7 +1258,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 1255	GA	DEKALB	Mi
 1256	TN	CROCKETT	12
 1257	OK	PAWNEE	Precinct 590309
-1258	VT	Essex	Canaan Town Office
+1258	VT	ESSEX	Canaan Town Office
 1259	GA	FULTON	01s
 1260	TN	JEFFERSON	301
 1261	AL	LAUDERDALE	Underwood Community Ctr
@@ -1365,7 +1365,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 1362	TN	JOHNSON	P4b
 1363	GA	MACON	3
 1364	OK	LINCOLN	Precinct 410004
-1365	VT	Windham	Wardsboro Town Office
+1365	VT	WINDHAM	Wardsboro Town Office
 1366	TN	LAWRENCE	302
 1367	OK	TULSA	Precinct 720005
 1368	GA	GWINNETT	146
@@ -1376,7 +1376,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 1373	VA	HAMPTON CITY	209 - Langley
 1374	OK	TULSA	Precinct 720087
 1375	TN	GREENE	20nv
-1376	VT	Grand Isle	Isle Lamotte Town Hall
+1376	VT	GRAND ISLE	Isle Lamotte Town Hall
 1377	GA	SCHLEY	1
 1378	GA	TROUP	16
 1379	AR	POLK	12 - Potter
@@ -1418,20 +1418,20 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 1415	OK	OKLAHOMA	Precinct 550081
 1416	GA	HENRY	38
 1417	GA	TWIGGS	Gi
-1418	VT	Rutland	Danby Municipal Bldg
+1418	VT	RUTLAND	Danby Municipal Bldg
 1419	VA	PRINCE WILLIAM	210 - Penn
 1420	GA	DEKALB	Gd
 1421	AR	LAWRENCE	28 - Thacker
 1422	MA	SUFFOLK	Boston W20 P17
 1423	TN	JACKSON	502
 1424	GA	WARE	304
-1425	VT	Chittenden	Bolton Smilie Mem Sch
+1425	VT	CHITTENDEN	Bolton Smilie Mem Sch
 1426	OK	ROGERS	Precinct 660010
 1427	MA	MIDDLESEX	Somerville W02 P02
 1428	AL	JACKSON	Precinct 0390
 1429	AR	POLK	01- Mena
 1430	GA	DEKALB	Wk
-1431	VT	Washington	Worcester Town Hall
+1431	VT	WASHINGTON	Worcester Town Hall
 1432	AR	BENTON	Precinct 49
 1433	AL	MADISON	Owens Cross Roads City Hall
 1434	TN	CUMBERLAND	Woo
@@ -1561,7 +1561,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 1558	AL	MOBILE	037 - Friendship Miss Baptist
 1559	AL	WASHINGTON	Precinct 0170 McIntosh
 1560	TN	COCKE	Cv
-1561	VT	Bennington	Peru Town Center
+1561	VT	BENNINGTON	Peru Town Center
 1562	GA	TROUP	15
 1563	VA	BOTETOURT	406 - Fincastle
 1564	MN	ST LOUIS	Duluth P-25
@@ -1579,7 +1579,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 1576	AL	HENRY	Precinct 0421
 1577	GA	GWINNETT	90
 1578	TN	MAURY	Mtpl
-1579	VT	Addison	Goshen Town Office
+1579	VT	ADDISON	Goshen Town Office
 1580	AR	ASHLEY	25 - Montrose City
 1581	VA	ISLE OF WIGHT	504 - Zuni
 1582	AL	MONTGOMERY	Precinct 05k
@@ -1688,7 +1688,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 1685	GA	HABERSHAM	7
 1686	MA	SUFFOLK	Chelsea W03 P02
 1687	GA	BEN HILL	2
-1688	VT	Chittenden	Burlington Bed
+1688	VT	CHITTENDEN	Burlington Bed
 1689	GA	BURKE	2
 1690	TN	CHESTER	2-Jan
 1691	VA	PATRICK	402 - Stuart Administration
@@ -1753,7 +1753,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 1750	GA	EARLY	Cs
 1751	AL	MONTGOMERY	Precinct 04a
 1752	VA	ARLINGTON	049 - Monroe
-1753	VT	Windham	Dover Town Hall
+1753	VT	WINDHAM	Dover Town Hall
 1754	TN	HAWKINS	12
 1755	MN	WINONA	Rollingstone Twp
 1756	AR	WASHINGTON	Prairie Twp 1
@@ -1845,7 +1845,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 1842	TN	SHELBY	2001
 1843	OK	BECKHAM	Precinct 050320
 1844	AR	WASHINGTON	Prairie Twp 5
-1845	VT	Windham	Jamaica Town Clerk's Office
+1845	VT	WINDHAM	Jamaica Town Clerk's Office
 1846	TN	WASHINGTON	22
 1847	GA	JONES	1
 1848	GA	COBB	Au1a
@@ -1867,7 +1867,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 1864	OK	COMANCHE	Precinct 160029
 1865	AL	PIKE	Precinct 21 - Courthouse
 1866	AR	FAULKNER	Newton
-1867	VT	Windham	Putney Central Sch Gym
+1867	VT	WINDHAM	Putney Central Sch Gym
 1868	VA	PORTSMOUTH CITY	026 - Twenty-Six
 1869	AL	WILCOX	Precinct 2001
 1870	VA	FAIRFAX	413 - Fairfield
@@ -1936,7 +1936,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 1933	VA	POWHATAN	301 - Bethesda
 1934	AL	TUSCALOOSA	Cottondale Methodist Church
 1935	OK	GRADY	Precinct 260039
-1936	VT	Rutland	Wallingford Town Hall
+1936	VT	RUTLAND	Wallingford Town Hall
 1937	VA	CAROLINE	102 - Sparta
 1938	VA	WISE	301 - Big Stone Gap
 1939	VA	NOTTOWAY	401 - Precinct 4-1
@@ -1946,7 +1946,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 1943	OK	OKLAHOMA	Precinct 550137
 1944	GA	BARROW	16
 1945	GA	LEE	4
-1946	VT	Windsor	Barnard Town Hall
+1946	VT	WINDSOR	Barnard Town Hall
 1947	VA	HENRICO	511 - Montrose
 1948	AL	JACKSON	Precinct 0240
 1949	GA	GWINNETT	139
@@ -1956,7 +1956,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 1953	VA	HAMPTON CITY	112 - Smith
 1954	VA	SMYTH	201 - Seven Mile Ford
 1955	AR	WASHINGTON	Fay 13
-1956	VT	Bennington	Pownal Pownal Ctr Fireh
+1956	VT	BENNINGTON	Pownal Pownal Ctr Fireh
 1957	AL	JEFFERSON	Precinct 2180
 1958	OK	COMANCHE	Precinct 160031
 1959	OK	OKMULGEE	Precinct 560032
@@ -2002,7 +2002,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 1999	OK	CANADIAN	Precinct 090204
 2000	TN	GIBSON	26
 2001	MA	NORFOLK	Medway 04
-2002	VT	Addison	Ferrisburgh Town Hall
+2002	VT	ADDISON	Ferrisburgh Town Hall
 2003	GA	COBB	So03
 2004	GA	FULTON	06h
 2005	GA	WORTH	10
@@ -2281,7 +2281,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2278	VA	VIRGINIA BEACH CITY	077 - Brookwood
 2279	TN	SHELBY	Cor03
 2280	MA	ESSEX	Beverly W03 P02
-2281	VT	Grand Isle	Grand Isle Town Ofc
+2281	VT	GRAND ISLE	Grand Isle Town Ofc
 2282	OK	CREEK	Precinct 190111
 2283	AR	OUACHITA	(LFB) LAFAYETTE B
 2284	AL	LAUDERDALE	Highland Baptist Church
@@ -2446,7 +2446,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2443	OK	ADAIR	Precinct 010012
 2444	VA	GLOUCESTER	401 - Hayes
 2445	GA	JENKINS	4
-2446	VT	Orleans	Newport City Municipal Bldg
+2446	VT	ORLEANS	Newport City Municipal Bldg
 2447	TN	CARTER	04si
 2448	OK	HASKELL	Precinct 310016
 2449	AR	PULASKI	Precinct 108
@@ -2457,7 +2457,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2454	AR	HOWARD	21 - County Line
 2455	MN	ISANTI	Bradford Twp
 2456	TN	SHELBY	Lak01
-2457	VT	Washington	Roxbury Town Office
+2457	VT	WASHINGTON	Roxbury Town Office
 2458	OK	TULSA	Precinct 720169
 2459	AL	BALDWIN	Precinct 33
 2460	OK	POTTAWATOMIE	Precinct 630042
@@ -2468,7 +2468,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2465	AL	BARBOUR	Precinct 0015a
 2466	MN	DODGE	Dodge Center P-1
 2467	AR	WHITE	80 - Searcy Ward 4 C
-2468	VT	Franklin	Richford Town Hall
+2468	VT	FRANKLIN	Richford Town Hall
 2469	GA	GREENE	1
 2470	GA	GORDON	973
 2471	VA	CHESTERFIELD	203 - Bird
@@ -2508,7 +2508,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2505	GA	OCONEE	1
 2506	VA	CAROLINE	402 - Carmel Church
 2507	TN	MONTGOMERY	21a
-2508	VT	Windsor	Norwich Tracy Hall
+2508	VT	WINDSOR	Norwich Tracy Hall
 2509	AL	SHELBY	Precinct 32
 2510	OK	SEQUOYAH	Precinct 680210
 2511	VA	FRANKLIN	504 - Gogginsville
@@ -2561,7 +2561,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2558	GA	LANIER	3
 2559	GA	THOMAS	115
 2560	MA	SUFFOLK	Boston W12 P06
-2561	VT	Windham	Whitingham Whitingham School
+2561	VT	WINDHAM	Whitingham Whitingham School
 2562	OK	COTTON	Precinct 170007
 2563	AL	CALHOUN	Precinct 1701
 2564	VA	POQUOSON CITY	003 - Western
@@ -2575,7 +2575,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2572	MA	WORCESTER	West Boylston 02
 2573	MA	HAMPDEN	Springfield W04h
 2574	OK	TULSA	Precinct 720173
-2575	VT	Rutland	Mount Holly Town Office
+2575	VT	RUTLAND	Mount Holly Town Office
 2576	MA	SUFFOLK	Boston W18 P16
 2577	MN	ISANTI	Stanford Twp
 2578	VA	LANCASTER	101 - Precinct 1-1
@@ -2585,11 +2585,11 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2582	MA	ESSEX	Peabody W02 P03
 2583	AR	ASHLEY	15 - Mt. Zion
 2584	AL	WALKER	Precinct 1301
-2585	VT	Lamoille	Belvidere Town Clerks Off
+2585	VT	LAMOILLE	Belvidere Town Clerks Off
 2586	VA	GOOCHLAND	501 - Manakin
 2587	GA	PAULDING	11c
 2588	GA	CHATHAM	2-06c
-2589	VT	Addison	Granville Town Hall
+2589	VT	ADDISON	Granville Town Hall
 2590	OK	TULSA	Precinct 720086
 2591	VA	VIRGINIA BEACH CITY	090 - Lake Joyce
 2592	OK	TULSA	Precinct 720753
@@ -2649,7 +2649,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2646	AR	VAN BUREN	11 Formosa
 2647	VA	CLARKE	101 - Russell
 2648	GA	COLUMBIA	26
-2649	VT	Rutland	Rutland City Godnick Adlt Ctr
+2649	VT	RUTLAND	Rutland City Godnick Adlt Ctr
 2650	OK	MCINTOSH	Precinct 460316
 2651	GA	ELBERT	201
 2652	TN	SHELBY	7104
@@ -2659,7 +2659,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2656	VA	SUFFOLK CITY	504 - Lake Cohoon
 2657	AL	JEFFERSON	Precinct 3330
 2658	GA	BURKE	6
-2659	VT	Franklin	Saint Albans City City Hall
+2659	VT	FRANKLIN	Saint Albans City City Hall
 2660	AL	LAUDERDALE	Greenhill Senior Citizens Bldg
 2661	GA	CRAWFORD	01a
 2662	TN	SHELBY	Ros14
@@ -2698,7 +2698,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2695	MA	WORCESTER	Worcester W03 P02
 2696	OK	CRAIG	Precinct 180820
 2697	VA	ROANOKE	504 - Ogden
-2698	VT	Orleans	Charleston Town Office
+2698	VT	ORLEANS	Charleston Town Office
 2699	OK	OKLAHOMA	Precinct 550191
 2700	AL	LAUDERDALE	Cloverdale Communtiy Center
 2701	GA	TIFT	7
@@ -2791,7 +2791,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2788	GA	FAYETTE	20
 2789	AL	JEFFERSON	Precinct 2190
 2790	AR	PULASKI	Precinct 125
-2791	VT	Windsor	Plymouth Municipal Bldg
+2791	VT	WINDSOR	Plymouth Municipal Bldg
 2792	AR	BENTON	Precinct 31
 2793	GA	DEKALB	Fl
 2794	MA	BRISTOL	Rehoboth 01
@@ -2841,7 +2841,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2838	AL	JEFFERSON	Precinct 1210
 2839	AR	OUACHITA	Camden Ward 05
 2840	OK	TULSA	Precinct 720123
-2841	VT	Bennington	Searsburg Town Office
+2841	VT	BENNINGTON	Searsburg Town Office
 2842	AR	MONTGOMERY	13 - Oden - Out
 2843	GA	COLQUITT	17
 2844	AL	RUSSELL	Precinct 0706
@@ -2894,7 +2894,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2891	TN	MADISON	16
 2892	MA	PLYMOUTH	Hanson 02
 2893	MA	BERKSHIRE	Pittsfield W01b
-2894	VT	Washington	Moretown Town Hall
+2894	VT	WASHINGTON	Moretown Town Hall
 2895	TN	RUTHERFORD	191
 2896	AL	LAWRENCE	17-1 Chaleybeate Fire Dept
 2897	TN	BLOUNT	11
@@ -2912,12 +2912,12 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2909	GA	WHITE	31
 2910	TN	SULLIVAN	06a
 2911	VA	VIRGINIA BEACH CITY	018 - Thoroughgood
-2912	VT	Chittenden	Burlington St Marks
+2912	VT	CHITTENDEN	Burlington St Marks
 2913	AL	JEFFERSON	Precinct 3110
 2914	AL	RUSSELL	Precinct 0101
 2915	AL	ELMORE	Precinct 0029
 2916	OK	GARVIN	Precinct 250001
-2917	VT	Windsor	Springfield Riverside Ms Gym
+2917	VT	WINDSOR	Springfield Riverside Ms Gym
 2918	OK	WOODWARD	Precinct 770202
 2919	AL	CHOCTAW	Precinct 0043 - Toomey
 2920	CO	LARIMER	2145335326
@@ -2933,7 +2933,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2930	MA	ESSEX	Lynn W05 P01
 2931	MA	ESSEX	Newburyport W02 P01
 2932	MA	MIDDLESEX	Watertown 06
-2933	VT	Addison	Monkton Fire Station
+2933	VT	ADDISON	Monkton Fire Station
 2934	AL	CALHOUN	Precinct 1506
 2935	AR	SALINE	16
 2936	TN	PERRY	401
@@ -2989,7 +2989,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2986	VA	LOUDOUN	701 - Sully
 2987	OK	PITTSBURG	Precinct 610021
 2988	AL	LEE	Beat 10
-2989	VT	Orleans	Albany Town Hall
+2989	VT	ORLEANS	Albany Town Hall
 2990	TN	CARROLL	16
 2991	TN	KNOX	74
 2992	AR	POLK	13 - Hatfield
@@ -3022,7 +3022,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 3019	GA	FULTON	06j
 3020	VA	NORTHAMPTON	201 - Precinct 2-1
 3021	GA	DOUGLAS	1258
-3022	VT	Addison	Panton Town Offices
+3022	VT	ADDISON	Panton Town Offices
 3023	TN	PUTNAM	08e
 3024	AL	CHOCTAW	Precinct 0121 -Pushmataha H-65
 3025	VA	LOUDOUN	710 - Sterling
@@ -3142,7 +3142,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 3139	AR	LEE	Spring Creek
 3140	GA	MCDUFFIE	136
 3141	TN	GRAINGER	D4p2
-3142	VT	Washington	Middlesex Town Hall
+3142	VT	WASHINGTON	Middlesex Town Hall
 3143	VA	TAZEWELL	214 - Thompson Valley
 3144	VA	FAIRFAX	806 - Sydenstricker
 3145	MA	MIDDLESEX	Everett W05 P01
@@ -3203,7 +3203,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 3200	OK	OTTAWA	Precinct 580031
 3201	AL	CALHOUN	Precinct 1510
 3202	VA	PRINCE EDWARD	401 - Hampden
-3203	VT	Addison	Lincoln Burnham Hall
+3203	VT	ADDISON	Lincoln Burnham Hall
 3204	GA	MCINTOSH	1480
 3205	AL	JEFFERSON	Precinct 4040
 3206	MA	SUFFOLK	Boston W06 P04
@@ -3215,12 +3215,12 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 3212	AR	SEBASTIAN	Precinct 9-J
 3213	TN	UNICOI	Is
 3214	TN	GRUNDY	200
-3215	VT	Caledonia	Lyndon Mun Off Bldg
+3215	VT	CALEDONIA	Lyndon Mun Off Bldg
 3216	AR	GREENE	15 - St. Francis
 3217	AR	PULASKI	Precinct 022
 3218	MA	WORCESTER	Upton 01
 3219	VA	WESTMORELAND	301 - Precinct 3-1
-3220	VT	Caledonia	Sutton Sutton School
+3220	VT	CALEDONIA	Sutton Sutton School
 3221	VA	ARLINGTON	013 - Glen Carlyn
 3222	AR	SEBASTIAN	Precinct 4-F
 3223	VA	NELSON	201 - Lovingston
@@ -3284,11 +3284,11 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 3281	OK	SEQUOYAH	Precinct 680104
 3282	MA	WORCESTER	Uxbridge 02
 3283	AL	JEFFERSON	Precinct 5190
-3284	VT	Chittenden	Hinesburg Town Hall
+3284	VT	CHITTENDEN	Hinesburg Town Hall
 3285	OK	DELAWARE	Precinct 210001
 3286	GA	JOHNSON	55
 3287	TN	HAMILTON	188
-3288	VT	Rutland	West Rutland Town Hall
+3288	VT	RUTLAND	West Rutland Town Hall
 3289	MA	ESSEX	Haverhill W01 P02
 3290	VA	FAIRFAX	218 - Vienna #6
 3291	VA	ROCKINGHAM	505 - Stony Run
@@ -3348,11 +3348,11 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 3345	GA	RICHMOND	208
 3346	VA	BRUNSWICK	501 - Totaro
 3347	GA	CHEROKEE	24
-3348	VT	Rutland	Rutland City Cal Bib Church
+3348	VT	RUTLAND	Rutland City Cal Bib Church
 3349	GA	ELBERT	315
 3350	AR	OUACHITA	(JF) JEFFERSON
 3351	AR	RANDOLPH	15 - Richardson
-3352	VT	Windham	Newfane Newbrook Firehouse
+3352	VT	WINDHAM	Newfane Newbrook Firehouse
 3353	CO	ARAPAHOE	6273703243
 3354	OK	KINGFISHER	Precinct 370304
 3355	AL	TALLAPOOSA	Precinct 0101
@@ -3426,13 +3426,13 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 3423	AR	PULASKI	Precinct 086
 3424	TN	MARSHALL	401
 3425	VA	FLOYD	401 - Burks Fork
-3426	VT	Orleans	Barton Barton Mem Bldg
+3426	VT	ORLEANS	Barton Barton Mem Bldg
 3427	VA	PORTSMOUTH CITY	005 - Five
 3428	AL	TUSCALOOSA	Duncanville Middle School
 3429	GA	JOHNSON	1201
 3430	VA	CULPEPER	704 - Richardsville
 3431	GA	DEKALB	Sp
-3432	VT	Addison	Weybridge Town Clerk Ofc
+3432	VT	ADDISON	Weybridge Town Clerk Ofc
 3433	MA	BRISTOL	Attleboro W03a
 3434	VA	PORTSMOUTH CITY	036 - Thirty-Six
 3435	AR	CLEBURNE	34 - Wilburn
@@ -3526,7 +3526,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 3523	GA	FULTON	08e
 3524	MA	BRISTOL	Dartmouth 08
 3525	VA	GLOUCESTER	501 - Achilles
-3526	VT	Rutland	Proctor High School Gym
+3526	VT	RUTLAND	Proctor High School Gym
 3527	GA	UNION	10
 3528	AL	RANDOLPH	Precinct 06
 3529	AL	FAYETTE	0801/Collins/Mt Vernon
@@ -3568,7 +3568,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 3565	OK	OSAGE	Precinct 570303
 3566	OK	OKLAHOMA	Precinct 550096
 3567	GA	CLARKE	05d
-3568	VT	Bennington	Landgrove Town Hall
+3568	VT	BENNINGTON	Landgrove Town Hall
 3569	GA	FULTON	Ss02b
 3570	TN	WAYNE	303
 3571	OK	NOWATA	Precinct 530203
@@ -3608,7 +3608,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 3605	GA	CRISP	Arabi
 3606	GA	GRADY	R
 3607	VA	VIRGINIA BEACH CITY	097 - Indian River
-3608	VT	Essex	Brunswick Town Office Bldg
+3608	VT	ESSEX	Brunswick Town Office Bldg
 3609	OK	MCCLAIN	Precinct 440010
 3610	MA	HAMPSHIRE	Northampton W03a
 3611	MA	MIDDLESEX	Framingham 13
@@ -3642,7 +3642,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 3639	VA	FAIRFAX	427 - Island Creek
 3640	AR	MARION	Precinct 09
 3641	MA	SUFFOLK	Boston W03 P02
-3642	VT	Essex	Victory Town Hall
+3642	VT	ESSEX	Victory Town Hall
 3643	OK	PITTSBURG	Precinct 610011
 3644	OK	ROGERS	Precinct 660018
 3645	MN	ST LOUIS	Duluth P-18
@@ -3677,12 +3677,12 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 3674	TN	JACKSON	202
 3675	OK	COMANCHE	Precinct 160017
 3676	GA	FULTON	Rw08
-3677	VT	Windsor	Reading Robinson Hall
+3677	VT	WINDSOR	Reading Robinson Hall
 3678	OK	PONTOTOC	Precinct 620031
 3679	OK	CANADIAN	Precinct 090102
 3680	VA	RICHMOND CITY	104 - One Hundred Four
 3681	MA	NORFOLK	Braintree 04b
-3682	VT	Essex	Lemington Town Hall
+3682	VT	ESSEX	Lemington Town Hall
 3683	VA	FAIRFAX	303 - Churchill
 3684	VA	SCOTT	203 - Hiltons
 3685	AL	BLOUNT	Precinct 0601
@@ -3720,7 +3720,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 3717	AR	HEMPSTEAD	18 Patmos
 3718	GA	IRWIN	1421
 3719	TN	DYER	8
-3720	VT	Washington	Duxbury Crossett Brk Sch
+3720	VT	WASHINGTON	Duxbury Crossett Brk Sch
 3721	TN	BEDFORD	701
 3722	AL	BLOUNT	Precinct 2101
 3723	AL	MONROE	Precinct 0300 Mon Fire Station
@@ -3881,7 +3881,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 3878	AL	JACKSON	Precinct 0180
 3879	GA	DOOLY	5
 3880	AL	MONTGOMERY	Precinct 05h
-3881	VT	Windsor	Andover Town Hall
+3881	VT	WINDSOR	Andover Town Hall
 3882	GA	TELFAIR	Ja
 3883	TN	BRADLEY	601
 3884	TN	BLOUNT	5
@@ -3932,7 +3932,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 3929	VA	ROANOKE CITY	018 - Virginia Heights-Norwich
 3930	TN	HAMILTON	179
 3931	TN	KNOX	48
-3932	VT	Washington	Warren Elementary School
+3932	VT	WASHINGTON	Warren Elementary School
 3933	AR	HOT SPRING	Big Creek
 3934	AL	MADISON	Plainview Church Of Christ
 3935	AL	MORGAN	Macedonia C P Church
@@ -3974,7 +3974,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 3971	AL	LAWRENCE	6-1 McCarley Center
 3972	AR	PULASKI	Precinct 019
 3973	GA	COWETA	10
-3974	VT	Caledonia	Danville Town Hall
+3974	VT	CALEDONIA	Danville Town Hall
 3975	OK	CREEK	Precinct 190121
 3976	GA	COBB	Bk01
 3977	TN	COFFEE	1001
@@ -4106,7 +4106,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4103	VA	SCOTT	401 - Gate City
 4104	VA	COVINGTON CITY	401 - Precinct 4-1
 4105	OK	CLEVELAND	Precinct 140005
-4106	VT	Lamoille	Johnson Municipal Bldg
+4106	VT	LAMOILLE	Johnson Municipal Bldg
 4107	TN	HAWKINS	14
 4108	AL	BIBB	Precinct 0500
 4109	VA	FAIRFAX	910 - London Towne
@@ -4119,7 +4119,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4116	VA	RAPPAHANNOCK	501 - Chester Gap
 4117	AR	LONOKE	29 - Indian Bayou Twp
 4118	MN	DAKOTA	Eagan P-10
-4119	VT	Caledonia	Barnet Town Hall
+4119	VT	CALEDONIA	Barnet Town Hall
 4120	AL	LAWRENCE	14-1 Pleasant Grve (Woodard)
 4121	GA	CHEROKEE	44
 4122	MA	WORCESTER	Worcester W03 P04
@@ -4167,13 +4167,13 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4164	VA	MONTGOMERY	204 - Precinct B-4
 4165	MN	OLMSTED	Rochester W3 P2
 4166	GA	COBB	Di01
-4167	VT	Orange	Bradford Academy Audit
+4167	VT	ORANGE	Bradford Academy Audit
 4168	VA	CHESAPEAKE CITY	054 - Pughsville
 4169	OK	OKLAHOMA	Precinct 550134
 4170	MA	NORFOLK	Milton 04
 4171	AL	HOUSTON	St Johns Park 271
 4172	GA	CARROLL	1483
-4173	VT	Caledonia	Saint Johnsbury Lively Center
+4173	VT	CALEDONIA	Saint Johnsbury Lively Center
 4174	AR	SCOTT	02 - Blansett
 4175	TN	HAWKINS	26
 4176	AR	HOT SPRING	Brown Springs
@@ -4203,7 +4203,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4200	TN	GILES	02b
 4201	AR	PRAIRIE	Hickory Plains
 4202	GA	MUSCOGEE	127
-4203	VT	Washington	Fayston Municipal Hall
+4203	VT	WASHINGTON	Fayston Municipal Hall
 4204	AR	HOT SPRING	Midway City 2
 4205	OK	CADDO	Precinct 080812
 4206	GA	BUTTS	Jenk
@@ -4319,7 +4319,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4316	AR	CRAIGHEAD	46
 4317	TN	JEFFERSON	701
 4318	AL	BALDWIN	Precinct 29
-4319	VT	Windsor	Royalton S Royal Hs Gym
+4319	VT	WINDSOR	Royalton S Royal Hs Gym
 4320	AR	MILLER	Bright Star
 4321	CO	BOULDER	2163307102
 4322	MA	PLYMOUTH	Brockton W03c
@@ -4341,7 +4341,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4338	AR	WOODRUFF	Morton - 14
 4339	MA	MIDDLESEX	Lowell W09 P02
 4340	TN	DAVIDSON	301
-4341	VT	Chittenden	Burlington Memorial Aud
+4341	VT	CHITTENDEN	Burlington Memorial Aud
 4342	AL	CULLMAN	Precinct 0031
 4343	VA	MIDDLESEX	301 - Waterview
 4344	AL	LAWRENCE	36-1 Pine Grove Church(Faith)
@@ -4390,7 +4390,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4387	GA	FULTON	04t
 4388	GA	WARE	400
 4389	AR	BRADLEY	12 - Jersey
-4390	VT	Orange	Williamstown High School
+4390	VT	ORANGE	Williamstown High School
 4391	MA	BRISTOL	Somerset 05
 4392	TN	WILLIAMSON	91
 4393	AR	CRAWFORD	Rudy
@@ -4408,7 +4408,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4405	GA	COBB	Ca01
 4406	TN	RUTHERFORD	84
 4407	VA	VIRGINIA BEACH CITY	046 - Green Run
-4408	VT	Chittenden	Underhill Town Hall
+4408	VT	CHITTENDEN	Underhill Town Hall
 4409	AR	PULASKI	Precinct 064
 4410	MA	NORFOLK	Stoughton 07
 4411	VA	VIRGINIA BEACH CITY	089 - Lake Christopher
@@ -4433,14 +4433,14 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4430	GA	JASPER	290
 4431	VA	FAIRFAX	305 - El Nido
 4432	VA	RICHMOND CITY	308 - Three Hundred Eight
-4433	VT	Windsor	Windsor Municipal Bldg
+4433	VT	WINDSOR	Windsor Municipal Bldg
 4434	GA	FULTON	Pa01
 4435	VA	BLAND	102 - Ceres
 4436	GA	TALBOT	8
 4437	OK	OKLAHOMA	Precinct 550157
 4438	MN	WRIGHT	Clearwater
 4439	AL	GENEVA	Revels Store Voting House
-4440	VT	Orleans	Westfield Town Office
+4440	VT	ORLEANS	Westfield Town Office
 4441	OK	OKLAHOMA	Precinct 550198
 4442	GA	EFFINGHAM	01b
 4443	VA	MECKLENBURG	201 - Boydton
@@ -4495,7 +4495,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4492	AR	BAXTER	3-Mar
 4493	AR	MILLER	Trice
 4494	AR	CLEBURNE	19 - Heber Springs Outside
-4495	VT	Addison	Addison Town Clerk Ofc
+4495	VT	ADDISON	Addison Town Clerk Ofc
 4496	MA	WORCESTER	Westborough 03
 4497	VA	ROCKINGHAM	303 - Melrose
 4498	OK	ADAIR	Precinct 010007
@@ -4528,7 +4528,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4525	GA	CLAYTON	Fp4
 4526	VA	CAROLINE	601 - Chilesburg
 4527	VA	FAIRFAX	202 - Flint Hill
-4528	VT	Windsor	Weathersfield Martin Mem Hall
+4528	VT	WINDSOR	Weathersfield Martin Mem Hall
 4529	OK	OSAGE	Precinct 570205
 4530	VA	FAIRFAX	134 - University
 4531	AR	WASHINGTON	Marrs Hill
@@ -4605,7 +4605,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4602	OK	CLEVELAND	Precinct 140026
 4603	MN	ITASCA	Bigfork
 4604	MN	HENNEPIN	Minneapolis W-5 P-08
-4605	VT	Orange	Chelsea Town Hall
+4605	VT	ORANGE	Chelsea Town Hall
 4606	GA	HENRY	48
 4607	MA	SUFFOLK	Winthrop 01
 4608	TN	MCNAIRY	20
@@ -4648,7 +4648,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4645	GA	EVANS	11
 4646	VA	HARRISONBURG CITY	105 - South East Central
 4647	MA	WORCESTER	Barre 02
-4648	VT	Orleans	Newport Town Town Clerk's Off
+4648	VT	ORLEANS	Newport Town Town Clerk's Off
 4649	TN	KNOX	058s
 4650	TN	SHELBY	4103
 4651	OK	CUSTER	Precinct 200012
@@ -4695,7 +4695,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4692	OK	TULSA	Precinct 720410
 4693	MA	NORFOLK	Brookline 01
 4694	AR	JEFFERSON	205
-4695	VT	Rutland	Ira Town Hall
+4695	VT	RUTLAND	Ira Town Hall
 4696	VA	ROANOKE	204 - Botetourt Springs
 4697	OK	OTTAWA	Precinct 580009
 4698	GA	COLUMBIA	111
@@ -4706,7 +4706,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4703	AL	WALKER	Precinct 1501
 4704	OK	DEWEY	Precinct 220008
 4705	MA	MIDDLESEX	Waltham W01 P02
-4706	VT	Windham	Wilmington High School Gym
+4706	VT	WINDHAM	Wilmington High School Gym
 4707	GA	ROCKDALE	Hc
 4708	TN	RUTHERFORD	92
 4709	MA	MIDDLESEX	Malden W06 P01
@@ -4758,7 +4758,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4755	MA	BARNSTABLE	Bourne 01
 4756	AL	BULLOCK	Precinct 0062
 4757	VA	VIRGINIA BEACH CITY	055 - Magic Hollow
-4758	VT	Grand Isle	South Hero Town Office
+4758	VT	GRAND ISLE	South Hero Town Office
 4759	MA	ESSEX	Salem W01 P02
 4760	AL	CLARKE	Precinct 0074
 4761	VA	PRINCE WILLIAM	602 - Beville
@@ -4807,7 +4807,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4804	VA	MARTINSVILLE CITY	006 - Precinct #6
 4805	TN	HARDIN	21
 4806	VA	ALEXANDRIA CITY	110 - Charles Houston Center
-4807	VT	Caledonia	Groton Community Hall
+4807	VT	CALEDONIA	Groton Community Hall
 4808	MA	MIDDLESEX	Arlington 02
 4809	GA	CHARLTON	03b
 4810	MA	MIDDLESEX	Natick 10
@@ -4828,7 +4828,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4825	AL	CHEROKEE	Precinct 0101
 4826	GA	DEKALB	Ch
 4827	OK	OKLAHOMA	Precinct 550148
-4828	VT	Windsor	Hartland Damon Hall
+4828	VT	WINDSOR	Hartland Damon Hall
 4829	GA	GRADY	C05
 4830	AL	CLARKE	Precinct 0131
 4831	TN	POLK	4
@@ -4863,7 +4863,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4860	MA	SUFFOLK	Boston W18 P22
 4861	GA	DECATUR	1325
 4862	MA	BARNSTABLE	Bourne 02
-4863	VT	Franklin	Swanton Vill Mun Cmplx
+4863	VT	FRANKLIN	Swanton Vill Mun Cmplx
 4864	MA	BRISTOL	Fall River W02a
 4865	AR	LOGAN	144 - Sugar Creek
 4866	OK	ROGERS	Precinct 660003
@@ -4871,7 +4871,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4868	VA	SUSSEX	501 - Henry
 4869	VA	CULPEPER	601 - Mitchells
 4870	TN	ANDERSON	Mrl
-4871	VT	Essex	Guildhall Town Office
+4871	VT	ESSEX	Guildhall Town Office
 4872	MA	WORCESTER	Shrewsbury 08
 4873	AL	MARSHALL	Precinct 0211
 4874	OK	TULSA	Precinct 720019
@@ -4927,7 +4927,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4924	VA	HAMPTON CITY	216 - Sandy Bottom
 4925	GA	PUTNAM	104
 4926	MA	NORFOLK	Braintree 05b
-4927	VT	Windsor	West Windsor Story Mem Hall
+4927	VT	WINDSOR	West Windsor Story Mem Hall
 4928	AR	MONROE	16 - Cypress Ridge
 4929	OK	COMANCHE	Precinct 160032
 4930	VA	FAIRFAX	918 - Centreville
@@ -5080,7 +5080,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 5077	GA	MUSCOGEE	111
 5078	VA	CHESTERFIELD	513 - Beaufont
 5079	CO	LARIMER	2145235226
-5080	VT	Rutland	Rutland Town Elementary Sch
+5080	VT	RUTLAND	Rutland Town Elementary Sch
 5081	AR	SALINE	17
 5082	MN	HENNEPIN	Minneapolis W-1 P-10
 5083	AL	MONROE	Precinct 1001 Beatrice Town Ha
@@ -5303,12 +5303,12 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 5300	AR	LAWRENCE	09 - Campbell #1
 5301	TN	JACKSON	102
 5302	OK	CLEVELAND	Precinct 140016
-5303	VT	Orleans	Craftsbury Town Hall
+5303	VT	ORLEANS	Craftsbury Town Hall
 5304	OK	ADAIR	Precinct 010001
 5305	TN	WASHINGTON	36
 5306	VA	VIRGINIA BEACH CITY	020 - Bayside
 5307	GA	LAURENS	22
-5308	VT	Orleans	Greensboro Town Hall
+5308	VT	ORLEANS	Greensboro Town Hall
 5309	MA	PLYMOUTH	Brockton W07a
 5310	MN	OTTER TAIL	Everts Twp
 5311	OK	TEXAS	Precinct 700201
@@ -5481,17 +5481,17 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 5478	MN	ST LOUIS	Meadowlands Twp
 5479	AL	MADISON	Harold Harbin Gym
 5480	GA	GWINNETT	23
-5481	VT	Bennington	Sunderland Elementary Sch
+5481	VT	BENNINGTON	Sunderland Elementary Sch
 5482	TN	SUMNER	303
 5483	VA	AMELIA	201 - Number Two
 5484	TN	RUTHERFORD	72
 5485	TN	FAYETTE	14
-5486	VT	Washington	Berlin Municipal Bldg
+5486	VT	WASHINGTON	Berlin Municipal Bldg
 5487	AR	SALINE	7
 5488	MA	NORFOLK	Braintree 06a
 5489	TN	FRANKLIN	201
 5490	AL	BULLOCK	Precinct 0070
-5491	VT	Chittenden	Colchester High Sch
+5491	VT	CHITTENDEN	Colchester High Sch
 5492	MN	BECKER	Detroit Lakes W3 P1
 5493	VA	VIRGINIA BEACH CITY	033 - Capps Shop
 5494	TN	DAVIDSON	302
@@ -5523,7 +5523,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 5520	MA	BARNSTABLE	Falmouth 08
 5521	VA	ROANOKE CITY	009 - Highland
 5522	AR	PULASKI	Precinct 048
-5523	VT	Orange	Braintree Town Hall
+5523	VT	ORANGE	Braintree Town Hall
 5524	GA	RABUN	Rabun
 5525	AR	CONWAY	004 - St Vincent
 5526	VA	FAIRFAX	325 - Hutchison
@@ -5589,7 +5589,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 5586	TN	DEKALB	3-Feb
 5587	AL	COVINGTON	Precinct 0100
 5588	AL	BUTLER	Precinct 0171
-5589	VT	Windham	Halifax Elementary Sch
+5589	VT	WINDHAM	Halifax Elementary Sch
 5590	AL	MARSHALL	Precinct 0111
 5591	TN	HAYWOOD	0009b
 5592	GA	LUMPKIN	Se
@@ -5614,12 +5614,12 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 5611	OK	PITTSBURG	Precinct 610030
 5612	AR	JEFFERSON	309
 5613	AR	PRAIRIE	Center
-5614	VT	Rutland	Pittsford Municipal Off
+5614	VT	RUTLAND	Pittsford Municipal Off
 5615	AL	TUSCALOOSA	Big Sandy Baptist
 5616	MN	ST LOUIS	Duluth P-16
 5617	MA	MIDDLESEX	Somerville W07 P01
 5618	CO	EL PASO	5101621122
-5619	VT	Orleans	Lowell Town Clerk's Off
+5619	VT	ORLEANS	Lowell Town Clerk's Off
 5620	MA	BRISTOL	Fairhaven 04
 5621	TN	ROANE	Cc
 5622	GA	SPALDING	17
@@ -5640,7 +5640,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 5637	MN	DAKOTA	Eagan P-5a
 5638	GA	MURRAY	872
 5639	MA	BRISTOL	Westport D
-5640	VT	Orange	West Fairlee Bean Hall
+5640	VT	ORANGE	West Fairlee Bean Hall
 5641	VA	CHESTERFIELD	313 - Woolridge
 5642	MA	HAMPDEN	Westfield W04b
 5643	AL	ESCAMBIA	Precinct 0180
@@ -5743,7 +5743,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 5740	AL	CALHOUN	Precinct 1101
 5741	TN	MACON	4
 5742	TN	COCKE	Dr
-5743	VT	Chittenden	Burlington Master Christi
+5743	VT	CHITTENDEN	Burlington Master Christi
 5744	VA	BATH	301 - Fairview
 5745	GA	EFFINGHAM	05a
 5746	GA	CHEROKEE	7
@@ -5875,7 +5875,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 5872	AL	GENEVA	Geneva National Guard Armory
 5873	AR	WASHINGTON	Fay 42
 5874	AL	JACKSON	Precinct 0310
-5875	VT	Franklin	Berkshire Town Hall
+5875	VT	FRANKLIN	Berkshire Town Hall
 5876	AL	SHELBY	Precinct 02
 5877	MA	NORFOLK	Norwood 07
 5878	GA	CLAYTON	Jb01
@@ -5895,7 +5895,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 5892	VA	CHESAPEAKE CITY	014 - Grassfield
 5893	AR	SEBASTIAN	Precinct 9-3c
 5894	AR	PRAIRIE	White River Ward 3
-5895	VT	Windham	Rockingham Masonic Temple
+5895	VT	WINDHAM	Rockingham Masonic Temple
 5896	AR	BENTON	Precinct 09
 5897	TN	LAKE	1
 5898	GA	BALDWIN	Cty6
@@ -6006,7 +6006,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6003	TN	KNOX	89
 6004	GA	CARROLL	714a6
 6005	TN	ANDERSON	Nor
-6006	VT	Orange	Tunbridge Town Hall
+6006	VT	ORANGE	Tunbridge Town Hall
 6007	AR	SCOTT	05 - Cedar Creek
 6008	OK	TULSA	Precinct 720553
 6009	OK	KIOWA	Precinct 380010
@@ -6023,12 +6023,12 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6020	VA	VIRGINIA BEACH CITY	019 - Lake Smith
 6021	AR	FAULKNER	Pine Mt
 6022	AL	AUTAUGA	Precinct 0150
-6023	VT	Franklin	Bakersfield Town Hall
+6023	VT	FRANKLIN	Bakersfield Town Hall
 6024	GA	DEKALB	Db
 6025	AL	WINSTON	Precinct 0005 Lynn
 6026	MN	CHISAGO	Nessel Twp
 6027	AR	ST FRANCIS	01 - Hughes Ward 1
-6028	VT	Orange	Topsham Waits River Sch
+6028	VT	ORANGE	Topsham Waits River Sch
 6029	OK	WASHINGTON	Precinct 740054
 6030	GA	GWINNETT	30
 6031	GA	CHATHAM	5-11c
@@ -6103,10 +6103,10 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6100	OK	LINCOLN	Precinct 410022
 6101	MN	KANDIYOHI	Raymond
 6102	MA	SUFFOLK	Boston W22 P08
-6103	VT	Rutland	Pittsfield Town Hall
+6103	VT	RUTLAND	Pittsfield Town Hall
 6104	AL	AUTAUGA	Precinct 0050
 6105	MN	OLMSTED	Rochester W5 P8
-6106	VT	Rutland	Wells Town Office
+6106	VT	RUTLAND	Wells Town Office
 6107	VA	CUMBERLAND	101 - Precinct 1
 6108	AL	RANDOLPH	Precinct 09
 6109	TN	DYER	15
@@ -6203,7 +6203,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6200	TN	WILLIAMSON	62
 6201	TN	RUTHERFORD	43
 6202	OK	OTTAWA	Precinct 580007
-6203	VT	Windham	Westminster Westminster Inst
+6203	VT	WINDHAM	Westminster Westminster Inst
 6204	MN	FILLMORE	Mabel
 6205	GA	FULTON	Rw10
 6206	TN	HARDEMAN	3
@@ -6372,7 +6372,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6369	VA	CHARLOTTE	501 - Cullen
 6370	VA	PITTSYLVANIA	308 - Mt Airy
 6371	AL	PIKE	Precinct 15 - Tennille Meth Ch
-6372	VT	Chittenden	Richmond Camel Hump Sch
+6372	VT	CHITTENDEN	Richmond Camel Hump Sch
 6373	VA	YORK	502 - Bethel
 6374	AL	CHEROKEE	Precinct 0071
 6375	AL	LIMESTONE	Clements Baptist Church
@@ -6388,7 +6388,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6385	GA	FULTON	SC30B
 6386	GA	FLOYD	110
 6387	AL	MONTGOMERY	Precinct 02g
-6388	VT	Addison	Orwell Town Hall
+6388	VT	ADDISON	Orwell Town Hall
 6389	VA	BATH	401 - Millboro
 6390	OK	OKLAHOMA	Precinct 550232
 6391	VA	CHARLOTTE	503 - Red House
@@ -6477,7 +6477,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6474	MN	ISANTI	North Branch Twp
 6475	OK	TULSA	Precinct 720118
 6476	GA	GRADY	W
-6477	VT	Bennington	Sandgate Town Hall
+6477	VT	BENNINGTON	Sandgate Town Hall
 6478	MA	HAMPDEN	Holyoke W02b
 6479	MA	SUFFOLK	Boston W14 P09
 6480	MN	DAKOTA	South St Paul P-3
@@ -6490,7 +6490,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6487	VA	GRAYSON	403 - Oldtown
 6488	AL	FAYETTE	0901/Berry Civic Ctr
 6489	TN	HENDERSON	12
-6490	VT	Chittenden	Westford Westford School
+6490	VT	CHITTENDEN	Westford Westford School
 6491	MA	WORCESTER	Southbridge 04
 6492	GA	FULTON	02j
 6493	GA	COLUMBIA	130
@@ -6621,8 +6621,8 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6618	AR	WOODRUFF	Gregory - 06
 6619	AR	ST FRANCIS	18 - Parrott
 6620	MN	HENNEPIN	Minneapolis W-6 P-04
-6621	VT	Washington	Marshfield Sch House Common
-6622	VT	Bennington	Winhall Town Hall
+6621	VT	WASHINGTON	Marshfield Sch House Common
+6622	VT	BENNINGTON	Winhall Town Hall
 6623	AL	JACKSON	Precinct 0340
 6624	MN	OLMSTED	Rochester W2 P1
 6625	GA	RICHMOND	801b
@@ -6694,7 +6694,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6691	AL	WALKER	Precinct 0101
 6692	GA	HALL	16
 6693	AL	SHELBY	Precinct 11
-6694	VT	Chittenden	Milton Fire Station
+6694	VT	CHITTENDEN	Milton Fire Station
 6695	VA	ALEXANDRIA CITY	303 - Charles E Beatley Library
 6696	GA	CLARKE	08c
 6697	AL	GENEVA	Bellwood Community Center
@@ -6769,7 +6769,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6766	OK	LATIMER	Precinct 390006
 6767	MA	BARNSTABLE	Bourne 04
 6768	MN	SHERBURNE	St Cloud W2 P7
-6769	VT	Franklin	Georgia Elem & Middl Sch
+6769	VT	FRANKLIN	Georgia Elem & Middl Sch
 6770	TN	HARDEMAN	2
 6771	TN	WASHINGTON	1
 6772	GA	HENRY	50
@@ -6784,11 +6784,11 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6781	AR	SALINE	23
 6782	AL	MARSHALL	Precinct 0181
 6783	VA	VIRGINIA BEACH CITY	087 - Hillcrest
-6784	VT	Washington	Waterbury Thatcher Brook School
+6784	VT	WASHINGTON	Waterbury Thatcher Brook School
 6785	TN	WILSON	1-Nov
 6786	TN	OBION	2-Jul
 6787	TN	BLOUNT	9
-6788	VT	Addison	New Haven Town Hall
+6788	VT	ADDISON	New Haven Town Hall
 6789	TN	MCNAIRY	11
 6790	TN	HENDERSON	8
 6791	OK	KIOWA	Precinct 380009
@@ -6854,7 +6854,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6851	AL	CLAY	Precinct 0201
 6852	GA	HENRY	54
 6853	OK	OKLAHOMA	Precinct 550019
-6854	VT	Caledonia	Peacham Town Hall
+6854	VT	CALEDONIA	Peacham Town Hall
 6855	MA	SUFFOLK	Boston W07 P09
 6856	GA	DEKALB	Sk
 6857	GA	BIBB	Ho7
@@ -6883,14 +6883,14 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6880	MA	BRISTOL	Fall River W06a
 6881	MN	OLMSTED	Rochester W5 P4
 6882	GA	CATOOSA	Ring
-6883	VT	Addison	Middlebury Municipal Gym
+6883	VT	ADDISON	Middlebury Municipal Gym
 6884	GA	GWINNETT	20
 6885	AR	UNION	Caledonia
 6886	TN	SHELBY	8300
 6887	AL	AUTAUGA	Precinct 0130
 6888	MA	BRISTOL	New Bedford W03b
 6889	OK	LINCOLN	Precinct 410020
-6890	VT	Rutland	Rutland Town Town Hall
+6890	VT	RUTLAND	Rutland Town Town Hall
 6891	OK	GRADY	Precinct 260029
 6892	AR	CRAIGHEAD	7
 6893	VA	JAMES CITY	302 - Powhatan B
@@ -6920,13 +6920,13 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6917	VA	ALEXANDRIA CITY	302 - Patrick Henry Rec Center
 6918	TN	JOHNSON	P1a
 6919	AR	OUACHITA	(W1) WASHINGTON WARD 1
-6920	VT	Chittenden	Huntington Brewster Pierce School
+6920	VT	CHITTENDEN	Huntington Brewster Pierce School
 6921	TN	CHEATHAM	1-May
 6922	AR	CRAWFORD	Dora
 6923	MN	DAKOTA	Farmington P-4
 6924	GA	SUMTER	N-26
 6925	TN	RHEA	7
-6926	VT	Windham	Stratton Town Office
+6926	VT	WINDHAM	Stratton Town Office
 6927	AR	MILLER	Hickory St
 6928	VA	YORK	501 - Tabb
 6929	VA	RUSSELL	602 - Elk Garden
@@ -6941,7 +6941,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6938	OK	CLEVELAND	Precinct 140087
 6939	AL	LAUDERDALE	Waterloo Senior Citizens Bldg
 6940	GA	TIFT	9
-6941	VT	Caledonia	Waterford Elementary Sch
+6941	VT	CALEDONIA	Waterford Elementary Sch
 6942	AR	BAXTER	2-Nov
 6943	OK	JOHNSTON	Precinct 350004
 6944	OK	NOBLE	Precinct 520203
@@ -6965,7 +6965,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6962	AR	PERRY	12 - Rankin
 6963	GA	RANDOLPH	718a
 6964	AL	CALHOUN	Precinct 0901
-6965	VT	Orleans	Morgan Town Clerk's Office
+6965	VT	ORLEANS	Morgan Town Clerk's Office
 6966	TN	HARDIN	52
 6967	VA	LOUDOUN	310 - Mountain View
 6968	MA	NORFOLK	Brookline 15
@@ -7012,7 +7012,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7009	MA	NORFOLK	Weymouth 16
 7010	GA	CATOOSA	Cakt
 7011	MN	YELLOW MEDICINE	Canby
-7012	VT	Franklin	Sheldon Elementary Sch
+7012	VT	FRANKLIN	Sheldon Elementary Sch
 7013	AL	LIMESTONE	1st Baptist Church Of Tanner
 7014	MA	BERKSHIRE	Pittsfield W07b
 7015	OK	TULSA	Precinct 720112
@@ -7268,7 +7268,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7265	TN	DAVIDSON	2402
 7266	GA	MERIWETHER	14
 7267	TN	PERRY	601
-7268	VT	Grand Isle	North Hero North Hero School
+7268	VT	GRAND ISLE	North Hero North Hero School
 7269	MA	MIDDLESEX	Wakefield 01
 7270	GA	BIBB	Ho2
 7271	AL	CHAMBERS	Precinct 0502
@@ -7289,7 +7289,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7286	VA	RUSSELL	403 - Honaker
 7287	VA	POWHATAN	401 - Powhatan Courthouse
 7288	GA	GORDON	1064
-7289	VT	Windsor	Ludlow Town Hall
+7289	VT	WINDSOR	Ludlow Town Hall
 7290	GA	LEE	8
 7291	OK	GRADY	Precinct 260032
 7292	OK	TILLMAN	Precinct 710002
@@ -7301,17 +7301,17 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7298	GA	CHARLTON	05f
 7299	MA	MIDDLESEX	Lowell W04 P02
 7300	OK	CHEROKEE	Precinct 110014
-7301	VT	Bennington	Woodford Town Offices
+7301	VT	BENNINGTON	Woodford Town Offices
 7302	CO	MONTEZUMA	3065842011
 7303	AR	WASHINGTON	Spg 18
 7304	AR	POPE	007- Bayliss
 7305	AR	LOGAN	117 - Sht Mtn Wd 4
 7306	GA	SUMTER	15
-7307	VT	Bennington	Shaftsbury Buck Hill Road Firehouse
+7307	VT	BENNINGTON	Shaftsbury Buck Hill Road Firehouse
 7308	VA	WISE	101 - Appalachia
 7309	GA	THOMAS	104
 7310	OK	LATIMER	Precinct 390008
-7311	VT	Windham	Marlboro Town Office
+7311	VT	WINDHAM	Marlboro Town Office
 7312	GA	CARROLL	714a4
 7313	CO	HUERFANO	3356228001
 7314	AL	MADISON	Bob Harrison Senior Center
@@ -7333,7 +7333,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7330	MN	OLMSTED	Rochester W6 P4
 7331	AR	ASHLEY	07 - Vo - Tech
 7332	VA	NELSON	401 - Roseland
-7333	VT	Orleans	Derby Municipal Office
+7333	VT	ORLEANS	Derby Municipal Office
 7334	GA	FLOYD	10
 7335	OK	OKFUSKEE	Precinct 540103
 7336	OK	OKLAHOMA	Precinct 550235
@@ -7412,7 +7412,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7409	MN	OLMSTED	Rochester W4 P1
 7410	OK	MUSKOGEE	Precinct 510022
 7411	GA	HARALSON	11
-7412	VT	Windsor	Bridgewater Town Office
+7412	VT	WINDSOR	Bridgewater Town Office
 7413	GA	FAYETTE	34
 7414	OK	MUSKOGEE	Precinct 510060
 7415	TN	JACKSON	302
@@ -7420,7 +7420,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7417	GA	FULTON	Jc02
 7418	AR	LINCOLN	004 - Cane Creek 1
 7419	OK	CLEVELAND	Precinct 140048
-7420	VT	Washington	Calais Town Hall
+7420	VT	WASHINGTON	Calais Town Hall
 7421	MA	SUFFOLK	Boston W05 P03
 7422	VA	CHARLOTTE	602 - Phenix
 7423	VA	AUGUSTA	101 - Jolivue
@@ -7445,12 +7445,12 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7442	GA	COWETA	11
 7443	OK	TEXAS	Precinct 700205
 7444	GA	PAULDING	14c
-7445	VT	Lamoille	Morristown Municipal Bldg
+7445	VT	LAMOILLE	Morristown Municipal Bldg
 7446	TN	SEVIER	Pf
 7447	TN	RHEA	6
 7448	TN	POLK	9
 7449	AR	STONE	Pleasant Grove
-7450	VT	Chittenden	Milton Mun Complex
+7450	VT	CHITTENDEN	Milton Mun Complex
 7451	VA	FAIRFAX	131 - Eagle View
 7452	AL	BALDWIN	Precinct 42b
 7453	AR	GREENE	03 - Ward 3
@@ -7472,7 +7472,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7469	VA	CHESTERFIELD	213 - Southside
 7470	GA	HARRIS	Gm
 7471	VA	MONTGOMERY	401 - Precinct D-1
-7472	VT	Windsor	Woodstock Town Hall
+7472	VT	WINDSOR	Woodstock Town Hall
 7473	AR	MISSISSIPPI	13
 7474	GA	MUSCOGEE	105
 7475	MN	WRIGHT	Cokato
@@ -7482,7 +7482,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7479	AL	CHILTON	Precinct 240
 7480	VA	VIRGINIA BEACH CITY	044 - Centerville
 7481	MN	ST LOUIS	Clinton Twp.
-7482	VT	Addison	Bristol Holley Hall
+7482	VT	ADDISON	Bristol Holley Hall
 7483	OK	MAJOR	Precinct 470020
 7484	VA	BRUNSWICK	103 - Tillman
 7485	GA	BAKER	M
@@ -7493,12 +7493,12 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7490	TN	SULLIVAN	01a
 7491	AL	BLOUNT	Precinct 0201
 7492	VA	ARLINGTON	033 - Rock Spring
-7493	VT	Windham	Londonderry Town Office Bldg
+7493	VT	WINDHAM	Londonderry Town Office Bldg
 7494	AL	BALDWIN	Precinct 23
 7495	OK	DELAWARE	Precinct 210003
 7496	VA	PAGE	401 - Newport
 7497	OK	GRADY	Precinct 260026
-7498	VT	Bennington	Dorset Elementary Sch
+7498	VT	BENNINGTON	Dorset Elementary Sch
 7499	OK	COMANCHE	Precinct 160042
 7500	AL	SUMTER	Precinct 1201
 7501	AR	PULASKI	Precinct 129
@@ -7567,7 +7567,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7564	TN	SHELBY	Ger04
 7565	OK	OKLAHOMA	Precinct 550197
 7566	TN	BLOUNT	10
-7567	VT	Orange	Vershire Town Center
+7567	VT	ORANGE	Vershire Town Center
 7568	VA	HENRICO	501 - Antioch
 7569	OK	OKLAHOMA	Precinct 550167
 7570	AL	MARENGO	Precinct 0511
@@ -7596,7 +7596,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7593	AR	CRAWFORD	Alma 2
 7594	AL	MADISON	Madison Baptist Church
 7595	TN	WASHINGTON	37
-7596	VT	Lamoille	Elmore Town Clerks Off
+7596	VT	LAMOILLE	Elmore Town Clerks Off
 7597	VA	GREENE	401 - Midway
 7598	AL	FAYETTE	0302/Elm Grove Church
 7599	AL	RANDOLPH	Precinct 03
@@ -7640,7 +7640,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7637	VA	JAMES CITY	504 - Roberts D
 7638	VA	ISLE OF WIGHT	402 - Windsor
 7639	MA	HAMPDEN	Springfield W04f
-7640	VT	Rutland	Killington Town Office
+7640	VT	RUTLAND	Killington Town Office
 7641	GA	CHATHAM	4-12c
 7642	GA	BURKE	13
 7643	AL	MACON	Precinct 0306
@@ -7767,7 +7767,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7764	TN	WASHINGTON	19
 7765	AR	INDEPENDENCE	Fairview
 7766	AR	JEFFERSON	900
-7767	VT	Essex	Lunenburg Gilman Sch
+7767	VT	ESSEX	Lunenburg Gilman Sch
 7768	AL	CALHOUN	Precinct 0104
 7769	TN	DAVIDSON	3101
 7770	AR	BENTON	Precinct 62
@@ -7781,7 +7781,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7778	AR	INDEPENDENCE	Ruddell Ward 3
 7779	MA	NORFOLK	Quincy W05 P03
 7780	TN	DYER	6
-7781	VT	Rutland	Mendon Town Office
+7781	VT	RUTLAND	Mendon Town Office
 7782	CO	EL PASO	5111721619
 7783	VA	LOUDOUN	112 - Freedom
 7784	AR	CONWAY	008 - Higgins
@@ -7799,7 +7799,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7796	GA	HALL	1
 7797	GA	WAYNE	05b
 7798	GA	PIKE	2
-7799	VT	Windsor	Hartford High School
+7799	VT	WINDSOR	Hartford High School
 7800	MN	ITASCA	Lawrence Twp
 7801	OK	DELAWARE	Precinct 210018
 7802	GA	FULTON	11b
@@ -7939,7 +7939,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7936	AR	GREENE	31 - Marmaduke - Hurricane
 7937	VA	RICHMOND CITY	814 - Eight Hundred Fourteen
 7938	GA	COOK	L
-7939	VT	Windham	Brattleboro Buhs Gym
+7939	VT	WINDHAM	Brattleboro Buhs Gym
 7940	VA	ALBEMARLE	501 - Keswick
 7941	GA	FAYETTE	25
 7942	VA	SCOTT	603 - Fairview
@@ -7984,7 +7984,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7981	VA	SUFFOLK CITY	401 - Airport
 7982	AR	CRAWFORD	Alma 3
 7983	MN	OLMSTED	Orion Twp.
-7984	VT	Chittenden	Essex Comm Hs (Village)
+7984	VT	CHITTENDEN	Essex Comm Hs (Village)
 7985	AR	JACKSON	50 - Tupelo
 7986	TN	GRUNDY	152
 7987	TN	SHELBY	5502
@@ -8028,7 +8028,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8025	GA	GWINNETT	69
 8026	MA	NORFOLK	Holbrook 03
 8027	CO	DENVER	1320216237
-8028	VT	Chittenden	Burlington Miller
+8028	VT	CHITTENDEN	Burlington Miller
 8029	GA	EMANUEL	1429
 8030	TN	HOUSTON	3
 8031	VA	VIRGINIA BEACH CITY	030 - Red Wing
@@ -8074,7 +8074,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8071	GA	HENRY	58
 8072	VA	LEE	503 - Robbins Chapel
 8073	AR	SHARP	Morgan
-8074	VT	Caledonia	Kirby Town Hall
+8074	VT	CALEDONIA	Kirby Town Hall
 8075	TN	WILLIAMSON	23
 8076	AL	MORGAN	Tri-County Volunteer Fire Dept
 8077	OK	MAYES	Precinct 490014
@@ -8229,7 +8229,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8226	AR	BENTON	Precinct 12
 8227	OK	CLEVELAND	Precinct 140073
 8228	TN	GILES	07a
-8229	VT	Chittenden	Saint George Town Office
+8229	VT	CHITTENDEN	Saint George Town Office
 8230	VA	JAMES CITY	501 - Roberts A
 8231	AL	MONROE	Precinct 0311 Mockingbird Inn
 8232	MA	NORFOLK	Braintree 01a
@@ -8242,7 +8242,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8239	GA	MORGAN	7
 8240	MA	NORFOLK	Wellesley D
 8241	VA	LYNCHBURG CITY	103 - First Ward Third Precinct
-8242	VT	Caledonia	Wheelock Town Hall
+8242	VT	CALEDONIA	Wheelock Town Hall
 8243	OK	COAL	Precinct 150005
 8244	AL	BUTLER	Precinct 0050
 8245	AL	JEFFERSON	Precinct 2380
@@ -8313,7 +8313,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8310	VA	ALBEMARLE	503 - Hollymead
 8311	MA	HAMPDEN	Ludlow 05
 8312	GA	GWINNETT	122
-8313	VT	Caledonia	Hardwick Elementary Sch
+8313	VT	CALEDONIA	Hardwick Elementary Sch
 8314	GA	SCREVEN	8
 8315	VA	CAMPBELL	703 - Morris Church
 8316	TN	DAVIDSON	1905
@@ -8324,7 +8324,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8321	TN	DAVIDSON	2803
 8322	GA	BIBB	Em2
 8323	MN	CLAY	Hawley City
-8324	VT	Bennington	Arlington Town Hall
+8324	VT	BENNINGTON	Arlington Town Hall
 8325	MA	HAMPDEN	West Springfield 02
 8326	AL	AUTAUGA	Precinct 0010
 8327	MA	HAMPDEN	Springfield W05f
@@ -8422,7 +8422,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8419	OK	BLAINE	Precinct 060011
 8420	VA	HENRICO	104 - Glenside
 8421	TN	MADISON	3
-8422	VT	Franklin	Highgate Town Office
+8422	VT	FRANKLIN	Highgate Town Office
 8423	MN	RAMSEY	St. Paul W-2 P-01
 8424	AR	POLK	07 - Cherry Hill
 8425	VA	ACCOMACK	501 - Mappsville
@@ -8504,7 +8504,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8501	AL	MADISON	All Nations Church
 8502	AL	CHOCTAW	Precinct 0201 -Butler S22/H65
 8503	GA	GWINNETT	27
-8504	VT	Orleans	Brownington Town Clerk Ofc
+8504	VT	ORLEANS	Brownington Town Clerk Ofc
 8505	OK	DELAWARE	Precinct 210011
 8506	GA	DEKALB	Dg
 8507	GA	GRADY	L
@@ -8582,7 +8582,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8579	GA	MADISON	Pao
 8580	AL	MARENGO	Precinct 0101
 8581	GA	LIBERTY	11
-8582	VT	Rutland	Poultney Fire House
+8582	VT	RUTLAND	Poultney Fire House
 8583	MN	OTTER TAIL	Girard Twp
 8584	MA	SUFFOLK	Boston W13 P06
 8585	TN	ROBERTSON	801
@@ -8603,7 +8603,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8600	TN	KNOX	14
 8601	AR	WHITE	32 - Gray B
 8602	GA	GWINNETT	137
-8603	VT	Windsor	Weston Town Office
+8603	VT	WINDSOR	Weston Town Office
 8604	MA	WORCESTER	Southborough 02
 8605	TN	KNOX	71
 8606	OK	DELAWARE	Precinct 210020
@@ -8658,7 +8658,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8655	AL	COLBERT	Precinct 1
 8656	TN	HUMPHREYS	8
 8657	OK	KAY	Precinct 360404
-8658	VT	Addison	Hancock Town Hall
+8658	VT	ADDISON	Hancock Town Hall
 8659	AR	CRITTENDEN	52 - Ward 5 Precinct 2
 8660	GA	HARRIS	U9
 8661	GA	WASHINGTON	88
@@ -8699,7 +8699,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8696	TN	BLOUNT	28
 8697	MA	MIDDLESEX	Marlborough W06 P02
 8698	GA	DOUGHERTY	26
-8699	VT	Bennington	Stamford Elementary Sch
+8699	VT	BENNINGTON	Stamford Elementary Sch
 8700	AL	MONTGOMERY	Precinct 03b
 8701	AL	MORGAN	Morgan County Courthouse
 8702	AR	CRITTENDEN	41 - Ward 4 Precinct 1
@@ -8763,7 +8763,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8760	AR	VAN BUREN	05 Holly Mountain
 8761	MA	BERKSHIRE	West Stockbridge 01
 8762	OK	OKLAHOMA	Precinct 550069
-8763	VT	Addison	Leicester Town Hall
+8763	VT	ADDISON	Leicester Town Hall
 8764	GA	NEWTON	25
 8765	OK	GRADY	Precinct 260037
 8766	GA	CHARLTON	05w
@@ -8801,7 +8801,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8798	OK	CRAIG	Precinct 180611
 8799	TN	DAVIDSON	1002
 8800	AR	WOODRUFF	Augusta - 03
-8801	VT	Chittenden	Williston Williston Armory
+8801	VT	CHITTENDEN	Williston Williston Armory
 8802	AL	MADISON	Madison Church Of Christ
 8803	VA	STAUNTON CITY	101 - Ward No 1
 8804	VA	VIRGINIA BEACH CITY	070 - Corporate Landing
@@ -8813,7 +8813,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8810	AL	COLBERT	Precinct 17
 8811	VA	WYTHE	602 - Zion
 8812	AL	JACKSON	Precinct 0130
-8813	VT	Lamoille	Waterville Town Hall
+8813	VT	LAMOILLE	Waterville Town Hall
 8814	AR	PHILLIPS	Helena West Helena 5
 8815	OK	OKLAHOMA	Precinct 550234
 8816	VA	ROANOKE	304 - Oak Grove
@@ -8859,7 +8859,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8856	OK	PONTOTOC	Precinct 620064
 8857	OK	OKLAHOMA	Precinct 550240
 8858	OK	MCCURTAIN	Precinct 450019
-8859	VT	Orange	Randolph Randolph Town Hall
+8859	VT	ORANGE	Randolph Randolph Town Hall
 8860	VA	BEDFORD	703 - Thaxton Baptist Church #2
 8861	GA	FAYETTE	14
 8862	OK	GARFIELD	Precinct 240102
@@ -8890,7 +8890,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8887	VA	GOOCHLAND	201 - Three Square
 8888	OK	OKLAHOMA	Precinct 550111
 8889	CO	TELLER	5023960011
-8890	VT	Franklin	Franklin Town Hall
+8890	VT	FRANKLIN	Franklin Town Hall
 8891	GA	WHITFIELD	04a
 8892	AR	NEVADA	Emmet City
 8893	VA	CHESAPEAKE CITY	008 - South Norfolk Recreation
@@ -8911,7 +8911,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8908	VA	DICKENSON	303 - Ridge
 8909	MN	DAKOTA	Eagan P-12
 8910	OK	WOODWARD	Precinct 770303
-8911	VT	Windham	Dummerston East Dummerston School
+8911	VT	WINDHAM	Dummerston East Dummerston School
 8912	AL	HOUSTON	Hodgesville Vol Fire Dept 213
 8913	AR	MADISON	Kings River
 8914	AL	CULLMAN	Precinct 0220
@@ -8945,7 +8945,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8942	AL	MADISON	County Commission Dist 1 Ofc
 8943	TN	BLOUNT	23
 8944	AR	JOHNSON	SHERMAN
-8945	VT	Rutland	Chittenden Town Hall
+8945	VT	RUTLAND	Chittenden Town Hall
 8946	VA	CARROLL	103 - Lambsburg
 8947	VA	VIRGINIA BEACH CITY	009 - Trantwood
 8948	TN	GREENE	14cd
@@ -8974,7 +8974,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8971	MA	ESSEX	Peabody W04 P03
 8972	VA	ALLEGHANY	202 - Dolly Ann
 8973	TN	HOUSTON	7
-8974	VT	Chittenden	Shelburne Town Ctr Gym
+8974	VT	CHITTENDEN	Shelburne Town Ctr Gym
 8975	AR	WASHINGTON	Harmon-S
 8976	MA	BARNSTABLE	Sandwich 05
 8977	AL	ETOWAH	Rainbow City Community Center
@@ -9238,7 +9238,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 9235	GA	COBB	So02
 9236	AR	BENTON	Precinct 16
 9237	TN	HAMILTON	95
-9238	VT	Orleans	Holland Town Office
+9238	VT	ORLEANS	Holland Town Office
 9239	MA	WORCESTER	New Braintree 01
 9240	VA	LEE	203 - Jonesville
 9241	AL	WILCOX	Precinct 1004
@@ -9252,7 +9252,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 9249	VA	HENRICO	216 - Moody
 9250	OK	OKLAHOMA	Precinct 550243
 9251	OK	OKMULGEE	Precinct 560008
-9252	VT	Orange	Brookfield Elem School
+9252	VT	ORANGE	Brookfield Elem School
 9253	GA	COLUMBIA	136
 9254	OK	WAGONER	Precinct 730209
 9255	MN	ST LOUIS	Grand Lake Twp.
@@ -9425,14 +9425,14 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 9422	OK	ALFALFA	Precinct 020330
 9423	TN	HAWKINS	16
 9424	OK	TULSA	Precinct 720459
-9425	VT	Caledonia	Stannard Town Hall
+9425	VT	CALEDONIA	Stannard Town Hall
 9426	AR	PULASKI	Precinct 039
 9427	GA	CHEROKEE	32
 9428	GA	MERIWETHER	7
 9429	VA	LOUDOUN	629 - Discovery
 9430	AR	WHITE	65 - Russell Twp
 9431	TN	KNOX	47
-9432	VT	Rutland	Pawlet Town Hall
+9432	VT	RUTLAND	Pawlet Town Hall
 9433	GA	FULTON	CP012
 9434	OK	CARTER	Precinct 100041
 9435	AL	COVINGTON	Precinct 1601
@@ -9502,7 +9502,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 9499	AR	PIKE	01 - Antoine
 9500	GA	DEKALB	Mw
 9501	AL	MONROE	Precinct 1341 Shiloh Miss Bc
-9502	VT	Rutland	Mount Tabor Town Office
+9502	VT	RUTLAND	Mount Tabor Town Office
 9503	MN	RAMSEY	St. Paul W-3 P-05
 9504	VA	FAIRFAX	622 - Lorton Station
 9505	OK	TULSA	Precinct 720053
@@ -9582,7 +9582,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 9579	CO	ROUTT	3082654001
 9580	OK	HARPER	Precinct 300301
 9581	OK	KIOWA	Precinct 380006
-9582	VT	Windham	Vernon Twn Off Bldg
+9582	VT	WINDHAM	Vernon Twn Off Bldg
 9583	OK	OKLAHOMA	Precinct 550230
 9584	OK	COMANCHE	Precinct 160002
 9585	AL	MADISON	Ne Huntsville Train&Conf Cntr
@@ -9620,7 +9620,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 9617	VA	HAMPTON CITY	205 - Asbury
 9618	GA	FULTON	08l
 9619	GA	SPALDING	6
-9620	VT	Bennington	Bennington Benn Fire Dept
+9620	VT	BENNINGTON	Bennington Benn Fire Dept
 9621	VA	FAIRFAX	307 - Haycock
 9622	GA	DEKALB	Kc
 9623	TN	BLOUNT	18
@@ -9666,7 +9666,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 9663	AL	JEFFERSON	Precinct 5110
 9664	GA	EARLY	L
 9665	VA	PITTSYLVANIA	202- Bearskin
-9666	VT	Windsor	Stockbridge Town Office
+9666	VT	WINDSOR	Stockbridge Town Office
 9667	OK	WASHITA	Precinct 750014
 9668	TN	GREENE	24ss
 9669	AR	PULASKI	Precinct 073
@@ -9720,7 +9720,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 9717	MA	WORCESTER	Worcester W01 P01
 9718	GA	WALTON	420
 9719	AR	PERRY	09 - New Tennessee
-9720	VT	Windham	Brookline Town Office
+9720	VT	WINDHAM	Brookline Town Office
 9721	TN	CAMPBELL	Wlsp
 9722	TN	GREENE	18sg
 9723	TN	ROANE	Ren
@@ -9964,7 +9964,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 9961	VA	FAIRFAX	621 - Grosvenor
 9962	AR	SEBASTIAN	Precinct 9-3k
 9963	GA	IRWIN	1661
-9964	VT	Rutland	Tinmouth Community Center
+9964	VT	RUTLAND	Tinmouth Community Center
 9965	MA	ESSEX	Salem W07 P01
 9966	MA	MIDDLESEX	Medford W03 P02
 9967	TN	WAYNE	301
@@ -9991,7 +9991,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 9988	OK	LE FLORE	Precinct 400309
 9989	AR	WHITE	94 - Pangburn Ward 3
 9990	GA	BIBB	Em4
-9991	VT	Chittenden	Winooski Winooski Sr Citizens Center
+9991	VT	CHITTENDEN	Winooski Winooski Sr Citizens Center
 9992	VA	PATRICK	503 - Woolwine
 9993	TN	JEFFERSON	801
 9994	GA	HALL	6
@@ -10041,7 +10041,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 10038	OK	MCCURTAIN	Precinct 450027
 10039	OK	PAYNE	Precinct 600101
 10040	MA	WORCESTER	Sutton 01
-10041	VT	Addison	Salisbury Town Office
+10041	VT	ADDISON	Salisbury Town Office
 10042	GA	CHATHAM	1-09c
 10043	TN	WHITE	8
 10044	OK	OKLAHOMA	Precinct 550154
@@ -10072,7 +10072,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 10069	TN	WILLIAMSON	81
 10070	AR	ASHLEY	27 - Parkdale City
 10071	GA	COBB	Mr3a
-10072	VT	Washington	Waitsfield Elementary Sch
+10072	VT	WASHINGTON	Waitsfield Elementary Sch
 10073	GA	MONROE	2
 10074	OK	TULSA	Precinct 720092
 10075	AR	MISSISSIPPI	10
@@ -10208,8 +10208,8 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 10205	VA	FAIRFAX	226 - Wolftrap
 10206	VA	ROCKINGHAM	307 - Crossroads
 10207	GA	FULTON	03i
-10208	VT	Franklin	Fletcher Town Clerk Ofc
-10209	VT	Orange	Orange Town Hall
+10208	VT	FRANKLIN	Fletcher Town Clerk Ofc
+10209	VT	ORANGE	Orange Town Hall
 10210	OK	OKLAHOMA	Precinct 550245
 10211	OK	ELLIS	Precinct 230001
 10212	TN	WILLIAMSON	52
@@ -10217,7 +10217,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 10214	MA	BARNSTABLE	Bourne 06
 10215	AR	JEFFERSON	218
 10216	MA	BRISTOL	Taunton W04b
-10217	VT	Washington	East Montpelier Elementary Sch
+10217	VT	WASHINGTON	East Montpelier Elementary Sch
 10218	MN	ST LOUIS	Duluth P-17
 10219	MA	SUFFOLK	Boston W20 P15
 10220	CO	WELD	4016362104
@@ -10335,7 +10335,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 10332	VA	LOUDOUN	702 - Park View
 10333	TN	CUMBERLAND	Nar
 10334	VA	PRINCE WILLIAM	309 - Ashland
-10335	VT	Essex	Brighton Town Hall
+10335	VT	ESSEX	Brighton Town Hall
 10336	TN	GIBSON	39
 10337	MN	HENNEPIN	Minneapolis W-10 P-06
 10338	GA	GWINNETT	65
@@ -10401,7 +10401,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 10398	OK	COAL	Precinct 150004
 10399	VA	STAUNTON CITY	201 - Ward Two
 10400	AR	NEVADA	Rosston Rural
-10401	VT	Chittenden	Burlington Edmunds
+10401	VT	CHITTENDEN	Burlington Edmunds
 10402	VA	HENRICO	513 - Pleasants
 10403	VA	WESTMORELAND	101 - Precinct 1-1
 10404	GA	HOUSTON	Mcms
@@ -10415,7 +10415,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 10412	GA	TERRELL	2
 10413	TN	LAWRENCE	1201
 10414	AL	BALDWIN	Precinct 11
-10415	VT	Orleans	Jay Town Firehouse
+10415	VT	ORLEANS	Jay Town Firehouse
 10416	GA	COBB	Ac1c
 10417	VA	CHESAPEAKE CITY	019 - Jolliff
 10418	VA	BATH	501 - Healing Springs
@@ -10433,7 +10433,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 10430	TN	ANDERSON	Fvw
 10431	GA	PIKE	3
 10432	OK	STEPHENS	Precinct 690056
-10433	VT	Windsor	Pomfret Town Hall
+10433	VT	WINDSOR	Pomfret Town Hall
 10434	VA	AUGUSTA	201 - Crimora
 10435	TN	GILES	03b
 10436	AR	SEBASTIAN	Precinct 4-N
@@ -10456,7 +10456,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 10453	AR	MADISON	Huntsville Ward 3
 10454	MN	OLMSTED	Rochester W4 P2
 10455	GA	JACKSON	428
-10456	VT	Bennington	Rupert Town Office
+10456	VT	BENNINGTON	Rupert Town Office
 10457	OK	LATIMER	Precinct 390010
 10458	TN	HAMILTON	91
 10459	TN	SHELBY	Ste00
@@ -10634,7 +10634,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 10631	GA	FORSYTH	29
 10632	OK	LE FLORE	Precinct 400207
 10633	MA	ESSEX	Lawrence We P02
-10634	VT	Addison	Ripton Community House
+10634	VT	ADDISON	Ripton Community House
 10635	GA	CHARLTON	2
 10636	VA	WILLIAMSBURG CITY	002 - Matoaka
 10637	AL	TALLAPOOSA	Precinct 1701
@@ -10650,7 +10650,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 10647	TN	MONTGOMERY	15
 10648	OK	COMANCHE	Precinct 160038
 10649	MA	ESSEX	Lawrence Wb P02
-10650	VT	Washington	Cabot School Gym
+10650	VT	WASHINGTON	Cabot School Gym
 10651	TN	SULLIVAN	08b
 10652	OK	MAJOR	Precinct 470010
 10653	GA	CHATHAM	8-11c
@@ -10713,7 +10713,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 10710	TN	KNOX	17
 10711	GA	CATOOSA	Ft O
 10712	VA	ALEXANDRIA CITY	201 - Maury School
-10713	VT	Addison	Vergennes Fire Station
+10713	VT	ADDISON	Vergennes Fire Station
 10714	GA	FORSYTH	1
 10715	GA	FULTON	Jc13a
 10716	MN	HENNEPIN	Bloomington W-4 P-32
@@ -10807,7 +10807,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 10804	AL	PIKE	Precinct 26 - Antioch
 10805	TN	DYER	16
 10806	GA	FLOYD	80
-10807	VT	Windham	Windham Town Office
+10807	VT	WINDHAM	Windham Town Office
 10808	AL	JACKSON	Precinct 0060
 10809	VA	ROANOKE CITY	020 - Forest Park
 10810	TN	MAURY	Wend
@@ -10888,7 +10888,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 10885	VA	KING GEORGE	201 - Monroe
 10886	TN	HAWKINS	13
 10887	MN	DAKOTA	Eagan P-07
-10888	VT	Caledonia	Burke Town Office Bldg
+10888	VT	CALEDONIA	Burke Town Office Bldg
 10889	MN	OLMSTED	Rochester W5 P7
 10890	MA	NORFOLK	Quincy W01 P04
 10891	TN	DAVIDSON	3305
@@ -11113,7 +11113,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 11110	GA	FLOYD	15
 11111	MN	OLMSTED	Marion Twp. P-1
 11112	GA	CAMDEN	11
-11113	VT	Orleans	Westmore Municipal Office
+11113	VT	ORLEANS	Westmore Municipal Office
 11114	MN	GOODHUE	Florence Twp.
 11115	OK	TULSA	Precinct 720144
 11116	CO	OTERO	4354745003
@@ -11192,14 +11192,14 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 11189	MA	MIDDLESEX	Newton W02 P02
 11190	TN	SUMNER	801
 11191	AL	CALHOUN	Precinct 0101
-11192	VT	Windsor	Cavendish Elementary Sch
+11192	VT	WINDSOR	Cavendish Elementary Sch
 11193	GA	MURRAY	1013
 11194	AR	CRAWFORD	Mulberry 1
 11195	AL	CALHOUN	Precinct 0403
 11196	VA	CAMPBELL	702 - Gladys
 11197	VA	APPOMATTOX	202 - Spout Spring
 11198	TN	SHELBY	7901
-11199	VT	Essex	Norton Town Hall
+11199	VT	ESSEX	Norton Town Hall
 11200	TN	DAVIDSON	2405
 11201	MN	ST LOUIS	Duluth P-2
 11202	TN	CLAIBORNE	Lmt
@@ -11282,7 +11282,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 11279	OK	COTTON	Precinct 170001
 11280	GA	SCREVEN	10
 11281	MA	WORCESTER	Ashburnham 01
-11282	VT	Essex	Granby Town Hall
+11282	VT	ESSEX	Granby Town Hall
 11283	TN	HENRY	2-Apr
 11284	MA	FRANKLIN	Ashfield 01
 11285	AR	OUACHITA	Camden Ward 11
@@ -11339,7 +11339,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 11336	VA	FAIRFAX	426 - Greenspring
 11337	TN	DICKSON	62
 11338	GA	CLARKE	01a
-11339	VT	Orange	Thetford Town Hall
+11339	VT	ORANGE	Thetford Town Hall
 11340	VA	GILES	102 - Rich Creek
 11341	MA	MIDDLESEX	Chelmsford 03
 11342	AL	CHOCTAW	Precinct 0049 - Branch S-24
@@ -11366,7 +11366,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 11363	GA	DEKALB	Cs
 11364	MN	WASHINGTON	Stillwater W-3 P-5
 11365	VA	VIRGINIA BEACH CITY	022 - Point O View
-11366	VT	Washington	Barre Town Elementary Sch
+11366	VT	WASHINGTON	Barre Town Elementary Sch
 11367	MA	SUFFOLK	Revere W06 P03
 11368	TN	BLOUNT	29
 11369	AL	BLOUNT	Precinct 0702
@@ -11480,7 +11480,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 11477	VA	GLOUCESTER	402 - Sarahs Creek
 11478	TN	HAWKINS	1
 11479	GA	EFFINGHAM	01d
-11480	VT	Rutland	Shrewsbury Mtg Hse-Townhall
+11480	VT	RUTLAND	Shrewsbury Mtg Hse-Townhall
 11481	AR	PULASKI	Precinct 055
 11482	VA	FRANKLIN CITY	501 - Precinct 5-1
 11483	GA	CARROLL	1533
@@ -11521,7 +11521,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 11518	GA	DEKALB	Df
 11519	AL	LAWRENCE	33-1 Caddo Fire Dept
 11520	GA	CHEROKEE	36
-11521	VT	Franklin	Saint Albans Town Collins Perley
+11521	VT	FRANKLIN	Saint Albans Town Collins Perley
 11522	AR	CLARK	West County 1
 11523	TN	SUMNER	1201
 11524	VA	HENRICO	413 - Ridgefield
@@ -11585,7 +11585,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 11582	AL	BARBOUR	Precinct 0061a
 11583	AR	BENTON	Precinct 54
 11584	VA	ALLEGHANY	302 - Griffith
-11585	VT	Franklin	Montgomery Town Hall
+11585	VT	FRANKLIN	Montgomery Town Hall
 11586	GA	CLAYTON	Fp1
 11587	OK	CLEVELAND	Precinct 140041
 11588	GA	CLAYTON	Rd01
@@ -11617,7 +11617,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 11614	AR	JEFFERSON	117
 11615	AR	CRAIGHEAD	43
 11616	VA	WASHINGTON	502 - Damascus
-11617	VT	Chittenden	South Burlington Chamberlain Sch
+11617	VT	CHITTENDEN	South Burlington Chamberlain Sch
 11618	VA	PETERSBURG CITY	701 - Seventh Ward First Precinct
 11619	OK	BRYAN	Precinct 070003
 11620	VA	FAIRFAX	848 - Fair Oaks
@@ -11626,7 +11626,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 11623	VA	VIRGINIA BEACH CITY	094 - Pinewood
 11624	AR	MISSISSIPPI	54
 11625	OK	NOWATA	Precinct 530101
-11626	VT	Windham	Athens Town Office
+11626	VT	WINDHAM	Athens Town Office
 11627	AL	COFFEE	Precinct 0401
 11628	OK	CLEVELAND	Precinct 140071
 11629	TN	GILES	06a
@@ -11698,7 +11698,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 11695	MA	ESSEX	Lawrence Wc P03
 11696	CO	JEFFERSON	7222230218
 11697	AL	JEFFERSON	Precinct 5160
-11698	VT	Washington	Northfield High School
+11698	VT	WASHINGTON	Northfield High School
 11699	GA	FLOYD	125
 11700	AR	HOT SPRING	Clear Creek
 11701	OK	CLEVELAND	Precinct 140049
@@ -11788,7 +11788,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 11785	VA	EMPORIA CITY	201 - Precinct 2-1
 11786	MA	MIDDLESEX	Medford W04 P02
 11787	GA	MUSCOGEE	126
-11788	VT	Lamoille	Stowe Akeley Mem Bldg
+11788	VT	LAMOILLE	Stowe Akeley Mem Bldg
 11789	VA	HALIFAX	503 - Scottsburg
 11790	GA	FULTON	12g
 11791	OK	CLEVELAND	Precinct 140027
@@ -11824,7 +11824,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 11821	TN	BLOUNT	27
 11822	CO	BOULDER	2181107507
 11823	VA	NEW KENT	201 - Quinton
-11824	VT	Chittenden	Burlington Barnes
+11824	VT	CHITTENDEN	Burlington Barnes
 11825	GA	STEWART	5
 11826	MA	MIDDLESEX	Woburn W05 P01
 11827	OK	LOGAN	Precinct 420302
@@ -11975,7 +11975,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 11972	TN	HARDIN	72
 11973	OK	JACKSON	Precinct 330006
 11974	AL	MADISON	Calvary Hill Friendship Center
-11975	VT	Lamoille	Eden Town Clerks Off
+11975	VT	LAMOILLE	Eden Town Clerks Off
 11976	VA	MONTGOMERY	402 - Precinct D-2
 11977	GA	BARTOW	4
 11978	MA	ESSEX	Methuen 07
@@ -12200,7 +12200,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 12197	AL	TALLADEGA	Precinct 1702
 12198	AR	SALINE	2
 12199	GA	TATTNALL	9
-12200	VT	Grand Isle	Alburgh Municipal Building
+12200	VT	GRAND ISLE	Alburgh Municipal Building
 12201	MN	POLK	Knute Twp.
 12202	AL	MONTGOMERY	Precinct 04d
 12203	GA	WHITFIELD	Lt
@@ -12230,7 +12230,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 12227	AR	BENTON	Precinct 14
 12228	GA	TAYLOR	5
 12229	GA	FULTON	04l
-12230	VT	Rutland	Rutland City Christ King Sch
+12230	VT	RUTLAND	Rutland City Christ King Sch
 12231	VA	FAIRFAX	332 - Coates
 12232	VA	HENRICO	223 - Yellow Tavern
 12233	TN	BRADLEY	302
@@ -12305,7 +12305,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 12302	VA	RUSSELL	302 - Daugherty
 12303	GA	DECATUR	1342
 12304	TN	DAVIDSON	1401
-12305	VT	Rutland	Fair Haven American Legion
+12305	VT	RUTLAND	Fair Haven American Legion
 12306	AL	COLBERT	Precinct 18
 12307	VA	DINWIDDIE	101 - White Oak
 12308	GA	COBB	Bg02
@@ -12502,7 +12502,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 12499	TN	ROBERTSON	901
 12500	MA	WORCESTER	Leominster W04b
 12501	AR	MISSISSIPPI	2-Dec
-12502	VT	Addison	Waltham Town Hall
+12502	VT	ADDISON	Waltham Town Hall
 12503	VA	HALIFAX	703 - Virgilina
 12504	AR	BENTON	Precinct 43
 12505	OK	MCCLAIN	Precinct 440001
@@ -12550,7 +12550,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 12547	OK	JACKSON	Precinct 330003
 12548	AL	ST CLAIR	Precinct 25
 12549	AR	MADISON	Richland
-12550	VT	Chittenden	Essex Middle Sch (Town)
+12550	VT	CHITTENDEN	Essex Middle Sch (Town)
 12551	VA	FAIRFAX	841 - Popes Head
 12552	VA	KING WILLIAM	401 - Manquin
 12553	TN	TROUSDALE	1
@@ -12598,7 +12598,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 12595	AR	INDEPENDENCE	McHue
 12596	OK	LOGAN	Precinct 420206
 12597	GA	BRYAN	9
-12598	VT	Chittenden	Charlotte Central School
+12598	VT	CHITTENDEN	Charlotte Central School
 12599	TN	CUMBERLAND	Mid
 12600	VA	ROANOKE	103 - Glenvar
 12601	OK	PONTOTOC	Precinct 620052
@@ -12634,7 +12634,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 12631	MA	SUFFOLK	Boston W16 P10
 12632	AR	NEVADA	Ward 1
 12633	MA	MIDDLESEX	Dunstable 01
-12634	VT	Orleans	Troy Elem School Gym
+12634	VT	ORLEANS	Troy Elem School Gym
 12635	AL	COLBERT	Precinct 11
 12636	AL	LAUDERDALE	Anderson Town Hall
 12637	VA	AUGUSTA	503 - Spottswood
@@ -12759,7 +12759,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 12756	GA	WHITE	71
 12757	VA	MANASSAS CITY	004 - Haydon
 12758	GA	COBB	Cr01
-12759	VT	Caledonia	Sheffield Municipal Building
+12759	VT	CALEDONIA	Sheffield Municipal Building
 12760	VA	LYNCHBURG CITY	303 - Third Ward Third Precinct
 12761	VA	FAIRFAX	924 - Spindle
 12762	MA	PLYMOUTH	Brockton W02a
@@ -12782,14 +12782,14 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 12779	GA	BROOKS	1650
 12780	GA	DEKALB	Ec
 12781	OK	OKFUSKEE	Precinct 540209
-12782	VT	Lamoille	Cambridge Elem School Gym
+12782	VT	LAMOILLE	Cambridge Elem School Gym
 12783	GA	MUSCOGEE	122
 12784	AR	PERRY	14 - Tyler
 12785	TN	BLEDSOE	10
 12786	VA	PRINCE WILLIAM	402 - Battlefield
 12787	VA	STAFFORD	602 - Chatham
 12788	GA	FORSYTH	27
-12789	VT	Windham	Guilford Broad Brook Grange
+12789	VT	WINDHAM	Guilford Broad Brook Grange
 12790	VA	TAZEWELL	101 - Abbs Valley
 12791	VA	NORFOLK CITY	203 - Ghent Square
 12792	OK	PITTSBURG	Precinct 610046
@@ -12872,7 +12872,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 12869	VA	MIDDLESEX	501 - Wilton
 12870	VA	AUGUSTA	202 - New Hope
 12871	VA	FAUQUIER	102 - Catlett
-12872	VT	Essex	Maidstone Town Hall
+12872	VT	ESSEX	Maidstone Town Hall
 12873	AL	JEFFERSON	Precinct 3020
 12874	AL	CHAMBERS	Precinct 0401
 12875	OK	DEWEY	Precinct 220001
@@ -12961,7 +12961,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 12958	CO	YUMA	4016563012
 12959	OK	OKLAHOMA	Precinct 550023
 12960	VA	HENRY	102 - Gunville
-12961	VT	Rutland	Rutland City American Legion
+12961	VT	RUTLAND	Rutland City American Legion
 12962	MA	SUFFOLK	Boston W08 P03
 12963	OK	CREEK	Precinct 190132
 12964	OK	JEFFERSON	Precinct 340006
@@ -13003,7 +13003,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13000	VA	WISE	401 - Clinch Valley
 13001	OK	OKLAHOMA	Precinct 550041
 13002	VA	NELSON	501 - Faber
-13003	VT	Windsor	Rochester Town Office Bldg
+13003	VT	WINDSOR	Rochester Town Office Bldg
 13004	VA	ROANOKE	202 - Burlington
 13005	TN	GREENE	12ha
 13006	AL	WASHINGTON	Precinct 0050 Redcreek
@@ -13077,7 +13077,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13074	MA	MIDDLESEX	Waltham W02 P01
 13075	VA	LUNENBURG	701 - Meherrin Fire Department
 13076	OK	CUSTER	Precinct 200022
-13077	VT	Chittenden	Burlington Wheeler
+13077	VT	CHITTENDEN	Burlington Wheeler
 13078	AL	JEFFERSON	Precinct 4090
 13079	MA	MIDDLESEX	Cambridge W11 P02
 13080	VA	STAFFORD	504 - Gayle
@@ -13087,7 +13087,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13084	OK	MARSHALL	Precinct 480303
 13085	AR	JEFFERSON	620-1
 13086	MA	BRISTOL	Attleboro W01b
-13087	VT	Essex	Bloomfield Old School House
+13087	VT	ESSEX	Bloomfield Old School House
 13088	AR	SALINE	24
 13089	MA	DUKES	Edgartown 01
 13090	CO	BENT	4356406003
@@ -13109,7 +13109,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13106	AR	BENTON	Precinct 42
 13107	GA	FLOYD	105
 13108	AL	CALHOUN	Precinct 2101
-13109	VT	Addison	Cornwall Town Hall
+13109	VT	ADDISON	Cornwall Town Hall
 13110	GA	COBB	Or04
 13111	GA	DOUGLAS	740
 13112	GA	DEKALB	Aa
@@ -13139,7 +13139,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13136	AL	MOBILE	071 - Palmer Pillians Middle
 13137	AR	JEFFERSON	54
 13138	OK	CUSTER	Precinct 200026
-13139	VT	Windsor	Sharon Elementary Sch
+13139	VT	WINDSOR	Sharon Elementary Sch
 13140	GA	FULTON	11j
 13141	TN	CLAIBORNE	Ntz
 13142	AR	BENTON	Precinct 04
@@ -13201,9 +13201,9 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13198	MA	BRISTOL	Dartmouth 02
 13199	GA	BEN HILL	1
 13200	MN	DOUGLAS	La Grand Twp.
-13201	VT	Bennington	Manchester Town Hall
+13201	VT	BENNINGTON	Manchester Town Hall
 13202	AR	JEFFERSON	112
-13203	VT	Essex	East Haven Community Bldg
+13203	VT	ESSEX	East Haven Community Bldg
 13204	VA	FAIRFAX	118 - Lake Braddock
 13205	VA	NEWPORT NEWS CITY	210 - Nelson
 13206	AR	HOT SPRING	Henderson
@@ -13244,7 +13244,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13241	AR	FAULKNER	3d Conway City
 13242	GA	STEPHENS	Sc1
 13243	OK	OKLAHOMA	Precinct 550213
-13244	VT	Addison	Bridport Community Hall
+13244	VT	ADDISON	Bridport Community Hall
 13245	OK	PAYNE	Precinct 600407
 13246	MN	RAMSEY	St. Paul W-1 P-06
 13247	VA	PRINCE WILLIAM	507 - Chinn
@@ -13280,7 +13280,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13277	GA	LINCOLN	03-A
 13278	AR	MARION	Precinct 30
 13279	MN	RICE	Faribault P-3
-13280	VT	Lamoille	Wolcott Town Office
+13280	VT	LAMOILLE	Wolcott Town Office
 13281	OK	COMANCHE	Precinct 160036
 13282	TN	DAVIDSON	503
 13283	VA	CHARLOTTE	701 - Bacon
@@ -13318,7 +13318,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13315	AL	LAWRENCE	28-1 Speake Fire Dept
 13316	MA	HAMPDEN	Holyoke W05b
 13317	MN	DAKOTA	Burnsville P-10
-13318	VT	Windham	Townshend Town Hall
+13318	VT	WINDHAM	Townshend Town Hall
 13319	GA	COBB	Ke3a
 13320	VA	MANASSAS PARK CITY	001 - Precinct One
 13321	OK	OKLAHOMA	Precinct 550172
@@ -13504,7 +13504,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13501	OK	ADAIR	Precinct 010003
 13502	GA	DEKALB	Bh
 13503	OK	POTTAWATOMIE	Precinct 630040
-13504	VT	Addison	Shoreham Town Office
+13504	VT	ADDISON	Shoreham Town Office
 13505	AL	CULLMAN	Precinct 0172
 13506	AL	TUSCALOOSA	Stillman College (Hays Center)
 13507	GA	MONTGOMERY	1
@@ -13526,7 +13526,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13523	GA	CHEROKEE	43
 13524	AL	MONROE	Precinct 1452 Cole A Of God Ch
 13525	MA	HAMPDEN	West Springfield 07
-13526	VT	Caledonia	Walden Town Clerk's Office
+13526	VT	CALEDONIA	Walden Town Clerk's Office
 13527	GA	DEKALB	Rg
 13528	GA	OGLETHORPE	Lx
 13529	TN	FRANKLIN	701
@@ -13588,7 +13588,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13585	AL	JEFFERSON	Precinct 2100
 13586	AL	WALKER	Precinct 2201
 13587	MA	BRISTOL	Dartmouth 09
-13588	VT	Orange	Fairlee Town Hall
+13588	VT	ORANGE	Fairlee Town Hall
 13589	AR	SALINE	29
 13590	VA	CHESAPEAKE CITY	035 - Taylor Road
 13591	AR	SHARP	Piney Fork
@@ -13622,7 +13622,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13619	VA	DINWIDDIE	401 - Dinwiddie
 13620	AR	WHITE	17 - Clay
 13621	AR	MONROE	13 - Clarendon Ward 3
-13622	VT	Washington	Barre City Auditorium
+13622	VT	WASHINGTON	Barre City Auditorium
 13623	AL	MORGAN	W Morgan E Lawrence Water Auth
 13624	OK	MUSKOGEE	Precinct 510009
 13625	AR	PULASKI	Precinct 045
@@ -13823,7 +13823,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13820	GA	COWETA	23
 13821	AL	BLOUNT	Precinct 1501
 13822	AR	MILLER	Sugar Hill
-13823	VT	Caledonia	Newark Town Clerks Off
+13823	VT	CALEDONIA	Newark Town Clerks Off
 13824	MN	HENNEPIN	Minneapolis W-6 P-06
 13825	GA	DEKALB	Sm
 13826	OK	ADAIR	Precinct 010005
@@ -13889,13 +13889,13 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13886	AR	BENTON	Precinct 03
 13887	AL	MARION	Precinct 0098
 13888	GA	FULTON	Ss05
-13889	VT	Rutland	Middletown Springs Fire House
+13889	VT	RUTLAND	Middletown Springs Fire House
 13890	GA	BROOKS	660
 13891	TN	MACON	8
 13892	AL	SUMTER	Precinct 0802
 13893	GA	DEKALB	Mq
 13894	VA	STAFFORD	303 - Harbour
-13895	VT	Orleans	Glover Town Clerks Off
+13895	VT	ORLEANS	Glover Town Clerks Off
 13896	MA	SUFFOLK	Boston W19 P05
 13897	OK	CUSTER	Precinct 200003
 13898	AL	TALLAPOOSA	Precinct 1501
@@ -13906,7 +13906,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13903	GA	WAYNE	03b
 13904	VA	RICHMOND CITY	310 - Three Hundred Ten
 13905	AR	CLEBURNE	23 - East Peter Creek
-13906	VT	Essex	Concord Town Hall
+13906	VT	ESSEX	Concord Town Hall
 13907	VA	CHESTERFIELD	103 - Enon
 13908	OK	DELAWARE	Precinct 210012
 13909	AL	ESCAMBIA	Precinct 0330
@@ -13945,7 +13945,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13942	MA	NORFOLK	Weymouth 09
 13943	AR	LAFAYETTE	100 - Walker Creek
 13944	MA	WORCESTER	Milford 08
-13945	VT	Washington	Montpelier City Hall
+13945	VT	WASHINGTON	Montpelier City Hall
 13946	TN	ANDERSON	Ros
 13947	OK	WASHITA	Precinct 750020
 13948	OK	CHEROKEE	Precinct 110007
@@ -13990,7 +13990,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13987	AR	BOONE	District 6
 13988	AL	JEFFERSON	Precinct 4140
 13989	AR	MISSISSIPPI	1-Dec
-13990	VT	Orange	Strafford Town House
+13990	VT	ORANGE	Strafford Town House
 13991	CO	DOLORES	3065817002
 13992	VA	WYTHE	402 - Max Meadows
 13993	VA	FAIRFAX	106 - Heritage
@@ -14048,7 +14048,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 14045	AR	CLEVELAND	15 - Whiteoak
 14046	MN	OLMSTED	Quincy Twp.
 14047	MN	WILKIN	Breckenridge P-1
-14048	VT	Chittenden	South Burlington Orchard Sch
+14048	VT	CHITTENDEN	South Burlington Orchard Sch
 14049	AL	TALLADEGA	Precinct 0501
 14050	VA	PRINCE WILLIAM	103 - Glenkirk
 14051	VA	HAMPTON CITY	104 - Cooper
@@ -14060,7 +14060,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 14057	AL	LIMESTONE	Lamb Of God Lutheran Church
 14058	MN	WRIGHT	Delano
 14059	AL	LAWRENCE	7-1 Donald Baptist Church
-14060	VT	Rutland	Brandon Neshobe Sch
+14060	VT	RUTLAND	Brandon Neshobe Sch
 14061	OK	SEQUOYAH	Precinct 680101
 14062	TN	OVERTON	303
 14063	GA	DEKALB	Sd
@@ -14090,7 +14090,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 14087	VA	STAFFORD	401 - Aquia
 14088	MN	GRANT	Elbow Lake
 14089	TN	PICKETT	Mvl
-14090	VT	Orleans	Coventry Community Ctr
+14090	VT	ORLEANS	Coventry Community Ctr
 14091	OK	STEPHENS	Precinct 690062
 14092	GA	CLARKE	02a
 14093	OK	OKLAHOMA	Precinct 550077
@@ -14100,7 +14100,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 14097	OK	TULSA	Precinct 720155
 14098	GA	PULASKI	Annex
 14099	AR	DESHA	20 - Silver Lake
-14100	VT	Windham	Grafton Town Hall
+14100	VT	WINDHAM	Grafton Town Hall
 14101	GA	GWINNETT	134
 14102	VA	PRINCE WILLIAM	706 - Rippon
 14103	MN	WABASHA	Mazeppa Twp.
@@ -14171,7 +14171,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 14168	MN	HENNEPIN	Minneapolis W-1 P-03
 14169	VA	TAZEWELL	401 - Richlands
 14170	MN	ST LOUIS	Duluth P-23
-14171	VT	Addison	Whiting Town Hall
+14171	VT	ADDISON	Whiting Town Hall
 14172	GA	EARLY	A
 14173	VA	HENRICO	416 - Spottswood
 14174	GA	EFFINGHAM	04a
@@ -14179,7 +14179,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 14176	GA	GWINNETT	81
 14177	GA	DEKALB	Pg
 14178	MA	SUFFOLK	Boston W19 P06
-14179	VT	Lamoille	Hyde Park Town Ofc Bldg
+14179	VT	LAMOILLE	Hyde Park Town Ofc Bldg
 14180	AL	LAUDERDALE	Florence High School
 14181	VA	CHESTERFIELD	402 - Genito
 14182	OK	ADAIR	Precinct 010019
@@ -14198,7 +14198,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 14195	GA	COBB	Pm02
 14196	GA	HARALSON	4
 14197	AR	PULASKI	Precinct 025
-14198	VT	Orange	Newbury Center Town Hall
+14198	VT	ORANGE	Newbury Center Town Hall
 14199	TN	LAWRENCE	502
 14200	TN	SUMNER	703
 14201	AL	JEFFERSON	Precinct 4110
@@ -14323,7 +14323,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 14320	VA	HARRISONBURG CITY	104 - East
 14321	VA	CULPEPER	501 - Jeffersonton
 14322	AL	JEFFERSON	Precinct 2240
-14323	VT	Franklin	Fairfield Municipal Bldg
+14323	VT	FRANKLIN	Fairfield Municipal Bldg
 14324	MA	ESSEX	Lawrence Wd P03
 14325	OK	WASHINGTON	Precinct 740027
 14326	MN	MEEKER	Dassel Twp.
@@ -14369,4 +14369,5 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 14366	VA	HENRICO	114 - Monument Hills
 14367	AR	HOT SPRING	Friendship City
 14368	AL	WASHINGTON	Precinct 0070 Yarbo
-14369	MN	HENNEPIN	St Louis Park W-1 P-02\.
+14369	MN	HENNEPIN	St Louis Park W-1 P-02
+\.
