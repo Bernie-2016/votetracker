@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import serialize from 'form-serialize';
 import uuid from 'node-uuid';
+import superagent from 'superagent';
 
 export default class SubmitableForm extends Component {
   constructor() {
@@ -28,6 +29,12 @@ export default class SubmitableForm extends Component {
     }
     submitData.client_id = window.clientId;
     submitData.location_id = this.props.params.location;
+    superagent.post('/api/report')
+      .send(submitData)
+      .set('Accept', 'application/json')
+      .end((err, res) => {
+        console.log(err, res);
+      });
     console.log('Would submit', submitData, 'to /api/report'); // eslint-disable-line
     event.preventDefault();
   }
