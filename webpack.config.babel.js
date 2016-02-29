@@ -15,6 +15,7 @@ const config = {
     path: getPath('public'),
     filename: 'app.js',
     pathinfo: isDevelopment,
+    publicPath: '/',
   },
   resolve: {
     extensions: ['', '.js', '.jsx', '.styl'],
