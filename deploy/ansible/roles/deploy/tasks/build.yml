@@ -25,6 +25,9 @@
   environment:
     NODE_ENV: "{{env}}"
 
+- name: fixtures
+  shell: "echo {{clone_path}}/fixtures/*.sql | psql -U postgres votetracker"
+
 - name: build production version
   shell: npm run build
   args:
