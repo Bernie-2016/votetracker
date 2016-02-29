@@ -23,6 +23,8 @@ const submit = {
     insert('caucus_report', data)
       .then(() => {
         res.sendStatus(204);
+      }, () => {
+        res.sendStatus(400);
       });
   },
   primary: (req, res) => {
@@ -37,6 +39,8 @@ const submit = {
     insert('primary_report', data)
       .then(() => {
         res.sendStatus(204);
+      }, () => {
+        res.sendStatus(400);
       });
   },
   official: (req, res) => {
@@ -54,6 +58,8 @@ const submit = {
     insert('official_report', data)
       .then(() => {
         res.sendStatus(204);
+      }, () => {
+        res.sendStatus(400);
       });
   },
 };
