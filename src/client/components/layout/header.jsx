@@ -8,7 +8,7 @@ const Header = () => (
       Bernie 2016
       </h1>
     </Link>
-    <h2><Link to="/">VoteTracker</Link></h2>
+    <h2><Link to="/">Vote Tracker</Link></h2>
   </header>
 );
 
