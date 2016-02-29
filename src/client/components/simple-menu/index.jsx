@@ -50,13 +50,15 @@ export default class SimpleMenu extends Component {
     return (
       <ul className="menu">
       {filter ? (
-        <li className="filter">
-          <input onChange={this.changeFilter}
-            onKeyUp={this.changeFilter}
-            onInput={this.changeFilter}
-            placeholder="Search" type="search"
-          />
-        </li>
+        <label>You can enter part of the location name to filter results.
+          <li className="filter">
+            <input onChange={this.changeFilter}
+              onKeyUp={this.changeFilter}
+              onInput={this.changeFilter}
+              placeholder="Search" type="search"
+            />
+          </li>
+          </label>
       ) : ''}
       {items.map((item, index) => (
         <li className="menu-item" key={index}>
