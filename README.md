@@ -49,3 +49,8 @@ http://votetracker.gnarf.net/api
 
 ## Troubleshooting Local Environment
 
+### Vagrant port forwarding issue "The forwarded port to 5432 is already in use on the host machine."
+
+If you see this error, it's possible you've already got postgres (the database) already running on your machine. If you're on a 'nix system, try entering `sudo service --status-all` at the command line. If you see something that looks like this `[ + ]  postgresql` in the output, stop the service by entering `sudo service postgresql stop` and attempt to bring up vagrant again. 
+
+
