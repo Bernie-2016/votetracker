@@ -39,7 +39,11 @@ export default class LocationSelect extends Component {
     return (
       <div className="location-form">
         <h3>Select your Polling Location</h3>
-        <Menu filter items={locations} makeLink={makeLink} renderItem={renderItem} />
+        <Menu filter={locations.length > 10}
+          items={locations}
+          makeLink={makeLink}
+          renderItem={renderItem}
+        />
       </div>
     );
   }
