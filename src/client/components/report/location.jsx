@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import superagent from 'superagent';
 import fuzzy from 'fuzzy';
 import Menu from '../simple-menu';
 import debounce from 'lodash.debounce';
@@ -15,17 +14,11 @@ export default class LocationSelect extends Component {
 
   componentDidMount() {
     const { state, county } = this.props.params;
-    superagent.get(`/api/states/${state}/${county}/locations`)
-      .set('Accept', 'application/json')
-      .end((err, response) => {
-        if (err || !response.ok || !response.body.length) {
-          this.setState({ loading: false, error: true });
-        } else {
-          this.setState({
-            loading: false,
-            locations: response.body,
-          });
-        }
+    this.context.api.getLocations({ state, county })
+      .then(locations => {
+        this.setState({ loading: false, locations });
+      }, () => {
+        this.setState({ loading: false, error: true });
       });
   }
 
@@ -84,6 +77,10 @@ export default class LocationSelect extends Component {
     );
   }
 }
+
+LocationSelect.contextTypes = {
+  api: React.PropTypes.object,
+};
 
 LocationSelect.propTypes = {
   params: React.PropTypes.object,

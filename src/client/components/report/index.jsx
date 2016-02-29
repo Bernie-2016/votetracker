@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import superagent from 'superagent';
 
 import Menu from '../simple-menu';
 import { Link } from 'react-router';
@@ -19,17 +18,11 @@ export default class Report extends Component {
   }
 
   componentDidMount() {
-    superagent.get(`/api/states/${this.props.params.state}/counties`)
-      .set('Accept', 'application/json')
-      .end((err, response) => {
-        if (err || !response.ok || !response.body.length) {
-          this.setState({ loading: false, error: true });
-        } else {
-          this.setState({
-            loading: false,
-            counties: response.body,
-          });
-        }
+    this.context.api.getCounties(this.props.params.state)
+      .then(counties => {
+        this.setState({ loading: false, counties });
+      }, () => {
+        this.setState({ error: true, loading: false });
       });
   }
 
@@ -69,6 +62,7 @@ Report.propTypes = {
 };
 
 Report.contextTypes = {
+  api: React.PropTypes.object.isRequired,
   state: React.PropTypes.object.isRequired,
 };
 

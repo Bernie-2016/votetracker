@@ -6,7 +6,7 @@ const parsedStates = states.map(({ state_code, name, election_day, type, open_cl
   parsed.election_day = moment(election_day, 'M/D/YYYY');
 
   return parsed;
-});
+}).sort((a, b) => a.name.localeCompare(b.name));
 
 export default parsedStates;
 
