@@ -15,6 +15,7 @@ const submit = {
       report_age: +req.body.report_age,
       client_id: req.body.client_id,
       location_id: +req.body.location_id,
+      precinct_id: +req.body.precinct_id || null,
       sanders_supporters: +req.body.sanders_supporters || 0,
       clinton_supporters: +req.body.clinton_supporters || 0,
       other_supporters: +req.body.other_supporters || 0,
@@ -29,6 +30,7 @@ const submit = {
       type: req.body.type,
       client_id: req.body.client_id,
       location_id: +req.body.location_id,
+      precinct_id: +req.body.precinct_id || null,
       report_age: +req.body.report_age,
       ballots_cast: +req.body.ballots_cast,
     };
@@ -40,6 +42,7 @@ const submit = {
   official: (req, res) => {
     const data = {
       client_id: req.body.type,
+      precinct_id: +req.body.precinct_id || null,
       clinton_votes: +req.body.clinton_votes,
       sanders_votes: +req.body.sanders_votes,
       other_votes: +req.body.other_votes,
