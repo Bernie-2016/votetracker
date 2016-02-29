@@ -1,4 +1,4 @@
-# Vote Tracker
+# VoteTracker
 
 ## Dependencies
 
