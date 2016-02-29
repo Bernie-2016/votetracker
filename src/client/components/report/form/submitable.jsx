@@ -13,8 +13,15 @@ export default class SubmitableForm extends Component {
     };
   }
 
+  shouldThank() {
+    return true;
+  }
+
   submitted() {
     this.setState({ submitting: false });
+    if (this.context.router && this.shouldThank()) {
+      this.context.router.push('/thank-you');
+    }
   }
 
   errored() {
@@ -57,4 +64,8 @@ export default class SubmitableForm extends Component {
 
 SubmitableForm.propTypes = {
   params: React.PropTypes.object,
+};
+
+SubmitableForm.contextTypes = {
+  router: React.PropTypes.object,
 };
