@@ -24,6 +24,35 @@ const submit = {
         res.sendStatus(204);
       });
   },
+  primary: (req, res) => {
+    const data = {
+      type: req.body.type,
+      client_id: req.body.type,
+      location_id: +req.body.location_id,
+      report_age: +req.body.report_age,
+      ballots_cast: +req.body.ballots_cast,
+    };
+    insert('primary_report', data)
+      .then(() => {
+        res.sendStatus(204);
+      });
+  },
+  official: (req, res) => {
+    const data = {
+      client_id: req.body.type,
+      clinton_votes: +req.body.clinton_votes,
+      sanders_votes: +req.body.sanders_votes,
+      other_votes: +req.body.other_votes,
+      percent_reporting: +req.body.percent_reporting,
+      state: req.body.state,
+      county: req.body.county,
+      location_id: +req.body.location_id || 0,
+    };
+    insert('official_report', data)
+      .then(() => {
+        res.sendStatus(204);
+      });
+  },
 };
 
 export function create(req, res) {
