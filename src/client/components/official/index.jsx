@@ -92,7 +92,7 @@ export default class OfficialReport extends Submitable {
               <textarea name="attribution" />
             </label>
             <TimeSelect />
-            <label><button type="submit">Submit</button></label>
+            <label><button disabled={this.state.submitting} type="submit">Submit</button></label>
           </div>
         </form>
       </div>
