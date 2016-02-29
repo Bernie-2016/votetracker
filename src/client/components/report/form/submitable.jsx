@@ -34,6 +34,11 @@ export default class SubmitableForm extends Component {
       .set('Accept', 'application/json')
       .end((err, res) => {
         console.log(err, res); // eslint-disable-line
+        if (err || !res.noContent) {
+          this.errored();
+        } else {
+          this.submitted();
+        }
       });
     event.preventDefault();
   }
