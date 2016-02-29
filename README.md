@@ -46,3 +46,6 @@ required features may not be available in older versions.
 
 In production, the server component is mounted at:
 http://votetracker.gnarf.net/api
+
+## Troubleshooting Local Environment
+
