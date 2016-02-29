@@ -27,7 +27,7 @@ const submit = {
   primary: (req, res) => {
     const data = {
       type: req.body.type,
-      client_id: req.body.type,
+      client_id: req.body.client_id,
       location_id: +req.body.location_id,
       report_age: +req.body.report_age,
       ballots_cast: +req.body.ballots_cast,
