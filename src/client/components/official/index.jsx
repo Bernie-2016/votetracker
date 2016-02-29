@@ -54,15 +54,15 @@ export default class OfficialReport extends Submitable {
         <form ref={this.trackForm}>
           <input type="hidden" value="official" name="report_type" />
           <label>Select a State
-            <select name="state"><option value="">---Select A State---</option>{states.map(state => { // eslint-disable-line
+            <select name="state"><option value="">---Select a State---</option>{states.map(state => { // eslint-disable-line
               return <option value={state.state_code} key={state.state_code}>{state.name}</option>; // eslint-disable-line
             })}</select>
           </label>
 
           <div hidden={!this.state.state}><label>
-            Select A County
+            Select a County
             <select name="county">
-              <option value="">---Select A County---</option>
+              <option value="">---Select a County---</option>
               {counties.map(county => { // eslint-disable-line
                 return <option value={county} key={county}>{county}</option>; // eslint-disable-line
               })}
@@ -70,32 +70,25 @@ export default class OfficialReport extends Submitable {
           </label></div>
 
           <div className="form" hidden={!this.state.county}>
-            <p>
-              Please select whether this report is for the number of ballots cast or the percent
-              of the total vote. Then enter the number or percent of votes for Sanders, Clinton,
-              or Other. Include the source of this information, and the time at which it was
-              reported.
-            </p>
-
-            <label>
-              <select>Percent or Number
-                <option>Percent of Total</option>
+            <label>Are you reporting the number votes cast or the vote percentages?
+              <select>
+                <option>Vote Percentages</option>
                 <option>Number of Votes</option>
               </select>
             </label>
-            <label>Sanders Votes (Percent or Number)
+            <label>Sanders Votes
               <input type="number" name="sanders_votes" />
             </label>
-            <label>Clinton Votes (Percent or Number)
+            <label>Clinton Votes
               <input type="number" name="clinton_votes" />
             </label>
-            <label>Other Votes (Percent or Number)
+            <label>Other Votes
               <input type="number" name="other_votes" />
             </label>
             <label>Percent Reporting
               <input type="number" name="percent_reporting" />
             </label>
-            <label>Attribution
+            <label>Source Attribution
               <textarea name="attribution" />
             </label>
             <TimeSelect />
