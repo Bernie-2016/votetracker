@@ -33,7 +33,9 @@ required features may not be available in older versions.
 1. Run `npm install` to install local dependencies.
 2. Run `vagrant up` to set up postgresql database.
 3. Run `npm run migrate` to initialize the database model.
-4. Run `vagrant ssh` and then `cat /mnt/vagrant/fixture/*.sql | psql -U postgres votetracker` to import the fixtures.
+4. Run `vagrant ssh`
+5. On the Vagrant box, run `cat /mnt/vagrant/fixture/*.sql | psql -U postgres votetracker` to import the fixtures.
+6. `exit` from the vagrant ssh.
 5. Run `npm start` to start the file-watcher, api and live-reload process.
 6. Browse to <http://localhost:8080/> for the client.
 7. Browse to <http://localhost:8000/>  or <http://localhost:8080/api/> for the server.
