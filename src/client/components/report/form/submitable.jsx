@@ -14,7 +14,7 @@ export default class SubmitableForm extends Component {
   }
 
   submitted() {
-    this.setState({ submitting: false });
+    this.setState({ submitted: true, submitting: false });
   }
 
   errored() {
