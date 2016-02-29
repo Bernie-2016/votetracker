@@ -8,6 +8,10 @@ export default class CaucusReport extends Submitable {
     this.state = { phase: 0 };
   }
 
+  shouldThank() {
+    return this.state.phase === 2;
+  }
+
   trackForm(element) {
     super.trackForm(element);
     if (element) {
