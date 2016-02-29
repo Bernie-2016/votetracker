@@ -26,7 +26,10 @@ export default class CaucusReport extends Submitable {
       const value = select[select.selectedIndex].value;
       this.setState({ phase: +value });
     };
-
+    let statusMessage;
+    if (this.state.submitted) {
+      statusMessage = 'Submitted';
+    }
     return (
       <div className="CaucusReportForm">
         <form ref={this.trackForm}>
@@ -60,7 +63,9 @@ export default class CaucusReport extends Submitable {
             </label>
           </div>
           <TimeSelect />
-          <label><button disabled={this.state.submitting} type="submit">Submit</button></label>
+          <label>
+            <button disabled={this.state.submitting} type="submit">Submit</button>
+          {statusMessage}</label>
         </form>
       </div>
     );

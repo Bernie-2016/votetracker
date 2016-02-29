@@ -18,7 +18,7 @@ export default class SubmitableForm extends Component {
   }
 
   submitted() {
-    this.setState({ submitting: false });
+    this.setState({ submitted: true, submitting: false });
     if (this.context.router && this.shouldThank()) {
       this.context.router.push('/thank-you');
     }

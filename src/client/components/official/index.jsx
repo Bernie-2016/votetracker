@@ -48,6 +48,10 @@ export default class OfficialReport extends Submitable {
 
   render() {
     const counties = this.state && this.state.counties || [];
+    let statusMessage;
+    if (this.state.submitted) {
+      statusMessage = 'Submitted';
+    }
     return (
       <div className="official report">
         <h2>Official Results</h2>
@@ -92,7 +96,9 @@ export default class OfficialReport extends Submitable {
               <textarea name="attribution" />
             </label>
             <TimeSelect />
-            <label><button type="submit">Submit</button></label>
+            <label>
+              <button disabled={this.state.submitting} type="submit">Submit</button>
+            {statusMessage}</label>
           </div>
         </form>
       </div>

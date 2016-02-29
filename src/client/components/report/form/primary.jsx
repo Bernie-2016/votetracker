@@ -5,6 +5,10 @@ import TimeSelect from './timeselect';
 export default class PrimaryReport extends Submitable {
 
   render() {
+    let statusMessage;
+    if (this.state.submitted) {
+      statusMessage = 'Submitted';
+    }
     return (
       <div className="PrimaryReportForm">
         <form ref={this.trackForm}>
@@ -19,7 +23,9 @@ export default class PrimaryReport extends Submitable {
           <input type="number" name="ballots_cast" />
         </label>
         <TimeSelect />
-        <label><button type="submit" disabled={this.state.submitting}>Submit</button></label>
+        <label>
+          <button type="submit" disabled={this.state.submitting}>Submit</button>
+        {statusMessage}</label>
         </form>
       </div>
     );
