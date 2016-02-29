@@ -70,7 +70,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 67	VA	BEDFORD	504 - Suck Springs Baptist Church	SUCK SPRING BAPTIST CHURCH	3887 Jopling Rd	Bedford	24523
 68	TN	MACON	2	Westside School	8025 Old Hwy 52	Westmoreland	37186
 69	VA	COVINGTON CITY	201 - Precinct 2-1	Jeter Watson Center	515 E Pine St	Covington	24426
-70	VT	NA	Chester Town Hall	Town Hall  Second Floor	556 Elm Street	Chester	05143
+70	VT	Windsor	Chester Town Hall	Town Hall  Second Floor	556 Elm Street	Chester	05143
 71	TN	WASHINGTON	15	Courthouse	100 E. Main Street	Jonesborough	37659
 72	AR	CLEBURNE	14 - Healing Springs	Drasco Fire Department	6526 Heber Springs Rd. N.	Drasco	72530
 73	AR	HOT SPRING	Lone Hill	Southwest Fire Dept	26710 Highway 84	Malvern	72104
@@ -156,7 +156,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 153	VA	FAIRFAX	225 - Terraset	HUGHES MIDDLE SCHOOL	11401 Ridge Heights Rd	Reston	20191
 154	AL	BALDWIN	Precinct 45	East Pointe Baptist Church	34742 State Highway 225	Spanish Fort	36527
 155	MA	NORFOLK	Wellesley B	SPRAGUE SCHOOL	401 SCHOOL STREET	WELLESLEY	02482
-156	VT	NA	Woodbury Town Hall	Woodbury Elementary School	63 Valley Lake Road	Woodbury	05681
+156	VT	Washington	Woodbury Town Hall	Woodbury Elementary School	63 Valley Lake Road	Woodbury	05681
 157	AL	WALKER	Precinct 0701	Memorial Park Natatorium	610 10th Ave	Jasper	35501
 158	TN	SHELBY	Col07	Sycamore Elementary School (Gym)	1155 Sycamore Rd	Collierville	38017
 159	VA	WASHINGTON	204 Woodland Hills	Abingdon Elementary School	19431 Woodland Hills Rd	Abingdon	24210
@@ -192,7 +192,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 189	OK	TULSA	Precinct 720760	New Life Assembly Of God	12215 N Garnett Rd	Collinsville	74021
 190	AR	PRAIRIE	Hazen Ward 1	Hazen City Hall	106 West Front Street	Hazen	72064
 191	TN	CUMBERLAND	Fgn	Fairfield Glade N. Multi-Purpose Center	455 Lakeview Drive	Crossville	38558
-192	VT	NA	Corinth Town Hall	Corinth Town Hall	1387 Cookeville Road	Corinth	05039
+192	VT	Orange	Corinth Town Hall	Corinth Town Hall	1387 Cookeville Road	Corinth	05039
 193	TN	HAMBLEN	1102	Witt Elementary School	4650 S. Davy Crockett	Morristown	37813
 194	VA	SUFFOLK CITY	402 - Whaleyville	WHALEYVILLE COMMUNITY CENTER	6235 WHALEYVILLE BLVD	Suffolk	23434
 195	GA	DEKALB	Rl	ANTIOCH-LITHONIA M. B. C.	2152 ROCK CHAPEL ROAD	LITHONIA	30058
@@ -353,7 +353,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 350	AR	CONWAY	018 - Morrilton Ward 4	Morrilton Primary School Room 301 -Ward 4	410 South Bridge	Morrilton	72110
 351	MA	PLYMOUTH	Plymouth 05	PLYM COMM INTERMED SCHOOL	117 LONG POND RD	PLYMOUTH	02360
 352	AR	PULASKI	Precinct 052	Sherman Park Community Center	624 N Beech St	N Little Rock	72114
-353	VT	NA	Bethel Elementary Sch	Whitcomb High School Gym	273 Pleasant Street	Bethel	05032
+353	VT	Windsor	Bethel Elementary Sch	Whitcomb High School Gym	273 Pleasant Street	Bethel	05032
 354	MA	BRISTOL	New Bedford W02e	WILK'S BRANCH LIBRARY	1911 ACUSHNET AVE.	NEW BEDFORD	02746
 355	TN	LOUDON	Ldn	Loudon High School	1039 Mulberry St	Loudon	37774
 356	TN	CHEATHAM	1-Apr	West Cheatham Elem. School	3120 Hwy 12 North	Ashland City	37015
@@ -419,7 +419,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 416	OK	WAGONER	Precinct 730202	Cedar Ridge Christian Church	14085 S 296 E Ave	Coweta	74429
 417	GA	FULTON	09d	SALEM BAPTIST CHURCH	2283 BAKER ROAD NW	ATLANTA	30318
 418	AL	PIKE	Precinct 19 - Galloway Road	Galloway Road Community Center	102 John Lewis Street	Brundidge	36010
-419	VT	NA	Baltimore Town Office	Baltimore Town Office	1902 Baltimore Road	Baltimore	05143
+419	VT	Windsor	Baltimore Town Office	Baltimore Town Office	1902 Baltimore Road	Baltimore	05143
 420	AL	TUSCALOOSA	Peterson Community Church	Peterson Community Church	8709 Old Bham Hwy	Cottondale	35453
 421	GA	HANCOCK	01a	DEVEREUX FIRE STATION	3841 HWY 22 W	SPARTA	31087
 422	VA	GRAYSON	203 - Independence	GRAYSON CO. HIGH SCHOOL	110 BLUE DEVIL DR	INDEPENDENCE	24348
@@ -436,7 +436,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 433	GA	GWINNETT	83	RICHLAND HOMEOWNERS CLUBHOUSE	2074 QUINTON PL	SUWANEE	30024
 434	OK	KIOWA	Precinct 380007	Hobart Head Start	400 N. Randlett	Hobart	73651
 435	GA	BIBB	Wa2	SKYVIEW ELEMENTARY - GYM	5700 FULTON MILL RD	LIZELLA	31052
-436	VT	NA	West Haven Community Hall	Community Hall	2919 Main Road	 Fair Haven	West
+436	VT	Rutland	West Haven Community Hall	Community Hall	2919 Main Road	 Fair Haven	West
 437	VA	ALLEGHANY	101 - Arritt	BOILING SPRING FIREHOUSE	5407 POTTS CREEK RD	Covington	24426
 438	GA	COLUMBIA	131	JOURNEY COMMUNITY CHURCH	4798 HARDY MCMANUS RD	EVANS	30809
 439	VA	HAMPTON CITY	117 - Kecoughtan	KECOUGHTAN HIGH SCHOOL	522 Woodland Rd	Hampton	23669
@@ -468,7 +468,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 465	OK	CLEVELAND	Precinct 140056	Monroe Elementary	1601 Mcgee Drive	Norman	73072
 466	AR	CRAWFORD	Van Buren 4-1	Hope's Creek City	2502 Fayetteville Rd.	Van Buren	72956
 467	OK	PAYNE	Precinct 600016	Meridian Technology Center	1312 S Sangre Rd	Stillwater	74074
-468	VT	NA	Starksboro Robinson Sch	Robinson Elementary School	41 Parsonage Road	Starksboro	05487
+468	VT	Addison	Starksboro Robinson Sch	Robinson Elementary School	41 Parsonage Road	Starksboro	05487
 469	AR	LITTLE RIVER	Foreman Ward 3	Agriculture Building	603 E Dollarhide	Foreman	71836
 470	OK	OKLAHOMA	Precinct 550026	First Baptist Church Of Ncp	1931 Nichols Dr	Nicoma Park	73066
 471	GA	CHATHAM	4-10c	GUARD HOUSE COMMUNITY CENTER	31 VAN HORN DR	TYBEE ISLAND	31328
@@ -510,7 +510,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 507	MA	SUFFOLK	Revere W05 P03	REVERE HIGH SCHOOL	101 SCHOOL STREET	REVERE	02151
 508	GA	HANCOCK	04c	HICKORY GROVE BAPTIST CHURCH	4933 HICKORY GROVE CHURCH RD	SPARTA	31087
 509	VA	FAIRFAX	240 - Colvin	THE CAPITAL CHURCH	10233 Leesburg Pike	Vienna	22182
-510	VT	NA	Irasburg Town Hall	Irasburg Town Hall	118 Park Ave.	Irasburg	05845
+510	VT	Orleans	Irasburg Town Hall	Irasburg Town Hall	118 Park Ave.	Irasburg	05845
 511	AL	DALLAS	Precinct 0101 Plantersville	Plantersville VFD	12 Oak St	Plantersville	36758
 512	MN	RAMSEY	St. Paul W-2 P-15	Humboldt Senior High	30 Baker St E	Saint Paul	55107
 513	TN	WILLIAMSON	102	Liberty Elementary School	600 Liberty Pike	Franklin	37064
@@ -522,7 +522,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 519	TN	DAVIDSON	704	Dalewood Baptist Church	1586 Mcgavock Pk	Madison	37216
 520	AL	PIKE	Precinct 30 - Banks # 2	Banks Voting Center #2	82 West Troy Street	Banks	36005
 521	OK	CLEVELAND	Precinct 140006	Administration Services Center	131 S. Flood	Norman	73069
-522	VT	NA	Enosburgh Opera House	Enosburgh Middle/High School	Dickinson Ave	Enosburgh	05450
+522	VT	Franklin	Enosburgh Opera House	Enosburgh Middle/High School	Dickinson Ave	Enosburgh	05450
 523	TN	HAMBLEN	601	Fairview-Marguerite School	2125 Fairview Rd.	Morristown	37814
 524	AR	LAWRENCE	13 - Dent	Imboden Community Center Dent	102 W. Fourth St.	Imboden	72434
 525	OK	DELAWARE	Precinct 210015	Topsy Assembly Of God Church	40867 S 510 Rd	Eucha	74342
@@ -578,7 +578,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 575	VA	APPOMATTOX	201 - Chap	FELLOWSHIP HALL	1271 Central Church Rd	Appomattox	24522
 576	GA	MITCHELL	Cn	JESTER RECREATION CENTER	400 PECAN DR	CAMILLA	31730
 577	VA	RICHMOND CITY	208 - Two Hundred Eight	TABERNACLE BAPTIST CHURCH	1915 Grove Ave	Richmond	23220
-578	VT	NA	Washington Mun Bldg	Washington Grade School	72 School Lane	Washington	05675
+578	VT	Orange	Washington Mun Bldg	Washington Grade School	72 School Lane	Washington	05675
 579	AL	CHOCTAW	Precinct 0131 -Butler D-1 H-65	National Guard Armory	1018 W Pushmataha St.	Butler	36904
 580	AR	LEE	Texas	Gill Community Center	1498 Lee 810	Palestine	72372
 581	MA	NORFOLK	Brookline 05	NEW LINCOLN SCHOOL	19 KENNARD ROAD	BROOKLINE	02445
@@ -606,7 +606,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 603	GA	COBB	Or03	FAIR OAKS RECREATION CENTER	1465 BRANDON DRIVE	MARIETTA	30008
 604	TN	DAVIDSON	2406	West End Middle School	3529 West End Ave.	Nashville	37203
 605	OK	OKLAHOMA	Precinct 550227	Trinity Lutheran Church	5701 S May Ave	Oklahoma City	73119
-606	VT	NA	Ryegate Town Hall	Ryegate Town Hall	134 Witherspoon Road	Ryegate	05042
+606	VT	Caledonia	Ryegate Town Hall	Ryegate Town Hall	134 Witherspoon Road	Ryegate	05042
 607	AR	IZARD	Violet Hill	Violet Hill Gym	5555 AR Hwy 56	Violet Hill	72584
 608	VA	PRINCE GEORGE	204 - Courts Bldg	COURTS BUILDING	6601 Courts Dr	Prince George	23875
 609	MA	MIDDLESEX	Lowell W07 P02	SENIOR CENTER	276 BROADWAY ST.	LOWELL	01854
@@ -642,7 +642,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 639	GA	GWINNETT	133	DACULA PARK ACTIVITY BLDG	2735 OLD AUBURN RD	DACULA	30019
 640	VA	FAIRFAX	115 - Ravensworth	RAVENSWORTH ELEMENTARY SCHOOL	5411 Nutting Dr	Springfield	22151
 641	GA	COLUMBIA	105	STEVENS CREEK ELEMENTARY	3870 EVANS TO LOCKS RD	MARTINEZ	30907
-642	VT	NA	Hubbardton Town Hall	Hubbardton Town Hall	1831 Monument Hill Road	Hubbardton	05735
+642	VT	Rutland	Hubbardton Town Hall	Hubbardton Town Hall	1831 Monument Hill Road	Hubbardton	05735
 643	MN	CASS	Shingobee Twp P-1	Walker-Hackensack-Akeley School	301 4th St	Walker	56484
 644	AL	FAYETTE	1501/Clear Creek/Phil Church	CLEAR CREEK/PHILIDELPHIA CHURCH VOTING CENTER	5784 CO RD 93	BANKSTON	35542
 645	MA	ESSEX	Ipswich 02	YMCA	110 COUNTY RD	IPSWICH	01938
@@ -713,14 +713,14 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 710	TN	KNOX	12	Eastport School	2036 Bethel Ave.	Knoxville	37915
 711	GA	CHATHAM	2-03c	W. W. LAW CENTER	909 EAST BOLTON ST	SAVANNAH	31401
 712	MN	RAMSEY	St. Paul W-2 P-11	City Passport Program in Alliance Bank Center	55 East 5th Street Suite 203	Saint Paul	55101
-713	VT	NA	Plainfield Town Hall	Plainfield Town Hall Opera House	18 High Street	Plainfield	05667
+713	VT	Washington	Plainfield Town Hall	Plainfield Town Hall Opera House	18 High Street	Plainfield	05667
 714	AL	JEFFERSON	Precinct 4230	GUIDING LIGHT CHRUCH	1800 JOHN ROGERS DR	BIRMINGHAM	35210
 715	VA	LOUDOUN	616 - Eagle Ridge	EAGLE RIDGE MIDDLE SCHOOL	42901 Waxpool Rd	Broadlands	20148
 716	AL	JACKSON	Precinct 0200	CAPERTON'S CHAPEL	213 Co Road 14	Flat Rock	35966
 717	VA	LOUDOUN	626 - Ashby Ponds	GREAT OAK CLUBHOUSE	44755 AUDOBON SQ	ASHBURN	20147
 718	MA	BRISTOL	New Bedford W01e	DOTTIN PLACE	8 AMANDA AVE (ADMINISTRATION BLDG.)	NEW BEDFORD	02745
 719	OK	ROGERS	Precinct 660033	Liberty Free Will Baptist	14992 Us 169	Oologah	74053
-720	VT	NA	Readsboro School Gymnasium	Readsboro Central School	301 Phelps Lane	Readsboro	05350
+720	VT	Bennington	Readsboro School Gymnasium	Readsboro Central School	301 Phelps Lane	Readsboro	05350
 721	VA	ARLINGTON	002 - Ashton Heights	CLARENDON UNITED METH CHURCH	606 N Irving St	Arlington	22201
 722	CO	ARAPAHOE	1310903502	Hamilton Middle School	8600 E Dartmouth Ave	Denver	80231
 723	TN	DAVIDSON	3204	Southeast Library	2325 Hickory Highlands Dr	Antioch	37076
@@ -759,7 +759,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 756	GA	SUMTER	E-27	SOUTHERFIELD AIRPORT	223 AIRPORT RD	AMERICUS	31709
 757	GA	TELFAIR	Mi	MILAN POLLING PLACE	6 FIRST AVENUE	MILAN	31060
 758	GA	GILMER	11	YUKON FIRE STATION	5752 YUKON RD	ELLIJAY	30540
-759	VT	NA	Benson Town Hall	Benson Community Hall	2724 Stage Road	Benson	05731
+759	VT	Rutland	Benson Town Hall	Benson Community Hall	2724 Stage Road	Benson	05731
 760	MA	ESSEX	Peabody W06 P02	BURKE SCHOOL	127 BIRCH STREET	PEABODY	01960
 761	VA	HOPEWELL CITY	301 - Ward Three	DUPONT SCHOOL	300 S 18th Ave	Hopewell	23860
 762	AR	LONOKE	03 - Austin City	CURRICULUM TRAINING CTR. AUSTIN	1348 WEST MAIN ST.	AUSTIN	72007
@@ -798,7 +798,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 795	VA	BUCKINGHAM	102 - Georgia Creek	CENTENARY UNITED METHODIST CHURCH	12247 S Constitution Rte	Scottsville	24590
 796	OK	MCCLAIN	Precinct 440023	Purcell Emmanuel Baptist Ch	2705 N 9Th Ave	Purcell	73080
 797	AR	PULASKI	Precinct 014	Berean Baptist Church	5512 Pike Ave	N Little Rock	72118
-798	VT	NA	Sudbury Town Hall	Sudbury Town Hall	36 Blacksmith Lane	Sudbury	05733
+798	VT	Rutland	Sudbury Town Hall	Sudbury Town Hall	36 Blacksmith Lane	Sudbury	05733
 799	AL	JEFFERSON	Precinct 2080	RAMSAY ALTERNATIVE HIGH SCHOOL	1800 13TH AVE S	BIRMINGHAM	35205
 800	AL	HOUSTON	Webb City Hall 343	WEBB CITY HALL	315 Webb to Kinsey Rd.	Dothan	36376
 801	GA	COWETA	14	TURIN TOWN HALL	47 TURIN ROAD	TURIN	30289
@@ -845,7 +845,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 842	VA	FAIRFAX CITY	003 - Three	DANIELS RUN SCHOOL	3705 Old Lee Hwy	Fairfax	22030
 843	GA	GWINNETT	86	CORLEY ELEMENTARY SCHOOL	1331 PLEASANT HILL RD	LAWRENCEVILLE	30044
 844	TN	WAYNE	201	Columbia State Community College	795 Main Street	Clifton	38425
-845	VT	NA	Newbury Newbury Town Office	Newbury Town Offices	4982 Main St. South	Newbury	05051
+845	VT	Orange	Newbury Newbury Town Office	Newbury Town Offices	4982 Main St. South	Newbury	05051
 846	VA	HENRICO	407 - Lakewood	LAKEWOOD MANOR	1900 Lauderdale Dr	Richmond	23238
 847	GA	COFFEE	6	WEST GREEN FIRE STATION	230 SCHOOL CIRCLE	WEST GREEN	31567
 848	MA	WORCESTER	Mendon 01	MISCOE HILL ELEMENTARY SC	148 NORTH AVE	MENDON	01756
@@ -880,7 +880,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 877	GA	FANNIN	Hoth	FIRE STATION 14	860 SALEM RD	MINERAL BLUFF	30559
 878	OK	OKMULGEE	Precinct 560020	Beggs City Hall	108 N Broadway St	Beggs	74421
 879	VA	FAIRFAX	105 - Fairview	FAIRVIEW ELEMENTARY SCHOOL	5815 Ox Rd	Fairfax Station	22039
-880	VT	NA	South Burlington Fht Middle Sch	FHT Middle School	500 Dorset Street	South Burlington	05403
+880	VT	Chittenden	South Burlington Fht Middle Sch	FHT Middle School	500 Dorset Street	South Burlington	05403
 881	GA	HARRIS	Sk	CHURCH OF THE RESURRECTION	1004 IVEY LANE	WEST POINT	31833
 882	OK	MCCURTAIN	Precinct 450035	First Baptist Church	101 E. Wilson	Valliant	74764
 883	AR	MONTGOMERY	01 - Alamo	Alamo Missionary Baptist Church	6790 Old Dallas Rd	Norman	71960
@@ -1092,7 +1092,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 1089	VA	SCOTT	102 - Yuma	YUMA ELEMENTARY SCHOOL	130 GROVER CLEVELAND LN	Gate City	24251
 1090	AR	NEVADA	Emmet Rural	Emmet City Hall - Rural	211 E 4th	Emmet	71835
 1091	VA	ALBEMARLE	307 - Yellow Mountain	MOUNT ED BAPTIST CHURCH	1606 Craigs Store Rd	Afton	22920
-1092	VT	NA	Jericho Elem School	Mount Mansfield Union High School	211 Brown's Trace	Jericho	05456
+1092	VT	Chittenden	Jericho Elem School	Mount Mansfield Union High School	211 Brown's Trace	Jericho	05456
 1093	VA	PRINCE WILLIAM	104 - Nokesville	Patriot High School	10504 Kettle Run Road	Nokesville	20181
 1094	VA	STAFFORD	403 - Brooke	BROOKE POINT HIGH SCHOOL	1700 Courthouse Rd	Stafford	22554
 1095	VA	LOUISA	601 - Bumpass	LAKE ANNA VOL RESCUE SQUAD	300 Bumpass Rd	Bumpass	23024
@@ -1225,7 +1225,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 1222	GA	COBB	Mt01	JOHNSON FERRY BAPTIST CHURCH	955 JOHNSON FERRY RD	MARIETTA	30068
 1223	VA	CARROLL	101 - Mt Bethel	CANA FIRE DEPT MT BETHEL SUB STATION	94 MOUNT BETHEL RD	CANA	24317
 1224	GA	FULTON	Sc16	SANDTOWN PARK GYMNASIUM	5320 CAMPBELLTON RD SW	ATLANTA	30331
-1225	VT	NA	Barton Orl Mem Bldg	Lake Region Union High School	317 Lake Region Rd	Orleans	05860
+1225	VT	Orleans	Barton Orl Mem Bldg	Lake Region Union High School	317 Lake Region Rd	Orleans	05860
 1226	OK	OKLAHOMA	Precinct 550165	Wheatland Methodist Church	6920 Kleiner St	Wheatland	73097
 1227	AR	PULASKI	Precinct 071	Pulaski Academy	12301 Hinson Rd	Little Rock	72212
 1228	TN	SHELBY	Col06	Covenant Baptist Church	3170 S Houston Levee Rd	Collierville	38139
@@ -1258,7 +1258,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 1255	GA	DEKALB	Mi	MILLER GROVE JR. HIGH SCHOOL	2215 MILLER ROAD	DECATUR	30035
 1256	TN	CROCKETT	12	Gadsden Community Center	229 High St	Gadsden	38337
 1257	OK	PAWNEE	Precinct 590309	Basin Fire Station	By Water Tower	Mannford	74044
-1258	VT	NA	Canaan Town Office	Canaan Municipal Office	318 Christian Hill	Canaan	05903
+1258	VT	Essex	Canaan Town Office	Canaan Municipal Office	318 Christian Hill	Canaan	05903
 1259	GA	FULTON	01s	DOBBS ELEMENTARY SCHOOL	2025 JONESBORO RD. SE	ATLANTA	30315
 1260	TN	JEFFERSON	301	White Pine School	1360 Roy Messer Hwy	White Pine	37890
 1261	AL	LAUDERDALE	Underwood Community Ctr	Underwood/Petersville Community Center	840 County Road 7	Florence	35633
@@ -1365,7 +1365,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 1362	TN	JOHNSON	P4b	Butler Volunteer Fire Department	291 Piercetown Road	Butler	37640
 1363	GA	MACON	3	SENIOR CITIZENS CENTER	106 CAMELLIA BLVD	MARSHALLVILLE	31057
 1364	OK	LINCOLN	Precinct 410004	Lutheran Church	"352025 E. 780 Rd., Cushing"	Stroud	74079
-1365	VT	NA	Wardsboro Town Office	Wardsboro Town Hall	99 Main Street	Wardsboro	05355
+1365	VT	Windham	Wardsboro Town Office	Wardsboro Town Hall	99 Main Street	Wardsboro	05355
 1366	TN	LAWRENCE	302	Center Point Fire Hall	387 Rabbit Trail	Leoma	38468
 1367	OK	TULSA	Precinct 720005	Gethsemane Baptist Church	727 E 56 St N	Tulsa	74126
 1368	GA	GWINNETT	146	ANCHOR CHURCH	451 OZORA RD	GRAYSON	30017
@@ -1376,7 +1376,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 1373	VA	HAMPTON CITY	209 - Langley	LANGLEY ELEM SCHOOL	16 Rockwell Rd	Hampton	23669
 1374	OK	TULSA	Precinct 720087	Church Of Christ/Park Plaza	5925 E 51 St	Tulsa	74135
 1375	TN	GREENE	20nv	Newmansville Fire Department	5110 Rheatown Road	Chuckey	37641
-1376	VT	NA	Isle Lamotte Town Hall	Isle La Motte Town Hall	2272 Main Street	Isle La Motte	05463
+1376	VT	Grand Isle	Isle Lamotte Town Hall	Isle La Motte Town Hall	2272 Main Street	Isle La Motte	05463
 1377	GA	SCHLEY	1	COUNTY COMMISSIONERS BUILDING	49 PECAN STREET	ELLAVILLE	31806
 1378	GA	TROUP	16	HOPE ACADEMY	200 MOOTY BRIDGE RD	LAGRANGE	30240
 1379	AR	POLK	12 - Potter	Old Potter Fire Station	563 Polk 50	Mena	71953
@@ -1418,20 +1418,20 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 1415	OK	OKLAHOMA	Precinct 550081	Sooner Baptist Church	5824 Se 15Th St	Midwest City	73110
 1416	GA	HENRY	38	HICKORY FLAT ELEM SCHOOL	841 BRANNAN ROAD	MCDONOUGH	30253
 1417	GA	TWIGGS	Gi	PEARSON FIRE STATION	16956 HIGHWAY 129	MACON	31217
-1418	VT	NA	Danby Municipal Bldg	Municipal Office	130 Brook Road	Danby	05739
+1418	VT	Rutland	Danby Municipal Bldg	Municipal Office	130 Brook Road	Danby	05739
 1419	VA	PRINCE WILLIAM	210 - Penn	PENN ELEMENTARY SCHOOL	12980 QUEEN CHAPEL ROAD	WOODBRIDGE	22193
 1420	GA	DEKALB	Gd	DUNWOODY PINES RETIREMENT	4355 GEORGETOWN SQ RD	ATLANTA	30338
 1421	AR	LAWRENCE	28 - Thacker	Ravenden Community Building Thacker	227 S. Second St.	Ravenden	72459
 1422	MA	SUFFOLK	Boston W20 P17	WEST ROXBURY BRANCH	1961 CENTRE STREET	Boston	02132
 1423	TN	JACKSON	502	Granville Community Center	6026 Granville Hwy	Granville	38564
 1424	GA	WARE	304	EMERSON PARK VOL. FIRE STATION	2510 ALABAMA AVENUE	WAYCROSS	31503
-1425	VT	NA	Bolton Smilie Mem Sch	Smilie Memorial School	2712 Theodore Roosevelt Highway	Bolton	05676
+1425	VT	Chittenden	Bolton Smilie Mem Sch	Smilie Memorial School	2712 Theodore Roosevelt Highway	Bolton	05676
 1426	OK	ROGERS	Precinct 660010	Catoosa Community Center	105 E Oak	Catoosa	74015
 1427	MA	MIDDLESEX	Somerville W02 P02	THE ARGENZIANO SCHOOL	290 WASHINGTON ST	Somerville	02143
 1428	AL	JACKSON	Precinct 0390	COMMUNITY CENTER	10991 Al Hwy 40	Henegar	35978
 1429	AR	POLK	01- Mena	New Fire Station	1100 Mena St	Mena	71953
 1430	GA	DEKALB	Wk	WHITE OAK HILLS BAPTIST CHURCH	5171 REDAN ROAD	STONE MOUNTAIN	30088
-1431	VT	NA	Worcester Town Hall	Doty Elementary School	24 Calais Road	Worcester	05682
+1431	VT	Washington	Worcester Town Hall	Doty Elementary School	24 Calais Road	Worcester	05682
 1432	AR	BENTON	Precinct 49	Lowell First Baptist Church	409 Johnson St	Lowell	72745
 1433	AL	MADISON	Owens Cross Roads City Hall	Owens Cross Roads City Hall	9032 Hwy 431 South	Owens Cross Roads	35763
 1434	TN	CUMBERLAND	Woo	Woody Church Of Christ	8215 Hwy 127 North	Crossville	38571
@@ -1561,7 +1561,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 1558	AL	MOBILE	037 - Friendship Miss Baptist	Friendship Missionary Bapt.	545 N. Cody Rd.	Mobile	36608
 1559	AL	WASHINGTON	Precinct 0170 McIntosh	Chatom Court House	101 Cochran Ave	Chatom	36518
 1560	TN	COCKE	Cv	Centerview Elementary School	2400 Hwy 160	Newport	37821
-1561	VT	NA	Peru Town Center	Peru Town Center	402 Main Street	Peru	05152
+1561	VT	Bennington	Peru Town Center	Peru Town Center	402 Main Street	Peru	05152
 1562	GA	TROUP	15	TROUP HIGH SCHOOL	1920 HAMILTON RD	LAGRANGE	30240
 1563	VA	BOTETOURT	406 - Fincastle	FINCASTLE BAPTIST CHURCH	7330 ROANOKE RD	Fincastle	24090
 1564	MN	ST LOUIS	Duluth P-25	Denfeld High School Room 2214	401 N 44th Ave W	Duluth	55807
@@ -1579,7 +1579,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 1576	AL	HENRY	Precinct 0421	Haleburg	1396 Main Street	Columbia	36319
 1577	GA	GWINNETT	90	C3 CHURCH	1065 WALTHER BLVD	LAWRENCEVILLE	30043
 1578	TN	MAURY	Mtpl	Mt Pleasant Community Center	501 Gray Lane	Mt. Pleasant	38474
-1579	VT	NA	Goshen Town Office	Goshen Town Hall	50 Carlisle Hill Road	Goshen	05733
+1579	VT	Addison	Goshen Town Office	Goshen Town Hall	50 Carlisle Hill Road	Goshen	05733
 1580	AR	ASHLEY	25 - Montrose City	"Montrose City Hall (Boy, Mon, Sny, Tra)"	305 East 2nd Street	Montrose	71658
 1581	VA	ISLE OF WIGHT	504 - Zuni	ZUNI RURITAN BUILDING	20221 Ruritan Dr	Zuni	23898
 1582	AL	MONTGOMERY	Precinct 05k	Arrowhead Country Club	50 Ocala Dr	Montgomery	36117
@@ -1688,7 +1688,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 1685	GA	HABERSHAM	7	Deep Creek Fire Station	4263 Hollywood Highway	Clarkesville	30523
 1686	MA	SUFFOLK	Chelsea W03 P02	SAINT ROSE SCHOOL	580 BROADWAY	CHELSEA	02150
 1687	GA	BEN HILL	2	ARBOR CHURCH ANNEX	1137 N MERRIMAC DRIVE EXT	FITZGERALD	31750
-1688	VT	NA	Burlington Bed	Burlington Electric Department	585 Pine Street	Burlington	05401
+1688	VT	Chittenden	Burlington Bed	Burlington Electric Department	585 Pine Street	Burlington	05401
 1689	GA	BURKE	2	HOPEFUL BAPTIST CHURCH	2973 WINTER ROAD	BLYTHE	30805
 1690	TN	CHESTER	2-Jan	Enville Community Center	115 Leapwood Dr	Enville	38332
 1691	VA	PATRICK	402 - Stuart Administration	STUART ADMINISTRATION BLDG	106 Rucker St	Stuart	24171
@@ -1753,7 +1753,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 1750	GA	EARLY	Cs	CEDAR SPRINGS COMMUNITY HOUSE	34 SHEFFIELD ST	CEDAR SPRINGS	39832
 1751	AL	MONTGOMERY	Precinct 04a	St. James Baptist church	3424 South Court St	Montgomery	36105
 1752	VA	ARLINGTON	049 - Monroe	ARLINGTON ARTS CENTER	3550 Wilson Blvd	Arlington	22201
-1753	VT	NA	Dover Town Hall	Dover Town Hall	189 Taft Brook Rd	Dover	05356
+1753	VT	Windham	Dover Town Hall	Dover Town Hall	189 Taft Brook Rd	Dover	05356
 1754	TN	HAWKINS	12	Keplar Elementary School	1914 Burem Road	Rogersville	37857
 1755	MN	WINONA	Rollingstone Twp	ROLLINGSTONE ELEMENTARY	61 Main St	Rollingstone	55969
 1756	AR	WASHINGTON	Prairie Twp 1	NE Baptist Church On Oakland Zion Rd	2578 Oakland Zion Rd WC 83	Fayetteville	72703
@@ -1845,7 +1845,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 1842	TN	SHELBY	2001	Trinity United Methodist Church (Education Bldg.)	1738 Galloway Av	Memphis	38112
 1843	OK	BECKHAM	Precinct 050320	Methodist Church	320 S Magnolia	Erick	73645
 1844	AR	WASHINGTON	Prairie Twp 5	Northeast Baptist Church	2578 Oakland Zion Rd	Fayetteville	72703
-1845	VT	NA	Jamaica Town Clerk's Office	Jamaica Town Hall	3735 VT Route 30	Jamaica	05343
+1845	VT	Windham	Jamaica Town Clerk's Office	Jamaica Town Hall	3735 VT Route 30	Jamaica	05343
 1846	TN	WASHINGTON	22	Midway Outside Wash. Co. Schools Resource Center	3519 W. Walnut Street	Johnson City	37604
 1847	GA	JONES	1	LUNCHROOM BEHIND GOVERNMENT CTR	166 INDUSTRIAL BLVD	GRAY	31032
 1848	GA	COBB	Au1a	AUSTELL COMMUNITY CENTER	2625 JOE JERKINS BLVD	AUSTELL	30106
@@ -1867,7 +1867,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 1864	OK	COMANCHE	Precinct 160029	Barnett Chapel	3421 Abilene	Lawton	73505
 1865	AL	PIKE	Precinct 21 - Courthouse	Pike County Courthouse	120 West Church Street	Troy	36081
 1866	AR	FAULKNER	Newton	Naylor United Meth. Church	850 HIGHWAY 36	VILONIA	72173
-1867	VT	NA	Putney Central Sch Gym	Putney Central School	182 Westminister Road	Putney	05346
+1867	VT	Windham	Putney Central Sch Gym	Putney Central School	182 Westminister Road	Putney	05346
 1868	VA	PORTSMOUTH CITY	026 - Twenty-Six	WILLIAM E. WATERS MIDDLE SCHOOL	600 Roosevelt Blvd	Portsmouth	23701
 1869	AL	WILCOX	Precinct 2001	YE OLDE SHOPPE-OAK HILL	YE OLDE SHOPPE-OAK HILL	OAK HILL	36766
 1870	VA	FAIRFAX	413 - Fairfield	MT VERNON WOODS ELEM SCHOOL	4015 Fielding St	Alexandria	22309
@@ -1936,7 +1936,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 1933	VA	POWHATAN	301 - Bethesda	BETHESDA CHURCH OF GOD	2480 Academy Rd	Powhatan	23139
 1934	AL	TUSCALOOSA	Cottondale Methodist Church	Cottondale Methodist Church	2225 Buttermilk Road	Cottondale	35453
 1935	OK	GRADY	Precinct 260039	Crossroad To Life Baptist Ch	Main In Blanchard	Blanchard	73010
-1936	VT	NA	Wallingford Town Hall	Wallingford Town Hall	75 School Street	Wallingford	05773
+1936	VT	Rutland	Wallingford Town Hall	Wallingford Town Hall	75 School Street	Wallingford	05773
 1937	VA	CAROLINE	102 - Sparta	SALEM BAPTIST CHURCH	24032 Sparta Rd	Sparta	22552
 1938	VA	WISE	301 - Big Stone Gap	TOWN HALL	505 E 5TH STREET SOUTH	BIG STONE GAP	24219
 1939	VA	NOTTOWAY	401 - Precinct 4-1	BLACKSTONE PRIMARY SCHOOL	615 EAST STREET	BLACKSTONE	23824
@@ -1946,7 +1946,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 1943	OK	OKLAHOMA	Precinct 550137	Oak Hills Church	2720 Nw 178Th St	Oklahoma City	73012
 1944	GA	BARROW	16	LEISURE SERVICES CENTER	175 SECOND ST	WINDER	30680
 1945	GA	LEE	4	LEESBURG FIRE STATION #1	342 LESLIE HIGHWAY	LEESBURG	31763
-1946	VT	NA	Barnard Town Hall	Barnard Town Hall	115 North Road	Barnard	05031
+1946	VT	Windsor	Barnard Town Hall	Barnard Town Hall	115 North Road	Barnard	05031
 1947	VA	HENRICO	511 - Montrose	MONTROSE ELEMENTARY SCHOOL	2820 Williamsburg Rd	Richmond	23231
 1948	AL	JACKSON	Precinct 0240	NEW CITY HALL	52 Dutton Road	Section	35771
 1949	GA	GWINNETT	139	ST MARGUERITE D'YOUVILLE CHURC	85 GLOSTER RD NW	LAWRENCEVILLE	30044
@@ -1956,7 +1956,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 1953	VA	HAMPTON CITY	112 - Smith	SMITH ELEM SCHOOL	379 Woodland Rd	Hampton	23669
 1954	VA	SMYTH	201 - Seven Mile Ford	SMYTH CAREER&TECHNOLOGY CENTER	147 Fox Valley Rd	Marion	24354
 1955	AR	WASHINGTON	Fay 13	Trinity Methodist Church	1021 W Sycamore St	Fayetteville	72703
-1956	VT	NA	Pownal Pownal Ctr Fireh	Pownal Center Fire House	VT-346	 Pownal	05260
+1956	VT	Bennington	Pownal Pownal Ctr Fireh	Pownal Center Fire House	VT-346	 Pownal	05260
 1957	AL	JEFFERSON	Precinct 2180	AVONDALE PUBLIC LIBRARY	509 40TH ST S	BIRMINGHAM	35222
 1958	OK	COMANCHE	Precinct 160031	Macarthur Jr High School	510 Ne 45 St	Lawton	73507
 1959	OK	OKMULGEE	Precinct 560032	Okmulgee County Fair Grounds	1901 N Oklahoma Ave	Okmulgee	74447
@@ -2002,7 +2002,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 1999	OK	CANADIAN	Precinct 090204	Yukon First Church Of Nazarene	525 E Main St	Yukon	73099
 2000	TN	GIBSON	26	Community Center	38 Union Central Rd	Milan	38358
 2001	MA	NORFOLK	Medway 04	MEDWAY MIDDLE SCHOOL	45 HOLLISTON ST	MEDWAY	02053
-2002	VT	NA	Ferrisburgh Town Hall	Town Hall and Community Center	3279 Route 7	Ferrisburgh	05456
+2002	VT	Addison	Ferrisburgh Town Hall	Town Hall and Community Center	3279 Route 7	Ferrisburgh	05456
 2003	GA	COBB	So03	LUTHERAN CH. OF RESURRECTION	4814 PAPER MILL RD	MARIETTA	30067
 2004	GA	FULTON	06h	FIRE STATION NO 19	1063 N HIGHLAND AVE NE	ATLANTA	30306
 2005	GA	WORTH	10	SCOOTERVILLE VOL FIRE DEPT	0 GA HWY 256	SUMNER	31789
@@ -2281,7 +2281,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 2278	VA	VIRGINIA BEACH CITY	077 - Brookwood	PLAZA ANNEX	641 Carriage Hill Road	Virginia Beach	23452
 2279	TN	SHELBY	Cor03	Memphis Jewish Home (Auditorium)	36 Bazeberry Rd	Cordova	38018
 2280	MA	ESSEX	Beverly W03 P02	MCKEOWN ELEMENTARY SCHOOL	70 BALCH ST	BEVERLY	01915
-2281	VT	NA	Grand Isle Town Ofc	Grand Isle Town Office	9 Hyde Road	Grand Isle	05458
+2281	VT	Grand Isle	Grand Isle Town Ofc	Grand Isle Town Office	9 Hyde Road	Grand Isle	05458
 2282	OK	CREEK	Precinct 190111	Lone Star School	4000 S. Hickory	Sapulpa	74066
 2283	AR	OUACHITA	(LFB) LAFAYETTE B	Frenchport Fire Station	167 Ouachita 65	Camden	71701
 2284	AL	LAUDERDALE	Highland Baptist Church	Highland Baptist Church	219 Simpson Street	Florence	35630
@@ -2446,7 +2446,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 2443	OK	ADAIR	Precinct 010012	Four Corner Church Of Christ	Hwy 100 East	Stilwell	74960
 2444	VA	GLOUCESTER	401 - Hayes	Abingdon Elementary School	7087 Powhatan Dr	Hayes	23072
 2445	GA	JENKINS	4	SENIOR CITIZENS BUILDING	998 E. COLLEGE AVE.	MILLEN	30442
-2446	VT	NA	Newport City Municipal Bldg	Newport Municipal Building	222 Main Street	Newport City	05855
+2446	VT	Orleans	Newport City Municipal Bldg	Newport Municipal Building	222 Main Street	Newport City	05855
 2447	TN	CARTER	04si	Slam Learning Center	2453 Slam Rd	Elizabethton	37643
 2448	OK	HASKELL	Precinct 310016	Old Vfw Bldg.	"Hwy. 82, & 3Rd St."	Stigler	74462
 2449	AR	PULASKI	Precinct 108	Woodlawn Baptist Church	5520 Woodlawn	Little Rock	72205
@@ -2457,7 +2457,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 2454	AR	HOWARD	21 - County Line	County Line Baptist Church	2239 Hwy 371 W	Nashville	71852
 2455	MN	ISANTI	Bradford Twp	township hall	4175 305th Lane NW	Cambridge	55008
 2456	TN	SHELBY	Lak01	First Baptist Church Of Lakeland	45 Canada Rd	Lakeland	38002
-2457	VT	NA	Roxbury Town Office	Town Hall/Village School	1664 Roxbury Road	Roxbury	05669
+2457	VT	Washington	Roxbury Town Office	Town Hall/Village School	1664 Roxbury Road	Roxbury	05669
 2458	OK	TULSA	Precinct 720169	Country Club Of Woodland Hills	6333 S 91 E Ave	Tulsa	74133
 2459	AL	BALDWIN	Precinct 33	Miflin Community Center	24725 Miflin Road	Elberta	36530
 2460	OK	POTTAWATOMIE	Precinct 630042	United Methodist Church	212 E 1St.	Wanette	74878
@@ -2468,7 +2468,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 2465	AL	BARBOUR	Precinct 0015a	BAKERHILL TOWN HALL	1896 Highway 131	Baker Hill	36027
 2466	MN	DODGE	Dodge Center P-1	Triton Highschool	813 Highway St W	Dodge Center	55927
 2467	AR	WHITE	80 - Searcy Ward 4 C	First Assembly of God Church	Benton St. & Cloverdale	Searcy	72143
-2468	VT	NA	Richford Town Hall	Richford Town Hall	94 Main Street	Richford	05476
+2468	VT	Franklin	Richford Town Hall	Richford Town Hall	94 Main Street	Richford	05476
 2469	GA	GREENE	1	GREENE COUNTY ANNEX	1180 C.WELDON SMITH DR.	GREENSBORO	30642
 2470	GA	GORDON	973	PLEASANT VALLEY BAPTIST CHURCH	3882 RED BUD RD NE	CALHOUN	30701
 2471	VA	CHESTERFIELD	203 - Bird	BIRD HIGH SCHOOL	10301 Courthouse Rd	Chesterfield	23832
@@ -2508,7 +2508,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 2505	GA	OCONEE	1	OCONEE COUNTY GOVERNMENT ANNEX	1291 GREENSBORO HWY	WATKINSVILLE	30677
 2506	VA	CAROLINE	402 - Carmel Church	THE CARMEL SCHOOL	9020 Jericho Rd.	Ruther Glen	22546
 2507	TN	MONTGOMERY	21a	Cumberland Presbyterian Church	1410 Golf Club Lane	Clarksville	37040
-2508	VT	NA	Norwich Tracy Hall	Tracy Hall Gym	300 Main Street	Norwich	05055
+2508	VT	Windsor	Norwich Tracy Hall	Tracy Hall Gym	300 Main Street	Norwich	05055
 2509	AL	SHELBY	Precinct 32	Bible Baptist Church Of Wilton	127 Stephens St	Wilton	35187
 2510	OK	SEQUOYAH	Precinct 680210	West Tenkiller Fire Dept. Pp	Paradise Hill	Gore	74435
 2511	VA	FRANKLIN	504 - Gogginsville	GOGGINSVILLE FAMILY CENTER	114 Gogginsville Rd	Rocky Mount	24151
@@ -2561,7 +2561,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 2558	GA	LANIER	3	STOCKTON BAPTIST CHURCH	262 CHURCH ROAD	STOCKTON	31649
 2559	GA	THOMAS	115	OCHLOCKNEE SENIOR CITIZENS CTR	5024 SPENCE ST	OCHLOCKNEE	31773
 2560	MA	SUFFOLK	Boston W12 P06	REVEREND DR. MICHAEL E.	263 BLUE HILL AVE	BOSTON	02119
-2561	VT	NA	Whitingham Whitingham School	Twin Valley Middle/High School	4299 VT Route 100	Whitingham	05361
+2561	VT	Windham	Whitingham Whitingham School	Twin Valley Middle/High School	4299 VT Route 100	Whitingham	05361
 2562	OK	COTTON	Precinct 170007	First Presbyterian Church	Corner Of 3Rd And Kansas	Walters	73572
 2563	AL	CALHOUN	Precinct 1701	Ohatchee First Baptist Church	2090 Spring Road	Ohatchee	36271
 2564	VA	POQUOSON CITY	003 - Western	CHRISTIAN OUTREACH CENTER	814 Yorktown Rd	Poquoson	23662
@@ -2575,7 +2575,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 2572	MA	WORCESTER	West Boylston 02	OUR LADY OF GOOD COUNSEL	111 WORCESTER STREET	WEST BOYLSTON	01583
 2573	MA	HAMPDEN	Springfield W04h	A.I.C COURNTIOTES HALL	1000 STATE ST(CORNER HOMER/STATE ST)	SPRINGFIELD	01109
 2574	OK	TULSA	Precinct 720173	Oru Mabee Center	7777 S Lewis Ave	Tulsa	74171
-2575	VT	NA	Mount Holly Town Office	Mount Holly Town Office	50 School Street	Mount Holly	05758
+2575	VT	Rutland	Mount Holly Town Office	Mount Holly Town Office	50 School Street	Mount Holly	05758
 2576	MA	SUFFOLK	Boston W18 P16	BOSTON BAPTIST COLLEGE	950 METROPOLITAN AVENUE	Boston	02136
 2577	MN	ISANTI	Stanford Twp	township hall	5050 261st Avenue NW	Isanti	55040
 2578	VA	LANCASTER	101 - Precinct 1-1	Upper Lancaster Ruritan Club	3989 White Chapel Rd	Lancaster	22503
@@ -2585,11 +2585,11 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 2582	MA	ESSEX	Peabody W02 P03	SOUTH MEMORIAL SCHOOL	16 MAPLE STREET EXTENTION	PEABODY	01960
 2583	AR	ASHLEY	15 - Mt. Zion	Mt Zion Church (Mt. Zion)	1371 Ashley 25	Hamburg	71646
 2584	AL	WALKER	Precinct 1301	Dora Civic Center (M / Z)	1445 Sharon Blvd	Dora	35062
-2585	VT	NA	Belvidere Town Clerks Off	Belvidere Elementary School	4515 Vermont Route 109	Belvidere	05442
+2585	VT	Lamoille	Belvidere Town Clerks Off	Belvidere Elementary School	4515 Vermont Route 109	Belvidere	05442
 2586	VA	GOOCHLAND	501 - Manakin	DOVER BAPTIST CHURCH HERITAGE HALL	635 Manakin Rd	Manakin Sabot	23103
 2587	GA	PAULDING	11c	TAYLOR FARM PARK	1380 PINE VALLEY RD	POWDER SPRINGS	30127
 2588	GA	CHATHAM	2-06c	NEW VISION REVIVAL CENTER	2310 CAUSTON BLUFF RD	SAVANNAH	31404
-2589	VT	NA	Granville Town Hall	Granville Town Hall	4157 VT Route 100	Granville	05747
+2589	VT	Addison	Granville Town Hall	Granville Town Hall	4157 VT Route 100	Granville	05747
 2590	OK	TULSA	Precinct 720086	Regency Pk Ch Of The Nazarene	8707 E 51 St	Tulsa	74145
 2591	VA	VIRGINIA BEACH CITY	090 - Lake Joyce	MORNING STAR BAPTIST CHURCH	4780 First Court Rd	Virginia Beach	23455
 2592	OK	TULSA	Precinct 720753	Owasso Community Center	301 S Cedar St	Owasso	74055
@@ -2649,7 +2649,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 2646	AR	VAN BUREN	11 Formosa	Formosa Community Building	10757 Hwy 336 West	Clinton	72031
 2647	VA	CLARKE	101 - Russell	CLARKE COUNTY RECREATION CENTER	225 Al Smith Cir - Berryville	Berryville	22611
 2648	GA	COLUMBIA	26	PHILADELPHIA METHODIST CHURCH	780 OLD LOUISVILLE ROAD	HARLEM	30814
-2649	VT	NA	Rutland City Godnick Adlt Ctr	Godnick Center	1 Deer Street	Rutland	05701
+2649	VT	Rutland	Rutland City Godnick Adlt Ctr	Godnick Center	1 Deer Street	Rutland	05701
 2650	OK	MCINTOSH	Precinct 460316	Elm Grove Baptist Church	Rt 1 Box 1870	Council Hill	74428
 2651	GA	ELBERT	201	BOWMAN COMMUNITY CENTER	209 E RAILROAD ST	BOWMAN	30624
 2652	TN	SHELBY	7104	Corning Elem School	1662 Dabbs Av	Memphis	38127
@@ -2659,7 +2659,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 2656	VA	SUFFOLK CITY	504 - Lake Cohoon	"KINGS FORK COMMUNITY HOUSE,INC"	1600 KINGS FORK ROAD	Suffolk	23434
 2657	AL	JEFFERSON	Precinct 3330	BOOKER HEIGHTS DEVELOPMENT CORP.	5100 MAIN ST	MULGA	35118
 2658	GA	BURKE	6	WALKER BUILDING-HUMAN RESOURCE	480 MARTIN LUTHER KING DRIVE	KEYSVILLE	30816
-2659	VT	NA	Saint Albans City City Hall	St. Albans City Hall	100 North Main Street	St. Albans City	05478
+2659	VT	Franklin	Saint Albans City City Hall	St. Albans City Hall	100 North Main Street	St. Albans City	05478
 2660	AL	LAUDERDALE	Greenhill Senior Citizens Bldg	Greenhill Senior Citizens Center	8735 Hwy 43	Florence	35634
 2661	GA	CRAWFORD	01a	ZENITH ROAD BAPTIST CHURCH	4744 ZENITH MILL ROAD	FORT VALLEY	31030
 2662	TN	SHELBY	Ros14	Highland Oaks Elem School	5252 Annandale Dr	Memphis	38125
@@ -2698,7 +2698,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 2695	MA	WORCESTER	Worcester W03 P02	WORCESTER ART MUSEUM	55 SALISBURY ST	Worcester	01609
 2696	OK	CRAIG	Precinct 180820	Ketchum Municipal Bldg	124 E Broadway Ave	Ketchum	74349
 2697	VA	ROANOKE	504 - Ogden	GREEN VALLEY ELEM SCHOOL	3838 Overdale Rd	Roanoke	24018
-2698	VT	NA	Charleston Town Office	Charleston Elementary School	255 Center School Road	Charleston	05872
+2698	VT	Orleans	Charleston Town Office	Charleston Elementary School	255 Center School Road	Charleston	05872
 2699	OK	OKLAHOMA	Precinct 550191	1St Free Methodist Church	1900 Nw 13Th St	Oklahoma City	73106
 2700	AL	LAUDERDALE	Cloverdale Communtiy Center	Cloverdale Community Center	17420 County Road 8	Florence	35633
 2701	GA	TIFT	7	OMEGA CLUB HOUSE	5471 ALABAMA AVE	OMEGA	31775
@@ -2791,7 +2791,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 2788	GA	FAYETTE	20	PEACHTREE CITY METHODIST CHURC	400 WINDGATE RD	PEACHTREE CITY	30269
 2789	AL	JEFFERSON	Precinct 2190	WIGGNS LIBRARY & RECREATION CENTER	3301 JEFFERSON AVE SW	BIRMINGHAM	35221
 2790	AR	PULASKI	Precinct 125	Baseline Elementary School	3623 Baseline Rd	Little Rock	72209
-2791	VT	NA	Plymouth Municipal Bldg	Municipal Hall	68 Town Office Road	Plymouth	05056
+2791	VT	Windsor	Plymouth Municipal Bldg	Municipal Hall	68 Town Office Road	Plymouth	05056
 2792	AR	BENTON	Precinct 31	Bella Vista Church of Christ	989 W McNelly Rd	Bentonville	72712
 2793	GA	DEKALB	Fl	FLAT SHOALS LIBRARY	4022 FLAT SHOALS PARKWAY	DECATUR	30034
 2794	MA	BRISTOL	Rehoboth 01	TOWN OFFICE	148R PECK ST	REHOBOTH	02769
@@ -2841,7 +2841,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 2838	AL	JEFFERSON	Precinct 1210	GLEN OAKS ELEMENTARY SCHOOL	1301 HIGHLAND DR	FAIRFIELD	35064
 2839	AR	OUACHITA	Camden Ward 05	St Mark's Methodist Church	1315  Washington St SW	Camden	71701
 2840	OK	TULSA	Precinct 720123	Kirk Of The Hills Presb Church	4102 E 61 St	Tulsa	74136
-2841	VT	NA	Searsburg Town Office	Town Clerks Office	18 Town Garage Road	Searsburg	05363
+2841	VT	Bennington	Searsburg Town Office	Town Clerks Office	18 Town Garage Road	Searsburg	05363
 2842	AR	MONTGOMERY	13 - Oden - Out	Oden First Baptist Church 2	1161 Hwy 88 W	Oden	71961
 2843	GA	COLQUITT	17	MONK COURTHOUSE (IN NEW ELM)	5063 GA HWY 33 N	MOULTRIE	31768
 2844	AL	RUSSELL	Precinct 0706	Austin Sumbry Park	3999 Us Hwy 431 So	Phenix City	36867
@@ -2894,7 +2894,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 2891	TN	MADISON	16	SOUTH ELEMENTARY SCHOOL	570 STONE RD	 PINSON	38366
 2892	MA	PLYMOUTH	Hanson 02	MAQUAN SCHOOL CAFETERIA	38 SCHOOL STREET	HANSON	02341
 2893	MA	BERKSHIRE	Pittsfield W01b	REID MIDDLE SCHOOL	950 NORTH ST	PITTSFIELD	01201
-2894	VT	NA	Moretown Town Hall	Moretown Town Hall	1147 ROUTE 100B	Moretown	05660
+2894	VT	Washington	Moretown Town Hall	Moretown Town Hall	1147 ROUTE 100B	Moretown	05660
 2895	TN	RUTHERFORD	191	Creekmont General Baptist	5867 Washington Blvd	Murfreesboro	37129
 2896	AL	LAWRENCE	17-1 Chaleybeate Fire Dept	CHALYBEATE FIRE STATION 17	69 CO RD 296	HILLSBORO	35643
 2897	TN	BLOUNT	11	Friendsville Elementary School	210 Fourth Avenue	Friendsville	37737
@@ -2912,12 +2912,12 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 2909	GA	WHITE	31	HELEN CITY HALL	25 ALPENROSEN STRASSE	HELEN	30545
 2910	TN	SULLIVAN	06a	Indian Springs School	333 Hill Road	Kingsport	37618
 2911	VA	VIRGINIA BEACH CITY	018 - Thoroughgood	INDEPENDENCE MIDDLE SCHOOL	1370 Dunstan Ln	Virginia Beach	23455
-2912	VT	NA	Burlington St Marks	St. Marks Youth Center	1271 North Ave.	Burlington	05408
+2912	VT	Chittenden	Burlington St Marks	St. Marks Youth Center	1271 North Ave.	Burlington	05408
 2913	AL	JEFFERSON	Precinct 3110	OAKMONT PRESBYTERIAN CHURCH	1817 PATTON CHAPEL RD	BIRMINGHAM	35226
 2914	AL	RUSSELL	Precinct 0101	Roy Martin Center	1100 Airport Road	Phenix City	36867
 2915	AL	ELMORE	Precinct 0029	Wetumpka Civic Center	410 South Main Street	Wetumpka	36092
 2916	OK	GARVIN	Precinct 250001	Bill Mitchell Complex	308 Sw 2Nd	Lindsay	73052
-2917	VT	NA	Springfield Riverside Ms Gym	Riverside Middle School Gymnasium	13 Fairground Road	Springfield	05156
+2917	VT	Windsor	Springfield Riverside Ms Gym	Riverside Middle School Gymnasium	13 Fairground Road	Springfield	05156
 2918	OK	WOODWARD	Precinct 770202	Woodward Senior Center	1420 Downs Avenue	Woodward	73801
 2919	AL	CHOCTAW	Precinct 0043 - Toomey	Aquilla Methodist Church	County Road 2	Silas	36919
 2920	CO	LARIMER	2145335326	McGraw Elementary	4800 Hinsdale Dr.	Fort Collins	80526
@@ -2933,7 +2933,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 2930	MA	ESSEX	Lynn W05 P01	LYNN VOC. TECH ANNEX	90 COMMERCIAL STREET	LYNN	01905
 2931	MA	ESSEX	Newburyport W02 P01	BROWN SCHOOL	42 MILK STREETS	NEWBURYPORT	01950
 2932	MA	MIDDLESEX	Watertown 06	HIBERNIAN HALL	151 WATERTOWN STREET	WATERTOWN	02472
-2933	VT	NA	Monkton Fire Station	Monkton Central School	1036 Monkton Road  No. Ferrisburgh	Monkton	05469
+2933	VT	Addison	Monkton Fire Station	Monkton Central School	1036 Monkton Road  No. Ferrisburgh	Monkton	05469
 2934	AL	CALHOUN	Precinct 1506	County Health Department	3400 McClellan Blvd.	Anniston	36201
 2935	AR	SALINE	16	Haskell Fire Station	2520 Hwy 229	Benton	72015
 2936	TN	PERRY	401	Brush Creek Church Of Christ	79 Brush Creek Church Rd.	Linden	37096
@@ -2989,7 +2989,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 2986	VA	LOUDOUN	701 - Sully	SULLY ELEMENTARY SCHOOL	300 Circle Dr	Sterling	20164
 2987	OK	PITTSBURG	Precinct 610021	Arpelar Nazarene Church	Arpelar	Mc Alester	74501
 2988	AL	LEE	Beat 10	Uptown Marvyn	US Highway 80 at AL Highway 51	Opelika	36801
-2989	VT	NA	Albany Town Hall	Albany Town Hall	830 Main Street	Albany	05820
+2989	VT	Orleans	Albany Town Hall	Albany Town Hall	830 Main Street	Albany	05820
 2990	TN	CARROLL	16	Atwood City Hall	45 First St	Atwood	38220
 2991	TN	KNOX	74	Shannondale Elem. Sch.	5316 Shannondale Rd.	Knoxville	37918
 2992	AR	POLK	13 - Hatfield	Hatfield City Hall	108 Hwy 246 W	Hatfield	71945
@@ -3022,7 +3022,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 3019	GA	FULTON	06j	INMAN MIDDLE SCHOOL	774 VIRGINIA AVE NE	ATLANTA	30306
 3020	VA	NORTHAMPTON	201 - Precinct 2-1	CHERITON UNITED METHODIST FELLOWSHIP HALL	21309 SOUTH BAYSIDE RD	CHERITON	23316
 3021	GA	DOUGLAS	1258	1258-MIRROR LAKE ELEMENTARY SCHOOL	2613 TYSON RD	VILLA RICA	30180
-3022	VT	NA	Panton Town Offices	Panton Town Hall	3176 Jersey Street	Panton	05491
+3022	VT	Addison	Panton Town Offices	Panton Town Hall	3176 Jersey Street	Panton	05491
 3023	TN	PUTNAM	08e	Buffalo Valley Community Center	Buffalo Valley School Rd	Buffalo Valley	38548
 3024	AL	CHOCTAW	Precinct 0121 -Pushmataha H-65	GILFIELD BAPTIST CHURCH	7171 HWY 10 W	LISMAN	36912
 3025	VA	LOUDOUN	710 - Sterling	STERLING MIDDLE SCHOOL	201 W Holly Avenue	Sterling	20164
@@ -3142,7 +3142,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 3139	AR	LEE	Spring Creek	Aubrey City Hall	106 Trailby St	Aubrey	72311
 3140	GA	MCDUFFIE	136	THOMSON DEPOT	136 RAILROAD ST	THOMSON	30824
 3141	TN	GRAINGER	D4p2	Washburn Elem. School	7925 Hwy. 131	Washburn	37888
-3142	VT	NA	Middlesex Town Hall	Rumney Memorial School	433 Shady Rill Road	Middlesex	05602
+3142	VT	Washington	Middlesex Town Hall	Rumney Memorial School	433 Shady Rill Road	Middlesex	05602
 3143	VA	TAZEWELL	214 - Thompson Valley	THOMPSON VALLEY COMMUNITY CENTER	8925 Thompson Valley Rd	Tazewell	24651
 3144	VA	FAIRFAX	806 - Sydenstricker	SYDENSTRICKER UNITED METHODIST CHURCH	8508 HOOES ROAD	SPRINGFIELD	22153
 3145	MA	MIDDLESEX	Everett W05 P01	MADELINE ENGLISH SCHOOL	105 WOODVILLE ST.	EVERETT	02149
@@ -3203,7 +3203,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 3200	OK	OTTAWA	Precinct 580031	Ottawa Tribal Bldg.	11400 S 613 Rd	Miami	74354
 3201	AL	CALHOUN	Precinct 1510	Oxford Public Library	110 East 6th Street	Oxford	36203
 3202	VA	PRINCE EDWARD	401 - Hampden	HAMPDEN SYDNEY FIRE DEPARTMENT	159 S. Boundary Rd	Farmville	23901
-3203	VT	NA	Lincoln Burnham Hall	Burnham Hall	52 East River Road	Lincoln	05443
+3203	VT	Addison	Lincoln Burnham Hall	Burnham Hall	52 East River Road	Lincoln	05443
 3204	GA	MCINTOSH	1480	TOWNSEND FIRE STATION	2352 CHURCH OF GOD RD NW	TOWNSEND	31331
 3205	AL	JEFFERSON	Precinct 4040	TRUSSVILLE CITY HALL	131 MAIN ST	TRUSSVILLE	35173
 3206	MA	SUFFOLK	Boston W06 P04	JULIE'S FAMILY LEARNING	133 DORCHESTER STREET	BOSTON	02127
@@ -3215,12 +3215,12 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 3212	AR	SEBASTIAN	Precinct 9-J	Barling Senior Citizen Center	1605 M St.	Barling	72923
 3213	TN	UNICOI	Is	Unicoi County Intermediate School	600 S. Mohawk Drive	Erwin	37650
 3214	TN	GRUNDY	200	Plainview Community Center	1235 Sr 56	Tracy City	37387
-3215	VT	NA	Lyndon Mun Off Bldg	Lyndon Town School	2591 Lily Pond Road	Lyndon	05851
+3215	VT	Caledonia	Lyndon Mun Off Bldg	Lyndon Town School	2591 Lily Pond Road	Lyndon	05851
 3216	AR	GREENE	15 - St. Francis	Paragould Community Center	3404 Linwood Dr	Paragould	72450
 3217	AR	PULASKI	Precinct 022	Levy Church of Christ	5124 Camp Robinson Rd	N Little Rock	72118
 3218	MA	WORCESTER	Upton 01	NIPMUC REGIONAL SCHOOL	90 PLEASANT ST	UPTON	01568
 3219	VA	WESTMORELAND	301 - Precinct 3-1	WASHINGTON & LEE HIGH SCHOOL	16380 Kings Hwy	Montross	22520
-3220	VT	NA	Sutton Sutton School	Sutton School Multipurpose Room	95 Underpass Road	Sutton	05867
+3220	VT	Caledonia	Sutton Sutton School	Sutton School Multipurpose Room	95 Underpass Road	Sutton	05867
 3221	VA	ARLINGTON	013 - Glen Carlyn	KENMORE MIDDLE SCHOOL	200 S Carlin Springs Rd	Arlington	22204
 3222	AR	SEBASTIAN	Precinct 4-F	Orr Elem. School Tornado Shelter	3609 Phoenix	Fort Smith	72903
 3223	VA	NELSON	201 - Lovingston	LOVINGSTON FIRE DEPT BUILDING	53 BAKER LANE	LOVINGSTON	22949
@@ -3284,11 +3284,11 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 3281	OK	SEQUOYAH	Precinct 680104	Waylon Jones Complex Pp	106 Ranger Blvd.	Roland	74954
 3282	MA	WORCESTER	Uxbridge 02	MCCLOSKEY MIDDLE SCHOOL	62 CAPRON STREET	UXBRIDGE	01569
 3283	AL	JEFFERSON	Precinct 5190	CHEROKEE BEND ELEMENTARY SCHOOL	4400 FAIR OAKS DR	BIRMINGHAM	35213
-3284	VT	NA	Hinesburg Town Hall	Hinesburg Town Hall	10632 Route 116	Hinesburg	05461
+3284	VT	Chittenden	Hinesburg Town Hall	Hinesburg Town Hall	10632 Route 116	Hinesburg	05461
 3285	OK	DELAWARE	Precinct 210001	Cleora School	451358 E 295 Rd	Afton	74331
 3286	GA	JOHNSON	55	KITE CITY HALL	1985 MONTGOMERY ST	KITE	31049
 3287	TN	HAMILTON	188	Middle Valley Baptist	7901 Middle Valley Rd	Hixson	37343
-3288	VT	NA	West Rutland Town Hall	West Rutland Town Hall	35 Marble Street	West Rutland	05777
+3288	VT	Rutland	West Rutland Town Hall	West Rutland Town Hall	35 Marble Street	West Rutland	05777
 3289	MA	ESSEX	Haverhill W01 P02	WASH SQ ELDERLY HOUSING	25 WASHINGTON SQ	HAVERHILL	01830
 3290	VA	FAIRFAX	218 - Vienna #6	MADISON HIGH SCHOOL	2500 James Madison Dr	Vienna	22181
 3291	VA	ROCKINGHAM	505 - Stony Run	MCGAHEYSVILLE FIRE CO BUILDING	65 STOVER DR	MCGAHEYSVILLE	22840
@@ -3348,11 +3348,11 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 3345	GA	RICHMOND	208	MINNICK PARK	1850 KISSINGBOWER ROAD	AUGUSTA	30904
 3346	VA	BRUNSWICK	501 - Totaro	Totaro Elementary School	19350 Christanna Hwy	Lawrenceville	23868
 3347	GA	CHEROKEE	24	LIBERTY ELEMENTARY SCHOOL	10500 BELLS FERRY RD	CANTON	30114
-3348	VT	NA	Rutland City Cal Bib Church	Calvary Bible Church	2 Meadow Lane	Rutland	05701
+3348	VT	Rutland	Rutland City Cal Bib Church	Calvary Bible Church	2 Meadow Lane	Rutland	05701
 3349	GA	ELBERT	315	CENTERVILLE FIRE STATION	2518 HARMONY RD.	ELBERTON	30635
 3350	AR	OUACHITA	(JF) JEFFERSON	Silver Springs Methodist Church	3422 Hwy 57	Stephens	71726
 3351	AR	RANDOLPH	15 - Richardson	Maynard Fire Station	474 Hwy 328W	Maynard	72444
-3352	VT	NA	Newfane Newbrook Firehouse	Union Hall	5 Church Street	Newfane	05345
+3352	VT	Windham	Newfane Newbrook Firehouse	Union Hall	5 Church Street	Newfane	05345
 3353	CO	ARAPAHOE	6273703243	Indian Ridge Elementary	16501 E Progress Dr	Centennial	80015
 3354	OK	KINGFISHER	Precinct 370304	Lomega High School	"81/33,14-1/2 W,4-3/4 N, E/S"	Omega	73764
 3355	AL	TALLAPOOSA	Precinct 0101	A/C HOUSING AUTHORITY Y&A SERV	2166 COUNTY RD	ALEX CITY	35010
@@ -3426,13 +3426,13 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 3423	AR	PULASKI	Precinct 086	Bess Chisum Stephens Comm	1200 S Cleveland	Little Rock	72204
 3424	TN	MARSHALL	401	Cornersville Elementary School	485 Main St.	Cornersville	37047
 3425	VA	FLOYD	401 - Burks Fork	WILLIS ELEMENTARY SCHOOL	5075 Floyd Hwy S	WILLIS	24380
-3426	VT	NA	Barton Barton Mem Bldg	Barton Memorial Building	12 Village Square	Barton	05860
+3426	VT	Orleans	Barton Barton Mem Bldg	Barton Memorial Building	12 Village Square	Barton	05860
 3427	VA	PORTSMOUTH CITY	005 - Five	HAMPTON ROADS COMMUNITY HEALTH CENTER	664 Lincoln St	Portsmouth	23704
 3428	AL	TUSCALOOSA	Duncanville Middle School	Duncanville Middle School	11205 Eagle Parkway	Duncanville	35456
 3429	GA	JOHNSON	1201	SWAINSBORO TECH BUILDING	17 CEDAR CREEK DR	WRIGHTSVILLE	31096
 3430	VA	CULPEPER	704 - Richardsville	RICHARDSVILLE FIRE HALL	29361 Eleys Ford Rd	Richardsville	22736
 3431	GA	DEKALB	Sp	CHAMPION THEME MIDDLE SCHOOL	5265 MIMOSA DRIVE	STONE MOUNTAIN	30083
-3432	VT	NA	Weybridge Town Clerk Ofc	Weybridge Town Clerk's Office	1727 Quaker Village Road	Weybridge	05753
+3432	VT	Addison	Weybridge Town Clerk Ofc	Weybridge Town Clerk's Office	1727 Quaker Village Road	Weybridge	05753
 3433	MA	BRISTOL	Attleboro W03a	ST. JOHN THE EVANGELIST	13 Hodges St.	ATTLEBORO	02703
 3434	VA	PORTSMOUTH CITY	036 - Thirty-Six	SCOTTISH RITE TEMPLE	3401 Cedar Ln	Portsmouth	23703
 3435	AR	CLEBURNE	34 - Wilburn	Wilburn Fire Dept	5 Tylar Ln	Wilburn	72179
@@ -3526,7 +3526,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 3523	GA	FULTON	08e	MORRIS BRANDON PRIM CTR SCHOOL	2845 MARGARET MITCHELL DR	ATLANTA	30327
 3524	MA	BRISTOL	Dartmouth 08	SOUTHWORTH LIBRARY	732 DARTMOUTH ST	DARTMOUTH	02748
 3525	VA	GLOUCESTER	501 - Achilles	Abingdon Ruritan Club	8784 Guinea Rd	Hayes	23072
-3526	VT	NA	Proctor High School Gym	Proctor Jr./Sr. High School	4 Park Street	Proctor	05765
+3526	VT	Rutland	Proctor High School Gym	Proctor Jr./Sr. High School	4 Park Street	Proctor	05765
 3527	GA	UNION	10	WILLIE HUTSON FIRE STATION	114 WILLIE HUTSON RD	BLAIRSVILLE	30512
 3528	AL	RANDOLPH	Precinct 06	MIDWAY 06.5E 4-5	1229 COUNTY ROAD 333	WEDOWEE	36278
 3529	AL	FAYETTE	0801/Collins/Mt Vernon	COLLINS/MT VERNON	4280 HWY 18W	FAYETTE	35555
@@ -3568,7 +3568,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 3565	OK	OSAGE	Precinct 570303	Braden Community Center	1022 Braden School Rd	Ponca City	74604
 3566	OK	OKLAHOMA	Precinct 550096	Carl Albert Middle School	2515 S Post Rd	Midwest City	73110
 3567	GA	CLARKE	05d	ACC FLEET MGMNT BLDG	225 NEWTON BRIDGE ROAD	ATHENS	30607
-3568	VT	NA	Landgrove Town Hall	Landgrove Town Hall	88 Landgrove Road	Landgrove	05148
+3568	VT	Bennington	Landgrove Town Hall	Landgrove Town Hall	88 Landgrove Road	Landgrove	05148
 3569	GA	FULTON	Ss02b	NORTH SPRINGS UMC	7770 ROSWELL RD	ATLANTA	30350
 3570	TN	WAYNE	303	Crazy Horse Canoe Rental	2501 Waynesboro Highway	Waynesboro	38485
 3571	OK	NOWATA	Precinct 530203	Cty Cnty Library	224 S Pine	Nowata	74048
@@ -3608,7 +3608,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 3605	GA	CRISP	Arabi	ARABI CITY HALL	4190 BEDGOOD AVE	ARABI	31712
 3606	GA	GRADY	R	RENO COMMUNITY CLUB	192 PINE HILL ROAD	CAIRO	39828
 3607	VA	VIRGINIA BEACH CITY	097 - Indian River	SAN LORENZO SPIRITUAL CENTER	4556 INDIAN RIVER ROAD	VIRGINIA BEACH	23456
-3608	VT	NA	Brunswick Town Office Bldg	Community Office Building	994 VT Route 102	Brunswick	05905
+3608	VT	Essex	Brunswick Town Office Bldg	Community Office Building	994 VT Route 102	Brunswick	05905
 3609	OK	MCCLAIN	Precinct 440010	Criner Baptist Church	17943 May Ave	Lindsay	73052
 3610	MA	HAMPSHIRE	Northampton W03a	NORTHAMPTON SENIOR CENTER	67 CONZ STREET	NORTHAMPTON	01060
 3611	MA	MIDDLESEX	Framingham 13	MC CARTHY SCHOOL	8 FLAGG DRIVE (VOTING IN THE GYM)	FRAMINGHAM	01702
@@ -3642,7 +3642,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 3639	VA	FAIRFAX	427 - Island Creek	ISLAND CREEK ELEMENTARY SCHOOL	7855 Morning View Ln	Alexandria	22315
 3640	AR	MARION	Precinct 09	Lakeway Fire House	55 MC 3055	Yellville	72687
 3641	MA	SUFFOLK	Boston W03 P02	NAZZARO COMMUNITY CENTER	30 NORTH BENNETT STREET	Boston	02135
-3642	VT	NA	Victory Town Hall	Victory Town Hall	102 Radar RD. N. Concord	Victory	05858
+3642	VT	Essex	Victory Town Hall	Victory Town Hall	102 Radar RD. N. Concord	Victory	05858
 3643	OK	PITTSBURG	Precinct 610011	First United Methodist Church	2621 N Ash	Mc Alester	74501
 3644	OK	ROGERS	Precinct 660018	Sequoyah Baptist Church	16501 S Highway 66	Claremore	74017
 3645	MN	ST LOUIS	Duluth P-18	Historic Old Central HS Room 108	215 N 1st Ave E	Duluth	55802
@@ -3677,12 +3677,12 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 3674	TN	JACKSON	202	Jackson County Utility District	1478 North Grundy Quarles Hwy	Gainesboro	38562
 3675	OK	COMANCHE	Precinct 160017	First United Methodist Church	2602 Nw Ferris	Lawton	73505
 3676	GA	FULTON	Rw08	CROSSPOINTE COMMUNITY CHURCH	77 E CROSSVILLE RD; SUITE 203	ROSWELL	30075
-3677	VT	NA	Reading Robinson Hall	Reading Elementary School	632 Route 106	Reading	05062
+3677	VT	Windsor	Reading Robinson Hall	Reading Elementary School	632 Route 106	Reading	05062
 3678	OK	PONTOTOC	Precinct 620031	The Irving Center #31	704 N Oak	Ada	74820
 3679	OK	CANADIAN	Precinct 090102	Mt Zion United Methodist Churc	2 Mi East Of Hwy 81 On 15Oth	El Reno	73036
 3680	VA	RICHMOND CITY	104 - One Hundred Four	FIRST PRESBYTERIAN CHURCH	4602 Cary Street Rd	Richmond	23226
 3681	MA	NORFOLK	Braintree 04b	ARCHIE T. MORRISON SCHOOL	260 LIBERTY STREET	BRAINTREE	02184
-3682	VT	NA	Lemington Town Hall	Lemington Town Hall	2549 River Road	Lemington	05903
+3682	VT	Essex	Lemington Town Hall	Lemington Town Hall	2549 River Road	Lemington	05903
 3683	VA	FAIRFAX	303 - Churchill	CHURCHILL ROAD ELEM SCHOOL	7100 Churchill Rd	Mclean	22101
 3684	VA	SCOTT	203 - Hiltons	HILTONS ELEMENTARY SCHOOL	303 ACADEMY RD	Hilton	24258
 3685	AL	BLOUNT	Precinct 0601	Nectar Town Hall	14795 State Hwy 160	Cleveland	35049
@@ -3720,7 +3720,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 3717	AR	HEMPSTEAD	18 Patmos	Patmos Municipal Fire Station	761 HWY 355 E	Hope	71801
 3718	GA	IRWIN	1421	PINETTA BAPTIST CH	394 PINETTA RD	OCILLA	31774
 3719	TN	DYER	8	Millsfield Fire Department-	5819 Millsfield Highway	Dyersburg	38024
-3720	VT	NA	Duxbury Crossett Brk Sch	Crossett Brook Middle School	6100 VT Route 100	Duxbury	05676
+3720	VT	Washington	Duxbury Crossett Brk Sch	Crossett Brook Middle School	6100 VT Route 100	Duxbury	05676
 3721	TN	BEDFORD	701	Deery Eakin School	1100 Glen Oaks Rd	Shelbyville	37160
 3722	AL	BLOUNT	Precinct 2101	Frank Green Building	415 5th Avenue East	Oneonta	35121
 3723	AL	MONROE	Precinct 0300 Mon Fire Station	MONROEVILLE FIRE STATION	160 E CLAIBORNE ST	MONROEVILLE	36460
@@ -3881,7 +3881,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 3878	AL	JACKSON	Precinct 0180	PRINCES STORE	3939 Co Road 9	Estill Fork	35745
 3879	GA	DOOLY	5	UNADILLA VOTING PRECINCT	1565 BORUM STREET	UNADILLA	31091
 3880	AL	MONTGOMERY	Precinct 05h	Pine Level Fire Station	24 Kohn Drive	Ramer	36069
-3881	VT	NA	Andover Town Hall	Andover Town Hall	59 Town Hall Road	Andover	05143
+3881	VT	Windsor	Andover Town Hall	Andover Town Hall	59 Town Hall Road	Andover	05143
 3882	GA	TELFAIR	Ja	JACKSONVILLE COMMUNITY CENTER	70 E. DOGWOOD DR	JACKSONVILLE	31544
 3883	TN	BRADLEY	601	Valley View Elementary School	5607 Spring Place Rd Se	Cleveland	37323
 3884	TN	BLOUNT	5	Carpenter's Middle School	722 Huffstetler Road	Maryville	37803
@@ -3932,7 +3932,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 3929	VA	ROANOKE CITY	018 - Virginia Heights-Norwich	HEIGHTS COMMUNITY CHURCH	2014 Memorial Avenue SW	Roanoke	24015
 3930	TN	HAMILTON	179	Hamilton County High School	9050 Career Lane	Harrison	37341
 3931	TN	KNOX	48	Pond Gap School	1401 Hollywood Dr.	Knoxville	37919
-3932	VT	NA	Warren Elementary School	Warren Elementary School	293 School Road	Warren	05674
+3932	VT	Washington	Warren Elementary School	Warren Elementary School	293 School Road	Warren	05674
 3933	AR	HOT SPRING	Big Creek	Big Creek Baptist Church	593 Big Creek Road	Malvern	72104
 3934	AL	MADISON	Plainview Church Of Christ	Plainview Church of Christ	14500 Hwy 231-431 North	Hazel Green	35750
 3935	AL	MORGAN	Macedonia C P Church	Macedonia Cumberland Presbyterian Church	1820 Old Moulton Rd.	Decatur	35601
@@ -3974,7 +3974,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 3971	AL	LAWRENCE	6-1 McCarley Center	MCCARLEY CENTER 06	215 COLLEGE ST	COURTLAND	35618
 3972	AR	PULASKI	Precinct 019	North Heights Recreation Center	4801 Allen St	N Little Rock	72118
 3973	GA	COWETA	10	10TH DISTRICT COURTHOUSE	69 DEPOT ST	HARALSON	30229
-3974	VT	NA	Danville Town Hall	Danville School Gymnasium	148 Peacham Road	Danville	05828
+3974	VT	Caledonia	Danville Town Hall	Danville School Gymnasium	148 Peacham Road	Danville	05828
 3975	OK	CREEK	Precinct 190121	Foundation Church	7785 S. Highway 97	Sapulpa	74066
 3976	GA	COBB	Bk01	SUMMIT BAPTIST CHURCH	4310 MOON STATION LANE	ACWORTH	30101
 3977	TN	COFFEE	1001	Mt. Ararat Baptist Church At Hoodoo	57 Paul Harrell Road	Beechgrove	37018
@@ -4106,7 +4106,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4103	VA	SCOTT	401 - Gate City	GATE CITY MIDDLE SCHOOL	170 Harry Fry Drive	Gate City	24251
 4104	VA	COVINGTON CITY	401 - Precinct 4-1	OLD NATIONAL GUARD ARMORY BLDG	520 W Oak St	Covington	24426
 4105	OK	CLEVELAND	Precinct 140005	Beth Haven Church	12400 S Western	Oklahoma City	73170
-4106	VT	NA	Johnson Municipal Bldg	Johnson Elementary School	57 College Hill	Johnson	05656
+4106	VT	Lamoille	Johnson Municipal Bldg	Johnson Elementary School	57 College Hill	Johnson	05656
 4107	TN	HAWKINS	14	Mooresburg Elementary School	305 Highway 31	Mooresburg	37811
 4108	AL	BIBB	Precinct 0500	Rock Building	157 S. W. Davidson Drive	Centreville	35042
 4109	VA	FAIRFAX	910 - London Towne	LONDON TOWNE ELEMENTARY SCHOOL	6100 Stone Rd	Centreville	20120
@@ -4119,7 +4119,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4116	VA	RAPPAHANNOCK	501 - Chester Gap	CHESTER GAP FIRE HALL	42 Waterfall Rd	Chester Gap	22623
 4117	AR	LONOKE	29 - Indian Bayou Twp	COY COMMUNITY BLDG.	73 ABBIE LANE	COY (CITY HALL)	72037
 4118	MN	DAKOTA	Eagan P-10	Eagan High School Room 133	4185 Braddock Trail	Eagan	55123
-4119	VT	NA	Barnet Town Hall	Barnet Elementary School	163 Kid Row	Barnet	05821
+4119	VT	Caledonia	Barnet Town Hall	Barnet Elementary School	163 Kid Row	Barnet	05821
 4120	AL	LAWRENCE	14-1 Pleasant Grve (Woodard)	PLEASANT GR CHURCH (WOODARD)	11450 HWY 33	MOULTON	35650
 4121	GA	CHEROKEE	44	FIRST BAPTIST CH OF WOODSTOCK	11905 HIGHWAY 92	WOODSTOCK	30188
 4122	MA	WORCESTER	Worcester W03 P04	WORCESTER TECHNICAL H.S.	1 SKYLINE DRIVE	Worcester	01605
@@ -4167,13 +4167,13 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4164	VA	MONTGOMERY	204 - Precinct B-4	CHRISTIANSBURG RECREATION CENTER	1600 N FRANKLIN ST	Christiansburg	24073
 4165	MN	OLMSTED	Rochester W3 P2	Century High School Room D127	2525 Viola Rd NE	Rochester	55906
 4166	GA	COBB	Di01	WINDY HILL COMMUNITY CENTER	1885 ROSWELL ST. SE	SMYRNA	30080
-4167	VT	NA	Bradford Academy Audit	Bradford Academy	172 North Main Street	Bradford	05033
+4167	VT	Orange	Bradford Academy Audit	Bradford Academy	172 North Main Street	Bradford	05033
 4168	VA	CHESAPEAKE CITY	054 - Pughsville	TAYLOR BEND YMCA	4626 TAYLOR ROAD	CHESAPEAKE	23321
 4169	OK	OKLAHOMA	Precinct 550134	Edmond Trinity Christian Ch	1400 Nw 178Th St	Edmond	73034
 4170	MA	NORFOLK	Milton 04	MILTON SENIOR CENTER	10 WALNUT STREET	MILTON	02186
 4171	AL	HOUSTON	St Johns Park 271	LUCY VOL FIRE ST	501 FIRE DEPARTMENT ROAD	COTTONWOOD	36320
 4172	GA	CARROLL	1483	MT PLEASANT CH FELLOWSHIP HALL	694 MT PLEASANT CH RD	CARROLLTON	30116
-4173	VT	NA	Saint Johnsbury Lively Center	St Johnsbury School	257 Western Ave	St Johnsbury	05819
+4173	VT	Caledonia	Saint Johnsbury Lively Center	St Johnsbury School	257 Western Ave	St Johnsbury	05819
 4174	AR	SCOTT	02 - Blansett	Shiloh Baptist Church	8882 Shiloh Church Rd	Mena	71958
 4175	TN	HAWKINS	26	Stanley Valley Fire Department	1405 Stanley Valley Road	Surgoinsville	37873
 4176	AR	HOT SPRING	Brown Springs	Anchor Baptist Church	828 Brown Springs Loop	Donaldson	71941
@@ -4203,7 +4203,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4200	TN	GILES	02b	Abernathy Field Airport	326 Abernathy Rd	Pulaski	38478
 4201	AR	PRAIRIE	Hickory Plains	Hickory Plains Methodist Church	12493 Hwy 13 N	Hickory Plains	72066
 4202	GA	MUSCOGEE	127	PSALMOND RECREATION CENTER	6500 PSALMOND ROAD	COLUMBUS	31907
-4203	VT	NA	Fayston Municipal Hall	Fayston Elementery School	782 German Flats Road	Fayston	05660
+4203	VT	Washington	Fayston Municipal Hall	Fayston Elementery School	782 German Flats Road	Fayston	05660
 4204	AR	HOT SPRING	Midway City 2	Ouachita School-Old Cafeteria-Midway City 2	166 Schoolhouse Rd	Donaldson	71941
 4205	OK	CADDO	Precinct 080812	Highland Methodist Church	3 West 1 South Of Oney/Albert	Albert	73001
 4206	GA	BUTTS	Jenk	JENKINSBURG CITY HALL	211 MAPLE ST	JENKINSBURG	30234
@@ -4319,7 +4319,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4316	AR	CRAIGHEAD	46	Brookland City Hall	613 Holman	Brookland	72417
 4317	TN	JEFFERSON	701	New Market City Hall	1024 Volunteer Street	New Market	37820
 4318	AL	BALDWIN	Precinct 29	Perdido Beach V.F.D.	8450 Escambia Avenue	Elberta	36530
-4319	VT	NA	Royalton S Royal Hs Gym	South Royalton School Gym	223 South Windsor Street	Royalton	05068
+4319	VT	Windsor	Royalton S Royal Hs Gym	South Royalton School Gym	223 South Windsor Street	Royalton	05068
 4320	AR	MILLER	Bright Star	Bright Star School	4019 SH 160	Doddridge	71834
 4321	CO	BOULDER	2163307102	Eldorado K8 School	3351 South Indiana Street	Superior	80027
 4322	MA	PLYMOUTH	Brockton W03c	JOHN F. KENNEDY SCHOOL	900 ASH STREET	BROCKTON	02301
@@ -4341,7 +4341,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4338	AR	WOODRUFF	Morton - 14	Morton Baptist Church	142 Woodruff 461	McCrory	72101
 4339	MA	MIDDLESEX	Lowell W09 P02	ROBINSON SCHOOL	110 JUNE ST.	LOWELL	01850
 4340	TN	DAVIDSON	301	Union Hill Baptist	1301 Union Hill Rd	Whites Creek	37072
-4341	VT	NA	Burlington Memorial Aud	Fletcher Free Library	235 College Street	Burlington	05401
+4341	VT	Chittenden	Burlington Memorial Aud	Fletcher Free Library	235 College Street	Burlington	05401
 4342	AL	CULLMAN	Precinct 0031	Hanceville City Hall	112 Main St. SE	Cullman	35077
 4343	VA	MIDDLESEX	301 - Waterview	WATERVIEW FIREHOUSE	4583 WATER VIEW RD	WATER VIEW	23180
 4344	AL	LAWRENCE	36-1 Pine Grove Church(Faith)	PINE GROVE(FAITH BAPT)36	5721 CO RD 221	MOULTON	35650
@@ -4390,7 +4390,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4387	GA	FULTON	04t	W OAKLAND MISSIONARY BAPT CH	1025 VIOLET ST SW	ATLANTA	30310
 4388	GA	WARE	400	SECOND BAPTIST CHURCH	301 TOMBERLIN ROAD	WAYCROSS	31503
 4389	AR	BRADLEY	12 - Jersey	Shady Grove Baptist Church	2241 Bradley 1 North	Banks	71631
-4390	VT	NA	Williamstown High School	Williamstown Middle/High School	120 Hebert Road	Williamstown	05679
+4390	VT	Orange	Williamstown High School	Williamstown Middle/High School	120 Hebert Road	Williamstown	05679
 4391	MA	BRISTOL	Somerset 05	WILBUR SCHOOL	816 BRAYTON POINT RD	SOMERSET	02725
 4392	TN	WILLIAMSON	91	Walnut Grove Elementary School	326 Stable Road	Franklin	37069
 4393	AR	CRAWFORD	Rudy	Rudy Community Building	423 HWY 282	Rudy	72952
@@ -4408,7 +4408,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4405	GA	COBB	Ca01	CUMBERLAND COMMUNITY CHURCH	3110 SPORTS AVE	SMYRNA	30080
 4406	TN	RUTHERFORD	84	Crescent Church Of Christ	4915 Barfield Crescent Rd.	Murfreesboro	37128
 4407	VA	VIRGINIA BEACH CITY	046 - Green Run	GREEN RUN ELEMENTARY SCHOOL	1200 Green Garden Cir	Virginia Beach	23453
-4408	VT	NA	Underhill Town Hall	Brown's River Middle School	20 River Road	Underhill	05489
+4408	VT	Chittenden	Underhill Town Hall	Brown's River Middle School	20 River Road	Underhill	05489
 4409	AR	PULASKI	Precinct 064	Trinity Presbyterian Church	4501 Rahling Rd	Little Rock	72223
 4410	MA	NORFOLK	Stoughton 07	WEST ELEMENTARY SCHOOL	1322 CENTRAL STREET	STOUGHTON	02072
 4411	VA	VIRGINIA BEACH CITY	089 - Lake Christopher	NEW COVENANT PRESBYTERIAN CHURCH	1552 Kempsville Rd	Virginia Beach	23464
@@ -4433,14 +4433,14 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4430	GA	JASPER	290	WYATT VOTING PRECINCT	8994 HIGHWAY 142	NEWBORN	30056
 4431	VA	FAIRFAX	305 - El Nido	CHESTERBROOK ELEMENTARY SCHOOL	1753 Kirby Rd	Mclean	22101
 4432	VA	RICHMOND CITY	308 - Three Hundred Eight	LINWOOD HOLTON ELEMENTARY SCHOOL	1600 West Laburnum Avenue	Richmond	23227
-4433	VT	NA	Windsor Municipal Bldg	Windsor Municipal Bldg. Rec. Ctr. Gym	29 Union Street	Windsor	05089
+4433	VT	Windsor	Windsor Municipal Bldg	Windsor Municipal Bldg. Rec. Ctr. Gym	29 Union Street	Windsor	05089
 4434	GA	FULTON	Pa01	PALMETTO SENIOR CENTER	510 TURNER AVE	PALMETTO	30268
 4435	VA	BLAND	102 - Ceres	CERES COMMUNITY CENTER	43 Ruritan Drive	Ceres	24318
 4436	GA	TALBOT	8	FLINT HILL FIRE STATION	173 FLINT HILL HWY	SHILOH	31826
 4437	OK	OKLAHOMA	Precinct 550157	Cherokee Hills Baptist Church	5700 Nw 63Rd St	Oklahoma City	73132
 4438	MN	WRIGHT	Clearwater	Clearwater Township Hall	15015 Hwy 24	Clearwater	55320
 4439	AL	GENEVA	Revels Store Voting House	Revels Store	525 State Hwy 54	Sampson	36477
-4440	VT	NA	Westfield Town Office	Westfield Community Center	59 North Hill Rd.	Westfield	05874
+4440	VT	Orleans	Westfield Town Office	Westfield Community Center	59 North Hill Rd.	Westfield	05874
 4441	OK	OKLAHOMA	Precinct 550198	Crown Hts. Ch Of The Nazarene	920 Nw 46	Oklahoma City	73118
 4442	GA	EFFINGHAM	01b	SANDHILL BAPTIST CHURCH	1931 SANDHILL RD	GUYTON	31312
 4443	VA	MECKLENBURG	201 - Boydton	SCHOOL BOARD IN SERVICE BLDG	120 MADISON STREET	BOYDTON	23917
@@ -4495,7 +4495,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4492	AR	BAXTER	3-Mar	Northeast Lakeside Firestation 3-3	5482 Hwy 62 E	Mountain Home	72653
 4493	AR	MILLER	Trice	Faith Assembly Of God Church	2001 Arkansas Blvd	Texarkana	71854
 4494	AR	CLEBURNE	19 - Heber Springs Outside	National Guard Armory	701 S. 7th Street	Heber Springs	72543
-4495	VT	NA	Addison Town Clerk Ofc	Addison Town Clerk's Office	65 Vermont Route 17 West	Addison	05491
+4495	VT	Addison	Addison Town Clerk Ofc	Addison Town Clerk's Office	65 Vermont Route 17 West	Addison	05491
 4496	MA	WORCESTER	Westborough 03	GIBBONS MIDDLE SCHOOL GYM	20 FISHER STREET	WESTBOROUGH	01581
 4497	VA	ROCKINGHAM	303 - Melrose	UNITED METHODIST SOCIAL HALL	696 FELLOWSHIP RD	HARRISONBURG	22802
 4498	OK	ADAIR	Precinct 010007	Church Of Christ Hwy 100W	Section Line Road	Stilwell	74960
@@ -4528,7 +4528,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4525	GA	CLAYTON	Fp4	BABB MIDDLE SCHOOL	5500 REYNOLDS RD	FOREST PARK	30297
 4526	VA	CAROLINE	601 - Chilesburg	COUNTY LINE BAPTIST CHURCH	3461 LADYSMITH RD	RUTHER GLEN	22546
 4527	VA	FAIRFAX	202 - Flint Hill	FLINT HILL ELEMENTARY SCHOOL	2444 Flint Hill Rd	Vienna	22181
-4528	VT	NA	Weathersfield Martin Mem Hall	Martin Memorial Hall	5259 US Route 5	 Ascutney	00503
+4528	VT	Windsor	Weathersfield Martin Mem Hall	Martin Memorial Hall	5259 US Route 5	 Ascutney	00503
 4529	OK	OSAGE	Precinct 570205	Black Dog Fire Station	5495 N 52 W Ave	Tulsa	74126
 4530	VA	FAIRFAX	134 - University	GMU-MERTEN HALL	4441 GEORGE MASON BLVD	FAIRFAX	22030
 4531	AR	WASHINGTON	Marrs Hill	Viney Grove Community Building	15149 W Battlefield Park Rd WC 80	Prairie Grove	72753
@@ -4605,7 +4605,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4602	OK	CLEVELAND	Precinct 140026	Wildwood Community Church	1501 24Th Ave Ne	Norman	73071
 4603	MN	ITASCA	Bigfork	Bigfork City Hall	200 Main Ave	Bigfork	56628
 4604	MN	HENNEPIN	Minneapolis W-5 P-08	Farview Recreation Center	621 29th Ave N	Minneapolis	55411
-4605	VT	NA	Chelsea Town Hall	Chelsea Town Hall	296 VT RT 110	Chelsea	05038
+4605	VT	Orange	Chelsea Town Hall	Chelsea Town Hall	296 VT RT 110	Chelsea	05038
 4606	GA	HENRY	48	UNITY GROVE ELEMENTARY SCHOOL	1180 LEGUIN MILL ROAD	LOCUST GROVE	30248
 4607	MA	SUFFOLK	Winthrop 01	ARTHUR T. CUMMINGS SCHOOL	40 Hermon St	WINTHROP	02152
 4608	TN	MCNAIRY	20	Stantonville Community Ctr	127 Michie Pebbie Hill Rd	Stantonville	38379
@@ -4648,7 +4648,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4645	GA	EVANS	11	VETERAN'S COMMUNITY CENTER	818 W. MAIN ST.	CLAXTON	30417
 4646	VA	HARRISONBURG CITY	105 - South East Central	CONVOCATION CENTER	895 University Blvd	Harrisonburg	22807
 4647	MA	WORCESTER	Barre 02	AMERICAN LEGION POST 2	450 SOUTH BARRE RD	BARRE	01005
-4648	VT	NA	Newport Town Town Clerk's Off	Newport Town School	4212 VT Route 105	Newport Town	05857
+4648	VT	Orleans	Newport Town Town Clerk's Off	Newport Town School	4212 VT Route 105	Newport Town	05857
 4649	TN	KNOX	058s	Copper Ridge Elem. Sch.	2502 E. Brushy Valley Rd.	Powell	37849
 4650	TN	SHELBY	4103	Springdale Baptist Church	1193 Springdale St	Memphis	38108
 4651	OK	CUSTER	Precinct 200012	Arapaho Community Building	201 South 7Th	Arapaho	73620
@@ -4695,7 +4695,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4692	OK	TULSA	Precinct 720410	Evergreen Baptist Church	10301 E 111 St  South	Bixby	74008
 4693	MA	NORFOLK	Brookline 01	WHEELOCK COLLEGE	43 HAWES STREET (MONMOUTH STREET ENTRANCE)	BROOKLINE	02446
 4694	AR	JEFFERSON	205	Southside Activities Bldg	23rd Elm	Pine Bluff	71601
-4695	VT	NA	Ira Town Hall	Ira Town Hall	1800 Route 133	Ira	05777
+4695	VT	Rutland	Ira Town Hall	Ira Town Hall	1800 Route 133	Ira	05777
 4696	VA	ROANOKE	204 - Botetourt Springs	LIFE CHURCH	7422 Deer Branch Rd	Roanoke	24019
 4697	OK	OTTAWA	Precinct 580009	All Saints Episcopal Church	225 B Nw	Miami	74354
 4698	GA	COLUMBIA	111	LAKESIDE MIDDLE SCHOOL	527 BLUERIDGE DR	EVANS	30809
@@ -4706,7 +4706,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4703	AL	WALKER	Precinct 1501	Sipsey School	325 Park Rd	Sipsey	35504
 4704	OK	DEWEY	Precinct 220008	Seiling Senior Citizens Center	104 E. 3Rd Street	Seiling	73663
 4705	MA	MIDDLESEX	Waltham W01 P02	WALTHAM HIGH SCHOOL	617 LEXINGTON ST	WALTHAM	02452
-4706	VT	NA	Wilmington High School Gym	Twin Valley Elementary School	360 VT Route 100 North	Wilmington	05363
+4706	VT	Windham	Wilmington High School Gym	Twin Valley Elementary School	360 VT Route 100 North	Wilmington	05363
 4707	GA	ROCKDALE	Hc	HONEY CREEK ELEMENTARY SCHOOL	700 HONEY CREEK ROAD	CONYERS	30094
 4708	TN	RUTHERFORD	92	Brown'S Chapel Elementary	6128 Baker Rd.	Murfreesboro	37129
 4709	MA	MIDDLESEX	Malden W06 P01	CHARTER SCHOOL	770 SALEM ST	MALDEN	02148
@@ -4758,7 +4758,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4755	MA	BARNSTABLE	Bourne 01	VETS MEMORIAL COMM.BLDG.	239 MAIN ST	BUZZARDS BAY	02532
 4756	AL	BULLOCK	Precinct 0062	Corinth	3608 County Road 45	Troy	36081
 4757	VA	VIRGINIA BEACH CITY	055 - Magic Hollow	VA BEACH MOOSE FAMILY CENTER	3133 Shipps Corner Road	Virginia Beach	23462
-4758	VT	NA	South Hero Town Office	Town Office Building	333 Route 2	South Hero	05486
+4758	VT	Grand Isle	South Hero Town Office	Town Office Building	333 Route 2	South Hero	05486
 4759	MA	ESSEX	Salem W01 P02	COMMUNITY ROOM	135 LAFAYETTE STREET	SALEM	01970
 4760	AL	CLARKE	Precinct 0074	JACKSON (Downtown FS/ Fire Station No. 2)	324 Commerce St	JACKSON	36545
 4761	VA	PRINCE WILLIAM	602 - Beville	BEVILLE MIDDLE SCHOOL	4901 Dale Boulevard	Woodbridge	22193
@@ -4807,7 +4807,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4804	VA	MARTINSVILLE CITY	006 - Precinct #6	ALBERT HARRIS SCHOOL	710 Smith St	Martinsville	24112
 4805	TN	HARDIN	21	Mt. Zion Church Of Christ Fellowship Hall	5905 Hwy 128	Savannah	38372
 4806	VA	ALEXANDRIA CITY	110 - Charles Houston Center	CHARLES HOUSTON CENTER	901 Wythe Street	Alexandria	22314
-4807	VT	NA	Groton Community Hall	Groton Community Building Gym	1476 Scott Highway	Groton	05046
+4807	VT	Caledonia	Groton Community Hall	Groton Community Building Gym	1476 Scott Highway	Groton	05046
 4808	MA	MIDDLESEX	Arlington 02	HARDY SCHOOL	52 LAKE STREET	ARLINGTON	02474
 4809	GA	CHARLTON	03b	BEND FIRE STATION	2561 HIGHWAY 121	ST. GEORGE	31562
 4810	MA	MIDDLESEX	Natick 10	MEMORIAL SCHOOL	107 ELIOT ST	NATICK	01760
@@ -4828,7 +4828,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4825	AL	CHEROKEE	Precinct 0101	SAND ROCK TOWN HALL	1925 SAND ROCK AVE	SAND ROCK	35983
 4826	GA	DEKALB	Ch	CHESNUT ELEMENTARY SCH	4576 NORTH PEACHTREE ROAD	DUNWOODY	30338
 4827	OK	OKLAHOMA	Precinct 550148	Spring Creek Baptist Church	11701 N Macarthur Blvd	Oklahoma City	73162
-4828	VT	NA	Hartland Damon Hall	Damon Hall	1 Quechee Road	Hartland	05048
+4828	VT	Windsor	Hartland Damon Hall	Damon Hall	1 Quechee Road	Hartland	05048
 4829	GA	GRADY	C05	AGRI-CENTER	65 11TH AVENUE NE	CAIRO	39828
 4830	AL	CLARKE	Precinct 0131	COFFEEVILLE-LEGION HALL	37 Legion Street	COFFEEVILLE	36524
 4831	TN	POLK	4	Greasy Creek Community Center	125 Firehall Road	Reliance	37369
@@ -4863,7 +4863,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4860	MA	SUFFOLK	Boston W18 P22	GEORGE H CONLEY	450 Poplar St	Roslindale	02131
 4861	GA	DECATUR	1325	RECOVERY VOL FIRE DEPT	164 RIVER RD	BAINBRIDGE	39819
 4862	MA	BARNSTABLE	Bourne 02	BOURNE FIRE STATION 3	51 MEETINGHOUSE LN SAGAMORE BEACH MA 02562	BOURNE	02532
-4863	VT	NA	Swanton Vill Mun Cmplx	Swanton Village Complex	120 1st Street	Swanton	05488
+4863	VT	Franklin	Swanton Vill Mun Cmplx	Swanton Village Complex	120 1st Street	Swanton	05488
 4864	MA	BRISTOL	Fall River W02a	BLESSED TRINITY CHURCH	1340 PLYMOUTH AVE  (ENTRANCE ON WINTHROP ST)	FALL RIVER	02721
 4865	AR	LOGAN	144 - Sugar Creek	Grayson Fire Station	5409 Jack Creek Rd	Booneville	72927
 4866	OK	ROGERS	Precinct 660003	Faith Baptist Church	901 S Faith Lane	Claremore	74017
@@ -4871,7 +4871,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4868	VA	SUSSEX	501 - Henry	JARRATT SENIOR CITIZEN CENTER	114 N HALIFAX RD	JARRATT	23867
 4869	VA	CULPEPER	601 - Mitchells	MITCHELLS PRESBYTERIAN CHURCH	12229 Mitchell Rd	Mitchells	22729
 4870	TN	ANDERSON	Mrl	Grand Oaks Elementary School	1033 Oliver Springs Highway	Clinton	37716
-4871	VT	NA	Guildhall Town Office	The Guild Hall   (Town Hall)	13 Courthouse Drive	Guildhall	05905
+4871	VT	Essex	Guildhall Town Office	The Guild Hall   (Town Hall)	13 Courthouse Drive	Guildhall	05905
 4872	MA	WORCESTER	Shrewsbury 08	SPRING STREET SCHOOL	123 SPRING STREET	SHREWSBURY	01545
 4873	AL	MARSHALL	Precinct 0211	CRANFORD / RUTH VOLUNTEER FIRE DEPARTMENT	3075 MAT MARROW ROAD	ARAB	35016
 4874	OK	TULSA	Precinct 720019	Owen Elementary School	1132 N Vandalia Ave	Tulsa	74115
@@ -4927,7 +4927,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 4924	VA	HAMPTON CITY	216 - Sandy Bottom	SANDY BOTTOM NATURE PARK	1255 Big Bethel Rd	Hampton	23666
 4925	GA	PUTNAM	104	PUTNAM COUNTY MIDDLE SCHOOL	140 SPARTA HWY	EATONTON	31024
 4926	MA	NORFOLK	Braintree 05b	LIBERTY ELEMENTARY SCHOOL	49 PROCTOR ROAD	BRAINTREE	02184
-4927	VT	NA	West Windsor Story Mem Hall	Story Memorial Hall	22 Brownsville-Hartland Rd.	West Windsor	05089
+4927	VT	Windsor	West Windsor Story Mem Hall	Story Memorial Hall	22 Brownsville-Hartland Rd.	West Windsor	05089
 4928	AR	MONROE	16 - Cypress Ridge	East Monroe County Fire Station #1	14280 Highway 49	Brinkley	72021
 4929	OK	COMANCHE	Precinct 160032	Patterson Center	#4 Ne Arlington	Lawton	73507
 4930	VA	FAIRFAX	918 - Centreville	CENTREVILLE ADULT ED CENTER	5775 Spindle Ct	Centreville	20121
@@ -5080,7 +5080,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 5077	GA	MUSCOGEE	111	MUSCOGEE ELEMENTARY SCHOOL	3900 BAKER PLAZA	COLUMBUS	31903
 5078	VA	CHESTERFIELD	513 - Beaufont	FOREST VIEW RESCUE SQUAD	8008 Midlothian Tpke	Richmond	23235
 5079	CO	LARIMER	2145235226	Preston Middle School	4901 Corbett Dr.	Fort Collins	80528
-5080	VT	NA	Rutland Town Elementary Sch	Rutland Town Elementary School/Town Hall	1612 Post Road/181 U.S. Route 4	Rutland Town	05701
+5080	VT	Rutland	Rutland Town Elementary Sch	Rutland Town Elementary School/Town Hall	1612 Post Road/181 U.S. Route 4	Rutland Town	05701
 5081	AR	SALINE	17	Bob Herzfeld Memorial Library	1800 Smithers Drive	Benton	72015
 5082	MN	HENNEPIN	Minneapolis W-1 P-10	Columbia Manor - Porch	3300 Central Ave NE	Minneapolis	55418
 5083	AL	MONROE	Precinct 1001 Beatrice Town Ha	NEW PURCHASE CME CHURCH	17289 HIGHWAY 21 NORTH	BEATRICE	36425
@@ -5303,12 +5303,12 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 5300	AR	LAWRENCE	09 - Campbell #1	Walnut Ridge Community Building	115 West Walnut	Walnut Ridge	72476
 5301	TN	JACKSON	102	Gainesboro Elementary School	611 South Main St	Gainesboro	38562
 5302	OK	CLEVELAND	Precinct 140016	Winding Creek Elem. School	1401 Ne 12 St.	Moore	73160
-5303	VT	NA	Craftsbury Town Hall	Craftsbury Acadmey Gymnasium	1422 North Craftsbury Road	Craftsbury	05826
+5303	VT	Orleans	Craftsbury Town Hall	Craftsbury Acadmey Gymnasium	1422 North Craftsbury Road	Craftsbury	05826
 5304	OK	ADAIR	Precinct 010001	Dahlonegah School	Rt 1 Box 351	Stilwell	74960
 5305	TN	WASHINGTON	36	West View Elementary School	2847 Old State Route 34	Limestone	37681
 5306	VA	VIRGINIA BEACH CITY	020 - Bayside	BAYSIDE ELEMENTARY SCHOOL	5649 Bayside Rd	Virginia Beach	23455
 5307	GA	LAURENS	22	LAURENS COUNTY FIRE STA #10 (VALAMBR	128 VALAMBROSIA RD	DUBLIN	31021
-5308	VT	NA	Greensboro Town Hall	Greensboro Town Clerk	81 Lauredon Ave.	Greensboro	05841
+5308	VT	Orleans	Greensboro Town Hall	Greensboro Town Clerk	81 Lauredon Ave.	Greensboro	05841
 5309	MA	PLYMOUTH	Brockton W07a	NORTH JUNIOR HIGH SCHOOL	108 OAK STREET	BROCKTON	02301
 5310	MN	OTTER TAIL	Everts Twp	Battle Lake City Hall	108 East Main Street	Battle Lake	56532
 5311	OK	TEXAS	Precinct 700201	First Assembly Of God Church	804 Ne 12Th Street	Guymon	73942
@@ -5481,17 +5481,17 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 5478	MN	ST LOUIS	Meadowlands Twp	Meadowlands Community Ctr	7758 Western Ave	Meadowlands	55427
 5479	AL	MADISON	Harold Harbin Gym	Harold Harbin Gym	168 Carriger Road	Hazel Green	35750
 5480	GA	GWINNETT	23	MEADOWCREEK ELEMENTARY	5025 GEORGIA BELLE CT	NORCROSS	30093
-5481	VT	NA	Sunderland Elementary Sch	Town Offices	104 Mountain View Road	Sunderland	05250
+5481	VT	Bennington	Sunderland Elementary Sch	Town Offices	104 Mountain View Road	Sunderland	05250
 5482	TN	SUMNER	303	Cragfont Baptist Church	101 Harsh Ln	Castaliansprings	37031
 5483	VA	AMELIA	201 - Number Two	MATTOAX FIRE DEPARTMENT	12201 Genito Rd	Amelia Court House	23002
 5484	TN	RUTHERFORD	72	Barfield Elementary	350 Barfield Crescent Rd.	Murfreesboro	37128
 5485	TN	FAYETTE	14	Fire Department	10225 Jernigan Dr	Somerville	38068
-5486	VT	NA	Berlin Municipal Bldg	Berlin Elementary School	372 Paine Turnpike	Berlin	05602
+5486	VT	Washington	Berlin Municipal Bldg	Berlin Elementary School	372 Paine Turnpike	Berlin	05602
 5487	AR	SALINE	7	Congo Road Baptist Church	7193 Congo Road	Benton	72019
 5488	MA	NORFOLK	Braintree 06a	SOUTH MIDDLE SCHOOL	232 PEACH STREET	BRAINTREE	02184
 5489	TN	FRANKLIN	201	Clark Memorial School	500 North Jefferson	Winchester	37398
 5490	AL	BULLOCK	Precinct 0070	Iverness	9805 County Road 14	Union Springs	36089
-5491	VT	NA	Colchester High Sch	Colchester High School	131 Lake Lane	Colchester	05446
+5491	VT	Chittenden	Colchester High Sch	Colchester High School	131 Lake Lane	Colchester	05446
 5492	MN	BECKER	Detroit Lakes W3 P1	M-State Campus	900 Hwy 34 E	Detroit Lakes	56501
 5493	VA	VIRGINIA BEACH CITY	033 - Capps Shop	BACK BAY CHRISTIAN ASSEMBLY	1212 Princess Anne Rd	Virginia Beach	23457
 5494	TN	DAVIDSON	302	Joelton Elem School	7141 Whites Creek Pk	Nashville	37080
@@ -5523,7 +5523,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 5520	MA	BARNSTABLE	Falmouth 08	THE NAVIGATOR	55 ASHUMET ROAD	FALMOUTH	02536
 5521	VA	ROANOKE CITY	009 - Highland	CALVARY BAPTIST CHURCH	608 Campbell Avenue SW	Roanoke	24016
 5522	AR	PULASKI	Precinct 048	Harris Elementary School	4424 Hwy 161 N	N Little Rock	72117
-5523	VT	NA	Braintree Town Hall	Braintree Town Hall	5379 VT Route 12A	Braintree	05060
+5523	VT	Orange	Braintree Town Hall	Braintree Town Hall	5379 VT Route 12A	Braintree	05060
 5524	GA	RABUN	Rabun	RABUN COUNTY CIVIC CENTER	201 W. SAVANNAH ST.	CLAYTON	30525
 5525	AR	CONWAY	004 - St Vincent	St. Mary's Parish Hall- St. Vincent	11 Kaufman lane	Hattieville	72063
 5526	VA	FAIRFAX	325 - Hutchison	HUTCHISON ELEMENTARY SCHOOL	13209 Parcher Ave	Herndon	20170
@@ -5589,7 +5589,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 5586	TN	DEKALB	3-Feb	Snow Hill Community Centers	821 Snow Hill Rd.	Dowelltown	37710
 5587	AL	COVINGTON	Precinct 0100	ANDALUSIA	20096 KIWANIS DRIVE	ANDALUSIA	36420
 5588	AL	BUTLER	Precinct 0171	Center Hill Voting House	15003 Halso Mill Rd.	Greenville	36037
-5589	VT	NA	Halifax Elementary Sch	Halifax Elementary Multipurpose Room	246 Branch Road	Halifax	05358
+5589	VT	Windham	Halifax Elementary Sch	Halifax Elementary Multipurpose Room	246 Branch Road	Halifax	05358
 5590	AL	MARSHALL	Precinct 0111	PAINTROCK / HEBRON COMM CENTER VFD	3038 MT HEBRON ROAD	GRANT	35747
 5591	TN	HAYWOOD	0009b	West Side Church Of Christ	3235 W. Highway 54	Brownsville	38012
 5592	GA	LUMPKIN	Se	ST PAUL METHODIST CHURCH	14 MARTINS FORD RD	DAHLONEGA	30533
@@ -5614,12 +5614,12 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 5611	OK	PITTSBURG	Precinct 610030	Crowder Senior Citizens (East)	Crowder Senior Citizens	Crowder	74430
 5612	AR	JEFFERSON	309	Matthews Memorial Baptist Church	West 20th Avenue	Pine Bluff	71603
 5613	AR	PRAIRIE	Center	Prairie County Fairgrounds	4133 Hwy 249 N	Hazen	72064
-5614	VT	NA	Pittsford Municipal Off	Lothrop School Gymnasium	3447 U.S. Route 7	Pittsford	05763
+5614	VT	Rutland	Pittsford Municipal Off	Lothrop School Gymnasium	3447 U.S. Route 7	Pittsford	05763
 5615	AL	TUSCALOOSA	Big Sandy Baptist	Big Sandy Baptist Church	14611 Old Greensboro Rd	Tuscaloosa	35405
 5616	MN	ST LOUIS	Duluth P-16	Historic Old Central HS Room 102	215 N 1st Ave E	Duluth	55802
 5617	MA	MIDDLESEX	Somerville W07 P01	SENIOR CENTER	167 HOLLAND STREET	Somerville	02144
 5618	CO	EL PASO	5101621122	Mann Middle School	1001 E. Van Buren	Colorado Springs	80907
-5619	VT	NA	Lowell Town Clerk's Off	Lowell Graded School	52 Gelo Park Road	Lowell	05847
+5619	VT	Orleans	Lowell Town Clerk's Off	Lowell Graded School	52 Gelo Park Road	Lowell	05847
 5620	MA	BRISTOL	Fairhaven 04	HASTINGS MIDDLE SCHOOL	30 SCHOOL STREET	FAIRHAVEN	02719
 5621	TN	ROANE	Cc	Cave Creek Community Center	321 Cave Creek Rd.	Loudon	37774
 5622	GA	SPALDING	17	AMBUCS PARK GYM	1110 HIGH FALLS RD	GRIFFIN	30223
@@ -5640,7 +5640,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 5637	MN	DAKOTA	Eagan P-5a	Eagan High School Lecture Room A	4185 Braddock Trail	Eagan	55123
 5638	GA	MURRAY	872	FIRE STATION #2	2411 OLD HWY 411	CHATSWORTH	30705
 5639	MA	BRISTOL	Westport D	BRIGGS RD FIRE STATION	85 BRIGGS RD	WESTPORT	02790
-5640	VT	NA	West Fairlee Bean Hall	Community Building	870 Route 113	West Fairlee	05083
+5640	VT	Orange	West Fairlee Bean Hall	Community Building	870 Route 113	West Fairlee	05083
 5641	VA	CHESTERFIELD	313 - Woolridge	WOOLRIDGE ELEMENTARY SCHOOL	5401 Timber Bluff Pkwy	Midlothian	23112
 5642	MA	HAMPDEN	Westfield W04b	HIGHLAND SCHOOL	34 WESTERN AVE	WESTFIELD	01085
 5643	AL	ESCAMBIA	Precinct 0180	Barnett's Crossroads Volunteer Fire Department	700 Barnett Highway	Brewton	36426
@@ -5743,7 +5743,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 5740	AL	CALHOUN	Precinct 1101	First Baptist Church of W.P.	160 White Plains Road	Anniston	36207
 5741	TN	MACON	4	Central Elementary	905 Sycamore Street	Lafayette	37083
 5742	TN	COCKE	Dr	Del Rio Elementary School	500 South Hwy 107	Del Rio	37727
-5743	VT	NA	Burlington Master Christi	 Mater Christi School	 100 Mansfield Ave.	Burlington	05401
+5743	VT	Chittenden	Burlington Master Christi	 Mater Christi School	 100 Mansfield Ave.	Burlington	05401
 5744	VA	BATH	301 - Fairview	FAIRVIEW COMMUNITY CENTER	24403 Mountain Valley Rd	Millboro	24460
 5745	GA	EFFINGHAM	05a	MACOMBER RECREATIONAL CENTER	1004 LEXINGTON AVENUE	RINCON	31326
 5746	GA	CHEROKEE	7	E T BOOTH MIDDLE SCHOOL	6550 PUTNAM FORD DR	WOODSTOCK	30189
@@ -5875,7 +5875,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 5872	AL	GENEVA	Geneva National Guard Armory	Geneva National Guard Armory	1308 West Maple Ave.	Geneva	36340
 5873	AR	WASHINGTON	Fay 42	Sang Avenue Baptist Church	1425 N Sang Ave	Fayetteville	72703
 5874	AL	JACKSON	Precinct 0310	MT PLEASANT BAPTIST CHURCH	7612 Co Road 8	Woodville	35776
-5875	VT	NA	Berkshire Town Hall	Berkshire Town Clerk's Office	4454 Watertower Road. Enosburgh Falls	Berkshire	05450
+5875	VT	Franklin	Berkshire Town Hall	Berkshire Town Clerk's Office	4454 Watertower Road. Enosburgh Falls	Berkshire	05450
 5876	AL	SHELBY	Precinct 02	Vandiver Volunteer Fire Department	12177 Hwy 43	Vandiver	35176
 5877	MA	NORFOLK	Norwood 07	BALCH SCHOOL	1168 WASHINGTON STREET	NORWOOD	02062
 5878	GA	CLAYTON	Jb01	POINTE SOUTH MIDDLE SCHOOL	8495 THOMAS RD	JONESBORO	30238
@@ -5895,7 +5895,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 5892	VA	CHESAPEAKE CITY	014 - Grassfield	GRASSFIELD RURITAN CLUB	920 Shillelagh Rd	Chesapeake	23323
 5893	AR	SEBASTIAN	Precinct 9-3c	New Providence Baptist Church	7001 Slaytonville	Hackett	72937
 5894	AR	PRAIRIE	White River Ward 3	Des Arc City Hall	107 South 3rd. St.	Des Arc	72040
-5895	VT	NA	Rockingham Masonic Temple	Masonic Temple	61 Westminster St.	Rockingham	05101
+5895	VT	Windham	Rockingham Masonic Temple	Masonic Temple	61 Westminster St.	Rockingham	05101
 5896	AR	BENTON	Precinct 09	Siloam Springs Community Bldg	110 N Mt Olive St	Siloam Spgs	72761
 5897	TN	LAKE	1	Tiptonville Senior Center	210 South Court Street	Tiptonville	38079
 5898	GA	BALDWIN	Cty6	DUNLAP ROAD FIRE STATION	751 DUNLAP ROAD	MILLEDGEVILLE	31061
@@ -6006,7 +6006,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 6003	TN	KNOX	89	Mt. Olive School	2507 Maryville Pk.	Knoxville	37920
 6004	GA	CARROLL	714a6	TABERNACLE CHURCH	245 COTTAGE HILL RD	CARROLLTON	30117
 6005	TN	ANDERSON	Nor	Norris Community Center	20 Chestnut Drive	Norris	37828
-6006	VT	NA	Tunbridge Town Hall	Tunbridge Central School	523 VT RT 110	Tunbridge	05077
+6006	VT	Orange	Tunbridge Town Hall	Tunbridge Central School	523 VT RT 110	Tunbridge	05077
 6007	AR	SCOTT	05 - Cedar Creek	Cedar Creek Community	16527 E Hwy 28	Parks	72950
 6008	OK	TULSA	Precinct 720553	Judy Kishner Library	10150 N Cincinnati Ave	Sperry	74073
 6009	OK	KIOWA	Precinct 380010	Mt. View Senior Citizen Bldg	106 N 4Th St	Mt. View	73062
@@ -6023,12 +6023,12 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 6020	VA	VIRGINIA BEACH CITY	019 - Lake Smith	BAYSIDE CHURCH OF CHRIST	5025 Shell Rd	Virginia Beach	23455
 6021	AR	FAULKNER	Pine Mt	Mt Gale Baptish Church	8 W BRANNON DR	CONWAY	72032
 6022	AL	AUTAUGA	Precinct 0150	PRATTMONT BAPTIST CH	814 SMITH AVE	PRATTVILLE	36067
-6023	VT	NA	Bakersfield Town Hall	Bakersfield Town Hall	40 East Bakersfield Road	Bakersfield	05441
+6023	VT	Franklin	Bakersfield Town Hall	Bakersfield Town Hall	40 East Bakersfield Road	Bakersfield	05441
 6024	GA	DEKALB	Db	CARY REYNOLDS ELEMENTARY SCHOO	3498 PINE STREET	DORAVILLE	30340
 6025	AL	WINSTON	Precinct 0005 Lynn	Lynn City Hall	301 East Main Street	Lynn	35575
 6026	MN	CHISAGO	Nessel Twp	Nessel Township Hall	49205 Aracia Trail	Stanchfield	55080
 6027	AR	ST FRANCIS	01 - Hughes Ward 1	Hughes Community Center	202 N BROADWAY	Hughes	72348
-6028	VT	NA	Topsham Waits River Sch	Topsham Town Hall	6 Harts Road	Topsham	05076
+6028	VT	Orange	Topsham Waits River Sch	Topsham Town Hall	6 Harts Road	Topsham	05076
 6029	OK	WASHINGTON	Precinct 740054	Eastern Heights Baptist Ch	1331 Se Swan Dr	Bartlesville	74006
 6030	GA	GWINNETT	30	W. C. BRITT ELEM SCHOOL	2503 SKYLAND DR	SNELLVILLE	30078
 6031	GA	CHATHAM	5-11c	LARGO-TIBET ELEMENTARY SCHOOL	430 TIBET AVE	SAVANNAH	31406
@@ -6103,10 +6103,10 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 6100	OK	LINCOLN	Precinct 410022	Prague Fire Dept. Train. Ctr.	1115 N. Jim Thorpe Blvd.	Prague	74864
 6101	MN	KANDIYOHI	Raymond	Raymond Community Center	208 Spicer Ave	Raymond	56282
 6102	MA	SUFFOLK	Boston W22 P08	THOMAS A EDISON SCHOOL	60 GLENMONT ROAD	Boston	02135
-6103	VT	NA	Pittsfield Town Hall	Town Office Building (Presidential Primary)	40 Village Green	Pittsfield	05762
+6103	VT	Rutland	Pittsfield Town Hall	Town Office Building (Presidential Primary)	40 Village Green	Pittsfield	05762
 6104	AL	AUTAUGA	Precinct 0050	WHITE CITY FIRE STA 5/30/69/5	1151 CO RD 49	MARBURY	36051
 6105	MN	OLMSTED	Rochester W5 P8	Century High School Room F248	2525 Viola Rd NE	Rochester	55906
-6106	VT	NA	Wells Town Office	Wells Town Office	1064 VT RT 30	Wells	05774
+6106	VT	Rutland	Wells Town Office	Wells Town Office	1064 VT RT 30	Wells	05774
 6107	VA	CUMBERLAND	101 - Precinct 1	CARTERSVILLE RESCUE SQUAD	1667 CARTERSVILLE ROAD	Cartersville	23027
 6108	AL	RANDOLPH	Precinct 09	LEVEL ROAD 09.03 5-2	5942 COUNTY ROAD 33	WADLEY	36276
 6109	TN	DYER	15	New Family Life Center	415 Elm Street	Dyersburg	38059
@@ -6203,7 +6203,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 6200	TN	WILLIAMSON	62	Brentwood Safety Center	1300 Sunset Road	Brentwood	37027
 6201	TN	RUTHERFORD	43	Oakland High School	865 Patriot Dr.	Murfreesboro	37130
 6202	OK	OTTAWA	Precinct 580007	Southern Hills Baptist Church	1925 E Sw	Miami	74354
-6203	VT	NA	Westminster Westminster Inst	Westminster Institute	3690 U.S. Route 5	Westminster	05158
+6203	VT	Windham	Westminster Westminster Inst	Westminster Institute	3690 U.S. Route 5	Westminster	05158
 6204	MN	FILLMORE	Mabel	Mabel-Canton Public Schools	316 W Fillmore	Mabel	55954
 6205	GA	FULTON	Rw10	ROSWELL UNITED METHODIST CH	814 MIMOSA BLVD/PRATT ST GYM	ROSWELL	30075
 6206	TN	HARDEMAN	3	Community Center	151 Main St.	Whiteville	38075
@@ -6372,7 +6372,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 6369	VA	CHARLOTTE	501 - Cullen	FIRE DEPARTMENT	205 TARO ROAD	CULLEN	23934
 6370	VA	PITTSYLVANIA	308 - Mt Airy	MT AIRY ELEMENTARY SCHOOL	100 Mount Airy Elementary Cir	Gretna	24557
 6371	AL	PIKE	Precinct 15 - Tennille Meth Ch	Tennille Methodist Church	County Road 4430	Brundidge	36010
-6372	VT	NA	Richmond Camel Hump Sch	Camels Hump Middle School	173 School Street	Richmond	05477
+6372	VT	Chittenden	Richmond Camel Hump Sch	Camels Hump Middle School	173 School Street	Richmond	05477
 6373	VA	YORK	502 - Bethel	TABB ELEMENTARY SCHOOL	3711 Big Bethel Rd	Yorktown	23693
 6374	AL	CHEROKEE	Precinct 0071	DANIEL'S CHAPEL	8735 AL HWY 273	CEDAR BLUFF	35959
 6375	AL	LIMESTONE	Clements Baptist Church	Clements Baptist Church	8690 US Hwy 72 West	Athens	35611
@@ -6388,7 +6388,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 6385	GA	FULTON	SC30B	SOUTHWEST REGIONAL LIBRARY	3665 CASCADE RD. SW	ATLANTA	30331
 6386	GA	FLOYD	110	LOVEJOY BAPTIST-JOY LIFE CTR	436 BRANHAM AVE	ROME	30161
 6387	AL	MONTGOMERY	Precinct 02g	Hunter Station Community Center	20 Melton Street	Montgomery	36108
-6388	VT	NA	Orwell Town Hall	Orwell Town Hall	480 Main Street	Orwell	05760
+6388	VT	Addison	Orwell Town Hall	Orwell Town Hall	480 Main Street	Orwell	05760
 6389	VA	BATH	401 - Millboro	MILLBORO RURITAN CLUB	276 Church St	Millboro	24460
 6390	OK	OKLAHOMA	Precinct 550232	Oakcrest Church Of Christ	1111 Sw 89Th St	Oklahoma City	73139
 6391	VA	CHARLOTTE	503 - Red House	RED HOUSE COMMUNITY BUILDING	9467 RED HOUSE ROAD	RED HOUSE	23963
@@ -6477,7 +6477,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 6474	MN	ISANTI	North Branch Twp	Township Hall	29113 Notre Dame St NE	North Branch	55056
 6475	OK	TULSA	Precinct 720118	Helmerich Library	5131 E 91 St	Tulsa	74137
 6476	GA	GRADY	W	BOY SCOUTS BUILDING	245 E. BROAD STREET	WHIGHAM	39897
-6477	VT	NA	Sandgate Town Hall	Sandgate Town Office	3266 Sandgate Road	Sandgate	05250
+6477	VT	Bennington	Sandgate Town Hall	Sandgate Town Office	3266 Sandgate Road	Sandgate	05250
 6478	MA	HAMPDEN	Holyoke W02b	FALCETTI TOWERS	475 MAPLE ST	HOLYOKE	01040
 6479	MA	SUFFOLK	Boston W14 P09	BOYS AND GIRLS CLUB	15 TALBOT AVENUE	Boston	02124
 6480	MN	DAKOTA	South St Paul P-3	Henry Sibley High School	1897 Delaware Ave	Mendota Heights	55118
@@ -6490,7 +6490,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 6487	VA	GRAYSON	403 - Oldtown	BIBLE BAPTIST CHURCH	1149 GREENVILLE ROAD	GALAX	24333
 6488	AL	FAYETTE	0901/Berry Civic Ctr	BERRY CIVIC CENTER	59 SCHOOL AVE	BERRY	35546
 6489	TN	HENDERSON	12	Sardis (Senior Citizens Center)	34850 Hwy 104 S.	Sardis	38371
-6490	VT	NA	Westford Westford School	Westford School	146 Brookside Road	Westford	05494
+6490	VT	Chittenden	Westford Westford School	Westford School	146 Brookside Road	Westford	05494
 6491	MA	WORCESTER	Southbridge 04	COMMUNITY CENTER (ARMORY)	153 CHESTNUT STREET	SOUTHBRIDGE	01550
 6492	GA	FULTON	02j	GRADY HIGH SCHOOL GYM	929 CHARLES ALLEN DR NE	ATLANTA	30309
 6493	GA	COLUMBIA	130	WEST ACRES BAPTIST CHURCH	555 GIBBS ROAD	EVANS	30809
@@ -6621,8 +6621,8 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 6618	AR	WOODRUFF	Gregory - 06	Gregory Church	20184 Hwy 33	Gregory	72059
 6619	AR	ST FRANCIS	18 - Parrott	Oak Hill Church of God Family Center	97 SFC 309	Forrest City	72335
 6620	MN	HENNEPIN	Minneapolis W-6 P-04	Elliot Recreation Center Elliot Park	1000 14th Street E	Minneapolis	55404
-6621	VT	NA	Marshfield Sch House Common	Twinfield Union School	106 Nasmith Brook Road	Marshfield	05658
-6622	VT	NA	Winhall Town Hall	Mountain School at Winhall	9 School Street	Winhall	05340
+6621	VT	Washington	Marshfield Sch House Common	Twinfield Union School	106 Nasmith Brook Road	Marshfield	05658
+6622	VT	Bennington	Winhall Town Hall	Mountain School at Winhall	9 School Street	Winhall	05340
 6623	AL	JACKSON	Precinct 0340	FIRE HALL	14637 Al Hwy 65	Princeton	35766
 6624	MN	OLMSTED	Rochester W2 P1	Willow Creek Middle School Room B110	2425 11th Ave SE	Rochester	55904
 6625	GA	RICHMOND	801b	BLYTHE CITY HALL	294 CHURCH ST	BLYTHE	30805
@@ -6694,7 +6694,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 6691	AL	WALKER	Precinct 0101	Jasper Mall ((A / B))	300 Hwy 78 East	Jasper	35501
 6692	GA	HALL	16	THE RIVER COMMUNITY CHURCH	5043 THOMPSON BRIDGE RD	MURRAYVILLE	30564
 6693	AL	SHELBY	Precinct 11	Shoal Creek Town Hall	100 New Williamsburg Rd	Birmingham	35242
-6694	VT	NA	Milton Fire Station	Milton Town Office	43 Bombardier Road	Milton	05468
+6694	VT	Chittenden	Milton Fire Station	Milton Town Office	43 Bombardier Road	Milton	05468
 6695	VA	ALEXANDRIA CITY	303 - Charles E Beatley Library	CHARLES E BEATLEY LIBRARY	5005 Duke St	Alexandria	22304
 6696	GA	CLARKE	08c	FIRESTATION #7	2350 BARNETT SHOALS RD	ATHENS	30605
 6697	AL	GENEVA	Bellwood Community Center	Bellwood Community Center	4931 Count Road 45	Bellwood	36313
@@ -6769,7 +6769,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 6766	OK	LATIMER	Precinct 390006	Ok Dept Wildlife Se Reg Office	8 M E Of Hartshorne On Hyw 1	Wilburton	74578
 6767	MA	BARNSTABLE	Bourne 04	BOURNE MIDDLE SCHOOL	77 WATERHOUSE RD	BOURNE	02532
 6768	MN	SHERBURNE	St Cloud W2 P7	Talahi School - Cafeteria	1321 University Dr SE	St. Cloud	56304
-6769	VT	NA	Georgia Elem & Middl Sch	Georgia Elementary School	4416 Ethan Allen Highway	St. Albans	05478
+6769	VT	HARDEMAN	Georgia Elem & Middl Sch	Georgia Elementary School	4416 Ethan Allen Highway	St. Albans	05478
 6770	TN	HARDEMAN	2	Bolivar Municipal Center	Jefferson St.	Bolivar	37219
 6771	TN	WASHINGTON	1	Fall Branch Elementary School	1061 Highway 93	Fall Branch	37656
 6772	GA	HENRY	50	PATES CREEK ELEMENTARY	1309 JODECO RD	STOCKBRIDGE	30281
@@ -6784,11 +6784,11 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 6781	AR	SALINE	23	Paron Fire Department	16514 Smithers Rd.	Paron	72122
 6782	AL	MARSHALL	Precinct 0181	THOMPSON / MARTLING COMM CENTER	4059 MARTLING RD	ALBERTVILLE	35950
 6783	VA	VIRGINIA BEACH CITY	087 - Hillcrest	VILLAGE CHURCH	4013 Indian River Road	Virginia Beach	23456
-6784	VT	NA	Waterbury Thatcher Brook School	Thatcher Brook Primary School	47 Stowe Street	Waterbury	05676
+6784	VT	WILSON	Waterbury Thatcher Brook School	Thatcher Brook Primary School	47 Stowe Street	Waterbury	05676
 6785	TN	WILSON	1-Nov	Rutland Elementary	1995 S. Rutland Rd	Mount Juliet	37122
 6786	TN	OBION	2-Jul	Obion County Public Library	1221 E. Reelfoot Avenue	Union City	38261
 6787	TN	BLOUNT	9	Everett Recreation Center	318 Everett High Road	Maryville	37804
-6788	VT	NA	New Haven Town Hall	New Haven Town Hall	70 North Street	New Haven	05472
+6788	VT	MCNAIRY	New Haven Town Hall	New Haven Town Hall	70 North Street	New Haven	05472
 6789	TN	MCNAIRY	11	Mcnairy Fire Station	451 Mcnairy Rd	Bethel Springs	38315
 6790	TN	HENDERSON	8	High School	284 White St.	Lexington	38351
 6791	OK	KIOWA	Precinct 380009	Hobart School Adm. Bldg.	321 N. Jefferson	Hobart	73651
@@ -6854,7 +6854,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 6851	AL	CLAY	Precinct 0201	Delta Community Center	33 Delta Church Rd	Delta	36258
 6852	GA	HENRY	54	STOCKBRIDGE PRESBYTERIAN CHURC	4740 NORTH HENRY BLVD	STOCKBRIDGE	30281
 6853	OK	OKLAHOMA	Precinct 550019	Choctaw Community Center	2500 N Choctaw Road	Choctaw	73020
-6854	VT	NA	Peacham Town Hall	Peacham Congregational Church	68 Church Street	Peacham	05682
+6854	VT	SUFFOLK	Peacham Town Hall	Peacham Congregational Church	68 Church Street	Peacham	05682
 6855	MA	SUFFOLK	Boston W07 P09	BELLFLOWER APARTMENTS	24 BELLFLOWER STREET	Boston	02125
 6856	GA	DEKALB	Sk	SHADOW ROCK ELEMENTARY SCHOOL	1040 KINGWAY DRIVE	LITHONIA	30058
 6857	GA	BIBB	Ho7	NORTHSIDE CHRISTIAN CHURCH	5024 NORTHSIDE DR	MACON	31210
@@ -6883,14 +6883,14 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 6880	MA	BRISTOL	Fall River W06a	GEORGE H. COTTELL HTS	1685 PLEASANT ST	FALL RIVER	02723
 6881	MN	OLMSTED	Rochester W5 P4	Willow Creek Middle School Room A102	2425 11th Ave SE	Rochester	55904
 6882	GA	CATOOSA	Ring	RINGGOLD PRECINCT	7658 NASHVILLE ST	RINGGOLD	30736
-6883	VT	NA	Middlebury Municipal Gym	Municipal Gymnasium	94 Main Street	Middlebury	05753
+6883	VT	GWINNETT	Middlebury Municipal Gym	Municipal Gymnasium	94 Main Street	Middlebury	05753
 6884	GA	GWINNETT	20	SUMMEROUR MIDDLE SCHOOL	585 MITCHELL RD	NORCROSS	30071
 6885	AR	UNION	Caledonia	Mount Union Church	653 Mt. Union Rd	El Dorado	71730
 6886	TN	SHELBY	8300	Thomas Chapel Baptist Church	2539 New Raleigh Rd	Memphis	38128
 6887	AL	AUTAUGA	Precinct 0130	CHAMBER OF COMMERCE	131 N COURT ST	PRATTVILLE	36067
 6888	MA	BRISTOL	New Bedford W03b	HILLSIDE COURT	525 COGGESHALL ST.	NEW BEDFORD	02746
 6889	OK	LINCOLN	Precinct 410020	Cornerstone Mission Church	960955 S. Hwy. 102	Wellston	74881
-6890	VT	NA	Rutland Town Town Hall	Town Hall - West	181 Business Route 4	Center Rutland	05736
+6890	VT	GRADY	Rutland Town Town Hall	Town Hall - West	181 Business Route 4	Center Rutland	05736
 6891	OK	GRADY	Precinct 260029	Minco Church Of Christ	500 W Main	Minco	73059
 6892	AR	CRAIGHEAD	7	Walnut Street Baptist	1910 Scenic Rd	Jonesboro	72401
 6893	VA	JAMES CITY	302 - Powhatan B	LAFAYETTE HIGH SCHOOL	4460 Longhill Rd	Williamsburg	23188
@@ -6920,13 +6920,13 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 6917	VA	ALEXANDRIA CITY	302 - Patrick Henry Rec Center	Patrick Henry Rec Center	4625 Taney Ave	Alexandria	22304
 6918	TN	JOHNSON	P1a	Laurel School Gym	300 Gentry Creek Road	Laurel	37680
 6919	AR	OUACHITA	(W1) WASHINGTON WARD 1	Standard Umpsted Fire Station	654 Ouichita 72	Smackover	71726
-6920	VT	NA	Huntington Brewster Pierce School	Brewster-Pierce School	120 School Street	Huntington	05462
+6920	VT	CHEATHAM	Huntington Brewster Pierce School	Brewster-Pierce School	120 School Street	Huntington	05462
 6921	TN	CHEATHAM	1-May	Two Rivers Fire Hall	Hwy 49 West & Petway Rd	Ashland City	37015
 6922	AR	CRAWFORD	Dora	Dora Assembly of God Church	4619 Dora Rd.	Van Buren	72956
 6923	MN	DAKOTA	Farmington P-4	Robert Boeckman Middle School	800 Denmark Ave	Farmington	55024
 6924	GA	SUMTER	N-26	BUCHANAN RD	GA HIGHWAY 30 W & BUCHANON RD	AMERICUS	31719
 6925	TN	RHEA	7	Rhea Co Welcome Center	107 Main St	Dayton	37321
-6926	VT	NA	Stratton Town Office	Stratton Town Hall	688 Stratton-Arlington Road.	Stratton	05360
+6926	VT	MILLER	Stratton Town Office	Stratton Town Hall	688 Stratton-Arlington Road.	Stratton	05360
 6927	AR	MILLER	Hickory St	Hickory St Baptist Church	2923 Hickory	Texarkana	71854
 6928	VA	YORK	501 - Tabb	TABB HIGH SCHOOL	4431 Big Bethel Rd	Yorktown	23693
 6929	VA	RUSSELL	602 - Elk Garden	BELFAST ELEMENTARY SCHOOL	646 BELFAST SCHOOL RD	Rosedale	24280
@@ -6941,7 +6941,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 6938	OK	CLEVELAND	Precinct 140087	Windwood F.W. Baptist Church	5300 Se 89 St	Oklahoma City	73165
 6939	AL	LAUDERDALE	Waterloo Senior Citizens Bldg	Waterloo Senior Citizens Building	151 Park Drive	Waterloo	35677
 6940	GA	TIFT	9	LEROY ROGERS SENIOR CENTER	315 2ND ST. W	TIFTON	31794
-6941	VT	NA	Waterford Elementary Sch	Waterford Elementary School	276 Duck Pond Road	Waterford	05819
+6941	VT	BAXTER	Waterford Elementary Sch	Waterford Elementary School	276 Duck Pond Road	Waterford	05819
 6942	AR	BAXTER	2-Nov	Buford Community Center	4429 Buford Rd	Mountain Home	72653
 6943	OK	JOHNSTON	Precinct 350004	United Methodist Church	202 N. Neshoba Street	Tishomingo	73460
 6944	OK	NOBLE	Precinct 520203	1St Christian Church	From Fir Ave 2 Blocks N On 7Th	Perry	73077
@@ -6965,7 +6965,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 6962	AR	PERRY	12 - Rankin	Harris Brake Fire Dept.	1690 Hwy 9 S	Perryville	72126
 6963	GA	RANDOLPH	718a	COURTHOUSE-GOVT CENTER	93 FRONT ST	CUTHBERT	39840
 6964	AL	CALHOUN	Precinct 0901	Piedmont Fire Station	312 North Center Avenue	Piedmont	36272
-6965	VT	NA	Morgan Town Clerk's Office	Morgan Town Clerk's Office	41 Meade Hill Road	Morgan	05853
+6965	VT	HARDIN	Morgan Town Clerk's Office	Morgan Town Clerk's Office	41 Meade Hill Road	Morgan	05853
 6966	TN	HARDIN	52	Morris Chapel Community Center	380 North Fork Rd	Morris Chapel	38361
 6967	VA	LOUDOUN	310 - Mountain View	MOUNTAIN VIEW ELEMENTARY SCHOOL	36803 Allder School Rd	Purcellville	20132
 6968	MA	NORFOLK	Brookline 15	FIRE STATION # 6	962 HAMMOND STREET	BROOKLINE	02467
@@ -7012,7 +7012,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7009	MA	NORFOLK	Weymouth 16	A.L. BEAN POST #79	19 HOLLIS STREET	WEYMOUTH	02190
 7010	GA	CATOOSA	Cakt	CATOOSA KEITH PRECINCT	2803 KEITH RD	RINGGOLD	30736
 7011	MN	YELLOW MEDICINE	Canby	MN West - Canby	1011 1st St W	Canby	56220
-7012	VT	NA	Sheldon Elementary Sch	Sheldon Town Clerk's Office	1640 Main Street	Sheldon	05483
+7012	VT	LIMESTONE	Sheldon Elementary Sch	Sheldon Town Clerk's Office	1640 Main Street	Sheldon	05483
 7013	AL	LIMESTONE	1st Baptist Church Of Tanner	First Baptist Church of Tanner	11590 US Hwy 31 South	Tanner	35671
 7014	MA	BERKSHIRE	Pittsfield W07b	CAPELESS ELEMENTARY SCH	86 BROOKS AVE.	PITTSFIELD	01201
 7015	OK	TULSA	Precinct 720112	Victory Christian Center	7700 S Lewis Ave	Tulsa	74136
@@ -7268,7 +7268,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7265	TN	DAVIDSON	2402	Tennessee Tech Center	100 White Bridge Rd	Nashville	37209
 7266	GA	MERIWETHER	14	COVE FIRE DEPT	3480 COVE RD	WOODBURY	30293
 7267	TN	PERRY	601	Lobelville City Hall	135 South Main Street	Lobelville	37097
-7268	VT	NA	North Hero North Hero School	Town Office Meeting Room	6441 US Route 2	North Hero	05474
+7268	VT	CHAMBERS	North Hero North Hero School	Town Office Meeting Room	6441 US Route 2	North Hero	05474
 7269	MA	MIDDLESEX	Wakefield 01	MASONIC LODGE	372 SALEM ST	WAKEFIELD	01880
 7270	GA	BIBB	Ho2	HOWARD HIGH SCHOOL	6400 FORSYTH RD	MACON	31210
 7271	AL	CHAMBERS	Precinct 0502	FIVE POINTS COMMUNITY CLUB HOUSE 502	27031 US HWY 431	FIVE POINTS	36855
@@ -7289,7 +7289,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7286	VA	RUSSELL	403 - Honaker	HONAKER HIGH SCHOOL	1795 Thompson Creek Rd	Honaker	24260
 7287	VA	POWHATAN	401 - Powhatan Courthouse	COMPANY #1 VOL FIRE DEPARTMENT	3971 Old Buckingham Rd	Powhatan	23139
 7288	GA	GORDON	1064	OOSTANAULA COMMUNITY CLUB	1595 OOSTANAULA BEND RD SW	CALHOUN	30701
-7289	VT	NA	Ludlow Town Hall	Ludlow Town Hall	37 Depot St	Ludlow	05149
+7289	VT	TILLMAN	Ludlow Town Hall	Ludlow Town Hall	37 Depot St	Ludlow	05149
 7290	GA	LEE	8	SOVEREIGN GRACE BAPTIST CHURCH	121 CREEKSIDE DRIVE	LEESBURG	31763
 7291	OK	GRADY	Precinct 260032	Ninnekah Town Hall	301 N Old Hwy 81	Ninnekah	73067
 7292	OK	TILLMAN	Precinct 710002	Tesca Baptist Church	P.O. Box 459	Frederick	73542
@@ -7301,17 +7301,17 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7298	GA	CHARLTON	05f	FOLKSTON FIRE STATION	97 RAILROAD STREET	FOLKSTON	31537
 7299	MA	MIDDLESEX	Lowell W04 P02	FLANAGAN DEVELOPMENT	580 CHELMSFORD STREET	Lowell	01851
 7300	OK	CHEROKEE	Precinct 110014	Lost City Community Bldg	13251 N Lost City Rd	Hulbert	74441
-7301	VT	NA	Woodford Town Offices	Town Offices	1391 VT Route 9	Woodford	05201
+7301	VT	POPE	Woodford Town Offices	Town Offices	1391 VT Route 9	Woodford	05201
 7302	CO	MONTEZUMA	3065842011	Mt. Look Out Grange	680 Grand Ave	Mancos	81328
 7303	AR	WASHINGTON	Spg 18	Elmdale Baptist Church	1700 W Huntsville	Springdale	72762
 7304	AR	POPE	007- Bayliss	Augsburg Zion Lutheran Church	93 Augsburg Rd.	London	72847
 7305	AR	LOGAN	117 - Sht Mtn Wd 4	1st National Bank Community Building	23 East Main	Paris	72855
 7306	GA	SUMTER	15	DESOTO FIRE STATION	155 MAIN STREET	DESOTO	31743
-7307	VT	NA	Shaftsbury Buck Hill Road Firehouse	Firehouse	160 Buck Hill Road	Shaftsbury	05262
+7307	VT	LATIMER	Shaftsbury Buck Hill Road Firehouse	Firehouse	160 Buck Hill Road	Shaftsbury	05262
 7308	VA	WISE	101 - Appalachia	APPALACHIA HIGH SCHOOL	205 Lee St	Appalachia	24216
 7309	GA	THOMAS	104	COOLIDGE CITY HALL	3065 S PINE ST	COOLIDGE	31738
 7310	OK	LATIMER	Precinct 390008	Buffalo Valley School	4384 Se Highway 63	Talihina	74571
-7311	VT	NA	Marlboro Town Office	Marlboro Town Office	510 South Road	Marlboro	05344
+7311	VT	MADISON	Marlboro Town Office	Marlboro Town Office	510 South Road	Marlboro	05344
 7312	GA	CARROLL	714a4	UWG FOOD SERVICE BLDG (Z6)	1601 MAPLE  ST	CARROLLTON	30118
 7313	CO	HUERFANO	3356228001	Raymond Aguirre Gardner Community Center	28 County Road 632	Gardner	81040
 7314	AL	MADISON	Bob Harrison Senior Center	Johnson High School	6201 Pueblo Drive	Huntsville	35810
@@ -7333,7 +7333,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7330	MN	OLMSTED	Rochester W6 P4	Century High School Room H226	2525 Viola Rd NE	Rochester	55906
 7331	AR	ASHLEY	07 - Vo - Tech	U A M College (Votech)	1326 Hwy 52 W	Crossett	71635
 7332	VA	NELSON	401 - Roseland	ROSELAND RESCUE SQUAD BUILDING	7745 Patrick Henry Hwy	Roseland	22967
-7333	VT	NA	Derby Municipal Office	Derby Municipal Office	124 Main Street	Derby	05829
+7333	VT	OKLAHOMA	Derby Municipal Office	Derby Municipal Office	124 Main Street	Derby	05829
 7334	GA	FLOYD	10	NEW ARMUCHEE BAPTIST CHURCH	5385 MARTHA BERRY HWY	ROME	30165
 7335	OK	OKFUSKEE	Precinct 540103	Welty Church Of God	Hc 60 Box 145	Welty	74833
 7336	OK	OKLAHOMA	Precinct 550235	Community Of Faith Church	1815 S Central Ave	Oklahoma City	73165
@@ -7412,7 +7412,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7409	MN	OLMSTED	Rochester W4 P1	Willow Creek Middle School Room B109	2425 11th Ave SE	Rochester	55904
 7410	OK	MUSKOGEE	Precinct 510022	American Legion	4021 W Broadway	Muskogee	74401
 7411	GA	HARALSON	11	WEST HARALSON SCHOOL GYM	175 STEADMAN RD	TALLAPOOSA	30176
-7412	VT	NA	Bridgewater Town Office	Bridgewater Town Office	7335 US Route 4	Bridgewater	05034
+7412	VT	JACKSON	Bridgewater Town Office	Bridgewater Town Office	7335 US Route 4	Bridgewater	05034
 7413	GA	FAYETTE	34	RISING STAR SCHOOL AUDITORIUM	1378 HIGHWAY 74 SOUTH	FAYETTEVILLE	30215
 7414	OK	MUSKOGEE	Precinct 510060	Green Valley Baptist Church	19702 S Ross Road	Webbers Falls	74470
 7415	TN	JACKSON	302	Dodson Branch School	16221 Dodson Branch Hwy	Cookeville	38501
@@ -7420,7 +7420,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7417	GA	FULTON	Jc02	JOHNS CREEK UNITED METH CHURCH	11180 MEDLOCK BRIDGE RD	DULUTH	30097
 7418	AR	LINCOLN	004 - Cane Creek 1	Star City Civic Center-Cane Creek 1	201 Liberty St.	Star City	71667
 7419	OK	CLEVELAND	Precinct 140048	Southgate Baptist Church	740 Sw 4Th St	Moore	73160
-7420	VT	NA	Calais Town Hall	Calais Elementery School	321 Lightening Ridge Road	Calais	05650
+7420	VT	AUGUSTA	Calais Town Hall	Calais Elementery School	321 Lightening Ridge Road	Calais	05650
 7421	MA	SUFFOLK	Boston W05 P03	STATE HOUSE	24 Beacon St.	Boston	02133
 7422	VA	CHARLOTTE	602 - Phenix	MUNICIPAL BUILDING	6860 MAIN STREET	PHENIX	23959
 7423	VA	AUGUSTA	101 - Jolivue	VICTORY WORSHIP CENTER	200 Hammond Ln	Staunton	24401
@@ -7445,12 +7445,12 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7442	GA	COWETA	11	WELCOME COMMUNITY CENTER	1972 WELCOME ROAD	NEWNAN	30263
 7443	OK	TEXAS	Precinct 700205	Texas County Activity Center	5Th & Sunset	Guymon	73942
 7444	GA	PAULDING	14c	CARL SCOGGINS MIDDLE SCHOOL	1663 MULBERRY ROCK RD	DALLAS	30157
-7445	VT	NA	Morristown Municipal Bldg	Morristown Municipal Office Building	43 Portland Street	Morristown	05661
+7445	VT	POLK	Morristown Municipal Bldg	Morristown Municipal Office Building	43 Portland Street	Morristown	05661
 7446	TN	SEVIER	Pf	PIGEON FORGE CITY HALL	225 PINE MOUNTAIN RD	 PIGEON FORGE	37863
 7447	TN	RHEA	6	Rhoa Co Sherrifs Training Center	711 Eagle Ln	Evensville	37332
 7448	TN	POLK	9	Ducktown City Hall	340 Main Street	Ducktown	37326
 7449	AR	STONE	Pleasant Grove	Pleasant Grove Community Center	27949 Highway 14	Pleasant Grove	72567
-7450	VT	NA	Milton Mun Complex	"Milton Municipal Building, Selectboard Room"	43 Bombardier Road	Milton	05468
+7450	VT	GREENE	Milton Mun Complex	"Milton Municipal Building, Selectboard Room"	43 Bombardier Road	Milton	05468
 7451	VA	FAIRFAX	131 - Eagle View	EAGLE VIEW ELEMENTARY SCHOOL	4500 Dixie Hill Road	Fairfax	22030
 7452	AL	BALDWIN	Precinct 42b	St. Francis at the Point Church	17280 Scenic Hwy 98	Fairhope	36532
 7453	AR	GREENE	03 - Ward 3	Griffin Memorial Methodist Church	524 E Court St	Paragould	72450
@@ -7472,7 +7472,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7469	VA	CHESTERFIELD	213 - Southside	SOUTHSIDE BAPTIST CHURCH	6000 Iron Bridge Road	Richmond	23234
 7470	GA	HARRIS	Gm	PINE MOUNTAIN CITY HALL	250 S. MCDOUGALD AVENUE	PINE MOUNTAIN	31822
 7471	VA	MONTGOMERY	401 - Precinct D-1	CHRISTIANSBURG ARMORY	15 College St	Christiansburg	24073
-7472	VT	NA	Woodstock Town Hall	Woodstock Town Hall	31 The Green	Woodstock	05091
+7472	VT	WRIGHT	Woodstock Town Hall	Woodstock Town Hall	31 The Green	Woodstock	05091
 7473	AR	MISSISSIPPI	13	Dell Community Center	204 School St	Dell	72426
 7474	GA	MUSCOGEE	105	ST. PETER METHODIST CHURCH	6507 MOON RD	COLUMBUS	31909
 7475	MN	WRIGHT	Cokato	Cokato City Library	175 4th Street	Cokato	55321
@@ -7482,7 +7482,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7479	AL	CHILTON	Precinct 240	Veteran's Club	700 Enterprise Rd.	Clanton	35045
 7480	VA	VIRGINIA BEACH CITY	044 - Centerville	CENTERVILLE ELEMENTARY SCHOOL	2201 Centerville Tpke	Virginia Beach	23464
 7481	MN	ST LOUIS	Clinton Twp.	Clinton Community Ctr	8907 Hwy 37	Iron	55751
-7482	VT	NA	Bristol Holley Hall	Holley Hall	1 South Street	Bristol	05443
+7482	VT	BAKER	Bristol Holley Hall	Holley Hall	1 South Street	Bristol	05443
 7483	OK	MAJOR	Precinct 470020	Mennonite Brethren Church	1600 E. State Rd.	Fairview	73737
 7484	VA	BRUNSWICK	103 - Tillman	FIRE HOUSE AT EBONY	497 ROBINSON FERRY ROAD	Ebony	23845
 7485	GA	BAKER	M	MILFORD COURT HOUSE	1512 PATMOS MILFORD HWY	LEARY	39862
@@ -7493,12 +7493,12 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7490	TN	SULLIVAN	01a	Holston Valley Middle School	1717 Bristol Caverns Highway	Bristol	37620
 7491	AL	BLOUNT	Precinct 0201	Smoke Rise Baptist	1550 Scenic Trail	Warrior	35180
 7492	VA	ARLINGTON	033 - Rock Spring	WILLIAMSBURG MIDDLE SCHOOL	3600 N Harrison St	Arlington	22207
-7493	VT	NA	Londonderry Town Office Bldg	Londonderry Town Hall	139 Middletown Road	Londonderry	05155
+7493	VT	PAGE	Londonderry Town Office Bldg	Londonderry Town Hall	139 Middletown Road	Londonderry	05155
 7494	AL	BALDWIN	Precinct 23	Belforest Community Center	25500 County Road 54	Daphne	36526
 7495	OK	DELAWARE	Precinct 210003	Monkey Island Fire Dept	"56298 E 295 Rd, Port Duncan"	Monkey Island	74331
 7496	VA	PAGE	401 - Newport	Stanley Fire Department	190 East Main St.	Stanley	22851
 7497	OK	GRADY	Precinct 260026	Cox City Baptist Church	2443 Cox City Rd	Rush Springs	73082
-7498	VT	NA	Dorset Elementary Sch	The Dorset School	100 School Drive	Dorset	05251
+7498	VT	PULASKI	Dorset Elementary Sch	The Dorset School	100 School Drive	Dorset	05251
 7499	OK	COMANCHE	Precinct 160042	First Baptist Church - Cache	4Th & E St	Cache	73527
 7500	AL	SUMTER	Precinct 1201	Geiger City Hall	201 Broadway	Geiger	35459
 7501	AR	PULASKI	Precinct 129	LR Fire Station #4	7500 Lindsey Rd	Little Rock	72206
@@ -7567,7 +7567,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7564	TN	SHELBY	Ger04	Farmington Elem School	2085 Cordes Rd	Germantown	38139
 7565	OK	OKLAHOMA	Precinct 550197	Fortieth Street Baptist Ch	1801 Nw 40Th St	Oklahoma City	73118
 7566	TN	BLOUNT	10	Fairview School	2130 Old Niles Ferry Road	Maryville	37803
-7567	VT	NA	Vershire Town Center	Town Center Building	27 Vershire Center Road	Vershire	05079
+7567	VT	MARENGO	Vershire Town Center	Town Center Building	27 Vershire Center Road	Vershire	05079
 7568	VA	HENRICO	501 - Antioch	ANTIOCH BAPTIST CHURCH	3868 Antioch Church Rd	Sandston	23150
 7569	OK	OKLAHOMA	Precinct 550167	Plumbers And Pipefitters #344	4335 Sw 44Th St	Oklahoma City	73119
 7570	AL	MARENGO	Precinct 0511	Myrtlewood Community Center	210 Magnolia Street North	Myrtlewood	36763
@@ -7596,7 +7596,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7593	AR	CRAWFORD	Alma 2	Concord Baptist Church	6105 Alma Hwy	Van Buren	72956
 7594	AL	MADISON	Madison Baptist Church	Madison Baptist Church	840 Balch Road	Madison	35758
 7595	TN	WASHINGTON	37	Lamar Elementary School	3261 Hwy 81S	Jonesborough	37659
-7596	VT	NA	Elmore Town Clerks Off	Elmore Town Clerk's Office	1175 VT Route 12	Elmore	05657
+7596	VT	RANDOLPH	Elmore Town Clerks Off	Elmore Town Clerk's Office	1175 VT Route 12	Elmore	05657
 7597	VA	GREENE	401 - Midway	RUCKERSVILLE ELEMENTARY SCHOOL	105 Progress Place	Ruckersville	22968
 7598	AL	FAYETTE	0302/Elm Grove Church	ELM GROVE CHURCH FELLOWSHIP HALL	13454 CO RD 63N	CARBON HILL	35549
 7599	AL	RANDOLPH	Precinct 03	CAVERS GROVE 03.01 2-6	2314 COUNTY ROAD 66	NEWELL	36280
@@ -7640,7 +7640,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7637	VA	JAMES CITY	504 - Roberts D	RAWLS BYRD ELEMENTARY SCHOOL	112 Laurel Ln	Williamsburg	23185
 7638	VA	ISLE OF WIGHT	402 - Windsor	WINDSOR VOLUNTEER FIRE DEPT	80 E Windsor Blvd	Windsor	23487
 7639	MA	HAMPDEN	Springfield W04f	A.I.C COURNIOTES HALL	1000 STATE ST (CORNER HOMER ST/STATE ST)	SPRINGFIELD	01109
-7640	VT	NA	Killington Town Office	Killington Town Office	2706 River Road	Killington	03243
+7640	VT	MACON	Killington Town Office	Killington Town Office	2706 River Road	Killington	03243
 7641	GA	CHATHAM	4-12c	ST PETERS EPISCOPAL CHURCH	3 WESTRIDGE RD	SAVANNAH	31411
 7642	GA	BURKE	13	VIDETTE CITY HALL	7052 GA HIGHWAY 24 W	WAYNESBORO	30830
 7643	AL	MACON	Precinct 0306	D-3 Volunteer Fire Department	10365 Hwy 80 W	Shorter	36075
@@ -7767,7 +7767,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7764	TN	WASHINGTON	19	Leesburg Ruritan Building	344 Old Stage Coach Road	Jonesborough	37659
 7765	AR	INDEPENDENCE	Fairview	Pleasant Plains City Hall	101 East Wood street	pleasant plains	72568
 7766	AR	JEFFERSON	900	"Community Center, Wabbaseka"	110 S 1	Altheimer	72004
-7767	VT	NA	Lunenburg Gilman Sch	Lunenburg School	49 Bobbin Mill Road	Lunenburg	05904
+7767	VT	BENTON	Lunenburg Gilman Sch	Lunenburg School	49 Bobbin Mill Road	Lunenburg	05904
 7768	AL	CALHOUN	Precinct 0104	First Baptist Church	230 7th Street NE	Jacksonville	36265
 7769	TN	DAVIDSON	3101	Antioch Umc	41 Tusculum Rd	Nashville	37013
 7770	AR	BENTON	Precinct 62	Nwacc - Shewmaker Center	1000 SE Eagles Way	Bentonville	72712
@@ -7781,7 +7781,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7778	AR	INDEPENDENCE	Ruddell Ward 3	West Baptist Church	100 N central ave	Batesville	72501
 7779	MA	NORFOLK	Quincy W05 P03	ADAMS ACADEMY	8 ADAMS ST(DIMMOCK STREET ENTRANCE)	QUINCY	02170
 7780	TN	DYER	6	Trimble Community Center	40 S Main St.	Trimble	38059
-7781	VT	NA	Mendon Town Office	Mendon Town Hall	2282 US Route 4	Mendon	05701
+7781	VT	MIDDLESEX	Mendon Town Office	Mendon Town Hall	2282 US Route 4	Mendon	05701
 7782	CO	EL PASO	5111721619	Carmel Middle School	1740 Pepperwood Dr.	Colorado Springs	80910
 7783	VA	LOUDOUN	112 - Freedom	FREEDOM HIGH SCHOOL	25450 Riding Center Dr	South Riding	20152
 7784	AR	CONWAY	008 - Higgins	St Elizabeth Parish Hall -Higgins	89 St. Elizabeth Road	Morrilton	72110
@@ -7799,7 +7799,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7796	GA	HALL	1	PLEASANT HILL BAPTIST CHURCH	3650 BROWNS BRIDGE RD	GAINESVILLE	30504
 7797	GA	WAYNE	05b	RECREATION CENTER	245 E BAY ST	JESUP	31545
 7798	GA	PIKE	2	HOLLONVILLE FIRESTATION # 2	4042 CONCORD RD.	CONCORD	30206
-7799	VT	NA	Hartford High School	Hartford High School	37 Highland Ave.	Hartford	05001
+7799	VT	HENRICO	Hartford High School	Hartford High School	37 Highland Ave.	Hartford	05001
 7800	MN	ITASCA	Lawrence Twp	Lawrence Town Hall	34394 County Road 336	Bovey	55709
 7801	OK	DELAWARE	Precinct 210018	Mount Hermon Church Rec Bldg	18035 E 420 Rd	Jay	74346
 7802	GA	FULTON	11b	FICKETT SCHOOL	3935 RUX RD SW	ATLANTA	30331
@@ -7939,7 +7939,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7936	AR	GREENE	31 - Marmaduke - Hurricane	Marmaduke Community Building	7083 Hwy 34 East	Marmaduke	72443
 7937	VA	RICHMOND CITY	814 - Eight Hundred Fourteen	BOUSHALL MIDDLE SCHOOL	3400 Hopkins Road	Richmond	23234
 7938	GA	COOK	L	LENOX CITY HALL	15 E COLQUITT AVE	LENOX	31637
-7939	VT	NA	Brattleboro Buhs Gym	Municipal Center	230 Main St  Suite 212	Brattleboro	05301
+7939	VT	JEFFERSON	Brattleboro Buhs Gym	Municipal Center	230 Main St  Suite 212	Brattleboro	05301
 7940	VA	ALBEMARLE	501 - Keswick	ZION HILL BAPTIST CHURCH	802 Zion Hill Rd	Keswick	22947
 7941	GA	FAYETTE	25	HARPS CROSSING BAPTIST CHURCH	1183 HWY 92 SOUTH	FAYETTEVILLE	30215
 7942	VA	SCOTT	603 - Fairview	FAIRVIEW ELEMENTARY SCHOOL	9357 FAIRVIEW RD	DUFFIELD	24244
@@ -7984,7 +7984,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 7981	VA	SUFFOLK CITY	401 - Airport	SUFFOLK EXECUTIVE AIRPORT	1200 GENE BOLTON DRIVE	Suffolk	23434
 7982	AR	CRAWFORD	Alma 3	Fire Station At Rudy Rd & Collum Ln	1225 Collum Ln W	Alma	72921
 7983	MN	OLMSTED	Orion Twp.	Chatfield Junior/Senior High School Room 118	205 Union St NE	Chatfield	55923
-7984	VT	NA	Essex Comm Hs (Village)	Essex High School	2 Educational Drive	Essex Junction	05452
+7984	VT	HENRY	Essex Comm Hs (Village)	Essex High School	2 Educational Drive	Essex Junction	05452
 7985	AR	JACKSON	50 - Tupelo	Tupelo Community Building	Pecan St	Tupelo	72169
 7986	TN	GRUNDY	152	Beersheba Springs Community Center	19224 Sr 56	Beersheba Springs	37305
 7987	TN	SHELBY	5502	Avon Lenox High School	310 Avon Rd	Memphis	38117
@@ -8028,7 +8028,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8025	GA	GWINNETT	69	GOOD SHEPHERD PRESBYTERIAN	1400 KILLIAN HILL RD	LILBURN	30047
 8026	MA	NORFOLK	Holbrook 03	HOLBROOK JR/SR HIGH	245 S FRANKLIN ST	HOLBROOK	02343
 8027	CO	DENVER	1320216237	University Park Elementary	2300 South Saint Paul Street	Denver	80210
-8028	VT	NA	Burlington Miller	Robert Miller Center	130 Gosse Ct.	Burlington	05408
+8028	VT	SHELBY	Burlington Miller	Robert Miller Center	130 Gosse Ct.	Burlington	05408
 8029	GA	EMANUEL	1429	GARFIELD	301 MONROE ST.	GARFIELD	30425
 8030	TN	HOUSTON	3	Erin City Hall	15 Hill St. (Court Square)	Erin	37061
 8031	VA	VIRGINIA BEACH CITY	030 - Red Wing	FRATERNAL ORD OF POLICE LDG 8	961 S Birdneck Rd	Virginia Beach	23451
@@ -8074,7 +8074,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8071	GA	HENRY	58	MT. BETHEL UNITED METHODIST	992 MT. BETHEL RD	MCDONOUGH	30252
 8072	VA	LEE	503 - Robbins Chapel	ROBBINS CHAPEL POLLING HOUSE	ST RD 606	Keokee	24265
 8073	AR	SHARP	Morgan	Center Fire Department	1649 Hwy 354	Ash Flat	72513
-8074	VT	NA	Kirby Town Hall	Kirby Town Hall	346 Town Hall Road	Kirby	05851
+8074	VT	HENRICO	Kirby Town Hall	Kirby Town Hall	346 Town Hall Road	Kirby	05851
 8075	TN	WILLIAMSON	23	Oakview Elementary School	2390 Henpeck Lane	Franklin	37064
 8076	AL	MORGAN	Tri-County Volunteer Fire Dept	Tri-County Volunteer Fire Department	12132 Hwy 67S	Joppa	35807
 8077	OK	MAYES	Precinct 490014	Strang Community Center	In Strang	Strang	74367
@@ -8229,7 +8229,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8226	AR	BENTON	Precinct 12	Avoca Town Hall	222 N Old Wire Rd	Avoca	72711
 8227	OK	CLEVELAND	Precinct 140073	Faithpointe Church	3404 36Th Ave Nw	Norman	73072
 8228	TN	GILES	07a	Giles County High School Vo-Ed Bldg	200 Sheila Frost Drive	Pulaski	38478
-8229	VT	NA	Saint George Town Office	Town Hall	21 Barber Road	Saint George	05495
+8229	VT	COBB	Saint George Town Office	Town Hall	21 Barber Road	Saint George	05495
 8230	VA	JAMES CITY	501 - Roberts A	JAMES RIVER ELEMENTARY SCHOOL	8901 Pocahontas Trl	Williamsburg	23185
 8231	AL	MONROE	Precinct 0311 Mockingbird Inn	DAYS INN/OLLIE	4389 S. ALABAMA AVE	MONNROEVILLE	36460
 8232	MA	NORFOLK	Braintree 01a	MARGE CRISPIN CENTER	74 POND STREET REAR	BRAINTREE	02184
@@ -8242,7 +8242,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8239	GA	MORGAN	7	GIBBS MEMORIAL BAPTIST CHURCH	1041 CHURCH ST	BOSTWICK	30623
 8240	MA	NORFOLK	Wellesley D	SCHOFIELD SCHOOL	27 CEDAR STREET	WELLESLEY	02481
 8241	VA	LYNCHBURG CITY	103 - First Ward Third Precinct	FIRST PRESBYTERIAN CHURCH	1215 V E S Rd	Lynchburg	24503
-8242	VT	NA	Wheelock Town Hall	Wheelock Town Hall	1192 Route 122	Wheelock	05851
+8242	VT	APPLING	Wheelock Town Hall	Wheelock Town Hall	1192 Route 122	Wheelock	05851
 8243	OK	COAL	Precinct 150005	V.F.W. Building	206 S. Veterans Drive	Coalgate	74538
 8244	AL	BUTLER	Precinct 0050	Steiner's Store Voting House	7402 Steiner Store Rd.	Honoraville	36042
 8245	AL	JEFFERSON	Precinct 2380	FIVE POINTS WEST PUBLIC LIBRARY	4812 AVENUE W	BIRMINGHAM	35208
@@ -8313,7 +8313,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8310	VA	ALBEMARLE	503 - Hollymead	HOLLYMEAD ELEMENTARY SCHOOL	2775 Powell Creek Dr	Charlottesville	22911
 8311	MA	HAMPDEN	Ludlow 05	FIRST CHURCH IN LUDLOW	859 Center St.	LUDLOW	01056
 8312	GA	GWINNETT	122	ANNISTOWN ROAD BAPTIST CHURCH	4554 ANNISTOWN RD	SNELLVILLE	30039
-8313	VT	NA	Hardwick Elementary Sch	Elementary School	135 South Main Street	Hardwick	05411
+8313	VT	MIDDLESEX	Hardwick Elementary Sch	Elementary School	135 South Main Street	Hardwick	05411
 8314	GA	SCREVEN	8	SCREVEN CO. RECREATION DEPT.	1605 MILLEN HIGHWAY	SYLVANIA	30467
 8315	VA	CAMPBELL	703 - Morris Church	UNION HILL BAPTIST CHURCH	12935 Red House Rd	Brookneal	24528
 8316	TN	DAVIDSON	1905	Napier Comm. Ctr	73 Fairfield Av	Nashville	37210
@@ -8324,7 +8324,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8321	TN	DAVIDSON	2803	Antioch Church Of Christ	2142 Antioch Pk	Nashville	37013
 8322	GA	BIBB	Em2	CROSS KEYS UNITED METHODIST CHURCH	1825 JEFFERSONVILLE RD	MACON	31217
 8323	MN	CLAY	Hawley City	Hawley High School	714 Joseph St.	Hawley	56549
-8324	VT	NA	Arlington Town Hall	Arlington Memorial High School	529 East Arlington Road	Arlington	05250
+8324	VT	CLAYTON	Arlington Town Hall	Arlington Memorial High School	529 East Arlington Road	Arlington	05250
 8325	MA	HAMPDEN	West Springfield 02	SENIOR CENTER	128 PARK STREET	WEST SPRINGFIELD	01089
 8326	AL	AUTAUGA	Precinct 0010	JONES COMM CENTER 5/23/69/5	848 CO RD 83	JONES	36749
 8327	MA	HAMPDEN	Springfield W05f	DUGGAN MIDDLE SCHOOL	1015 WILBRAHAM ROAD	SPRINGFIELD	01109
@@ -8422,7 +8422,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8419	OK	BLAINE	Precinct 060011	Watonga City Hall	111 East 1St Street	Watonga	73772
 8420	VA	HENRICO	104 - Glenside	BONNIE BRAE CHURCH OF CHRIST	7610 Staples Mill Rd	Richmond	23228
 8421	TN	MADISON	3	Alexander Elementary	900 N. Highland Ave.	Jackson	38301
-8422	VT	NA	Highgate Town Office	Highgate Elementary School	219 Gore Road	Highgate	05459
+8422	VT	OKLAHOMA	Highgate Town Office	Highgate Elementary School	219 Gore Road	Highgate	05459
 8423	MN	RAMSEY	St. Paul W-2 P-01	St. Paul Central High School Room 3108	275 Lexington Pkwy N	Saint Paul	55104
 8424	AR	POLK	07 - Cherry Hill	Cherry Hill Methodist Church	4014 Polk 70	Mena	71953
 8425	VA	ACCOMACK	501 - Mappsville	KEGOTANK ELEMENTARY SCHOOL	13300 Lankford Hwy	Hallwood	23359
@@ -8504,7 +8504,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8501	AL	MADISON	All Nations Church	All Nations Church	3614 Drake Avenue	Huntsville	35805
 8502	AL	CHOCTAW	Precinct 0201 -Butler S22/H65	National Guard Armory	1018 West Pushmataha Street	Butler	36904
 8503	GA	GWINNETT	27	PROSPECT UMC	1549 PROSPECT RD	LAWRENCEVILLE	30043
-8504	VT	NA	Brownington Town Clerk Ofc	Brownington Central School	103 Chase Road	Brownington	05860
+8504	VT	DAVIDSON	Brownington Town Clerk Ofc	Brownington Central School	103 Chase Road	Brownington	05860
 8505	OK	DELAWARE	Precinct 210011	Bible Baptist Church	28050 S 630 Rd	Grove	74344
 8506	GA	DEKALB	Dg	DUNWOODY ELEMENTARY SCHOOL	1923 WOMACK ROAD	DUNWOODY	30338
 8507	GA	GRADY	L	CO LINE FIRE DEPT	975 GA HWY 262 N	PELHAM	31779
@@ -8582,7 +8582,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8579	GA	MADISON	Pao	PAOLI COMMUNITY CENTER	2466 NEW HOPE CHURCH RD	COMER	30629
 8580	AL	MARENGO	Precinct 0101	Demopolis Civic Center	501 N Commissioner Avenue	Demopolis	36732
 8581	GA	LIBERTY	11	LEWIS FRASIER SCHOOL GYM	910 LONG-FRASIER ST.	HINESVILLE	31313
-8582	VT	NA	Poultney Fire House	Poultney Fire House	45 Fire House Lane	Poultney	05764
+8582	VT	RICHMOND CITY	Poultney Fire House	Poultney Fire House	45 Fire House Lane	Poultney	05764
 8583	MN	OTTER TAIL	Girard Twp	Henning High School	500 School Ave	Henning	56551
 8584	MA	SUFFOLK	Boston W13 P06	ANNAPOLIS APARTMENTS	8A ANNAPOLIS STREET	Boston	02125
 8585	TN	ROBERTSON	801	Krisle School	6712 Hwy 49 East	Springfield	37172
@@ -8603,7 +8603,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8600	TN	KNOX	14	Austin-East High School	2800 Mlk Jr. Ave.	Knoxville	37914
 8601	AR	WHITE	32 - Gray B	Valley Baptist Church	3328 Hwy 36 West	Searcy	72143
 8602	GA	GWINNETT	137	NORTHVIEW CHURCH	2000 GRAVEL SPRINGS RD	BUFORD	30519
-8603	VT	NA	Weston Town Office	Weston Playhouse	12 Park Street	Weston	05161
+8603	VT	LOWNDES	Weston Town Office	Weston Playhouse	12 Park Street	Weston	05161
 8604	MA	WORCESTER	Southborough 02	TROTTIER MIDDLE SCHOOL	49 PARKERVILLE ROAD	SOUTHBOROUGH	01772
 8605	TN	KNOX	71	Rocky Hill School	1200 Morrell Rd.	Knoxville	37919
 8606	OK	DELAWARE	Precinct 210020	Kenwood Water Office	1149 Cr 487	Salina	74365
@@ -8658,7 +8658,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8655	AL	COLBERT	Precinct 1	HATTON BAPTIST CHURCH	2105 HATTON SCHOOL RD	LIEGHTON	35646
 8656	TN	HUMPHREYS	8	Christ Community Church	635 St. Patrick Street	Mcewen	37101
 8657	OK	KAY	Precinct 360404	Peckham Christian Church	7090 W. Church St	Newkirk	74647
-8658	VT	NA	Hancock Town Hall	Hancock Town Hall	48 VT Route 125	Hancock	05748
+8658	VT	HENRY	Hancock Town Hall	Hancock Town Hall	48 VT Route 125	Hancock	05748
 8659	AR	CRITTENDEN	52 - Ward 5 Precinct 2	Wonder Boys Club	412 S 25th St	West Memphis	72301
 8660	GA	HARRIS	U9	OLD MTN. HILL SCHOOL	33 MOUNTAIN HILL RD	HAMILTON	31811
 8661	GA	WASHINGTON	88	OCONEE FIRE STATION	144 FAIRBANKS ST	OCONEE	31067
@@ -8699,7 +8699,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8696	TN	BLOUNT	28	Pellissippi State Technical Community College	2731 West Lamar Alexander Parkway	Friendsville	37737
 8697	MA	MIDDLESEX	Marlborough W06 P02	1LT CHARLES WHITCOMB SCHL	25 UNION STREET	Marlborough	01752
 8698	GA	DOUGHERTY	26	LAMAR REESE ELEMENTARY SCHOOL	1215 LILY POND RD	ALBANY	31701
-8699	VT	NA	Stamford Elementary Sch	Stamford Elementary School	986 Main Road	Stamford	05352
+8699	VT	CLEVELAND	Stamford Elementary Sch	Stamford Elementary School	986 Main Road	Stamford	05352
 8700	AL	MONTGOMERY	Precinct 03b	Flowers Elementary School	3510 Harrison Rd	Montgomery	36109
 8701	AL	MORGAN	Morgan County Courthouse	Morgan County Courthouse	302 Lee Street N.E.	Decatur	35601
 8702	AR	CRITTENDEN	41 - Ward 4 Precinct 1	Weaver School	1280 E Barton	West Memphis	72301
@@ -8763,7 +8763,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8760	AR	VAN BUREN	05 Holly Mountain	Corinth Baptist Church	5158 Holly Mtn. Road	Clinton	72031
 8761	MA	BERKSHIRE	West Stockbridge 01	TOWN HALL	21 STATE LINE ROAD	WEST STOCKBRIDGE	01266
 8762	OK	OKLAHOMA	Precinct 550069	Faith Baptist Church	142 N. Dobbs	Harrah	73045
-8763	VT	NA	Leicester Town Hall	Leicester Town Office	44 School House Road	Leicester	05733
+8763	VT	TULSA	Leicester Town Hall	Leicester Town Office	44 School House Road	Leicester	05733
 8764	GA	NEWTON	25	BEREAN BAPTIST CHURCH	20 OLD SOCIAL CIRCLE RD	SOCIAL CIRCLE	30025
 8765	OK	GRADY	Precinct 260037	Snowhill Baptist Church	11 S Morgan Road	Tuttle	73089
 8766	GA	CHARLTON	05w	WINOKUR FIRE STATION	18829 HIGHWAY 301	FOLKSTON	31537
@@ -8801,7 +8801,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8798	OK	CRAIG	Precinct 180611	Senior Citizens Bldg	222 W Sequoyah St	Vinita	74301
 8799	TN	DAVIDSON	1002	Walker Creek UMC	2947 Lower Walkers Creek	Goodlettsville	37072
 8800	AR	WOODRUFF	Augusta - 03	Augusta Housing Authority	100 Riverdale	Augusta	72006
-8801	VT	NA	Williston Williston Armory	Williston Central School Gymnasium	195 Central School Drive	Williston	05495
+8801	VT	VIRGINIA BEACH CITY	Williston Williston Armory	Williston Central School Gymnasium	195 Central School Drive	Williston	05495
 8802	AL	MADISON	Madison Church Of Christ	Madison Church of Christ	556 Hughes Road	Madison	35758
 8803	VA	STAUNTON CITY	101 - Ward No 1	BESSIE WELLER ELEM SCHOOL	600 Greenville Ave	Staunton	24401
 8804	VA	VIRGINIA BEACH CITY	070 - Corporate Landing	CORPORATE LANDING MID SCHOOL	1597 Corporate Landing Pkwy	Virginia Beach	23454
@@ -8813,7 +8813,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8810	AL	COLBERT	Precinct 17	MUSCLE SHOALS CITY HALL	2010 E AVALON AVE	MUSCLE SHOALS	35661
 8811	VA	WYTHE	602 - Zion	SPEEDWELL FIRE DEPARTMENT	6631 Grayson Tpke	Speedwell	24374
 8812	AL	JACKSON	Precinct 0130	PIKEVILLE STORE	5182 Co Road 21	Scottsboro	35768
-8813	VT	NA	Waterville Town Hall	Waterville Town Hall	544 VT Route 109	Waterville	05492
+8813	VT	CARTER	Waterville Town Hall	Waterville Town Hall	544 VT Route 109	Waterville	05492
 8814	AR	PHILLIPS	Helena West Helena 5	West Helena Water Company	92 Plaza	West Helena	72390
 8815	OK	OKLAHOMA	Precinct 550234	Beverly Hills Baptist Church	400 Se 59Th St	Oklahoma City	73129
 8816	VA	ROANOKE	304 - Oak Grove	OAK GROVE ELEM. SCHOOL	5005 Grandin Road Ext	Roanoke	24018
@@ -8859,7 +8859,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8856	OK	PONTOTOC	Precinct 620064	Happyland Fw Baptist Chur. #64	22787 Highway 1E	Ada	74820
 8857	OK	OKLAHOMA	Precinct 550240	Mcguire Community Center	1316 Ne 12Th St	Oklahoma City	73117
 8858	OK	MCCURTAIN	Precinct 450019	Church Of Christ -Bbow	508 N. Costilow	Broken Bow	74728
-8859	VT	NA	Randolph Randolph Town Hall	Randolph Town Hall	7 Summer Street	Randolph	05060
+8859	VT	MIDDLESEX	Randolph Randolph Town Hall	Randolph Town Hall	7 Summer Street	Randolph	05060
 8860	VA	BEDFORD	703 - Thaxton Baptist Church #2	THAXTON BAPTIST CHURCH #2	1067 Penicks Mill Road	Thaxton	24174
 8861	GA	FAYETTE	14	FAYETTEVILLE CHURCH OF CHRIST	870 REDWINE ROAD	FAYETTEVILLE	30215
 8862	OK	GARFIELD	Precinct 240102	Zoe Bible Church Of Enid	729 E Maine Ave	Enid	73701
@@ -8890,7 +8890,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8887	VA	GOOCHLAND	201 - Three Square	SMYRNA CHURCH FELLOWSHIP HALL	1470 Rock Castle Rd	Goochland	23063
 8888	OK	OKLAHOMA	Precinct 550111	The Garvey Center	2501 E Memorial Rd	Oklahoma City	73136
 8889	CO	TELLER	5023960011	Florissant Library	334 Circle Dr	Florissant	80816
-8890	VT	NA	Franklin Town Hall	Franklin Elementary School	15 School Street	Franklin	05457
+8890	VT	HAWKINS	Franklin Town Hall	Franklin Elementary School	15 School Street	Franklin	05457
 8891	GA	WHITFIELD	04a	WHITFIELD CO. SCH. OFC.	1306 S. THORNTON AVE.	DALTON	30720
 8892	AR	NEVADA	Emmet City	Emmet City Hall - City	211 E 4th	Emmet	71835
 8893	VA	CHESAPEAKE CITY	008 - South Norfolk Recreation	SOUTH NORFOLK COMMUNITY CENTER	1217 Godwin Ave	Chesapeake	23324
@@ -8911,7 +8911,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8908	VA	DICKENSON	303 - Ridge	VOTING BUILDING	119 Omaha Sunset Road	Clintwood	24228
 8909	MN	DAKOTA	Eagan P-12	Eagan High School Room 135	4185 Braddock Trail	Eagan	55123
 8910	OK	WOODWARD	Precinct 770303	Woodward High School	13Th And Downs	Woodward	73801
-8911	VT	NA	Dummerston East Dummerston School	Dummerston School Gym	52 Schoolhouse Road	Dummerston	05346
+8911	VT	CHILTON	Dummerston East Dummerston School	Dummerston School Gym	52 Schoolhouse Road	Dummerston	05346
 8912	AL	HOUSTON	Hodgesville Vol Fire Dept 213	HODGESVILLE VOL FIRE DEPT	538 Flournoy Moore Rd.	Dothan	36301
 8913	AR	MADISON	Kings River	American Legion Building	32807 Hwy 74	Huntsville	72740
 8914	AL	CULLMAN	Precinct 0220	Holly Pond Fire Department	10915 US Hwy 278 E	Holly Pond	35083
@@ -8945,7 +8945,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8942	AL	MADISON	County Commission Dist 1 Ofc	County Commission District #1 Office	9457 Moores Mill Road	New Market	35761
 8943	TN	BLOUNT	23	Middlesettlements Elementary School	3105 Miser Station Road	Louisville	37777
 8944	AR	JOHNSON	SHERMAN	Ozone Community Building	14137 Hwy 21	Ozone	72854
-8945	VT	NA	Chittenden Town Hall	Chittenden Municipal Office	260 Chittenden Road	Chittenden	05737
+8945	VT	HAMILTON	Chittenden Town Hall	Chittenden Municipal Office	260 Chittenden Road	Chittenden	05737
 8946	VA	CARROLL	103 - Lambsburg	LAMBSBURG COMMUNITY COMPLEX	130 LEARNING LANE	LAMBSBURG	24351
 8947	VA	VIRGINIA BEACH CITY	009 - Trantwood	VA BEACH CHRISTIAN CHURCH	2225 Rose Hall Dr	Virginia Beach	23454
 8948	TN	GREENE	14cd	Chuckey Doak Middle School	120 Chuckey Doak Road	Afton	37616
@@ -8974,7 +8974,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 8971	MA	ESSEX	Peabody W04 P03	PEABODY HIGH SCHOOL	485 LOWELL STREET	PEABODY	01960
 8972	VA	ALLEGHANY	202 - Dolly Ann	V F W POST	710 E Dolly Ann Dr	Covington	24426
 8973	TN	HOUSTON	7	Griffin’S Chapel Nazarene Church	120 Hwy 46N	Erin	37061
-8974	VT	NA	Shelburne Town Ctr Gym	Municipal Building Gym	5420 Shelburne Road	Shelburne	05482
+8974	VT	LOUDOUN	Shelburne Town Ctr Gym	Municipal Building Gym	5420 Shelburne Road	Shelburne	05482
 8975	AR	WASHINGTON	Harmon-S	St. Joseph's Catholic Church	110 E Henri De Tonti Blvd	Springdale	72762
 8976	MA	BARNSTABLE	Sandwich 05	FORESTDALE SCHOOL	151 ROUTE 130	SANDWICH	02563
 8977	AL	ETOWAH	Rainbow City Community Center	Rainbow City Community Center	3702 Rainbow Dr	Rainbow City	35906
@@ -9238,7 +9238,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 9235	GA	COBB	So02	SOPE CREEK ELEMENTARY SCHOOL	3320 PAPER MILL RD	MARIETTA	30067
 9236	AR	BENTON	Precinct 16	Robinson Community Building	16903 School House Rd	Siloam Spgs	72761
 9237	TN	HAMILTON	95	New Covenant Fellowship	1326 North Moore Road	Chattanooga	37411
-9238	VT	NA	Holland Town Office	Holland Elementary School	26 School Road	Holland	05830
+9238	VT	WORCESTER	Holland Town Office	Holland Elementary School	26 School Road	Holland	05830
 9239	MA	WORCESTER	New Braintree 01	TOWN HALL	20 MEMORIAL DR.	NEW BRAINTREE	01531
 9240	VA	LEE	203 - Jonesville	JONESVILLE MIDDLE SCHOOL	160 BULLDOG CIRCLE	Jonesville	24263
 9241	AL	WILCOX	Precinct 1004	TATES CHAPEL CME CHURCH	15 TATES CHAPEL RD	FURMAN	26741
@@ -9252,7 +9252,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 9249	VA	HENRICO	216 - Moody	MOODY MIDDLE SCHOOL	7800 Woodman Rd	Richmond	23228
 9250	OK	OKLAHOMA	Precinct 550243	Prospect Baptist Church	2809 N Missouri Ave	Oklahoma City	73111
 9251	OK	OKMULGEE	Precinct 560008	Okmulgee Community Center	1201 W. 7Th St	Okmulgee	74447
-9252	VT	NA	Brookfield Elem School	Brookfield Elementary School	1725 Ridge Road	Brookfield	05036
+9252	VT	TULSA	Brookfield Elem School	Brookfield Elementary School	1725 Ridge Road	Brookfield	05036
 9253	GA	COLUMBIA	136	BLUERIDGE ELEMENTARY SCHOOL	550 BLUE RIDGE DRIVE	EVANS	30809
 9254	OK	WAGONER	Precinct 730209	Taylor Ferry Fire Dept.	33038 Long Bay Road	Wagoner	74467
 9255	MN	ST LOUIS	Grand Lake Twp.	Solway Town Hall	4029 Munger Shaw Rd	Cloquet	55720
@@ -9425,14 +9425,14 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 9422	OK	ALFALFA	Precinct 020330	Jet Community Building	300 Main Street	Jet	73749
 9423	TN	HAWKINS	16	Hawkins Elementary School	1124 East Main Street	Rogersville	37857
 9424	OK	TULSA	Precinct 720459	Arrow Heights Baptist Church	3201 S Elm Pl	Broken Arrow	74012
-9425	VT	NA	Stannard Town Hall	Stannard Town Hall	615 Stannard Mountain Road	Stannard	05842
+9425	VT	Rutland	Stannard Town Hall	Stannard Town Hall	615 Stannard Mountain Road	Stannard	05842
 9426	AR	PULASKI	Precinct 039	Brockington Rd Ch of the Nazerene	9860 Brockington Rd	Sherwood	72120
 9427	GA	CHEROKEE	32	GOOD SHEPHERD LUTHERAN CHURCH	1208 ROSE CREEK DR	WOODSTOCK	30189
 9428	GA	MERIWETHER	7	LUTHERSVILLE CITY HALL	104 WORTHAM ROAD	LUTHERSVILLE	30251
 9429	VA	LOUDOUN	629 - Discovery	DISCOVERY ELEMENTARY SCHOOL	44020 GRACE BRIDGE DR	ASHBURN	20147
 9430	AR	WHITE	65 - Russell Twp	United Methodist Church	100 W. 2nd	Russell	72139
 9431	TN	KNOX	47	Bearden High School	8352 Kingston Pike	NA	37919
-9432	VT	NA	Pawlet Town Hall	Pawlet Town Hall	122 School Street	Pawlet	05761
+9432	VT	BARNSTABLE	Pawlet Town Hall	Pawlet Town Hall	122 School Street	Pawlet	05761
 9433	GA	FULTON	CP012	COLLEGE PARK AUDITORIUM	3631 MAIN STREET	COLLEGE PARK	30337
 9434	OK	CARTER	Precinct 100041	Healdton 1St Baptist Church	107 S 4Th	Healdton	73438
 9435	AL	COVINGTON	Precinct 1601	STRAUGHN	29324 STRAUGHN SCHOOL RD	ANDALUSIA	36421
@@ -9502,7 +9502,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 9499	AR	PIKE	01 - Antoine	Antoine Community Bldg	40 Main St	Antoine	71922
 9500	GA	DEKALB	Mw	ST BEDES EPISCOPAL CHURCH	2601 HENDERSON MILL RD	ATLANTA	30345
 9501	AL	MONROE	Precinct 1341 Shiloh Miss Bc	SHILOH MISSIONARY BAPTIST CHURCH	7620 CO RD 1	FRISCO CITY	36445
-9502	VT	NA	Mount Tabor Town Office	Mount Tabor Town Office	522 Brooklyn Road	Mount Tabor	05739
+9502	VT	IRWIN	Mount Tabor Town Office	Mount Tabor Town Office	522 Brooklyn Road	Mount Tabor	05739
 9503	MN	RAMSEY	St. Paul W-3 P-05	Highland Park Middle School Room 1311	975 Snelling Ave S	Saint Paul	55116
 9504	VA	FAIRFAX	622 - Lorton Station	LORTON STATION ELEM SCHOOL	9298 Lewis Chapel Rd	Lorton	22079
 9505	OK	TULSA	Precinct 720053	Cooper Elementary School	1808 S 123 E Ave	Tulsa	74128
@@ -9582,7 +9582,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 9579	CO	ROUTT	3082654001	Home of Diane White Crane	27550 Routt County Road 64	Clark	80428
 9580	OK	HARPER	Precinct 300301	Harper Co. Fairgrounds Bldg.	Fairgrounds Complex	Buffalo	73834
 9581	OK	KIOWA	Precinct 380006	Gotebo Community Center	20 North 10Th Street	Gotebo	73041
-9582	VT	NA	Vernon Twn Off Bldg	Town Office Building-Downstairs	567 Governor Hunt Road	Vernon	05354
+9582	VT	COBB	Vernon Twn Off Bldg	Town Office Building-Downstairs	567 Governor Hunt Road	Vernon	05354
 9583	OK	OKLAHOMA	Precinct 550230	Southern Hills Baptist Church	8601 S Pennsylvania	Oklahoma City	73159
 9584	OK	COMANCHE	Precinct 160002	Crosby Park School	1602 Nw Horton	Lawton	73505
 9585	AL	MADISON	Ne Huntsville Train&Conf Cntr	Northeast Huntsville Community Church	2135 US Hwy 72	Huntsville	35811
@@ -9620,7 +9620,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 9617	VA	HAMPTON CITY	205 - Asbury	FRANCIS ASBURY ELEM SCHOOL	140 Beach Rd	Hampton	23664
 9618	GA	FULTON	08l	CATHEDRAL OF SAINT PHILIP	2744 PEACHTREE RD NW	ATLANTA	30305
 9619	GA	SPALDING	6	CITY PARK GYM	601-C CAMP NORTHERN RD	GRIFFIN	30224
-9620	VT	NA	Bennington Benn Fire Dept	Bennington Fire House	130 River Street	Bennington	05201
+9620	VT	PAULDING	Bennington Benn Fire Dept	Bennington Fire House	130 River Street	Bennington	05201
 9621	VA	FAIRFAX	307 - Haycock	HAYCOCK ELEMENTARY SCHOOL	6616 Haycock Rd	Falls Church	22043
 9622	GA	DEKALB	Kc	KELLEY CHAPEL UNITED METHODIST	3411 KELLEY CHAPEL ROAD	DECATUR	30034
 9623	TN	BLOUNT	18	Maryville College	502 Lamar Alexander Parkway	Maryville	37804
@@ -9666,7 +9666,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 9663	AL	JEFFERSON	Precinct 5110	MOUNTAIN BROOK CITY HALL	56 CHURCH ST	BIRMINGHAM	35213
 9664	GA	EARLY	L	LUCILE COMMUNITY HOUSE	13795 HWY 39	BLAKELY	39823
 9665	VA	PITTSYLVANIA	202- Bearskin	UNION HALL ELEMENTARY SCHOOL	100 Union Hall Elementary Cir	Chatham	24531
-9666	VT	NA	Stockbridge Town Office	Union Meeting House	97 Maplewood Drive	Stockbridge	05772
+9666	VT	OKLAHOMA	Stockbridge Town Office	Union Meeting House	97 Maplewood Drive	Stockbridge	05772
 9667	OK	WASHITA	Precinct 750014	Canute Heritage Center	101 N. 9Th	Canute	73626
 9668	TN	GREENE	24ss	Sunnyside Fire Department	200 Carmel Hill	Greeneville	37743
 9669	AR	PULASKI	Precinct 073	Parkway Place Baptist Church	300 Parkway Pl	Little Rock	72211
@@ -9720,7 +9720,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 9717	MA	WORCESTER	Worcester W01 P01	UNITARIAN UNIVERSALIST CH	90 HOLDEN ST	Worcester	01606
 9718	GA	WALTON	420	SAINT ALBAN'S EPISCOPAL CHURCH	206 N BROAD ST	MONROE	30655
 9719	AR	PERRY	09 - New Tennessee	Nimrod Fire Department	7 Nimrod Cemetery Loop	Perryville	72126
-9720	VT	NA	Brookline Town Office	Former Brookline Elementary School	624 Grassy Brook Road	Brookline	05345
+9720	VT	GLOUCESTER	Brookline Town Office	Former Brookline Elementary School	624 Grassy Brook Road	Brookline	05345
 9721	TN	CAMPBELL	Wlsp	Wells Springs United Methodist Church Fellowship Hall	168 Well Road	Lafollette	37766
 9722	TN	GREENE	18sg	South Greene High School	7469 Asheville Highway	Greeneville	37743
 9723	TN	ROANE	Ren	Luminary United Methodist Church	3401 River Rd.	Ten Mile	37880
@@ -9964,7 +9964,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 9961	VA	FAIRFAX	621 - Grosvenor	HUNTINGTON COMMUNITY CENTER	5751 Liberty Dr	Alexandria	22303
 9962	AR	SEBASTIAN	Precinct 9-3k	Hartford Masonic Lodge	17 South Broadway	Hartford	72938
 9963	GA	IRWIN	1661	MYSTIC BAPTIST CHURCH ANNEX	1095 MYSTIC HWY	OCILLA	31774
-9964	VT	NA	Tinmouth Community Center	Tinmouth Community Center	573 Route 140	Tinmouth	05773
+9964	VT	TUSCALOOSA	Tinmouth Community Center	Tinmouth Community Center	573 Route 140	Tinmouth	05773
 9965	MA	ESSEX	Salem W07 P01	SSU ENTERPRISE CENTER	121 LORING AVE	SALEM	01970
 9966	MA	MIDDLESEX	Medford W03 P02	TEMPLE SHALOM	475 WINTHROP ST	MEDFORD	02155
 9967	TN	WAYNE	301	Beech Creek Fire Hall	5775 Beech Creek Road	Waynesboro	38485
@@ -9991,7 +9991,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 9988	OK	LE FLORE	Precinct 400309	Reichert Community Center	28215 Reichert/Summerfield Rd	Heavener	74937
 9989	AR	WHITE	94 - Pangburn Ward 3	Pangburn City Hall	503 Searcy St	Pangburn	72121
 9990	GA	BIBB	Em4	NORTHEAST MAGNET HIGH SCHOOL	1646 UPPER RIVER RD.	MACON	31211
-9991	VT	NA	Winooski Winooski Sr Citizens Center	Winooski Senior Center	123 Barlow St	Winooski	05404
+9991	VT	DINWIDDIE	Winooski Winooski Sr Citizens Center	Winooski Senior Center	123 Barlow St	Winooski	05404
 9992	VA	PATRICK	503 - Woolwine	SMITH RIVER RESCUE SQUAD	9962 WOOLWINE HIGHWAY	WOOLWINE	24185
 9993	TN	JEFFERSON	801	Old Chestnut Hill School	3222 Chestnut Hill School Rd.	Dandridge	37725
 9994	GA	HALL	6	FIRST BAPT CHURCH FLOWERY BR	5106 SPRING STREET	FLOWERY BRANCH	30542
@@ -10041,7 +10041,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 10038	OK	MCCURTAIN	Precinct 450027	Battiest School Building	Battiest Community	Battiest	74722
 10039	OK	PAYNE	Precinct 600101	Cushing City Hall	100 Judy Adams Blvd.	Cushing	74023
 10040	MA	WORCESTER	Sutton 01	SIMONIAN CTR FOR LEARNING	409 BOSTON RD	SUTTON	01590
-10041	VT	NA	Salisbury Town Office	Salisbury Town Office	25 Schoolhouse Road	Salisbury	05769
+10041	VT	FAYETTE	Salisbury Town Office	Salisbury Town Office	25 Schoolhouse Road	Salisbury	05769
 10042	GA	CHATHAM	1-09c	IMMANUEL BAPTIST CHURCH	7375 HODGSON MEMORIAL DR	SAVANNAH	31406
 10043	TN	WHITE	8	Doyle Civic Center	396 Mountain St.	Doyle	38559
 10044	OK	OKLAHOMA	Precinct 550154	N Macarthur Church Of Christ	9300 N Macarthur Blvd	Oklahoma City	73132
@@ -10072,7 +10072,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 10069	TN	WILLIAMSON	81	Grassland Middle School	2390 Hillsboro Road	Franklin	37069
 10070	AR	ASHLEY	27 - Parkdale City	Parkdale City Hall (Parkdale)	106 South Main	Parkdale	71661
 10071	GA	COBB	Mr3a	MARIETTA MIDDLE SCHOOL GYM	121 WINN ST	MARIETTA	30064
-10072	VT	NA	Waitsfield Elementary Sch	Waitsfield Elementary School	3951 Main Street	Waitsfield	05673
+10072	VT	COBB	Waitsfield Elementary Sch	Waitsfield Elementary School	3951 Main Street	Waitsfield	05673
 10073	GA	MONROE	2	SMARR FIRE STATION	50 EVANS RD	FORSYTH	31029
 10074	OK	TULSA	Precinct 720092	St Peter'S Episcopal Church	9100 E 21 Pl	Tulsa	74129
 10075	AR	MISSISSIPPI	10	Armorel School	4539 N St Hwy 137	Blytheville	72315
@@ -10208,8 +10208,8 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 10205	VA	FAIRFAX	226 - Wolftrap	WOLFTRAP ELEMENTARY SCHOOL	1903 Beulah Rd	Vienna	22182
 10206	VA	ROCKINGHAM	307 - Crossroads	MASSANUTTEN PRESBYTERIAN CHURCH	50 Indian Trail Road	Penn Laird	22846
 10207	GA	FULTON	03i	GA. TECH STUDENT SVC. BLD. A	353 FERST DRIVE NW	ATLANTA	30313
-10208	VT	NA	Fletcher Town Clerk Ofc	Fletcher Elementary School	340 School Road	Fletcher	05444
-10209	VT	NA	Orange Town Hall	Orange Town Hall	392 US Route 302	Orange	05649
+10208	VT	Washington	Fletcher Town Clerk Ofc	Fletcher Elementary School	340 School Road	Fletcher	05444
+10209	VT	ST LOUIS	Orange Town Hall	Orange Town Hall	392 US Route 302	Orange	05649
 10210	OK	OKLAHOMA	Precinct 550245	Episcopal Ch Of The Redeemer	2100 N Martin Luther King Ave	Oklahoma City	73111
 10211	OK	ELLIS	Precinct 230001	Arnett Town Hall	219 E. Renfrow	Arnett	73832
 10212	TN	WILLIAMSON	52	Nolensville Methodist Church	7316 Nolensville Road	Nolensville	37135
@@ -10217,7 +10217,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 10214	MA	BARNSTABLE	Bourne 06	ST JOHNS PARISH CENTER	841 SHORE RD	POCASSET	02559
 10215	AR	JEFFERSON	218	Church Of Christ	4015 Hazel	Pine Bluff	71603
 10216	MA	BRISTOL	Taunton W04b	EAST TAUNTON ELEM. SCHOOL	58 STEVENS STREET	TAUNTON	02718
-10217	VT	NA	East Montpelier Elementary Sch	East Montpelier Elem School	665 Vincent Flats Road	East Montpelier	05651
+10217	VT	PLYMOUTH	East Montpelier Elementary Sch	East Montpelier Elem School	665 Vincent Flats Road	East Montpelier	05651
 10218	MN	ST LOUIS	Duluth P-17	Historic Old Central HS Room 104	215 N 1st Ave E	Duluth	55802
 10219	MA	SUFFOLK	Boston W20 P15	LUDWIG VAN BEETHOVEN	5125 WASHINGTON STREET	Boston	02132
 10220	CO	WELD	4016362104	Eaton H.S. Cafeteria	114 Park Ave	Eaton	80615
@@ -10335,7 +10335,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 10332	VA	LOUDOUN	702 - Park View	PARK VIEW HIGH SCHOOL	400 W Laurel Ave	Sterling	20164
 10333	TN	CUMBERLAND	Nar	Linary Church Of Christ	1244 Old Hwy 28	Crossville	38555
 10334	VA	PRINCE WILLIAM	309 - Ashland	ASHLAND ELEMENTARY SCHOOL	15300 Bowmans Folly Drive	Manassas	20112
-10335	VT	NA	Brighton Town Hall	Town Hall Gym	49 Mill Street Ext.	Brighton	05846
+10335	VT	MADISON	Brighton Town Hall	Town Hall Gym	49 Mill Street Ext.	Brighton	05846
 10336	TN	GIBSON	39	Clear Creek Baptist Church	502 Old Dyersburg Rd	Dyer	38330
 10337	MN	HENNEPIN	Minneapolis W-10 P-06	First Universalist Church	3400 Dupont Ave S	Minneapolis	55408
 10338	GA	GWINNETT	65	CALVARY BAPTIST CHURCH	5255 HIGHWAY 29	LILBURN	30047
@@ -10401,7 +10401,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 10398	OK	COAL	Precinct 150004	Cottonwood Baptist Church	Hwy 31 North At Cottonwood	Coalgate	74538
 10399	VA	STAUNTON CITY	201 - Ward Two	CHRIST UNITED METHODIST CHURCH	1512 Churchville Ave	Staunton	24401
 10400	AR	NEVADA	Rosston Rural	Rosston City Hall - Rural	1045 NEVADA 17	ROSSTON	71858
-10401	VT	NA	Burlington Edmunds	Edmunds Middle School	275 Main St.	Burlington	05401
+10401	VT	FLOYD	Burlington Edmunds	Edmunds Middle School	275 Main St.	Burlington	05401
 10402	VA	HENRICO	513 - Pleasants	HIGHLAND SPRINGS ELEMENTARY SCHOOL	600 W. Pleasant St	Highland Springs	23075
 10403	VA	WESTMORELAND	101 - Precinct 1-1	CARMEL UNITED METHODIST CHURCH	5729 Sandy Point Rd	Kinsale	22488
 10404	GA	HOUSTON	Mcms	MOSSY CREEK MIDDLE SCHOOL -GYM	200 DANNY CARPENTER DR	KATHLEEN	31047
@@ -10415,7 +10415,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 10412	GA	TERRELL	2	SASSER CITY HALL	118 E MAIN ST	SASSER	39885
 10413	TN	LAWRENCE	1201	Prince Tree Service	517 Turnpike	Lawrenceburg	38464
 10414	AL	BALDWIN	Precinct 11	Lottie Fire Department	59421 Jack Springs Rd	Atmore	36502
-10415	VT	NA	Jay Town Firehouse	Jay Westfield Elementary School	257 Revoir Flat Road	Jay	05859
+10415	VT	CARTER	Jay Town Firehouse	Jay Westfield Elementary School	257 Revoir Flat Road	Jay	05859
 10416	GA	COBB	Ac1c	ACWORTH ELEMENTARY SCHOOL	4220 CANTRELL RD	ACWORTH	30101
 10417	VA	CHESAPEAKE CITY	019 - Jolliff	UNION BETHEL BAPTIST CHURCH	1817 Jolliff Rd	Chesapeake	23321
 10418	VA	BATH	501 - Healing Springs	ASHWOOD METHODIST CHURCH	5674 Sam Snead Hwy	Hot Springs	24445
@@ -10433,7 +10433,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 10430	TN	ANDERSON	Fvw	Fairview Elementary School	6715 Hickory Valley Road	Heiskell	37754
 10431	GA	PIKE	3	MEANSVILLE CITY HALL	41 MEANS ST	MEANSVILLE	30256
 10432	OK	STEPHENS	Precinct 690056	Velma Baptist Church	1 & Main St	Velma	73491
-10433	VT	NA	Pomfret Town Hall	Pomfret Town Offices	5218 Pomfret Road	Pomfret	05053
+10433	VT	SHELBY	Pomfret Town Hall	Pomfret Town Offices	5218 Pomfret Road	Pomfret	05053
 10434	VA	AUGUSTA	201 - Crimora	CRIMORA UNITED METHODIST CHURCH	1691 New Hope And Crimora Rd	Crimora	24431
 10435	TN	GILES	03b	United Methodist Church	10601 Campbellsville Rd	Pulaski	38478
 10436	AR	SEBASTIAN	Precinct 4-N	Temple Baptist Church	5100 S 31st.	Fort Smith	72901
@@ -10456,7 +10456,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 10453	AR	MADISON	Huntsville Ward 3	Freewill Baptist Church	702 N College St	Huntsville	72740
 10454	MN	OLMSTED	Rochester W4 P2	Willow Creek Middle School Room B107	2425 11th Ave SE	Rochester	55904
 10455	GA	JACKSON	428	PENDERGRASS CITY HALL	22 SMITH BRIDGES RD	PENDERGRASS	30567
-10456	VT	NA	Rupert Town Office	Rupert Town Office	187 East Street	Rupert	05776
+10456	VT	CARTER	Rupert Town Office	Rupert Town Office	187 East Street	Rupert	05776
 10457	OK	LATIMER	Precinct 390010	Panola School	2105 Panola Road	Panola	74559
 10458	TN	HAMILTON	91	Westview Elementary	9629 East Brainerd Road	Chattanooga	37421
 10459	TN	SHELBY	Ste00	OAK SPRING BAPTIST CHURCH	10250 GODWIN RD	Arlington	38002
@@ -10634,7 +10634,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 10631	GA	FORSYTH	29	GRACE CHAPEL CHURCH OF CHRIST	6755 MAJORS RD	CUMMING	30040
 10632	OK	LE FLORE	Precinct 400207	Freewill Baptist Church	603 West Blvd.-Poteau	Poteau	74953
 10633	MA	ESSEX	Lawrence We P02	FROST SCHOOL	33 HAMLET ST	LAWRENCE	01843
-10634	VT	NA	Ripton Community House	Ripton Town Office	1311 VT Route 125	Ripton	05766
+10634	VT	GARFIELD	Ripton Community House	Ripton Town Office	1311 VT Route 125	Ripton	05766
 10635	GA	CHARLTON	2	FOLKSTON CITY HALL	541 FIRST ST	FOLKSTON	31537
 10636	VA	WILLIAMSBURG CITY	002 - Matoaka	WILLIAMSBURG UNITED METHODIST CHURCH	500 JAMESTOWN ROAD	Williamsburg	23185
 10637	AL	TALLAPOOSA	Precinct 1701	1701 DAVISTON COMMUNITY CENTER	22902 HIGHWAY 22 E	DAVISTON	36256
@@ -10650,7 +10650,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 10647	TN	MONTGOMERY	15	Sango School	3585 Sango Rd	Clarksville	37042
 10648	OK	COMANCHE	Precinct 160038	First United Methodist Church	Corner Of 6Th & G St	Elgin	73538
 10649	MA	ESSEX	Lawrence Wb P02	LAWLOR SCHOOL	44 LEXINGTON ST	LAWRENCE	01841
-10650	VT	NA	Cabot School Gym	Cabot School Gym	26 Gym Road	Cabot	05647
+10650	VT	FORSYTH	Cabot School Gym	Cabot School Gym	26 Gym Road	Cabot	05647
 10651	TN	SULLIVAN	08b	Sullivan Middle School	4154 South Wilcox Drive	Kingsport	37660
 10652	OK	MAJOR	Precinct 470010	Chester Community Center	22040 Hwy 281	Chester	73838
 10653	GA	CHATHAM	8-11c	BUTLER ELEMENTARY SCHOOL	1909 CYNTHIA ST	SAVANNAH	31415
@@ -10713,7 +10713,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 10710	TN	KNOX	17	Christenberry Comm. Ctr.	931 Oglewood Ave.	Knoxville	37917
 10711	GA	CATOOSA	Ft O	FT. OGLETHORPE PRECINCT	205 FORREST RD	FT OGLETHORPE	30742
 10712	VA	ALEXANDRIA CITY	201 - Maury School	MAURY SCHOOL	600 Russell Rd	Alexandria	22301
-10713	VT	NA	Vergennes Fire Station	Fire Station	0	Vergennes	05491
+10713	VT	PAWNEE	Vergennes Fire Station	Fire Station	0	Vergennes	05491
 10714	GA	FORSYTH	1	FIRST REDEEMER CHURCH	2100 PEACHTREE PKWY	CUMMING	30041
 10715	GA	FULTON	Jc13a	AUTRY MILL MIDDLE SCHOOL	4110 OLD ALABAMA ROAD	ALPHARETTA	30022
 10716	MN	HENNEPIN	Bloomington W-4 P-32	Kennedy High School Room C120	150 E 98th St	Bloomington	55420
@@ -10807,7 +10807,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 10804	AL	PIKE	Precinct 26 - Antioch	Antioch Church of Christ	5131 County Road 1101	Troy	36079
 10805	TN	DYER	16	East Dyersburg - County Complex	151 Everett Avenue	Dyersburg	38024
 10806	GA	FLOYD	80	COOSA HIGH SCHOOL GYM	4454 ALABAMA HWY NW	COOSA	30129
-10807	VT	NA	Windham Town Office	Windham Meetinghouse	26 Harrington Road	Windham	05359
+10807	VT	ROGERS	Windham Town Office	Windham Meetinghouse	26 Harrington Road	Windham	05359
 10808	AL	JACKSON	Precinct 0060	FIRE HALL	29 Co Road 45	Fackler	35746
 10809	VA	ROANOKE CITY	020 - Forest Park	FOREST PARK ACADEMY	2730 MELROSE AVE NW	Roanoke	24017
 10810	TN	MAURY	Wend	West End Baptist Church	900 W 7Th Street	Columbia	38401
@@ -10888,7 +10888,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 10885	VA	KING GEORGE	201 - Monroe	KING GEORGE MIDDLE SCHOOL	8246 Dahlgren Rd	King George	22485
 10886	TN	HAWKINS	13	Mcpheeters Bend School	1115 Goshen Valley Road	Church Hill	37642
 10887	MN	DAKOTA	Eagan P-07	Eagan High School Lecture Room C	4185 Braddock Trail	Eagan	55123
-10888	VT	NA	Burke Town Office Bldg	Burke Community Building	212 School Street	Burke	05871
+10888	VT	JEFFERSON	Burke Town Office Bldg	Burke Community Building	212 School Street	Burke	05871
 10889	MN	OLMSTED	Rochester W5 P7	Century High School Room F255	2525 Viola Rd NE	Rochester	55906
 10890	MA	NORFOLK	Quincy W01 P04	ADAMS SHORE LIBRARY	519 SEA STREET	QUINCY	02169
 10891	TN	DAVIDSON	3305	Spirit Of Life Church	3646 Murfreesboro Rd	Nashville	37013
@@ -11113,7 +11113,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 11110	GA	FLOYD	15	RENAISSANCE MARQUIS	3126 CEDARTOWN HWY	ROME	30161
 11111	MN	OLMSTED	Marion Twp. P-1	Willow Creek Middle School Room C202	2425 11thAve SE	Rochester	55904
 11112	GA	CAMDEN	11	MARY LEE CLARK ELEMENTARY SCH	318 MICKLER DR	SAINT MARYS	31558
-11113	VT	NA	Westmore Municipal Office	Fellowship Hall	29 Hinton Hill Road	Westmore	05860
+11113	VT	POINSETT	Westmore Municipal Office	Fellowship Hall	29 Hinton Hill Road	Westmore	05860
 11114	MN	GOODHUE	Florence Twp.	Lake City High School	300 S Garden	Lake City	55041
 11115	OK	TULSA	Precinct 720144	Southwest Baptist Church	5304 S 33 W Ave	Tulsa	74107
 11116	CO	OTERO	4354745003	High School in the Multipurpose Room	610 Columbia Ave	Swink	81077
@@ -11192,14 +11192,14 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 11189	MA	MIDDLESEX	Newton W02 P02	CABOT PARK VILLAGE	280 NEWTONVILLE AVE	NEWTON	02460
 11190	TN	SUMNER	801	Brown Elementary School	115 Gail Drive	Hendersonville	37075
 11191	AL	CALHOUN	Precinct 0101	Glenwood Meadows Meeting Room	785 Gardner Drive SE	Jacksonville	36265
-11192	VT	NA	Cavendish Elementary Sch	Cavendish Town Elementary School	573 Main Street	Cavendish	05143
+11192	VT	ARAPAHOE	Cavendish Elementary Sch	Cavendish Town Elementary School	573 Main Street	Cavendish	05143
 11193	GA	MURRAY	1013	ETON ELEMENTARY SCHOOL	829 HWY 286 W	CHATSWORTH	30705
 11194	AR	CRAWFORD	Mulberry 1	Mulberry 1 City Hall City	207 N. Main St.	Mulberry	72947
 11195	AL	CALHOUN	Precinct 0403	West Park Hieghts Baptist Church	500 West Park Drive	Anniston	36201
 11196	VA	CAMPBELL	702 - Gladys	PIEDMONT COMMUNITY IMPACT BLDG	215 SCHOOL RD	GLADYS	24554
 11197	VA	APPOMATTOX	202 - Spout Spring	RURITAN BUILDING	218 RURITAN LANE	SPOUT SPRING	24593
 11198	TN	SHELBY	7901	Whitehaven Community Center	4318 Graceland Dr	Memphis	38116
-11199	VT	NA	Norton Town Hall	Norton Town Hall	12 VT Route 114 E	Norton	05907
+11199	VT	COLUMBIA	Norton Town Hall	Norton Town Hall	12 VT Route 114 E	Norton	05907
 11200	TN	DAVIDSON	2405	McCabe Community Center	101 46th Avenue North	Nashville	37209
 11201	MN	ST LOUIS	Duluth P-2	East High School Room 2003	301 N 40th Ave E	Duluth	55804
 11202	TN	CLAIBORNE	Lmt	County Building	127 Alonza Beeler Ln	Tazewell	37879
@@ -11282,7 +11282,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 11279	OK	COTTON	Precinct 170001	Hulen Methodist Church	5 E - 10 N - 1/4 E Of Walters	Walters	73572
 11280	GA	SCREVEN	10	SENIOR CITIZENS CENTER	209 EAST OGEECHEE STREET	SYLVANIA	30467
 11281	MA	WORCESTER	Ashburnham 01	JOHN R. BRIGGS ELEMENTARY	96 WILLIAMS ROAD	ASHBURNHAM	01430
-11282	VT	NA	Granby Town Hall	Granby Town Hall	9005 Granby Road	Granby	05840
+11282	VT	STEWART	Granby Town Hall	Granby Town Hall	9005 Granby Road	Granby	05840
 11283	TN	HENRY	2-Apr	Paris City Hall	100 N. Caldwell St.	Paris	38242
 11284	MA	FRANKLIN	Ashfield 01	TOWN HALL	412 MAIN ST	ASHFIELD	01330
 11285	AR	OUACHITA	Camden Ward 11	St Paul Baptist Church	896 Adams Ave SW	Camden	71701
@@ -11339,7 +11339,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 11336	VA	FAIRFAX	426 - Greenspring	GREENSPRING CONFERENCE CENTER	7430 Spring Village Dr	Springfield	22150
 11337	TN	DICKSON	62	6-2 Porter Community Center	1600 Abiff Road	Dickson	37025
 11338	GA	CLARKE	01a	WINTERVILLE TRAIN DEPOT	101 MARIGOLD LANE	WINTERVILLE	30683
-11339	VT	NA	Thetford Town Hall	Thetford Academy/Thetford Elementary	2689 Route 113	Thetford	05075
+11339	VT	PIKE	Thetford Town Hall	Thetford Academy/Thetford Elementary	2689 Route 113	Thetford	05075
 11340	VA	GILES	102 - Rich Creek	RICH CREEK COMMUNITY CENTER	140 Spruce St	Rich Creek	24147
 11341	MA	MIDDLESEX	Chelmsford 03	HARRINGTON SCHOOL	120 RICHARDSON RD N. CHELMSFORD	CHELMSFORD	01823
 11342	AL	CHOCTAW	Precinct 0049 - Branch S-24	Shady Grove Baptist Church	1760 Shady Grove Rd	Silas	36919
@@ -11366,7 +11366,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 11363	GA	DEKALB	Cs	CEDAR GROVE UNITED METH CHURCH	3430 BOULDERCREST ROAD	CONLEY	30288
 11364	MN	WASHINGTON	Stillwater W-3 P-5	Stillwater Junior High School	523 West Marsh St	Stillwater	55082
 11365	VA	VIRGINIA BEACH CITY	022 - Point O View	KEMPSVILLE CHURCH OF CHRIST	5424 Parliament Dr	Virginia Beach	23462
-11366	VT	NA	Barre Town Elementary Sch	Barre Town Middle & Elementary School Gymnasium	70 Websterville Road	Barre Town	05641
+11366	VT	SEBASTIAN	Barre Town Elementary Sch	Barre Town Middle & Elementary School Gymnasium	70 Websterville Road	Barre Town	05641
 11367	MA	SUFFOLK	Revere W06 P03	NORTH REVERE FIRE STATION	3 OVERLOOK RIDGE DRIVE	REVERE	02151
 11368	TN	BLOUNT	29	Porter Elementary School	4520 Wildwood Springs Road	Maryville	37804
 11369	AL	BLOUNT	Precinct 0702	Summit Fire Hall	28 County Hwy 25	Guntersville	35976
@@ -11480,7 +11480,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 11477	VA	GLOUCESTER	402 - Sarahs Creek	Gloucester Point Baptist Church	7741 Terrapin Cove Rd	Gloucester Point	23062
 11478	TN	HAWKINS	1	Rock Hill Grocery	1635 North Highway 70	Rogersville	37857
 11479	GA	EFFINGHAM	01d	FAULKVILLE BAPTIST CHURCH	144 ZEIGLER RD	BLOOMINGDALE	31302
-11480	VT	NA	Shrewsbury Mtg Hse-Townhall	Shrewsbury Community Meeting House	88 Lottery Road	Shrewsbury	05738
+11480	VT	PULASKI	Shrewsbury Mtg Hse-Townhall	Shrewsbury Community Meeting House	88 Lottery Road	Shrewsbury	05738
 11481	AR	PULASKI	Precinct 055	Plantation Agriculture Museum	4815 Hwy 161	Scott	72142
 11482	VA	FRANKLIN CITY	501 - Precinct 5-1	MARTIN LUTHER KING JR CENTER	683 Oak St	Franklin	23851
 11483	GA	CARROLL	1533	TYUS CH FELLOWSHIP HALL	4514 TYUS CARROLLTON RD	CARROLLTON	30117
@@ -11521,7 +11521,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 11518	GA	DEKALB	Df	CALVARY ASSEMBLY OF GOD	5067 CHAMBLEE DUNWOODY ROAD	DUNWOODY	30338
 11519	AL	LAWRENCE	33-1 Caddo Fire Dept	CADDO FIRE STATION 33	7909 CO RD 214 TRINITY	Trinity	35673
 11520	GA	CHEROKEE	36	RIVER GREEN - HERITAGE CLUB	201 CLUBHOUSE DRIVE	CANTON	30114
-11521	VT	NA	Saint Albans Town Collins Perley	Collins Perley Sports Center	890 Fairfax Road	St Albans Town	05478
+11521	VT	CLEVELAND	Saint Albans Town Collins Perley	Collins Perley Sports Center	890 Fairfax Road	St Albans Town	05478
 11522	AR	CLARK	West County 1	Okolona Town Hall	"307 S, Main Street"	Okolona	71962
 11523	TN	SUMNER	1201	Oakmont School	3323 Highway 76	Portland	37048
 11524	VA	HENRICO	413 - Ridgefield	COLUMBIAN CENTER	2324 Pump Rd	Richmond	23233
@@ -11585,7 +11585,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 11582	AL	BARBOUR	Precinct 0061a	CLAYTON COURTHOUSE	1 Court Square	Clayton	36016
 11583	AR	BENTON	Precinct 54	First Christian Church of Rogers	905 S 13th St	Rogers	72758
 11584	VA	ALLEGHANY	302 - Griffith	FALLING SPG PRESBYTERIAN CHURCH	115 SPRING CHURCH ROAD	Hot Springs	24445
-11585	VT	NA	Montgomery Town Hall	Town Hall  (The Grange)	57 Main Street	Montgomery	05471
+11585	VT	CHATHAM	Montgomery Town Hall	Town Hall  (The Grange)	57 Main Street	Montgomery	05471
 11586	GA	CLAYTON	Fp1	FOREST PARK MID SCH CAFETERIA	930 FINLEY DR	FOREST PARK	30297
 11587	OK	CLEVELAND	Precinct 140041	Southwest Mansions	9900 S Western	Oklahoma City	73139
 11588	GA	CLAYTON	Rd01	OLIVER ELEMENTARY SCHOOL	1725 CHERYL LEIGH DR	RIVERDALE	30296
@@ -11617,7 +11617,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 11614	AR	JEFFERSON	117	Mt. Harmony Church Family Life Center	812 East Harding	Pine Bluff	71601
 11615	AR	CRAIGHEAD	43	Southridge Fire Department	2358 Hwy 163 S	Jonesboro	72404
 11616	VA	WASHINGTON	502 - Damascus	DAMASCUS MIDDLE SCHOOL	32101 Government Rd	Damascus	24236
-11617	VT	NA	South Burlington Chamberlain Sch	Chamberlin School	262 White Street	South Burlington	05403
+11617	VT	JONES	South Burlington Chamberlain Sch	Chamberlin School	262 White Street	South Burlington	05403
 11618	VA	PETERSBURG CITY	701 - Seventh Ward First Precinct	STUART ELEMENTARY SCHOOL	100 PLEASANTS LANE	PETERSBURG	23803
 11619	OK	BRYAN	Precinct 070003	Durant I-72 Superintendent Ofc	1323 Waco St	Durant	74701
 11620	VA	FAIRFAX	848 - Fair Oaks	EXPECTATION CHURCH REC CENTER	4531 West Ox Road	Fairfax	22030
@@ -11626,7 +11626,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 11623	VA	VIRGINIA BEACH CITY	094 - Pinewood	LYNNHAVEN PRESBYTERIAN CHURCH	136 S Lynnhaven Rd	Virginia Beach	23452
 11624	AR	MISSISSIPPI	54	Bassett City Hall	101 Main ST	Bassett	72313
 11625	OK	NOWATA	Precinct 530101	Nowata Gardens	931 Nowata Gardens	Nowata	74048
-11626	VT	NA	Athens Town Office	Athens Elementary School	28 Brookline Road	Athens	05143
+11626	VT	MCCLAIN	Athens Town Office	Athens Elementary School	28 Brookline Road	Athens	05143
 11627	AL	COFFEE	Precinct 0401	Enterprise State Com. College	600 Plaza Drive	Enterprise	36330
 11628	OK	CLEVELAND	Precinct 140071	Sooner Mall	3301 W. Main St	Norman	73072
 11629	TN	GILES	06a	Martin Methodist College	443 W Madison Street	Pulaski	38478
@@ -11698,7 +11698,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 11695	MA	ESSEX	Lawrence Wc P03	BRIEN BUILDING	355 PARK ST	LAWRENCE	01841
 11696	CO	JEFFERSON	7222230218	Chatfield High School	7227 S Simms St	Littleton	80127
 11697	AL	JEFFERSON	Precinct 5160	SAINT THOMAS EPISCOPAL CHURCH	2870 ACTON RD	BIRMINGHAM	35243
-11698	VT	NA	Northfield High School	Northfield High School	37 Cross Street	Northfield	05663
+11698	VT	COOK	Northfield High School	Northfield High School	37 Cross Street	Northfield	05663
 11699	GA	FLOYD	125	V F W POST 4911	2632 CEDARTOWN HWY SW	ROME	30161
 11700	AR	HOT SPRING	Clear Creek	Victory Assembly of God Church	4742 Hwy 9	Malvern	72104
 11701	OK	CLEVELAND	Precinct 140049	Little Axe American Legion	2020 156 Ave. Ne	Norman	73026
@@ -11788,7 +11788,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 11785	VA	EMPORIA CITY	201 - Precinct 2-1	ROYAL BAPTIST CH ASSEMBLY HALL	106 W Atlantic St	Emporia	23847
 11786	MA	MIDDLESEX	Medford W04 P02	WALKLING CT	22 WALKLING CT	MEDFORD	02155
 11787	GA	MUSCOGEE	126	EDGEWOOD BAPTIST CHURCH	3564 FORREST RD	COLUMBUS	31907
-11788	VT	NA	Stowe Akeley Mem Bldg	Stowe High School	413 Barrows Road	Stowe	05672
+11788	VT	BUENA VISTA CITY	Stowe Akeley Mem Bldg	Stowe High School	413 Barrows Road	Stowe	05672
 11789	VA	HALIFAX	503 - Scottsburg	SCOTTSBURG COMMUNITY CENTER	3050 Scottsburg Rd	Scottsburg	24589
 11790	GA	FULTON	12g	LAKEWOOD CHRISTIAN MANOR	2141 SPRINGDALE RD SW	ATLANTA	30315
 11791	OK	CLEVELAND	Precinct 140027	Brookhaven Baptist Church	4301 Country Club Terrace	Norman	73072
@@ -11824,7 +11824,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 11821	TN	BLOUNT	27	Oak Street Baptist Church	218 Oakdale Street	Maryville	37801
 11822	CO	BOULDER	2181107507	Blue Mountain Elementary School	1260 Mountain Drive	Longmont	80503
 11823	VA	NEW KENT	201 - Quinton	ST ELIZABETH ANN SETON CHURCH	2631 Pocahontas Trl	Quinton	23141
-11824	VT	NA	Burlington Barnes	 Lawrence Barnes School	 100 North St.	Burlington	05401
+11824	VT	MOBILE	Burlington Barnes	 Lawrence Barnes School	 100 North St.	Burlington	05401
 11825	GA	STEWART	5	COURTHOUSE	1767 BROAD ST	LUMPKIN	31815
 11826	MA	MIDDLESEX	Woburn W05 P01	GOODYEAR SCHOOL GYMNASIUM	41 CENTRAL STREET	WOBURN	01801
 11827	OK	LOGAN	Precinct 420302	Orlando Community Center	18 Main Street	Orlando	73073
@@ -11975,7 +11975,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 11972	TN	HARDIN	72	Walnut Grove Fire Hall	235 Morris Rd	Savannah	38372
 11973	OK	JACKSON	Precinct 330006	Masonic Lodge	1120 N. Hudson	Altus	73521
 11974	AL	MADISON	Calvary Hill Friendship Center	Calvary Hill Friendsip Center	2900 Fairbanks St NW	Huntsville	35816
-11975	VT	NA	Eden Town Clerks Off	Eden Central School	29 Knowles Flat Road	Eden	05653
+11975	VT	PIKE	Eden Town Clerks Off	Eden Central School	29 Knowles Flat Road	Eden	05653
 11976	VA	MONTGOMERY	402 - Precinct D-2	AUBURN HIGH SCHOOL	4163 Riner Rd	Riner	24149
 11977	GA	BARTOW	4	CARTERSVILLE CIVIC CENTER	435 WEST MAIN STREET	CARTERSVILLE	30120
 11978	MA	ESSEX	Methuen 07	TENNEY GRAMMAR SCHOOL	75 PLEASANT ST.	METHUEN	01844
@@ -12200,7 +12200,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 12197	AL	TALLADEGA	Precinct 1702	Renfroe Vol Fire Dept	7191 Renfroe Road	Talladega	35160
 12198	AR	SALINE	2	Balboa Baptist Church	415 Ponce De Leon	Hot Springs Vlg	71909
 12199	GA	TATTNALL	9	DISTRICT HALL - FIRE DEPT	6019 GA HIGHWAY 169	GLENNVILLE	30427
-12200	VT	NA	Alburgh Municipal Building	Alburgh Municipal Building	1 North Main Street	Alburgh	05440
+12200	VT	CHESTERFIELD	Alburgh Municipal Building	Alburgh Municipal Building	1 North Main Street	Alburgh	05440
 12201	MN	POLK	Knute Twp.	Win-E-Mac School	23130 345th St SE	Erskine	56535
 12202	AL	MONTGOMERY	Precinct 04d	Alabama State University Acadome	1595 Robert C Hatch Dr	Montgomery	36106
 12203	GA	WHITFIELD	Lt	BEAVERDALE ELEMENTARY SCHOOL	1350 PRATERS MILL RD	DALTON	30721
@@ -12230,7 +12230,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 12227	AR	BENTON	Precinct 14	Garfield First Baptist Church	17784 Marshall St (Hwy 62)	Garfield	72732
 12228	GA	TAYLOR	5	TAYLOR COUNTY COURTHOUSE	2 N BROAD STREET	BUTLER	31006
 12229	GA	FULTON	04l	WEST HUNTER STREET BAPTIST CH.	1040 R. D. ABERNATHY BLVD SW	ATLANTA	30310
-12230	VT	NA	Rutland City Christ King Sch	Christ the King School	60 South Main Street	Rutland	05701
+12230	VT	GARFIELD	Rutland City Christ King Sch	Christ the King School	60 South Main Street	Rutland	05701
 12231	VA	FAIRFAX	332 - Coates	COATES ELEMENTARY SCHOOL	2480 RIVER BIRCH ROAD	HERNDON	20171
 12232	VA	HENRICO	223 - Yellow Tavern	NORTH PARK LIBRARY	8508 Franconia Rd	Henrrico	23227
 12233	TN	BRADLEY	302	Senior Center	230 Urbane Road	Cleveland	37311
@@ -12305,7 +12305,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 12302	VA	RUSSELL	302 - Daugherty	GLADE HOLLOW BALL PARK	327 River Mountain Road	Lebanon	24266
 12303	GA	DECATUR	1342	KENDRICK VOLUNTEER FIRE DEPT.	2931 SPRING CREEK RD	BRINSON	39825
 12304	TN	DAVIDSON	1401	Hermitage Hills Baptist	3475 Lebanon Rd	Hermitage	37076
-12305	VT	NA	Fair Haven American Legion	American Legion Post #49	72 South Main St.	Fair Haven	05743
+12305	VT	FAULKNER	Fair Haven American Legion	American Legion Post #49	72 South Main St.	Fair Haven	05743
 12306	AL	COLBERT	Precinct 18	COLBERT HEIGHTS BAPTIST CHURCH	6000 WOODMONT DRIVE	TUSCUMBIA	35674
 12307	VA	DINWIDDIE	101 - White Oak	DIAMOND HILL HUNT CLUB	12249 Wilson Rd	Blackstone	23824
 12308	GA	COBB	Bg02	FIRST UNITED LUTHERAN CHURCH	3481 CAMPUS LOOP RD	KENNESAW	30144
@@ -12502,7 +12502,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 12499	TN	ROBERTSON	901	Robertson County Fair Assoc.	4635 Hwy 41 North	Springfield	37172
 12500	MA	WORCESTER	Leominster W04b	LEOMINSTER VETERANS' QUAR	100 WEST ST	LEOMINSTER	01453
 12501	AR	MISSISSIPPI	2-Dec	Gosnell Community Center	201 S Airbase Hwy	Blytheville	72315
-12502	VT	NA	Waltham Town Hall	Waltham Town Hall	2053 Maple Street	Waltham	05491
+12502	VT	SEQUOYAH	Waltham Town Hall	Waltham Town Hall	2053 Maple Street	Waltham	05491
 12503	VA	HALIFAX	703 - Virgilina	VIRGILINA FIRE STATION	8052 FLORENCE AVENUE	VIRGILINA	24598
 12504	AR	BENTON	Precinct 43	Rogers First Church of the Nazarene	4911 W Pleasant Grove Rd	Rogers	72758
 12505	OK	MCCLAIN	Precinct 440001	Byars Community Center	282 E Ripley St	Byars	74831
@@ -12550,7 +12550,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 12547	OK	JACKSON	Precinct 330003	Southern Prairie Library	421 N Hudson	Altus	73521
 12548	AL	ST CLAIR	Precinct 25	25 NORTH VALLEY CHURCH	900 WOODLAND CIR	ODENVILLE	35120
 12549	AR	MADISON	Richland	Evangel Church Basement	8139 Hwy 74	Huntsville	72740
-12550	VT	NA	Essex Middle Sch (Town)	Essex Middle School	60 Founders Road	Essex Junction	05452
+12550	VT	VAN BUREN	Essex Middle Sch (Town)	Essex Middle School	60 Founders Road	Essex Junction	05452
 12551	VA	FAIRFAX	841 - Popes Head	LIVING SAVIOR LUTHERAN CHURCH	5500 Ox Rd	Fairfax Station	22039
 12552	VA	KING WILLIAM	401 - Manquin	KING WILLIAM HIGH SCHOOL	80 Cavalier Dr	King William	23086
 12553	TN	TROUSDALE	1	Elementary School	115 Lock Six Rd.	Hartsville	37074
@@ -12598,7 +12598,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 12595	AR	INDEPENDENCE	McHue	Southside School	70 Scott drive	batesville	72501
 12596	OK	LOGAN	Precinct 420206	Hispanic Baptist Church	12800 S. Sooner Road	Edmond	73034
 12597	GA	BRYAN	9	PUBLIC SAFETY COMPX	1955 SGT MICHAEL W LARSON DR	RICHMOND HILL	31324
-12598	VT	NA	Charlotte Central School	CCS Multi-Purpose Room	408 Hinesburg Road	Charlotte	05445
+12598	VT	UNICOI	Charlotte Central School	CCS Multi-Purpose Room	408 Hinesburg Road	Charlotte	05445
 12599	TN	CUMBERLAND	Mid	Midway Fire Hall	4908 Newton Road	Crossville	38572
 12600	VA	ROANOKE	103 - Glenvar	GLENVAR MIDDLE SCHOOL	4555 Malus Dr	Salem	24153
 12601	OK	PONTOTOC	Precinct 620052	Pontotoc County Agri Plex #52	1700 N Broadway Ave	Ada	74820
@@ -12634,7 +12634,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 12631	MA	SUFFOLK	Boston W16 P10	POPE JOHN PAUL II	790 Columbia Rd	Dorchester	02125
 12632	AR	NEVADA	Ward 1	Central Baptist Church	615 2nd St	Prescott	71857
 12633	MA	MIDDLESEX	Dunstable 01	DUNSTABLE FREE PUBLIC LIB	588 MAIN ST	DUNSTABLE	01827
-12634	VT	NA	Troy Elem School Gym	Troy Elementary School Gymnasium	126 Main Street	Troy	05859
+12634	VT	MADISON	Troy Elem School Gym	Troy Elementary School Gymnasium	126 Main Street	Troy	05859
 12635	AL	COLBERT	Precinct 11	LEIGHTON CITY HALL	8900 MAIN STREET	LEIGHTON	35646
 12636	AL	LAUDERDALE	Anderson Town Hall	Anderson Town Hall	7262 Hwy 207	Anderson	35610
 12637	VA	AUGUSTA	503 - Spottswood	SPOTTSWOOD COMMUNITY CENTER	797 Spottswood Rd	Steeles Tavern	24476
@@ -12759,7 +12759,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 12756	GA	WHITE	71	CENTER BAPTIST CHURCH	109 ELROD ROAD	HELEN	30545
 12757	VA	MANASSAS CITY	004 - Haydon	HAYDON ELEMENTARY	9075 Park Ave	Manassas	20110
 12758	GA	COBB	Cr01	CHESTNUT RIDGE CHRISTIAN CHURC	2663 JOHNSON FERRY RD	MARIETTA	30062
-12759	VT	NA	Sheffield Municipal Building	Miller's Run School	3249 VT Route 122	Sheffield	05866
+12759	VT	WILSON	Sheffield Municipal Building	Miller's Run School	3249 VT Route 122	Sheffield	05866
 12760	VA	LYNCHBURG CITY	303 - Third Ward Third Precinct	SHEFFIELD ELEMENTARY SCHOOL	115 Kenwood Pl	Lynchburg	24502
 12761	VA	FAIRFAX	924 - Spindle	Centreville Regional Library	14200 Saint Germain Drive	Centreville	20121
 12762	MA	PLYMOUTH	Brockton W02a	DOUGLAS HOUSE	20 HAVERHILL ST	BROCKTON	02301
@@ -12782,14 +12782,14 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 12779	GA	BROOKS	1650	EAST BROOKS FIRE DEPARTMENT	1290 CATES RD	VALDOSTA	31602
 12780	GA	DEKALB	Ec	HOLY CROSS CATHOLIC CH	3773 CHAMBLEE TUCKER RD	CHAMBLEE	30341
 12781	OK	OKFUSKEE	Precinct 540209	Assembly Of God Church	17Th & Broadway	Okemah	74859
-12782	VT	NA	Cambridge Elem School Gym	Cambridge Memorial Gymnasium	186 School Street	Cambridge	05464
+12782	VT	LONOKE	Cambridge Elem School Gym	Cambridge Memorial Gymnasium	186 School Street	Cambridge	05464
 12783	GA	MUSCOGEE	122	FIRST AFRICAN BAPTIST CHURCH	901 5TH AVENUE	COLUMBUS	31901
 12784	AR	PERRY	14 - Tyler	Hollis Community Center	334 Hwy 314	Plainview	72857
 12785	TN	BLEDSOE	10	Bellview Community Bldg	3141 Bellview Rd.	Pikeville	37367
 12786	VA	PRINCE WILLIAM	402 - Battlefield	BATTLEFIELD HIGH SCHOOL	15000 Graduation Dr	Haymarket	20169
 12787	VA	STAFFORD	602 - Chatham	Eagles Lodge	21 COOL SPRING RD	Fredericksburg	22405
 12788	GA	FORSYTH	27	CONCORD BAPTIST CHURCH	6905 CONCORD RD	CUMMING	30028
-12789	VT	NA	Guilford Broad Brook Grange	Guildford Central School	274 School Road	Guilford	05301
+12789	VT	VAN BUREN	Guilford Broad Brook Grange	Guildford Central School	274 School Road	Guilford	05301
 12790	VA	TAZEWELL	101 - Abbs Valley	ABBS VALLEY FIRE DEPARTMENT	160 Kayla Ave	Bluefield	24605
 12791	VA	NORFOLK CITY	203 - Ghent Square	GHENT SQUARE COMMUNITY CENTER	852 Mowbray Arch	Norfolk	23507
 12792	OK	PITTSBURG	Precinct 610046	Bug Tussle Baptist Church West	2180 Flowery Mound Rd	Mc Alester	74501
@@ -12872,7 +12872,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 12869	VA	MIDDLESEX	501 - Wilton	YMCA BUILDING	11487 GENERAL PULLER HWY	HARTFIELD	23071
 12870	VA	AUGUSTA	202 - New Hope	NEW HOPE UNITED METHODIST CHURCH	55 Round Hill School Rd	Fort Defiance	24437
 12871	VA	FAUQUIER	102 - Catlett	SOUTHEASTERN ALTERNATIVE SCHOOL	4484 Catlett Rd	Midland	22728
-12872	VT	NA	Maidstone Town Hall	Maidstone Town Hall	508 VT Route 102	Maidstone	05905
+12872	VT	COBB	Maidstone Town Hall	Maidstone Town Hall	508 VT Route 102	Maidstone	05905
 12873	AL	JEFFERSON	Precinct 3020	PLEASANT HILL UNITED METHODIST CHURCH	4809 BELL HILL RD	BESSEMER	35022
 12874	AL	CHAMBERS	Precinct 0401	UNION HILL COMMUNITY CLUBHOUSE 401	4224 COUNTY RD 53	La Fayette	36862
 12875	OK	DEWEY	Precinct 220001	Taloga Senior Citizens Center	105 S. Broadway	Taloga	73667
@@ -12961,7 +12961,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 12958	CO	YUMA	4016563012	Wray City Hall Round House	245 W 5th Street	Wray	80758
 12959	OK	OKLAHOMA	Precinct 550023	Choctaw Church Of The Nazarene	Ne 10Th St & Harper Rd	Choctaw	73020
 12960	VA	HENRY	102 - Gunville	BASSETT RURITAN BUILDING	277 PHILPOTT DAM ROAD	BASSETT	24055
-12961	VT	NA	Rutland City American Legion	American Legion	33 Washington Street	Rutland	05701
+12961	VT	COLBERT	Rutland City American Legion	American Legion	33 Washington Street	Rutland	05701
 12962	MA	SUFFOLK	Boston W08 P03	ORCHARD GARDENS COMMUNITY	2 DEARBORN ST	BOSTON	02119
 12963	OK	CREEK	Precinct 190132	Central Vo Tech	1720 S Main	Sapulpa	74066
 12964	OK	JEFFERSON	Precinct 340006	Ryan Senior Citizen Center	701 Washington Street	Ryan	73565
@@ -13003,7 +13003,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 13000	VA	WISE	401 - Clinch Valley	WISE COUNTY JUSTICE CENTER	5607 PATRIOT DR	WISE	24293
 13001	OK	OKLAHOMA	Precinct 550041	Edmond Road Baptist Church	1207 W Edmond Rd	Edmond	73003
 13002	VA	NELSON	501 - Faber	NELSON CO RESCUE SQUAD BLDG	8301 IRISH ROAD	FABER	22938
-13003	VT	NA	Rochester Town Office Bldg	Rochester Town Office	67 School St	Rochester	05767
+13003	VT	JEFFERSON	Rochester Town Office Bldg	Rochester Town Office	67 School St	Rochester	05767
 13004	VA	ROANOKE	202 - Burlington	BURLINGTON ELEM SCHOOL	6533 Peters Creek Rd	Roanoke	24019
 13005	TN	GREENE	12ha	Hardins Community Center	3304 Baileyton Road	Greeneville	37745
 13006	AL	WASHINGTON	Precinct 0050 Redcreek	Copeland Fire House	137 Sol Dearmon Rd	Millry	36558
@@ -13077,7 +13077,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 13074	MA	MIDDLESEX	Waltham W02 P01	KENNEDY MIDDLE SCHOOL	655 LEXINGTON ST	WALTHAM	02452
 13075	VA	LUNENBURG	701 - Meherrin Fire Department	MEHERRIN FIRE DEPARTMENT	78 MOORES ORDINARY ROAD	MEHERRIN	23954
 13076	OK	CUSTER	Precinct 200022	Zion Church	701 North Daniel St	Weatherford	73096
-13077	VT	NA	Burlington Wheeler	 HO Wheeler School	6 Archibald Street	Burlington	05401
+13077	VT	JEFFERSON	Burlington Wheeler	 HO Wheeler School	6 Archibald Street	Burlington	05401
 13078	AL	JEFFERSON	Precinct 4090	FULTONDALE FIRST BAPTIST CHURCH	409 MAIN ST	FULTONDALE	35068
 13079	MA	MIDDLESEX	Cambridge W11 P02	PEABODY SCHOOL	70-R RINDGE AVENUE	CAMBRIDGE	02140
 13080	VA	STAFFORD	504 - Gayle	GAYLE MIDDLE SCHOOL	100 Panther Dr	Fredericksburg	22406
@@ -13087,7 +13087,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 13084	OK	MARSHALL	Precinct 480303	Texoma Aux. Fire Dist. Bldg.	10978 Parkview Dr.	Kingston	73439
 13085	AR	JEFFERSON	620-1	Altheimer Library	222 S. Edline	Altheimer	72004
 13086	MA	BRISTOL	Attleboro W01b	KNIGHTS OF COLUMBUS #5876	304 HIGHLAND AVENUE	ATTLEBORO	02703
-13087	VT	NA	Bloomfield Old School House	Old Schoolhouse	27 Schoolhouse Road	Bloomfield	05905
+13087	VT	NEVADA	Bloomfield Old School House	Old Schoolhouse	27 Schoolhouse Road	Bloomfield	05905
 13088	AR	SALINE	24	Salem United Methodist Church	1647 Salem Rd	Benton	72015
 13089	MA	DUKES	Edgartown 01	TOWN HALL	70 MAIN ST	EDGARTOWN	02539
 13090	CO	BENT	4356406003	Los Animas High School	300 Grove Ave	Las Animas	81054
@@ -13109,7 +13109,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 13106	AR	BENTON	Precinct 42	Grace Lutheran Church	415 N 6th Pl	Lowell	72745
 13107	GA	FLOYD	105	NORTH ROME1	400 CIVIC CENTER DRIVE	ROME	30161
 13108	AL	CALHOUN	Precinct 2101	Mount View Baptist Church	1354 Mount View Road	Alexandria	36250
-13109	VT	NA	Cornwall Town Hall	Cornwall Town Hall	2629 Route 30	Cornwall	05753
+13109	VT	BECKHAM	Cornwall Town Hall	Cornwall Town Hall	2629 Route 30	Cornwall	05753
 13110	GA	COBB	Or04	HOLLYDALE METHODIST CHURCH	2364 POWDER SPRINGS RD	MARIETTA	30064
 13111	GA	DOUGLAS	740	0740-FIRST BAPTIST DOUGLASVILLE	5900 PRESTLEY MILL RD	DOUGLASVILLE	30135
 13112	GA	DEKALB	Aa	ALLGOOD ELEMENTARY SCHOOL	659 ALLGOOD ROAD	STONE MOUNTAIN	30083
@@ -13139,7 +13139,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 13136	AL	MOBILE	071 - Palmer Pillians Middle	Palmer Pillans Middle Sch.	2051 Military Rd.	Mobile	36605
 13137	AR	JEFFERSON	54	Sulphur Springs Methodist Church	9238 Sulphur Springs	Pine Bluff	71603
 13138	OK	CUSTER	Precinct 200026	Butler Citizens Center	Corner Highways 33 & 44	Butler	73625
-13139	VT	NA	Sharon Elementary Sch	Sharon Elementary School	75 VT Route 132	Sharon	05065
+13139	VT	FREDERICK	Sharon Elementary Sch	Sharon Elementary School	75 VT Route 132	Sharon	05065
 13140	GA	FULTON	11j	CONTINENTAL COLONY ELEM SCHOOL	3181 HOGAN ROAD	ATLANTA	30331
 13141	TN	CLAIBORNE	Ntz	Tnt School	501 Davis St	New Tazewell	37825
 13142	AR	BENTON	Precinct 04	Decatur Municipal Building	310 Maple Street	Decatur	72722
@@ -13201,9 +13201,9 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 13198	MA	BRISTOL	Dartmouth 02	SMITH MILLS CHURCH HALL	11 ANDERSON WAY	DARTMOUTH	02747
 13199	GA	BEN HILL	1	MONITOR AUDITORIUM	502 S MONITOR DRIVE	FITZGERALD	31750
 13200	MN	DOUGLAS	La Grand Twp.	Alexandria Technical and Community College	1601 Jefferson St	Alexandria	56308
-13201	VT	NA	Manchester Town Hall	Manchester Town Hall	6039 Main Street	Manchester	05255
+13201	VT	MONTGOMERY	Manchester Town Hall	Manchester Town Hall	6039 Main Street	Manchester	05255
 13202	AR	JEFFERSON	112	Sahara Temple (Dining Room)	Ninth at Main	Pine Bluff	71601
-13203	VT	NA	East Haven Community Bldg	Community Building	64 Community Building Road	East Haven	05837
+13203	VT	SUFFOLK	East Haven Community Bldg	Community Building	64 Community Building Road	East Haven	05837
 13204	VA	FAIRFAX	118 - Lake Braddock	LAKE BRADDOCK SEC SCHOOL	9200 Burke Lake Rd	Burke	22015
 13205	VA	NEWPORT NEWS CITY	210 - Nelson	R O  NELSON ELEM SCHOOL	826 Moyer Rd	Newport News	23608
 13206	AR	HOT SPRING	Henderson	Oma Community Church	5065 Amity Road	Pearcy	71964
@@ -13244,7 +13244,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 13241	AR	FAULKNER	3d Conway City	Grace Methodist Church	1075 HOGAN LN	CONWAY	72034
 13242	GA	STEPHENS	Sc1	STEPHENS COUNTY SENIOR CENTER	55 ROSE LANE PARK DR	TOCCOA	30577
 13243	OK	OKLAHOMA	Precinct 550213	Sacred Heart Church	2706 S Shartel Ave	Oklahoma City	73109
-13244	VT	NA	Bridport Community Hall	Community/Masonic Hall	82 Middle Road	Bridport	05734
+13244	VT	TULSA	Bridport Community Hall	Community/Masonic Hall	82 Middle Road	Bridport	05734
 13245	OK	PAYNE	Precinct 600407	Spring Valley Church	619 S. Fairgrounds Road	Stillwater	74075
 13246	MN	RAMSEY	St. Paul W-1 P-06	Capitol Hill Gifted and Talented Magnet	560 Concordia Ave	Saint Paul	55103
 13247	VA	PRINCE WILLIAM	507 - Chinn	CHINN LIBRARY	13065 Chinn Park Dr	Woodbridge	22192
@@ -13280,7 +13280,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 13277	GA	LINCOLN	03-A	FAITH TEMPLE OF LINCOLNTON	1437 LEATHERSVILLE ROAD	LINCOLNTON	30817
 13278	AR	MARION	Precinct 30	Creekside Health & Rehab	620 N. Panther	Yellville	72687
 13279	MN	RICE	Faribault P-3	Faribault Middle School	704 17th Street SW	Faribault	55021
-13280	VT	NA	Wolcott Town Office	Wolcott Elementary School	30 School Hill Drive	Wolcott	05680
+13280	VT	LOUISA	Wolcott Town Office	Wolcott Elementary School	30 School Hill Drive	Wolcott	05680
 13281	OK	COMANCHE	Precinct 160036	Medicine Park Town Hall	154 E Lake Drive	Medicine Park	73557
 13282	TN	DAVIDSON	503	Eastland Baptist Church	1215 Gallatin Av	Nashville	37206
 13283	VA	CHARLOTTE	701 - Bacon	BACON DISTRICT ELEMENTARY SCHOOL	840 BACON SCHOOL ROAD	SAXE	23967
@@ -13318,7 +13318,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 13315	AL	LAWRENCE	28-1 Speake Fire Dept	SPEAKE/OAKVILLE 28	6449 CO RD 81 DANVILLE	DANVILLE	35619
 13316	MA	HAMPDEN	Holyoke W05b	MAURICE A. DONAHUE SCHOOL	210 WHITING FARMS RD	HOLYOKE	01040
 13317	MN	DAKOTA	Burnsville P-10	Eagan High School Room 116	4185 Braddock Trail	Eagan	55123
-13318	VT	NA	Townshend Town Hall	Townshend Town Hall	2006 VT Route 30	Townshend	05353
+13318	VT	LAWRENCE	Townshend Town Hall	Townshend Town Hall	2006 VT Route 30	Townshend	05353
 13319	GA	COBB	Ke3a	BEN ROBERTSON COMMUNITY CENTER	2753 WATTS DR.	KENNESAW	30144
 13320	VA	MANASSAS PARK CITY	001 - Precinct One	MANASSAS PARK HIGH SCHOOL	8200 Euclid Ave	Manassas Park	20111
 13321	OK	OKLAHOMA	Precinct 550172	Covenant Life Church	3106 N Utah Ave	Oklahoma City	73112
@@ -13504,7 +13504,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 13501	OK	ADAIR	Precinct 010003	Proctor Community Building	Gen Del	Proctor	74457
 13502	GA	DEKALB	Bh	MOUNT MORIAH BAPTIST CHURCH	1983 BROCKETT ROAD	TUCKER	30084
 13503	OK	POTTAWATOMIE	Precinct 630040	Maud Community Center	310 W Main	Maud	74854
-13504	VT	NA	Shoreham Town Office	Town Offices	297 Main Street	Shoreham	05770
+13504	VT	HENRY	Shoreham Town Office	Town Offices	297 Main Street	Shoreham	05770
 13505	AL	CULLMAN	Precinct 0172	Friendship Methodist Church	2686 Co Rd 1212	Vinemont	35179
 13506	AL	TUSCALOOSA	Stillman College (Hays Center)	Stillman College (Hays Center)	3600 Stillman Blvd	Tuscaloosa	35401
 13507	GA	MONTGOMERY	1	CITY OF AILEY'S OLD ROSENWALD SCHOOL	324 N PINE ST	AILEY	30410
@@ -13526,7 +13526,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 13523	GA	CHEROKEE	43	THE WOODLANDS CLUBHOUSE	800 WOODLAND PKWY	WOODSTOCK	30188
 13524	AL	MONROE	Precinct 1452 Cole A Of God Ch	COLEMAN ASSEMBLY OF GOD CHURCH	4124 N BUTLER ST.	FRISCO CITY	36445
 13525	MA	HAMPDEN	West Springfield 07	W.S. MIDDLE SCHOOL	31 MIDDLE SCHOOL DRIVE	WEST SPRINGFIELD	01089
-13526	VT	NA	Walden Town Clerk's Office	Walden School	135 Cahoon Farm Road	Walden	05873
+13526	VT	JEFFERSON	Walden Town Clerk's Office	Walden School	135 Cahoon Farm Road	Walden	05873
 13527	GA	DEKALB	Rg	ROWLAND ELEMENTARY SCHOOL	1317 S INDIAN CREEK DR	STONE MOUNTAIN	30083
 13528	GA	OGLETHORPE	Lx	FAMILY MINISTRY CENTER	118 N PLATT ST	LEXINGTON	30648
 13529	TN	FRANKLIN	701	North Lake Elementary School	10626 Old Tullahoma Hwy.	Tullahoma	37388
@@ -13588,7 +13588,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 13585	AL	JEFFERSON	Precinct 2100	MEMORIAL RECREATION CENTER	524 6TH AVE S	BIRMINGHAM	35205
 13586	AL	WALKER	Precinct 2201	Parrish High Gym	35 Tornado Alley	Parrish	35580
 13587	MA	BRISTOL	Dartmouth 09	RUSSELLS MILLS ENG. HOUSE	1100 RUSSELLS MILLS RD	DARTMOUTH	02748
-13588	VT	NA	Fairlee Town Hall	Samuel Morey Elementary School Gym	214 School Street	Fairlee	05045
+13588	VT	POTTAWATOMIE	Fairlee Town Hall	Samuel Morey Elementary School Gym	214 School Street	Fairlee	05045
 13589	AR	SALINE	29	Ten Mile Baptist Church	17511 Church Rd	Lonsdale	72087
 13590	VA	CHESAPEAKE CITY	035 - Taylor Road	PARK VIEW CHRISTIAN CHURCH	3201 Western Branch Blvd	Chesapeake	23321
 13591	AR	SHARP	Piney Fork	Faith Assembly of God Church	2186 Hwy 167	Evening Shade	72532
@@ -13622,7 +13622,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 13619	VA	DINWIDDIE	401 - Dinwiddie	DINWIDDIE COUNTY MIDDLE SCHOOL	11608 Courthouse Road	Dinwiddie	23841
 13620	AR	WHITE	17 - Clay	Pineview Church Of Christ	372 Hwy 305	Pangburn	72121
 13621	AR	MONROE	13 - Clarendon Ward 3	First Presbyterian Church	220 N. Main Street	Clarendon	72029
-13622	VT	NA	Barre City Auditorium	Civic Center Auditorium	20 Auditorium Hill	Barre City	05641
+13622	VT	CHEROKEE	Barre City Auditorium	Civic Center Auditorium	20 Auditorium Hill	Barre City	05641
 13623	AL	MORGAN	W Morgan E Lawrence Water Auth	West Morgan East Lawrence Water & Sewer	2547 Kirby Bridge Rd	Decatur	35603
 13624	OK	MUSKOGEE	Precinct 510009	Chandler Rd Church Of Christ	3507 Chandler Rd	Muskogee	74403
 13625	AR	PULASKI	Precinct 045	Jacksonville Senior Center	100 Victory Circle	Jacksonville	72076
@@ -13823,7 +13823,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 13820	GA	COWETA	23	CANNONGATE SCHOOL	200 PETE RD	SHARPSBURG	30277
 13821	AL	BLOUNT	Precinct 1501	Cleveland Town Hall	62732 US Hwy 231	Cleveland	35049
 13822	AR	MILLER	Sugar Hill	Sugar Hill United Meth Church	1621 Sugar Hill Rd	Texarkana	71854
-13823	VT	NA	Newark Town Clerks Off	Newark Street School	1448 Newark St.	Newark	05871
+13823	VT	COMANCHE	Newark Town Clerks Off	Newark Street School	1448 Newark St.	Newark	05871
 13824	MN	HENNEPIN	Minneapolis W-6 P-06	Phillips Community Center Dining Room	2323 11th Ave S	Minneapolis	55404
 13825	GA	DEKALB	Sm	SALEM MIDDLE SCHOOL	5333 SALEM ROAD	LITHONIA	30038
 13826	OK	ADAIR	Precinct 010005	Rocky Mtn Community Church	Rr 1 Box 730	Stilwell	74960
@@ -13889,13 +13889,13 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 13886	AR	BENTON	Precinct 03	Monte NE Baptist Church	1610 Monte Ne Rd	Rogers	72758
 13887	AL	MARION	Precinct 0098	Craft Community Center	7109 County Hwy 19	Haleyville	35565
 13888	GA	FULTON	Ss05	SANDY SPRINGS UNITED METH. CH.	86 MOUNT VERNON HWY NW	ATLANTA	30328
-13889	VT	NA	Middletown Springs Fire House	Firehouse	8 Firehouse Lane	Middletown Springs	05757
+13889	VT	DELAWARE	Middletown Springs Fire House	Firehouse	8 Firehouse Lane	Middletown Springs	05757
 13890	GA	BROOKS	660	MORVEN CITY HALL	178 2ND ST	MORVEN	31638
 13891	TN	MACON	8	Red Boiling Springs High	415 Hillcrest Street	Red Boiling Springs	37150
 13892	AL	SUMTER	Precinct 0802	Boyd Voting Trailer	8181 Carl Turk 12	Boyd	35470
 13893	GA	DEKALB	Mq	ALL SAINTS CATHOLIC CHURCH	2443 MT VERNON ROAD	DUNWOODY	30338
 13894	VA	STAFFORD	303 - Harbour	AQUIA HARBOUR COUNTRY CLUB	204 Bow Cv	Stafford	22554
-13895	VT	NA	Glover Town Clerks Off	Glover Town Hall	3018 Glover Street	Glover	05839
+13895	VT	GLOUCESTER	Glover Town Clerks Off	Glover Town Hall	3018 Glover Street	Glover	05839
 13896	MA	SUFFOLK	Boston W19 P05	COLLINS APARTMENTS	29 POND STREET	BOSTON	02113
 13897	OK	CUSTER	Precinct 200003	Cumberland Presbyterian Church	500 South 30Th Street	Clinton	73601
 13898	AL	TALLAPOOSA	Precinct 1501	1501/1502 MT LOVELY BAPTIST CHURCH	21900 SEN CLAUDE PEPPER DR	CAMP HILL	36850
@@ -13906,7 +13906,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 13903	GA	WAYNE	03b	GARDI COMMUNITY CENTER	90 GARDI RD	JESUP	31546
 13904	VA	RICHMOND CITY	310 - Three Hundred Ten	Calhoun Center	436 Calhoun Street	Richmond	23220
 13905	AR	CLEBURNE	23 - East Peter Creek	Ida Fire Department	339 Center Ridge Road	Drasco	72530
-13906	VT	NA	Concord Town Hall	Concord Town Hall	456 Main Street	Concord	05824
+13906	VT	HENRY	Concord Town Hall	Concord Town Hall	456 Main Street	Concord	05824
 13907	VA	CHESTERFIELD	103 - Enon	ELIZABETH DAVIS MIDDLE SCHOOL	601 Corvus Court	Chester	23836
 13908	OK	DELAWARE	Precinct 210012	Zena Community Center	36000 S 575 Rd	Jay	74346
 13909	AL	ESCAMBIA	Precinct 0330	Nokomis - Volunteer Fire Department	162 James Road	Atmore	36502
@@ -13945,7 +13945,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 13942	MA	NORFOLK	Weymouth 09	MURPHY SCHOOL	417 FRONT STREET	WEYMOUTH	02188
 13943	AR	LAFAYETTE	100 - Walker Creek	WALKER CREEK COMMUNITY CENTER	5811 Hwy. 53	Taylor	71861
 13944	MA	WORCESTER	Milford 08	PORTUGUESE CLUB INC	119 PROSPECT HEIGHTS	MILFORD	01757
-13945	VT	NA	Montpelier City Hall	Montpelier City Hall	39 Main Street	Montpelier	05602
+13945	VT	CRAIG	Montpelier City Hall	Montpelier City Hall	39 Main Street	Montpelier	05602
 13946	TN	ANDERSON	Ros	Scotty Phillips Grocery	6441 New River Highway	Briceville	37710
 13947	OK	WASHITA	Precinct 750020	Colony Community Building	Main Street	Colony	73021
 13948	OK	CHEROKEE	Precinct 110007	First United Methodist Church	301 W Delware St	Tahlequah	74464
@@ -13990,7 +13990,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 13987	AR	BOONE	District 6	Bergman City Hall	272 Main Street East	Bergman	72601
 13988	AL	JEFFERSON	Precinct 4140	LEEDS CIVIC CENTER	1000 PARK DR	LEEDS	35094
 13989	AR	MISSISSIPPI	1-Dec	Gosnell School	600 St Hwy 181	Blytheville	72315
-13990	VT	NA	Strafford Town House	Strafford Town Hall	 227 Justin Morrill Memorial Hwy	Strafford	05072
+13990	VT	DANVILLE CITY	Strafford Town House	Strafford Town Hall	 227 Justin Morrill Memorial Hwy	Strafford	05072
 13991	CO	DOLORES	3065817002	Cahone Senior Center	14018 US-491	Cahone	81320
 13992	VA	WYTHE	402 - Max Meadows	MAX MEADOWS RURITAN CLUB	106 CLARK AVE	MAX MEADOWS	24360
 13993	VA	FAIRFAX	106 - Heritage	BRADDOCK ELEMENTARY SCHOOL	7825 Heritage Dr	Annandale	22003
@@ -14048,7 +14048,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 14045	AR	CLEVELAND	15 - Whiteoak	Y Community Center	8000 Hwy 35 N	Rison	71665
 14046	MN	OLMSTED	Quincy Twp.	Dover-Eyota High School Room 203	615 South Ave SW	Eyota	55934
 14047	MN	WILKIN	Breckenridge P-1	Breckenridge Public Library	205 7th St N	Breckenridge	56520
-14048	VT	NA	South Burlington Orchard Sch	Orchard School	2 Baldwin Avenue	South Burlington	05403
+14048	VT	NOWATA	South Burlington Orchard Sch	Orchard School	2 Baldwin Avenue	South Burlington	05403
 14049	AL	TALLADEGA	Precinct 0501	Brecon Rec Center	1001 Horne Drive	Talladega	35160
 14050	VA	PRINCE WILLIAM	103 - Glenkirk	GLENKIRK ELEMENTARY SCHOOL	8584 Sedge Wren Dr	Gainesville	20155
 14051	VA	HAMPTON CITY	104 - Cooper	COOPER ELEM SCHOOL	200 Marcella Rd	Hampton	23666
@@ -14060,7 +14060,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 14057	AL	LIMESTONE	Lamb Of God Lutheran Church	Lamb of God Lutheran Church	11716 County Line Road	Madison	35756
 14058	MN	WRIGHT	Delano	Delano Middle School	700 Elm Ave	Delano	55328
 14059	AL	LAWRENCE	7-1 Donald Baptist Church	DONALD CHURCH 7	13851 AL HWY 101	TOWN CREEK	35672
-14060	VT	NA	Brandon Neshobe Sch	Neshobe School	17 Neshobe Circle	Brandon	05733
+14060	VT	DEKALB	Brandon Neshobe Sch	Neshobe School	17 Neshobe Circle	Brandon	05733
 14061	OK	SEQUOYAH	Precinct 680101	Muldrow Cherokee Comm. Bldg Pp	603 N. Main	Muldrow	74948
 14062	TN	OVERTON	303	Dry Hollow Fire Hall	580 Dry Hollow Road	Monterey	38574
 14063	GA	DEKALB	Sd	STONE MOUNTAIN ELEMENTARY SCH	6720 JAMES B RIVERS DR	STONE MOUNTAIN	30083
@@ -14090,7 +14090,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 14087	VA	STAFFORD	401 - Aquia	UFCM Church - Auxiliary Bldg	60 Susa Dr (Unit 111)	Stafford	22554
 14088	MN	GRANT	Elbow Lake	Elbow Lake Community Center	115 Central Ave N	Elbow Lake	56531
 14089	TN	PICKETT	Mvl	Moodyville	2975 Moodyville Rd	Byrdstown	38549
-14090	VT	NA	Coventry Community Ctr	Coventry Community Center	168 Main Street	Coventry	05825
+14090	VT	WILCOX	Coventry Community Ctr	Coventry Community Center	168 Main Street	Coventry	05825
 14091	OK	STEPHENS	Precinct 690062	Corum Assembly Of God Church	150 Comanche Dr	Comanche	73529
 14092	GA	CLARKE	02a	JUDIA J. HARRIS ELEM. SCHOOL	2300 DANIELSVILLE ROAD	ATHENS	30601
 14093	OK	OKLAHOMA	Precinct 550077	True Vine Ministries Inc	3701 Spencer Rd	Spencer	73084
@@ -14100,7 +14100,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 14097	OK	TULSA	Precinct 720155	Christ Church Episcopal	10901 S Yale Ave	Tulsa	74137
 14098	GA	PULASKI	Annex	COMMUNITY SERVICE BLDG.	45 NORTH LUMPKIN ST	HAWKINSVILLE	31036
 14099	AR	DESHA	20 - Silver Lake	Daniels Chapel Church	5753 Highway 1 North	Dumas	71639
-14100	VT	NA	Grafton Town Hall	Grafton Elementary School	58 School Street	Grafton	05146
+14100	VT	HENRY	Grafton Town Hall	Grafton Elementary School	58 School Street	Grafton	05146
 14101	GA	GWINNETT	134	CHESTNUT GROVE BAPTIST CHURCH	2299 ROSEBUD RD	GRAYSON	30017
 14102	VA	PRINCE WILLIAM	706 - Rippon	RIPPON MIDDLE SCHOOL	15101 Blackburn Rd	Woodbridge	22191
 14103	MN	WABASHA	Mazeppa Twp.	Zumbrota/Mazeppa Elementary School	343 3rd Ave NE	Mazeppa	55956
@@ -14171,7 +14171,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 14168	MN	HENNEPIN	Minneapolis W-1 P-03	NE Middle School - Cafeteria	2855 Hayes St NE	Minneapolis	55418
 14169	VA	TAZEWELL	401 - Richlands	RICHLANDS POLICE DEPARTMENT	1851 Cranwell Dr	Richlands	24641
 14170	MN	ST LOUIS	Duluth P-23	Kirby Student Center Room 355	1120 Kirby Drive	Duluth	55812
-14171	VT	NA	Whiting Town Hall	Whiting Town Hall	29 S. Main Street	Whiting	05778
+14171	VT	CHESTERFIELD	Whiting Town Hall	Whiting Town Hall	29 S. Main Street	Whiting	05778
 14172	GA	EARLY	A	ROWENA COMMUNITY HOUSE	13750 HWY 45	ARLINGTON	39813
 14173	VA	HENRICO	416 - Spottswood	GROVE AVENUE BAPTIST CHURCH	8701 Ridge Rd	Richmond	23229
 14174	GA	EFFINGHAM	04a	SPRINGFIELD METH FAM LIFE CTR	101 CLEVELAND ST	SPRINGFIELD	31329
@@ -14179,7 +14179,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 14176	GA	GWINNETT	81	WESTMINSTER PRESBYTERIAN	2208 MAIN ST E	SNELLVILLE	30078
 14177	GA	DEKALB	Pg	FIRST CHRISTIAN CHURCH	601 W PONCE DE LEON AVE	DECATUR	30030
 14178	MA	SUFFOLK	Boston W19 P06	BOWDITCH SCHOOL BUILDING	82 GREEN STREET	Boston	02130
-14179	VT	NA	Hyde Park Town Ofc Bldg	Lamoille Union High School	736 VT 15 W	Hyde Park	05655
+14179	VT	Orange	Hyde Park Town Ofc Bldg	Lamoille Union High School	736 VT 15 W	Hyde Park	05655
 14180	AL	LAUDERDALE	Florence High School	Florence High School	1201 Bradshaw Drive	Florence	35630
 14181	VA	CHESTERFIELD	402 - Genito	PROVIDENCE ELEMENTARY SCHOOL	11001 W Providence Rd	Richmond	23236
 14182	OK	ADAIR	Precinct 010019	First United Methodist Church	Bushyhead Heights 900 Taft	Westville	74965
@@ -14198,7 +14198,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 14195	GA	COBB	Pm02	BURNT HICKORY CHURCH OF CHRIST	2330 BURNT HICKORY ROAD	MARIETTA	30064
 14196	GA	HARALSON	4	ANTIOCH BAPTIST CHURCH	1055 OLD HWY 100	WACO	30182
 14197	AR	PULASKI	Precinct 025	Indian Hills Church	6801 JFK Blvd	N Little Rock	72116
-14198	VT	NA	Newbury Center Town Hall	Newbury Village Hall (Newbury Elementary School Gym)	214 Pulaski Street	Newbury	05051
+14198	VT	DESHA	Newbury Center Town Hall	Newbury Village Hall (Newbury Elementary School Gym)	214 Pulaski Street	Newbury	05051
 14199	TN	LAWRENCE	502	Gandy Fire Hall	792 West Point Rd	Lawrenceburg	38464
 14200	TN	SUMNER	703	Long Hollow Baptist Church	3031 Long Hollow Pk	Hendersonville	37075
 14201	AL	JEFFERSON	Precinct 4110	PINSON UNITED METHODIST CHURCH	4507 BUD HOLMES RD	PINSON	35126
@@ -14323,7 +14323,7 @@ COPY polling_location (id, state_code, county, precinct_name, pollinglocation, p
 14320	VA	HARRISONBURG CITY	104 - East	SMITHLAND ELEMENTARY SCHOOL	474 LINDA LANE	HARRISONBURG	22802
 14321	VA	CULPEPER	501 - Jeffersonton	JEFFERSONTON BAPTIST CHURCH	18498 Springs Rd	Jeffersonton	22724
 14322	AL	JEFFERSON	Precinct 2240	FIRE DEPARTMENT ADMINISTRATIVE BLDG	1101 2ND AVE N	BESSEMER	35020
-14323	VT	NA	Fairfield Municipal Bldg	Veterans Hall-Fairfield Center School Gym	57 Park Street	Fairfield	05455
+14323	VT	COWETA	Fairfield Municipal Bldg	Veterans Hall-Fairfield Center School Gym	57 Park Street	Fairfield	05455
 14324	MA	ESSEX	Lawrence Wd P03	ESSEX TOWERS	45 BROADWAY	LAWRENCE	01840
 14325	OK	WASHINGTON	Precinct 740027	Trinity Baptist Church	1500 Sw Oak Ave	Bartlesville	74003
 14326	MN	MEEKER	Dassel Twp.	Dassel Elementary School	131 Williams Ave E	Dassel	55325
