@@ -56,7 +56,7 @@ export default class CaucusReport extends Submitable {
             </label>
           </div>
           <TimeSelect />
-          <label><button type="submit">Submit</button></label>
+          <label><button disabled={this.state.submitting} type="submit">Submit</button></label>
         </form>
       </div>
     );
