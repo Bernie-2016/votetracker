@@ -53,14 +53,14 @@ export default class OfficialReport extends Submitable {
         <h2>Official Results</h2>
         <form ref={this.trackForm}>
           <input type="hidden" value="official" name="report_type" />
-          <label>Select a State
+          <label>Select a State:
             <select name="state"><option value="">---Select a State---</option>{states.map(state => { // eslint-disable-line
               return <option value={state.state_code} key={state.state_code}>{state.name}</option>; // eslint-disable-line
             })}</select>
           </label>
 
           <div hidden={!this.state.state}><label>
-            Select a County
+            Select a County:
             <select name="county">
               <option value="">---Select a County---</option>
               {counties.map(county => { // eslint-disable-line
@@ -76,19 +76,19 @@ export default class OfficialReport extends Submitable {
                 <option>Number of Votes</option>
               </select>
             </label>
-            <label>Sanders Votes
+            <label>Sanders Votes:
               <input type="number" name="sanders_votes" />
             </label>
-            <label>Clinton Votes
+            <label>Clinton Votes:
               <input type="number" name="clinton_votes" />
             </label>
-            <label>Other Votes
+            <label>Other Votes:
               <input type="number" name="other_votes" />
             </label>
-            <label>Percent Reporting
+            <label>Percent Reporting:
               <input type="number" name="percent_reporting" />
             </label>
-            <label>Source Attribution
+            <label>Source Attribution:
               <textarea name="attribution" />
             </label>
             <TimeSelect />

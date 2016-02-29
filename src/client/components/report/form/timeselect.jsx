@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TimeSelect = () => (
-  <label>How Recent is this Report
+  <label>How recent is this report?
     <select name="report_age">
       <option value="0">Right Now</option>
       <option value="30">30 minutes ago</option>

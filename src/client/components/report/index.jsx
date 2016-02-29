@@ -46,7 +46,7 @@ export default class Report extends Component {
           <Link to="/">Back home</Link>
         </div>
         <div className="select-county" hidden={loading || error}>
-          <h2>Please Select your County</h2>
+          <h2>Select your County:</h2>
           <Menu items={counties}
             makeLink={county => `/report/${this.props.params.state}/${county}/`} // eslint-disable-line
             renderItem={county => `${county}`} // eslint-disable-line

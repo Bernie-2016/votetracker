@@ -15,7 +15,7 @@ export default class PrimaryReport extends Submitable {
             <option value="total">Total Ballots</option>
           </select>
         </label>
-        <label>Ballots Cast
+        <label>Ballots Cast:
           <input type="number" name="ballots_cast" />
         </label>
         <TimeSelect />
