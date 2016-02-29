@@ -14,13 +14,16 @@
 body
   margin: 0
   font-weight 300
-  font-family: freight
   overflow-y scroll
-  background-color #f4f4f4
+  background-color #fff
+  font-family: helvetica
 
-a
-  text-decoration: none
-  color: #000
+  a
+    text-decoration: none
+    color: #0076D7
+
+    &:hover
+      color: #74C1FF
 
 h1, h2, h3, h4
   margin: 0
@@ -28,6 +31,17 @@ h1, h2, h3, h4
   font-family: jubilat
   color: rgba(10, 10, 10, 1)
 
+ul.menu
+  margin: 0 auto
+  width: 90%
+
+  a
+    background: #fff
+    border: 1px solid #ccc
+    width: 100%
+
+form
+  font-family: freight
 
 .logo
   float: left
@@ -61,6 +75,7 @@ header
   border-bottom: 1px solid #eeeeee
   background-image: none
   z-index: 0
+  font-family: freight
 
   h1
     padding: 0 1em
@@ -83,6 +98,7 @@ footer
   background-color: #fff
   letter-spacing: .1em
   text-transform: uppercase
+  font-family: freight
 
   .address
     clear: both
@@ -109,4 +125,3 @@ footer
 
   span.copyright
     margin-right: 5px
-    color: $text
