@@ -41,7 +41,7 @@ export default class SimpleMenu extends Component {
       renderItem = match => {
         const parts = match.string.replace('§§', '').split('§');
         const html = (<span>{parts.map((part, index) => (
-          index % 2 ? <strong key={index}>{part}</strong> : <span key={index}>{part}</span>)
+          index % 2 ? <span class="search-match" key={index}>{part}</span> : <span key={index}>{part}</span>)
         )}</span>);
         return html;
       };
