@@ -15,7 +15,7 @@ required features may not be available in older versions.
   - Install `ansible` via apt (Ubuntu), yum (Fedora), [homebrew][homebrew] (OS
     X), etc. See the [Ansible installation
     instructions](http://docs.ansible.com/intro_installation.html) for detailed,
-    platform-specific information.
+    platform-specific information.  If you don't end up with version 2, try `easy_install pip` and `pip install ansible`.
 * **[VirtualBox](https://www.virtualbox.org/)**
   - [Download](https://www.virtualbox.org/wiki/Downloads) (All platforms)
   - Install `virtualbox` via [homebrew cask][cask] (OS X)
