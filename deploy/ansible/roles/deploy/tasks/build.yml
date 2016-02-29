@@ -27,6 +27,8 @@
 
 - name: fixtures
   shell: "echo {{clone_path}}/fixtures/*.sql | psql -U postgres votetracker"
+  args:
+      chdir: "{{clone_path}}"
 
 - name: build production version
   shell: npm run build

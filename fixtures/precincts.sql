@@ -1,3 +1,5 @@
+TRUNCATE precincts;
+
 COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 1	SC	YORK	HOLLIS LAKES
 2	AL	SHELBY	Precinct 01
