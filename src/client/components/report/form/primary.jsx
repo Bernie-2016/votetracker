@@ -19,7 +19,7 @@ export default class PrimaryReport extends Submitable {
           <input type="number" name="ballots_cast" />
         </label>
         <TimeSelect />
-        <label><button type="submit">Submit</button></label>
+        <label><button type="submit" disabled={this.state.submitting}>Submit</button></label>
         </form>
       </div>
     );
