@@ -23,13 +23,9 @@ export default class SubmitableForm extends Component {
     switch (data.report_type) {
       case 'caucus':
         {
-          const fields = ['phase', 'sanders_supporters', 'clinton_supporters', 'other_supporters',
-            'sanders_delegates', 'clinton_delegates', 'other_delegates'];
-          const finalFields = ['sanders_delegates', 'clinton_delegates', 'other_delegates'];
-
-          fields.forEach((elem) => {
+          this.state.caucusFields.forEach((elem) => {
             // check for all fields
-            const isInFinalForm = (finalFields.indexOf(elem) > -1);
+            const isInFinalForm = (this.state.caucusFinalFields.indexOf(elem) > -1);
 
             // if values doesn't exist and it's not in final form
             // ( or it is in final form and that form is on), it's invalid
@@ -51,8 +47,7 @@ export default class SubmitableForm extends Component {
         }
       case 'primary':
         {
-          const fields = ['type', 'ballots_cast', 'report_age'];
-          fields.forEach((elem) => {
+          this.state.primaryFields.forEach((elem) => {
             // check for all fields
             if (!data[elem]) {
               errorMessage[elem] = 'This field is required.';
@@ -70,6 +65,27 @@ export default class SubmitableForm extends Component {
           });
           break;
         }
+      case 'official':
+        {
+          this.state.officialFields.forEach((elem) => {
+            // check for all fields
+            if (!data[elem]) {
+              errorMessage[elem] = 'This field is required.';
+              isInvalid = true;
+            }
+
+            // check votes and percent for numeric values
+            const isNumberInput = (this.state.officialNumberFields.indexOf(elem) > -1);
+            if (data[elem] && isNumberInput) {
+              const value = parseInt(data[elem], 16);
+              if (typeof value !== 'number' || value < 0) {
+                errorMessage[elem] = 'This value must be a positive number.';
+                isInvalid = true;
+              }
+            }
+          });
+          break;
+        }
       default:
         return isInvalid;
     }
@@ -77,7 +93,7 @@ export default class SubmitableForm extends Component {
     if (Object.getOwnPropertyNames(errorMessage).length !== 0) {
       this.errored(errorMessage);
     } else {
-      this.reportErrors(errorMessage);
+      this.reportErrorMessages(errorMessage);
     }
 
     return isInvalid;
@@ -100,7 +116,7 @@ export default class SubmitableForm extends Component {
   }
 
   errored(message = null) {
-    this.setState({ error: true, submitting: false });
+    this.setState({ error: true, submitting: false, submitted: false });
     this.reportErrorMessages(message);
   }
 

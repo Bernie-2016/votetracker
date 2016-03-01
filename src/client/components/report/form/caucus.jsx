@@ -19,6 +19,11 @@ export default class CaucusReport extends Submitable {
         'clinton_delegates',
         'other_delegates',
       ],
+      caucusFinalFields: [
+        'sanders_delegates',
+        'clinton_delegates',
+        'other_delegates',
+      ],
       errorMessages: {
         phase: null,
         sanders_supporters: null,
@@ -128,7 +133,9 @@ export default class CaucusReport extends Submitable {
               <span className="error-message">{this.state.errorMessages.other_delegates}</span>
             </label>
           </div>
-          <TimeSelect />
+          <TimeSelect error={this.state.errorMessages.report_age}
+            className={this.state.errorClasses.report_age}
+          />
           <ContactInfo />
           <label>
             <button disabled={this.state.submitting} type="submit">Submit</button>
