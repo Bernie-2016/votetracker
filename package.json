@@ -20,6 +20,7 @@
     "start-api": "node src/server"
   },
   "dependencies": {
+    "array-find": "^1.0.0",
     "babel-cli": "^6.4.5",
     "babel-core": "^6.4.5",
     "babel-loader": "^6.2.1",
