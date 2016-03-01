@@ -9,8 +9,8 @@ const insert = (table, data) => {
   return db.query(query, data);
 };
 
-const getFloatTime = () => {
-  const now = moment();
+const getFloatTime = reportAge => {
+  const now = moment().subtract(reportAge, 'minutes');
   return now.hours() + Math.floor(now.minutes() / 30) / 2;
 };
 
@@ -33,7 +33,7 @@ const submit = {
       sanders_delegates: +req.body.sanders_delegates || 0,
       clinton_delegates: +req.body.clinton_delegates || 0,
       other_delegates: +req.body.other_delegates || 0,
-      float_time: getFloatTime(),
+      float_time: getFloatTime(+req.body.report_age || 0),
       ip: getIp(req),
       contact_info: req.body.contact_info || '',
     };
