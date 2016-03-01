@@ -15,6 +15,10 @@ import ReportRoute from './components/report/route';
 
 import './components/layout/images/favicon.ico';
 
+browserHistory.listen(location => {
+  if (typeof window.ga === 'function') window.ga('send', 'pageview', location.pathname);
+});
+
 const routes = (
   <ApiProvider>
     <Router history={ browserHistory }>

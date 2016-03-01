@@ -41,6 +41,9 @@ export default class SubmitableForm extends Component {
     }
     submitData.client_id = window.clientId;
     submitData.location_id = this.props.params.location;
+    if (typeof window.ga === 'function') {
+      window.ga('send', 'event', 'report', submitData.report_type);
+    }
     superagent.post('/api/report')
       .send(submitData)
       .set('Accept', 'application/json')
