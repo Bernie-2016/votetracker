@@ -9,7 +9,9 @@ const HowToPrimary = () => (
     <p>When they give you the totals, ask:</p>
     <p>Does this include early vote or absentee ballots?</p>
     <p>Does this cover multiple precincts? If so, which ones?</p>
-    <p>Questions? Check out our <Link to="/faq">FAQs.</Link></p>
+    <p>First, you'll be asked to select your county.
+      Then select your polling location, and fill out the following form.</p>
+    <p>Questions? Check out our <Link to="/faq">FAQ.</Link></p>
   </div>
 );
 

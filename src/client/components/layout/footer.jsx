@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router';
+
 import svg from './images/billionaires-2x.png';
 
 const Footer = () => (
   <div className="footer-offset">
     <footer>
+      <h5>Questions? Check out our <Link to="/faq">FAQ.</Link></h5>
       <p className="address">Bernie 2016<br />PO Box 905<br />Burlington, VT 05402</p>
       <p className="site-title">Paid for by Bernie 2016</p>
       <span className="billionaires">

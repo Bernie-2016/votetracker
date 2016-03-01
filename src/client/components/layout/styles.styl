@@ -75,6 +75,29 @@ input
   appearance: none
   border: 1px solid #eee
 
+button
+  padding: .6em 1.6em;
+  display: block;
+  background: #0076D7;
+  color: #fff;
+  font-family: jubilat;
+  border-radius: 2px;
+  line-height: 15px;
+  width: 15%;
+  text-align: center;
+
+  &:hover {
+    background: #004D8B;
+    color: #fff;
+  }
+
+  &::after {
+    clear: both;
+    content: '';
+    width: 0; height: 0;
+    display: block;
+  }
+
 .logo
   float: left
   background-size: 135px 57px
@@ -127,7 +150,6 @@ header
 
 footer
   text-align: center
-  background-color: #fff
   letter-spacing: .1em
   text-transform: uppercase
   font-family: freight

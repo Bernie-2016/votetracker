@@ -61,6 +61,15 @@ export default class OfficialReport extends Submitable {
       <div className="official report">
         <h2>Official Results</h2>
         <form ref={this.trackForm} onChange={this.stateChange}>
+        <h5>Thank you so much for what you’re doing.</h5>
+        <p>This page is designed to take multiple results from several counties, across states
+          without having to refresh or reload.</p>
+        <p>Put in the either the total number of votes or the percentages for any one report.</p>
+        <p>If you’ve been assigned a county where we’re requesting precinct information, please
+          send those over as well.</p>
+        <p>It’s recommended to have multiple sources (one government and one news source), and to
+          select whichever one updates more quickly.</p>
+        <form ref={this.trackForm}>
           <input type="hidden" value="official" name="report_type" />
           <label>Select a State:
             <select name="state"><option value="">---Select a State---</option>{states.map(state => { // eslint-disable-line
