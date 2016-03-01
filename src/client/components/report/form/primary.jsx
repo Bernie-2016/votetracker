@@ -42,7 +42,7 @@ export default class PrimaryReport extends Submitable {
             Democratic Primary so far).</span>
         </label>
         <label>
-          Inclues Early/Absentee Ballots: <input type="checkbox" name="early_absentee" value="1" />
+          Includes Early/Absentee Ballots: <input type="checkbox" name="early_absentee" value="1" />
         </label>
         <TimeSelect />
         <ContactInfo />
