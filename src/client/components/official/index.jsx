@@ -2,6 +2,7 @@ import React from 'react';
 import Submitable from '../report/form/submitable';
 import TimeSelect from '../report/form/timeselect';
 import PrecinctInput from '../report/form/precinct-input';
+import ContactInfo from '../report/form/contact-info';
 import states, { findState } from '../../data/states';
 
 export default class OfficialReport extends Submitable {
@@ -106,6 +107,7 @@ export default class OfficialReport extends Submitable {
               <textarea name="attribution" />
             </label>
             <TimeSelect />
+            <ContactInfo />
             <label>
               <button disabled={this.state.submitting} type="submit">Submit</button>
             {statusMessage}{this.error}</label>

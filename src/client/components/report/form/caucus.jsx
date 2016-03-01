@@ -2,6 +2,7 @@ import React from 'react';
 import Submitable from './submitable';
 import TimeSelect from './timeselect';
 import PrecinctInput from './precinct-input';
+import ContactInfo from './contact-info';
 
 export default class CaucusReport extends Submitable {
   constructor() {
@@ -71,6 +72,7 @@ export default class CaucusReport extends Submitable {
             </label>
           </div>
           <TimeSelect />
+          <ContactInfo />
           <label>
             <button disabled={this.state.submitting} type="submit">Submit</button>
           {statusMessage}{this.errorMessage}</label>

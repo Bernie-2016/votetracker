@@ -2,6 +2,7 @@ import React from 'react';
 import Submitable from './submitable';
 import TimeSelect from './timeselect';
 import PrecinctInput from './precinct-input';
+import ContactInfo from './contact-info';
 
 export default class PrimaryReport extends Submitable {
 
@@ -28,6 +29,7 @@ export default class PrimaryReport extends Submitable {
           <input type="number" name="ballots_cast" />
         </label>
         <TimeSelect />
+        <ContactInfo />
         <label>
           <button type="submit" disabled={this.state.submitting}>Submit</button>
         {statusMessage}{this.errorMessage}</label>
