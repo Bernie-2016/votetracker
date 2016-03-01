@@ -7,6 +7,18 @@ import classNames from 'classnames';
 
 export default class PrimaryReport extends Submitable {
 
+  constructor() {
+    super();
+
+    if (!this.state.errorMessages) {
+      this.state.errorMessages = {
+        type: null,
+        ballots_cast: null,
+        report_age: null,
+      };
+    }
+  }
+
   render() {
     let statusMessage;
     if (this.state.submitted) {
@@ -16,11 +28,11 @@ export default class PrimaryReport extends Submitable {
       statusMessage = 'Error submitting. Please check values and try again.';
     }
 
-    // check for errors to update class names
+    // update class names
     let ballotsCastClass;
-    if (this.state.errors) {
+    if (this.state.errorMessages.ballots_cast) {
       ballotsCastClass = classNames({
-        invalid_input: this.state.errors.ballots_cast,
+        invalid_input: this.state.errorMessages.ballots_cast,
       });
     }
 
@@ -34,14 +46,16 @@ export default class PrimaryReport extends Submitable {
             <option value="dem">Democratic Ballots</option>
             <option value="total">Total Ballots</option>
           </select>
+          <span className="error-message">{this.state.errorMessages.type}</span>
         </label>
         <label>Ballots Cast:
           <input type="number" name="ballots_cast" className={ballotsCastClass} />
+           <span className="error-message">{this.state.errorMessages.ballots_cast}</span>
         </label>
         <label>
           Inclues Early/Absentee Ballots: <input type="checkbox" name="early_absentee" value="1" />
         </label>
-        <TimeSelect />
+        <TimeSelect error={this.state.errorMessages.report_age} />
         <ContactInfo />
         <label>
           <button type="submit" disabled={this.state.submitting}>Submit</button>

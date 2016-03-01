@@ -20,13 +20,35 @@ export default class SubmitableForm extends Component {
 
     // different forms => different validation
     switch (data.report_type) {
+      case 'caucus':
+        {
+          const fields = ['phase', 'sanders_supporters', 'clinton_supporters', 'other_supporters',
+            'sanders_delegates', 'clinton_delegates', 'other_delegates'];
+          fields.forEach((elem) => {
+            // check for all fields
+            if (!data[elem]) {
+              errorMessage[elem] = 'This field is required.';
+              isInvalid = true;
+            }
+
+            // check for ballots cast number
+            if (elem !== 'phase' && data[elem]) {
+              const value = parseInt(data[elem], 16);
+              if (typeof value !== 'number' || value < 0) {
+                errorMessage[elem] = 'This value must be a positive number.';
+                isInvalid = true;
+              }
+            }
+          });
+          break;
+        }
       case 'primary':
         {
           const fields = ['type', 'ballots_cast', 'report_age'];
           fields.forEach((elem) => {
             // check for all fields
             if (!data[elem]) {
-              errorMessage[elem] = 'All fields are required.';
+              errorMessage[elem] = 'This field is required.';
               isInvalid = true;
             }
 
@@ -34,7 +56,7 @@ export default class SubmitableForm extends Component {
             if (elem === 'ballots_cast' && data[elem]) {
               const ballotsCast = parseInt(data[elem], 16);
               if (typeof ballotsCast !== 'number' || ballotsCast < 0) {
-                errorMessage[elem] = 'Ballots count must be a positive number';
+                errorMessage[elem] = 'This value must be a positive number.';
                 isInvalid = true;
               }
             }
@@ -64,16 +86,7 @@ export default class SubmitableForm extends Component {
   }
 
   errored(message = null) {
-    let fullMessage = '';
-    if (message) {
-      let key = null;
-      for (key in message) {
-        if ({}.hasOwnProperty.call(message, key)) {
-          fullMessage += message[key];
-        }
-      }
-    }
-    this.setState({ error: true, submitting: false, errors: message, errorMessage: fullMessage });
+    this.setState({ error: true, submitting: false, errorMessages: message });
   }
 
   change() {
