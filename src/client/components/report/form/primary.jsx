@@ -1,6 +1,7 @@
 import React from 'react';
 import Submitable from './submitable';
 import TimeSelect from './timeselect';
+import classNames from 'classnames';
 
 export default class PrimaryReport extends Submitable {
 
@@ -9,6 +10,15 @@ export default class PrimaryReport extends Submitable {
     if (this.state.submitted) {
       statusMessage = 'Submitted';
     }
+
+    // check for errors to update class names
+    let ballotsCastClass;
+    if (this.state.errors) {
+      ballotsCastClass = classNames({
+        invalid_input: this.state.errors.ballots_cast,
+      });
+    }
+
     return (
       <div className="PrimaryReportForm">
         <form ref={this.trackForm}>
@@ -20,12 +30,12 @@ export default class PrimaryReport extends Submitable {
           </select>
         </label>
         <label>Ballots Cast:
-          <input type="number" name="ballots_cast" />
+          <input type="number" name="ballots_cast" className={ballotsCastClass} />
         </label>
         <TimeSelect />
         <label>
           <button type="submit" disabled={this.state.submitting}>Submit</button>
-        {statusMessage}</label>
+        {statusMessage} {this.state.errorMessage}</label>
         </form>
       </div>
     );

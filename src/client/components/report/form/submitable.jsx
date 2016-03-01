@@ -13,6 +13,44 @@ export default class SubmitableForm extends Component {
     };
   }
 
+  validate(data) {
+    const errorMessage = {};
+    let isInvalid = false;
+
+    // different forms => different validation
+    switch (data.report_type) {
+      case 'primary':
+        {
+          const fields = ['type', 'ballots_cast', 'report_age'];
+          fields.forEach((elem) => {
+            // check for all fields
+            if (!data[elem]) {
+              errorMessage[elem] = 'All fields are required.';
+              isInvalid = true;
+            }
+
+            // check for ballots cast number
+            if (elem === 'ballots_cast' && data[elem]) {
+              const ballotsCast = parseInt(data[elem], 16);
+              if (typeof ballotsCast !== 'number' || ballotsCast < 0) {
+                errorMessage[elem] = 'Ballots count must be a positive number';
+                isInvalid = true;
+              }
+            }
+          });
+          break;
+        }
+      default:
+        return isInvalid;
+    }
+
+    if (Object.getOwnPropertyNames(errorMessage).length !== 0) {
+      this.errored(errorMessage);
+    }
+
+    return isInvalid;
+  }
+
   shouldThank() {
     return true;
   }
@@ -24,29 +62,44 @@ export default class SubmitableForm extends Component {
     }
   }
 
-  errored() {
-    this.setState({ error: true, submitting: false });
+  errored(message = null) {
+    let fullMessage = '';
+    if (message) {
+      let key = null;
+      for (key in message) {
+        if ({}.hasOwnProperty.call(message, key)) {
+          fullMessage += message[key];
+        }
+      }
+    }
+    this.setState({ error: true, submitting: false, errors: message, errorMessage: fullMessage });
   }
 
   submit(event) {
     this.setState({ error: false, submitting: true });
     const submitData = serialize(event.target, { hash: true });
-    if (!window.clientId) {
-      window.clientId = uuid.v1();
+
+    // check for client side form validity
+    const isInvalid = this.validate(submitData);
+
+    if (!isInvalid) {
+      if (!window.clientId) {
+        window.clientId = uuid.v1();
+      }
+      submitData.client_id = window.clientId;
+      submitData.location_id = this.props.params.location;
+      superagent.post('/api/report')
+        .send(submitData)
+        .set('Accept', 'application/json')
+        .end((err, res) => {
+          console.log(err, res); // eslint-disable-line
+          if (err || !res.noContent) {
+            this.errored();
+          } else {
+            this.submitted();
+          }
+        });
     }
-    submitData.client_id = window.clientId;
-    submitData.location_id = this.props.params.location;
-    superagent.post('/api/report')
-      .send(submitData)
-      .set('Accept', 'application/json')
-      .end((err, res) => {
-        console.log(err, res); // eslint-disable-line
-        if (err || !res.noContent) {
-          this.errored();
-        } else {
-          this.submitted();
-        }
-      });
     event.preventDefault();
   }
 
