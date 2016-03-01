@@ -4,6 +4,7 @@ import TimeSelect from '../report/form/timeselect';
 import PrecinctInput from '../report/form/precinct-input';
 import ContactInfo from '../report/form/contact-info';
 import states, { findState } from '../../data/states';
+import txCounties from '../../../../fixtures/tx-counties.json';
 
 export default class OfficialReport extends Submitable {
 
@@ -25,11 +26,13 @@ export default class OfficialReport extends Submitable {
       this.setState({
         state: stateValue,
         stateObj: findState(stateValue),
-        counties: [],
+        counties: stateValue === 'TX' ? txCounties : [],
         county: '',
       });
-      this.context.api.getCounties(stateValue)
-        .then(counties => this.setState({ counties }));
+      if (stateValue !== 'TX') {
+        this.context.api.getCounties(stateValue)
+          .then(counties => this.setState({ counties }));
+      }
     }
 
     if (event.target.name === 'county') {
@@ -55,7 +58,8 @@ export default class OfficialReport extends Submitable {
       statusMessage = 'Error submitting. Please check values and try again.';
     }
     const county = this.state.county;
-    const needsPrecinct = county && this.state.stateObj.important.indexOf(county) !== -1;
+    const needsPrecinct = this.state.state !== 'TX' && county &&
+      this.state.stateObj.important.indexOf(county) !== -1;
 
     return (
       <div className="official report">

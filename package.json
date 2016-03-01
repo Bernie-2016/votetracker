@@ -42,6 +42,7 @@
     "fs-extra": "^0.26.5",
     "fuzzy": "^0.1.1",
     "history": "^2.0.0-rc2",
+    "json-loader": "^0.5.4",
     "lodash.debounce": "^4.0.3",
     "lodash.memoize": "^4.0.1",
     "moment": "^2.11.2",
