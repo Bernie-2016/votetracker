@@ -9,6 +9,7 @@ import PageNotFound from './components/page-not-found';
 import Official from './components/official';
 import ThankYou from './components/thank-you';
 import Faq from './components/faq';
+import Texas from './components/texas';
 
 import ReportRoute from './components/report/route';
 
@@ -17,6 +18,7 @@ const routes = (
     <Router history={ browserHistory }>
         <Route path="/" component={ Layout }>
           <IndexRoute component={ Home } />
+          <Route path="report/TX" component={ Texas } />
           <Route { ...ReportRoute } />
           <Route path="official" component={ Official } />
           <Route path="thank-you" component ={ ThankYou } />
