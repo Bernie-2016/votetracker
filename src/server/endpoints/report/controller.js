@@ -1,4 +1,5 @@
 import db from '../../services/db';
+import moment from 'moment';
 
 const insert = (table, data) => {
   const keys = Object.keys(data);
@@ -6,19 +7,25 @@ const insert = (table, data) => {
   const values = keys.map(field => `\${${field}}`).join(',');
   const query = `INSERT INTO ${table} (${fields}) VALUES (${values})`;
   return db.query(query, data);
-}
+};
+
+const getFloatTime = () => {
+  const now = moment();
+  return now.hours() + Math.floor(now.minutes() / 15) / 4;
+};
 
 const submit = {
   caucus: (req, res) => {
     const data = {
       phase: +req.body.phase,
-      report_age: +req.body.report_age,
+      report_age: +req.body.report_age / 60,
       client_id: req.body.client_id,
       location_id: +req.body.location_id,
       precinct_id: +req.body.precinct_id || null,
       sanders_supporters: +req.body.sanders_supporters || 0,
       clinton_supporters: +req.body.clinton_supporters || 0,
       other_supporters: +req.body.other_supporters || 0,
+      float_time: getFloatTime(),
     };
     insert('caucus_report', data)
       .then(() => {
@@ -33,8 +40,9 @@ const submit = {
       client_id: req.body.client_id,
       location_id: +req.body.location_id,
       precinct_id: +req.body.precinct_id || null,
-      report_age: +req.body.report_age,
+      report_age: +req.body.report_age / 60,
       ballots_cast: +req.body.ballots_cast,
+      float_time: getFloatTime(),
     };
     insert('primary_report', data)
       .then(() => {
@@ -54,6 +62,7 @@ const submit = {
       state: req.body.state,
       county: req.body.county,
       location_id: +req.body.location_id || 0,
+      float_time: getFloatTime(),
     };
     insert('official_report', data)
       .then(() => {
