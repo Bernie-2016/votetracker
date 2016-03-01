@@ -11,7 +11,7 @@ const insert = (table, data) => {
 
 const getFloatTime = () => {
   const now = moment();
-  return now.hours() + Math.floor(now.minutes() / 15) / 4;
+  return now.hours() + Math.floor(now.minutes() / 30) / 2;
 };
 
 const getIp = req => (
