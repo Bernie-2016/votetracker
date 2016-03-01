@@ -6,8 +6,9 @@ import routeBuilder from 'express-routebuilder';
 import * as statRoutes from '../endpoints/stat/routes';
 import * as statesRoutes from '../endpoints/states/routes';
 import * as reportRoutes from '../endpoints/report/routes';
+import * as locationsRoutes from '../endpoints/locations/routes';
 
-const endpoints = [statRoutes, statesRoutes, reportRoutes];
+const endpoints = [statRoutes, statesRoutes, reportRoutes, locationsRoutes];
 const server = express();
 
 server.use(bodyParser.urlencoded({ extended: true }));
