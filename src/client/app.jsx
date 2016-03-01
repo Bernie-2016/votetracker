@@ -13,6 +13,8 @@ import Texas from './components/texas';
 
 import ReportRoute from './components/report/route';
 
+import './components/layout/images/favicon.ico';
+
 const routes = (
   <ApiProvider>
     <Router history={ browserHistory }>

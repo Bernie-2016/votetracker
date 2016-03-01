@@ -75,6 +75,11 @@ const config = {
         include: getPath('src'),
       },
       {
+        test: /\.ico$/,
+        loaders: ['file-loader?name=[name].[ext]'],
+        include: getPath('src'),
+      },
+      {
         test: /\.json$/,
         loaders: ['json-loader'],
         include: getPath('fixtures'),
