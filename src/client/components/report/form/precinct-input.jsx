@@ -7,14 +7,36 @@ export default class PrecinctInput extends Component {
   }
 
   componentDidMount() {
-    this.context.api.getPrecinctsFromLocation(this.props.location)
-    .then(precincts => {
-      this.setState({ precincts });
-    }, () => {
-      const router = this.context.router;
-      console.error('Errored looking for precincts'); // eslint-disable-line
-      router.replace('/');
-    });
+    this.fetchIt();
+  }
+
+  componentWillReceiveProps(newProps) {
+    this.fetchIt(newProps);
+  }
+
+  fetchIt(props = this.props) {
+    console.log('fetching', this.props);
+    if (props.location) {
+      this.context.api.getPrecinctsFromLocation(props.location)
+      .then(precincts => {
+        this.setState({ precincts });
+      }, () => {
+        const router = this.context.router;
+        console.error('Errored looking for precincts'); // eslint-disable-line
+        router.replace('/');
+      });
+    } else if (props.county) {
+      this.context.api.getPrecinctsFromCounty(props)
+      .then(precincts => {
+        this.setState({ precincts });
+      }, () => {
+        const router = this.context.router;
+        console.error('Errored looking for precincts'); // eslint-disable-line
+        router.replace('/');
+      });
+    } else {
+      this.setState({ precincts: [] });
+    }
   }
 
   render() {
@@ -43,4 +65,5 @@ PrecinctInput.contextTypes = {
 
 PrecinctInput.propTypes = {
   location: React.PropTypes.any,
+  county: React.PropTypes.string,
 };

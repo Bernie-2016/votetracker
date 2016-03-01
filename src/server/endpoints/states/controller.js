@@ -47,3 +47,21 @@ export function locations(req, res) {
     res.send(result);
   });
 }
+
+const precinctsQuery = memoize(params => {
+  debug('First Query', params);
+  return db.query(
+    'SELECT DISTINCT' +
+    ' id, name' +
+    ' FROM precincts WHERE state_code = ${state} AND county = ${county}' +
+    'ORDER BY name',
+    params
+  );
+}, params => `${params.state},${params.county}`);
+
+export function precincts(req, res) {
+  precinctsQuery(req.params)
+  .then(result => {
+    res.send(result);
+  });
+}

@@ -1,7 +1,8 @@
 import React from 'react';
 import Submitable from '../report/form/submitable';
 import TimeSelect from '../report/form/timeselect';
-import states from '../../data/states';
+import PrecinctInput from '../report/form/precinct-input';
+import states, { findState } from '../../data/states';
 
 export default class OfficialReport extends Submitable {
 
@@ -31,6 +32,7 @@ export default class OfficialReport extends Submitable {
 
       this.setState({
         state: stateValue,
+        stateObj: findState(stateValue),
         counties: [],
         county: '',
       });
@@ -55,6 +57,9 @@ export default class OfficialReport extends Submitable {
     if (this.state.error) {
       statusMessage = 'Error submitting. Please check values and try again.';
     }
+    const county = this.state.county;
+    const needsPrecinct = county && this.state.stateObj.important.indexOf(county) !== -1;
+
     return (
       <div className="official report">
         <h2>Official Results</h2>
@@ -75,6 +80,10 @@ export default class OfficialReport extends Submitable {
               })}
             </select>
           </label></div>
+
+          <div hidden={!needsPrecinct}>
+            <PrecinctInput state={this.state.state} county={this.state.county} />
+          </div>
 
           <div className="form" hidden={!this.state.county}>
             <label>Are you reporting the number of votes cast or the vote percentages?
@@ -111,4 +120,5 @@ export default class OfficialReport extends Submitable {
 
 OfficialReport.contextTypes = {
   api: React.PropTypes.object,
+  state: React.PropTypes.object,
 };

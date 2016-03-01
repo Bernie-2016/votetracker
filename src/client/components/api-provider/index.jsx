@@ -22,11 +22,16 @@ export default class ApiProvider extends Component {
   }
 
   api() {
+    const memotwo = ({ state, county }) => `${state}.${county}`;
     const api = {
       getCounties: memoize(state => get(`/api/states/${state}/counties`)),
       getLocations: memoize(({ state, county }) => get(`/api/states/${state}/${county}/locations`),
-        ({ state, county }) => `${state}.${county}`),
+        memotwo),
       getPrecinctsFromLocation: memoize(locId => get(`/api/locations/${locId}/precincts`)),
+      getPrecinctsFromCounty: memoize(
+        ({ state, county }) => get(`/api/states/${state}/${county}/precincts`),
+        memotwo
+      ),
     };
 
     return api;
