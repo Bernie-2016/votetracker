@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router';
+
 import Submitable from './submitable';
 import TimeSelect from './timeselect';
 import PrecinctInput from './precinct-input';
@@ -37,6 +39,22 @@ export default class CaucusReport extends Submitable {
     }
     return (
       <div className="CaucusReportForm">
+      <p>You can ask your precinct captain, party official, or election official
+          for any of the following counts.</p>
+      <h5>First Count</h5>
+      <p>The first count should occur after everyone has been checked in and the caucus doors
+          have closed. The party official (or other representative) should instruct all attendees
+          to stand in groups based on whom they are supporting.</p>
+      <h5>Second Count</h5>
+      <p>The second count or ‘re-alignment’ occurs if one of the groups from the first count isn’t
+          “viable” (doesn’t have a minimum of 15% support). Supporters in the non-viable group will
+          be asked to select another, viable group to support. After everyone is re-aligned, they’ll
+          be counted again.</p>
+      <h5>Final Count</h5>
+      <p>After everyone is in a viable group, a final count will occur and delegates will be
+          apportioned. You can get the total number of delegates for your precinct, as well as the
+          total number of delegates assigned to each group.</p>
+        <p>Questions? Check out our <Link to="/faq">FAQ.</Link></p>
         <form ref={this.trackForm}>
           <input type="hidden" value="caucus" name="report_type" />
           <PrecinctInput location={this.props.params.location} />
