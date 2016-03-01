@@ -26,6 +26,7 @@ export default class ApiProvider extends Component {
       getCounties: memoize(state => get(`/api/states/${state}/counties`)),
       getLocations: memoize(({ state, county }) => get(`/api/states/${state}/${county}/locations`),
         ({ state, county }) => `${state}.${county}`),
+      getPrecinctsFromLocation: memoize(locId => get(`/api/locations/${locId}/precincts`)),
     };
 
     return api;

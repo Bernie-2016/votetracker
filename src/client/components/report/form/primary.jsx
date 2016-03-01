@@ -1,6 +1,7 @@
 import React from 'react';
 import Submitable from './submitable';
 import TimeSelect from './timeselect';
+import PrecinctInput from './precinct-input';
 
 export default class PrimaryReport extends Submitable {
 
@@ -13,6 +14,7 @@ export default class PrimaryReport extends Submitable {
       <div className="PrimaryReportForm">
         <form ref={this.trackForm}>
         <input type="hidden" value="primary" name="report_type" />
+        <PrecinctInput location={this.props.params.location} />
         <label>Ballot Type
           <select name="type">
             <option value="dem">Democratic Ballots</option>

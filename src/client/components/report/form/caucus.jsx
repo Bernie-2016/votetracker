@@ -1,6 +1,7 @@
 import React from 'react';
 import Submitable from './submitable';
 import TimeSelect from './timeselect';
+import PrecinctInput from './precinct-input';
 
 export default class CaucusReport extends Submitable {
   constructor() {
@@ -34,6 +35,7 @@ export default class CaucusReport extends Submitable {
       <div className="CaucusReportForm">
         <form ref={this.trackForm}>
           <input type="hidden" value="caucus" name="report_type" />
+          <PrecinctInput location={this.props.params.location} />
           <label>Phase:
             <select name="phase" onChange={updatePhase}>
               <option value="0">First Count</option>
