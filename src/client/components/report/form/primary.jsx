@@ -10,13 +10,23 @@ export default class PrimaryReport extends Submitable {
   constructor() {
     super();
 
-    if (!this.state.errorMessages) {
-      this.state.errorMessages = {
+    this.state = {
+      primaryFields: [
+        'type',
+        'ballots_cast',
+        'report_age',
+      ],
+      errorMessages: {
         type: null,
         ballots_cast: null,
         report_age: null,
-      };
-    }
+      },
+      errorClasses: {
+        type: null,
+        ballots_cast: null,
+        report_age: null,
+      },
+    };
   }
 
   render() {
@@ -29,12 +39,11 @@ export default class PrimaryReport extends Submitable {
     }
 
     // update class names
-    let ballotsCastClass;
-    if (this.state.errorMessages.ballots_cast) {
-      ballotsCastClass = classNames({
-        invalid_input: this.state.errorMessages.ballots_cast,
+    this.state.primaryFields.forEach((elem) => {
+      this.state.errorClasses[elem] = classNames({
+        invalid_input: this.state.errorMessages[elem],
       });
-    }
+    });
 
     return (
       <div className="PrimaryReportForm">
@@ -42,20 +51,24 @@ export default class PrimaryReport extends Submitable {
         <input type="hidden" value="primary" name="report_type" />
         <PrecinctInput location={this.props.params.location} />
         <label>Report Type
-          <select name="type">
+          <select name="type" className={this.state.errorClasses.type}>
             <option value="dem">Democratic Ballots</option>
             <option value="total">Total Ballots</option>
           </select>
           <span className="error-message">{this.state.errorMessages.type}</span>
         </label>
         <label>Ballots Cast:
-          <input type="number" name="ballots_cast" className={ballotsCastClass} />
+          <input type="number" name="ballots_cast"
+            className={this.state.errorClasses.ballots_cast}
+          />
            <span className="error-message">{this.state.errorMessages.ballots_cast}</span>
         </label>
         <label>
           Inclues Early/Absentee Ballots: <input type="checkbox" name="early_absentee" value="1" />
         </label>
-        <TimeSelect error={this.state.errorMessages.report_age} />
+        <TimeSelect error={this.state.errorMessages.report_age}
+          className={this.state.errorClasses.report_age}
+        />
         <ContactInfo />
         <label>
           <button type="submit" disabled={this.state.submitting}>Submit</button>
