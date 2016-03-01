@@ -29,6 +29,10 @@ const submit = {
       sanders_supporters: +req.body.sanders_supporters || 0,
       clinton_supporters: +req.body.clinton_supporters || 0,
       other_supporters: +req.body.other_supporters || 0,
+      undeclared_supporters: +req.body.undeclared_supporters || 0,
+      sanders_delegates: +req.body.sanders_delegates || 0,
+      clinton_delegates: +req.body.clinton_delegates || 0,
+      other_delegates: +req.body.other_delegates || 0,
       float_time: getFloatTime(),
       ip: getIp(req),
     };

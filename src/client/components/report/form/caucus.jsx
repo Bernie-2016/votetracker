@@ -56,6 +56,9 @@ export default class CaucusReport extends Submitable {
           <label>Other Supporters:
             <input type="number" name="other_supporters" />
           </label>
+          <label>Undeclared Supporters:
+            <input type="number" name="undeclared_supporters" />
+          </label>
           <div hidden={!finalCount}>
             <label>Total Sanders Delegates:
               <input type="number" name="sanders_delegates" />
