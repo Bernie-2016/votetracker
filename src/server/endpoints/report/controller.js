@@ -40,7 +40,8 @@ const submit = {
     insert('caucus_report', data)
       .then(() => {
         res.sendStatus(204);
-      }, () => {
+      }, (err) => {
+        console.error(err, data); //eslint-disable-line
         res.sendStatus(400);
       });
   },
@@ -60,7 +61,8 @@ const submit = {
     insert('primary_report', data)
       .then(() => {
         res.sendStatus(204);
-      }, () => {
+      }, (err) => {
+        console.error(err, data); //eslint-disable-line
         res.sendStatus(400);
       });
   },
@@ -68,9 +70,9 @@ const submit = {
     const data = {
       client_id: req.body.type,
       precinct_id: +req.body.precinct_id || null,
-      clinton_votes: +req.body.clinton_votes,
-      sanders_votes: +req.body.sanders_votes,
-      other_votes: +req.body.other_votes,
+      clinton_votes: +req.body.clinton_votes || 0,
+      sanders_votes: +req.body.sanders_votes || 0,
+      other_votes: +req.body.other_votes || 0,
       percent_reporting: +req.body.percent_reporting,
       state: req.body.state,
       county: req.body.county,
@@ -82,7 +84,8 @@ const submit = {
     insert('official_report', data)
       .then(() => {
         res.sendStatus(204);
-      }, () => {
+      }, (err) => {
+        console.error(err, data); //eslint-disable-line
         res.sendStatus(400);
       });
   },
