@@ -5,7 +5,7 @@ export default class ContactInfo extends Component {
     return (
       <label>Contact Info:
         <input className="contact-info" type="text" name="contact_info"
-          value={this.context.api.contact_info}
+          defaultValue={this.context.api.contact_info}
           onChange={(event) => { this.context.api.contact_info = event.target.value; }} // eslint-disable-line
         />
         <span className="sub">(Optional: in case we have questions about this report,
