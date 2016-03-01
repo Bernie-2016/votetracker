@@ -52,6 +52,9 @@ export default class OfficialReport extends Submitable {
     if (this.state.submitted) {
       statusMessage = 'Submitted';
     }
+    if (this.state.error) {
+      statusMessage = 'Error submitting. Please check values and try again.';
+    }
     return (
       <div className="official report">
         <h2>Official Results</h2>
@@ -98,7 +101,7 @@ export default class OfficialReport extends Submitable {
             <TimeSelect />
             <label>
               <button disabled={this.state.submitting} type="submit">Submit</button>
-            {statusMessage}</label>
+            {statusMessage}{this.error}</label>
           </div>
         </form>
       </div>
