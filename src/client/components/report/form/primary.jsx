@@ -3,6 +3,7 @@ import Submitable from './submitable';
 import TimeSelect from './timeselect';
 import PrecinctInput from './precinct-input';
 import ContactInfo from './contact-info';
+import classNames from 'classnames';
 
 export default class PrimaryReport extends Submitable {
 
@@ -14,6 +15,15 @@ export default class PrimaryReport extends Submitable {
     if (this.state.error) {
       statusMessage = 'Error submitting. Please check values and try again.';
     }
+
+    // check for errors to update class names
+    let ballotsCastClass;
+    if (this.state.errors) {
+      ballotsCastClass = classNames({
+        invalid_input: this.state.errors.ballots_cast,
+      });
+    }
+
     return (
       <div className="PrimaryReportForm">
         <form ref={this.trackForm}>
@@ -26,7 +36,7 @@ export default class PrimaryReport extends Submitable {
           </select>
         </label>
         <label>Ballots Cast:
-          <input type="number" name="ballots_cast" />
+          <input type="number" name="ballots_cast" className={ballotsCastClass} />
         </label>
         <label>
           Inclues Early/Absentee Ballots: <input type="checkbox" name="early_absentee" value="1" />
@@ -35,7 +45,7 @@ export default class PrimaryReport extends Submitable {
         <ContactInfo />
         <label>
           <button type="submit" disabled={this.state.submitting}>Submit</button>
-        {statusMessage}{this.errorMessage}</label>
+        {statusMessage} {this.state.errorMessage || this.errorMessage}</label>
         </form>
       </div>
     );
