@@ -4,7 +4,6 @@ import TimeSelect from '../report/form/timeselect';
 import PrecinctInput from '../report/form/precinct-input';
 import ContactInfo from '../report/form/contact-info';
 import states, { findState } from '../../data/states';
-import txCounties from '../../../../fixtures/tx-counties.json';
 
 export default class OfficialReport extends Submitable {
 
@@ -22,17 +21,14 @@ export default class OfficialReport extends Submitable {
     if (event.target.name === 'state') {
       const stateSelect = event.target;
       const stateValue = stateSelect[stateSelect.selectedIndex].value;
+      const stateObj = findState(stateValue);
 
       this.setState({
         state: stateValue,
-        stateObj: findState(stateValue),
-        counties: stateValue === 'TX' ? txCounties : [],
+        stateObj,
+        counties: stateObj.counties,
         county: '',
       });
-      if (stateValue !== 'TX') {
-        this.context.api.getCounties(stateValue)
-          .then(counties => this.setState({ counties }));
-      }
     }
 
     if (event.target.name === 'county') {
