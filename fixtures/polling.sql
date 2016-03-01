@@ -624,20 +624,20 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 50620	MA	MIDDLESEX	RMHS - HAWKES FIELD HOUSE	62 OAKLAND ROAD	READING	01867
 50621	MA	NORFOLK	CIVIC CENTER	165 NAHATAN STREET	NORWOOD	02062
 50622	MA	WORCESTER	TOWN HALL	157 MAIN ST	SPENCER	01562
-50623	VT	Orleans	Morgan Town Clerk's Office	41 Meade Hill Road	Morgan	05853
-50624	VT	Orange	Newbury Village Hall (Newbury Elementary School Gym)	214 Pulaski Street	#N/A	05081
-50625	VT	Rutland	Benson Community Hall	2724 Stage Road	Benson	05731
-50626	VT	Windsor	Riverside Middle School Gymnasium	13 Fairground Road	Springfield	05156
-50627	VT	Orange	Washington Grade School	72 School Lane	Washington	05675
-50628	VT	Windham	Former Brookline Elementary School	624 Grassy Brook Road	Brookline	05345
-50629	VT	Windsor	Cavendish Town Elementary School	573 Main Street	Cavendish	05143
-50630	VT	Chittenden	CCS Multi-Purpose Room	408 Hinesburg Road	Charlotte	05445
-50631	VT	Rutland	Chittenden Municipal Office	260 Chittenden Road	Chittenden	05737
-50632	VT	Bennington	Arlington Memorial High School	529 East Arlington Road	Arlington	05250
-50633	VT	Caledonia	Danville School Gymnasium	148 Peacham Road	Danville	05828
-50634	VT	Chittenden	Essex Middle School	60 Founders Road	Essex Junction	05452
-50635	VT	Windham	Halifax Elementary Multipurpose Room	246 Branch Road	Halifax	05358
-50636	VT	Windsor	Damon Hall	1 Quechee Road	Hartland	05048
+50623	VT	ORLEANS	Morgan Town Clerk's Office	41 Meade Hill Road	Morgan	05853
+50624	VT	ORANGE	Newbury Village Hall (Newbury Elementary School Gym)	214 Pulaski Street	#N/A	05081
+50625	VT	RUTLAND	Benson Community Hall	2724 Stage Road	Benson	05731
+50626	VT	WINDSOR	Riverside Middle School Gymnasium	13 Fairground Road	Springfield	05156
+50627	VT	ORANGE	Washington Grade School	72 School Lane	Washington	05675
+50628	VT	WINDHAM	Former Brookline Elementary School	624 Grassy Brook Road	Brookline	05345
+50629	VT	WINDSOR	Cavendish Town Elementary School	573 Main Street	Cavendish	05143
+50630	VT	CHITTENDEN	CCS Multi-Purpose Room	408 Hinesburg Road	Charlotte	05445
+50631	VT	RUTLAND	Chittenden Municipal Office	260 Chittenden Road	Chittenden	05737
+50632	VT	BENNINGTON	Arlington Memorial High School	529 East Arlington Road	Arlington	05250
+50633	VT	CALEDONIA	Danville School Gymnasium	148 Peacham Road	Danville	05828
+50634	VT	CHITTENDEN	Essex Middle School	60 Founders Road	Essex Junction	05452
+50635	VT	WINDHAM	Halifax Elementary Multipurpose Room	246 Branch Road	Halifax	05358
+50636	VT	WINDSOR	Damon Hall	1 Quechee Road	Hartland	05048
 50637	CO	EL PASO	Discovery Canyon	1810 Northgate Blvd	Colorado Springs	80921
 50638	VA	FAIRFAX	EAGLE VIEW ELEMENTARY SCHOOL	4500 Dixie Hill Road	Fairfax	22030
 50639	TX	NA	Sky Harbour Elementary School	5902 Fishers Bend	San Antonio	78204
@@ -1375,19 +1375,19 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 51371	MA	MIDDLESEX	MCCALL MIDDLE SCHOOL GYM	458 MAIN ST	WINCHESTER	01890
 51372	MA	SUFFOLK	JACKSON MANN SCHOOL	500 CAMBRIDGE STREET	Boston	02134
 51373	MA	WORCESTER	NARRAGANSETT REGIONAL SCH	462 BALDWINVILLE RD	TEMPLETON	01468
-51374	VT	Windham	Jamaica Town Hall	3735 VT Route 30	Jamaica	05343
-51375	VT	Chittenden	Milton Municipal Building, Selectboard Room	43 Bombardier Road	Milton	05468
-51376	VT	Windsor	Pomfret Town Offices	5218 Pomfret Road	Pomfret	05053
-51377	VT	Bennington	Readsboro Central School	301 Phelps Lane	Readsboro	05350
-51378	VT	Franklin	Berkshire Town Clerk's Office	4454 Watertower Road. Enosburgh Falls	Berkshire	05450
-51379	VT	Chittenden	FHT Middle School	500 Dorset Street	South Burlington	05403
-51380	VT	Rutland	Community Hall	2919 Main Road	 Fair Haven	West
-51381	VT	Essex	Concord Town Hall	456 Main Street	Concord	05824
-51382	VT	Lamoille	Elmore Town Clerk's Office	1175 VT Route 12	Elmore	05657
-51383	VT	Rutland	American Legion Post #49	72 South Main St.	Fair Haven	05743
+51374	VT	WINDHAM	Jamaica Town Hall	3735 VT Route 30	Jamaica	05343
+51375	VT	CHITTENDEN	Milton Municipal Building, Selectboard Room	43 Bombardier Road	Milton	05468
+51376	VT	WINDSOR	Pomfret Town Offices	5218 Pomfret Road	Pomfret	05053
+51377	VT	BENNINGTON	Readsboro Central School	301 Phelps Lane	Readsboro	05350
+51378	VT	FRANKLIN	Berkshire Town Clerk's Office	4454 Watertower Road. Enosburgh Falls	Berkshire	05450
+51379	VT	CHITTENDEN	FHT Middle School	500 Dorset Street	South Burlington	05403
+51380	VT	RUTLAND	Community Hall	2919 Main Road	 Fair Haven	West
+51381	VT	ESSEX	Concord Town Hall	456 Main Street	Concord	05824
+51382	VT	LAMOILLE	Elmore Town Clerk's Office	1175 VT Route 12	Elmore	05657
+51383	VT	RUTLAND	American Legion Post #49	72 South Main St.	Fair Haven	05743
 51384	GA	FULTON	CREEK VIEW ELEM. SCH GYM	3995 WEBB BRIDGE ROAD	ALPHARETTA	30005
 51385	GA	FULTON	BENJAMIN E MAYS HIGH SCHOOL	3450 BENJAMIN E MAYS DRIVE	ATLANTA	30311
-51386	VT	Bennington	Firehouse	160 Buck Hill Road	Shaftsbury	05262
+51386	VT	BENNINGTON	Firehouse	160 Buck Hill Road	Shaftsbury	05262
 51387	CO	WELD	Roosevelt H.S. Gym	616 North Second St	Johnstown	80534
 51388	AL	RANDOLPH	GRAHAM 01.1A 1-7	24339 COUNTY ROAD 87	GRAHAM	36263
 51389	AL	SHELBY	Valleydale Baptist Church	2324 Valleydale Rd	Birmingham	35244
@@ -1523,7 +1523,7 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 51519	TX	NA	Keller Church of Christ	205 South Elm Street	Keller	#N/A
 51520	TX	NA	Hillwood Middle School	8250 Parkwood Hill Boulevard	Fort Worth	#N/A
 51521	TX	NA	High Community Center	VZCR 2120 At VZCR 2116	Canton	75103
-51522	VT	Orange	Randolph Town Hall	7 Summer Street	Randolph	05060
+51522	VT	ORANGE	Randolph Town Hall	7 Summer Street	Randolph	05060
 51523	TX	NA	St. John Missionary Baptist Church	3324 House Anderson Road	Euless	#N/A
 51524	AL	JEFFERSON	FORESTDALE SQUARE	1242 FORESTDALE BLVD	BIRMINGHAM	35214
 51525	AL	JEFFERSON	SOUTH HAMPTON ELEMENTARY SCHOOL	565 SHERIDAN RD	BIRMINGHAM	35214
@@ -2055,19 +2055,19 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 52051	MA	ESSEX	BEEMAN MEMORIAL SCHOOL	138 CHERRY ST	GLOUCESTER	01930
 52052	MA	DUKES	PUBLIC SAFETY BUILDING	454 STATE RD	WEST TISBURY	02568
 52053	MA	HAMPDEN	KILEY MIDDLE SCHOOL	80 COOLEY STREET	SPRINGFIELD	01128
-52054	VT	Washington	Twinfield Union School	106 Nasmith Brook Road	Marshfield	05658
-52055	VT	Rutland	Mendon Town Hall	2282 US Route 4	Mendon	05701
-52056	VT	Chittenden	Milton Town Office	43 Bombardier Road	Milton	05468
-52057	VT	Washington	Moretown Town Hall	1147 ROUTE 100B	Moretown	05660
-52058	VT	Grand Isle	Town Office Meeting Room	6441 US Route 2	North Hero	05474
-52059	VT	Addison	Salisbury Town Office	25 Schoolhouse Road	Salisbury	05769
-52060	VT	Bennington	Stamford Elementary School	986 Main Road	Stamford	05352
-52061	VT	Orange	Strafford Town Hall	 227 Justin Morrill Memorial Hwy	Strafford	05072
-52062	VT	Lamoille	Cambridge Memorial Gymnasium	186 School Street	Cambridge	05464
-52063	VT	Orleans	Derby Municipal Office	124 Main Street	Derby	05829
-52064	VT	Lamoille	Eden Central School	29 Knowles Flat Road	Eden	05653
-52065	VT	Franklin	Georgia Elementary School	4416 Ethan Allen Highway	St. Albans	05478
-52066	VT	Rutland	Hubbardton Town Hall	1831 Monument Hill Road	Hubbardton	05735
+52054	VT	WASHINGTON	Twinfield Union School	106 Nasmith Brook Road	Marshfield	05658
+52055	VT	RUTLAND	Mendon Town Hall	2282 US Route 4	Mendon	05701
+52056	VT	CHITTENDEN	Milton Town Office	43 Bombardier Road	Milton	05468
+52057	VT	WASHINGTON	Moretown Town Hall	1147 ROUTE 100B	Moretown	05660
+52058	VT	GRAND ISLE	Town Office Meeting Room	6441 US Route 2	North Hero	05474
+52059	VT	ADDISON	Salisbury Town Office	25 Schoolhouse Road	Salisbury	05769
+52060	VT	BENNINGTON	Stamford Elementary School	986 Main Road	Stamford	05352
+52061	VT	ORANGE	Strafford Town Hall	 227 Justin Morrill Memorial Hwy	Strafford	05072
+52062	VT	LAMOILLE	Cambridge Memorial Gymnasium	186 School Street	Cambridge	05464
+52063	VT	ORLEANS	Derby Municipal Office	124 Main Street	Derby	05829
+52064	VT	LAMOILLE	Eden Central School	29 Knowles Flat Road	Eden	05653
+52065	VT	FRANKLIN	Georgia Elementary School	4416 Ethan Allen Highway	St. Albans	05478
+52066	VT	RUTLAND	Hubbardton Town Hall	1831 Monument Hill Road	Hubbardton	05735
 52067	GA	DEKALB	FLAT ROCK ELEMENTARY SCHOOL	4603 EVANS MILL RD	LITHONIA	30038
 52068	GA	FULTON	CENTENNIAL HIGH SCHOOL	9310 SCOTT ROAD	ROSWELL	30076
 52069	VA	PRINCE WILLIAM	MARSHALL ELEMENTARY SCHOOL	12505 Kahns Road	Manassas	20112
@@ -2659,13 +2659,13 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 52655	MA	WORCESTER	SENIOR CENTER	73 CENTRAL ST	WEST BROOKFIELD	01585
 52656	MA	WORCESTER	MURRAY AVENUE APARTMENTS	50 MURRAY AVENUE	Worcester	01610
 52657	MA	BRISTOL	HOLY NAME OF SACRED HEART	121 Mount Pleasant St	NEW BEDFORD	02740
-52658	VT	Addison	Monkton Central School	1036 Monkton Road  No. Ferrisburgh	Monkton	05469
-52659	VT	Addison	Weybridge Town Clerk's Office	1727 Quaker Village Road	Weybridge	05753
-52660	VT	Rutland	Neshobe School	17 Neshobe Circle	Brandon	05733
-52661	VT	Windsor	Woodstock Town Hall	31 The Green	Woodstock	05091
-52662	VT	Orleans	Craftsbury Acadmey Gymnasium	1422 North Craftsbury Road	Craftsbury	05826
-52663	VT	Caledonia	Groton Community Building Gym	1476 Scott Highway	Groton	05046
-52664	VT	Windsor	Barnard Town Hall	115 North Road	Barnard	05031
+52658	VT	ADDISON	Monkton Central School	1036 Monkton Road  No. Ferrisburgh	Monkton	05469
+52659	VT	ADDISON	Weybridge Town Clerk's Office	1727 Quaker Village Road	Weybridge	05753
+52660	VT	RUTLAND	Neshobe School	17 Neshobe Circle	Brandon	05733
+52661	VT	WINDSOR	Woodstock Town Hall	31 The Green	Woodstock	05091
+52662	VT	ORLEANS	Craftsbury Acadmey Gymnasium	1422 North Craftsbury Road	Craftsbury	05826
+52663	VT	CALEDONIA	Groton Community Building Gym	1476 Scott Highway	Groton	05046
+52664	VT	WINDSOR	Barnard Town Hall	115 North Road	Barnard	05031
 52665	GA	ROCKDALE	SALEM HIGH SCHOOL	3551 UNDERWOOD DRIVE	CONYERS	30013
 52666	AL	MADISON	Harold Harbin Gym	168 Carriger Road	Hazel Green	35750
 52667	AL	MOBILE	Chunchula Baptist Church	11104 Roberts Rd.	Chunchula	36521
@@ -3251,21 +3251,21 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 53247	MA	HAMPDEN	FOREST PARK MANOR	25 BARNEY LANE	SPRINGFIELD	01108
 53248	MA	NORFOLK	WM. MITCHELL SCHOOL	187 BROOKLINE STREET	NEEDHAM	02492
 53249	MA	SUFFOLK	SAINT GEORGE ORTHODOX	55 EMMONSDALE ROAD	Boston	02132
-53250	VT	Rutland	Mount Tabor Town Office	522 Brooklyn Road	Mount Tabor	05739
-53251	VT	Addison	New Haven Town Hall	70 North Street	New Haven	05472
-53252	VT	Washington	Northfield High School	37 Cross Street	Northfield	05663
-53253	VT	Bennington	Peru Town Center	402 Main Street	Peru	05152
-53254	VT	Windsor	South Royalton School Gym	223 South Windsor Street	Royalton	05068
-53255	VT	Rutland	Town Hall - West	181 Business Route 4	Center Rutland	05736
-53256	VT	Caledonia	Walden School	135 Cahoon Farm Road	Walden	05873
-53257	VT	Caledonia	Waterford Elementary School	276 Duck Pond Road	Waterford	05819
-53258	VT	Orange	Bradford Academy	172 North Main Street	Bradford	05033
-53259	VT	Lamoille	Wolcott Elementary School	30 School Hill Drive	Wolcott	05680
-53260	VT	Caledonia	Burke Community Building	212 School Street	Burke	05871
-53261	VT	Windham	Dummerston School Gym	52 Schoolhouse Road	Dummerston	05346
-53262	VT	Essex	Community Building	64 Community Building Road	East Haven	05837
-53263	VT	Addison	Goshen Town Hall	50 Carlisle Hill Road	Goshen	05733
-53264	VT	Orleans	Greensboro Town Clerk	81 Lauredon Ave.	Greensboro	05841
+53250	VT	RUTLAND	Mount Tabor Town Office	522 Brooklyn Road	Mount Tabor	05739
+53251	VT	ADDISON	New Haven Town Hall	70 North Street	New Haven	05472
+53252	VT	WASHINGTON	Northfield High School	37 Cross Street	Northfield	05663
+53253	VT	BENNINGTON	Peru Town Center	402 Main Street	Peru	05152
+53254	VT	WINDSOR	South Royalton School Gym	223 South Windsor Street	Royalton	05068
+53255	VT	RUTLAND	Town Hall - West	181 Business Route 4	Center Rutland	05736
+53256	VT	CALEDONIA	Walden School	135 Cahoon Farm Road	Walden	05873
+53257	VT	CALEDONIA	Waterford Elementary School	276 Duck Pond Road	Waterford	05819
+53258	VT	ORANGE	Bradford Academy	172 North Main Street	Bradford	05033
+53259	VT	LAMOILLE	Wolcott Elementary School	30 School Hill Drive	Wolcott	05680
+53260	VT	CALEDONIA	Burke Community Building	212 School Street	Burke	05871
+53261	VT	WINDHAM	Dummerston School Gym	52 Schoolhouse Road	Dummerston	05346
+53262	VT	ESSEX	Community Building	64 Community Building Road	East Haven	05837
+53263	VT	ADDISON	Goshen Town Hall	50 Carlisle Hill Road	Goshen	05733
+53264	VT	ORLEANS	Greensboro Town Clerk	81 Lauredon Ave.	Greensboro	05841
 53265	GA	COBB	MCCLURE MIDDLE SCHOOL	3660 OLD STILESBORO ROAD	KENNESAW	30152
 53266	GA	FULTON	NORTHWESTERN MIDDLE SCHOOL	12805 BIRMINGHAM HWY (TEMP)	ALPHARETTA	30004
 53267	AL	MOBILE	The Mug Cafe'	5817 Grelot Rd.	Mobile	36609
@@ -3821,14 +3821,14 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 53817	MA	ESSEX	UNIVERSALIST UNITARIAN CH	15 Kenoza Ave	HAVERHILL	01830
 53818	MA	NORFOLK	TUCKER SCHOOL	181 BLUE HILLS PARKWAY	MILTON	02186
 53819	MA	SUFFOLK	DORCHESTER ACADEMY	18 Croftland Ave	Boston	02124
-53820	VT	Washington	Rumney Memorial School	433 Shady Rill Road	Middlesex	05602
-53821	VT	Essex	Norton Town Hall	12 VT Route 114 E	Norton	05907
-53822	VT	Addison	Ripton Town Office	1311 VT Route 125	Ripton	05766
-53823	VT	Lamoille	Waterville Town Hall	544 VT Route 109	Waterville	05492
-53824	VT	Caledonia	Wheelock Town Hall	1192 Route 122	Wheelock	05851
-53825	VT	Orange	Williamstown Middle/High School	120 Hebert Road	Williamstown	05679
-53826	VT	Orleans	Coventry Community Center	168 Main Street	Coventry	05825
-53827	VT	Grand Isle	Isle La Motte Town Hall	2272 Main Street	Isle La Motte	05463
+53820	VT	WASHINGTON	Rumney Memorial School	433 Shady Rill Road	Middlesex	05602
+53821	VT	ESSEX	Norton Town Hall	12 VT Route 114 E	Norton	05907
+53822	VT	ADDISON	Ripton Town Office	1311 VT Route 125	Ripton	05766
+53823	VT	LAMOILLE	Waterville Town Hall	544 VT Route 109	Waterville	05492
+53824	VT	CALEDONIA	Wheelock Town Hall	1192 Route 122	Wheelock	05851
+53825	VT	ORANGE	Williamstown Middle/High School	120 Hebert Road	Williamstown	05679
+53826	VT	ORLEANS	Coventry Community Center	168 Main Street	Coventry	05825
+53827	VT	GRAND ISLE	Isle La Motte Town Hall	2272 Main Street	Isle La Motte	05463
 53828	VA	FAIRFAX	SPRING HILL ELEMENTARY SCHOOL	8201 LEWINSVILLE RD	MCLEAN	22102
 53829	VA	PRINCE WILLIAM	QBE Building	14600 Washington Street	Haymarket	20169
 53830	TN	SUMNER	White House Middle School	105 College Street	Whitehouse	37188
@@ -3939,7 +3939,7 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 53935	TX	NA	Everman City Hall Annex	213 North Race Street	Everman	#N/A
 53936	TX	NA	Springdale Baptist Church	3016 Selma Street	Fort Worth	#N/A
 53937	AR	WHITE	95 - Higginson Ward 2	NA	NA	NA
-53938	VT	Windham	Twin Valley Middle/High School	4299 VT Route 100	Whitingham	05361
+53938	VT	WINDHAM	Twin Valley Middle/High School	4299 VT Route 100	Whitingham	05361
 53939	TN	FENTRESS	Allardt Elementary School	220 Portland Ave.	Allardt	38504
 53940	TN	MONTGOMERY	Clarksville High School	151 Richview Road	Clarksville	37043
 53941	GA	FULTON	MOUNT PISGAH UNITED METH. CH	2850 OLD ALABAMA RD/N CAMPUS	ALPHARETTA	30022
@@ -3958,7 +3958,7 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 53954	AL	CHAMBERS	Precinct 14	NA	NA	NA
 53955	CO	WELD	Billie Martinez Elem. Cafeteria	341 14th Ave	Greeley	80631
 53956	AR	ST FRANCIS	26 - Bonair	NA	NA	NA
-53957	VT	Rutland	Clarendon Town Hall	279 Middle Road	Clarendon	NA
+53957	VT	RUTLAND	Clarendon Town Hall	279 Middle Road	Clarendon	NA
 53958	AL	MONTGOMERY	Precinct 0107	NA	NA	NA
 53959	GA	FULTON	Rw21	NA	NA	NA
 53960	OK	BRYAN	Kiamichi Tech. Wes Watkins Rm.	S. End Vernon Anderson Section	Durant	74701
@@ -4428,18 +4428,18 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 54424	MA	BARNSTABLE	ST JOHN'S PARISH CENTER	841 SHORE RD	POCASSET	02559
 54425	MA	BERKSHIRE	PITTSFIELD LIBRARY	1 WENDELL AVENUE	PITTSFIELD	NA
 54426	MA	BARNSTABLE	ST. GEO. COM. CENTER	1130 FALMOUTH RD	BARNSTABLE	NA
-54427	VT	Addison	Addison Town Clerk's Office	65 Vermont Route 17 West	Addison	05491
-54428	VT	Lamoille	Belvidere Elementary School	4515 Vermont Route 109	Belvidere	05442
-54429	VT	Addison	Orwell Town Hall	480 Main Street	Orwell	05760
-54430	VT	Windsor	Reading Elementary School	632 Route 106	Reading	05062
-54431	VT	Rutland	American Legion	33 Washington Street	Rutland	05701
-54432	VT	Windham	Wardsboro Town Hall	99 Main Street	Wardsboro	05355
-54433	VT	Windham	Athens Elementary School	28 Brookline Road	Athens	05143
-54434	VT	Franklin	Fletcher Elementary School	340 School Road	Fletcher	05444
-54435	VT	Windsor	Baltimore Town Office	1902 Baltimore Road	Baltimore	05143
-54436	VT	Essex	The Guild Hall   (Town Hall)	13 Courthouse Drive	Guildhall	05905
-54437	VT	Chittenden	Hinesburg Town Hall	10632 Route 116	Hinesburg	05461
-54438	VT	Rutland	Ira Town Hall	1800 Route 133	Ira	05777
+54427	VT	ADDISON	Addison Town Clerk's Office	65 Vermont Route 17 West	Addison	05491
+54428	VT	LAMOILLE	Belvidere Elementary School	4515 Vermont Route 109	Belvidere	05442
+54429	VT	ADDISON	Orwell Town Hall	480 Main Street	Orwell	05760
+54430	VT	WINDSOR	Reading Elementary School	632 Route 106	Reading	05062
+54431	VT	RUTLAND	American Legion	33 Washington Street	Rutland	05701
+54432	VT	WINDHAM	Wardsboro Town Hall	99 Main Street	Wardsboro	05355
+54433	VT	WINDHAM	Athens Elementary School	28 Brookline Road	Athens	05143
+54434	VT	FRANKLIN	Fletcher Elementary School	340 School Road	Fletcher	05444
+54435	VT	WINDSOR	Baltimore Town Office	1902 Baltimore Road	Baltimore	05143
+54436	VT	ESSEX	The Guild Hall   (Town Hall)	13 Courthouse Drive	Guildhall	05905
+54437	VT	CHITTENDEN	Hinesburg Town Hall	10632 Route 116	Hinesburg	05461
+54438	VT	RUTLAND	Ira Town Hall	1800 Route 133	Ira	05777
 54439	GA	FULTON	BEAR CREEK MIDDLE SCHOOL	7415 HERNDON RD	ATLANTA	30213
 54440	TN	CUMBERLAND	Community Complex	18 Music Road	Crossville	38555
 54441	AL	SHELBY	Asbury United Methodist Church	6690 Cahaba Valley Rd	Birmingham	35242
@@ -4927,14 +4927,14 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 54923	MA	HAMPDEN	TOWN HALL	23 Main St	BRIMFIELD	01010
 54924	MA	NORFOLK	CALLAHAN SCHOOL	90 GARFIELD AVENUE	NORWOOD	02062
 54925	MA	SUFFOLK	ROBERT & THERESA PARKS	2 New Whitney St	Boston	02115
-54926	VT	Orleans	Jay Westfield Elementary School	257 Revoir Flat Road	Jay	05859
-54927	VT	Lamoille	Johnson Elementary School	57 College Hill	Johnson	05656
-54928	VT	Bennington	Landgrove Town Hall	88 Landgrove Road	Landgrove	05148
-54929	VT	Bennington	Town Clerks Office	18 Town Garage Road	Searsburg	05363
-54930	VT	Caledonia	Miller's Run School	3249 VT Route 122	Sheffield	05866
-54931	VT	Essex	Old Schoolhouse	27 Schoolhouse Road	Bloomfield	05905
-54932	VT	Bennington	The Dorset School	100 School Drive	Dorset	05251
-54933	VT	Chittenden	Essex High School	2 Educational Drive	Essex Junction	05452
+54926	VT	ORLEANS	Jay Westfield Elementary School	257 Revoir Flat Road	Jay	05859
+54927	VT	LAMOILLE	Johnson Elementary School	57 College Hill	Johnson	05656
+54928	VT	BENNINGTON	Landgrove Town Hall	88 Landgrove Road	Landgrove	05148
+54929	VT	BENNINGTON	Town Clerks Office	18 Town Garage Road	Searsburg	05363
+54930	VT	CALEDONIA	Miller's Run School	3249 VT Route 122	Sheffield	05866
+54931	VT	ESSEX	Old Schoolhouse	27 Schoolhouse Road	Bloomfield	05905
+54932	VT	BENNINGTON	The Dorset School	100 School Drive	Dorset	05251
+54933	VT	CHITTENDEN	Essex High School	2 Educational Drive	Essex Junction	05452
 54934	GA	CHATHAM	RISEN SAVIOR CHURCH	1755 QUACCO RD	POOLER	31322
 54935	AL	MOBILE	Plateau Comm. Ctr.	850 Edwards St.	Prichard	36610
 54936	AL	MOBILE	Turnerville Comm. Ctr.	11230 Celeste Rd.	Saraland	36571
@@ -5048,7 +5048,7 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 55044	AL	BARBOUR	BLUE SPRINGS CITY HALL	2571 Highway 10	Clio	36017
 55045	AL	CLARKE	Precinct 0143	NA	NA	NA
 55046	VA	PRINCE WILLIAM	WOODBRIDGE HIGH SCHOOL	3001 Old Bridge Rd	Woodbridge	22192
-55047	VT	Chittenden	Fletcher Free Library	235 College Street	Burlington	05401
+55047	VT	CHITTENDEN	Fletcher Free Library	235 College Street	Burlington	05401
 55048	AL	PERRY	Precinct 0373	NA	NA	NA
 55049	CO	WELD	Frederick H.S. Cafeteria	5690 Tipple Pkwy	Frederick	80514
 55050	VA	FAIRFAX	FORESTDALE ELEMENTARY SCHOOL	6530 ELDER ST	SPRINGFIELD	22150
@@ -5420,12 +5420,12 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 55416	MA	NORFOLK	NASH SCHOOL	1003 FRONT STREET	WEYMOUTH	02190
 55417	MA	HAMPDEN	FALCETTI TOWERS	475 MAPLE ST	HOLYOKE	01040
 55418	MA	ESSEX	ST PIUS LOWER CHURCH HALL	215 MAPLE STREET	LYNN	01904
-55419	VT	Franklin	Swanton Village Complex	120 1st Street	Swanton	05488
-55420	VT	Windsor	Windsor Municipal Bldg. Rec. Ctr. Gym	29 Union Street	Windsor	05089
-55421	VT	Orange	Brookfield Elementary School	1725 Ridge Road	Brookfield	05036
-55422	VT	Essex	Canaan Municipal Office	318 Christian Hill	Canaan	05903
-55423	VT	Windsor	Town Hall  Second Floor	556 Elm Street	Chester	05143
-55424	VT	Chittenden	Brewster-Pierce School	120 School Street	Huntington	05462
+55419	VT	FRANKLIN	Swanton Village Complex	120 1st Street	Swanton	05488
+55420	VT	WINDSOR	Windsor Municipal Bldg. Rec. Ctr. Gym	29 Union Street	Windsor	05089
+55421	VT	ORANGE	Brookfield Elementary School	1725 Ridge Road	Brookfield	05036
+55422	VT	ESSEX	Canaan Municipal Office	318 Christian Hill	Canaan	05903
+55423	VT	WINDSOR	Town Hall  Second Floor	556 Elm Street	Chester	05143
+55424	VT	CHITTENDEN	Brewster-Pierce School	120 School Street	Huntington	05462
 55425	GA	SUMTER	AMERICUS SUMTER REC DEPARTMENT	408 RUCKER ST	AMERICUS	31719
 55426	GA	CHATHAM	SEVENTH DAY ADVENTIST CHURCH	50 GODELY WAY	POOLER	31322
 55427	AL	LAUDERDALE	Broad Recreation Center	300 Broadway Street	Florence	35630
@@ -5544,19 +5544,19 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 55540	MA	MIDDLESEX	CADBURY COMMONS	66 SHERMAN STREET	CAMBRIDGE	02140
 55541	MA	MIDDLESEX	SARGENT MEMORIAL LIBRARY	427 MASSACHUSETTS AVE	BOXBOROUGH	NA
 55542	MA	WORCESTER	SENIOR CENTER	29 FOREST ST	NORTH BROOKFIELD	01535
-55543	VT	Chittenden	Mount Mansfield Union High School	211 Brown's Trace	Jericho	05456
-55544	VT	Rutland	Firehouse	8 Firehouse Lane	Middletown Springs	05757
-55545	VT	Rutland	Christ the King School	60 South Main Street	Rutland	05701
-55546	VT	Lamoille	Stowe High School	413 Barrows Road	Stowe	05672
-55547	VT	Washington	Warren Elementary School	293 School Road	Warren	05674
-55548	VT	Orleans	Fellowship Hall	29 Hinton Hill Road	Westmore	05860
-55549	VT	Chittenden	Williston Central School Gymnasium	195 Central School Drive	Williston	05495
-55550	VT	Orange	Chelsea Town Hall	296 VT RT 110	Chelsea	05038
-55551	VT	Chittenden	Colchester High School	131 Lake Lane	Colchester	05446
+55543	VT	CHITTENDEN	Mount Mansfield Union High School	211 Brown's Trace	Jericho	05456
+55544	VT	RUTLAND	Firehouse	8 Firehouse Lane	Middletown Springs	05757
+55545	VT	RUTLAND	Christ the King School	60 South Main Street	Rutland	05701
+55546	VT	LAMOILLE	Stowe High School	413 Barrows Road	Stowe	05672
+55547	VT	WASHINGTON	Warren Elementary School	293 School Road	Warren	05674
+55548	VT	ORLEANS	Fellowship Hall	29 Hinton Hill Road	Westmore	05860
+55549	VT	CHITTENDEN	Williston Central School Gymnasium	195 Central School Drive	Williston	05495
+55550	VT	ORANGE	Chelsea Town Hall	296 VT RT 110	Chelsea	05038
+55551	VT	CHITTENDEN	Colchester High School	131 Lake Lane	Colchester	05446
 55552	GA	BUTTS	TOWALIGA BAPTIST CHURCH	160 TOWALIGA CHURCH RD	JACKSON	30233
 55553	GA	FULTON	WELCOME ALL PARK RECREATION CTR #2	4255 WILL LEE ROAD	ATLANTA	30349
 55554	GA	SUMTER	SUMTER CO. AGRICULTURE CENTER	331 HWY 19 S	AMERICUS	31719
-55555	VT	Chittenden	St. Marks Youth Center	1271 North Ave.	Burlington	05408
+55555	VT	CHITTENDEN	St. Marks Youth Center	1271 North Ave.	Burlington	05408
 55556	AL	SHELBY	First Presbyterian Church Of Alabaster	8828 Hwy 119	Alabaster	35007
 55557	TX	NA	SALADO CHURCH OF CHRIST ACTIVITIES CENTER	225 NORTH CHURCH STREET	SALADO	76513
 55558	TX	NA	Evers Elementary School	1715 Richland Hills Dr.	San Antonio	78204
@@ -6446,23 +6446,23 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 56442	MA	SUFFOLK	CENTRAL FIRE STATION	400 BROADWAY	REVERE	02151
 56443	MA	SUFFOLK	BHA HERITAGE APARTMENTS	209 SUMNER STREET	Boston	02128
 56444	MA	BARNSTABLE	CARLETON HALL	1006 OLD BASS RIVER ROAD	Dennis	02638
-56445	VT	Caledonia	Kirby Town Hall	346 Town Hall Road	Kirby	05851
-56446	VT	Addison	Municipal Gymnasium	94 Main Street	Middlebury	05753
-56447	VT	Orange	Newbury Town Offices	4982 Main St. South	Newbury	05051
-56448	VT	Caledonia	Peacham Congregational Church	68 Church Street	Peacham	05682
-56449	VT	Chittenden	Municipal Building Gym	5420 Shelburne Road	Shelburne	05482
-56450	VT	Windsor	Martin Memorial Hall	5259 US Route 5	 Ascutney	0503
-56451	VT	Essex	Town Hall Gym	49 Mill Street Ext.	Brighton	05846
-56452	VT	Orleans	Brownington Central School	103 Chase Road	Brownington	05860
-56453	VT	Washington	Cabot School Gym	26 Gym Road	Cabot	05647
-56454	VT	Washington	Crossett Brook Middle School	6100 VT Route 100	Duxbury	05676
-56455	VT	Washington	East Montpelier Elem School	665 Vincent Flats Road	East Montpelier	05651
-56456	VT	Windham	Grafton Elementary School	58 School Street	Grafton	05146
-56457	VT	Lamoille	Lamoille Union High School	736 VT 15 W	Hyde Park	05655
+56445	VT	CALEDONIA	Kirby Town Hall	346 Town Hall Road	Kirby	05851
+56446	VT	ADDISON	Municipal Gymnasium	94 Main Street	Middlebury	05753
+56447	VT	ORANGE	Newbury Town Offices	4982 Main St. South	Newbury	05051
+56448	VT	CALEDONIA	Peacham Congregational Church	68 Church Street	Peacham	05682
+56449	VT	CHITTENDEN	Municipal Building Gym	5420 Shelburne Road	Shelburne	05482
+56450	VT	WINDSOR	Martin Memorial Hall	5259 US Route 5	 Ascutney	0503
+56451	VT	ESSEX	Town Hall Gym	49 Mill Street Ext.	Brighton	05846
+56452	VT	ORLEANS	Brownington Central School	103 Chase Road	Brownington	05860
+56453	VT	WASHINGTON	Cabot School Gym	26 Gym Road	Cabot	05647
+56454	VT	WASHINGTON	Crossett Brook Middle School	6100 VT Route 100	Duxbury	05676
+56455	VT	WASHINGTON	East Montpelier Elem School	665 Vincent Flats Road	East Montpelier	05651
+56456	VT	WINDHAM	Grafton Elementary School	58 School Street	Grafton	05146
+56457	VT	LAMOILLE	Lamoille Union High School	736 VT 15 W	Hyde Park	05655
 56458	GA	DEKALB	STONE MOUNTAIN ELEMENTARY SCH	6720 JAMES B RIVERS DR	STONE MOUNTAIN	30083
 56459	GA	DOUGLAS	0740-FIRST BAPTIST DOUGLASVILLE	5900 PRESTLEY MILL RD	DOUGLASVILLE	30135
-56460	VT	Chittenden	Edmunds Middle School	275 Main St.	Burlington	05401
-56461	VT	Orleans	Lake Region Union High School	317 Lake Region Rd	Orleans	05860
+56460	VT	CHITTENDEN	Edmunds Middle School	275 Main St.	Burlington	05401
+56461	VT	ORLEANS	Lake Region Union High School	317 Lake Region Rd	Orleans	05860
 56462	VA	CHESAPEAKE CITY	DEEP CREEK CENTRAL ELEMENTARY SCHOOL	2448 Shipyard Road	CHESAPEAKE	23323
 56463	TX	NA	FIRST CHURCH OF THE NAZARENE	5000 SOUTH 31ST STREET	TEMPLE	76513
 56464	TX	NA	Pease Middle School	201 Hunt Ln.	San Antonio	78204
@@ -6949,21 +6949,21 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 56945	MA	WORCESTER	OXFORD MIDDLE SCHOOL	497 MAIN STREET	OXFORD	01540
 56946	MA	WORCESTER	HEYWOOD MEMORIAL LIBRARY	55 WEST LYNDE STREET	GARDNER	01440
 56947	MA	SUFFOLK	POINT OF PINES FIRE STATI	140 LYNNWAY	REVERE	02151
-56948	VT	Essex	Maidstone Town Hall	508 VT Route 102	Maidstone	05905
-56949	VT	Orleans	Barton Memorial Building	12 Village Square	Barton	05860
-56950	VT	Caledonia	Newark Street School	1448 Newark St.	Newark	05871
-56951	VT	Bennington	Bennington Fire House	130 River Street	Bennington	05201
-56952	VT	Washington	Plainfield Town Hall Opera House	18 High Street	Plainfield	05667
-56953	VT	Washington	Town Hall/Village School	1664 Roxbury Road	Roxbury	05669
-56954	VT	Chittenden	Town Hall	21 Barber Road	Saint George	05495
-56955	VT	Windsor	Whitcomb High School Gym	273 Pleasant Street	Bethel	05032
-56956	VT	Windham	Stratton Town Hall	688 Stratton-Arlington Road.	Stratton	05360
-56957	VT	Rutland	Wells Town Office	1064 VT RT 30	Wells	05774
-56958	VT	Windsor	Story Memorial Hall	22 Brownsville-Hartland Rd.	West Windsor	05089
-56959	VT	Chittenden	Winooski Senior Center	123 Barlow St	Winooski	05404
-56960	VT	Windham	Municipal Center	230 Main St  Suite 212	Brattleboro	05301
-56961	VT	Washington	Fayston Elementery School	782 German Flats Road	Fayston	05660
-56962	VT	Grand Isle	Grand Isle Town Office	9 Hyde Road	Grand Isle	05458
+56948	VT	ESSEX	Maidstone Town Hall	508 VT Route 102	Maidstone	05905
+56949	VT	ORLEANS	Barton Memorial Building	12 Village Square	Barton	05860
+56950	VT	CALEDONIA	Newark Street School	1448 Newark St.	Newark	05871
+56951	VT	BENNINGTON	Bennington Fire House	130 River Street	Bennington	05201
+56952	VT	WASHINGTON	Plainfield Town Hall Opera House	18 High Street	Plainfield	05667
+56953	VT	WASHINGTON	Town Hall/Village School	1664 Roxbury Road	Roxbury	05669
+56954	VT	CHITTENDEN	Town Hall	21 Barber Road	Saint George	05495
+56955	VT	WINDSOR	Whitcomb High School Gym	273 Pleasant Street	Bethel	05032
+56956	VT	WINDHAM	Stratton Town Hall	688 Stratton-Arlington Road.	Stratton	05360
+56957	VT	RUTLAND	Wells Town Office	1064 VT RT 30	Wells	05774
+56958	VT	WINDSOR	Story Memorial Hall	22 Brownsville-Hartland Rd.	West Windsor	05089
+56959	VT	CHITTENDEN	Winooski Senior Center	123 Barlow St	Winooski	05404
+56960	VT	WINDHAM	Municipal Center	230 Main St  Suite 212	Brattleboro	05301
+56961	VT	WASHINGTON	Fayston Elementery School	782 German Flats Road	Fayston	05660
+56962	VT	GRAND ISLE	Grand Isle Town Office	9 Hyde Road	Grand Isle	05458
 56963	GA	HOUSTON	MOSSY CREEK MIDDLE SCHOOL -GYM	200 DANNY CARPENTER DR	KATHLEEN	31047
 56964	TN	SUMNER	Gallatin Civic Center	210 Albert Gallatin Rd	Gallatin	37066
 56965	AL	CULLMAN	East Point Community Center	556 AL Hwy 69 N	Cullman	35055
@@ -7485,20 +7485,20 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 57481	MA	PLYMOUTH	COLD SPRING ELEM SCHOOL	25 ALDEN STREET	PLYMOUTH	02360
 57482	MA	HAMPDEN	GRANGER SCHOOL	31 SOUTH WESTFIELD ST	AGAWAM	01001
 57483	MA	HAMPSHIRE	WILDWOOD SCHOOL	400 BROADWAY	AMHERST	01002
-57484	VT	Addison	Leicester Town Office	44 School House Road	Leicester	05733
-57485	VT	Addison	Burnham Hall	52 East River Road	Lincoln	05443
-57486	VT	Orange	Orange Town Hall	392 US Route 302	Orange	05649
-57487	VT	Windsor	Municipal Hall	68 Town Office Road	Plymouth	05056
-57488	VT	Rutland	Godnick Center	1 Deer Street	Rutland	05701
-57489	VT	Orange	Tunbridge Central School	523 VT RT 110	Tunbridge	05077
-57490	VT	Addison	Fire Station	0	Vergennes	05491
-57491	VT	Orange	Town Center Building	27 Vershire Center Road	Vershire	05079
-57492	VT	Rutland	West Rutland Town Hall	35 Marble Street	West Rutland	05777
-57493	VT	Windsor	Weston Playhouse	12 Park Street	Weston	05161
-57494	VT	Windsor	Andover Town Hall	59 Town Hall Road	Andover	05143
-57495	VT	Rutland	Municipal Office	130 Brook Road	Danby	05739
-57496	VT	Franklin	Enosburgh Middle/High School	Dickinson Ave	Enosburgh	05450
-57497	VT	Orleans	Irasburg Town Hall	118 Park Ave.	Irasburg	05845
+57484	VT	ADDISON	Leicester Town Office	44 School House Road	Leicester	05733
+57485	VT	ADDISON	Burnham Hall	52 East River Road	Lincoln	05443
+57486	VT	ORANGE	Orange Town Hall	392 US Route 302	Orange	05649
+57487	VT	WINDSOR	Municipal Hall	68 Town Office Road	Plymouth	05056
+57488	VT	RUTLAND	Godnick Center	1 Deer Street	Rutland	05701
+57489	VT	ORANGE	Tunbridge Central School	523 VT RT 110	Tunbridge	05077
+57490	VT	ADDISON	Fire Station	0	Vergennes	05491
+57491	VT	ORANGE	Town Center Building	27 Vershire Center Road	Vershire	05079
+57492	VT	RUTLAND	West Rutland Town Hall	35 Marble Street	West Rutland	05777
+57493	VT	WINDSOR	Weston Playhouse	12 Park Street	Weston	05161
+57494	VT	WINDSOR	Andover Town Hall	59 Town Hall Road	Andover	05143
+57495	VT	RUTLAND	Municipal Office	130 Brook Road	Danby	05739
+57496	VT	FRANKLIN	Enosburgh Middle/High School	Dickinson Ave	Enosburgh	05450
+57497	VT	ORLEANS	Irasburg Town Hall	118 Park Ave.	Irasburg	05845
 57498	GA	FULTON	THE MEADOWS OPERATIONS CENTER	5270 NORTHFIELD BLVD	ATLANTA	30349
 57499	AL	LAUDERDALE	Highland Baptist Church	219 Simpson Street	Florence	35630
 57500	TX	NA	Lowell Middle School	919 Thompson Pl.	San Antonio	78204
@@ -8038,24 +8038,24 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 58034	MA	BRISTOL	RUSSELLS MILLS ENG. HOUSE	1100 RUSSELLS MILLS RD	DARTMOUTH	02748
 58035	MA	HAMPDEN	TOWN HALL	65 MAIN ST	RUSSELL	01071
 58036	MA	MIDDLESEX	WALTHAM HIGH SCHOOL	617 LEXINGTON ST	WALTHAM	02452
-58037	VT	Windsor	Ludlow Town Hall	37 Depot St	Ludlow	05149
-58038	VT	Washington	Montpelier City Hall	39 Main Street	Montpelier	05602
-58039	VT	Orleans	Newport Municipal Building	222 Main Street	Newport City	05855
-58040	VT	Orleans	Newport Town School	4212 VT Route 105	Newport Town	05857
-58041	VT	Windsor	Sharon Elementary School	75 VT Route 132	Sharon	05065
-58042	VT	Orleans	Albany Town Hall	830 Main Street	Albany	05820
-58043	VT	Essex	Victory Town Hall	102 Radar RD. N. Concord	Victory	05858
-58044	VT	Orange	Community Building	870 Route 113	West Fairlee	05083
-58045	VT	Windham	Windham Meetinghouse	26 Harrington Road	Windham	05359
-58046	VT	Washington	Woodbury Elementary School	63 Valley Lake Road	Woodbury	05681
-58047	VT	Washington	Calais Elementery School	321 Lightening Ridge Road	Calais	05650
-58048	VT	Addison	Cornwall Town Hall	2629 Route 30	Cornwall	05753
-58049	VT	Caledonia	Elementary School	135 South Main Street	Hardwick	05411
+58037	VT	WINDSOR	Ludlow Town Hall	37 Depot St	Ludlow	05149
+58038	VT	WASHINGTON	Montpelier City Hall	39 Main Street	Montpelier	05602
+58039	VT	ORLEANS	Newport Municipal Building	222 Main Street	Newport City	05855
+58040	VT	ORLEANS	Newport Town School	4212 VT Route 105	Newport Town	05857
+58041	VT	WINDSOR	Sharon Elementary School	75 VT Route 132	Sharon	05065
+58042	VT	ORLEANS	Albany Town Hall	830 Main Street	Albany	05820
+58043	VT	ESSEX	Victory Town Hall	102 Radar RD. N. Concord	Victory	05858
+58044	VT	ORANGE	Community Building	870 Route 113	West Fairlee	05083
+58045	VT	WINDHAM	Windham Meetinghouse	26 Harrington Road	Windham	05359
+58046	VT	WASHINGTON	Woodbury Elementary School	63 Valley Lake Road	Woodbury	05681
+58047	VT	WASHINGTON	Calais Elementery School	321 Lightening Ridge Road	Calais	05650
+58048	VT	ADDISON	Cornwall Town Hall	2629 Route 30	Cornwall	05753
+58049	VT	CALEDONIA	Elementary School	135 South Main Street	Hardwick	05411
 58050	GA	DEKALB	EPWORTH UNITED METH CHURCH	1561 MCLENDON AVENUE NE	ATLANTA	30307
 58051	GA	DOUGLAS	0785-BOUNDARY WATERS AQUATIC CENTE	5000 GEORGIA HIGHWAY 92	DOUGLASVILLE	30135
 58052	GA	HOUSTON	THOMSON MIDDLE SCHOOL - GYM	301 THOMSON ST	CENTERVILLE	31028
 58053	GA	SUMTER	GSW GOLF AND CONFERENCE CENTER	1800 S. LEE ST	AMERICUS	31709
-58054	VT	Chittenden	 HO Wheeler School	6 Archibald Street	Burlington	05401
+58054	VT	CHITTENDEN	 HO Wheeler School	6 Archibald Street	Burlington	05401
 58055	TN	SHELBY	North Area Office-Gragg Campus	3782 Jackson Av	Memphis	38108
 58056	AL	HOUSTON	COWARTS CITY HALL	800 JESTER STREET	COWARTS	36321
 58057	AL	LAUDERDALE	E. Campus of Woodmont Bpt. Church	2002 Darby Drive	Florence	35630
@@ -8466,17 +8466,17 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 58462	MA	WORCESTER	NAQUAG ELEMENTARY SCHOOL	285 MAIN STREET	RUTLAND	01543
 58463	MA	NORFOLK	CLEVELAND SCHOOL	33 GEORGE WILLETT PKWY	NORWOOD	02062
 58464	MA	HAMPDEN	ELMWOOD FIRE STATION	490 SOUTH ST	HOLYOKE	01040
-58465	VT	Essex	Lunenburg School	49 Bobbin Mill Road	Lunenburg	05904
-58466	VT	Rutland	Pawlet Town Hall	122 School Street	Pawlet	05761
-58467	VT	Rutland	Tinmouth Community Center	573 Route 140	Tinmouth	05773
-58468	VT	Windham	Town Office Building-Downstairs	567 Governor Hunt Road	Vernon	05354
-58469	VT	Grand Isle	Alburgh Municipal Building	1 North Main Street	Alburgh	05440
-58470	VT	Franklin	Franklin Elementary School	15 School Street	Franklin	05457
+58465	VT	ESSEX	Lunenburg School	49 Bobbin Mill Road	Lunenburg	05904
+58466	VT	RUTLAND	Pawlet Town Hall	122 School Street	Pawlet	05761
+58467	VT	RUTLAND	Tinmouth Community Center	573 Route 140	Tinmouth	05773
+58468	VT	WINDHAM	Town Office Building-Downstairs	567 Governor Hunt Road	Vernon	05354
+58469	VT	GRAND ISLE	Alburgh Municipal Building	1 North Main Street	Alburgh	05440
+58470	VT	FRANKLIN	Franklin Elementary School	15 School Street	Franklin	05457
 58471	GA	DEKALB	MURPHEY CANDLER ELEM	6775 SOUTH GODDARD ROAD	LITHONIA	30038
 58472	GA	DEKALB	PRINCETON ELEMENTARY SCHOOL	1321 SOUTH DESHON RD	LITHONIA	30058
 58473	GA	FULTON	LOVE T. NOLAN ELEMENTARY SCHOOL #2	2725 CREEL ROAD	ATLANTA	30349
 58474	GA	ROCKDALE	PRESBY. CHURCH OF RESURRECTION	3676 HWY 20 NE	CONYERS	30012
-58475	VT	Chittenden	 Lawrence Barnes School	 100 North St.	Burlington	05401
+58475	VT	CHITTENDEN	 Lawrence Barnes School	 100 North St.	Burlington	05401
 58476	AL	BUTLER	Health Department	350 Airport Rd.	Greenville	36037
 58477	AL	MOBILE	Fellowship Baptist Church	11480 Gulfcrest Rd.	Chunchula	36521
 58478	AL	MOBILE	Mt. Vernon Civic Ctr.	1230 Magnolia St.	Mt. Vernon	36560
@@ -8890,18 +8890,18 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 58886	MA	NORFOLK	QUINCY LODGE OF ELKS	254R QUARRY ST	QUINCY	02169
 58887	MA	WORCESTER	OLIVER WIGHT TAVERN	1 OLD STURBRIDGE VILLAGE ROAD	STURBRIDGE	01566
 58888	MA	NORFOLK	MARGE CRISPIN CENTER	74 POND STREET REAR	BRAINTREE	02184
-58889	VT	Essex	Lemington Town Hall	2549 River Road	Lemington	05903
-58890	VT	Bennington	Manchester Town Hall	6039 Main Street	Manchester	05255
-58891	VT	Rutland	Poultney Fire House	45 Fire House Lane	Poultney	05764
-58892	VT	Windham	Putney Central School	182 Westminister Road	Putney	05346
-58893	VT	Rutland	Rutland Town Elementary School/Town Hall	1612 Post Road/181 U.S. Route 4	Rutland Town	05701
-58894	VT	Caledonia	St Johnsbury School	257 Western Ave	St Johnsbury	05819
-58895	VT	Grand Isle	Town Office Building	333 Route 2	South Hero	05486
-58896	VT	Addison	Robinson Elementary School	41 Parsonage Road	Starksboro	05487
-58897	VT	Windsor	Union Meeting House	97 Maplewood Drive	Stockbridge	05772
-58898	VT	Windham	Townshend Town Hall	2006 VT Route 30	Townshend	05353
-58899	VT	Windham	Twin Valley Elementary School	360 VT Route 100 North	Wilmington	05363
-58900	VT	Orange	Samuel Morey Elementary School Gym	214 School Street	Fairlee	05045
+58889	VT	ESSEX	Lemington Town Hall	2549 River Road	Lemington	05903
+58890	VT	BENNINGTON	Manchester Town Hall	6039 Main Street	Manchester	05255
+58891	VT	RUTLAND	Poultney Fire House	45 Fire House Lane	Poultney	05764
+58892	VT	WINDHAM	Putney Central School	182 Westminister Road	Putney	05346
+58893	VT	RUTLAND	Rutland Town Elementary School/Town Hall	1612 Post Road/181 U.S. Route 4	Rutland Town	05701
+58894	VT	CALEDONIA	St Johnsbury School	257 Western Ave	St Johnsbury	05819
+58895	VT	GRAND ISLE	Town Office Building	333 Route 2	South Hero	05486
+58896	VT	ADDISON	Robinson Elementary School	41 Parsonage Road	Starksboro	05487
+58897	VT	WINDSOR	Union Meeting House	97 Maplewood Drive	Stockbridge	05772
+58898	VT	WINDHAM	Townshend Town Hall	2006 VT Route 30	Townshend	05353
+58899	VT	WINDHAM	Twin Valley Elementary School	360 VT Route 100 North	Wilmington	05363
+58900	VT	ORANGE	Samuel Morey Elementary School Gym	214 School Street	Fairlee	05045
 58901	GA	SUMTER	SOUTHERFIELD AIRPORT	223 AIRPORT RD	AMERICUS	31709
 58902	VA	PRINCE WILLIAM	GAINESVILLE MIDDLE SCHOOL	8001 Limestone Drive	Gainesville	20155
 58903	AL	LAUDERDALE	Forest HIlls School	101 Stovall Drive	Florence	35630
@@ -8984,7 +8984,7 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 58980	TX	NA	Lakeshore Elementary School	13333 Breakwater Path Drive	Houston	77007
 58981	TX	NA	Hill Intermediate School	2625 West Mount Houston Road	Houston	77007
 58982	TX	NA	Payne Springs Comm Center	9692 Hwy 198 #2	Mabank	75143
-58983	VT	Franklin	Collins Perley Sports Center	890 Fairfax Road	St Albans Town	05478
+58983	VT	FRANKLIN	Collins Perley Sports Center	890 Fairfax Road	St Albans Town	05478
 58984	TN	HAMILTON	Rechoboth Baptist	12622 Dayton Pike	Soddy-Daisy	37379
 58985	TN	UNION	Braden Chapel Church	723 Braden Chapel Rd.	Speedwell	37870
 58986	AL	JEFFERSON	FAIRFIELD FIRE STATION #1	5231 COURT B	FAIRFIELD	35064
@@ -9064,7 +9064,7 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 59060	AL	WINSTON	Upshaw Fire Station	16 County Road 50	Addison	35540
 59061	VA	PRINCE WILLIAM	Potomac Crest Baptist Church	15418 Cardinal Drive	Woodbridge	22193
 59062	VA	PRINCE WILLIAM	Haymarket Elementary School	15500 Learning Lane	Haymarket	20169
-59063	VT	Rutland	American Legion Post #50	378 VT Route 4A West	Castleton	NA
+59063	VT	RUTLAND	American Legion Post #50	378 VT Route 4A West	Castleton	NA
 59064	AR	PRAIRIE	Wattensaw City Ward 3	NA	NA	NA
 59065	OK	ATOKA	Caney Community Building	203 N Cobb Ave	Caney	74533
 59066	OK	BLAINE	Greenfield Baptist Church	204 N Main	Greenfield	73043
@@ -9400,15 +9400,15 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 59396	MA	MIDDLESEX	PEIRCE SCHOOL	170 TEMPLE ST	NEWTON	02465
 59397	MA	SUFFOLK	HOLGATE APARTMENTS	129 ELM HILL AVENUE	BOSTON	02121
 59398	MA	NORFOLK	BALCH SCHOOL	1168 WASHINGTON STREET	NORWOOD	02062
-59399	VT	Washington	Civic Center Auditorium	20 Auditorium Hill	Barre City	05641
-59400	VT	Rutland	Mount Holly Town Office	50 School Street	Mount Holly	05758
-59401	VT	Windsor	Tracy Hall Gym	300 Main Street	Norwich	05055
-59402	VT	Rutland	Town Office Building (Presidential Primary)	40 Village Green	Pittsfield	05762
-59403	VT	Franklin	Richford Town Hall	94 Main Street	Richford	05476
-59404	VT	Addison	Waltham Town Hall	2053 Maple Street	Waltham	05491
-59405	VT	Windsor	Bridgewater Town Office	7335 US Route 4	Bridgewater	05034
-59406	VT	Addison	Holley Hall	1 South Street	Bristol	05443
-59407	VT	Windham	Guildford Central School	274 School Road	Guilford	05301
+59399	VT	WASHINGTON	Civic Center Auditorium	20 Auditorium Hill	Barre City	05641
+59400	VT	RUTLAND	Mount Holly Town Office	50 School Street	Mount Holly	05758
+59401	VT	WINDSOR	Tracy Hall Gym	300 Main Street	Norwich	05055
+59402	VT	RUTLAND	Town Office Building (Presidential Primary)	40 Village Green	Pittsfield	05762
+59403	VT	FRANKLIN	Richford Town Hall	94 Main Street	Richford	05476
+59404	VT	ADDISON	Waltham Town Hall	2053 Maple Street	Waltham	05491
+59405	VT	WINDSOR	Bridgewater Town Office	7335 US Route 4	Bridgewater	05034
+59406	VT	ADDISON	Holley Hall	1 South Street	Bristol	05443
+59407	VT	WINDHAM	Guildford Central School	274 School Road	Guilford	05301
 59408	VA	PRINCE WILLIAM	BEVILLE MIDDLE SCHOOL	4901 Dale Boulevard	Woodbridge	22193
 59409	VA	PRINCE WILLIAM	FREEDOM HIGH SCHOOL	15201 Neabsco Mills Road	Woodbridge	22191
 59410	VA	CHESAPEAKE CITY	GREENBRIER CHURCH	1101 Volvo Parkway	CHESAPEAKE	23320
@@ -9833,12 +9833,12 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 59829	MA	HAMPSHIRE	NORTH CONGREGATIONAL	3 WASHBURN SQUARE	AMHERST	NA
 59830	MA	ESSEX	PENTUCKET LK SCH-MUSIC RM	252 CONCORD ST	HAVERHILL	01830
 59831	MA	ESSEX	WILSON TERRACE COMM. HALL	15A WILSON TERRACE	PEABODY	01960
-59832	VT	Rutland	Killington Town Office	2706 River Road	Killington	03243
-59833	VT	Lamoille	Morristown Municipal Office Building	43 Portland Street	Morristown	05661
-59834	VT	Rutland	Lothrop School Gymnasium	3447 U.S. Route 7	Pittsford	05763
-59835	VT	Orleans	Westfield Community Center	59 North Hill Rd.	Westfield	05874
-59836	VT	Windham	Dover Town Hall	189 Taft Brook Rd	Dover	05356
-59837	VT	Franklin	Veterans Hall-Fairfield Center School Gym	57 Park Street	Fairfield	05455
+59832	VT	RUTLAND	Killington Town Office	2706 River Road	Killington	03243
+59833	VT	LAMOILLE	Morristown Municipal Office Building	43 Portland Street	Morristown	05661
+59834	VT	RUTLAND	Lothrop School Gymnasium	3447 U.S. Route 7	Pittsford	05763
+59835	VT	ORLEANS	Westfield Community Center	59 North Hill Rd.	Westfield	05874
+59836	VT	WINDHAM	Dover Town Hall	189 Taft Brook Rd	Dover	05356
+59837	VT	FRANKLIN	Veterans Hall-Fairfield Center School Gym	57 Park Street	Fairfield	05455
 59838	GA	FULTON	WELCOME ALL PARK	4255 WILL LEE ROAD	COLLEGE PARK	30349
 59839	AL	WASHINGTON	Chatom Court House	101 Cochran Ave	Chatom	36518
 59840	TX	NA	Barkley-Ruiz  Elementary School	1111 S. Navidad St.	San Antonio	78204
@@ -9917,7 +9917,7 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 59913	VA	BEDFORD	BEDFORD CHRISTIAN CHURCH	1928 Moneta Rd	Bedford	24523
 59914	TX	NA	Hurst Public Library	901 Precinct Line Road	Hurst	#N/A
 59915	AR	BENTON	Nwacc - Shewmaker Center	1000 SE Eagles Way	Bentonville	72712
-59916	VT	Addison	Town Offices	297 Main Street	Shoreham	05770
+59916	VT	ADDISON	Town Offices	297 Main Street	Shoreham	05770
 59917	AL	SUMTER	Boyd Voting Trailer	8181 Carl Turk 12	Boyd	35470
 59918	MN	HENNEPIN	Harrison Recreation Center	503 Irving Ave N	Minneapolis	55405
 59919	AL	PERRY	Precinct 0046	NA	NA	NA
@@ -10306,18 +10306,18 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 60302	MA	BERKSHIRE	HINSDALE TOWN HALL	39 SOUTH ST	HINSDALE	01235
 60303	MA	MIDDLESEX	MEMORIAL BUILDING	150 CONCORD STREET	FRAMINGHAM	01702
 60304	MA	BRISTOL	MITCHELL APARTMENTS	2100 SOUTH MAIN ST	FALL RIVER	02724
-60305	VT	Franklin	Town Hall  (The Grange)	57 Main Street	Montgomery	05471
-60306	VT	Rutland	Proctor Jr./Sr. High School	4 Park Street	Proctor	05765
-60307	VT	Bennington	Rupert Town Office	187 East Street	Rupert	05776
-60308	VT	Caledonia	Ryegate Town Hall	134 Witherspoon Road	Ryegate	05042
-60309	VT	Chittenden	Chamberlin School	262 White Street	South Burlington	05403
-60310	VT	Caledonia	Stannard Town Hall	615 Stannard Mountain Road	Stannard	05842
-60311	VT	Orange	Thetford Academy/Thetford Elementary	2689 Route 113	Thetford	05075
-60312	VT	Addison	Whiting Town Hall	29 S. Main Street	Whiting	05778
-60313	VT	Bennington	Mountain School at Winhall	9 School Street	Winhall	05340
-60314	VT	Washington	Doty Elementary School	24 Calais Road	Worcester	05682
-60315	VT	Essex	Granby Town Hall	9005 Granby Road	Granby	05840
-60316	VT	Windsor	Hartford High School	37 Highland Ave.	Hartford	05001
+60305	VT	FRANKLIN	Town Hall  (The Grange)	57 Main Street	Montgomery	05471
+60306	VT	RUTLAND	Proctor Jr./Sr. High School	4 Park Street	Proctor	05765
+60307	VT	BENNINGTON	Rupert Town Office	187 East Street	Rupert	05776
+60308	VT	CALEDONIA	Ryegate Town Hall	134 Witherspoon Road	Ryegate	05042
+60309	VT	CHITTENDEN	Chamberlin School	262 White Street	South Burlington	05403
+60310	VT	CALEDONIA	Stannard Town Hall	615 Stannard Mountain Road	Stannard	05842
+60311	VT	ORANGE	Thetford Academy/Thetford Elementary	2689 Route 113	Thetford	05075
+60312	VT	ADDISON	Whiting Town Hall	29 S. Main Street	Whiting	05778
+60313	VT	BENNINGTON	Mountain School at Winhall	9 School Street	Winhall	05340
+60314	VT	WASHINGTON	Doty Elementary School	24 Calais Road	Worcester	05682
+60315	VT	ESSEX	Granby Town Hall	9005 Granby Road	Granby	05840
+60316	VT	WINDSOR	Hartford High School	37 Highland Ave.	Hartford	05001
 60317	GA	DEKALB	CHURCH OF CHRIST AT BOULDERCRE	2727 BOULDERCREST RD SE	ATLANTA	30316
 60318	GA	DEKALB	ST.BARTHOLOMEW'S EPISCOPAL CHU	1790 LAVISTA RD. NE	ATLANTA	30329
 60319	AL	MOBILE	Creola Sr. Citizens Ctr.	9716 Old Hwy. 43	Creola	36525
@@ -10740,16 +10740,16 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 60736	MA	BRISTOL	BOA VISTA	134 SO. Second St.	NEW BEDFORD	02740
 60737	MA	FRANKLIN	TOWN HALL	321 ZOAR ROAD	ROWE	01367
 60738	MA	PLYMOUTH	RAYMOND SCHOOL	125 OAK STREET	BROCKTON	02301
-60739	VT	Windham	Union Hall	5 Church Street	Newfane	05345
-60740	VT	Windsor	Rochester Town Office	67 School St	Rochester	05767
-60741	VT	Rutland	Calvary Bible Church	2 Meadow Lane	Rutland	05701
-60742	VT	Franklin	St. Albans City Hall	100 North Main Street	St. Albans City	05478
-60743	VT	Bennington	Sandgate Town Office	3266 Sandgate Road	Sandgate	05250
-60744	VT	Rutland	Sudbury Town Hall	36 Blacksmith Lane	Sudbury	05733
-60745	VT	Chittenden	Smilie Memorial School	2712 Theodore Roosevelt Highway	Bolton	05676
-60746	VT	Washington	Thatcher Brook Primary School	47 Stowe Street	Waterbury	05676
-60747	VT	Chittenden	Westford School	146 Brookside Road	Westford	05494
-60748	VT	Orange	Braintree Town Hall	5379 VT Route 12A	Braintree	05060
+60739	VT	WINDHAM	Union Hall	5 Church Street	Newfane	05345
+60740	VT	WINDSOR	Rochester Town Office	67 School St	Rochester	05767
+60741	VT	RUTLAND	Calvary Bible Church	2 Meadow Lane	Rutland	05701
+60742	VT	FRANKLIN	St. Albans City Hall	100 North Main Street	St. Albans City	05478
+60743	VT	BENNINGTON	Sandgate Town Office	3266 Sandgate Road	Sandgate	05250
+60744	VT	RUTLAND	Sudbury Town Hall	36 Blacksmith Lane	Sudbury	05733
+60745	VT	CHITTENDEN	Smilie Memorial School	2712 Theodore Roosevelt Highway	Bolton	05676
+60746	VT	WASHINGTON	Thatcher Brook Primary School	47 Stowe Street	Waterbury	05676
+60747	VT	CHITTENDEN	Westford School	146 Brookside Road	Westford	05494
+60748	VT	ORANGE	Braintree Town Hall	5379 VT Route 12A	Braintree	05060
 60749	AL	LAUDERDALE	Florence High School	1201 Bradshaw Drive	Florence	35630
 60750	TX	NA	Brauchle Elementary School	8555 Bowens Crossing	San Antonio	78204
 60751	TX	NA	Knowlton Elementary School	9500 Timber Path	San Antonio	78204
@@ -10842,7 +10842,7 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 60838	TX	NA	Pinnavle Club Fire Station	5950 Club Drive	Mabank	75143
 60839	TX	NA	New York baptist Church	6106 CR 4334	Larue	75143
 60840	TX	NA	HEATH CITY HALL	200 LAURENCE DRIVE	HEATH	75087
-60841	VT	Chittenden	Robert Miller Center	130 Gosse Ct.	Burlington	05408
+60841	VT	CHITTENDEN	Robert Miller Center	130 Gosse Ct.	Burlington	05408
 60842	TN	GREENE	Mcdonald Elementary School	8120 Mcdonald Road	Mohawk	37810
 60843	TN	KNOX	Larry Cox Senior Rec. Ctr.	3109 Ocoee Trail	Knoxville	37917
 60844	GA	FULTON	VENETIAN HILLS ELEM SCH	1910 VENETIAN DR SW	ATLANTA	30311
@@ -10859,7 +10859,7 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 60855	MN	HENNEPIN	Webster School - Multi-Purpose Room	425 5th St NE	Minneapolis	55413
 60856	VA	VIRGINIA BEACH CITY	Corporate Landing Elementary School	1590 Corporate Landing Parkway	Virginia Beach	23454
 60857	AR	PULASKI	Precinct 136	NA	NA	NA
-60858	VT	Franklin	Bellows Free Academy Old Gymnasium	75 Hunt Street	Fairfax	NA
+60858	VT	FRANKLIN	Bellows Free Academy Old Gymnasium	75 Hunt Street	Fairfax	NA
 60859	AR	BENTON	Precinct 76	NA	NA	NA
 60860	OK	ATOKA	Harmony Community Building	489 S Bentley Rd	Atoka	74525
 60861	OK	BEAVER	Fairview United Meth. Church	Roads	Laverne	73848
@@ -11228,15 +11228,15 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 61224	MA	HAMPDEN	BELLAMY SCHOOL	314 PENDLETON AVE	CHICOPEE	01020
 61225	MA	BRISTOL	HASTINGS MIDDLE SCHOOL	30 SCHOOL STREET	FAIRHAVEN	02719
 61226	MA	PLYMOUTH	BELAIR STREET HIGH RISE	105 BELAIR STREET	BROCKTON	02301
-61227	VT	Windham	Londonderry Town Hall	139 Middletown Road	Londonderry	05155
-61228	VT	Washington	Barre Town Middle & Elementary School Gymnasium	70 Websterville Road	Barre Town	05641
-61229	VT	Chittenden	Camels Hump Middle School	173 School Street	Richmond	05477
-61230	VT	Rutland	Shrewsbury Community Meeting House	88 Lottery Road	Shrewsbury	05738
-61231	VT	Washington	Waitsfield Elementary School	3951 Main Street	Waitsfield	05673
-61232	VT	Addison	Community/Masonic Hall	82 Middle Road	Bridport	05734
-61233	VT	Orleans	Charleston Elementary School	255 Center School Road	Charleston	05872
-61234	VT	Franklin	Highgate Elementary School	219 Gore Road	Highgate	05459
-61235	VT	Orleans	Holland Elementary School	26 School Road	Holland	05830
+61227	VT	WINDHAM	Londonderry Town Hall	139 Middletown Road	Londonderry	05155
+61228	VT	WASHINGTON	Barre Town Middle & Elementary School Gymnasium	70 Websterville Road	Barre Town	05641
+61229	VT	CHITTENDEN	Camels Hump Middle School	173 School Street	Richmond	05477
+61230	VT	RUTLAND	Shrewsbury Community Meeting House	88 Lottery Road	Shrewsbury	05738
+61231	VT	WASHINGTON	Waitsfield Elementary School	3951 Main Street	Waitsfield	05673
+61232	VT	ADDISON	Community/Masonic Hall	82 Middle Road	Bridport	05734
+61233	VT	ORLEANS	Charleston Elementary School	255 Center School Road	Charleston	05872
+61234	VT	FRANKLIN	Highgate Elementary School	219 Gore Road	Highgate	05459
+61235	VT	ORLEANS	Holland Elementary School	26 School Road	Holland	05830
 61236	GA	DEKALB	PEACE BAPTIST CHURCH	1399 AUSTIN DRIVE	DECATUR	30032
 61237	AL	BUTLER	New Greenville Police Department	215 Administrative Drive	Greenville	36037
 61238	AL	FRANKLIN	R'VILLE HIGH SCHOOL 2/1	WATERLOO AVE	NA	NA
@@ -11325,7 +11325,7 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 61321	AL	JEFFERSON	HORIZON CHURCH	2345 COLUMBIANA RD	BIRMINGHAM	35216
 61322	TX	NA	Rebecca Sealy - UTMB Campus	404 8th Street	Galveston	77650
 61323	MN	HENNEPIN	Columbia Manor - Porch	3300 Central Ave NE	Minneapolis	55418
-61324	VT	Addison	Town Hall and Community Center	3279 Route 7	Ferrisburgh	05456
+61324	VT	ADDISON	Town Hall and Community Center	3279 Route 7	Ferrisburgh	05456
 61325	AR	PULASKI	Precinct 137	NA	NA	NA
 61326	OK	ADAIR	Bell School	P O Box  346	Stilwell	74960
 61327	OK	BECKHAM	Methodist Church	320 S Magnolia	Erick	73645
@@ -11661,15 +11661,15 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 61657	MA	BERKSHIRE	TOWN OFFICES	50 MAIN ST	STOCKBRIDGE	01262
 61658	MA	ESSEX	SENIOR COMMUNITY CENTER	331 HIGH ST	NEWBURYPORT	NA
 61659	MA	SUFFOLK	WASHINGTON STREET	91-95 WASHINGTON STREET	BOSTON	02136
-61660	VT	Caledonia	Barnet Elementary School	163 Kid Row	Barnet	05821
-61661	VT	Caledonia	Lyndon Town School	2591 Lily Pond Road	Lyndon	05851
-61662	VT	Bennington	Pownal Center Fire House	VT-346	 Pownal	05260
-61663	VT	Windham	Masonic Temple	61 Westminster St.	Rockingham	05101
-61664	VT	Bennington	Town Offices	1391 VT Route 9	Woodford	05201
-61665	VT	Essex	Community Office Building	994 VT Route 102	Brunswick	05905
-61666	VT	Franklin	Bakersfield Town Hall	40 East Bakersfield Road	Bakersfield	05441
-61667	VT	Addison	Granville Town Hall	4157 VT Route 100	Granville	05747
-61668	VT	Chittenden	Orchard School	2 Baldwin Avenue	South Burlington	05403
+61660	VT	CALEDONIA	Barnet Elementary School	163 Kid Row	Barnet	05821
+61661	VT	CALEDONIA	Lyndon Town School	2591 Lily Pond Road	Lyndon	05851
+61662	VT	BENNINGTON	Pownal Center Fire House	VT-346	 Pownal	05260
+61663	VT	WINDHAM	Masonic Temple	61 Westminster St.	Rockingham	05101
+61664	VT	BENNINGTON	Town Offices	1391 VT Route 9	Woodford	05201
+61665	VT	ESSEX	Community Office Building	994 VT Route 102	Brunswick	05905
+61666	VT	FRANKLIN	Bakersfield Town Hall	40 East Bakersfield Road	Bakersfield	05441
+61667	VT	ADDISON	Granville Town Hall	4157 VT Route 100	Granville	05747
+61668	VT	CHITTENDEN	Orchard School	2 Baldwin Avenue	South Burlington	05403
 61669	TN	CUMBERLAND	Cornerstone Baptist Church	384 Tenth Street	Crossville	38555
 61670	AL	MOBILE	Riverside Baptist Church	3130 Dauphin Island Pkwy.	Mobile	36605
 61671	TX	NA	HUNTINGTON CIVIC CENTER	1179 HIGHWAY 69 NORTH	HUNTINGTON	75901
@@ -12110,18 +12110,18 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 62106	MA	PLYMOUTH	DOUGLAS HOUSE	20 HAVERHILL ST	BROCKTON	02301
 62107	MA	NORFOLK	QUINCY LODGE OF ELKS	254R QUARRY STREET	QUINCY	02169
 62108	MA	ESSEX	ST.ROSE CHURCH HALL	12 PARK ST	TOPSFIELD	01983
-62109	VT	Orleans	Lowell Graded School	52 Gelo Park Road	Lowell	05847
-62110	VT	Windham	Marlboro Town Office	510 South Road	Marlboro	05344
-62111	VT	Washington	Berlin Elementary School	372 Paine Turnpike	Berlin	05602
-62112	VT	Franklin	Sheldon Town Clerk's Office	1640 Main Street	Sheldon	05483
-62113	VT	Bennington	Town Offices	104 Mountain View Road	Sunderland	05250
-62114	VT	Orange	Topsham Town Hall	6 Harts Road	Topsham	05076
-62115	VT	Chittenden	Brown's River Middle School	20 River Road	Underhill	05489
-62116	VT	Rutland	Wallingford Town Hall	75 School Street	Wallingford	05773
-62117	VT	Windham	Westminster Institute	3690 U.S. Route 5	Westminster	05158
-62118	VT	Orange	Corinth Town Hall	1387 Cookeville Road	Corinth	05039
-62119	VT	Orleans	Glover Town Hall	3018 Glover Street	Glover	05839
-62120	VT	Addison	Hancock Town Hall	48 VT Route 125	Hancock	05748
+62109	VT	ORLEANS	Lowell Graded School	52 Gelo Park Road	Lowell	05847
+62110	VT	WINDHAM	Marlboro Town Office	510 South Road	Marlboro	05344
+62111	VT	WASHINGTON	Berlin Elementary School	372 Paine Turnpike	Berlin	05602
+62112	VT	FRANKLIN	Sheldon Town Clerk's Office	1640 Main Street	Sheldon	05483
+62113	VT	BENNINGTON	Town Offices	104 Mountain View Road	Sunderland	05250
+62114	VT	ORANGE	Topsham Town Hall	6 Harts Road	Topsham	05076
+62115	VT	CHITTENDEN	Brown's River Middle School	20 River Road	Underhill	05489
+62116	VT	RUTLAND	Wallingford Town Hall	75 School Street	Wallingford	05773
+62117	VT	WINDHAM	Westminster Institute	3690 U.S. Route 5	Westminster	05158
+62118	VT	ORANGE	Corinth Town Hall	1387 Cookeville Road	Corinth	05039
+62119	VT	ORLEANS	Glover Town Hall	3018 Glover Street	Glover	05839
+62120	VT	ADDISON	Hancock Town Hall	48 VT Route 125	Hancock	05748
 62121	AL	DALE	Ozark Civic Center	300 E. College St	Ozark	36360
 62122	AL	PERRY	w. perry fire department	4371 reynolds chapel rd	Newbern	36765
 62123	TX	NA	MARLBORO HEIGHTS BAPTIST CHURCH	800 REV ABERCROMBIE DRIVE	KILLEEN	76513
@@ -12567,14 +12567,14 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 62563	MA	DUKES	OAK BLUFFS LIBRARY	56R SCHOOL STREET	OAK BLUFFS	02557
 62564	MA	MIDDLESEX	CLAPP SCHOOL GYMNASIUM	40 HUDSON STREET	WOBURN	01801
 62565	MA	BARNSTABLE	WEST DENNIS GRADED SCHOOL	67 SCHOOL STREET	Dennis	NA
-62566	VT	Orange	Newbury Village Hall (Newbury Elementary School Gym)	214 Pulaski Street	Newbury	05051
-62567	VT	Addison	Panton Town Hall	3176 Jersey Street	Panton	05491
-62568	VT	Caledonia	Sutton School Multipurpose Room	95 Underpass Road	Sutton	05867
-62569	VT	Orleans	Troy Elementary School Gymnasium	126 Main Street	Troy	05859
+62566	VT	ORANGE	Newbury Village Hall (Newbury Elementary School Gym)	214 Pulaski Street	Newbury	05051
+62567	VT	ADDISON	Panton Town Hall	3176 Jersey Street	Panton	05491
+62568	VT	CALEDONIA	Sutton School Multipurpose Room	95 Underpass Road	Sutton	05867
+62569	VT	ORLEANS	Troy Elementary School Gymnasium	126 Main Street	Troy	05859
 62570	GA	DEKALB	NARVIE J HARRIS ELEMENTARY SCH	3981 MCGILL DRIVE	DECATUR	30034
 62571	GA	DEKALB	BEREAN CHRISTIAN CHURCH	2201 YOUNG ROAD	STONE MOUNTAIN	30088
-62572	VT	Chittenden	 Mater Christi School	 100 Mansfield Ave.	Burlington	05401
-62573	VT	Chittenden	Burlington Electric Department	585 Pine Street	Burlington	05401
+62572	VT	CHITTENDEN	 Mater Christi School	 100 Mansfield Ave.	Burlington	05401
+62573	VT	CHITTENDEN	Burlington Electric Department	585 Pine Street	Burlington	05401
 62574	VA	FAIRFAX	NORTH COUNTY HUMAN SERVICES BUILDING	1850 Cameron Glen Dr	Reston	20190
 62575	VA	PRINCE WILLIAM	SIGNAL HILL ELEMENTARY SCHOOL	9553 Birmingham Drive	Manassas	20111
 62576	GA	DEKALB	ASHFORD PARKSIDE SENIOR RESIDE	3522 BLAIR CIRCLE NE	ATLANTA	30319

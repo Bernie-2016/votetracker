@@ -679,20 +679,20 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 1675	MA	MIDDLESEX	Reading 06
 1676	MA	NORFOLK	Norwood 05
 1677	MA	WORCESTER	Spencer 04
-1678	VT	Orleans	Morgan Town Clerk's Office
-1679	VT	Orange	Newbury Wells River Poll
-1680	VT	Rutland	Benson Town Hall
-1681	VT	Windsor	Springfield Riverside Ms Gym
-1682	VT	Orange	Washington Mun Bldg
-1683	VT	Windham	Brookline Town Office
-1684	VT	Windsor	Cavendish Elementary Sch
-1685	VT	Chittenden	Charlotte Central School
-1686	VT	Rutland	Chittenden Town Hall
-1687	VT	Bennington	Arlington Town Hall
-1688	VT	Caledonia	Danville Town Hall
-1689	VT	Chittenden	Essex Middle Sch (Town)
-1690	VT	Windham	Halifax Elementary Sch
-1691	VT	Windsor	Hartland Damon Hall
+1678	VT	ORLEANS	Morgan Town Clerk's Office
+1679	VT	ORANGE	Newbury Wells River Poll
+1680	VT	RUTLAND	Benson Town Hall
+1681	VT	WINDSOR	Springfield Riverside Ms Gym
+1682	VT	ORANGE	Washington Mun Bldg
+1683	VT	WINDHAM	Brookline Town Office
+1684	VT	WINDSOR	Cavendish Elementary Sch
+1685	VT	CHITTENDEN	Charlotte Central School
+1686	VT	RUTLAND	Chittenden Town Hall
+1687	VT	BENNINGTON	Arlington Town Hall
+1688	VT	CALEDONIA	Danville Town Hall
+1689	VT	CHITTENDEN	Essex Middle Sch (Town)
+1690	VT	WINDHAM	Halifax Elementary Sch
+1691	VT	WINDSOR	Hartland Damon Hall
 1692	CO	EL PASO	5091421215
 1693	VA	FAIRFAX	131 - Eagle View
 1694	TX	NA	1039
@@ -1536,19 +1536,19 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2532	MA	MIDDLESEX	Winchester 03
 2533	MA	SUFFOLK	Boston W21 P05
 2534	MA	WORCESTER	Templeton A
-2535	VT	Windham	Jamaica Town Clerk's Office
-2536	VT	Chittenden	Milton Mun Complex
-2537	VT	Windsor	Pomfret Town Hall
-2538	VT	Bennington	Readsboro School Gymnasium
-2539	VT	Franklin	Berkshire Town Hall
-2540	VT	Chittenden	South Burlington Fht Middle Sch
-2541	VT	Rutland	West Haven Community Hall
-2542	VT	Essex	Concord Town Hall
-2543	VT	Lamoille	Elmore Town Clerks Off
-2544	VT	Rutland	Fair Haven American Legion
+2535	VT	WINDHAM	Jamaica Town Clerk's Office
+2536	VT	CHITTENDEN	Milton Mun Complex
+2537	VT	WINDSOR	Pomfret Town Hall
+2538	VT	BENNINGTON	Readsboro School Gymnasium
+2539	VT	FRANKLIN	Berkshire Town Hall
+2540	VT	CHITTENDEN	South Burlington Fht Middle Sch
+2541	VT	RUTLAND	West Haven Community Hall
+2542	VT	ESSEX	Concord Town Hall
+2543	VT	LAMOILLE	Elmore Town Clerks Off
+2544	VT	RUTLAND	Fair Haven American Legion
 2545	GA	FULTON	Ap09a
 2546	GA	FULTON	Sc14
-2547	VT	Bennington	Shaftsbury Buck Hill Road Firehouse
+2547	VT	BENNINGTON	Shaftsbury Buck Hill Road Firehouse
 2548	MN	ANOKA	Oak Grove P-3
 2549	CO	WELD	4234862244
 2550	AL	RANDOLPH	.Precinct 01
@@ -1715,7 +1715,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 2711	TX	NA	3671
 2712	TX	NA	4588
 2713	TX	NA	0002d
-2714	VT	Orange	Randolph Randolph Town Hall
+2714	VT	ORANGE	Randolph Randolph Town Hall
 2715	TX	NA	1589
 2716	AL	JEFFERSON	Precinct 1090
 2717	AL	JEFFERSON	Precinct 1100
@@ -2421,19 +2421,19 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 3417	MA	NORFOLK	Bellingham 04
 3418	MA	DUKES	West Tisbury 01
 3419	MA	HAMPDEN	Springfield W07f
-3420	VT	Washington	Marshfield Sch House Common
-3421	VT	Rutland	Mendon Town Office
-3422	VT	Chittenden	Milton Fire Station
-3423	VT	Washington	Moretown Town Hall
-3424	VT	Grand Isle	North Hero North Hero School
-3425	VT	Addison	Salisbury Town Office
-3426	VT	Bennington	Stamford Elementary Sch
-3427	VT	Orange	Strafford Town House
-3428	VT	Lamoille	Cambridge Elem School Gym
-3429	VT	Orleans	Derby Municipal Office
-3430	VT	Lamoille	Eden Town Clerks Off
-3431	VT	Franklin	Georgia Elem & Middl Sch
-3432	VT	Rutland	Hubbardton Town Hall
+3420	VT	WASHINGTON	Marshfield Sch House Common
+3421	VT	RUTLAND	Mendon Town Office
+3422	VT	CHITTENDEN	Milton Fire Station
+3423	VT	WASHINGTON	Moretown Town Hall
+3424	VT	GRAND ISLE	North Hero North Hero School
+3425	VT	ADDISON	Salisbury Town Office
+3426	VT	BENNINGTON	Stamford Elementary Sch
+3427	VT	ORANGE	Strafford Town House
+3428	VT	LAMOILLE	Cambridge Elem School Gym
+3429	VT	ORLEANS	Derby Municipal Office
+3430	VT	LAMOILLE	Eden Town Clerks Off
+3431	VT	FRANKLIN	Georgia Elem & Middl Sch
+3432	VT	RUTLAND	Hubbardton Town Hall
 3433	GA	DEKALB	Fg
 3434	GA	FULTON	Rw22a
 3435	VA	PRINCE WILLIAM	202 - Marshall
@@ -3306,13 +3306,13 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 4302	MA	WORCESTER	West Brookfield 01
 4303	MA	WORCESTER	Worcester W10 P03
 4304	MA	BRISTOL	New Bedford W03d
-4305	VT	Addison	Monkton Fire Station
-4306	VT	Addison	Weybridge Town Clerk Ofc
-4307	VT	Rutland	Brandon Neshobe Sch
-4308	VT	Windsor	Woodstock Town Hall
-4309	VT	Orleans	Craftsbury Town Hall
-4310	VT	Caledonia	Groton Community Hall
-4311	VT	Windsor	Barnard Town Hall
+4305	VT	ADDISON	Monkton Fire Station
+4306	VT	ADDISON	Weybridge Town Clerk Ofc
+4307	VT	RUTLAND	Brandon Neshobe Sch
+4308	VT	WINDSOR	Woodstock Town Hall
+4309	VT	ORLEANS	Craftsbury Town Hall
+4310	VT	CALEDONIA	Groton Community Hall
+4311	VT	WINDSOR	Barnard Town Hall
 4312	GA	FULTON	Ap01c
 4313	GA	ROCKDALE	Sa
 4314	AL	MADISON	Harold Harbin Gym
@@ -4154,21 +4154,21 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 5150	MA	HAMPDEN	Springfield W06c
 5151	MA	NORFOLK	Needham I
 5152	MA	SUFFOLK	Boston W20 P10
-5153	VT	Rutland	Mount Tabor Town Office
-5154	VT	Addison	New Haven Town Hall
-5155	VT	Washington	Northfield High School
-5156	VT	Bennington	Peru Town Center
-5157	VT	Windsor	Royalton S Royal Hs Gym
-5158	VT	Rutland	Rutland Town Town Hall
-5159	VT	Caledonia	Walden Town Clerk's Office
-5160	VT	Caledonia	Waterford Elementary Sch
-5161	VT	Orange	Bradford Academy Audit
-5162	VT	Lamoille	Wolcott Town Office
-5163	VT	Caledonia	Burke Town Office Bldg
-5164	VT	Windham	Dummerston East Dummerston School
-5165	VT	Essex	East Haven Community Bldg
-5166	VT	Addison	Goshen Town Office
-5167	VT	Orleans	Greensboro Town Hall
+5153	VT	RUTLAND	Mount Tabor Town Office
+5154	VT	ADDISON	New Haven Town Hall
+5155	VT	WASHINGTON	Northfield High School
+5156	VT	BENNINGTON	Peru Town Center
+5157	VT	WINDSOR	Royalton S Royal Hs Gym
+5158	VT	RUTLAND	Rutland Town Town Hall
+5159	VT	CALEDONIA	Walden Town Clerk's Office
+5160	VT	CALEDONIA	Waterford Elementary Sch
+5161	VT	ORANGE	Bradford Academy Audit
+5162	VT	LAMOILLE	Wolcott Town Office
+5163	VT	CALEDONIA	Burke Town Office Bldg
+5164	VT	WINDHAM	Dummerston East Dummerston School
+5165	VT	ESSEX	East Haven Community Bldg
+5166	VT	ADDISON	Goshen Town Office
+5167	VT	ORLEANS	Greensboro Town Hall
 5168	GA	COBB	Ml01
 5169	GA	FULTON	Ml01b
 5170	AL	MOBILE	060 - The Mug Cafe
@@ -5062,14 +5062,14 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6058	MA	ESSEX	Haverhill W03 P03
 6059	MA	NORFOLK	Milton 10
 6060	MA	SUFFOLK	Boston W17 P04
-6061	VT	Washington	Middlesex Town Hall
-6062	VT	Essex	Norton Town Hall
-6063	VT	Addison	Ripton Community House
-6064	VT	Lamoille	Waterville Town Hall
-6065	VT	Caledonia	Wheelock Town Hall
-6066	VT	Orange	Williamstown High School
-6067	VT	Orleans	Coventry Community Ctr
-6068	VT	Grand Isle	Isle Lamotte Town Hall
+6061	VT	WASHINGTON	Middlesex Town Hall
+6062	VT	ESSEX	Norton Town Hall
+6063	VT	ADDISON	Ripton Community House
+6064	VT	LAMOILLE	Waterville Town Hall
+6065	VT	CALEDONIA	Wheelock Town Hall
+6066	VT	ORANGE	Williamstown High School
+6067	VT	ORLEANS	Coventry Community Ctr
+6068	VT	GRAND ISLE	Isle Lamotte Town Hall
 6069	CO	MONTROSE	3065843023
 6070	VA	FAIRFAX	331 - Spring Hill
 6071	VA	PRINCE WILLIAM	409 - Haymarket
@@ -5241,7 +5241,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6237	TX	NA	1439
 6238	TX	NA	4483
 6239	AR	WHITE	95 - Higginson Ward 2
-6240	VT	Windham	Whitingham Whitingham School
+6240	VT	WINDHAM	Whitingham Whitingham School
 6241	TN	FENTRESS	Tin
 6242	TN	MONTGOMERY	20a
 6243	GA	FULTON	Jc18a
@@ -5264,7 +5264,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 6260	CO	DOUGLAS	4044518354
 6261	CO	WELD	4135062105
 6262	AR	ST FRANCIS	26 - Bonair
-6263	VT	Rutland	Clarendon Clarendon Town Hall
+6263	VT	RUTLAND	Clarendon Clarendon Town Hall
 6264	AL	MONTGOMERY	Precinct 0107
 6265	GA	FULTON	Rw21
 6266	OK	BRYAN	Precinct 070019
@@ -6015,18 +6015,18 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7011	MA	BERKSHIRE	Pittsfield W05b
 7012	MA	HAMPDEN	Springfield W03g
 7013	MA	BARNSTABLE	Barnstable 02
-7014	VT	Addison	Addison Town Clerk Ofc
-7015	VT	Lamoille	Belvidere Town Clerks Off
-7016	VT	Addison	Orwell Town Hall
-7017	VT	Windsor	Reading Robinson Hall
-7018	VT	Rutland	Rutland City American Legion
-7019	VT	Windham	Wardsboro Town Office
-7020	VT	Windham	Athens Town Office
-7021	VT	Franklin	Fletcher Town Clerk Ofc
-7022	VT	Windsor	Baltimore Town Office
-7023	VT	Essex	Guildhall Town Office
-7024	VT	Chittenden	Hinesburg Town Hall
-7025	VT	Rutland	Ira Town Hall
+7014	VT	ADDISON	Addison Town Clerk Ofc
+7015	VT	LAMOILLE	Belvidere Town Clerks Off
+7016	VT	ADDISON	Orwell Town Hall
+7017	VT	WINDSOR	Reading Robinson Hall
+7018	VT	RUTLAND	Rutland City American Legion
+7019	VT	WINDHAM	Wardsboro Town Office
+7020	VT	WINDHAM	Athens Town Office
+7021	VT	FRANKLIN	Fletcher Town Clerk Ofc
+7022	VT	WINDSOR	Baltimore Town Office
+7023	VT	ESSEX	Guildhall Town Office
+7024	VT	CHITTENDEN	Hinesburg Town Hall
+7025	VT	RUTLAND	Ira Town Hall
 7026	GA	FULTON	Sc07a
 7027	CO	MONTROSE	3065843027
 7028	TN	CUMBERLAND	Cc2
@@ -6846,14 +6846,14 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 7842	MA	NORFOLK	Norwood 08
 7843	MA	MIDDLESEX	Lowell W04 P01
 7844	MA	SUFFOLK	Boston W10 P04
-7845	VT	Orleans	Jay Town Firehouse
-7846	VT	Lamoille	Johnson Municipal Bldg
-7847	VT	Bennington	Landgrove Town Hall
-7848	VT	Bennington	Searsburg Town Office
-7849	VT	Caledonia	Sheffield Municipal Building
-7850	VT	Essex	Bloomfield Old School House
-7851	VT	Bennington	Dorset Elementary Sch
-7852	VT	Chittenden	Essex Comm Hs (Village)
+7845	VT	ORLEANS	Jay Town Firehouse
+7846	VT	LAMOILLE	Johnson Municipal Bldg
+7847	VT	BENNINGTON	Landgrove Town Hall
+7848	VT	BENNINGTON	Searsburg Town Office
+7849	VT	CALEDONIA	Sheffield Municipal Building
+7850	VT	ESSEX	Bloomfield Old School House
+7851	VT	BENNINGTON	Dorset Elementary Sch
+7852	VT	CHITTENDEN	Essex Comm Hs (Village)
 7853	GA	FULTON	11e3
 7854	GA	CHATHAM	7-12c
 7855	AL	MOBILE	031 - Plateau Community Ctr
@@ -7025,7 +7025,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8021	AL	CLARKE	Precinct 0143
 8022	VA	PRINCE WILLIAM	513 - Lynnwood
 8023	AR	LAFAYETTE	115 - Stamps W2 Out
-8024	VT	Chittenden	Burlington Memorial Aud
+8024	VT	CHITTENDEN	Burlington Memorial Aud
 8025	AL	PERRY	Precinct 0373
 8026	CO	EL PASO	5101621165
 8027	CO	EL PASO	5111721614
@@ -7697,12 +7697,12 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8693	MA	PLYMOUTH	Abington 02
 8694	MA	ESSEX	Danvers 04
 8695	MA	SUFFOLK	Winthrop 03
-8696	VT	Franklin	Swanton Vill Mun Cmplx
-8697	VT	Windsor	Windsor Municipal Bldg
-8698	VT	Orange	Brookfield Elem School
-8699	VT	Essex	Canaan Town Office
-8700	VT	Windsor	Chester Town Hall
-8701	VT	Chittenden	Huntington Brewster Pierce School
+8696	VT	FRANKLIN	Swanton Vill Mun Cmplx
+8697	VT	WINDSOR	Windsor Municipal Bldg
+8698	VT	ORANGE	Brookfield Elem School
+8699	VT	ESSEX	Canaan Town Office
+8700	VT	WINDSOR	Chester Town Hall
+8701	VT	CHITTENDEN	Huntington Brewster Pierce School
 8702	GA	SUMTER	C3-27
 8703	GA	CHATHAM	7-11c
 8704	AL	LAUDERDALE	Broadway Recreation Center
@@ -7890,19 +7890,19 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 8886	MA	MIDDLESEX	Cambridge W10 P03
 8887	MA	MIDDLESEX	Boxborough 01
 8888	MA	WORCESTER	North Brookfield 01
-8889	VT	Chittenden	Jericho Elem School
-8890	VT	Rutland	Middletown Springs Fire House
-8891	VT	Rutland	Rutland City Christ King Sch
-8892	VT	Lamoille	Stowe Akeley Mem Bldg
-8893	VT	Washington	Warren Elementary School
-8894	VT	Orleans	Westmore Municipal Office
-8895	VT	Chittenden	Williston Williston Armory
-8896	VT	Orange	Chelsea Town Hall
-8897	VT	Chittenden	Colchester High Sch
+8889	VT	CHITTENDEN	Jericho Elem School
+8890	VT	RUTLAND	Middletown Springs Fire House
+8891	VT	RUTLAND	Rutland City Christ King Sch
+8892	VT	LAMOILLE	Stowe Akeley Mem Bldg
+8893	VT	WASHINGTON	Warren Elementary School
+8894	VT	ORLEANS	Westmore Municipal Office
+8895	VT	CHITTENDEN	Williston Williston Armory
+8896	VT	ORANGE	Chelsea Town Hall
+8897	VT	CHITTENDEN	Colchester High Sch
 8898	GA	BUTTS	Tow
 8899	GA	FULTON	Sc18b
 8900	GA	SUMTER	W-27
-8901	VT	Chittenden	Burlington St Marks
+8901	VT	CHITTENDEN	Burlington St Marks
 8902	AL	SHELBY	Precinct 27
 8903	TX	NA	0203
 8904	TX	NA	1099
@@ -9439,23 +9439,23 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 10435	MA	SUFFOLK	Revere W04 P02
 10436	MA	SUFFOLK	Boston W01 P03
 10437	MA	BARNSTABLE	Dennis 01
-10438	VT	Caledonia	Kirby Town Hall
-10439	VT	Addison	Middlebury Municipal Gym
-10440	VT	Orange	Newbury Newbury Town Office
-10441	VT	Caledonia	Peacham Town Hall
-10442	VT	Chittenden	Shelburne Town Ctr Gym
-10443	VT	Windsor	Weathersfield Martin Mem Hall
-10444	VT	Essex	Brighton Town Hall
-10445	VT	Orleans	Brownington Town Clerk Ofc
-10446	VT	Washington	Cabot School Gym
-10447	VT	Washington	Duxbury Crossett Brk Sch
-10448	VT	Washington	East Montpelier Elementary Sch
-10449	VT	Windham	Grafton Town Hall
-10450	VT	Lamoille	Hyde Park Town Ofc Bldg
+10438	VT	CALEDONIA	Kirby Town Hall
+10439	VT	ADDISON	Middlebury Municipal Gym
+10440	VT	ORANGE	Newbury Newbury Town Office
+10441	VT	CALEDONIA	Peacham Town Hall
+10442	VT	CHITTENDEN	Shelburne Town Ctr Gym
+10443	VT	WINDSOR	Weathersfield Martin Mem Hall
+10444	VT	ESSEX	Brighton Town Hall
+10445	VT	ORLEANS	Brownington Town Clerk Ofc
+10446	VT	WASHINGTON	Cabot School Gym
+10447	VT	WASHINGTON	Duxbury Crossett Brk Sch
+10448	VT	WASHINGTON	East Montpelier Elementary Sch
+10449	VT	WINDHAM	Grafton Town Hall
+10450	VT	LAMOILLE	Hyde Park Town Ofc Bldg
 10451	GA	DEKALB	Sd
 10452	GA	DOUGLAS	740
-10453	VT	Chittenden	Burlington Edmunds
-10454	VT	Orleans	Barton Orl Mem Bldg
+10453	VT	CHITTENDEN	Burlington Edmunds
+10454	VT	ORLEANS	Barton Orl Mem Bldg
 10455	VA	CHESAPEAKE CITY	052 - Shipyard Road
 10456	TX	NA	0317
 10457	TX	NA	1058
@@ -10353,21 +10353,21 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 11349	MA	WORCESTER	Oxford 02
 11350	MA	WORCESTER	Gardner W02b
 11351	MA	SUFFOLK	Revere W05 P01
-11352	VT	Essex	Maidstone Town Hall
-11353	VT	Orleans	Barton Barton Mem Bldg
-11354	VT	Caledonia	Newark Town Clerks Off
-11355	VT	Bennington	Bennington Benn Fire Dept
-11356	VT	Washington	Plainfield Town Hall
-11357	VT	Washington	Roxbury Town Office
-11358	VT	Chittenden	Saint George Town Office
-11359	VT	Windsor	Bethel Elementary Sch
-11360	VT	Windham	Stratton Town Office
-11361	VT	Rutland	Wells Town Office
-11362	VT	Windsor	West Windsor Story Mem Hall
-11363	VT	Chittenden	Winooski Winooski Sr Citizens Center
-11364	VT	Windham	Brattleboro Buhs Gym
-11365	VT	Washington	Fayston Municipal Hall
-11366	VT	Grand Isle	Grand Isle Town Ofc
+11352	VT	ESSEX	Maidstone Town Hall
+11353	VT	ORLEANS	Barton Barton Mem Bldg
+11354	VT	CALEDONIA	Newark Town Clerks Off
+11355	VT	BENNINGTON	Bennington Benn Fire Dept
+11356	VT	WASHINGTON	Plainfield Town Hall
+11357	VT	WASHINGTON	Roxbury Town Office
+11358	VT	CHITTENDEN	Saint George Town Office
+11359	VT	WINDSOR	Bethel Elementary Sch
+11360	VT	WINDHAM	Stratton Town Office
+11361	VT	RUTLAND	Wells Town Office
+11362	VT	WINDSOR	West Windsor Story Mem Hall
+11363	VT	CHITTENDEN	Winooski Winooski Sr Citizens Center
+11364	VT	WINDHAM	Brattleboro Buhs Gym
+11365	VT	WASHINGTON	Fayston Municipal Hall
+11366	VT	GRAND ISLE	Grand Isle Town Ofc
 11367	GA	HOUSTON	Mcms
 11368	CO	DENVER	1330716743
 11369	TN	SUMNER	0301
@@ -10532,7 +10532,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 11528	TX	NA	0986
 11529	TX	NA	0108a
 11530	TX	NA	4595
-11531	VT	Chittenden	Colchester Meeting House
+11531	VT	CHITTENDEN	Colchester Meeting House
 11532	TN	MONTGOMERY	0003
 11533	TN	UNION	Shch
 11534	AL	PIKE	Precinct 31 - Golden-Satellite
@@ -11280,20 +11280,20 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 12276	MA	HAMPDEN	Agawam 02
 12277	MA	HAMPSHIRE	Amherst 09
 12278	MA	BRISTOL	Fall River W04c
-12279	VT	Addison	Leicester Town Hall
-12280	VT	Addison	Lincoln Burnham Hall
-12281	VT	Orange	Orange Town Hall
-12282	VT	Windsor	Plymouth Municipal Bldg
-12283	VT	Rutland	Rutland City Godnick Adlt Ctr
-12284	VT	Orange	Tunbridge Town Hall
-12285	VT	Addison	Vergennes Fire Station
-12286	VT	Orange	Vershire Town Center
-12287	VT	Rutland	West Rutland Town Hall
-12288	VT	Windsor	Weston Town Office
-12289	VT	Windsor	Andover Town Hall
-12290	VT	Rutland	Danby Municipal Bldg
-12291	VT	Franklin	Enosburgh Opera House
-12292	VT	Orleans	Irasburg Town Hall
+12279	VT	ADDISON	Leicester Town Hall
+12280	VT	ADDISON	Lincoln Burnham Hall
+12281	VT	ORANGE	Orange Town Hall
+12282	VT	WINDSOR	Plymouth Municipal Bldg
+12283	VT	RUTLAND	Rutland City Godnick Adlt Ctr
+12284	VT	ORANGE	Tunbridge Town Hall
+12285	VT	ADDISON	Vergennes Fire Station
+12286	VT	ORANGE	Vershire Town Center
+12287	VT	RUTLAND	West Rutland Town Hall
+12288	VT	WINDSOR	Weston Town Office
+12289	VT	WINDSOR	Andover Town Hall
+12290	VT	RUTLAND	Danby Municipal Bldg
+12291	VT	FRANKLIN	Enosburgh Opera House
+12292	VT	ORLEANS	Irasburg Town Hall
 12293	GA	FULTON	Sc10
 12294	CO	MONTROSE	3065843024
 12295	AL	LAUDERDALE	Highland Baptist Church
@@ -12298,25 +12298,25 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 13294	MA	BRISTOL	New Bedford W02b
 13295	MA	MIDDLESEX	Waltham W01 P02
 13296	MA	PLYMOUTH	Rockland 06
-13297	VT	Windsor	Ludlow Town Hall
-13298	VT	Washington	Montpelier City Hall
-13299	VT	Orleans	Newport City Municipal Bldg
-13300	VT	Orleans	Newport Town Town Clerk's Off
-13301	VT	Windsor	Sharon Elementary Sch
-13302	VT	Orleans	Albany Town Hall
-13303	VT	Essex	Victory Town Hall
-13304	VT	Orange	West Fairlee Bean Hall
-13305	VT	Windham	Windham Town Office
-13306	VT	Washington	Woodbury Town Hall
-13307	VT	Washington	Calais Town Hall
-13308	VT	Addison	Cornwall Town Hall
-13309	VT	Caledonia	Hardwick Elementary Sch
+13297	VT	WINDSOR	Ludlow Town Hall
+13298	VT	WASHINGTON	Montpelier City Hall
+13299	VT	ORLEANS	Newport City Municipal Bldg
+13300	VT	ORLEANS	Newport Town Town Clerk's Off
+13301	VT	WINDSOR	Sharon Elementary Sch
+13302	VT	ORLEANS	Albany Town Hall
+13303	VT	ESSEX	Victory Town Hall
+13304	VT	ORANGE	West Fairlee Bean Hall
+13305	VT	WINDHAM	Windham Town Office
+13306	VT	WASHINGTON	Woodbury Town Hall
+13307	VT	WASHINGTON	Calais Town Hall
+13308	VT	ADDISON	Cornwall Town Hall
+13309	VT	CALEDONIA	Hardwick Elementary Sch
 13310	GA	DEKALB	Le
 13311	GA	DOUGLAS	785
 13312	GA	HOUSTON	Tms
 13313	GA	SUMTER	C2-27
 13314	CO	MONTROSE	3065843025
-13315	VT	Chittenden	Burlington Wheeler
+13315	VT	CHITTENDEN	Burlington Wheeler
 13316	TN	SHELBY	06200
 13317	AL	HOUSTON	Cowarts Town Hall 141
 13318	AL	LAUDERDALE	E. Campus Woodmont Bapt Church
@@ -13036,18 +13036,18 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 14032	MA	WORCESTER	Rutland 01
 14033	MA	NORFOLK	Norwood 04
 14034	MA	HAMPDEN	Holyoke W03a
-14035	VT	Essex	Lunenburg Gilman Sch
-14036	VT	Rutland	Pawlet Town Hall
-14037	VT	Rutland	Tinmouth Community Center
-14038	VT	Windham	Vernon Twn Off Bldg
-14039	VT	Grand Isle	Alburgh Municipal Building
-14040	VT	Franklin	Franklin Town Hall
+14035	VT	ESSEX	Lunenburg Gilman Sch
+14036	VT	RUTLAND	Pawlet Town Hall
+14037	VT	RUTLAND	Tinmouth Community Center
+14038	VT	WINDHAM	Vernon Twn Off Bldg
+14039	VT	GRAND ISLE	Alburgh Municipal Building
+14040	VT	FRANKLIN	Franklin Town Hall
 14041	GA	DEKALB	Cf
 14042	GA	DEKALB	Mz
 14043	GA	DEKALB	Pc
 14044	GA	FULTON	Sc29a
 14045	GA	ROCKDALE	Bt
-14046	VT	Chittenden	Burlington Barnes
+14046	VT	CHITTENDEN	Burlington Barnes
 14047	AL	BUTLER	Precinct 9120
 14048	AL	MOBILE	001 - Fellowship Baptist
 14049	AL	MOBILE	003 - Mt Vernon Civic Ctr
@@ -13862,19 +13862,19 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 14858	MA	MIDDLESEX	Hopkinton 02
 14859	MA	NORFOLK	Braintree 01a
 14860	MA	PLYMOUTH	Scituate 02
-14861	VT	Essex	Lemington Town Hall
-14862	VT	Bennington	Manchester Town Hall
-14863	VT	Bennington	Bennington N Benn Fire Dept
-14864	VT	Rutland	Poultney Fire House
-14865	VT	Windham	Putney Central Sch Gym
-14866	VT	Rutland	Rutland Town Elementary Sch
-14867	VT	Caledonia	Saint Johnsbury Lively Center
-14868	VT	Grand Isle	South Hero Town Office
-14869	VT	Addison	Starksboro Robinson Sch
-14870	VT	Windsor	Stockbridge Town Office
-14871	VT	Windham	Townshend Town Hall
-14872	VT	Windham	Wilmington High School Gym
-14873	VT	Orange	Fairlee Town Hall
+14861	VT	ESSEX	Lemington Town Hall
+14862	VT	BENNINGTON	Manchester Town Hall
+14863	VT	BENNINGTON	Bennington N Benn Fire Dept
+14864	VT	RUTLAND	Poultney Fire House
+14865	VT	WINDHAM	Putney Central Sch Gym
+14866	VT	RUTLAND	Rutland Town Elementary Sch
+14867	VT	CALEDONIA	Saint Johnsbury Lively Center
+14868	VT	GRAND ISLE	South Hero Town Office
+14869	VT	ADDISON	Starksboro Robinson Sch
+14870	VT	WINDSOR	Stockbridge Town Office
+14871	VT	WINDHAM	Townshend Town Hall
+14872	VT	WINDHAM	Wilmington High School Gym
+14873	VT	ORANGE	Fairlee Town Hall
 14874	GA	SUMTER	E-27
 14875	CO	EAGLE	3052619030
 14876	VA	PRINCE WILLIAM	105 - Limestone
@@ -14039,7 +14039,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 15035	TX	NA	1577
 15036	MN	CLAY	Moorhead Twp P-2
 15037	GA	FULTON	CP083
-15038	VT	Franklin	Saint Albans Town Collins Perley
+15038	VT	FRANKLIN	Saint Albans Town Collins Perley
 15039	TN	HAMILTON	0183
 15040	TN	UNION	Brad
 15041	MN	PINE	Sturgeon Lake P-2
@@ -14155,7 +14155,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 15151	CO	WELD	4134862225
 15152	CO	WELD	4236362210
 15153	CO	WELD	4236362339
-15154	VT	Rutland	Castleton American Legion On Route 4a West
+15154	VT	RUTLAND	Castleton American Legion On Route 4a West
 15155	AR	PRAIRIE	Wattensaw City Ward 3
 15156	TX	NA	0653
 15157	TX	NA	0817
@@ -14825,15 +14825,15 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 15821	MA	SUFFOLK	Boston W12 P07
 15822	MA	NORFOLK	Norwood 07
 15823	MA	HAMPSHIRE	Northampton W05b
-15824	VT	Washington	Barre City Auditorium
-15825	VT	Rutland	Mount Holly Town Office
-15826	VT	Windsor	Norwich Tracy Hall
-15827	VT	Rutland	Pittsfield Town Hall
-15828	VT	Franklin	Richford Town Hall
-15829	VT	Addison	Waltham Town Hall
-15830	VT	Windsor	Bridgewater Town Office
-15831	VT	Addison	Bristol Holley Hall
-15832	VT	Windham	Guilford Broad Brook Grange
+15824	VT	WASHINGTON	Barre City Auditorium
+15825	VT	RUTLAND	Mount Holly Town Office
+15826	VT	WINDSOR	Norwich Tracy Hall
+15827	VT	RUTLAND	Pittsfield Town Hall
+15828	VT	FRANKLIN	Richford Town Hall
+15829	VT	ADDISON	Waltham Town Hall
+15830	VT	WINDSOR	Bridgewater Town Office
+15831	VT	ADDISON	Bristol Holley Hall
+15832	VT	WINDHAM	Guilford Broad Brook Grange
 15833	VA	PRINCE WILLIAM	602 - Beville
 15834	VA	PRINCE WILLIAM	709 - Freedom
 15835	VA	CHESAPEAKE CITY	053 - Fairways
@@ -15667,12 +15667,12 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 16663	MA	BARNSTABLE	Harwich 04
 16664	MA	ESSEX	Peabody W03 P03
 16665	MA	BRISTOL	Swansea 01
-16666	VT	Rutland	Killington Town Office
-16667	VT	Lamoille	Morristown Municipal Bldg
-16668	VT	Rutland	Pittsford Municipal Off
-16669	VT	Orleans	Westfield Town Office
-16670	VT	Windham	Dover Town Hall
-16671	VT	Franklin	Fairfield Municipal Bldg
+16666	VT	RUTLAND	Killington Town Office
+16667	VT	LAMOILLE	Morristown Municipal Bldg
+16668	VT	RUTLAND	Pittsford Municipal Off
+16669	VT	ORLEANS	Westfield Town Office
+16670	VT	WINDHAM	Dover Town Hall
+16671	VT	FRANKLIN	Fairfield Municipal Bldg
 16672	GA	FULTON	Sc17a
 16673	AL	WASHINGTON	Precinct 0170 McIntosh
 16674	TX	NA	2070
@@ -15842,7 +15842,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 16838	TX	NA	3189
 16839	TX	NA	3665
 16840	AR	BENTON	Precinct 62
-16841	VT	Addison	Shoreham Town Office
+16841	VT	ADDISON	Shoreham Town Office
 16842	AL	HOUSTON	Doug Tew Comm Ctr 156
 16843	AL	SUMTER	Precinct 0806
 16844	MN	HENNEPIN	Minneapolis W-5 P-09
@@ -16585,18 +16585,18 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 17581	MA	MIDDLESEX	Framingham 14
 17582	MA	SUFFOLK	Boston W22 P13
 17583	MA	BRISTOL	Fall River W03a
-17584	VT	Franklin	Montgomery Town Hall
-17585	VT	Rutland	Proctor High School Gym
-17586	VT	Bennington	Rupert Town Office
-17587	VT	Caledonia	Ryegate Town Hall
-17588	VT	Chittenden	South Burlington Chamberlain Sch
-17589	VT	Caledonia	Stannard Town Hall
-17590	VT	Orange	Thetford Town Hall
-17591	VT	Addison	Whiting Town Hall
-17592	VT	Bennington	Winhall Town Hall
-17593	VT	Washington	Worcester Town Hall
-17594	VT	Essex	Granby Town Hall
-17595	VT	Windsor	Hartford High School
+17584	VT	FRANKLIN	Montgomery Town Hall
+17585	VT	RUTLAND	Proctor High School Gym
+17586	VT	BENNINGTON	Rupert Town Office
+17587	VT	CALEDONIA	Ryegate Town Hall
+17588	VT	CHITTENDEN	South Burlington Chamberlain Sch
+17589	VT	CALEDONIA	Stannard Town Hall
+17590	VT	ORANGE	Thetford Town Hall
+17591	VT	ADDISON	Whiting Town Hall
+17592	VT	BENNINGTON	Winhall Town Hall
+17593	VT	WASHINGTON	Worcester Town Hall
+17594	VT	ESSEX	Granby Town Hall
+17595	VT	WINDSOR	Hartford High School
 17596	GA	DEKALB	Bl
 17597	GA	DEKALB	Lc
 17598	AL	MOBILE	009 - Creola Senior Citizens
@@ -17434,16 +17434,16 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 18430	MA	MIDDLESEX	Lowell W02 P03
 18431	MA	FRANKLIN	Rowe 01
 18432	MA	PLYMOUTH	Brockton W07d
-18433	VT	Windham	Newfane Newbrook Firehouse
-18434	VT	Windsor	Rochester Town Office Bldg
-18435	VT	Rutland	Rutland City Cal Bib Church
-18436	VT	Franklin	Saint Albans City City Hall
-18437	VT	Bennington	Sandgate Town Hall
-18438	VT	Rutland	Sudbury Town Hall
-18439	VT	Chittenden	Bolton Smilie Mem Sch
-18440	VT	Washington	Waterbury Thatcher Brook School
-18441	VT	Chittenden	Westford Westford School
-18442	VT	Orange	Braintree Town Hall
+18433	VT	WINDHAM	Newfane Newbrook Firehouse
+18434	VT	WINDSOR	Rochester Town Office Bldg
+18435	VT	RUTLAND	Rutland City Cal Bib Church
+18436	VT	FRANKLIN	Saint Albans City City Hall
+18437	VT	BENNINGTON	Sandgate Town Hall
+18438	VT	RUTLAND	Sudbury Town Hall
+18439	VT	CHITTENDEN	Bolton Smilie Mem Sch
+18440	VT	WASHINGTON	Waterbury Thatcher Brook School
+18441	VT	CHITTENDEN	Westford Westford School
+18442	VT	ORANGE	Braintree Town Hall
 18443	GA	FULTON	Sc08c
 18444	AL	LAUDERDALE	Florence High School
 18445	TX	NA	2072
@@ -17615,7 +17615,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 18611	TX	NA	4nyl
 18612	TX	NA	0002c
 18613	GA	FULTON	SS19A
-18614	VT	Chittenden	Burlington Miller
+18614	VT	CHITTENDEN	Burlington Miller
 18615	TN	GREENE	04md
 18616	TN	KNOX	0016
 18617	MN	WASHINGTON	Hastings W-1 P-1
@@ -17643,7 +17643,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 18639	VA	VIRGINIA BEACH CITY	095 - Dam Neck
 18640	CO	ARAPAHOE	6295603376
 18641	AR	PULASKI	Precinct 136
-18642	VT	Franklin	Fairfax Bellows Free Academy
+18642	VT	FRANKLIN	Fairfax Bellows Free Academy
 18643	AR	BENTON	Precinct 76
 18644	OK	ATOKA	Precinct 030009
 18645	OK	BEAVER	Precinct 040011
@@ -18374,15 +18374,15 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 19370	MA	ESSEX	Boxford 01
 19371	MA	SUFFOLK	Boston W06 P01
 19372	MA	PLYMOUTH	Brockton W07b
-19373	VT	Windham	Londonderry Town Office Bldg
-19374	VT	Washington	Barre Town Elementary Sch
-19375	VT	Chittenden	Richmond Camel Hump Sch
-19376	VT	Rutland	Shrewsbury Mtg Hse-Townhall
-19377	VT	Washington	Waitsfield Elementary Sch
-19378	VT	Addison	Bridport Community Hall
-19379	VT	Orleans	Charleston Town Office
-19380	VT	Franklin	Highgate Town Office
-19381	VT	Orleans	Holland Town Office
+19373	VT	WINDHAM	Londonderry Town Office Bldg
+19374	VT	WASHINGTON	Barre Town Elementary Sch
+19375	VT	CHITTENDEN	Richmond Camel Hump Sch
+19376	VT	RUTLAND	Shrewsbury Mtg Hse-Townhall
+19377	VT	WASHINGTON	Waitsfield Elementary Sch
+19378	VT	ADDISON	Bridport Community Hall
+19379	VT	ORLEANS	Charleston Town Office
+19380	VT	FRANKLIN	Highgate Town Office
+19381	VT	ORLEANS	Holland Town Office
 19382	GA	DEKALB	Af
 19383	GA	FULTON	Ap09b
 19384	CO	WELD	4134862243
@@ -18554,7 +18554,7 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 19550	TX	NA	0306
 19551	TX	NA	4694
 19552	MN	HENNEPIN	Minneapolis W-1 P-10
-19553	VT	Addison	Ferrisburgh Town Hall
+19553	VT	ADDISON	Ferrisburgh Town Hall
 19554	MN	CLAY	Moorhead City W-1 P-1b
 19555	CO	EL PASO	5091921317
 19556	CO	EL PASO	5111721615
@@ -19224,15 +19224,15 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 20220	MA	ESSEX	Methuen 07
 20221	MA	SUFFOLK	Boston W21 P10
 20222	MA	ESSEX	Danvers 01
-20223	VT	Caledonia	Barnet Town Hall
-20224	VT	Caledonia	Lyndon Mun Off Bldg
-20225	VT	Bennington	Pownal Pownal Ctr Fireh
-20226	VT	Windham	Rockingham Masonic Temple
-20227	VT	Bennington	Woodford Town Offices
-20228	VT	Essex	Brunswick Town Office Bldg
-20229	VT	Franklin	Bakersfield Town Hall
-20230	VT	Addison	Granville Town Hall
-20231	VT	Chittenden	South Burlington Orchard Sch
+20223	VT	CALEDONIA	Barnet Town Hall
+20224	VT	CALEDONIA	Lyndon Mun Off Bldg
+20225	VT	BENNINGTON	Pownal Pownal Ctr Fireh
+20226	VT	WINDHAM	Rockingham Masonic Temple
+20227	VT	BENNINGTON	Woodford Town Offices
+20228	VT	ESSEX	Brunswick Town Office Bldg
+20229	VT	FRANKLIN	Bakersfield Town Hall
+20230	VT	ADDISON	Granville Town Hall
+20231	VT	CHITTENDEN	South Burlington Orchard Sch
 20232	TN	CUMBERLAND	Cbc
 20233	AL	MOBILE	072 - Riverside Baptist Church
 20234	TX	NA	0011b
@@ -20111,18 +20111,18 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 21107	MA	PLYMOUTH	Brockton W02a
 21108	MA	NORFOLK	Quincy W04 P03
 21109	MA	ESSEX	Topsfield 01
-21110	VT	Orleans	Lowell Town Clerk's Off
-21111	VT	Windham	Marlboro Town Office
-21112	VT	Washington	Berlin Municipal Bldg
-21113	VT	Franklin	Sheldon Elementary Sch
-21114	VT	Bennington	Sunderland Elementary Sch
-21115	VT	Orange	Topsham Waits River Sch
-21116	VT	Chittenden	Underhill Town Hall
-21117	VT	Rutland	Wallingford Town Hall
-21118	VT	Windham	Westminster Westminster Inst
-21119	VT	Orange	Corinth Town Hall
-21120	VT	Orleans	Glover Town Clerks Off
-21121	VT	Addison	Hancock Town Hall
+21110	VT	ORLEANS	Lowell Town Clerk's Off
+21111	VT	WINDHAM	Marlboro Town Office
+21112	VT	WASHINGTON	Berlin Municipal Bldg
+21113	VT	FRANKLIN	Sheldon Elementary Sch
+21114	VT	BENNINGTON	Sunderland Elementary Sch
+21115	VT	ORANGE	Topsham Waits River Sch
+21116	VT	CHITTENDEN	Underhill Town Hall
+21117	VT	RUTLAND	Wallingford Town Hall
+21118	VT	WINDHAM	Westminster Westminster Inst
+21119	VT	ORANGE	Corinth Town Hall
+21120	VT	ORLEANS	Glover Town Clerks Off
+21121	VT	ADDISON	Hancock Town Hall
 21122	GA	FULTON	Sc08b
 21123	AL	DALE	Precinct 0100
 21124	AL	PERRY	Precinct 0019
@@ -21048,16 +21048,16 @@ COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
 22044	MA	NORFOLK	Quincy W02 P05
 22045	MA	BARNSTABLE	Harwich 01
 22046	MA	BARNSTABLE	Dennis 04
-22047	VT	Orange	Newbury Center Town Hall
-22048	VT	Addison	Panton Town Offices
-22049	VT	Caledonia	Sutton Sutton School
-22050	VT	Orleans	Troy Elem School Gym
+22047	VT	ORANGE	Newbury Center Town Hall
+22048	VT	ADDISON	Panton Town Offices
+22049	VT	CALEDONIA	Sutton Sutton School
+22050	VT	ORLEANS	Troy Elem School Gym
 22051	GA	DEKALB	Hh
 22052	GA	DEKALB	Ya
 22053	CO	MONTROSE	3065843026
 22054	CO	MONTROSE	3065843028
-22055	VT	Chittenden	Burlington Master Christi
-22056	VT	Chittenden	Burlington Bed
+22055	VT	CHITTENDEN	Burlington Master Christi
+22056	VT	CHITTENDEN	Burlington Bed
 22057	VA	FAIRFAX	238 - Cameron Glen
 22058	VA	PRINCE WILLIAM	211 - Signal Hill
 22059	GA	DEKALB	Ah
