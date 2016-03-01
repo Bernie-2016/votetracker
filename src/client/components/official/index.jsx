@@ -69,7 +69,6 @@ export default class OfficialReport extends Submitable {
           send those over as well.</p>
         <p>It’s recommended to have multiple sources (one government and one news source), and to
           select whichever one updates more quickly.</p>
-        <form ref={this.trackForm}>
           <input type="hidden" value="official" name="report_type" />
           <label>Select a State:
             <select name="state"><option value="">---Select a State---</option>{states.map(state => { // eslint-disable-line
