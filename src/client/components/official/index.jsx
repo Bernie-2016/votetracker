@@ -1,14 +1,10 @@
 import React from 'react';
 import Submitable from '../report/form/submitable';
 import TimeSelect from '../report/form/timeselect';
-<<<<<<< HEAD
 import PrecinctInput from '../report/form/precinct-input';
 import ContactInfo from '../report/form/contact-info';
 import states, { findState } from '../../data/states';
-=======
-import states from '../../data/states';
 import classNames from 'classnames';
->>>>>>> validate official form
 
 export default class OfficialReport extends Submitable {
 
