@@ -14,7 +14,7 @@ const getFloatTime = () => {
   return now.hours() + Math.floor(now.minutes() / 15) / 4;
 };
 
-const getIp = req => req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+const getIp = req => (req.headers['x-forwarded-for'] || req.connection.remoteAddress).split(',')[0];
 
 const submit = {
   caucus: (req, res) => {
