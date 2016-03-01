@@ -35,6 +35,7 @@ const submit = {
       other_delegates: +req.body.other_delegates || 0,
       float_time: getFloatTime(),
       ip: getIp(req),
+      contact_info: req.body.contact_info || '',
     };
     insert('caucus_report', data)
       .then(() => {
@@ -53,6 +54,7 @@ const submit = {
       ballots_cast: +req.body.ballots_cast,
       float_time: getFloatTime(),
       ip: getIp(req),
+      contact_info: req.body.contact_info || '',
     };
     insert('primary_report', data)
       .then(() => {
@@ -74,6 +76,7 @@ const submit = {
       location_id: +req.body.location_id || 0,
       float_time: getFloatTime(),
       ip: getIp(req),
+      contact_info: req.body.contact_info || '',
     };
     insert('official_report', data)
       .then(() => {
