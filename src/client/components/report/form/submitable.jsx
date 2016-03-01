@@ -14,6 +14,7 @@ export default class SubmitableForm extends Component {
   }
 
   validate(data) {
+    // takes the data from the form and returns whether it's valid or not
     const errorMessage = {};
     let isInvalid = false;
 
@@ -23,14 +24,20 @@ export default class SubmitableForm extends Component {
         {
           const fields = ['phase', 'sanders_supporters', 'clinton_supporters', 'other_supporters',
             'sanders_delegates', 'clinton_delegates', 'other_delegates'];
+          const finalFields = ['sanders_delegates', 'clinton_delegates', 'other_delegates'];
+
           fields.forEach((elem) => {
             // check for all fields
-            if (!data[elem]) {
+            const isInFinalForm = (finalFields.indexOf(elem) > -1);
+
+            // if values doesn't exist and it's not in final form
+            // ( or it is in final form and that form is on), it's invalid
+            if (!data[elem] && (!isInFinalForm || (isInFinalForm && data.phase === '2'))) {
               errorMessage[elem] = 'This field is required.';
               isInvalid = true;
             }
 
-            // check for ballots cast number
+            // check for values that have to be numbers
             if (elem !== 'phase' && data[elem]) {
               const value = parseInt(data[elem], 16);
               if (typeof value !== 'number' || value < 0) {
@@ -68,6 +75,8 @@ export default class SubmitableForm extends Component {
 
     if (Object.getOwnPropertyNames(errorMessage).length !== 0) {
       this.errored(errorMessage);
+    } else {
+      this.reportErrors(errorMessage);
     }
 
     return isInvalid;
@@ -84,8 +93,14 @@ export default class SubmitableForm extends Component {
     }
   }
 
+  reportErrorMessages(message = null) {
+    // sends messages even if there are none, to reset form errors on submit
+    this.setState({ errorMessages: message });
+  }
+
   errored(message = null) {
-    this.setState({ error: true, submitting: false, errorMessages: message });
+    this.setState({ error: true, submitting: false });
+    this.reportErrorMessages(message);
   }
 
   submit(event) {
@@ -109,6 +124,7 @@ export default class SubmitableForm extends Component {
           if (err || !res.noContent) {
             this.errored();
           } else {
+            // clear errors and submit
             this.submitted();
           }
         });
