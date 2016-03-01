@@ -10,6 +10,10 @@ export default class PrecinctInput extends Component {
     this.context.api.getPrecinctsFromLocation(this.props.location)
     .then(precincts => {
       this.setState({ precincts });
+    }, () => {
+      const router = this.context.router;
+      console.error('Errored looking for precincts'); // eslint-disable-lint
+      router.push('/');
     });
   }
 
@@ -34,6 +38,7 @@ export default class PrecinctInput extends Component {
 
 PrecinctInput.contextTypes = {
   api: React.PropTypes.object,
+  router: React.PropTypes.object,
 };
 
 PrecinctInput.propTypes = {
