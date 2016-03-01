@@ -28,6 +28,9 @@ export default class PrimaryReport extends Submitable {
         <label>Ballots Cast:
           <input type="number" name="ballots_cast" />
         </label>
+        <label>
+          Inclues Early/Absentee Ballots: <input type="checkbox" name="early_absentee" value="1" />
+        </label>
         <TimeSelect />
         <ContactInfo />
         <label>

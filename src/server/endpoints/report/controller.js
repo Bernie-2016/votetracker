@@ -55,6 +55,7 @@ const submit = {
       float_time: getFloatTime(),
       ip: getIp(req),
       contact_info: req.body.contact_info || '',
+      early_absentee: req.body.early_absentee || 0,
     };
     insert('primary_report', data)
       .then(() => {
