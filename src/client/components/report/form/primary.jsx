@@ -10,6 +10,9 @@ export default class PrimaryReport extends Submitable {
     if (this.state.submitted) {
       statusMessage = 'Submitted';
     }
+    if (this.state.error) {
+      statusMessage = 'Error submitting. Please check values and try again.';
+    }
     return (
       <div className="PrimaryReportForm">
         <form ref={this.trackForm}>
@@ -27,7 +30,7 @@ export default class PrimaryReport extends Submitable {
         <TimeSelect />
         <label>
           <button type="submit" disabled={this.state.submitting}>Submit</button>
-        {statusMessage}</label>
+        {statusMessage}{this.errorMessage}</label>
         </form>
       </div>
     );

@@ -9,6 +9,7 @@ export default class SubmitableForm extends Component {
     this.trackForm = this.trackForm.bind(this);
     const submitFn = this.submit || function empty() {};
     this.submit = submitFn.bind(this);
+    this.change = this.change.bind(this);
     this.state = {
     };
   }
@@ -26,6 +27,10 @@ export default class SubmitableForm extends Component {
 
   errored() {
     this.setState({ error: true, submitting: false });
+  }
+
+  change() {
+    this.setState({ submitted: false, error: false });
   }
 
   submit(event) {
@@ -53,10 +58,12 @@ export default class SubmitableForm extends Component {
   trackForm(element) {
     if (!element && this.formElement) {
       this.formElement.removeEventListener('submit', this.submit);
+      this.formElement.removeEventListener('change', this.change);
     }
     this.formElement = element;
     if (element) {
       element.addEventListener('submit', this.submit);
+      element.addEventListener('change', this.change);
     }
   }
 
