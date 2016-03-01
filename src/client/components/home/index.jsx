@@ -9,10 +9,10 @@ const statesFiltered = states.filter(state => state.election_day.isSame(moment('
 
 const Home = () => (
   <div>
-    <p>Welcome to VoteTracker, the official Bernie 2016 app to track turnout on election day.
-      Thank you for help. </p>
-    <p>To start, select your state from the options below.</p>
-    <h1>Select Your State:</h1>
+    <h5>Welcome to VoteTracker, the official Bernie 2016 app to track turnout on election day.
+      Thank you for help. </h5>
+    <h5>To start, select your state from the options below.</h5>
+    <h2>Select Your State:</h2>
     <Menu items={statesFiltered}
       makeLink={state => `/report/${state.state_code}/`} // eslint-disable-line
       renderItem={state => state.state_code} // eslint-disable-line

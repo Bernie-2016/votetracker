@@ -12,7 +12,7 @@ export default class ReportLayout extends Component {
     const state = findState(params.state);
     return (
       <div className="report">
-        <h1>{ state.name } { state.type }</h1>
+        <h2>{ state.name } { state.type }</h2>
         { children }
       </div>
     );
