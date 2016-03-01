@@ -8,8 +8,9 @@ export default class ContactInfo extends Component {
           defaultValue={this.context.api.contact_info}
           onChange={(event) => { this.context.api.contact_info = event.target.value; }} // eslint-disable-line
         />
-        <span className="sub">(Optional: in case we have questions about this report,
-          may we have your e-mail or phone?)</span>
+        <span className="sub">
+          (Optional: in case we have questions about this report, may we have your e-mail or phone?)
+        </span>
       </label>
     );
   }
