@@ -11,7 +11,6 @@ const Home = () => (
   <div>
     <h5>Welcome to VoteTracker, the official Bernie 2016 app to track turnout on election day.
       Thank you for help. </h5>
-    <h5>To start, select your state from the options below.</h5>
     <h2>Select Your State:</h2>
     <Menu items={statesFiltered}
       makeLink={state => `/report/${state.state_code}/`} // eslint-disable-line
