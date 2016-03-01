@@ -15,28 +15,22 @@ export default class PrecinctInput extends Component {
   }
 
   fetchIt(props = this.props) {
-    console.log('fetching', this.props);
+    let fetch;
     if (props.location) {
-      this.context.api.getPrecinctsFromLocation(props.location)
-      .then(precincts => {
-        this.setState({ precincts });
-      }, () => {
-        const router = this.context.router;
-        console.error('Errored looking for precincts'); // eslint-disable-line
-        router.replace('/');
-      });
-    } else if (props.county) {
-      this.context.api.getPrecinctsFromCounty(props)
-      .then(precincts => {
-        this.setState({ precincts });
-      }, () => {
-        const router = this.context.router;
-        console.error('Errored looking for precincts'); // eslint-disable-line
-        router.replace('/');
-      });
+      fetch = this.context.api.getPrecinctsFromLocation(props.location);
+    } else if (props.county && props.state) {
+      fetch = this.context.api.getPrecinctsFromCounty(props);
     } else {
       this.setState({ precincts: [] });
+      return;
     }
+    fetch.then(precincts => {
+      this.setState({ precincts });
+    }, () => {
+      const router = this.context.router;
+      console.error('Errored looking for precincts'); // eslint-disable-line
+      router.replace('/');
+    });
   }
 
   render() {
@@ -49,7 +43,9 @@ export default class PrecinctInput extends Component {
         <label>Select Precinct
           <select name="precinct_id">
             <option value="">---ALL PRECINCTS---</option>
-            {precincts.map(precinct => <option value={precinct.id}>{precinct.name}</option>)}
+            {precincts.map(precinct => (
+              <option key={precinct.id} value={precinct.id}>{precinct.name}</option>
+            ))}
           </select>
         </label>
       );

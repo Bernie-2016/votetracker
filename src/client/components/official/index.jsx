@@ -16,18 +16,9 @@ export default class OfficialReport extends Submitable {
     this.stateChange = this.stateChange.bind(this);
   }
 
-  trackForm(element) {
-    super.trackForm(element);
-    if (element) {
-      this.stateSelect = element.querySelector('select[name="state"]');
-      this.countySelect = element.querySelector('select[name="county"]');
-      element.addEventListener('change', this.stateChange);
-    }
-  }
-
   stateChange(event) {
-    if (event.target === this.stateSelect) {
-      const stateSelect = this.stateSelect;
+    if (event.target.name === 'state') {
+      const stateSelect = event.target;
       const stateValue = stateSelect[stateSelect.selectedIndex].value;
 
       this.setState({
@@ -40,11 +31,16 @@ export default class OfficialReport extends Submitable {
         .then(counties => this.setState({ counties }));
     }
 
-    if (event.target === this.countySelect) {
-      const countySelect = this.countySelect;
+    if (event.target.name === 'county') {
+      const countySelect = event.target;
       const county = countySelect[countySelect.selectedIndex].value;
 
       this.setState({ county });
+    }
+    if (['county', 'state', 'precinct_id'].indexOf(event.target.name) !== -1) {
+      [].forEach.call(this.formElement.querySelectorAll('input'), input => {
+        input.value = ''; // eslint-disable-line
+      });
     }
   }
 
@@ -63,7 +59,7 @@ export default class OfficialReport extends Submitable {
     return (
       <div className="official report">
         <h2>Official Results</h2>
-        <form ref={this.trackForm}>
+        <form ref={this.trackForm} onChange={this.stateChange}>
           <input type="hidden" value="official" name="report_type" />
           <label>Select a State:
             <select name="state"><option value="">---Select a State---</option>{states.map(state => { // eslint-disable-line
@@ -82,7 +78,9 @@ export default class OfficialReport extends Submitable {
           </label></div>
 
           <div hidden={!needsPrecinct}>
-            <PrecinctInput state={this.state.state} county={this.state.county} />
+            <PrecinctInput state={this.state.state}
+              county={needsPrecinct ? this.state.county : ''}
+            />
           </div>
 
           <div className="form" hidden={!this.state.county}>
