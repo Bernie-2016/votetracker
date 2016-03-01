@@ -18,7 +18,7 @@ export default class PrimaryReport extends Submitable {
         <form ref={this.trackForm}>
         <input type="hidden" value="primary" name="report_type" />
         <PrecinctInput location={this.props.params.location} />
-        <label>Ballot Type
+        <label>Report Type
           <select name="type">
             <option value="dem">Democratic Ballots</option>
             <option value="total">Total Ballots</option>

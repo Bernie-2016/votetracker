@@ -74,7 +74,7 @@ export default class OfficialReport extends Submitable {
           </label></div>
 
           <div className="form" hidden={!this.state.county}>
-            <label>Are you reporting the number votes cast or the vote percentages?
+            <label>Are you reporting the number of votes cast or the vote percentages?
               <select>
                 <option>Vote Percentages</option>
                 <option>Number of Votes</option>
