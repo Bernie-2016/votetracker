@@ -53,7 +53,7 @@ const submit = {
       precinct_id: +req.body.precinct_id || null,
       report_age: +req.body.report_age / 60,
       ballots_cast: +req.body.ballots_cast,
-      float_time: getFloatTime(),
+      float_time: getFloatTime(+req.body.report_age || 0),
       ip: getIp(req),
       contact_info: req.body.contact_info || '',
       early_absentee: req.body.early_absentee || 0,
@@ -77,7 +77,7 @@ const submit = {
       state: req.body.state,
       county: req.body.county,
       location_id: +req.body.location_id || 0,
-      float_time: getFloatTime(),
+      float_time: getFloatTime(+req.body.report_age || 0),
       ip: getIp(req),
       contact_info: req.body.contact_info || '',
     };
