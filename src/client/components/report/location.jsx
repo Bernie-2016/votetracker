@@ -32,9 +32,14 @@ export default class LocationSelect extends Component {
       return `/report/${state}/${county}/${location.id}/`;
     };
 
-    const renderItem = location =>
-      `${location.pollinglocation} — ${location.pollingaddress}, ` +
-        `${location.pollingcity}, ${this.props.params.state} ${location.pollingzip}`;
+    const renderItem = location => {
+      const { pollinglocation, pollingaddress, pollingcity, pollingzip } = location;
+      const state = this.props.params.state;
+      const firstPart = `${pollinglocation} — ${pollingaddress}, ${pollingcity}`
+        .replace(/\b([a-zA-Z])(\w*)/g, (_, $1, $2) => $1.toUpperCase() + $2.toLowerCase());
+
+      return `${firstPart}, ${state} ${pollingzip}`;
+    };
 
     return (
       <div className="location-form">

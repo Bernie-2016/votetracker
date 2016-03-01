@@ -13,7 +13,7 @@ export default class PrecinctInput extends Component {
     }, () => {
       const router = this.context.router;
       console.error('Errored looking for precincts'); // eslint-disable-line
-      router.push('/');
+      router.replace('/');
     });
   }
 
