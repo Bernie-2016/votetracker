@@ -8,7 +8,9 @@ const TimeSelect = () => (
       <option value="30">30 minutes ago</option>
       <option value="60">An hour ago</option>
       <option value="90">An hour and a half ago</option>
-      <option value="120">Two or more hours ago</option>
+      <option value="120">Two hours ago</option>
+      <option value="150">Two and a half hours ago</option>
+      <option value="210">Three or more hours ago</option>
     </select>
   </label>
 );
