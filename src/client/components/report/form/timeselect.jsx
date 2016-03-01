@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TimeSelect = () => (
+const TimeSelect = ({ errorMessage = null }) => (
   <label>How recent is this report?
     <select name="report_age">
       <option value="0">Right Now</option>
@@ -10,7 +10,13 @@ const TimeSelect = () => (
       <option value="90">An hour and a half ago</option>
       <option value="120">Two or more hours ago</option>
     </select>
+
+    <span className="error">{errorMessage}</span>
   </label>
 );
+
+TimeSelect.propTypes = {
+  errorMessage: React.PropTypes.string,
+};
 
 export default TimeSelect;
