@@ -54,8 +54,7 @@ export default class OfficialReport extends Submitable {
       statusMessage = 'Error submitting. Please check values and try again.';
     }
     const county = this.state.county;
-    const needsPrecinct = this.state.state !== 'TX' && county &&
-      this.state.stateObj.important.indexOf(county) !== -1;
+    const needsPrecinct = this.state.stateObj.important.indexOf(county) !== -1;
 
     return (
       <div className="official report">
