@@ -41,12 +41,16 @@ export default class PrecinctInput extends Component {
       }
       return (
         <label>Select Precinct
-          <select name="precinct_id">
-            <option value="">---ALL PRECINCTS---</option>
-            {precincts.map(precinct => (
-              <option key={precinct.id} value={precinct.id}>{precinct.name}</option>
+          <select name="precinct_id" className={this.props.className}>
+            <option value="">{this.props.required ?
+              '---ALL PRECINCTS---' :
+              '---Select your precinct---'
+            }</option>
+            {precincts.map((precinct, index) => (
+              precinct.id ? <option key={index} value={precinct.id}>{precinct.name}</option> : ''
             ))}
           </select>
+          {this.props.children}
         </label>
       );
     }
@@ -62,4 +66,7 @@ PrecinctInput.contextTypes = {
 PrecinctInput.propTypes = {
   location: React.PropTypes.any,
   county: React.PropTypes.string,
+  children: React.PropTypes.element,
+  required: React.PropTypes.bool,
+  className: React.PropTypes.className,
 };
