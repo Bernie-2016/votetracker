@@ -91,7 +91,8 @@ export default class OfficialReport extends Submitable {
       statusMessage = 'Error submitting. Please check values and try again.';
     }
     const county = this.state.county;
-    const needsPrecinct = this.state.stateObj.important.indexOf(county) !== -1;
+    const needsPrecinct = this.state.stateObj &&
+      this.state.stateObj.important.indexOf(county) !== -1;
 
     // update class names
     this.state.officialFields.forEach((elem) => {
@@ -160,6 +161,7 @@ export default class OfficialReport extends Submitable {
             <label>Other Votes:
               <input type="number" name="other_votes"
                 className={this.state.errorClasses.other_votes}
+                defaultValue="0"
               />
              <span className="error-message">{this.state.errorMessages.other_votes}</span>
             </label>

@@ -68,5 +68,5 @@ PrecinctInput.propTypes = {
   county: React.PropTypes.string,
   children: React.PropTypes.element,
   required: React.PropTypes.bool,
-  className: React.PropTypes.className,
+  className: React.PropTypes.string,
 };
