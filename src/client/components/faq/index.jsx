@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.styl';
-import { email, phone } from '../../data/contact';
+import { email, phone, helpEmail } from '../../data/contact';
 
 const Faq = () => (
   <div className="faq">
@@ -19,8 +19,9 @@ const Faq = () => (
         vote totals) and we’ll take care of it.</p>
     <h5>4. I ran into a problem voting my polling location that I’m concerned about.
         How do I report it?</h5>
-    <p>Email {email} with “PROBLEM” in the subject line or text or call
-        {phone} with your concerns.</p>
+    <p>Email { helpEmail } with a detailed description of your problem and your contact
+        information. Please don’t send us links to things you saw on social media —
+        we monitor that ourselves.</p>
   </div>
 );
 
