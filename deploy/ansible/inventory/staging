@@ -3,4 +3,4 @@
 # production server's FQDN. This is likely the only change you will need to
 # make between production and staging.
 
-votetracker-staging.gnarf.net site_fqdn=otetracker-staging.gnarf.net
+votetracker-staging.gnarf.net site_fqdn=votetracker-staging.gnarf.net

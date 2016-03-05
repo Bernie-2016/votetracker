@@ -15,6 +15,10 @@
   ufw: rule=allow to_port=80 proto=tcp
   notify: reload ufw
 
+- name: ensure firewall allows hookshot
+  ufw: rule=allow to_port={{hookshot_port}} proto=tcp
+  notify: reload ufw
+
 - name: ensure firewall allows postgres access for whitelist
-  ufw: rule=allow src={{ item }} port=5432
+  ufw: rule=allow src={{item}} port=5432
   with_items: firewall_whitelist

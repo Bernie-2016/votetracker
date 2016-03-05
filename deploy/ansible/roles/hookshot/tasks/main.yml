@@ -1,0 +1,62 @@
+- name: ensure wheel group is present
+  group: name=wheel state=present
+
+- name: allow wheel group to sudo with no password
+  lineinfile:
+    dest: /etc/sudoers
+    state: present
+    regexp: '^%wheel ALL\='
+    line: "%wheel ALL=(ALL) NOPASSWD:ALL"
+    validate: 'visudo -cf %s'
+
+- name: ensure hookshot user exists
+  user:
+    state: present
+    name: "{{hookshot_user}}"
+    generate_ssh_key: yes
+    shell: /bin/bash
+    groups: wheel
+
+# this could also be accomplished by setting the connection to local
+- name: ensure hookshot user can ssh into hookshot server
+  copy:
+    remote_src: yes
+    src: ~{{hookshot_user}}/.ssh/id_rsa.pub
+    dest: ~{{hookshot_user}}/.ssh/authorized_keys
+
+- name: ensure hookshot directories exist
+  file: path={{item}} state=directory owner=hookshot
+  with_items:
+    - /home/hookshot/.local/share/hookshot/checkouts
+    - /home/hookshot/.local/share/hookshot/logs
+    - /home/hookshot/.cache
+    - /home/hookshot/.config
+
+- name: ensure hookshot server config exists
+  template: src=hookshot.conf dest=/home/hookshot/.config
+
+- name: ensure hookshot upstart config exists
+  template: src=hookshot_upstart.conf dest=/etc/init/hookshot.conf
+
+- name: ensure hookshot tarball is present
+  get_url:
+    url: https://github.com/brianloveswords/hookshot/releases/download/{{hookshot_version}}/hookshot.x86_64-linux.tgz
+    dest: /tmp/hookshot.x86_64-linux.tgz
+
+- name: ensure hookshot has been installed
+  unarchive:
+    copy: no
+    dest: /usr/local/bin
+    src: /tmp/hookshot.x86_64-linux.tgz
+    mode: 0755
+
+- name: ensure suite of known hosts
+  known_hosts:
+    path: "{{hookshot_home}}/.ssh/known_hosts"
+    name: "{{item}}"
+    key: "{{ lookup('pipe', 'ssh-keyscan -t rsa ' + item) }}"
+    state: present
+  with_items: hookshot_hosts
+
+- name: ensure hookshot service is restarted
+  service: name=hookshot state=restarted

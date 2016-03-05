@@ -11,6 +11,7 @@
     - {role: postgresql, tags: postgresql}
     - {role: users, tags: users}
     - {role: nginx, tags: nginx}
+    - {role: hookshot, tags: hookshot, when: env != 'development'}
     - {role: services, tags: services}
   handlers:
     - name: restart nginx

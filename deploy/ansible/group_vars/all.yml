@@ -33,6 +33,7 @@ apt_ppas:
   - "deb https://deb.nodesource.com/node_5.x trusty main"
   - "deb https://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main"
   - ppa:git-core/ppa
+  - ppa:ansible/ansible
 
 # Any apt packages to install. Apt package versions may be specified like
 # - git=2.1.0
@@ -43,6 +44,8 @@ apt_packages:
   - nodejs
   - postgresql-9.5
   - python-psycopg2
+  - software-properties-common
+  - ansible
 
 timezone: America/New_York
 
@@ -154,6 +157,20 @@ build_info_path: "public/build.txt"
 # npm bails during install because it runs out of memory)
 swap_file_path: /swap
 swap_file_size: 2GB
+
+##########
+# HOOKSHOT
+##########
+
+hookshot_user: hookshot
+hookshot_secret: 85aefc39059b1f92f0b33c66e2271b9b9c5feeaccccae5ff6ba44da66c8120dc
+hookshot_version: v1.0.0-rc.7
+hookshot_port: 1469
+hookshot_home: /home/{{hookshot_user}}
+hookshot_config: "{{hookshot_home}}/.config/hookshot.conf"
+hookshot_hosts:
+  - github.com
+  - votetracker.gnarf.net
 
 ###################
 # DEPLOY EXTRA VARS
