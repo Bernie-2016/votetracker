@@ -122,6 +122,7 @@ users:
 firewall_whitelist:
   - 52.5.0.69/32 # DNC
   - 98.229.3.48/32 # HQ
+  - 71.234.172.206/32 # Ben / HQ round two
 
 ########
 # DEPLOY
