@@ -1,18 +1,57 @@
 state_code,name,election_day,type,open_closed
-NV,Nevada,2/20/2016,Caucus,Closed
+IA,Iowa,2/1/2016,Caucus,Semi
+NH,New Hampshire,2/9/2016,Primary,Semi
+NV,Nevada,2/23/2016,Caucus,Closed
 SC,South Carolina,2/27/2016,Primary,Open
 AL,Alabama,3/1/2016,Primary,Open
+AS,American Samoa,3/1/2016,Caucus,Closed
 AR,Arkansas,3/1/2016,Primary,Open
 CO,Colorado,3/1/2016,Caucus,Closed
 GA,Georgia,3/1/2016,Primary,Open
-MA,Massachusetts,3/1/2016,Primary,Mixed
+MA,Massachusetts,3/1/2016,Primary,Semi
 MN,Minnesota,3/1/2016,Caucus,Open
-OK,Oklahoma,3/1/2016,Primary,Open
+OK,Oklahoma,3/1/2016,Primary,Semi
 TN,Tennessee,3/1/2016,Primary,Open
 TX,Texas,3/1/2016,Primary,Open
 VT,Vermont,3/1/2016,Primary,Open
 VA,Virginia,3/1/2016,Primary,Open
 KS,Kansas,3/5/2016,Caucus,Closed
-NE,Nebraska,3/5/2016,Caucus,Closed
 LA,Louisiana,3/5/2016,Primary,Closed
+NE,Nebraska,3/5/2016,Caucus,Closed
 ME,Maine,3/6/2016,Caucus,Closed
+MI,Michigan,3/8/2016,Primary,Open
+MS,Mississippi,3/8/2016,Primary,Open
+MP,Northern Mariana Islands,3/12/2016,Primary,NA
+FL,Florida,3/15/2016,Primary,Closed
+IL,Illinois,3/15/2016,Primary,Open
+MO,Missouri,3/15/2016,Primary,Open
+NC,North Carolina,3/15/2016,Primary,Semi
+OH,Ohio,3/15/2016,Primary,Semi
+AZ,Arizona,3/22/2016,Primary,Closed
+ID,Idaho,3/22/2016,Caucus,Open
+UT,Utah,3/22/2016,Caucus,Semi
+AK,Alaska,3/26/2016,Caucus,Closed
+HI,Hawaii,3/26/2016,Caucus,Semi
+WA,Washington,3/26/2016,Caucus,Open
+WI,Wisconsin,4/5/2016,Primary,Open
+WY,Wyoming,4/9/2016,Caucus,Closed
+NY,New York,4/19/2016,Primary,Closed
+CT,Connecticut,4/26/2016,Primary,Closed
+DE,Delaware,4/26/2016,Primary,Closed
+MD,Maryland,4/26/2016,Primary,Closed
+PA,Pennsylvania,4/26/2016,Primary,Closed
+RI,Rhode Island,4/26/2016,Primary,Semi
+IN,Indiana,5/3/2016,Primary,Open
+GU,Guam,5/7/2016,Caucus,Closed
+WV,West Virginia,5/10/2016,Primary,Semi
+KY,Kentucky,5/17/2016,Primary,Closed
+OR,Oregon,5/17/2016,Primary,Closed
+VI,Virgin Islands,6/4/2016,Caucus,Closed
+PR,Puerto Rico,6/5/2016,Primary,Open
+CA,California,6/7/2016,Primary,Semi
+MT,Montana,6/7/2016,Primary,Open
+NJ,New Jersey,6/7/2016,Primary,Closed
+NM,New Mexico,6/7/2016,Primary,Closed
+ND,North Dakota,6/7/2016,Primary,Open
+SD,South Dakota,6/7/2016,Primary,Semi
+DC,District of Columbia,6/14/2016,Primary,Closed
