@@ -38,3 +38,6 @@
   args:
     chdir: "{{base_path}}"
   when: keep_n_most_recent is defined
+
+- name: restart api service
+  service: name=api state=restarted

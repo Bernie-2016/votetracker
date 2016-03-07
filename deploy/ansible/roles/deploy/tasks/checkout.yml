@@ -35,6 +35,3 @@
 
 - name: ensure just-created temp directory is removed
   file: path={{clone_path}} state=absent
-
-- name: restart api service
-  service: name=api state=restarted
