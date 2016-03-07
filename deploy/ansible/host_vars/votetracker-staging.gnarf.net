@@ -1,3 +1,3 @@
-env: staging
+env: production
 hostname: votetracker-staging.gnarf.net
 site_fqdn: votetracker-staging.gnarf.net
