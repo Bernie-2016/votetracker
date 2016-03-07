@@ -17,6 +17,7 @@ export default class PrimaryReport extends Submitable {
         'type',
         'ballots_cast',
         'report_age',
+        'contact_info',
       ],
       errorMessages: {
         type: null,
@@ -82,7 +83,9 @@ export default class PrimaryReport extends Submitable {
         <TimeSelect error={this.state.errorMessages.report_age}
           className={this.state.errorClasses.report_age}
         />
-        <ContactInfo />
+        <ContactInfo errorMessage={this.state.errorMessages.contact_info}
+          className={this.state.errorClasses.contact_info}
+        />
         <label>
           <button type="submit" disabled={this.state.submitting}>Submit</button>
         {statusMessage} {this.state.errorMessage || this.errorMessage}</label>

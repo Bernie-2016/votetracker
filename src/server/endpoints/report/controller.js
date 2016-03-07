@@ -96,5 +96,8 @@ export function create(req, res) {
   if (!processFn) {
     res.sendStatus(406);
   }
+  if (!req.body.contact_info.match(/^\+1 \(\d{3}\) \d{3}-\d{4}$/)) {
+    res.sendStatus(406);
+  }
   processFn(req, res);
 }

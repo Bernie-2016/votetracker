@@ -19,6 +19,11 @@ export default class SubmitableForm extends Component {
     const errorMessage = {};
     let isInvalid = false;
 
+    if (!data.contact_info.match(/^\+1 \(\d{3}\) \d{3}-\d{4}$/)) {
+      errorMessage.contact_info = 'Must be in +1 (###) ###-#### format';
+      isInvalid = true;
+    }
+
     // different forms => different validation
     switch (data.report_type) {
       case 'caucus':

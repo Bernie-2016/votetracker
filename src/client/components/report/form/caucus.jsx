@@ -167,7 +167,9 @@ export default class CaucusReport extends Submitable {
           <TimeSelect error={this.state.errorMessages.report_age}
             className={this.state.errorClasses.report_age}
           />
-          <ContactInfo />
+          <ContactInfo errorMessage={this.state.errorMessages.contact_info}
+            className={this.state.errorClasses.contact_info}
+          />
           <label>
             <button disabled={this.state.submitting} type="submit">Submit</button>
           {statusMessage}{this.errorMessage}</label>
