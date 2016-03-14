@@ -36,7 +36,8 @@ const locationsQuery = memoize(params => {
   params.empty = '';
   return db.query(
     'SELECT DISTINCT ' +
-    ' pl.id, pl.pollinglocation, pl.pollingaddress, pl.pollingcity, pl.state_code, coalesce(pl.pollingzip, \'\') ' +
+    ' pl.id, pl.pollinglocation, pl.pollingaddress, pl.pollingcity, pl.state_code, ' +
+    ' coalesce(pl.pollingzip, \'\') as pollingzip ' +
     'FROM precincts AS p ' +
     '  LEFT JOIN precinct_polling_location as ppl ON p.id = ppl.precinct_id ' +
     '  LEFT JOIN polling_location AS pl ON pl.id = ppl.polling_location_id ' +

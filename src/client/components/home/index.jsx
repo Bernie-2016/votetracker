@@ -5,7 +5,7 @@ import moment from 'moment';
 
 import Menu from '../simple-menu';
 
-const statesFiltered = states.filter(state => state.election_day.isSame(moment('3/8', 'M/D')));
+const statesFiltered = states.filter(state => state.election_day.isSame(moment('3/15', 'M/D')));
 
 const Home = () => (
   <div>
