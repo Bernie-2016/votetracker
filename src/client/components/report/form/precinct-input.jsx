@@ -43,8 +43,7 @@ export default class PrecinctInput extends Component {
         <label>Select Precinct
           <select name="precinct_id" className={this.props.className}>
             <option value="">{this.props.required ?
-              '---ALL PRECINCTS---' :
-              '---Select your precinct---'
+              '---Select your precinct---' : '---ALL PRECINCTS---'
             }</option>
             {precincts.map((precinct, index) => (
               precinct.id ? <option key={index} value={precinct.id}>{precinct.name}</option> : ''

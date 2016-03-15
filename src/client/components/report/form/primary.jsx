@@ -18,6 +18,7 @@ export default class PrimaryReport extends Submitable {
         'ballots_cast',
         'report_age',
         'contact_info',
+        'precinct_id',
       ],
       errorMessages: {
         type: null,
@@ -61,7 +62,12 @@ export default class PrimaryReport extends Submitable {
         <p>Questions? Check out our <Link to="/faq">FAQ.</Link></p>
         <form ref={this.trackForm}>
         <input type="hidden" value="primary" name="report_type" />
-        <PrecinctInput location={this.props.params.location} />
+        <PrecinctInput location={this.props.params.location}
+          required
+          className={this.state.errorClasses.precinct_id}
+        >
+          <span className="error-message">{this.state.errorMessages.precinct_id}</span>
+        </PrecinctInput>
         <label>Report Type
           <select name="type" className={this.state.errorClasses.type}>
             <option value="dem">Democratic Ballots</option>
