@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Menu from '../simple-menu';
+import { helpEmail } from '../../data/contact';
 
 export default class LocationSelect extends Component {
 
@@ -44,6 +45,9 @@ export default class LocationSelect extends Component {
     return (
       <div className="location-form">
         <h3>Select your Polling Location</h3>
+        <h5>If you don't see your location, email { helpEmail }.</h5>
+        <h5>Please include your county, precinct, and polling location, along with your report
+        of the total ballots cast.</h5>
         <Menu filter={locations.length > 10}
           items={locations}
           makeLink={makeLink}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { helpEmail } from '../../data/contact';
 
 const HowToPrimary = () => (
   <div className="how-to primary">
@@ -12,6 +13,9 @@ const HowToPrimary = () => (
     <p>First, you'll be asked to select your county.
       Then select your polling location, and fill out the following form.</p>
     <p>Questions? Check out our <Link to="/faq">FAQ.</Link></p>
+    <h5>If you don't see your county, email { helpEmail } with the information above.</h5>
+    <h5>Please include your county, precinct, and polling location
+       to the best of your knowledge.</h5>
   </div>
 );
 

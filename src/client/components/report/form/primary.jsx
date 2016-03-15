@@ -74,11 +74,12 @@ export default class PrimaryReport extends Submitable {
             className={this.state.errorClasses.ballots_cast}
           />
           <span className="error-message">{this.state.errorMessages.ballots_cast}</span>
-          <span className="sub">(Count everybody who's voted in the
-            Democratic Primary so far).</span>
+          <span className="reminder">Please include the total ballots cast,
+             not just your own ballot.</span>
         </label>
         <label>
-          Includes Early/Absentee Ballots: <input type="checkbox" name="early_absentee" value="1" />
+          This report includes Early/Absentee Ballots:
+           <input type="checkbox" name="early_absentee" value="1" />
         </label>
         <TimeSelect error={this.state.errorMessages.report_age}
           className={this.state.errorClasses.report_age}
