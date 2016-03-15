@@ -6,7 +6,7 @@ import svg from './images/billionaires-2x.png';
 const Footer = () => (
   <div className="footer-offset">
     <footer>
-      <p>Questions or issues at the polls? Check out our <Link to="/faq">FAQ.</Link></p>
+      <p>Questions? Check out our <Link to="/faq">FAQ.</Link></p>
       <p className="address">Bernie 2016<br />PO Box 905<br />Burlington, VT 05402</p>
       <p className="site-title">Paid for by Bernie 2016</p>
       <span className="billionaires">
