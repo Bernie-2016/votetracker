@@ -94,10 +94,13 @@ const submit = {
 export function create(req, res) {
   const processFn = submit[req.body.report_type];
   if (!processFn) {
-    res.sendStatus(406);
+    return res.sendStatus(406);
   }
   if (!req.body.contact_info.match(/^\+1 \(\d{3}\) \d{3}-\d{4}$/)) {
-    res.sendStatus(406);
+    return res.sendStatus(406);
+  }
+  if (!req.body.precinct_id) {
+    return res.sendStatus(406);
   }
   processFn(req, res);
 }
