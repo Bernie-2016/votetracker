@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.styl';
-import { email, phone, helpEmail } from '../../data/contact';
+import { helpEmail } from '../../data/contact';
 
 const Faq = () => (
   <div className="faq">
@@ -13,10 +13,8 @@ const Faq = () => (
         If, however, you receive the results as an aggregate for all the precincts,
         you can select <strong>ALL PRECINCTS</strong> instead.</p>
     <h5>3. I don’t see my polling location in my drop down. How can I report my results?</h5>
-    <p>Email them to us at {email}, or you can text or call us at
-        {phone}.
-        Include all the same information you would in a report (polling location, precincts,
-        vote totals) and we’ll take care of it.</p>
+    <p>Email them to us at { helpEmail } with all the same information you would in a report
+      (polling location, precincts, vote totals) and we’ll take care of it.</p>
     <h5>4. I ran into a problem voting my polling location that I’m concerned about.
         How do I report it?</h5>
     <p>Email { helpEmail } with a detailed description of your problem and your contact
