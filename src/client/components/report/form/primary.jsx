@@ -70,6 +70,7 @@ export default class PrimaryReport extends Submitable {
         </PrecinctInput>
         <label>Report Type
           <select name="type" className={this.state.errorClasses.type}>
+            <option value="">---Select Type---</option>
             <option value="dem">Democratic Ballots</option>
             <option value="total">Total Ballots</option>
           </select>
