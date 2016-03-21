@@ -33,7 +33,7 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 250029	AZ	APACHE	Town Of Springerville Conf Room	418 East Main Street	Springerville	85938
 250030	AZ	APACHE	Sawmill Chapter House	Mile Post 14 On N-7 (Across from Sawmill Primary S	Ft. Defiance	86504
 250031	AZ	APACHE	St. Michaels Chapter House	Hwy 264 Across IHS Building	St Michaels	86511
-250032	AZ	APACHE	Steamboat Chapter House	Hwy 264	 Mile Post 426	\N
+250032	AZ	APACHE	Steamboat Chapter House	"Hwy 264, Mile Post 426"	Ganado	86505
 250033	AZ	APACHE	Sweetwater Chapter House	14 Miles S Of Red Mesa Store	Teec Nos Pos	86514
 250034	AZ	APACHE	Blue Gap/Tachee Chapter House	Blue Gap Chapter House	Blue Gap	86520
 250035	AZ	APACHE	Teec Nos Pos Chapter House	Hwy 160 Bia School Rd # N 5114	Teec Nos Pos	86514
@@ -84,7 +84,7 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 250080	AZ	COCONINO	Christ Lutheran Church	25 Chapel Rd	Sedona	86336
 250081	AZ	COCONINO	Cromer Elementary School	7150 Silver Saddle Rd	Flagstaff	86004
 250082	AZ	COCONINO	Tolani Lake Chapter House	NA	Tolani Lake	86047
-250083	AZ	COCONINO	Tonalea Senior Citizen Center	1/2 Mile Route N-21 off Hwy 160	Tonalea	\N
+250083	AZ	COCONINO	Tonalea Senior Citizen Center		1/2 Mile Route N-21 off Hwy 160	\N
 250084	AZ	COCONINO	St Johns Episcopal-Lutheran Church	202 W Grant	Williams	86046
 250085	AZ	COCONINO	Tonalea Senior Citizen Center	1/2 Mile Route N-21 off Hwy 160	Tonalea	86044
 250086	AZ	GILA	Canyon Day Jr. High School	4622 S. 9th St	Whiteriver	\N
@@ -243,7 +243,7 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 250239	AZ	PIMA	Beautiful Savior Lutheran Church	7570 N Thornydale Road	Tucson	85741
 250240	AZ	PIMA	Pisinemo District	West Highway 86	Route 21	\N
 250241	AZ	PIMA	Hickiwan District	Vaya Chin Village	Vaya Chin	85634
-250242	AZ	PIMA	Gu Vo District Office Compound	Indian Route 1	 Mile Post 19	\N
+250242	AZ	PIMA	Gu Vo District Office Compound	"Indian Route 1, Mile Post 19"	Ajo	85321
 250243	AZ	PIMA	Gu Achi District	Santa Rosa Community	Santa Rosa	85634
 250244	AZ	PIMA	Sopori Elementary School	5000 W Arivaca Road	Amado	\N
 250245	AZ	PIMA	Wheeler Taft Abbett	7800 N Schisler Drive	Tucson	85743
@@ -310,7 +310,7 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 250306	AZ	PIMA	Armory Park Center	220 S 5Th Avenue	Tucson	85701
 250307	AZ	PIMA	Valencia Branch Public Library	202 W Valencia Road	Tucson	85706
 250308	AZ	PIMA	New Life Church Of God	330 W Nebraska Street	Tucson	85706
-250309	AZ	PIMA	Schuk Toak District Office	Highway 86	 Mile Post 126.5	\N
+250309	AZ	PIMA	Schuk Toak District Office	"Highway 86, Mile Post 126.5"	Sells	85634
 250310	AZ	PIMA	Ellie Towne Flowing Wells Community Center	1660 W Ruthrauff Road	Tucson	85705
 250311	AZ	PIMA	Flowing Wells Assembly Of God Church	3198 N Flowing Wells Road	Tucson	85705
 250312	AZ	PIMA	Sells District Office	Arizona Highway 86 And Mile Post 112	Sells	85634
@@ -324,7 +324,7 @@ COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, 
 250320	AZ	PIMA	Pima 062	NA	NA	\N
 250321	AZ	PIMA	Himmel Park Branch Library	1035 N Treat Avenue	Tucson	85716
 250322	AZ	PIMA	Gideon Missionary Baptist Church	3085 S Campbell Avenue	Tucson	85713
-250323	AZ	PIMA	Chukut Kuk District	Federal Route 19	 Topawa Road	\N
+250323	AZ	PIMA	Chukut Kuk District	"Federal Route 19, Topawa Road, Vamori Village"	Sells	85634
 250324	AZ	PIMA	Southern Az Association For The Visually Impaired	3767 E Grant Road	Tucson	85716
 250325	AZ	PIMA	Grace St. Paul'S Episcopal Church	2331 E Adams Street	Tucson	85719
 250326	AZ	PIMA	Baboquivari District Office	Federal Route 19 & Fresnal Canyon Road	Sells	85634
