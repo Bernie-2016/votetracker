@@ -6,7 +6,7 @@ import { helpEmail } from '../../data/contact';
 
 import Menu from '../simple-menu';
 
-const statesFiltered = states.filter(state => state.election_day.isSame(moment('3/15', 'M/D')));
+const statesFiltered = states.filter(state => state.election_day.isSame(moment('3/22', 'M/D')));
 
 const Home = () => (
   <div>
