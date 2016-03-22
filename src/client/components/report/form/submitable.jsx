@@ -62,8 +62,8 @@ export default class SubmitableForm extends Component {
             // check for ballots cast number
             if (elem === 'ballots_cast' && data[elem]) {
               const ballotsCast = parseInt(data[elem], 10);
-              if (typeof ballotsCast !== 'number' || ballotsCast < 0) {
-                errorMessage[elem] = 'This value must be a positive number.';
+              if (typeof ballotsCast !== 'number' || ballotsCast < 1) {
+                errorMessage[elem] = 'This value must be greater than one.';
                 isInvalid = true;
               }
             }
