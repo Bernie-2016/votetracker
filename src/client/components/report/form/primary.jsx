@@ -81,8 +81,9 @@ export default class PrimaryReport extends Submitable {
             className={this.state.errorClasses.ballots_cast}
           />
           <span className="error-message">{this.state.errorMessages.ballots_cast}</span>
-          <span className="reminder">Please include the total ballots cast,
-             <strong>not just your own ballot.</strong></span>
+          <span className="reminder">
+            Please include the total ballots cast, <strong>not just your own ballot.</strong>
+          </span>
         </label>
         <label>
           This report includes Early/Absentee Ballots:
