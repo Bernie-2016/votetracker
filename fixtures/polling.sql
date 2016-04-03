@@ -1,488 +1,2904 @@
 TRUNCATE polling_location;
 
 COPY polling_location (id, state_code, county, pollinglocation, pollingaddress, pollingcity, pollingzip) FROM stdin DELIMITER E'\t';
-250000	AZ	APACHE	Alpine Community Center	#12 County Road 2061	Alpine	85920
-250001	AZ	APACHE	Chinle Community Center	Us Hwy 191	Chinle	86503
-250002	AZ	APACHE	Concho Elementary School	6 County Road 5101	Concho	85924
-250003	AZ	APACHE	Cornfields Chapter House	8 Mile South Of Burnside Junction N15	Ganado	86505
-250004	AZ	APACHE	Apache County Annex- Pera Gym	75 W. Cleveland	St Johns	85936
-250005	AZ	APACHE	Cottonwood Senior Center	Rt 4 Cottonwood Chapter Premises	Chinle	86503
-250006	AZ	APACHE	Dennehotso Chapter House	1/2 Mile Sw Of Dennehotso School	Dennehotso	86535
-250007	AZ	APACHE	Eagar Town Hall	22 West 2Nd Street	Eagar	85925
-250008	AZ	APACHE	Fort Defiance Chapter House	Navajo Route 112	Ft Defiance	86504
-250009	AZ	APACHE	Ganado Uni Sch. Dist. (Fieldhouse)	Hwy 264	Ganado	86505
-250010	AZ	APACHE	Ganado Chapter House	Chapter Dr. Hwy 264	Ganado	86505
-250011	AZ	APACHE	Greer Fire House Station	38974 State Route 373	Greer	85927
-250012	AZ	APACHE	Houck Chapter House	Exit 348	Houck	86506
-250013	AZ	APACHE	Kinlichee Chapter House	8 Miles E. Of Ganado	 27 Miles W. Of W/R	\N
-250014	AZ	APACHE	Klagetoh Chapter House	15 Miles South Of State 264 On Hwy 191	Ganado	86505
-250015	AZ	APACHE	Lukachukai Chapter House	1/2 Mile S Of N12 Mile Post 1	Lukachukai	86507
-250016	AZ	APACHE	Lupton Chapter House	I-40 Exit 357 Rt 12	Lupton	86508
-250017	AZ	APACHE	Many Farms Senior Center	Hwy 191 W Of N. Route 59	Many Farms	86538
-250018	AZ	APACHE	McNary Community Center	103 S Cady	White River	85930
-250019	AZ	APACHE	Mexican Water Chapter House	Hwy 160-BIA Road 5056	Teec Nos Pos	86514
-250020	AZ	APACHE	Nazlini Senior Center	500 Yard N of the Nazlini Chapter House within cha	Nazlini	86540
-250021	AZ	APACHE	Nutrioso Community Center	County Rd 2016 #8	Nutrioso	85932
-250022	AZ	APACHE	Oak Springs Chapter House	8Miles N of Lupton	 Ch&I-40	\N
-250023	AZ	APACHE	Nahata Dziil Commission Governance - Chapter Houses	Red Sand View Drive	Sanders	86512
-250024	AZ	APACHE	Red Mesa School Conf. Rm	Hwy 160 Mile Post 448	Teec Nos Pos	86514
-250025	AZ	APACHE	Red Valley Chapter House	HWY 491 Route N13 Buffalo Dr. Bldg. R006-001	Red Valley	86544
-250026	AZ	APACHE	Rock Point Senior Center	Hwy 191	Rock Point	86545
-250027	AZ	APACHE	Rough Rock Chapter House	Hwy 8066	Chinle	86503
-250028	AZ	APACHE	Round Rock Chapter House	1/2 Mile E of Junction 191	Round Rock	86547
-250029	AZ	APACHE	Town Of Springerville Conf Room	418 East Main Street	Springerville	85938
-250030	AZ	APACHE	Sawmill Chapter House	Mile Post 14 On N-7 (Across from Sawmill Primary S	Ft. Defiance	86504
-250031	AZ	APACHE	St. Michaels Chapter House	Hwy 264 Across IHS Building	St Michaels	86511
-250032	AZ	APACHE	Steamboat Chapter House	"Hwy 264, Mile Post 426"	Ganado	86505
-250033	AZ	APACHE	Sweetwater Chapter House	14 Miles S Of Red Mesa Store	Teec Nos Pos	86514
-250034	AZ	APACHE	Blue Gap/Tachee Chapter House	Blue Gap Chapter House	Blue Gap	86520
-250035	AZ	APACHE	Teec Nos Pos Chapter House	Hwy 160 Bia School Rd # N 5114	Teec Nos Pos	86514
-250036	AZ	APACHE	Vernon Public Library (Community Center)	10 CR 3142	Vernon	85940
-250037	AZ	APACHE	Tsaile/Wheatfields Chapter House	Rt. 12 & Rt. 64 - 8 Miles S On Rt. 12	Tsaile	86556
-250038	AZ	APACHE	Wide Ruins School Gym	18 Miles N Of I-40 On Hwy 191	Chambers	86502
-250039	AZ	APACHE	Navajo Nation Museum	Hwy 264 and Postal Loop Rd	Window Rock	86515
-250040	AZ	COCHISE	Bowie Unified School District Office	315 W 5th St	Bowie	85605
-250041	AZ	COCHISE	Peace In The Valley Lutheran Church	551 S J-Six Ranch Rd	Benson	85602
-250042	AZ	COCHISE	Benson High School Gymnasium	360 S Patagonia St	Benson	85602
-250043	AZ	COCHISE	First Baptist Church Of Bisbee	1173 W Highway 92	Bisbee	85603
-250044	AZ	COCHISE	Sunsites Community Center	1216 Treasure Rd	Pearce	85625
-250045	AZ	COCHISE	Douglas Visitor Center	345 E 16Th St	Douglas	85607
-250046	AZ	COCHISE	Mountain Vista Baptist Church	5499 S Moson Rd	Sierra Vista	85650
-250047	AZ	COCHISE	Palominas Fire District Training Center	9222 S Kings Ranch Rd	Hereford	85615
-250048	AZ	COCHISE	Huachuca City Community Center	201 E Yuma St	Huachuca City	85616
-250049	AZ	COCHISE	Valley Bible Church	4188 W Double Adobe Rd	McNeal	85617
-250050	AZ	COCHISE	Portal Library	2393 S Rock House Rd	Portal	85632
-250051	AZ	COCHISE	St David High School	 Multipurpose Room	70 E Patton St	\N
-250052	AZ	COCHISE	Shiloh Christian Ministries	1519 Avenida Del Sol	Sierra Vista	85635
-250053	AZ	COCHISE	Sierra Vista United Methodist Church	3225 St Andrews Dr	Sierra Vista	85650
-250054	AZ	COCHISE	St. Andrew'S Catholic Church - Kino Hall	800 Taylor Dr Nw	Sierra Vista	85635
-250055	AZ	COCHISE	American Legion Hall	225 E Allen St	Tombstone	85638
-250056	AZ	COCHISE	Willcox Community Center	312 W Stewart St	Willcox	85643
-250057	AZ	COCONINO	All Vote By Mail	NA	NA	\N
-250058	AZ	COCONINO	Bodaway Chapter House	East Of Trading Post	Bodaway	85260
-250059	AZ	COCONINO	Tuba City High School	67 Warrior Dr	Tuba City	86045
-250060	AZ	COCONINO	Coppermine Chapter House	22 Miles South Of Page	Coppermine	86040
-250061	AZ	COCONINO	Calvary Bible Church	6655 Townsend Winona Rd	Flagstaff	86004
-250062	AZ	COCONINO	Summit Fire Station #33	6050 E Firehouse Ln	Flagstaff	86004
-250063	AZ	COCONINO	Federated Community Church	400 W Aspen Ave	Flagstaff	86001
-250064	AZ	COCONINO	Shepherd Of The Hills Lutheran Church	1601 N San Francisco St	Flagstaff	86001
-250065	AZ	COCONINO	DoubleTree by Hilton	1175 W Route 66	Flagstaff	86001
-250066	AZ	COCONINO	Coconino County Health & Community Services Bldg	2625 N King St	Flagstaff	86004
-250067	AZ	COCONINO	NAU University Union	NAU Campus	Flagstaff	86011
-250068	AZ	COCONINO	Living Christ Lutheran Church	6401 N Hwy 89	Flagstaff	86004
-250069	AZ	COCONINO	Christ's Church Of Flagstaff	3475 E Soliere Ave	Flagstaff	86004
-250070	AZ	COCONINO	Bethel Community Church	3926 S Walapai Dr	Flagstaff	86001
-250071	AZ	COCONINO	Fredonia Fire Station	20 West Brown St	Fredonia	85201
-250072	AZ	COCONINO	Shrine Of The Ages	Grand Canyon Village	Grand Canyon	86023
-250073	AZ	COCONINO	Inscription House Chapter House	5 Miles N Hwy 98 on N-16	Inscription House	86044
-250074	AZ	COCONINO	Highlands Fire Station	3350 Old Munds Park Hwy	Flagstaff	86001
-250075	AZ	COCONINO	Kaibeto Senior Center	1/2 Mile East of Hwy 98	Kaibeto	86053
-250076	AZ	COCONINO	LeChee Chapter House	R-20 Coppermine Rd	Lechee	86040
-250077	AZ	COCONINO	Leupp Chapter House	NA	Leupp	86035
-250078	AZ	COCONINO	Page Public Saefty Building	808 Coppermine Rd	Page	86040
-250079	AZ	COCONINO	Page City Hall	697 Vista Ave	Page	86040
-250080	AZ	COCONINO	Christ Lutheran Church	25 Chapel Rd	Sedona	86336
-250081	AZ	COCONINO	Cromer Elementary School	7150 Silver Saddle Rd	Flagstaff	86004
-250082	AZ	COCONINO	Tolani Lake Chapter House	NA	Tolani Lake	86047
-250083	AZ	COCONINO	Tonalea Senior Citizen Center		1/2 Mile Route N-21 off Hwy 160	\N
-250084	AZ	COCONINO	St Johns Episcopal-Lutheran Church	202 W Grant	Williams	86046
-250085	AZ	COCONINO	Tonalea Senior Citizen Center	1/2 Mile Route N-21 off Hwy 160	Tonalea	86044
-250086	AZ	GILA	Canyon Day Jr. High School	4622 S. 9th St	Whiteriver	\N
-250087	AZ	GILA	Carrizo Assembly of God Church	V-10 Road	Carrizo	\N
-250088	AZ	GILA	Globe-Miami Chamber of Commerce	1365 N. Broad St.	Globe	\N
-250089	AZ	GILA	Miami High School	4638 E. Ragus Rd	NA	\N
-250090	AZ	GILA	Miami High School	4639 E. Ragus Rd	NA	\N
-250091	AZ	GILA	Miami High School	4640 E. Ragus Rd	NA	\N
-250092	AZ	GILA	Church Of The Nazarene	NA	NA	\N
-250093	AZ	GILA	Gisela Community Center	137 S. Tatum Trail	Payson	\N
-250094	AZ	GILA	Globe-Miami Chamber of Commerce	1361 N. Broad St.	Globe	85501
-250095	AZ	GILA	Globe-Miami Chamber of Commerce	1362 N. Broad St.	Globe	85501
-250096	AZ	GILA	Globe Elks Lodge	1911 E. Maple Street	Globe	85501
-250097	AZ	GILA	Globe Elks Lodge	1912 E. Maple Street	Globe	85501
-250098	AZ	GILA	Globe Elks Lodge	1913 E. Maple Street	Globe	85501
-250099	AZ	GILA	Globe Elks Lodge	1914 E. Maple Street	Globe	85501
-250100	AZ	GILA	Globe-Miami Chamber of Commerce	1363 N. Broad St.	Globe	\N
-250101	AZ	GILA	Globe-Miami Chamber of Commerce	1364 N. Broad St.	Globe	\N
-250102	AZ	GILA	Miami High School	4636 E. Ragus Rd	NA	\N
-250103	AZ	GILA	Miami High School	4637 E. Ragus Rd	NA	\N
-250104	AZ	GILA	Community Presbyterian Church	801 W. Main St.	Payson	\N
-250105	AZ	GILA	Community Presbyterian Church	802 W. Main St.	Payson	\N
-250106	AZ	GILA	 Expedition Church	303 S. Ash St.	 Payson	\N
-250107	AZ	GILA	Quality Inn Payson	802 N. Beeline Highway	Payson	\N
-250108	AZ	GILA	Quality Inn Payson	803 N. Beeline Highway	Payson	\N
-250109	AZ	GILA	Payson Public Library	329 N. McLane rd	Payson	\N
-250110	AZ	GILA	Payson Public Library	330 N. McLane rd	Payson	\N
-250111	AZ	GILA	Payson Public Library	331 N. McLane rd	Payson	\N
-250112	AZ	GILA	 Rice Gym	Mohave Ave. & Yavapai St	San Carlos	\N
-250113	AZ	GILA	Roosevelt Baptist Church	18659 Highway 188	Roosevelt	85545
-250114	AZ	GILA	Star Valley Baptist Church	4181 E. Highway 260	Payson	\N
-250115	AZ	GILA	Tonto Basin Chamber of Commerce	45676 Highway 188	Tonto Basin	\N
-250116	AZ	GILA	Whispering Pines Fire Station	10603 N Houston Mesa Rd	Whispering Pines	85541
-250117	AZ	GILA	Christopher Creek Bible Fellowship Church	1307 E. Christopher Creek Loop	Payson	\N
-250118	AZ	GRAHAM	AG Bldg.	 Fair Grounds	3805 S US Hwy 191	\N
-250119	AZ	GRAHAM	Robert Olivar Sr. Learning Center	Hwy 70	 Bylas	85530
-250120	AZ	GRAHAM	Eastern AZ College Fine Arts Auditorium	663 N Stadium Ave	 Thatcher	85552
-250121	AZ	GRAHAM	Ft. Thomas School Gym	Hwy 70	 Ft. Thomas	\N
-250122	AZ	GRAHAM	St. Rose of Lima Catholic Church	311 Central Avenue	 Safford	85546
-250123	AZ	GRAHAM	San Carlos Housing Authority	Moonbase Road	Peridot	\N
-250124	AZ	GRAHAM	Junior High Multi-Purpose Room	192 E 200 S	 Pima	85543
-250125	AZ	GRAHAM	Solomon School Gym	2285 S Stevens Ave	 Solomon	85551
-250126	AZ	GREENLEE	Clifton Train Depot	100 N Coronado Blvd	Clifton	85540
-250127	AZ	GREENLEE	Greenlee County Fairgrounds	1258 Fairgrounds Road	Duncan	85534
-250128	AZ	GREENLEE	Morenci Club	314 Plaza Drive	Morenci	85540
-250129	AZ	LA PAZ	Bouse Elementary School	44936 Joshua Dr	Bouse	85325
-250130	AZ	LA PAZ	Ehrenberg Fire Station	49480 Ehrenberg-Poston Highway	Ehrenberg	85334
-250131	AZ	LA PAZ	United Methodist Church	1300 S Ocotillo Avenue	Parker	85344
-250132	AZ	LA PAZ	Le Pera Elementary School	19121 Tahbo Road	Poston	85344
-250133	AZ	LA PAZ	Quartzsite Senior Center	40 N Moon Mountain Ave	Quartzsite	85346
-250134	AZ	LA PAZ	Indian Hills Airpark Pilot'S Lounge	66901 Indian Hills Way	Salome	85348
-250135	AZ	LA PAZ	La Paz County Boating Safety & Training Center	8484 Riverside Drive	Parker	85344
-250136	AZ	MARICOPA	Arizona Historical Museum	15025 N 19th Ave	Phoenix	85023
-250137	AZ	MARICOPA	Hope Chapel	17417 N 63rd Ave	Glendale	85308
-250138	AZ	MARICOPA	Saddle Mountain Rv Park	3201 N 51st Ave	Phoenix	85031
-250139	AZ	MARICOPA	Nadaburg School	20817 N 19th Ave	Phoenix	85027
-250140	AZ	MARICOPA	Deer Valley Worship Center	160 N Valentine St	Wickenburg	85390
-250141	AZ	MARICOPA	Mountain View Lutheran Church	11002 S 48th St	Phoenix	85044
-250142	AZ	MARICOPA	Litchfield Park First Baptist Ch	901 E Plaza Cir	Litchfield Park	85340
-250143	AZ	MARICOPA	First United Methodist Chur Of Gilbert	331 S Cooper Rd	Gilbert	85233
-250144	AZ	MARICOPA	Shiloh Community Church	8201 S Hardy Dr	Tempe	85284
-250145	AZ	MARICOPA	Pinnacle Presbyterian Church	14465 W R H Johnson Blvd	Sun City West	85375
-250146	AZ	MARICOPA	South Mountain Community Center	9555 W Van Buren St	Tolleson	85353
-250147	AZ	MARICOPA	Cotton Lane Community Church	3839 E Shea Blvd	Phoenix	85028
-250148	AZ	MARICOPA	Tempe Police Substation	19021 N 32nd St	Phoenix	85050
-250149	AZ	MARICOPA	Wickenburg Community Center	40410 N Gavilan Peak Pkwy	Phoenix	85086
-250150	AZ	MARICOPA	Hi-Way Baptist Church	10505 E Brown Rd	Mesa	85207
-250151	AZ	MARICOPA	Red Mountain United Methodist Church	2936 N Power Rd	Mesa	85215
-250152	AZ	MARICOPA	Environmental Education Center	4050 E Chandler Heights Rd	Chandler	85249
-250153	AZ	MARICOPA	Escalante Community Center	4141 E Thomas Rd	Phoenix	85018
-250154	AZ	MARICOPA	Tolleson Park And Recreation Ctr	212 E Alta Vista Rd	Phoenix	85042
-250155	AZ	MARICOPA	Se Regional Library/Gilbert	775 N Greenfield Rd	Gilbert	85234
-250156	AZ	MARICOPA	Horizon Community Center	11735 N Scottsdale Rd	Scottsdale	85254
-250157	AZ	MARICOPA	Dysart Community Center	14414 N El Mirage Rd	El Mirage	85335
-250158	AZ	MARICOPA	Pyle Adult Recreation Center	555 W Glendale Ave	Phoenix	85021
-250159	AZ	MARICOPA	Pinnacle Peak Public Safety Substation	23100 N Lake Pleasant Rd	Peoria	85383
-250160	AZ	MARICOPA	Arizona Traditions Community	632 N 3rd Ave	Phoenix	85003
-250161	AZ	MARICOPA	Sun City West Foundation	25150 N Pima Rd	Scottsdale	85255
-250162	AZ	MARICOPA	Compass Church	16060 W Van Buren St	Goodyear	85338
-250163	AZ	MARICOPA	Amer Legion Matthew B Juan Post 35	2240 W Chandler Blvd	Chandler	85224
-250164	AZ	MARICOPA	Laveen Baptist Church	5036 W Dobbins Rd	Laveen	85339
-250165	AZ	MARICOPA	Salt River Pima Community Center	10700 N 124th St	Scottsdale	85259
-250166	AZ	MARICOPA	Sun Valley Community Church	3065 S Ellsworth Rd	Mesa	85212
-250167	AZ	MARICOPA	Cave Creek Town Hall	37622 N Cave Creek Road	Cave Creek	85331
-250168	AZ	MARICOPA	Ascension Lutheran Ch	7100 N Mockingbird Ln	Paradise Valley	85253
-250169	AZ	MARICOPA	Maricopa County Cooperative Ext	5815 S McClintock Dr	Tempe	85283
-250170	AZ	MARICOPA	Pilgrim Evangelical Lutheran Church	3257 E University Dr	Mesa	85213
-250171	AZ	MARICOPA	Cottonwood Country Club	25630 S Brentwood Dr	Chandler	85248
-250172	AZ	MARICOPA	Mcdowell Mountain Community Church	10000 E McDowell Rd	Scottsdale	85256
-250173	AZ	MARICOPA	Happy Valley Baptist Church	24220 N 43rd Ave	Glendale	85310
-250174	AZ	MARICOPA	Cross Of Glory Evangelical Lutheran Church	10111 W Jomax Rd	Peoria	85383
-250175	AZ	MARICOPA	North Scottsdale United Methodist Church	15444 N 100th St	Scottsdale	85260
-250176	AZ	MARICOPA	Tempe Christian Church	4341 E Broadway Rd	Phoenix	85040
-250177	AZ	MARICOPA	Fort Mcdowell Indian Comm Rec Center	16402 N Fort McDowell Road	Fort McDowell	85264
-250178	AZ	MARICOPA	Gila Bend Town Hall	644 W Pima St	Gila Bend	85337
-250179	AZ	MARICOPA	Salvation Army Phoenix Citadel Corp	17225 N Citrus Rd	Surprise	85374
-250180	AZ	MARICOPA	Maryvale Church Of The Nazarene	40902 W Osborn Rd	Tonopah	85354
-250181	AZ	MARICOPA	Mt Zion Christian Assembly Church	1421 S. Palo Verde Rd	Buckeye	85326
-250182	AZ	MARICOPA	Church Of Jesus Christ Of Lds/San Tan Stake	4170 S Ranch House Pky	Gilbert	85297
-250183	AZ	MARICOPA	North Hills Church	1300 N College Ave	Tempe	85281
-250184	AZ	MARICOPA	Dist 6 Community Service Center	5230 W St Johns Rd	Laveen	85339
-250185	AZ	MARICOPA	Memorial Presbyterian Church	2150 E Orange St	Tempe	85281
-250186	AZ	MARICOPA	Queen Creek Library	15210 W Sweetwater Ave	Surprise	85379
-250187	AZ	MARICOPA	Emmanuel Presbyterian Church	21419 W Dove Valley Rd	Wittmann	85361
-250188	AZ	MARICOPA	Marley Park (Heritage Park Club)	21802 S Ellsworth Rd	Queen Creek	85142
-250189	AZ	MARICOPA	Tuscany Falls Clubhouse #3	16222 W Clubhouse Dr	Goodyear	85395
-250190	AZ	MARICOPA	North Valley Regional Library/Anthem	6240 N Cotton Ln	Waddell	85355
-250191	AZ	MOHAVE	Chloride Town Hall	4990 E Payroll Ave	Chloride	86431
-250192	AZ	MOHAVE	Desert Hills Fire Station	3983 London Bridge Rd	Lake Havasu City	86404
-250193	AZ	MOHAVE	Dolan Chamber Of Commerce	16154 Pierce Ferry Rd	Dolan Springs	86441
-250194	AZ	MOHAVE	Golden Valley Fire District Station #2	423 S Colorado	Golden Valley	86413
-250195	AZ	MOHAVE	Valle Vista Community Church	8620 Cortez Dr	Valle Vista	86401
-250196	AZ	MOHAVE	Littlefield Unified School District #9 Governing Board Building	3490 E. Rio Virgin Rd	Beaver Dam	86401
-250197	AZ	MOHAVE	Meadview Civic Center	247 E Meadview Blvd	Meadview	86444
-250198	AZ	MOHAVE	Colorado City Town Hall	25 S Central St	Colorado City	86021
-250199	AZ	MOHAVE	First Baptist Church	5360 S Calle?Valle vista	Ft. Mohave	86426
-250200	AZ	MOHAVE	Owens Elementary School	14109 E Chicken Springs Rd	Wikieup	85360
-250201	AZ	NAVAJO	Chilchenbeto Chapter House	Hwy 160 to IR 59	Chilchinbeto	86033
-250202	AZ	NAVAJO	Indian Wells Chapter House	1 Mile NW of N15 & N6	Indian Wells	86031
-250203	AZ	NAVAJO	LDS Church	205 W Lee St	Winslow	86047
-250204	AZ	NAVAJO	Little Singer School	5 Miles North on IR 71 from IR 2	(null)	\N
-250205	AZ	NAVAJO	Whitecone Chapter House	28 N Hwy 77	Indian Wells	86031
-250206	AZ	NAVAJO	Sipaulovi Youth & Elderly Bldg	2 Miles N from Second Mesa Day School	Second Mesa	86043
-250207	AZ	NAVAJO	Holbrook Fire Station	100 Airport Rd	Holbrook	86025
-250208	AZ	NAVAJO	Joseph City Elementary School	8176 N Westover Ave	Joseph City	86032
-250209	AZ	PIMA	Ajo Federated Church	101 W Lomita Avenue	Ajo	85321
-250210	AZ	PIMA	East Social Center	7 S Abrego Drive	Green Valley	85614
-250211	AZ	PIMA	Streams In The Desert Lutheran Church	5360 E Pima Street	Tucson	85712
-250212	AZ	PIMA	Tucson Estates	5900 W Western Way Circle	Tucson	85713
-250213	AZ	PIMA	Santa Cruz Lutheran Church	6809 S Cardinal Avenue	Tucson	85746
-250214	AZ	PIMA	Tucson Woman'S Club	6245 E Bellevue Street	Tucson	85712
-250215	AZ	PIMA	Redeemer Evangelical Lutheran Church & School	8845 N Silverbell Road	Tucson	85743
-250216	AZ	PIMA	Eastside Assembly Of God Church	1930 S Wilmot Road	Tucson	85711
-250217	AZ	PIMA	Ocotillo Ridge Elementary School	10170 S White Lightning Lane	Vail	85641
-250218	AZ	PIMA	American Legion Post 109	15921 S Houghton Road	Vail	85641
-250219	AZ	PIMA	Pascua Yaqui Tribe Council Chambers	7474 S Camino De Oeste	Tucson	85746
-250220	AZ	PIMA	St. Joseph'S Church	215 S Craycroft Road	Tucson	85711
-250221	AZ	PIMA	Esperero Canyon Middle School	5801 N Sabino Canyon Road	Tucson	85750
-250222	AZ	PIMA	Pima 114	NA	NA	\N
-250223	AZ	PIMA	Sunflower Village Center	9401 N Sunflower Park Drive	Tucson	85743
-250224	AZ	PIMA	St. Paul'S United Methodist Church	8051 E Broadway Boulevard	Tucson	85710
-250225	AZ	PIMA	Morris K Udall Recreation Center	7200 E Tanque Verde Road	Tucson	85715
-250226	AZ	PIMA	22nd Street Baptist Church	6620 E. 22Nd Street	Tucson	85710
-250227	AZ	PIMA	Oro Valley Church Of The Nazarene	500 W Calle Concordia	Oro Valley	85704
-250228	AZ	PIMA	El Camino Baptist Church	7777 E Speedway Boulevard	Tucson	85710
-250229	AZ	PIMA	D.A.V. Cactus Chapter #2	3455 S Wilmot Road	Tucson	85730
-250230	AZ	PIMA	Sabino Road Baptist Church	2710 N Sabino Canyon Road	Tucson	85715
-250231	AZ	PIMA	Kirk-Bear Canyon Library	8959 E Tanque Verde Road	Tucson	85749
-250232	AZ	PIMA	Heritage Highlands Country Club	4949 W Heritage Club Boulevard	Marana	85658
-250233	AZ	PIMA	East Tucson Baptist Church	9100 E Speedway Boulevard	Tucson	85710
-250234	AZ	PIMA	Pantano Baptist Church	225 S Pantano Road	Tucson	85710
-250235	AZ	PIMA	New Spirit Lutheran Church	8701 E Old Spanish Trail	Tucson	85710
-250236	AZ	PIMA	Mount Olive Lutheran Church	2005 S Houghton Road	Tucson	85748
-250237	AZ	PIMA	Immanuel Presbyterian Church	9252 E 22Nd Street	Tucson	85710
-250238	AZ	PIMA	Clements Regional Center	8155 E Poinciana Drive	Tucson	85730
-250239	AZ	PIMA	Beautiful Savior Lutheran Church	7570 N Thornydale Road	Tucson	85741
-250240	AZ	PIMA	Pisinemo District	West Highway 86	Route 21	\N
-250241	AZ	PIMA	Hickiwan District	Vaya Chin Village	Vaya Chin	85634
-250242	AZ	PIMA	Gu Vo District Office Compound	"Indian Route 1, Mile Post 19"	Ajo	85321
-250243	AZ	PIMA	Gu Achi District	Santa Rosa Community	Santa Rosa	85634
-250244	AZ	PIMA	Sopori Elementary School	5000 W Arivaca Road	Amado	\N
-250245	AZ	PIMA	Wheeler Taft Abbett	7800 N Schisler Drive	Tucson	85743
-250246	AZ	PIMA	Santa Cruz Valley United Methodist Church	70 E Sahuarita Road	Sahuarita	85629
-250247	AZ	PIMA	Casa Paloma I Recreation Center	400 N Circulo Del Paladin	Green Valley	85614
-250248	AZ	PIMA	Foothills Community Church	3301 W Overton Road	Tucson	85742
-250249	AZ	PIMA	First Christian Church	740 E Speedway Boulevard	Tucson	85719
-250250	AZ	PIMA	Fred Archer Neighborhood Center	1665 S La Cholla Boulevard	Tucson	85713
-250251	AZ	PIMA	Sun City Oro Valley -Catalina Vista	14055 N Del Webb Boulevard	Oro Valley	85755
-250252	AZ	PIMA	Cornerstone Baptist Church	18280 S La Canada Drive	Sahuarita	85629
-250253	AZ	PIMA	Christ The King Episcopal Church	2800 W Ina Road	Tucson	85741
-250254	AZ	PIMA	Fountains At La Cholla	2001 W Rudasill Road	Tucson	85704
-250255	AZ	PIMA	Cortaro Vista Community Church	8600 N Camino De Oeste	Tucson	85742
-250256	AZ	PIMA	Church Of The Painted Hills	3295 W Speedway Boulevard	Tucson	85745
-250257	AZ	PIMA	Southwest Community Center	5950 S Cardinal Avenue	Tucson	85746
-250258	AZ	PIMA	Faith Christian Fellowship Of Tucson	3141 W. Ironwood Hills Drive	Tucson	85745
-250259	AZ	PIMA	St. Demetrios Greek Orthodox Church	1145 E Fort Lowell Road	Tucson	85719
-250260	AZ	PIMA	San Xavier Moose Lodge	10600 S Nogales Highway	Tucson	85756
-250261	AZ	PIMA	Mountain Vista Mobile Home Community	4545 S Mission Road	Tucson	85746
-250262	AZ	PIMA	St. Thomas The Apostle Catholic Church	5150 N Valley View Road	Tucson	85718
-250263	AZ	PIMA	Clarion Hotel & Conference Center	4550 S Palo Verde Road	Tucson	85714
-250264	AZ	PIMA	El Pueblo Senior Center	101 W Irvington Road	Tucson	85714
-250265	AZ	PIMA	Accelerated Elementary & Secondary Schools	5245 N Camino De Oeste	Tucson	85745
-250266	AZ	PIMA	St. Odilia Catholic Church	7570 N Paseo Del Norte	Tucson	85704
-250267	AZ	PIMA	Monte Vista Christian Union Church	1140 E Roger Road	Tucson	85719
-250268	AZ	PIMA	Mountain Avenue Church Of Christ	2848 N Mountain Avenue	Tucson	85719
-250269	AZ	PIMA	St. Frances Cabrini Church	3201 E Presidio Road	Tucson	85716
-250270	AZ	PIMA	Rancho Resort	15900 S Rancho Resort Boulevard	Sahuarita	85629
-250271	AZ	PIMA	The Church Of Jesus Christ Of Latter Day Saints	55 W Arrowsmith Drive	Oro Valley	85755
-250272	AZ	PIMA	Most Holy Trinity Parish	1300 N. Greasewood Road	Tucson	85745
-250273	AZ	PIMA	Unity Of Tucson Church	3617 N Camino Blanco	Tucson	85718
-250274	AZ	PIMA	Oro Valley Public Library	1305 W Naranja Drive	Oro Valley	85737
-250275	AZ	PIMA	Desert Sky Middle School	9850 E Rankin Loop	Vail	85747
-250276	AZ	PIMA	Tanque Verde Baptist Church	2200 N Tanque Verde Loop Road	Tucson	85749
-250277	AZ	PIMA	St. Margaret Mary'S Church	801 N Grande Avenue	Tucson	85745
-250278	AZ	PIMA	The Church Of Jesus Christ Of Latter Day Saints	700 N Bonanza Avenue	Tucson	85748
-250279	AZ	PIMA	Saguaro Canyon Evangelical Free Church	10111 E Old Spanish Trail	Tucson	85748
-250280	AZ	PIMA	Canyon Del Oro Assembly Of God	2950 W Lambert Lane	Tucson	85742
-250281	AZ	PIMA	Shepherd Of The Hills Lutheran Church	8799 N Northern Avenue	Tucson	85704
-250282	AZ	PIMA	Vista De La Montana United Methodist Church	3001 E Miravista Lane	Tucson	85739
-250283	AZ	PIMA	Desert Dove Christian Church	6163 S Midvale Park Road	Tucson	85746
-250284	AZ	PIMA	Desert Hills Social Center	2980 S Camino Del Sol	Green Valley	85622
-250285	AZ	PIMA	The Academy Village	13701 E Langtry Lane	Tucson	85747
-250286	AZ	PIMA	Bethel Baptist Church	11040 E Escalante Road	Tucson	85730
-250287	AZ	PIMA	Tucson Mountain Baptist Church	5757 W Ajo Highway	Tucson	85735
-250288	AZ	PIMA	Sierrita Mining & Ranch CO	10094 W Mcgee Ranch Road	Sahuarita	85629
-250289	AZ	PIMA	Serenity Baptist Church	15501 W Ajo Way	Tucson	85735
-250290	AZ	PIMA	Orange Grove Middle School	1911 E Orange Grove Road	Tucson	85718
-250291	AZ	PIMA	Picture Rocks Community Center	5615 N Sanders Road	Tucson	85743
-250292	AZ	PIMA	Resurrection Lutheran Church	11575 N 1St Avenue	Oro Valley	85737
-250293	AZ	PIMA	Cottonwood Elementary School	9950 E Rees Loop	Vail	85747
-250294	AZ	PIMA	Empire High School	10701 E Mary Ann Cleveland Way	Vail	85747
-250295	AZ	PIMA	Real Life Christian Fellowship Church	3352 N Houghton Road	Tucson	85749
-250296	AZ	PIMA	Marana High School	12000 W Emigh Road	Marana	85743
-250297	AZ	PIMA	Orange Grove Mobile Estates	3635 W Mango Drive	Tucson	85741
-250298	AZ	PIMA	Sahuarita Town Hall	375 W Sahuarita Center Way	Sahuarita	85629
-250299	AZ	PIMA	Sycamore Elementary School	16701 S Houghton Road	Vail	85641
-250300	AZ	PIMA	Dove Of Peace Lutheran Church	665 W Roller Coaster Road	Tucson	85704
-250301	AZ	PIMA	Littletown Community Center	6465 S Craycroft Road	Tucson	85750
-250302	AZ	PIMA	Mt. Zion Lutheran Church	4520 W Ajo Way	Tucson	85746
-250303	AZ	PIMA	San Xavier District	2018 W San Xavier Road	Tucson	85746
-250304	AZ	PIMA	Lutheran Church Of The Foothills	5102 N Craycroft Road	Tucson	85718
-250305	AZ	PIMA	American Legion Sahuaro Post #68	4724 S 12Th Avenue	Tucson	85714
-250306	AZ	PIMA	Armory Park Center	220 S 5Th Avenue	Tucson	85701
-250307	AZ	PIMA	Valencia Branch Public Library	202 W Valencia Road	Tucson	85706
-250308	AZ	PIMA	New Life Church Of God	330 W Nebraska Street	Tucson	85706
-250309	AZ	PIMA	Schuk Toak District Office	"Highway 86, Mile Post 126.5"	Sells	85634
-250310	AZ	PIMA	Ellie Towne Flowing Wells Community Center	1660 W Ruthrauff Road	Tucson	85705
-250311	AZ	PIMA	Flowing Wells Assembly Of God Church	3198 N Flowing Wells Road	Tucson	85705
-250312	AZ	PIMA	Sells District Office	Arizona Highway 86 And Mile Post 112	Sells	85634
-250313	AZ	PIMA	Countryside Community Club	9151 N Bald Eagle Avenue	Tucson	85742
-250314	AZ	PIMA	Pascua Neighborhood Center	785 W Sahuaro Street	Tucson	85705
-250315	AZ	PIMA	John Valenzuela Youth Center	1550 S 6Th Avenue	South Tucson	85713
-250316	AZ	PIMA	Roadrunner Elementary School	16651 W Calle Carmela	Marana	85653
-250317	AZ	PIMA	Sunnyside School District Administration Office	2238 E Ginter Road	Tucson	85706
-250318	AZ	PIMA	Lakewood Townhomes	4200 E Benson Highway	Tucson	85706
-250319	AZ	PIMA	Town Of Marana Parks & Recreation Department	13251 N Lon Adams Road	Marana	85653
-250320	AZ	PIMA	Pima 062	NA	NA	\N
-250321	AZ	PIMA	Himmel Park Branch Library	1035 N Treat Avenue	Tucson	85716
-250322	AZ	PIMA	Gideon Missionary Baptist Church	3085 S Campbell Avenue	Tucson	85713
-250323	AZ	PIMA	Chukut Kuk District	"Federal Route 19, Topawa Road, Vamori Village"	Sells	85634
-250324	AZ	PIMA	Southern Az Association For The Visually Impaired	3767 E Grant Road	Tucson	85716
-250325	AZ	PIMA	Grace St. Paul'S Episcopal Church	2331 E Adams Street	Tucson	85719
-250326	AZ	PIMA	Baboquivari District Office	Federal Route 19 & Fresnal Canyon Road	Sells	85634
-250327	AZ	PIMA	Oro Valley Public Library	1305 W Naranja Drive	Oro Valley	85755
-250328	AZ	PIMA	Arivaca Old School Building	17180 W 4Th St (Corner Of 4Th St And 4Th Ave)	Arivaca	85601
-250329	AZ	PIMA	St. Mark'S Presbyterian Church	3809 E 3Rd Street	Tucson	85716
-250330	AZ	PIMA	Quail Creek Madera Clubhouse	2055 E Quail Crossing Boulevard	Green Valley	85614
-250331	AZ	PIMA	Passion Church	1212 S Palo Verde Avenue	Tucson	85713
-250332	AZ	PIMA	Lighthouse - City Ymca	2900 N Columbus Boulevard	Tucson	85712
-250333	AZ	PIMA	Living Faith Christian Center	4108 E North Street	Tucson	85712
-250334	AZ	PIMA	Central Church Of The Nazarene	404 S Columbus Boulevard	Tucson	85711
-250335	AZ	PIMA	Eckstrom-Columbus Library	4350 E 22Nd Street	Tucson	85711
-250336	AZ	PINAL	Central AZ College Superstition Mt Campus	805 S Idaho Rd (B126)	Apache Junction	85119
-250337	AZ	PINAL	Desert Vista Elementary School	3701 E Broadway Ave	Apache Junction	85119
-250338	AZ	PINAL	Apache Junction County Complex	575 N Idaho Rd Ste 800	Apache Junction	85119
-250339	AZ	PINAL	Four Peaks Elementary School	1785 N Idaho Rd	Apache Junction	85119
-250340	AZ	PINAL	ELKS LODGE #2349	2455 N HWY 88 & LOST DUTCHMAN RD	Apache Junction	85119
-250341	AZ	PINAL	Desert Chapel UMC Fellowship Hall	462 N Palo Verde Dr	Apache Junction	85120
-250342	AZ	PINAL	MOOSE LODGE #2039	350 W 16TH AVE	Apache Junction	85120
-250343	AZ	PINAL	SAGUARO CANYON VILLAGE	3355 S CORTEZ RD	Apache Junction	85119
-250344	AZ	PINAL	Cactus Canyon Jr High School	801 W Southern Ave	Apache Junction	85120
-250345	AZ	PINAL	Superstition Mountain Elementary School	550 S Ironwood Rd	Apache Junction	85120
-250346	AZ	PINAL	HAPPY DAYS RV PARK	451 N MERIDIAN DR	Apache Junction	85120
-250347	AZ	PINAL	Central Lutheran Church	12921 S Sunland Gin Rd	Az City	85123
-250348	AZ	PINAL	Blackwater District #1 Service Center	1060 W Blackwater School Rd	Coolidge	85128
-250349	AZ	PINAL	First Assembly Of God Church - Florence	95 W Hwy. 287	Florence	85132
-250350	AZ	PINAL	District #5 Veterans Memorial Building	3500 W Casa Blanca Rd	Sacaton	85147
-250351	AZ	PINAL	Fiesta Grande Rv Resort	1511 E Florence Blvd	Casa Grande	85122
-250352	AZ	PINAL	United Methodist Church Of Casa Grande	1515 N Trekell Rd	Casa Grande	85122
-250353	AZ	PINAL	Villas By Mary T. Inc.	1576 E Cottonwood Ln	Casa Grande	85122
-250354	AZ	PINAL	Fairways Adult Community	2054 N Thornton Rd	Casa Grande	85122
-250355	AZ	PINAL	Villago Middle School	574 E Lakeside Pkwy	Casa Grande	85122
-250356	AZ	PINAL	Trinity Southern Baptist Church	1100 E Trinity Pl	Casa Grande	85122
-250357	AZ	PINAL	Calvary Chapel	962 W Gila Bend Hwy	Casa Grande	85122
-250358	AZ	PINAL	Indian Hills Community Church	20110 W Hopi Dr	Casa Grande	85122
-250359	AZ	PINAL	CAC Resident Tower	8470 N Overfield Rd (A2112AB)	Coolidge	85128
-250360	AZ	PINAL	Chui Chu Senior Center	Federal Route 15 & St Augustine St	Chui Chu	85122
-250361	AZ	PINAL	Coolidge Women'S Club	240 W Pinkley Ave	Coolidge	85128
-250362	AZ	PINAL	Coolidge L.D.S. Meetinghouse	580 N 9Th Street	Coolidge	85128
-250363	AZ	PINAL	City Of Coolidge Council Chambers	911 S Arizona Blvd	Coolidge	85128
-250364	AZ	PINAL	DUDLEYVILLE MULTI-GENERATIONAL CENTER	4004 N DUDLEYVILLE RD	Dudleyville	85192
-250365	AZ	PINAL	Pinal County Fairgrounds	512 S 11 Mile Corner Rd	Casa Grande	85194
-250366	AZ	PINAL	Eloy City Council/Court Chambers	628 N Main St	Eloy	85131
-250367	AZ	PINAL	Florence Town Hall Council Chambers	775 N Main St	Florence	85132
-250368	AZ	PINAL	Gold Canyon United Methodist Church	6640 S Kings Ranch Rd	Gold Canyon	85118
-250369	AZ	PINAL	Pinal County Public Works	43910 W Meadowview Rd	Maricopa	85138
-250370	AZ	PINAL	Walker Butte Elementary School	29697 N Desert Willow Blvd	Queen Creek	85143
-250371	AZ	PINAL	Town Of Kearny Constitution Hall	912 E Tilbury Dr	Kearny	85137
-250372	AZ	PINAL	Charles F. Clark Community Center	101 W. 5th St	Mammoth	85618
-250373	AZ	PINAL	Desert Wind Middle School	35565 W Honeycutt Rd	Maricopa	85138
-250374	AZ	PINAL	MOUNTAINBROOK VILLAGE	5782 S MOUNTAIN BROOK DR	Gold Canyon	85118
-250375	AZ	PINAL	Oracle Community Center	685 E American Ave	Oracle	85623
-250376	AZ	PINAL	Anthem Parkside Community Center	3200 N Anthem Way	Florence	85132
-250377	AZ	PINAL	J.O. Combs Middle School	37611 N Pecan Creek Dr	San Tan Valley	85140
-250378	AZ	PINAL	Queen Valley Hoa Recreation Hall	1478 Queen Valley Dr	Queen Valley	85118
-250379	AZ	PINAL	Red Rock Elementary School	20854 E Homestead Dr	Red Rock	85145
-250380	AZ	PINAL	Sacaton District 3 Service Center	Church And Canal St	Sacaton	85147
-250381	AZ	PINAL	Saddlebrooke Country Club Hoa #1	64500 E Saddlebrooke Blvd	Tucson	85739
-250382	AZ	PINAL	County Administration Building	28380 S Veteran'S Memorial Hwy	San Manuel	85631
-250383	AZ	PINAL	San Tan District #4 Service Center	1510 W Sesame Rd (San Tan Rd)	Sacaton	85147
-250384	AZ	PINAL	First Baptist Church	615 S Stanfield Rd	Stanfield	85172
-250385	AZ	PINAL	St Mary's Center	100 Sunset Drive	Superior	85173
-250386	AZ	PINAL	MONTESA HALL	7373 E US HWY 60	Gold Canyon	85118
-250387	AZ	PINAL	Thunderbird Farms Volunteer Fire District	12656 N RALSTON RD	Maricopa	85139
-250388	AZ	PINAL	Toltec Community Center	3650 W. Shedd Rd.	Eloy	85131
-250389	AZ	PINAL	Freedom Assembly Church	13325 S Tacna Rd	Arizona City	85123
-250390	AZ	SANTA CRUZ	Coatimundi Middle School	490 Avenida Coatimundi	Rio Rico	85648
-250391	AZ	SANTA CRUZ	Rio Rico Fire Station	957 Calle Calabasas	Rio Rico	85648
-250392	AZ	SANTA CRUZ	Callenger School	901 E Calle Mayer	Nogales	85621
-250393	AZ	SANTA CRUZ	Sonoita Firehouse	Highway 82 And Highway 83	Sonoita	85637
-250394	AZ	SANTA CRUZ	Cady Hall	346 Duquesne Ave	Patagonia	85624
-250395	AZ	SANTA CRUZ	Wade Carpenter School	595 W Kino Street	Nogales	85621
-250396	AZ	SANTA CRUZ	VFW Hall	653 Grand Avenue	Nogales	85621
-250397	AZ	SANTA CRUZ	Abundant Life - Assembly Of God Church	1380 E Patagonia Highway	Nogales	85621
-250398	AZ	SANTA CRUZ	Tubac-Peck Canyon Fire Station	1360 W Frontage Rd	Rio Rico	85648
-250399	AZ	SANTA CRUZ	Gabilondo-Zehentner Centennial County Service Center	275 Rio Rico Drive	Rio Rico	85648
-250400	AZ	SANTA CRUZ	Santa Cruz County North Facility	50 Bridge Road	Tubac	85646
-250401	AZ	YUMA	Dr Martin Luther King Jr Neighborhood Center	300 S 13th Ave	Yuma	85364
-250402	AZ	YUMA	Somerton Library	240 W Canal St	Somerton	85350
-250403	AZ	YUMA	Yuma Civic Center	1440 W Desert Hills Dr	Yuma	85365
-250404	AZ	YUMA	Community Christian Church	6480 E Highway 95	Yuma	85365
-250405	AZ	YUMA	St John Neumann Catholic Church	11545 E 40th St	Yuma	85367
-250406	AZ	YUMA	First Southern Baptist Church of Wellton	11711 S William St	Wellton	85356
-250407	AZ	YUMA	San Luis City Hall - Multi-Use Room	1090 E Union St	San Luis	85349
-250408	AZ	PINAL	Mountain Vista Middle School	33622 N Mountain Vista Blvd	San Tan Valley	85142
-250409	AZ	PINAL	Poston Butte High School	32375 N Gantzel Rd	San Tan Valley	85143
-250410	AZ	PINAL	Lifepoint Church	28479 N. Main Street	San Tan Valley	85143
-250411	AZ	PINAL	Kathryn Sue Simonton Elementary School	40300 N Simonton Blvd	San Tan Valley	85140
-250412	AZ	PINAL	PERALTA TRAIL ELEMENTARY SCHOOL	10965 E PERALTA RD	Gold Canyon	85118
-250413	AZ	PINAL	Santa Rosa Elementary School	21400 N Santa Rosa Dr	Maricopa	85138
-250414	AZ	PINAL	Pima Butte Elementary School	42202 W Rancho El Dorado Pkwy	Maricopa	85138
-250415	AZ	PINAL	Church Of Jesus Christ Of Latter Day Saints	29419 S Desert Willow Blvd	San Tan Valley	85142
-250416	AZ	PINAL	Jack Harmon Elementary School	39315 N Cortona Dr	San Tan Valley	85140
-250417	AZ	PINAL	Mission Heights Preparatory High School	1376 E Cottonwood Ln	Casa Grande	85122
-250418	AZ	PINAL	North Trekell Southern Baptist Church	2492 North Trekell Road	Casa Grande	85122
-250419	AZ	PINAL	San Tan Heights Elementary School	2500 W San Tan Heights Blvd	San Tan Valley	85142
-250420	AZ	PINAL	CIRCLE CROSS K-8 SCHOOL	35900 N CHARBRAY DR	QUEEN CREEK	85143
-250421	AZ	PINAL	Church Of Jesus Christ Of Latter Day Saints	1521 E Bella Vista Rd	Queen Creek	85143
-250422	AZ	PINAL	Ranch Elementary School	43521 N Kenworthy Rd	San Tan Valley	85140
-250423	AZ	PINAL	Ak Chin Service Center	48227 W Farrell Rd	Maricopa	85139
-250424	AZ	PINAL	Maricopa Community Church	44977 W Hathaway Ave	Maricopa	85139
-250425	AZ	PINAL	Villages At Rancho El Dorado	20991 N Butterfield Pkwy	Maricopa	85138
-250426	AZ	PINAL	Global Water Center	22590 N Powers Pkwy	Maricopa	85138
-250427	AZ	MARICOPA	Church Of The Beatitudes	655 E Southern Ave	Tempe	85282
-250428	AZ	MARICOPA	Fountain Hills Community Center	13001 N La Montana Dr	Fountain Hills	85268
-250429	AZ	GILA	Globe-Miami Chamber of Commerce	1366 N. Broad St.	Globe	\N
-250430	AZ	GILA	Miami High School	4641 E. Ragus Rd	NA	\N
-250431	AZ	GILA	Hayden Winkelman School District Auditorium	825 Thorn Ave	Winkelman	\N
-250432	AZ	GILA	First Baptist Church of Pine	4040 N. Highway 87	Pine	\N
-250433	AZ	GILA	First Baptist Church of Pine	4041 N. Highway 87	Pine	\N
-250434	AZ	PINAL	CHURCH OF JESUS CHRIST OF LATTER DAY SAINTS	2559 E COMBS RD	QUEEN CREEK	85142
-250435	AZ	PINAL	Maricopa Unified School District Office	44150 W Maricopa/Casa Grande Hwy	Maricopa	85138
-250436	AZ	PINAL	Skyline Ranch Elementary School	1084 W San Tan Hills Dr	San Tan Valley	85143
-250437	AZ	PINAL	Edu Prize School	4567 W Roberts Rd	San Tan Valley	85142
-250438	AZ	PINAL	CHURCH OF JESUS CHRIST OF LATTER DAY SAINTS	2715 E OCOTILLO RD	QUEEN CREEK	85142
-250439	AZ	PINAL	First Assembly Of God Church	501 E Kortson Rd	Casa Grande	85122
-250440	AZ	PINAL	First Baptist Church Of Maricopa	18705 N John Wayne Pkwy	Maricopa	85139
-250441	AZ	PINAL	Maricopa Wells Middle School	45725 W Honeycutt Ave	Maricopa	85139
-250442	AZ	PINAL	Legacy Traditional School	17760 N Regent Dr	Maricopa	85138
-250443	AZ	YAVAPAI	Prescott Community Center	1280 E. Rosser Street	 Prescott	86301
-250444	AZ	YAVAPAI	Yavapai College	 Community Room	1100 E. Sheldon Street Bldg 19	\N
-250445	AZ	YAVAPAI	Yavapai County Administration Building	1015 Fair Street	 Prescott	86305
-250446	AZ	YAVAPAI	Trinity Presbyterian Church	630 Park Avenue	 Prescott	86303
-250447	AZ	YAVAPAI	Bagdad American Legion Post #104	121 Main Street	 Bagdad	86321
-250448	AZ	YAVAPAI	Grace Bible Church	25605 Ghost Town Road	 Congress	85332
-250449	AZ	YAVAPAI	Skull Valley Community Hall	110 S. Old Skull Valley Road	 Skull Valley	86338
-250450	AZ	YAVAPAI	Yarnell Presbyterian Church	16455 Table Top Way	 Yarnell	85332
-250451	AZ	YAVAPAI	Central Yavapai Regional Training Center	9601 E. Valley Road	 Prescott Valley	86314
-250452	AZ	YAVAPAI	Immaculate Conception Catholic Church	700 N. Bill Gray Road	 Cottonwood	86326
-250453	AZ	YAVAPAI	Beaver Creek Adult Center	4250 E. Zuni Way	 Lake Montezuma	86335
-250454	AZ	YAVAPAI	Camp Verde United Methodist Church	480 S. 1st Street	 Camp Verde	86322
-250455	AZ	YAVAPAI	Cordes Lakes Community Center	16357 S. Cordes Lakes Drive	 Cordes Lakes	86333
-250456	AZ	YAVAPAI	Albins Civic Center	19055 E. K?Mine Road	 Black Canyon City	85324
-250457	AZ	YAVAPAI	Gateway Baptist Church	12900 Prescott Dells Ranch Road	 Dewey?Humboldt	86314
-250458	AZ	YAVAPAI	Clark Memorial Clubhouse	19 N. Ninth Street	 Clarkdale	86324
-250459	AZ	YAVAPAI	Sedona Elks Lodge #2291	110 Airport Road	 Sedona	86336
-250460	AZ	YAVAPAI	VOCA Community Center	690 Bell Rock Boulevard	 Sedona	86351
-250461	AZ	YAVAPAI	Yavapai County Cottonwood Annex	10 S. 6th Street	 Cottonwood	86326
-250462	AZ	YAVAPAI	Cottonwood Bible Church	1020 S. Camino Real	 Cottonwood	86326
-250463	AZ	YAVAPAI	Central Yavapai Fire Station #57	4125 Outer Loop Road	 Prescott	86305
-250464	AZ	YAVAPAI	Chino Valley First Southern Baptist Church	1524 N. Hwy 89	 Chino Valley	86323
-250465	AZ	YAVAPAI	Chino Valley United Methodist Church	735 E. Road 1 South	 Chino Valley	86323
-250466	AZ	YAVAPAI	Robert Road Baptist Church	5100 N. Robert Road	 Prescott Valley	86314
-250467	AZ	YAVAPAI	Seligman Library	54170 N. Floyd Street	 Seligman	86337
-250468	AZ	YAVAPAI	Ash Fork Public Library	450 W. Lewis Avenue	 Ash Fork	86320
-250469	AZ	YAVAPAI	Prescott Gateway Mall	 Community Center Room	3250 Gateway Boulevard	\N
-250470	AZ	YAVAPAI	Presco? Valley Event Center	3201 N. Main Street	 Prescott Valley	86314
-250471	AZ	MOHAVE	White Hills Community Center	8541 W. White Hills Blvd	White Hills	86445
-250472	AZ	MOHAVE	Yucca Fire District Station	12439 S. Frontage Rd	Yucca	86438
-250473	AZ	MOHAVE	Voting Center	NA	NA	\N
-250474	AZ	MOHAVE	Oatman Church	Rockhound Hill Rd	Oatman	86433
-250475	AZ	MOHAVE	BHC Seventh Day Adventist	1752?Arriba?Dr	Bullhead City	86442
-250476	AZ	MOHAVE	 Music Mountain High School	 16500 E. Hwy 66	Peach Springs 	86434
-250477	AZ	MOHAVE	Grace Lutheran Church (Fellowship Hall)	 2101 Harrison St	Kingman	86401
-250478	AZ	MOHAVE	College Park Baptist Church	1990 E. Jagerson Ave	Kingman	86409
-250479	AZ	MOHAVE	Praise Chapel	419 Harrison St	Kingman	86401
-250480	AZ	MOHAVE	Calvary Baptist Church	3575 Schaeffer Ave	Kingman	86409
-250481	AZ	MOHAVE	Mountain View Property Owners Association	2635 Anita Ave	Lake Havasu City	86404
-250482	AZ	MOHAVE	St. Michael's United Methodist Church	2895 Jamaica Blvd S	Lake Havasu City	86406
-250483	AZ	MOHAVE	Golden Shores Fire Dept.	12950 Oatman Hwy	Topock	86436
+350000	WI	DANE	HERITAGE CONGREGATIONAL CHURCH	3102 PRAIRIE RD	 MADISON	53719
+350001	WI	DANE	TENNEY PARK PAVILION	402 N THORNTON AVE	 MADISON	\N
+350002	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 020	NA	NA	\N
+350003	WI	DANE	Dane - City Of Madison - Dane County - Ward 045	NA	NA	\N
+350004	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 005	NA	NA	\N
+350005	WI	DANE	WARNER PARK COMMUNITY RECREATION CENTER	1625 NORTHPORT DR	 MADISON	53704
+350006	WI	DANE	EASTSIDE EVANGELICAL LUTHERAN CHURCH	2310 INDEPENDENCE LN	 MADISON	53704
+350007	WI	DANE	WIL-MAR NEIGHBORHOOD CENTER	953 JENIFER ST	 MADISON	53703
+350008	WI	ROCK	FRANKLIN SCHOOL	450 N CROSBY AVE	 JANESVILLE	53548
+350009	WI	MILWAUKEE	VILLARD SQUARE BRANCH LIBRARY	5190 N 35TH ST	 MILWAUKEE	53209
+350010	WI	DANE	COVENANT PRESBYTERIAN CHURCH	326 S SEGOE RD	 MADISON	53705
+350011	WI	DANE	Dane - City Of Madison - Dane County - Ward 061	NA	NA	\N
+350012	WI	MILWAUKEE	RUFUS KING HIGH SCHOOL	1801 W OLIVE ST	 MILWAUKEE	53209
+350013	WI	MILWAUKEE	GRANTOSA DRIVE SCHOOL	4850 N 82ND ST	 MILWAUKEE	53218
+350014	WI	DANE	Dane - City Of Madison - Dane County - Ward 046	NA	NA	\N
+350015	WI	DANE	Dane - City Of Madison - Dane County - Ward 050	NA	NA	\N
+350016	WI	DANE	HAWTHORNE LIBRARY	2707 E WASHINGTON AVE	 MADISON	53704
+350017	WI	WAUKESHA	WAUKESHA FIRE STATION NO. 5	3051 SUMMIT AVE	 WAUKESHA	53188
+350018	WI	DANE	LEOPOLD ELEMENTARY	2602 POST RD	 MADISON	53713
+350019	WI	DANE	GLENDALE ELEMENTARY SCHOOL	1201 TOMPKINS DR	 MADISON	53716
+350020	WI	DANE	Dane - City Of Madison - Dane County - Ward 067	NA	NA	\N
+350021	WI	DANE	AMERICAN FAMILY INSURANCE	302 N WALBRIDGE AVE	 MADISON	53714
+350022	WI	DANE	OLBRICH GARDENS	3330 ATWOOD AVE	 MADISON	53704
+350023	WI	DANE	Dane - City Of Madison - Dane County - Ward 093	NA	NA	\N
+350024	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 006	NA	NA	\N
+350025	WI	SHEBOYGAN	MEAD PUBLIC LIBRARY	710 N 8TH ST	 SHEBOYGAN	53081
+350026	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 008	NA	NA	\N
+350027	WI	KENOSHA	SOUTHWEST LIBRARY	7979 38TH AVE	 KENOSHA	53142
+350028	WI	DANE	MEADOWRIDGE LIBRARY	5726 RAYMOND RD	 MADISON	53711
+350029	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 017	NA	NA	\N
+350030	WI	DANE	Dane - City Of Madison - Dane County - Ward 048	NA	NA	\N
+350031	WI	DANE	CHAVEZ ELEMENTARY	3502 MAPLE GROVE DR	 MADISON	53719
+350032	WI	DANE	Dane - City Of Madison - Dane County - Ward 047	NA	NA	\N
+350033	WI	DANE	ELVEHJEM ELEMENTARY	5106 ACADEMY DR	 MADISON	53716
+350034	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 009	NA	NA	\N
+350035	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 231	NA	NA	\N
+350036	WI	EAU CLAIRE	CONCORDIA EVANGELICAL LUTHERAN CHURCH	3715 LONDON RD	 EAU CLAIRE	54701
+350037	WI	DANE	HERITAGE SENIOR LIVING	6206 MAYWOOD AVE	 MIDDLETON	53562
+350038	WI	SHEBOYGAN	EVANGELICAL FREE CHURCH	1710 N 15TH ST	 SHEBOYGAN	53081
+350039	WI	KENOSHA	BRASS COMMUNITY SCHOOL	6400 15TH AVE	 KENOSHA	53143
+350040	WI	MILWAUKEE	WAUWATOSA CITY HALL	7701 W NORTH AVE	 WAUWATOSA	53213
+350041	WI	DANE	SPRING HARBOR MIDDLE SCHOOL	1110 SPRING HARBOR DR	 MADISON	53705
+350042	WI	DANE	Dane - City Of Madison - Dane County - Ward 043	NA	NA	\N
+350043	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 014	NA	NA	\N
+350044	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 037	NA	NA	\N
+350045	WI	DANE	EAST MADISON COMMUNITY CENTER	8 STRAUBEL CT	 MADISON	53704
+350046	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 264	NA	NA	\N
+350047	WI	WINNEBAGO	MUNICIPAL COMPLEX	2000 MUNICIPAL DR	 NEENAH	54956
+350048	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 273	NA	NA	\N
+350049	WI	MILWAUKEE	LANCASTER SCHOOL	4931 N 68TH ST	 MILWAUKEE	53218
+350050	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 200	NA	NA	\N
+350051	WI	FOND DU LAC	FOND DU LAC SENIOR CENTER	151 E 1ST ST	 FOND DU LAC	54935
+350052	WI	DANE	HOYT SCHOOL	3802 REGENT ST	 MADISON	53705
+350053	WI	DANE	PACKERS AVENUE TOWNHOMES	1927 NORTHPORT DR	 MADISON	53704
+350054	WI	EAU CLAIRE	PLYMOUTH UNITED CHURCH OF CHRIST	2010 MOHOLT DR	 EAU CLAIRE	54703
+350055	WI	DANE	Dane - City Of Madison - Dane County - Ward 074	NA	NA	\N
+350056	WI	FOND DU LAC	FOND DU LAC POLICE DEPARTMENT	126 N MAIN ST	 FOND DU LAC	54935
+350057	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 010	NA	NA	\N
+350058	WI	RACINE	LUTHERAN CHURCH OF THE RESURRECTION	322 OHIO ST	 RACINE	53405
+350059	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 012	NA	NA	\N
+350060	WI	FOND DU LAC	FOND DU LAC AQUATIC CENTER	100 W 9TH ST	 FOND DU LAC	54935
+350061	WI	DANE	MENDOTA ELEMENTARY	4002 SCHOOL RD	 MADISON	53704
+350062	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 007	NA	NA	\N
+350063	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 016	NA	NA	\N
+350064	WI	KENOSHA	EDWARD BAIN SCHOOL OF LANGUAGE AND ART	2600 50TH ST	 KENOSHA	53140
+350065	WI	SHEBOYGAN	QUARRYVIEW CENTER	3401 CALUMET DRIVE	 SHEBOYGAN	53083
+350066	WI	SHEBOYGAN	FIRST CONGREGATIONAL CHURCH	310 BLUFF AVE	 SHEBOYGAN	53081
+350067	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 031	NA	NA	\N
+350068	WI	DANE	WESTSIDE COMMUNITY SERVICE BUILDING	2598 W MAIN ST	 SUN PRAIRIE	53590
+350069	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 001	NA	NA	\N
+350070	WI	DANE	Dane - City Of Madison - Dane County - Ward 073	NA	NA	\N
+350071	WI	RACINE	MOUNT PLEASANT VILLAGE HALL	8811 CAMPUS DR	 MT PLEASANT	53406
+350072	WI	DANE	CITY CHURCH	4909 E BUCKEYE RD	 MADISON	53716
+350073	WI	DANE	MIDVALE ELEMENTARY	502 CAROMAR DR	 MADISON	53711
+350074	WI	DANE	BRIDGE LAKE POINT WAUNONA NEIGHBORHOOD CENTER	1917 LAKE POINT DR	 MADISON	53713
+350075	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 051	NA	NA	\N
+350076	WI	RACINE	MITCHELL SCHOOL	2701 DREXEL AVE	 RACINE	53403
+350077	WI	MILWAUKEE	WAUWATOSA PUBLIC WORKS BUILDING	11100 W WALNUT RD	 WAUWATOSA	53226
+350078	WI	WINNEBAGO	BETHANY UNITED CHURCH OF CHRIST	145 W 24TH AVE	 OSHKOSH	54902
+350079	WI	ROCK	EDISON MIDDLE SCHOOL	1649 S CHATHAM ST	 JANESVILLE	53546
+350080	WI	MILWAUKEE	GREATER HOLY TEMPLE CHRISTIAN ACADEMY	5575 N 76TH ST	 MILWAUKEE	53218
+350081	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 015	NA	NA	\N
+350082	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 003	NA	NA	\N
+350083	WI	RACINE	Racine - City Of Racine - Racine County - Ward 018	NA	NA	\N
+350084	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 152	NA	NA	\N
+350085	WI	DANE	MADISON MUNICIPAL BUILDING	215 MARTIN LUTHER KING JR BLVD	 MADISON	53703
+350086	WI	OUTAGAMIE	MOUNT OLIVE EVANGELICAL LUTHERAN CHURCH	930 E FLORIDA AVE	 APPLETON	54911
+350087	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 311	NA	NA	\N
+350088	WI	BROWN	Brown - City Of De Pere - Brown County - Ward 011	NA	NA	\N
+350089	WI	KENOSHA	KENOSHA PUBLIC MUSEUM	5500 1ST AVE	 KENOSHA	53140
+350090	WI	OUTAGAMIE	EMMANUEL UNITED METHODIST	740 E COLLEGE AVE	 APPLETON	54911
+350091	WI	MILWAUKEE	THOREAU SCHOOL	7878 N 60TH ST	 MILWAUKEE	53223
+350092	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 172	NA	NA	\N
+350093	WI	RACINE	JERSTAD-AGERHOLM SCHOOL	3601 LA SALLE ST	 RACINE	53403
+350094	WI	DANE	FALK ELEMENTARY	6323 WOODINGTON WAY	 MADISON	53711
+350095	WI	MILWAUKEE	SILVER SPRING SCHOOL	5131 N GREEN BAY AVE	 MILWAUKEE	53209
+350096	WI	DANE	CRESTWOOD ELEMENTARY	5930 OLD SAUK RD	 MADISON	53705
+350097	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 011	NA	NA	\N
+350098	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 192	NA	NA	\N
+350099	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 110	NA	NA	\N
+350100	WI	MILWAUKEE	GENERAL MITCHELL SCHOOL	5950 S ILLINOIS AVE	 CUDAHY	53110
+350101	WI	BROWN	ATONEMENT LUTHERAN CHURCH	2132 DECKNER AVE	 GREEN BAY	54302
+350102	WI	MILWAUKEE	REDEEMER EVANGELICAL FREE CHURCH	7735 W HOWARD AVE	 MILWAUKEE	53220
+350103	WI	RACINE	HUMBLE PARK COMMUNITY CENTER	2200 BLAINE AVE	 RACINE	53405
+350104	WI	SHEBOYGAN	SENIOR ACTIVITY CENTER-HOSPITALITY RM	428 WISCONSIN AVE	 SHEBOYGAN	53081
+350105	WI	DANE	DOOR CREEK CHURCH	6602 DOMINION DR	 MADISON	53718
+350106	WI	DANE	Dane - City Of Madison - Dane County - Ward 066	NA	NA	\N
+350107	WI	MILWAUKEE	WEBSTER MIDDLE SCHOOL	6850 N 53RD ST	 MILWAUKEE	53223
+350108	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 002	NA	NA	\N
+350109	WI	KENOSHA	KUSD OFFICE BUILDING	3600 52ND ST	 KENOSHA	53144
+350110	WI	RACINE	GILMORE MIDDLE SCHOOL	2330 NORTHWESTERN AVE	 RACINE	53404
+350111	WI	DANE	FITCHBURG FIRE STATION NO. 2	5415 KING JAMES WAY	 FITCHBURG	53719
+350112	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 196	NA	NA	\N
+350113	WI	MILWAUKEE	MOUNT OLIVE BAPTIST	5277 N 36TH ST	 MILWAUKEE	53209
+350114	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 002	NA	NA	\N
+350115	WI	DANE	LINDBERGH ELEMENTARY SCHOOL	4500 KENNEDY RD	 MADISON	53704
+350116	WI	DANE	O'KEEFFE MIDDLE SCHOOL	510 S THORNTON AVE	 MADISON	53703
+350117	WI	DUNN	Dunn - City Of Menomonie - Dunn County - Ward 007	NA	NA	\N
+350118	WI	WINNEBAGO	ALBERTA KIMBALL AUDITORIUM	435 N EAGLE ST	 OSHKOSH	54902
+350119	WI	MILWAUKEE	HART PARK RECREATION BUILDING	7300 CHESTNUT ST	 WAUWATOSA	53213
+350120	WI	ROCK	BLAIN'S SUPPLY TRAINING CENTER	3507 E RACINE ST	 JANESVILLE	53546
+350121	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 149	NA	NA	\N
+350122	WI	EAU CLAIRE	BETHESDA LUTHERAN BRETHREN CHURCH	123 W HAMILTON AVE	 EAU CLAIRE	54701
+350123	WI	RACINE	Racine - City Of Racine - Racine County - Ward 025	NA	NA	\N
+350124	WI	DANE	GLENWOOD MORAVIAN COMMUNITY CHURCH	725 GILMORE ST	 MADISON	53711
+350125	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 261	NA	NA	\N
+350126	WI	MILWAUKEE	MCKINLEY SCHOOL	2435 N 89TH ST	 WAUWATOSA	53226
+350127	WI	EAU CLAIRE	SALEM BAPTIST CHURCH	1210 E CLAIREMONT AVE	 EAU CLAIRE	54701
+350128	WI	WINNEBAGO	FRANKLIN ELEMENTARY SCHOOL	1401 W 5TH AVE	 OSHKOSH	54902
+350129	WI	MILWAUKEE	WHITMAN MIDDLE SCHOOL	11100 WEST CENTER STREET	 WAUWATOSA	53226
+350130	WI	KENOSHA	HOLY NATIVITY EVANGELICAL LUTHERAN CHURCH	2313 17TH AVE	 KENOSHA	53140
+350131	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 013	NA	NA	\N
+350132	WI	ROCK	HEDBERG PUBLIC LIBRARY	316 S MAIN ST	 JANESVILLE	53545
+350133	WI	DANE	MADISON AREA TECHNICAL COLLEGE COMMERCIAL AVENUE EDUCATION CENTER	2125 COMMERCIAL AVE	 MADISON	53704
+350134	WI	BROWN	BELLEVUE PUBLIC SAFETY BUILDING/VILLAGE HALL	3100 EATON RD	 GREEN BAY	54311
+350135	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 269	NA	NA	\N
+350136	WI	OUTAGAMIE	ST. MATTHEW EVANGELICAL LUTHERAN CHURCH	129 S MASON ST	 APPLETON	54914
+350137	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 092	NA	NA	\N
+350138	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 271	NA	NA	\N
+350139	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 004	NA	NA	\N
+350140	WI	DANE	KENNEDY ELEMENTARY SCHOOL	221 MEADOWLARK DR	 MADISON	53714
+350141	WI	RACINE	SAINT EDWARD PARISH/OUR LADY OF GRACE	1435 GROVE AVE	 RACINE	53405
+350142	WI	BROWN	GREEN BAY AREA PUBLIC SCHOOL EARLY LEARNING CENTER	3542 FINGER RD	 GREEN BAY	54311
+350143	WI	ROCK	WASHINGTON ELEMENTARY SCHOOL	1600 LINDEN AVE	 JANESVILLE	53548
+350144	WI	KENOSHA	MOOSE LODGE	3003 30TH AVE	 KENOSHA	53144
+350145	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 012	NA	NA	\N
+350146	WI	KENOSHA	KENOSHA SENIOR CITIZEN CENTER	2717 67TH ST	 KENOSHA	53143
+350147	WI	KENOSHA	MESSIAH LUTHERAN CHURCH	2026 22ND AVE	 KENOSHA	53140
+350148	WI	MILWAUKEE	BOYS AND GIRLS CLUB MILWAUKEE	3000 N SHERMAN BLVD	 MILWAUKEE	53210
+350149	WI	RACINE	Racine - City Of Racine - Racine County - Ward 031	NA	NA	\N
+350150	WI	OUTAGAMIE	MCKINLEY ELEMENTARY SCHOOL	1125 E TAFT AVE	 APPLETON	54915
+350151	WI	DANE	COLONIAL CLUB	301 BLANKENHEIM LN	 SUN PRAIRIE	53590
+350152	WI	MILWAUKEE	ATKINSON LIBRARY	1960 W ATKINSON AVE	 MILWAUKEE	53209
+350153	WI	WAUKESHA	E AND R UCC CHURCH	413 WISCONSIN AVE	 WAUKESHA	53186
+350154	WI	WAUKESHA	BROOKFIELD PUBLIC SAFETY BUILDING	2100 N CALHOUN RD	 BROOKFIELD	53005
+350155	WI	DANE	Dane - City Of Madison - Dane County - Ward 072	NA	NA	\N
+350156	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 232	NA	NA	\N
+350157	WI	WAUKESHA	HOOVER ELEMENTARY SCHOOL	12705 W EUCLID AVE	 NEW BERLIN	53151
+350158	WI	MILWAUKEE	UNDERWOOD SCHOOL	11132 W POTTER RD	 WAUWATOSA	53226
+350159	WI	MILWAUKEE	MADISON SCHOOL	9925 W GLENDALE AVE	 WAUWATOSA	53225
+350160	WI	ROCK	NEW LIFE ASSEMBLY OF GOD	2416 N WRIGHT RD	 JANESVILLE	53546
+350161	WI	BROWN	FIRST UNITED PRESBYTERIAN CHURCH	605 N WEBSTER AVE	 DE PERE	54115
+350162	WI	WINNEBAGO	OUR SAVIOR'S LUTHERAN CHURCH	1860 WISCONSIN ST	 OSHKOSH	54901
+350163	WI	PIERCE	Pierce - City Of River Falls - Multiple Counties - Ward 009	NA	NA	\N
+350164	WI	DANE	THOREAU ELEMENTARY SCHOOL	3870 NAKOMA RD	 MADISON	53711
+350165	WI	DANE	BLACK HAWK MIDDLE SCHOOL	1402 WYOMING WAY	 MADISON	53704
+350166	WI	DANE	SAINT BERNARDS PERISH	7436 UNIVERSITY AVE	 MIDDLETON	53562
+350167	WI	BROWN	REDEEMER LUTHERAN CHURCH	210 S ONEIDA ST	 GREEN BAY	54303
+350168	WI	OUTAGAMIE	FOX VALLEY LUTHERAN HIGH SCHOOL	5300 N MEADE ST	 APPLETON	54913
+350169	WI	OUTAGAMIE	CROSS WALK CHURCH	2020 E JOHN ST	 APPLETON	54915
+350170	WI	DANE	Dane - City Of Madison - Dane County - Ward 056	NA	NA	\N
+350171	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 180	NA	NA	\N
+350172	WI	MILWAUKEE	JAMES MADISON HIGH SCHOOL	8135 W FLORIST AVE	 MILWAUKEE	53218
+350173	WI	RACINE	CESAR CHAVEZ COMMUNITY CENTER	2221 DOUGLAS AVE	 RACINE	53402
+350174	WI	RACINE	Racine - City Of Racine - Racine County - Ward 015	NA	NA	\N
+350175	WI	RACINE	SECOND PRESBYTERIAN CHURCH	1400 KINGSTON AVE	 RACINE	53402
+350176	WI	DANE	BJARNE ROMNES APARTMENTS	540 W OLIN AVE	 MADISON	53715
+350177	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 028	NA	NA	\N
+350178	WI	BROWN	CALVARY LUTHERAN CHURCH	1301 S RIDGE RD	 GREEN BAY	54304
+350179	WI	DANE	BLESSED SACRAMENT CATHOLIC CHURCH	2131 ROWLEY AVE	 MADISON	53726
+350180	WI	RACINE	Racine - City Of Racine - Racine County - Ward 032	NA	NA	\N
+350181	WI	WAUKESHA	TUDOR OAKS RETIREMENT COMMUNITY	S77W12929 MCSHANE DR	 MUSKEGO	53150
+350182	WI	FOND DU LAC	FOND DU LAC HIGH SCHOOL	801 CAMPUS DR	 FOND DU LAC	54935
+350183	WI	RACINE	ATONEMENT LUTHERAN CHURCH	2915 WRIGHT AVE	 RACINE	53405
+350184	WI	MILWAUKEE	PARKWAY CHURCH	10940 S NICHOLSON RD	 OAK CREEK	53154
+350185	WI	ROCK	FIRST LUTHERAN CHURCH	612 N RANDALL AVE	 JANESVILLE	53545
+350186	WI	ROCK	RAMADA INN CONFERENCE CENTER	3900 MILTON AVE	 JANESVILLE	53546
+350187	WI	WAUKESHA	NEW BERLIN COMMUNITY CENTER	14750 W CLEVELAND AVE	 NEW BERLIN	53151
+350188	WI	MILWAUKEE	BYRON KILBOURN SCHOOL	5354 N 68TH ST	 MILWAUKEE	53218
+350189	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 036	NA	NA	\N
+350190	WI	WINNEBAGO	WITTMAN REGIONAL AIRPORT 2012	525 W 20TH AVE	 OSHKOSH	54902
+350191	WI	WASHINGTON	LIFE CHURCH MAIN BUILDING	W164N11325 SQUIRE DR	 GERMANTOWN	53022
+350192	WI	MILWAUKEE	ELM DALE SCHOOL	5300 S HONEY CREEK DR	 GREENFIELD	53221
+350193	WI	FOND DU LAC	LAKESIDE PARK PAVILION	71 PROMEN DR	 FOND DU LAC	54935
+350194	WI	OUTAGAMIE	RIVERVIEW EVANGELICAL LUTHERAN CHURCH	136 W SEYMOUR ST	 APPLETON	54915
+350195	WI	MILWAUKEE	ROOSEVELT SCHOOL	2535 N 73RD ST	 WAUWATOSA	53213
+350196	WI	BROWN	GREEN ISLE PARK PAVILION	2500 GREENE AVE	 GREEN BAY	54301
+350197	WI	OUTAGAMIE	FIRST UNITED METHODIST CHURCH	325 E FRANKLIN ST	 APPLETON	54911
+350198	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 197	NA	NA	\N
+350199	WI	DANE	STEPHENS ELEMENTARY SCHOOL	120 S ROSA RD	 MADISON	53705
+350200	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 003	NA	NA	\N
+350201	WI	BROWN	ALLOUEZ COMMUNITY CENTER	2143 S WEBSTER AVE	 GREEN BAY	54301
+350202	WI	RACINE	CHRIST UNITED METHODIST CHURCH	5109 WASHINGTON AVE	 RACINE	53406
+350203	WI	WINNEBAGO	SAINT ANDREW'S EVANGELICAL CHURCH	1100 E MURDOCK AVE	 OSHKOSH	54901
+350204	WI	WAUKESHA	SWANSON ELEMENTARY SCHOOL	305 N CALHOUN RD	 BROOKFIELD	53005
+350205	WI	EAU CLAIRE	TRINITY LUTHERAN CHURCH	1314 E LEXINGTON BLVD	 EAU CLAIRE	54701
+350206	WI	WINNEBAGO	OSHKOSH SENIOR CENTER	200 N CAMPBELL RD	 OSHKOSH	54902
+350207	WI	MILWAUKEE	SHOLES EDUCATION COMPLEX	4965 S 20TH ST	 MILWAUKEE	53221
+350208	WI	WAUKESHA	HICKORY GROVE SCHOOL	2600 S SUNNYSLOPE RD	 NEW BERLIN	53151
+350209	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 017	NA	NA	\N
+350210	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 171	NA	NA	\N
+350211	WI	BROWN	CHURCH OF CHRIST	2683 W POINT RD	 GREEN BAY	54304
+350212	WI	KENOSHA	ST. JOHN'S LUTHERAN CHURCH	3833 8TH AVE	 KENOSHA	53140
+350213	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 077	NA	NA	\N
+350214	WI	WINNEBAGO	WASHINGTON SCHOOL	919 WINNEBAGO AVE	 OSHKOSH	54901
+350215	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 019	NA	NA	\N
+350216	WI	WAUKESHA	BETHESDA SCHOOL	730 S UNIVERSITY DR	 WAUKESHA	53188
+350217	WI	RACINE	Racine - City Of Racine - Racine County - Ward 008	NA	NA	\N
+350218	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 015	NA	NA	\N
+350219	WI	WINNEBAGO	SUNNYVIEW EXPOSITION SITE	500 E COUNTY ROAD Y	 OSHKOSH	54901
+350220	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 189	NA	NA	\N
+350221	WI	KENOSHA	ST. ANNE CATHOLIC CHURCH	9091 PRAIRIE RIDGE BLVD	 PLEASANT PR	53158
+350222	WI	BROWN	UW-GREEN BAY	2420 NICOLET DR	 GREEN BAY	54311
+350223	WI	ST CROIX	RIVER FALLS NATIONAL GUARD ARMORY	815 W DIVISION ST	 RIVER FALLS	54022
+350224	WI	WAUKESHA	ELKS LODGE	2301 SPRINGDALE RD	 WAUKESHA	53186
+350225	WI	EAU CLAIRE	BIRCH STREET BAPTIST CHURCH	3120 BIRCH ST	 EAU CLAIRE	54703
+350226	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 267	NA	NA	\N
+350227	WI	MILWAUKEE	JEFFERSON SCHOOL	6927 MAPLE TER	 WAUWATOSA	53213
+350228	WI	WINNEBAGO	OSHKOSH ELKS LODGE	175 W FERNAU AVE	 OSHKOSH	54901
+350229	WI	BROWN	SAINT ELIZABETH SETON CHURCH	2771 OAKWOOD DR	 GREEN BAY	54304
+350230	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 016	NA	NA	\N
+350231	WI	MILWAUKEE	HOUSING AUTHORITY OF THE CITY OF MILWAUKEE	5003 W LISBON AVE	 MILWAUKEE	53210
+350232	WI	DANE	FITCHBURG FIRE STATION NO. 1	5791 LACY RD	 FITCHBURG	53711
+350233	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 053	NA	NA	\N
+350234	WI	DANE	OAKWOOD VILLAGE PRAIRIE RIDGE	5565 TANCHO DR	 MADISON	53718
+350235	WI	OUTAGAMIE	GRAND CHUTE TOWN HALL	1900 GRAND CHUTE BLVD	 GRAND CHUTE	54913
+350236	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 020	NA	NA	\N
+350237	WI	MILWAUKEE	CURRIE PARK CLUB HOUSE	3535 N MAYFAIR ROAD	 WAUWATOSA	53226
+350238	WI	MILWAUKEE	WHITNALL HIGH SCHOOL	5000 S 116TH ST	 GREENFIELD	53228
+350239	WI	WAUKESHA	NEW BERLIN PUBLIC LIBRARY	15105 LIBRARY LN	 NEW BERLIN	53151
+350240	WI	BROWN	DE PERE COMMUNITY CENTER	600 GRANT ST	 DE PERE	54115
+350241	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 198	NA	NA	\N
+350242	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 109	NA	NA	\N
+350243	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 230	NA	NA	\N
+350244	WI	MILWAUKEE	Polish Center Of Wisconsin	6941 S 68th St	Franklin	53132
+350245	WI	RACINE	SAINT LOUIS CHURCH	13207 COUNTY ROAD G	 CALEDONIA	53108
+350246	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 128	NA	NA	\N
+350247	WI	ROCK	CITY HALL	18 N JACKSON ST	 JANESVILLE	53548
+350248	WI	MILWAUKEE	WILSON SCHOOL	1060 GLENVIEW AVE	 WAUWATOSA	53213
+350249	WI	WAUKESHA	IMMANUEL BAPTIST CHURCH	4250 N 137TH ST	 BROOKFIELD	53005
+350250	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 115	NA	NA	\N
+350251	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 190	NA	NA	\N
+350252	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 289	NA	NA	\N
+350253	WI	WAUKESHA	PEWAUKEE CITY HALL	W240N3065 PEWAUKEE RD	 PEWAUKEE	53072
+350254	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 038	NA	NA	\N
+350255	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 014	NA	NA	\N
+350256	WI	WAUKESHA	HEYER ELEMENTARY SCHOOL	1209 HEYER DR	 WAUKESHA	53186
+350257	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 113	NA	NA	\N
+350258	WI	EAU CLAIRE	OUR REDEEMER LUTHERAN CHURCH	601 FALL ST	 EAU CLAIRE	54703
+350259	WI	OUTAGAMIE	GLOBE UNIVERSITY	5045 W GRANDE MARKET DR	 GRAND CHUTE	54913
+350260	WI	WASHINGTON	FIRST BAPTIST CHURCH	2300 S MAIN ST	 WEST BEND	53095
+350261	WI	EAU CLAIRE	CHIPPEWA VALLEY TECHNICAL COLLEGE	2320 ALPINE RD	 EAU CLAIRE	54703
+350262	WI	KENOSHA	RECPLEX	9900 TERWALL TER	 PLEASANT PR	53158
+350263	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 105	NA	NA	\N
+350264	WI	MILWAUKEE	WAUWATOSA WOMAN'S CLUB	1626 N WAUWATOSA AVE	 WAUWATOSA	53213
+350265	WI	MILWAUKEE	GREENFIELD COMMUNITY CENTER	7215 W COLD SPRING RD	 GREENFIELD	53220
+350266	WI	WAUKESHA	BURLEIGH ELEMENTARY SCHOOL	16185 BURLEIGH PL	 BROOKFIELD	53005
+350267	WI	OZAUKEE	RANGE LINE RECREATION CENTER GYM	11040 N RANGE LINE RD	 MEQUON	53092
+350268	WI	JEFFERSON	DOWNTOWN WHITEWATER ARMORY	146 W NORTH ST	 WHITEWATER	53190
+350269	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 033	NA	NA	\N
+350270	WI	WAUKESHA	TESS CRNS VOL FIRE DEPT. #4	W195S10030 RACINE AVE	 MUSKEGO	53150
+350271	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 259	NA	NA	\N
+350272	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 184	NA	NA	\N
+350273	WI	MILWAUKEE	OAK CREEK EAST MIDDLE SCHOOL	9330 S SHEPARD AVE	 OAK CREEK	53154
+350274	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 001	NA	NA	\N
+350275	WI	WAUKESHA	HILLSIDE ELEMENTARY SCHOOL	2250 N LYNETTE LN	 BROOKFIELD	53045
+350276	WI	FOND DU LAC	FIRE STATION 1	815 S MAIN ST	 FOND DU LAC	54935
+350277	WI	MILWAUKEE	MCGOVERN PARK SENIOR CENTER	4500 W CUSTER AVE	 MILWAUKEE	53218
+350278	WI	WAUKESHA	WAUKESHA CITY HALL	201 DELAFIELD ST	 WAUKESHA	53188
+350279	WI	BROWN	KENNEDY ELEMENTARY SCHOOL	1754 9TH ST	 GREEN BAY	54304
+350280	WI	WINNEBAGO	JEFFERSON SCHOOL	244 W 11TH AVE	 OSHKOSH	54902
+350281	WI	WAUKESHA	Waukesha - City Of Pewaukee - Waukesha County - Ward 001	NA	NA	\N
+350282	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 001	NA	NA	\N
+350283	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 228	NA	NA	\N
+350284	WI	EAU CLAIRE	SAINT OLAF CATHOLIC CHURCH	2407 NORTH LN	 EAU CLAIRE	54703
+350285	WI	FOND DU LAC	EVANS ELEMENTARY SCHOOL	140 S PETERS AVE	 FOND DU LAC	54935
+350286	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 042	NA	NA	\N
+350287	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 255	NA	NA	\N
+350288	WI	DANE	LAFOLLETTE HIGH SCHOOL	700 PFLAUM RD	 MADISON	53716
+350289	WI	RACINE	Racine - City Of Racine - Racine County - Ward 017	NA	NA	\N
+350290	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 117	NA	NA	\N
+350291	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 188	NA	NA	\N
+350292	WI	MILWAUKEE	LANE INTERMEDIATE SCHOOL	1300 S 109TH ST	 WEST ALLIS	53214
+350293	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 157	NA	NA	\N
+350294	WI	WINNEBAGO	WEBSTER STANLEY SCHOOL	915 HAZEL ST	 OSHKOSH	54901
+350295	WI	BROWN	CHRIST OF THE BAY LUTHERAN CHURCH	450 LAVERNE DR	 GREEN BAY	54311
+350296	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 220	NA	NA	\N
+350297	WI	WAUKESHA	NEW BERLIN WEST HIGH SCHOOL	18695 W CLEVELAND AVE	 NEW BERLIN	53146
+350298	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 026	NA	NA	\N
+350299	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 275	NA	NA	\N
+350300	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 229	NA	NA	\N
+350301	WI	MARATHON	Wausau West High School	1200 W Wausau Ave	Wausau	54401
+350302	WI	WINNEBAGO	CALVARY LUTHERAN CHURCH	2580 W 9TH AVE	 OSHKOSH	54904
+350303	WI	LACROSSE	ONALASKA OMNI CENTER	255 RIDERS CLUB RD	 ONALASKA	54650
+350304	WI	BROWN	PEACE UNITED METHODIST CHURCH	919 SCHWARTZ ST	 GREEN BAY	54302
+350305	WI	KENOSHA	SOUTHPORT BEACH HOUSE	7825 1ST AVE	 KENOSHA	53143
+350306	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 025	NA	NA	\N
+350307	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 236	NA	NA	\N
+350308	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 011	NA	NA	\N
+350309	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 003	NA	NA	\N
+350310	WI	EAU CLAIRE	PEACE LUTHERAN CHURCH	501 E FILLMORE AVE	 EAU CLAIRE	54701
+350311	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 030	NA	NA	\N
+350312	WI	BROWN	FIRST UNITED CHURCH OF CHRIST	509 S WEBSTER AVE	 GREEN BAY	54301
+350313	WI	RACINE	Racine - City Of Racine - Racine County - Ward 006	NA	NA	\N
+350314	WI	WALWORTH	Walworth - City Of Whitewater - Multiple Counties - Ward 008	NA	NA	\N
+350315	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 299	NA	NA	\N
+350316	WI	WAUKESHA	DAVIAN'S BANQUET & CONFERENCE CENTER	N56W16300 SILVER SPRING DR	 MENOMONEE FLS	53051
+350317	WI	DANE	UW-MADISON FRANK HOLT CENTER	1650 KRONSHAGE DR	 MADISON	53706
+350318	WI	WASHINGTON	WEST BEND CITY HALL	1115 S MAIN ST	 WEST BEND	53095
+350319	WI	SHEBOYGAN	FIRST UNITED LUTHERAN CHURCH	2401 KOHLER MEMORIAL DR	 SHEBOYGAN	53081
+350320	WI	WAUKESHA	ST LUKE CATHOLIC SCHOOL	18000 W GREENFIELD AVE	 BROOKFIELD	53045
+350321	WI	BROWN	NOTRE DAME MIDDLE SCHOOL	220 S MICHIGAN ST	 DE PERE	54115
+350322	WI	BROWN	ASHWAUBENON SCHOOL DISTRICT OFFICE	1055 GRIFFITHS LN	 GREEN BAY	54304
+350323	WI	WASHINGTON	MEADOWBROOK MANOR	475 MEADOWBROOK DR	 WEST BEND	53090
+350324	WI	BROWN	TRINITY LUTHERAN CHURCH	330 S BROADWAY	 GREEN BAY	54303
+350325	WI	EAU CLAIRE	GOOD SHEPHERD CHURCH	1120 CEDAR ST	 EAU CLAIRE	54703
+350326	WI	WAUKESHA	BLAIR SCHOOL	301 HYDE PARK AVE	 WAUKESHA	53188
+350327	WI	WAUKESHA	MUSKEGO CITY HALL	W182S8200 RACINE AVE	 MUSKEGO	53150
+350328	WI	KENOSHA	BOSE ELEMENTARY SCHOOL	1900 15TH ST	 KENOSHA	53140
+350329	WI	BROWN	BROWN COUNTY EXTENSION CENTER	1150 BELLEVUE ST	 GREEN BAY	54302
+350330	WI	BROWN	SAINT JOHN LUTHERAN CHURCH	2700 BABCOCK RD	 GREEN BAY	54313
+350331	WI	WAUKESHA	MUSKEGO PUBLIC LIBRARY	S73W16663 JANESVILLE RD	 MUSKEGO	53150
+350332	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 001	NA	NA	\N
+350333	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 258	NA	NA	\N
+350334	WI	DANE	Dane - City Of Madison - Dane County - Ward 051	NA	NA	\N
+350335	WI	MILWAUKEE	MILWAUKEE POLICE SAFETY ACADEMY	6680 N TEUTONIA AVE	 MILWAUKEE	53209
+350336	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 046	NA	NA	\N
+350337	WI	WAUKESHA	NEW VISION BRETHREN IN CHRIST CHURCH	N14W27995 SILVERNAIL RD	 PEWAUKEE	53072
+350338	WI	CHIPPEWA	CHIPPEWA COUNTY COURTHOUSE	711 N BRIDGE ST	 CHIPPEWA FLS	54729
+350339	WI	MILWAUKEE	Milw Co Sports Complex #5	6000 W Ryan Rd	Franklin	53132
+350340	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 193	NA	NA	\N
+350341	WI	BROWN	CENTRAL ASSEMBLY OF GOD CHURCH	831 SCHOEN ST	 GREEN BAY	54302
+350342	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 170	NA	NA	\N
+350343	WI	BROWN	BRIDGE POINT CHURCH	2421 W POINT RD	 GREEN BAY	54304
+350344	WI	OUTAGAMIE	CITY HALL	201 W 2ND ST	 KAUKAUNA	54130
+350345	WI	MILWAUKEE	OAK CREEK WEST MIDDLE SCHOOL	8401 S 13TH ST	 OAK CREEK	53154
+350346	WI	LACROSSE	ONALASKA NATIONAL GUARD ARMORY	910 OAK FOREST DR	 ONALASKA	54650
+350347	WI	MILWAUKEE	GLENWOOD SCHOOL	3550 S 51ST ST	 GREENFIELD	53220
+350348	WI	DANE	HY-VEE	3801 E WASHINGTON AVE	 MADISON	53704
+350349	WI	MARATHON	Boys & Girls Club Of Wausau	1710 2nd St	Wausau	54403
+350350	WI	KENOSHA	CATERPILLAR COLLEGE PRESCHOOL	8411 OLD GREEN BAY RD	 PLEASANT PR	53158
+350351	WI	OUTAGAMIE	ALLIANCE CHURCH	2693 W GRAND CHUTE BLVD	 GRAND CHUTE	54913
+350352	WI	DANE	FREDERIC OGG RESIDENCE HALL	835 W DAYTON ST	 MADISON	53706
+350353	WI	WINNEBAGO	FIRE STATION NO. 31	1080 BREEZEWOOD LANE	 NEENAH	54956
+350354	WI	MILWAUKEE	LAFOLLETTE PARK PAVILION	9418 W WASHINGTON ST	 WEST ALLIS	53214
+350355	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 179	NA	NA	\N
+350356	WI	WINNEBAGO	MENASHA SENIOR CENTER	116 MAIN ST	 MENASHA	54952
+350357	WI	MILWAUKEE	CUDAHY LIBRARY	3500 LIBRARY DR	 CUDAHY	53110
+350358	WI	WINNEBAGO	CARL TRAEGER MIDDLE SCHOOL	3000 W 20TH AVE	 OSHKOSH	54904
+350359	WI	MILWAUKEE	RIVER TRAIL SCHOOL	12021 W FLORIST AVE	 MILWAUKEE	53225
+350360	WI	WOOD	HOWE ELEMENTARY SCHOOL	221 8TH ST N	 WISC RAPIDS	54494
+350361	WI	MILWAUKEE	WAUWATOSA FIRE STATION NO. 51	1601 UNDERWOOD AVE	 WAUWATOSA	53213
+350362	WI	DANE	Dane - City Of Madison - Dane County - Ward 084	NA	NA	\N
+350363	WI	OZAUKEE	CHRIST CHURCH	13460 N PORT WASHINGTON RD	 MEQUON	53097
+350364	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 238	NA	NA	\N
+350365	WI	WINNEBAGO	SPRING ROAD SCHOOL	1191 COUNTY ROAD II	 NEENAH	54956
+350366	WI	MILWAUKEE	TRINITY COMMUNITY CHURCH	9450 N 60TH ST	 BROWN DEER	53223
+350367	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 015	NA	NA	\N
+350368	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 221	NA	NA	\N
+350369	WI	MILWAUKEE	EIGHTY-FIRST STREET SCHOOL	2964 N 81ST ST	 MILWAUKEE	53222
+350370	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 008	NA	NA	\N
+350371	WI	DANE	DISTRICT #4-LAKEVIEW CHURCH	2200 LINCOLN AVE	 STOUGHTON	53589
+350372	WI	MILWAUKEE	MORSE MARSHALL SCHOOL	4141 N 64TH ST	 MILWAUKEE	53216
+350373	WI	BROWN	ASHWAUBENON HISTORICAL SOCIETY BUILDING	737 CORMIER RD	 ASHWAUBENON	54304
+350374	WI	OZAUKEE	MEQUON SAFETY BUILDING	11300 N BUNTROCK AVE	 MEQUON	53092
+350375	WI	JEFFERSON	Jefferson - City Of Watertown - Multiple Counties - Ward 009	NA	NA	\N
+350376	WI	MILWAUKEE	PARKWAY ELEMENTARY SCHOOL	5910 N MILWAUKEE RIVER PKWY	 GLENDALE	53209
+350377	WI	MILWAUKEE	DPW FIELD HEADQUARTERS	3850 N 35TH ST	 MILWAUKEE	53216
+350378	WI	MILWAUKEE	SHERMAN SCHOOL	5110 W LOCUST ST	 MILWAUKEE	53210
+350379	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 031	NA	NA	\N
+350380	WI	MILWAUKEE	MADISON ELEMENTARY SCHOOL	1117 S 104TH ST	 WEST ALLIS	53214
+350381	WI	OUTAGAMIE	ST. BERNARD CATHOLIC CHURCH	1617 W PINE ST	 APPLETON	54914
+350382	WI	WINNEBAGO	BOYS & GIRLS CLUB OF MENASHA	600 RACINE ST	 MENASHA	54952
+350383	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 045	NA	NA	\N
+350384	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 005	NA	NA	\N
+350385	WI	MILWAUKEE	OAK CREEK-FRANKLIN SCHOOL ADM. BUILDING	7630 S 10TH ST	 OAK CREEK	53154
+350386	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 022	NA	NA	\N
+350387	WI	ROCK	CENTRAL CHRISTIAN CHURCH	2460 MILWAUKEE RD	 BELOIT	53511
+350388	WI	WAUKESHA	GLORIA DEI LUTHERAN	W180N7863 TOWN HALL RD	 MENOMONEE FLS	53051
+350389	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 021	NA	NA	\N
+350390	WI	JEFFERSON	WATERTOWN SENIOR CENTER	514 S 1ST ST	 WATERTOWN	53094
+350391	WI	BROWN	SAINT PAUL'S UNITED METHODIST CHURCH	341 WILSON AVE	 GREEN BAY	54303
+350392	WI	MILWAUKEE	GREENDALE SAFETY CENTER	5911 W GRANGE AVE	 GREENDALE	53129
+350393	WI	WAUKESHA	PEACE LUTHERAN CHURCH	17651 W SMALL RD	 NEW BERLIN	53146
+350394	WI	BROWN	BEAUMONT ELEMENTARY SCHOOL	1505 GATEWOOD ST	 GREEN BAY	54304
+350395	WI	MILWAUKEE	CUSTER HIGH SCHOOL	5075 N SHERMAN BLVD	 MILWAUKEE	53209
+350396	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 014	NA	NA	\N
+350397	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 147	NA	NA	\N
+350398	WI	WOOD	SARATOGA TOWN HALL	1116 STATE HIGHWAY 73 S	 WISCONSIN RAPIDS	54494
+350399	WI	MILWAUKEE	CANTERBURY GRADE SCHOOL	7000 ENFIELD AVE	 GREENDALE	53129
+350400	WI	SHEBOYGAN	TOWN OF SHEBOYGAN FIREHOUSE	3911 COUNTY ROAD Y	 SHEBOYGAN	53083
+350401	WI	ROCK	GASTON ELEMENTARY SCHOOL	1515 W GRAND AVE	 BELOIT	53511
+350402	WI	DANE	Dane - City Of Madison - Dane County - Ward 076	NA	NA	\N
+350403	WI	DANE	MADISON STREETS DIVISION-EAST	4602 SYCAMORE AVE	 MADISON	53704
+350404	WI	MILWAUKEE	VILLAGE CENTER	3920 N MURRAY AVE	 SHOREWOOD	53211
+350405	WI	OUTAGAMIE	LAWRENCE UNIVERSITY (ALEXANDER GYM)	1100 E SOUTH RIVER ST	 APPLETON	54911
+350406	WI	WAUKESHA	MEADOWBROOK SCHOOL	3130 ROLLING RIDGE DR	 WAUKESHA	53188
+350407	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 021	NA	NA	\N
+350408	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 154	NA	NA	\N
+350409	WI	RACINE	FRANKSVILLE PARK HALL	9614 COUNTY ROAD K	 FRANKSVILLE	53126
+350410	WI	WOOD	MEAD ELEMENTARY SCHOOL	241 17TH AVE S	 WISC RAPIDS	54495
+350411	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 027	NA	NA	\N
+350412	WI	MILWAUKEE	CRAIG SCHOOL	7667 W CONGRESS ST	 MILWAUKEE	53218
+350413	WI	DANE	SHERMAN MIDDLE SCHOOL	1610 RUSKIN ST	 MADISON	53704
+350414	WI	WAUKESHA	GOOD SHEPHERD	N88W17658 CHRISTMAN RD	 MENOMONEE FLS	53051
+350415	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 162	NA	NA	\N
+350416	WI	MILWAUKEE	GENERAL MITCHELL SCHOOL FIELD HOUSE	10125 W MONTANA AVE	 WEST ALLIS	53227
+350417	WI	MILWAUKEE	MILWAUKEE ENVIRONMENTAL SCIENCES SCHOOL	6600 W MELVINA ST	 MILWAUKEE	53216
+350418	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 120	NA	NA	\N
+350419	WI	OUTAGAMIE	LITTLE CHUTE VILLAGE HALL	108 W MAIN ST	 LITTLE CHUTE	54140
+350420	WI	DOOR	NASEWAUPEE FIRE STATION/TOWN HALL	3388 PARK DR	 STURGEON BAY	54235
+350421	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 165	NA	NA	\N
+350422	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 003	NA	NA	\N
+350423	WI	MILWAUKEE	NEW HOPE MISSIONARY BAPTIST CHURCH	2433 W ROOSEVELT DR	 MILWAUKEE	53209
+350424	WI	MILWAUKEE	WASHINGTON PARK LIBRARY	2121 N SHERMAN BLVD	 MILWAUKEE	53208
+350425	WI	WAUKESHA	GREENLAND SCHOOL	440 COOLIDGE ST	 OCONOMOWOC	53066
+350426	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 010	NA	NA	\N
+350427	WI	WAUKESHA	DIXON ELEMENTARY SCHOOL	2400 PILGRIM SQUARE DR	 BROOKFIELD	53005
+350428	WI	DANE	Dane - City Of Madison - Dane County - Ward 090	NA	NA	\N
+350429	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 155	NA	NA	\N
+350430	WI	WASHINGTON	WEST BEND LIBRARY	630 POPLAR ST	 WEST BEND	53095
+350431	WI	MENOMINEE	MENOMINEE COUNTY COURTHOUSE	W3269 COURTHOUSE LN	 KESHENA	54135
+350432	WI	MILWAUKEE	MAPLE GROVE SCHOOL	6921 W COLDSPRING RD	 GREENFIELD	53220
+350433	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 016	NA	NA	\N
+350434	WI	EAU CLAIRE	PENTECOSTAL ASSEMBLY CHURCH	9 9TH AVE	 EAU CLAIRE	54703
+350435	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 003	NA	NA	\N
+350436	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 030	NA	NA	\N
+350437	WI	BROWN	GREEN BAY BOTANICAL GARDENS	2600 LARSEN RD	 GREEN BAY	54303
+350438	WI	LACROSSE	ONALASKA TOWN HALL	N5589 COMMERCE RD	 ONALASKA	54650
+350439	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 004	NA	NA	\N
+350440	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 084	NA	NA	\N
+350441	WI	MILWAUKEE	GREENFIELD PUBLIC LIBRARY	5310 W LAYTON AVE	 GREENFIELD	53220
+350442	WI	WOOD	GROVE SCHOOL	471 GROVE AVE	 WISC RAPIDS	54494
+350443	WI	MILWAUKEE	FRANK LLOYD WRIGHT SCHOOL	9501 W CLEVELAND AVE	 WEST ALLIS	53227
+350444	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 251	NA	NA	\N
+350445	WI	OZAUKEE	JOHN LONG MIDDLE SCHOOL	700 HICKORY ST	 GRAFTON	53024
+350446	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 223	NA	NA	\N
+350447	WI	RACINE	Racine - City Of Racine - Racine County - Ward 002	NA	NA	\N
+350448	WI	MILWAUKEE	PARKLAWN ASSEMBLY OF GOD CHURCH	3725 N SHERMAN BLVD	 MILWAUKEE	53216
+350449	WI	WASHINGTON	PUBLIC ACCESS CENTER	333 E WASHINGTON ST	 WEST BEND	53095
+350450	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 003	NA	NA	\N
+350451	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 127	NA	NA	\N
+350452	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 015	NA	NA	\N
+350453	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 138	NA	NA	\N
+350454	WI	MILWAUKEE	Franklin City Hall	9229 W Loomis Rd	Franklin	53132
+350455	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 010	NA	NA	\N
+350456	WI	ROCK	CONVERSE ELEMENTARY SCHOOL	1602 TOWNLINE AVE	 BELOIT	53511
+350457	WI	WAUKESHA	HOLY CROSS CHURCH	W156N8131 PILGRIM RD	 MENOMONEE FLS	53051
+350458	WI	MARATHON	KEY TO LIFE COMMUNITY CENTER	3915 SANDY LN	 WESTON	54476
+350459	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 199	NA	NA	\N
+350460	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 012	NA	NA	\N
+350461	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 032	NA	NA	\N
+350462	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 253	NA	NA	\N
+350463	WI	MARATHON	Marathon Park East Gate 2	620 Garfield Ave	Wausau	54401
+350464	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 288	NA	NA	\N
+350465	WI	DUNN	SHOPS OFF BROADWAY	1501 BROADWAY ST N	 MENOMONIE	54751
+350466	WI	POLK	FARMINGTON TOWN HALL	2647 30TH AVE	 OSCEOLA	54020
+350467	WI	MILWAUKEE	CENTRAL HIGH SCHOOL	8516 W LINCOLN AVE	 WEST ALLIS	53227
+350468	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 287	NA	NA	\N
+350469	WI	BROWN	RAY AND JOAN KROC CORPS COMMUNITY CENTER	1315 LIME KILN RD	 GREEN BAY	54311
+350470	WI	CHIPPEWA	FIRE STATION#8	3510 STARR AVE	 EAU CLAIRE	54703
+350471	WI	DODGE	MARQUARDT MANOR CHAPEL	1020 HILL ST	 WATERTOWN	53098
+350472	WI	WAUKESHA	SAINT PAUL'S LUTHERAN CHURCH & SCHOOL	S66W14325 JANESVILLE RD	 MUSKEGO	53150
+350473	WI	OZAUKEE	LUMEN CHRISTI CHURCH	11300 N SAINT JAMES LN	 MEQUON	53092
+350474	WI	DANE	NEW BEGINNINGS ALLIANCE CHURCH	602 ACEWOOD BLVD	 MADISON	53714
+350475	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 010	NA	NA	\N
+350476	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 256	NA	NA	\N
+350477	WI	PORTAGE	MID-STATE TECHNICAL COLLEGE	1001 CENTERPOINT DR	 STEVENS POINT	54481
+350478	WI	MARATHON	Wausau East High School	2607 N 18th St	Wausau	54403
+350479	WI	DANE	SAINT PAUL LUTHERAN CHURCH	2126 N SHERMAN AVE	 MADISON	53704
+350480	WI	MANITOWOC	PARISH CENTER - SAINT PETER	3201 MISHICOT ROAD	 TWO RIVERS	54241
+350481	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 302	NA	NA	\N
+350482	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 094	NA	NA	\N
+350483	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 169	NA	NA	\N
+350484	WI	RACINE	GRACE CHURCH	3626 HIGHWAY 31	 RACINE	53406
+350485	WI	KENOSHA	KENOSHA NORTHSIDE LIBRARY	1500 27TH AVE	 KENOSHA	53140
+350486	WI	MANITOWOC	TWO RIVERS CITY HALL	1717 E PARK ST	 TWO RIVERS	54241
+350487	WI	JEFFERSON	LAKE MILLS CITY HALL	200 WATER ST	 LAKE MILLS	53551
+350488	WI	CHIPPEWA	CHIPPEWA FALLS SENIOR CENTER	1000 E GRAND AVE	 CHIPPEWA FLS	54729
+350489	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 252	NA	NA	\N
+350490	WI	DANE	DISTRICT #2- STOUGHTON FIRE STATION	401 E MAIN ST	 STOUGHTON	53589
+350491	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 005	NA	NA	\N
+350492	WI	MILWAUKEE	SOUTH MILWAUKEE CITY HALL	2424 15TH AVE	 S MILWAUKEE	53172
+350493	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 145	NA	NA	\N
+350494	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 278	NA	NA	\N
+350495	WI	JEFFERSON	WATERTOWN CITY HALL	106 JONES ST	 WATERTOWN	53094
+350496	WI	DUNN	RED CEDAR TOWN HALL	E6591 627TH AVE	 MENOMONIE	54751
+350497	WI	WAUKESHA	SOUTH HIGH SCHOOL	401 E ROBERTA AVE	 WAUKESHA	53186
+350498	WI	WASHINGTON	BETHLEHEM EV. LUTHERAN SCHOOL	N108W14290 BEL AIRE LN	 GERMANTOWN	53022
+350499	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 168	NA	NA	\N
+350500	WI	BROWN	SAINT JUDE CATHOLIC CHURCH	1420 DIVISION ST	 GREEN BAY	54303
+350501	WI	RACINE	THE MANNA HOUSE	1034 WEST BLVD	 RACINE	53405
+350502	WI	MANITOWOC	FIRST REFORMED UNITED CHURCH OF CHRIST	3613 WALDO BLVD	 MANITOWOC	54220
+350503	WI	SHEBOYGAN	SHEBOYGAN FALLS CITY HALL	375 BUFFALO ST	 SHEBOYGAN FLS	53085
+350504	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 018	NA	NA	\N
+350505	WI	BROWN	UNION CONGREGATIONAL CHURCH	716 S MADISON ST	 GREEN BAY	54301
+350506	WI	DANE	Dane - City Of Madison - Dane County - Ward 063	NA	NA	\N
+350507	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 166	NA	NA	\N
+350508	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 144	NA	NA	\N
+350509	WI	CHIPPEWA	FAITH LUTHERAN CHURCH	733 WOODWARD AVE	 CHIPPEWA FLS	54729
+350510	WI	MILWAUKEE	HI-MOUNT BOULEVARD SCHOOL	4921 W GARFIELD AVE	 MILWAUKEE	53208
+350511	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 148	NA	NA	\N
+350512	WI	WAUKESHA	PRINCE OF PEACE CHURCH	W156N7149 PILGRIM RD	 MENOMONEE FLS	53051
+350513	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 002	NA	NA	\N
+350514	WI	WAUKESHA	ROTARY BUILDING	1150 BAXTER ST	 WAUKESHA	53186
+350515	WI	WAUKESHA	WEST HIGH SCHOOL	3301 SAYLESVILLE RD	 WAUKESHA	53189
+350516	WI	MILWAUKEE	St Martin Of Tours Church	7963 S 116th St	Franklin	53132
+350517	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 265	NA	NA	\N
+350518	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 125	NA	NA	\N
+350519	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 225	NA	NA	\N
+350520	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 250	NA	NA	\N
+350521	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 224	NA	NA	\N
+350522	WI	MILWAUKEE	BRADLEY TECH HIGH SCHOOL	700 S 4TH ST	 MILWAUKEE	53204
+350523	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 237	NA	NA	\N
+350524	WI	WINNEBAGO	ALBEE HALL	776 ALGOMA BLVD	 OSHKOSH	54901
+350525	WI	BROWN	EDISON MIDDLE SCHOOL	442 ALPINE DR	 GREEN BAY	54302
+350526	WI	MILWAUKEE	HAMPTON SCHOOL	5000 N 53RD ST	 MILWAUKEE	53218
+350527	WI	RACINE	Racine - City Of Racine - Racine County - Ward 007	NA	NA	\N
+350528	WI	DANE	SUN PRAIRIE LIBRARY	1350 LINNERUD DR	 SUN PRAIRIE	53590
+350529	WI	DANE	PATRICK MARSH SCHOOL	1351 COLUMBUS ST	 SUN PRAIRIE	53590
+350530	WI	BROWN	ALLOUEZ VILLAGE HALL	1900 LIBAL ST	 GREEN BAY	54301
+350531	WI	MARATHON	Pilgrim Lutheran Church	709 Weston Ave	Wausau	54403
+350532	WI	MILWAUKEE	DEERFIELD ELEMENTARY SCHOOL	3871 E BLUESTEM DR	 OAK CREEK	53154
+350533	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 010	NA	NA	\N
+350534	WI	RACINE	FELLOWSHIP BAPTIST CHURCH	5607 WRIGHT AVE	 RACINE	53406
+350535	WI	WOOD	OAK AVENUE COMMUNITY CENTER	201 S OAK AVE	 MARSHFIELD	54449
+350536	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 142	NA	NA	\N
+350537	WI	MILWAUKEE	HIGHLAND VIEW GRADE SCHOOL	5900 S 51ST ST	 GREENDALE	53129
+350538	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 089	NA	NA	\N
+350539	WI	BROWN	HOWARD FIRE STATION NO. 2	4165 SHAWANO AVE	 GREEN BAY	54313
+350540	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 218	NA	NA	\N
+350541	WI	WAUKESHA	SAINT JAMES CATHOLIC CHURCH	W220N6588 TOWN LINE RD	 MENOMONEE FLS	53051
+350542	WI	MILWAUKEE	AGAPE COMMUNITY CENTER	6100 N 42ND ST	 MILWAUKEE	53209
+350543	WI	RACINE	EAST SIDE COMMUNITY CENTER	6156 DOUGLAS AVE	 RACINE	53402
+350544	WI	ROCK	RIVER OF LIFE UMC	2345 PRAIRIE AVE	 BELOIT	53511
+350545	WI	MILWAUKEE	KLUGE SCHOOL	5760 N 67TH ST	 MILWAUKEE	53218
+350546	WI	MILWAUKEE	FIFTY-THIRD STREET SCHOOL	3618 N 53RD ST	 MILWAUKEE	53216
+350547	WI	MILWAUKEE	RUFUS KING INTERNATIONAL MIDDLE SCHOOL	4950 N 24TH ST	 MILWAUKEE	53209
+350548	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 075	NA	NA	\N
+350549	WI	DANE	WESTPORT TOWN HALL	5387 MARY LAKE RD	 WAUNAKEE	53597
+350550	WI	DOOR	SEVASTOPOL TOWN HALL	4528 STATE HIGHWAY 57	 STURGEON BAY	54235
+350551	WI	MILWAUKEE	MILW CO SPORTS COMPLEX #4	6000 W RYAN RD	FRANKLIN	53132
+350552	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 135	NA	NA	\N
+350553	WI	DANE	BADGER ROCK NEIGHBORHOOD CENTER	501 E BADGER RD	 MADISON	53713
+350554	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 005	NA	NA	\N
+350555	WI	OZAUKEE	PIEPER POWER EDUCATION CENTER	8200 W COUNTY LINE RD	 MEQUON	53097
+350556	WI	DANE	Dane - City Of Madison - Dane County - Ward 049	NA	NA	\N
+350557	WI	WASHINGTON	AMERICAN LEGION HALL	N120W15932 FREISTADT RD	 GERMANTOWN	53022
+350558	WI	ST CROIX	HAMMOND TOWN HALL	1816 COUNTY RD E	 HAMMOND	54015
+350559	WI	OZAUKEE	SAINT MATTHEW LUTHERAN CHURCH	1525 N GRANT ST	 PRT WASHINGTN	53074
+350560	WI	RACINE	Racine - City Of Racine - Racine County - Ward 019	NA	NA	\N
+350561	WI	WOOD	WILDWOOD STATION	1800 S RODDIS AVE	 MARSHFIELD	54449
+350562	WI	BROWN	HELEN KELLER SCHOOL	1806 BOND ST	 GREEN BAY	54303
+350563	WI	MARATHON	WESTON MUNICIPAL CENTER	5500 SCHOFIELD AVE	 WESTON	54476
+350564	WI	WINNEBAGO	COMMUNITY CENTER	1000 VALLEY RD	 MENASHA	54952
+350565	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 002	NA	NA	\N
+350566	WI	WASHINGTON	WASHINGTON COUNTY COURTHOUSE	432 E WASHINGTON ST	 WEST BEND	53095
+350567	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 233	NA	NA	\N
+350568	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 126	NA	NA	\N
+350569	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 222	NA	NA	\N
+350570	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 123	NA	NA	\N
+350571	WI	WAUKESHA	E. B. SHURTS BUILDING	810 W COLLEGE AVE	 WAUKESHA	53186
+350572	WI	BROWN	BAY VIEW MIDDLE SCHOOL	1217 CARDINAL LN	 GREEN BAY	54313
+350573	WI	ROCK	TURTLE COMMUNITY CENTER	6916 S COUNTY ROAD J	 BELOIT	53511
+350574	WI	BROWN	ASHWAUBENON FIRE STATION NO. 2	1310 PONDEROSA AVE	 GREEN BAY	54313
+350575	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 191	NA	NA	\N
+350576	WI	MILWAUKEE	HUMBOLDT PARK PAVILION	3000 S HOWELL AVE	 MILWAUKEE	53207
+350577	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 001	NA	NA	\N
+350578	WI	MILWAUKEE	BURDICK SCHOOL	4348 S GRIFFIN AVE	 MILWAUKEE	53207
+350579	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 021	NA	NA	\N
+350580	WI	WASHINGTON	NORTHBROOK CHURCH	4014 STATE ROAD 167	 RICHFIELD	53076
+350581	WI	WAUKESHA	HAWTHORNE SCHOOL	1111 MAITLAND DR	 WAUKESHA	53188
+350582	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 217	NA	NA	\N
+350583	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 136	NA	NA	\N
+350584	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 146	NA	NA	\N
+350585	WI	MILWAUKEE	BENJAMIN FRANKLIN SCHOOL	2308 W NASH ST	 MILWAUKEE	53206
+350586	WI	PORTAGE	JEFFERSON SCHOOL	1800 EAST AVE	 STEVENS POINT	54481
+350587	WI	CHIPPEWA	CHIPPEWA FALLS PUBLIC LIBRARY	105 W CENTRAL ST	 CHIPPEWA FLS	54729
+350588	WI	MILWAUKEE	COLLEGE PARK GRADE SCHOOL	5701 W COLLEGE AVE	 GREENDALE	53129
+350589	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 035	NA	NA	\N
+350590	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 313	NA	NA	\N
+350591	WI	DOUGLAS	WITC CONF CENTER	602 North 21st Street	SUPERIOR	54880
+350592	WI	BROWN	LAWRENCE TOWN HALL	2400 SHADY CT	 DE PERE	54115
+350593	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 226	NA	NA	\N
+350594	WI	DANE	VERONA PUBLIC LIBRARY	500 SILENT ST	 VERONA	53593
+350595	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 201	NA	NA	\N
+350596	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 003	NA	NA	\N
+350597	WI	MILWAUKEE	NICOLET HIGH SCHOOL	6701 N JEAN NICOLET RD	 GLENDALE	53217
+350598	WI	MILWAUKEE	CAHILL SQUARE	1001 E FAIRMOUNT AVE	 WHITEFISH BAY	53217
+350599	WI	WASHINGTON	JACKSON VILLAGE HALL	N168W20733 MAIN ST	 JACKSON	53037
+350600	WI	BROWN	LEDGEVIEW TOWN HALL	3700 DICKINSON RD	 DE PERE	54115
+350601	WI	MILWAUKEE	ENDERIS PLAYGROUND FIELDHOUSE	2938 N 72ND ST	 MILWAUKEE	53210
+350602	WI	OUTAGAMIE	GREENVILLE TOWN HALL	W6860 PARKVIEW DR	 GREENVILLE	54942
+350603	WI	MARATHON	Marathon Park East Gate Hall	620 Garfield Ave	Wausau	54401
+350604	WI	WAUKESHA	PRAIRIE ELEMENTARY SCHOOL	1801 CENTER RD	 WAUKESHA	53189
+350605	WI	MILWAUKEE	THIRTY-FIFTH STREET SCHOOL	3517 W COURTLAND AVE	 MILWAUKEE	53209
+350606	WI	DOUGLAS	CENTRAL ASSEMBLY OF GOD CHURCH	3000 HAMMOND AVE	 SUPERIOR	54880
+350607	WI	MILWAUKEE	COOPER PARK PAVILION	8701 W CHAMBERS ST	 MILWAUKEE	53222
+350608	WI	PORTAGE	PLOVER MUNICIPAL CENTER	2400 POST RD	 PLOVER	54467
+350609	WI	MILWAUKEE	SAINT FRANCIS COMMUNITY CENTER	3476 E HOWARD AVE	 SAINT FRANCIS	53235
+350610	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 129	NA	NA	\N
+350611	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 014	NA	NA	\N
+350612	WI	MILWAUKEE	MCCARTY PARK PAVILION	2567 S 78TH ST	 WEST ALLIS	53219
+350613	WI	ROCK	ROCK TOWN HALL	5102 S COUNTY ROAD D	 AFTON	53501
+350614	WI	RACINE	Racine - City Of Racine - Racine County - Ward 009	NA	NA	\N
+350615	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 017	NA	NA	\N
+350616	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 013	NA	NA	\N
+350617	WI	MILWAUKEE	BROWN DEER LIBRARY	5600 W BRADLEY RD	 BROWN DEER	53223
+350618	WI	CALUMET	HOPE LUTHERAN BRETHREN CHURCH	415 E HOOVER AVE	 APPLETON	54915
+350619	WI	RACINE	PRINCE OF PEACE CHURCH	4340 6 MILE RD	 RACINE	53402
+350620	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 150	NA	NA	\N
+350621	WI	MILWAUKEE	STUART SCHOOL	7001 N 86TH ST	 MILWAUKEE	53224
+350622	WI	MILWAUKEE	JE JONES SCHOOL	5845 S SWIFT AVE	 CUDAHY	53110
+350623	WI	MILWAUKEE	GREENDALE HIGH SCHOOL	6801 SOUTHWAY	 GREENDALE	53129
+350624	WI	RACINE	SAINT ANDREW CHURCH	1015 4 MILE RD	 RACINE	53402
+350625	WI	SHEBOYGAN	TOWN OF WILSON TOWN HALL	5933 S BUSINESS DR	 SHEBOYGAN	53081
+350626	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 284	NA	NA	\N
+350627	WI	PIERCE	Pierce - City Of River Falls - Multiple Counties - Ward 012	NA	NA	\N
+350628	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 017	NA	NA	\N
+350629	WI	PORTAGE	SAINT PAUL'S UNITED METHODIST CHURCH	600 WILSHIRE BLVD	 STEVENS POINT	54481
+350630	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 016	NA	NA	\N
+350631	WI	CALUMET	Sherwood Village Hall Gym	W482 Clifton Rd	Sherwood	54169
+350632	WI	DANE	SEQUOYA  LIBRARY	4340 TOKAY BLVD	 MADISON	53711
+350633	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 234	NA	NA	\N
+350634	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 164	NA	NA	\N
+350635	WI	GREEN	EXETER TOWN HALL	W2998 HWY 92	 BELLEVILLE	53508
+350636	WI	MILWAUKEE	GREEN BAY AVENUE PLAYGROUND FIELDHOUSE	3818 N 8TH ST	 MILWAUKEE	53206
+350637	WI	VILAS	ARBOR VITAE TOWN HALL	10675 BIG ARBOR VITAE DR	 ARBOR VITAE	54568
+350638	WI	RACINE	ASSEMBLY OF GOD CHURCH	1325 AIRLINE RD	 RACINE	53406
+350639	WI	BROWN	SAINT MARK LUTHERAN CHURCH	2066 LAWRENCE DR	 DE PERE	54115
+350640	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 279	NA	NA	\N
+350641	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 277	NA	NA	\N
+350642	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 007	NA	NA	\N
+350643	WI	WAUKESHA	ST. MARY'S CHURCH	225 S HARTWELL AVE	 WAUKESHA	53186
+350644	WI	MANITOWOC	KOENIG ELEMENTARY SCHOOL	1114 LOWELL ST	 TWO RIVERS	54241
+350645	WI	OZAUKEE	GRAND AVENUE UNITED METHODIST CHURCH	505 W GRAND AVE	 PRT WASHINGTN	53074
+350646	WI	DANE	MCFARLAND MUNICIPAL CENTER	5915 MILWAUKEE ST	 MC FARLAND	53558
+350647	WI	MILWAUKEE	WEST ALLIS RECREATION CENTER	2450 S 68TH ST	 WEST ALLIS	53219
+350648	WI	MILWAUKEE	ALBRIGHT UNITED METHODIST CHURCH	5555 W CAPITOL DR	 MILWAUKEE	53216
+350649	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 240	NA	NA	\N
+350650	WI	MILWAUKEE	VINCENT HIGH SCHOOL	7501 N GRANVILLE RD	 MILWAUKEE	53224
+350651	WI	WAUKESHA	FOX RIVER CHRISTIAN CHURCH	S67W19491 TANS DR	 MUSKEGO	53150
+350652	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 016	NA	NA	\N
+350653	WI	BROWN	BETHEL EVANGELICAL LUTHERAN CHURCH	1350 BOND ST	 GREEN BAY	54303
+350654	WI	MILWAUKEE	CLARA BARTON SCHOOL	5700 W GREEN TREE RD	 MILWAUKEE	53223
+350655	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 008	NA	NA	\N
+350656	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 124	NA	NA	\N
+350657	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 013	NA	NA	\N
+350658	WI	BROWN	SS PETER & PAUL PARISH	720 N BAIRD ST	 GREEN BAY	54302
+350659	WI	DUNN	Dunn - City Of Menomonie - Dunn County - Ward 003	NA	NA	\N
+350660	WI	WAUKESHA	ATONEMENT LUTHERAN CHURCH	S70W16244 MARTIN DR	 MUSKEGO	53150
+350661	WI	BROWN	SALVATION ARMY-UNION CT. CORPS	626 UNION CT	 GREEN BAY	54303
+350662	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 268	NA	NA	\N
+350663	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 012	NA	NA	\N
+350664	WI	DANE	Dane - City Of Madison - Dane County - Ward 068	NA	NA	\N
+350665	WI	MILWAUKEE	MILWAUKEE SCHOOL OF LANGUAGES	8400 W BURLEIGH ST	 MILWAUKEE	53222
+350666	WI	MILWAUKEE	IDEAL SCHOOL	1420 W GOLDCREST AVE	 MILWAUKEE	53221
+350667	WI	ROCK	TURNER HIGH SCHOOL	1231 E INMAN PKWY	 BELOIT	53511
+350668	WI	EAU CLAIRE	HOPE METHODIST CHURCH	2233 GOLF RD	 EAU CLAIRE	54701
+350669	WI	DUNN	MENOMONIE TOWN HALL	E4055 550TH AVE	 MENOMONIE	54751
+350670	WI	DANE	VERONA CITY HALL	111 LINCOLN ST	 VERONA	53593
+350671	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 286	NA	NA	\N
+350672	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 090	NA	NA	\N
+350673	WI	WINNEBAGO	WINNECONNE TOWN HALL	6494 COUNTY ROAD M	 WINNECONNE	54986
+350674	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 011	NA	NA	\N
+350675	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 216	NA	NA	\N
+350676	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 310	NA	NA	\N
+350677	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 239	NA	NA	\N
+350678	WI	WAUKESHA	PEWAUKEE VILLAGE HALL	235 HICKORY ST	 PEWAUKEE	53072
+350679	WI	JEFFERSON	FORT ATKINSON MUNICIPAL BLDG	101 N MAIN ST	 FORT ATKINSON	53538
+350680	WI	MILWAUKEE	SOUTH SHORE PARK PAVILLION	2900 S SHORE DR	 MILWAUKEE	53207
+350681	WI	MILWAUKEE	ALCOTT ELEMENTARY SCHOOL	3563 S 97TH ST	 MILWAUKEE	53228
+350682	WI	WINNEBAGO	WILSON SCHOOL	920 HIGGINS AVE	 NEENAH	54956
+350683	WI	MILWAUKEE	GOOD HOPE ELEMENTARY SCHOOL	2310 W GOOD HOPE RD	 GLENDALE	53209
+350684	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 024	NA	NA	\N
+350685	WI	MILWAUKEE	DIVINE MERCY SCHOOL	695 COLLEGE AVE	 S MILWAUKEE	53172
+350686	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 257	NA	NA	\N
+350687	WI	ST CROIX	St. Croix - City Of Hudson - St. Croix County - Ward 005	NA	NA	\N
+350688	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 283	NA	NA	\N
+350689	WI	VILAS	CONOVER TOWN HALL	4665 COUNTY ROAD K E	 CONOVER	54519
+350690	WI	RACINE	CONCORDIA LUTHERAN SCHOOL	3350 LATHROP AVE	 RACINE	53405
+350691	WI	COLUMBIA	WESTPOINT TOWN HALL	N2114 RAUSCH RD	 LODI	53555
+350692	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 270	NA	NA	\N
+350693	WI	PIERCE	UW - RIVER FALLS UNIVERSITY CENTER	501 WILD ROSE AVE	 RIVER FALLS	54022
+350694	WI	MILWAUKEE	CLEMENT AVENUE SCHOOL	3666 S CLEMENT AVE	 MILWAUKEE	53207
+350695	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 080	NA	NA	\N
+350696	WI	BROWN	SUAMICO MUNICIPAL SERVICES CENTER	12781 VELP AVE	 SUAMICO	54313
+350697	WI	DOUGLAS	SALVATION ARMY	916 HUGHITT AVE	 SUPERIOR	54880
+350698	WI	LACROSSE	HOLMEN VILLAGE HALL	421 S. MAIN ST	 HOLMEN	54636
+350699	WI	MILWAUKEE	FRANCES STARMS DISCOVERY LEARNING CENTER	2035 N 25TH ST	 MILWAUKEE	53205
+350700	WI	MILWAUKEE	CARVER ACADEMY OF MATH AND SCIENCE	1900 N 1ST ST	 MILWAUKEE	53212
+350701	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 013	NA	NA	\N
+350702	WI	WAUKESHA	OCONOMOWOC ARTS CENTER	641 E FOREST ST	 OCONOMOWOC	53066
+350703	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 067	NA	NA	\N
+350704	WI	DOOR	GARDNER TOWN HALL	2344 COUNTY ROAD C	 STURGEON BAY	54235
+350705	WI	DANE	MIDDLETON TOWN HALL	7555 W OLD SAUK RD	 VERONA	53593
+350706	WI	DOUGLAS	ZION LUTHERAN CHURCH	2022 E 2ND ST	 SUPERIOR	54880
+350707	WI	BROWN	GREEN BAY LABOR TEMPLE	1570 ELIZABETH ST	 GREEN BAY	54302
+350708	WI	WAUKESHA	OCONOMOWOC PUBLIC LIBRARY	200 W SOUTH ST	 OCONOMOWOC	53066
+350709	WI	MILWAUKEE	COMMUNITY CENTER	4355 W BRADLEY RD	 BROWN DEER	53223
+350710	WI	MILWAUKEE	GLENDALE CITY HALL	5909 N MILWAUKEE RIVER PKWY	 GLENDALE	53209
+350711	WI	MILWAUKEE	Franklin Law Enforcement Facility	9455 W Loomis Rd	Franklin	53132
+350712	WI	MILWAUKEE	WEST ALLIS FIRE STATION NO. 2	2040 S 67TH PL	 WEST ALLIS	53219
+350713	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 007	NA	NA	\N
+350714	WI	MILWAUKEE	MILWAUKEE FRENCH IMMERSION SCHOOL	2360 N 52ND ST	 MILWAUKEE	53210
+350715	WI	WALWORTH	DELAVAN COMMUNITY PARK	1220 SOUTH SHORE DR	 DELAVAN	53115
+350716	WI	MILWAUKEE	OAK CREEK COMMUNITY CENTER	8580 S HOWELL AVE	 OAK CREEK	53154
+350717	WI	MILWAUKEE	DINEEN PARK PAVILION	6601 W VIENNA AVE	 MILWAUKEE	53216
+350718	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 112	NA	NA	\N
+350719	WI	PORTAGE	STEVENS POINT RECREATION CENTER	2442 SIMS AVE	 STEVENS POINT	54481
+350720	WI	DANE	SAINT STEPHENS LUTHERAN CHURCH	5700 PHEASANT HILL RD	 MONONA	53716
+350721	WI	MARINETTE	MARINETTE HIGH SCHOOL	2139 PIERCE AVE	 MARINETTE	54143
+350722	WI	DOUGLAS	WITC CONF CENTER	604 North 21st Street	SUPERIOR	54880
+350723	WI	MILWAUKEE	SHOREWOOD HIGH SCHOOL	1701 E CAPITOL DR	 SHOREWOOD	53211
+350724	WI	WASHINGTON	HARTFORD RECREATION CENTER	125 N RURAL ST	 HARTFORD	53027
+350725	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 266	NA	NA	\N
+350726	WI	DUNN	MENOMONIE NATIONAL GUARD ARMORY	315 28TH AVE W	 MENOMONIE	54751
+350727	WI	VILAS	ST. GERMAIN COMMUNITY CENTER	545 STATE HIGHWAY 155	 SAINT GERMAIN	54558
+350728	WI	DUNN	CHIPPEWA VALLEY TECHNICAL COLLEGE	403 TECHNOLOGY DR E	 MENOMONIE	54751
+350729	WI	DANE	FIRE STATION NO. 11	4011 MORGAN WAY	 MADISON	53718
+350730	WI	MILWAUKEE	GORDON PARK PAVILION	2828 N HUMBOLDT BLVD	 MILWAUKEE	53212
+350731	WI	WINNEBAGO	RUSHFORD TOWN HALL	3413 N COUNTY ROAD K	 OMRO	54963
+350732	WI	WINNEBAGO	ALL SAINTS LUTHERAN CHURCH	1072 HONEY CREEK RD	 OSHKOSH	54904
+350733	WI	MILWAUKEE	MILWAUKEE MUNICIPAL BUILDING	841 N BROADWAY	 MILWAUKEE	53202
+350734	WI	MILWAUKEE	THURSTON WOODS ELEMENTARY SCHOOL	5966 N 35TH ST	 MILWAUKEE	53209
+350735	WI	MILWAUKEE	RAWSON ELEMENTARY SCHOOL	1410 RAWSON AVE	 S MILWAUKEE	53172
+350736	WI	DANE	EAST POLICE DISTRICT	809 S THOMPSON DR	 MADISON	53716
+350737	WI	WALWORTH	EAST TROY VILLAGE HALL	2015 ENERGY DR	 EAST TROY	53120
+350738	WI	MILWAUKEE	MILWAUKEE FIREHOUSE ENGINE 12	2130 W OKLAHOMA AVE	 MILWAUKEE	53215
+350739	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 010	NA	NA	\N
+350740	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 006	NA	NA	\N
+350741	WI	FOND DU LAC	WAUPUN CITY HALL	201 E MAIN ST	 WAUPUN	53963
+350742	WI	OUTAGAMIE	ST. JOHN UNITED CHURCH OF CHRIST	1130 W MARQUETTE ST	 APPLETON	54914
+350743	WI	FOND DU LAC	TAYCHEEDAH TOWN HALL	W4295 KIEKHAEFER PKWY	 FOND DU LAC	54937
+350744	WI	WALWORTH	WALWORTH VILLAGE HALL	227 N MAIN ST	 WALWORTH	53184
+350745	WI	CHIPPEWA	LAKE HALLIE VILLAGE HALL	13136 30TH AVE	 CHIPPEWA FLS	54729
+350746	WI	DANE	CROSS PLAINS FIRE STATION	1501 BOURBON RD	 CROSS PLAINS	53528
+350747	WI	DANE	TOKI MIDDLE SCHOOL	5606 RUSSETT RD	 MADISON	53711
+350748	WI	VILAS	LINCOLN TOWN HALL	1205 SUNDSTEIN RD	 EAGLE RIVER	54521
+350749	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 249	NA	NA	\N
+350750	WI	OZAUKEE	MEQUON CITY HALL	11333 N CEDARBURG RD	 MEQUON	53092
+350751	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 219	NA	NA	\N
+350752	WI	ROCK	JANESVILLE TOWN HALL	1628 N LITTLE CT	 JANESVILLE	53548
+350753	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 002	NA	NA	\N
+350754	WI	CHIPPEWA	LAFAYETTE TOWN HALL	5765 197TH ST	 CHIPPEWA FLS	54729
+350755	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 140	NA	NA	\N
+350756	WI	VILAS	LAC DU FLAMBEAU TOWN HALL	109 OLD ABE RD	 LAC DU FLAMBEAU	54538
+350757	WI	RACINE	Racine - City Of Racine - Racine County - Ward 003	NA	NA	\N
+350758	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 005	NA	NA	\N
+350759	WI	RACINE	Racine - City Of Racine - Racine County - Ward 004	NA	NA	\N
+350760	WI	CHIPPEWA	BLOOMER ELECTRIC SHOP	402 26TH AVE	 BLOOMER	54724
+350761	WI	DANE	OREGON VILLAGE HALL - BOARD ROOM	117 SPRING ST	 OREGON	53575
+350762	WI	SHEBOYGAN	PLYMOUTH CITY HALL	128 SMITH ST	 PLYMOUTH	53073
+350763	WI	MILWAUKEE	WHITEFISH BAY PUBLIC LIBRARY	5420 N MARLBOROUGH DR	 WHITEFISH BAY	53217
+350764	WI	ST CROIX	ROBERTS VILLAGE HALL	107 E Maple St	Roberts	54023
+350765	WI	WAUKESHA	Waukesha - Town Of Brookfield - Waukesha County - Ward 006	NA	NA	\N
+350766	WI	MARINETTE	JOB CENTER/NORTHEAST WISCONSIN TECHNICAL COLLEGE	1605 UNIVERSITY DR	 MARINETTE	54143
+350767	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 024	NA	NA	\N
+350768	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 017	NA	NA	\N
+350769	WI	RACINE	FRANKSVILLE UNITED METHODIST CHURCH	10402 NORTHWESTERN AVE	 FRANKSVILLE	53126
+350770	WI	MILWAUKEE	LYDELL RECREATION CENTER	5205 N LYDELL AVE	 WHITEFISH BAY	53217
+350771	WI	GRANT	PLATTEVILLE NATIONAL GUARD ARMORY 4	475 N WATER ST	 PLATTEVILLE	53818
+350772	WI	MILWAUKEE	GLEN HILLS MIDDLE SCHOOL	2600 W MILL RD	 GLENDALE	53209
+350773	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 282	NA	NA	\N
+350774	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 305	NA	NA	\N
+350775	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 007	NA	NA	\N
+350776	WI	TREMPEALEAU	Town Of Gale	20037 Gibson St	Galesville	54630
+350777	WI	MILWAUKEE	WASHINGTON HIGH SCHOOL	2525 N SHERMAN BLVD	 MILWAUKEE	53210
+350778	WI	WAUKESHA	QUEEN OF APOSTLES SCHOOL	449 W WISCONSIN AVE	 PEWAUKEE	53072
+350779	WI	MILWAUKEE	NORTH SHORE LIBRARY	6800 N PORT WASHINGTON RD	 GLENDALE	53217
+350780	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 301	NA	NA	\N
+350781	WI	BROWN	ASHWAUBENON VILLAGE HALL	2155 HOLMGREN WAY	 ASHWAUBENON	54304
+350782	WI	ONEIDA	MINOCQUA COMMUNITY CENTER	415 MENOMINEE ST	 MINOCQUA	54548
+350783	WI	ROCK	BELOIT PUBLIC LIBRARY	605 ECLIPSE BLVD	 BELOIT	53511
+350784	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 023	NA	NA	\N
+350785	WI	PORTAGE	STEVENS POINT TRANSIT	2700 WEEK ST	 STEVENS POINT	54482
+350786	WI	WAUKESHA	DOUSMAN VILLAGE HALL	118 S MAIN ST	 DOUSMAN	53118
+350787	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 122	NA	NA	\N
+350788	WI	MILWAUKEE	LAKE  TOWN WATER TOWER	4001 S 6TH ST	 MILWAUKEE	53221
+350789	WI	DANE	DISTRICT #3-STOUGHTON UNITED METHODIST CHURCH	525 LINCOLN AVE	 STOUGHTON	53589
+350790	WI	WAUKESHA	MENOMONEE FALLS PUBLIC LIBRARY	W156N8436 PILGRIM RD	 MENOMONEE FLS	53051
+350791	WI	LACROSSE	SHELBY TOWN HALL ANNEX	2801 WARD AVE	 LA CROSSE	54601
+350792	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 022	NA	NA	\N
+350793	WI	ONEIDA	SUGAR CAMP TOWN HALL	4059 CAMP FOUR RD	 RHINELANDER	54501
+350794	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 107	NA	NA	\N
+350795	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 081	NA	NA	\N
+350796	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 036	NA	NA	\N
+350797	WI	WAUKESHA	SUSSEX NATIONAL GUARD ARMORY	W239N5678 MAPLE AVE	 SUSSEX	53089
+350798	WI	VILAS	LAND O'LAKES TOWN HALL	4331 COUNTY ROAD B	 LAND O LAKES	54540
+350799	WI	FOND DU LAC	FOND DU LAC TOWN HALL	W5990 PIONEER RD	 FOND DU LAC	54935
+350800	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 023	NA	NA	\N
+350801	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 306	NA	NA	\N
+350802	WI	COLUMBIA	PACIFIC TOWN HALL	W7530 STATE ROAD 16	 PARDEEVILLE	53954
+350803	WI	DANE	GOOD SHEPHERD LUTHERAN CHURCH	5701 RAYMOND RD	 MADISON	53711
+350804	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 085	NA	NA	\N
+350805	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 245	NA	NA	\N
+350806	WI	RACINE	LAKEVIEW COMMUNITY CENTER	201 GOOLD ST	 RACINE	53402
+350807	WI	JACKSON	BLACK RIVER FALLS CITY HALL	101 S 2ND ST	 BLK RIVER FLS	54615
+350808	WI	MILWAUKEE	LAKEVIEW ELEMENTARY SCHOOL	711 MARION AVE	 S MILWAUKEE	53172
+350809	WI	ROCK	FULTON TOWN HALL	2738 W FULTON CENTER DR	 EDGERTON	53534
+350810	WI	DANE	BELLEVILLE VILLAGE HALL	24 W MAIN ST	 BELLEVILLE	53508
+350811	WI	ONEIDA	NEWBOLD TOWN HALL	4590 HIGHWAY 47	 RHINELANDER	54501
+350812	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 006	NA	NA	\N
+350813	WI	VILAS	CLOVERLAND TOWN HALL	5860 PERCH LAKE RD	 EAGLE RIVER	54521
+350814	WI	DANE	BRISTOL TOWN HALL	7747 COUNTY ROAD N	 SUN PRAIRIE	53590
+350815	WI	DANE	SPRINGDALE TOWN HALL	2379 TOWN HALL RD	 MOUNT HOREB	53572
+350816	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 130	NA	NA	\N
+350817	WI	PIERCE	OAK GROVE TOWN HALL	N4939 1100TH ST	 PRESCOTT	54021
+350818	WI	DUNN	LEISURE SERVICES CENTER	1412 6TH ST E	 MENOMONIE	54751
+350819	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 185	NA	NA	\N
+350820	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 263	NA	NA	\N
+350821	WI	DANE	DEERFIELD FIRE STATION	305 N INDUSTRIAL PARK RD	 DEERFIELD	53531
+350822	WI	DUNN	Dunn - City Of Menomonie - Dunn County - Ward 004	NA	NA	\N
+350823	WI	WINNEBAGO	NEENAH POLICE STATION	2111 MARATHON AVE	 NEENAH	54956
+350824	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 008	NA	NA	\N
+350825	WI	WOOD	MARSHFIELD PUBLIC LIBRARY	211 E 2ND STREET	 MARSHFIELD	54449
+350826	WI	EAU CLAIRE	EAU CLAIRE CHILDREN'S THEATRE	1814 N OXFORD AVE	 EAU CLAIRE	54703
+350827	WI	KENOSHA	SALEM TOWN HALL	9814 ANTIOCH RD	 SALEM	53168
+350828	WI	ST CROIX	RICHMOND TOWN HALL	1428 100TH ST	 NEW RICHMOND	54017
+350829	WI	DOOR	GIBRALTAR COMMUNITY BUILDING	4097 MAIN ST	 FISH CREEK	54212
+350830	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 006	NA	NA	\N
+350831	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 254	NA	NA	\N
+350832	WI	BROWN	WOODLAND WORSHIP CENTER	760 AIRPORT DR	 ONEIDA	54155
+350833	WI	BROWN	IDLEWILD PARK BUILDING	1500 COTTON DR	 SUAMICO	54173
+350834	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 242	NA	NA	\N
+350835	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 009	NA	NA	\N
+350836	WI	OZAUKEE	THIENSVILLE MUNICIPAL CENTER	250 ELM ST	 THIENSVILLE	53092
+350837	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 002	NA	NA	\N
+350838	WI	DANE	OREGON VILLAGE HALL - COMMUNITY ROOM	117 SPRING ST	 OREGON	53575
+350839	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 083	NA	NA	\N
+350840	WI	COLUMBIA	LODI CITY HALL	133 S MAIN ST	LODI	53555
+350841	WI	WAUKESHA	MERTON VILLAGE HALL	N67W28343 SUSSEX RD	 MERTON	53056
+350842	WI	MILWAUKEE	GOODRICH SCHOOL	8251 N CELINA ST	 MILWAUKEE	53224
+350843	WI	MARATHON	KRONENWETTER MUNICIPAL CENTER	1582 KRONENWETTER DR	 KRONENWETTER	54455
+350844	WI	BROWN	BELLEVUE COMMUNITY CENTER/FIRE STATION	1811 ALLOUEZ AVE	 GREEN BAY	54311
+350845	WI	RACINE	WATERFORD VILLAGE HALL	123 N RIVER ST	 WATERFORD	53185
+350846	WI	WAUKESHA	OCONOMOWOC FIRE STATION NO. 1	212 S CONCORD RD	 OCONOMOWOC	53066
+350847	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 116	NA	NA	\N
+350848	WI	MARINETTE	DUER GYMNASIUM	402 WILLIAMS ST	 MARINETTE	54143
+350849	WI	WASHINGTON	WAYNE TOWN HALL	6030 MOHAWK RD	 CAMPBELLSPORT	53010
+350850	WI	WAUKESHA	LORD OF LIFE CHURCH	N60W35980 LAKE DR	 OCONOMOWOC	53066
+350851	WI	OUTAGAMIE	LITTLE CHUTE CIVIC CENTER	625 GRAND AVE	 LITTLE CHUTE	54140
+350852	WI	DODGE	FIRST EVANGELICAL LUTHERAN CHURCH	309 W MACKIE ST	BEAVER DAM	53916
+350853	WI	OCONTO	TOWNSEND TOWN HALL	16564 ELM ST	 TOWNSEND	54175
+350854	WI	WAUPACA	DAYTON TOWN HALL	N2285 STATE ROAD 22	 WAUPACA	54981
+350855	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 008	NA	NA	\N
+350856	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 078	NA	NA	\N
+350857	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 006	NA	NA	\N
+350858	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 029	NA	NA	\N
+350859	WI	POLK	SAINT CROIX FALLS CITY HALL	710 STATE ROAD 35	 SAINT CROIX FALLS	54024
+350860	WI	CALUMET	PRINCE OF PEACE LUTHERAN CHURCH	2330 E CALUMET ST	 APPLETON	54915
+350861	WI	MILWAUKEE	LAKE BLUFF SCHOOL	1600 E LAKE BLUFF BLVD	 SHOREWOOD	53211
+350862	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 011	NA	NA	\N
+350863	WI	ST CROIX	UNITED METHODIST CHURCH	1401 LAUREL AVE	 HUDSON	54016
+350864	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 012	NA	NA	\N
+350865	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 005	NA	NA	\N
+350866	WI	SAUK	BARABOO CIVIC CENTER	124 2ND ST	 BARABOO	53913
+350867	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 106	NA	NA	\N
+350868	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 028	NA	NA	\N
+350869	WI	LINCOLN	T. B. Scott Library	106 W 1st St	Merrill	54452
+350870	WI	DANE	MOUNT HOREB PUBLIC LIBRARY	105 PERIMETER RD	 MOUNT HOREB	53572
+350871	WI	WAUKESHA	OCONOMOWOC TOWN HALL	W359N6812 BROWN ST	 OCONOMOWOC	53066
+350872	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 004	NA	NA	\N
+350873	WI	DANE	MOUNT HOREB SENIOR CENTER	107 N GROVE ST	 MOUNT HOREB	53572
+350874	WI	WALWORTH	LAFAYETTE TOWN HALL	W4614 POTTER RD	 ELKHORN	53121
+350875	WI	WASHINGTON	HARTFORD CITY HALL	109 N MAIN ST	 HARTFORD	53027
+350876	WI	ROCK	PLYMOUTH TOWN HALL	8219 HIGH ST	 ORFORDVILLE	53576
+350877	WI	MILWAUKEE	CUDAHY CITY HALL	5050 S LAKE DR	 CUDAHY	53110
+350878	WI	MILWAUKEE	WAUWATOSA LIBRARY	7635 W NORTH AVE	 WAUWATOSA	53213
+350879	WI	ROCK	EVANSVILLE FIRE STATION	425 WATER ST	 EVANSVILLE	53536
+350880	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 194	NA	NA	\N
+350881	WI	OZAUKEE	CEDARBURG COMMUNITY GYM	W63N641 WASHINGTON AVE	 CEDARBURG	53012
+350882	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 307	NA	NA	\N
+350883	WI	WAUKESHA	NEW BERLIN CITY HALL	3805 S CASPER DR	 NEW BERLIN	53151
+350884	WI	MILWAUKEE	SAINT MARK'S QUALITY OF LIFE CENTER II	1530 W ATKINSON AVE	 MILWAUKEE	53206
+350885	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 212	NA	NA	\N
+350886	WI	OUTAGAMIE	BUCHANAN TOWN HALL	N178 COUNTY RD N	 APPLETON	54915
+350887	WI	GREEN	Monroe Community Center	1110 18th Ave	Monroe	53566
+350888	WI	JEFFERSON	LAKE MILLS TOWN HALL	1111 S MAIN ST	 LAKE MILLS	53551
+350889	WI	WINNEBAGO	OMRO TOWN HALL	4205 RIVERMOOR RD	 OMRO	54963
+350890	WI	WINNEBAGO	SHATTUCK MIDDLE SCHOOL	600 ELM ST	 NEENAH	54956
+350891	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 295	NA	NA	\N
+350892	WI	MILWAUKEE	WHITEFISH BAY VILLAGE HALL	5300 N MARLBOROUGH DR	 WHITEFISH BAY	53217
+350893	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 019	NA	NA	\N
+350894	WI	WAUKESHA	CHRIST THE KING LUTHERAN CHURCH	1600 N GENESEE ST	 DELAFIELD	53018
+350895	WI	ST CROIX	TROY TOWN HALL	654 GLOVER RD	 HUDSON	54016
+350896	WI	WAUKESHA	WALES COMMUNITY BUILDING	216 W SOUTH ST	 WALES	53183
+350897	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 016	NA	NA	\N
+350898	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 079	NA	NA	\N
+350899	WI	BUFFALO	BUFFALO MUNICIPAL BUILDING	245 E 10TH ST	 BUFFALO CITY	54622
+350900	WI	KENOSHA	VILLAGE HALL - AUDITORIUM	9915 39TH AVE	 PLEASANT PR	53158
+350901	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 151	NA	NA	\N
+350902	WI	GREEN LAKE	PRINCETON TOWN HALL	N5871 COUNTY ROAD D	 PRINCETON	54968
+350903	WI	OZAUKEE	PORT WASHINGTON CITY HALL	100 W GRAND AVE	 PRT WASHINGTN	53074
+350904	WI	WINNEBAGO	HOOVER SCHOOL	950 HUNT AVE	 NEENAH	54956
+350905	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 187	NA	NA	\N
+350906	WI	DODGE	MATC	1300 W MAIN ST	 WATERTOWN	53098
+350907	WI	MARINETTE	Marinette - Town Of Dunbar - Marinette County - Ward 002	NA	NA	\N
+350908	WI	ST CROIX	FAITH COMMUNITY CHURCH	777 CARMICHAEL RD	 HUDSON	54016
+350909	WI	BROWN	SAINT BERNARD'S PARISH	2040 HILLSIDE LN	 GREEN BAY	54302
+350910	WI	DANE	WINDSOR MUNICIPAL BUILDING	4084 MUELLER RD	 DE FOREST	53532
+350911	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 280	NA	NA	\N
+350912	WI	SAUK	SPRING GREEN TOWN HALL	E4411 KENNEDY RD	 SPRING GREEN	53588
+350913	WI	WASHINGTON	KEWASKUM VILLAGE HALL	204 1ST ST	 KEWASKUM	53040
+350914	WI	BROWN	WRIGHTSTOWN VILLAGE HALL	352 HIGH ST	 WRIGHTSTOWN	54180
+350915	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 174	NA	NA	\N
+350916	WI	WASHINGTON	JACK RUSSELL MEMORIAL LIBRARY	100 PARK AVE	 HARTFORD	53027
+350917	WI	ROCK	BELOIT TOWN HALL	2871 S AFTON RD	 BELOIT	53511
+350918	WI	WAUKESHA	MERTON TOWN HALL	W314N7624 STATE ROAD 83	 HARTLAND	53029
+350919	WI	JEFFERSON	JOHNSON CREEK VILLAGE HALL	125 DEPOT ST	 JOHNSON CREEK	53038
+350920	WI	WINNEBAGO	MAPLEWOOD MIDDLE SCHOOL	1600 MIDWAY RD	 MENASHA	54952
+350921	WI	SHEBOYGAN	CEDAR GROVE PUBLIC LIBRARY	131 VAN ALTENA AVE	 CEDAR GROVE	53013
+350922	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 211	NA	NA	\N
+350923	WI	DANE	PLEASANT SPRINGS TOWN HALL	2354 COUNTY ROAD N	 STOUGHTON	53589
+350924	WI	MILWAUKEE	PARKLAWN YMCA	4340 N 46TH ST	 MILWAUKEE	53216
+350925	WI	MILWAUKEE	HALES CORNERS VILLAGE HALL	5635 S NEW BERLIN RD	 HALES CORNERS	53130
+350926	WI	DANE	Dane - City Of Madison - Dane County - Ward 089	NA	NA	\N
+350927	WI	WAUPACA	FARMINGTON TOWN HALL	E913 PRAIRIE VIEW LN	 WAUPACA	54981
+350928	WI	DODGE	FAITH COMMUNITY CHURCH	401 STONE ST	 BEAVER DAM	53916
+350929	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 002	NA	NA	\N
+350930	WI	VERNON	BERGEN TOWN HALL	N2094 PROKSCH COULEE RD	 STODDARD	54658
+350931	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 009	NA	NA	\N
+350932	WI	OZAUKEE	FREDONIA MUNICIPAL HALL	242 FREDONIA AVE	 FREDONIA	53021
+350933	WI	DANE	DISTRICT #1-FIRST LUTHERAN CHURCH	310 E WASHINGTON ST	 STOUGHTON	53589
+350934	WI	SHEBOYGAN	Village Hall - Community Center	913 S WISCONSIN DR	 HOWARDS GROVE	53083
+350935	WI	ADAMS	DELL PRAIRIE TOWN HALL	763 COUNTY ROAD K	 WISC DELLS	53965
+350936	WI	KENOSHA	VILLAGE HALL - COURTROOM	9915 39TH AVE	 PLEASANT PR	53158
+350937	WI	COLUMBIA	CALEDONIA TOWN HALL	N5479 BEICH RD	 PORTAGE	53901
+350938	WI	ROCK	CENTER TOWN HALL	9119 W COUNTY ROAD A	 EVANSVILLE	53536
+350939	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 195	NA	NA	\N
+350940	WI	ONEIDA	THREE LAKES COMMUNITY BUILDING	6965 W SCHOOL ST	 THREE LAKES	54562
+350941	WI	WAUKESHA	Hillside Community Church	S93W30580 COUNTY ROAD NN	 MUKWONAGO	53149
+350942	WI	RACINE	MESSIAH LUTHERAN CHURCH	3015 PRITCHARD DR	 RACINE	53406
+350943	WI	PIERCE	Ellsworth Village Hall	130 N CHESTNUT ST	 ELLSWORTH	54011
+350944	WI	DOOR	SISTER BAY FIRE STATION	2258 MILL RD	 SISTER BAY	54234
+350945	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 181	NA	NA	\N
+350946	WI	OUTAGAMIE	KIMBERLY VILLAGE HALL WILLOW	515 W KIMBERLY AVE	 KIMBERLY	54136
+350947	WI	WINNEBAGO	WINCHESTER TOWN HALL	8522 PARKWAY LN	 LARSEN	54947
+350948	WI	DANE	CHRIST LUTHERAN CHURCH	220 S MAIN STREET	 DE FOREST	53532
+350949	WI	JEFFERSON	IXONIA TOWN HALL	W1195 MARIETTA AVE	 IXONIA	53036
+350950	WI	OZAUKEE	FREDONIA VILLAGE HALL	242 FREDONIA AVE	 FREDONIA	53021
+350951	WI	WALWORTH	SUGAR CREEK TOWN HALL	N6641 COUNTY ROAD H	 ELKHORN	53121
+350952	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 134	NA	NA	\N
+350953	WI	WASHINGTON	ERIN TOWN HALL	1846 STATE ROAD 83	 HARTFORD	53027
+350954	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 006	NA	NA	\N
+350955	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 008	NA	NA	\N
+350956	WI	ST CROIX	GLENWOOD CITY COMMUNITY CENTER	217 W OAK ST	 GLENWOOD CITY	54013
+350957	WI	KENOSHA	SOMERS VILLAGE/TOWN HALL	7511 12TH ST	 KENOSHA	53144
+350958	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 111	NA	NA	\N
+350959	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 034	NA	NA	\N
+350960	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 248	NA	NA	\N
+350961	WI	FOND DU LAC	EMPIRE TOWN HALL	W3675 FOURTH ST RD	 FOND DU LAC	54937
+350962	WI	BROWN	SAINT JOSEPH'S PAROCHIAL SCHOOL	1224 12TH AVE	 GREEN BAY	54304
+350963	WI	OZAUKEE	Ozaukee - City Of Cedarburg - Ozaukee County - Ward 009	NA	NA	\N
+350964	WI	WASHINGTON	JACKSON TOWN HALL	3146 DIVISION RD	 JACKSON	53037
+350965	WI	MARATHON	RIB MOUNTAIN MUNICIPAL CENTER	3700 N MOUNTAIN RD	 WAUSAU	54401
+350966	WI	JUNEAU	Necedah Town Hall	101 CENTER ST	 NECEDAH	54646
+350967	WI	PIERCE	PRESCOTT CITY HALL	800 BORNER ST N	 PRESCOTT	54021
+350968	WI	MARINETTE	CRIVITZ VILLAGE HALL	800 HENRIETTE AVE	 CRIVITZ	54114
+350969	WI	WASHINGTON	POLK TOWN HALL	3680 STATE ROAD 60	 SLINGER	53086
+350970	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 010	NA	NA	\N
+350971	WI	DODGE	WESTFORD TOWN HALL	W11101 COUNTY ROAD G	 BEAVER DAM	53916
+350972	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 008	NA	NA	\N
+350973	WI	PIERCE	TRENTON TOWN HALL	W7926 250TH AVE	 HAGER CITY	54014
+350974	WI	ONEIDA	PINE LAKE COMMUNITY BUILDING	4197 RIVER RD	 RHINELANDER	54501
+350975	WI	LINCOLN	Lincoln County Service Center	801 N Sales St	Merrill	54452
+350976	WI	MARINETTE	PESHTIGO TOWN HALL	W2435 OLD PESHTIGO RD	 MARINETTE	54143
+350977	WI	WASHINGTON	CROSSWAY CHURCH	W156N10041 PILGRIM RD	 GERMANTOWN	53022
+350978	WI	EAU CLAIRE	SEYMOUR TOWN HALL	6500 TOWER DR	 EAU CLAIRE	54703
+350979	WI	WAUKESHA	OTTAWA TOWN HALL	W360S3337 STATE ROAD 67	 DOUSMAN	53118
+350980	WI	COLUMBIA	LODI CITY HALL	130 S MAIN ST	 LODI	53555
+350981	WI	DANE	RUTLAND TOWN HALL	785 CENTER RD	 STOUGHTON	53589
+350982	WI	WALWORTH	LA GRANGE TOWN HALL	N7988 COUNTY ROAD H	 WHITEWATER	53190
+350983	WI	BARRON	CEDAR LAKE TOWN HALL	2696 26 3/4 AVE	 MIKANA	54857
+350984	WI	IOWA	ARENA TOWN HALL	148 US HIGHWAY 14	 ARENA	53503
+350985	WI	WAUKESHA	AMERICAN LEGION POST #399	N59W34760 WISCONSIN AVE	 OKAUCHEE	53069
+350986	WI	RACINE	WATERFORD TOWN HALL	415 N MILWAUKEE ST	 WATERFORD	53185
+350987	WI	PIERCE	Pierce - City Of Prescott - Pierce County - Ward 004	NA	NA	\N
+350988	WI	FOND DU LAC	EDEN COMMUNITY CENTER	104 S PINE ST	 EDEN	53019
+350989	WI	DANE	ROXBURY TOWN HALL	7161 KIPPLEY RD	 SAUK CITY	53583
+350990	WI	LANGLADE	ANTIGO TOWN HALL	W9291 STATE HIGHWAY 64	 ANTIGO	54409
+350991	WI	WALWORTH	EAST TROY TOWN HALL	N9330 STEWART SCHOOL RD	 EAST TROY	53120
+350992	WI	PIERCE	MEYER MIDDLE SCHOOL	230 N 9TH ST	 RIVER FALLS	54022
+350993	WI	PORTAGE	STEVENS POINT NATIONAL GUARD ARMORY	3116 JEFFERSON ST	 STEVENS POINT	54481
+350994	WI	WALWORTH	LAKE GENEVA FIRE DEPT STATION 1	730 MARSHALL ST	 LAKE GENEVA	53147
+350995	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 119	NA	NA	\N
+350996	WI	SAUK	MERRIMAC TOWN HALL	S6911 STATE ROAD 113	 MERRIMAC	53561
+350997	WI	IOWA	DODGEVILLE TOWN HALL	108 E LEFFLER ST	 DODGEVILLE	53533
+350998	WI	DOOR	TOWN OF UNION COMMUNITY CENTER & TOWN HALL	905 COUNTY HIGHWAY DK	 BRUSSELS	54204
+350999	WI	MILWAUKEE	SAMUEL CLEMENS SCHOOL	3600 W HOPE AVE	 MILWAUKEE	53216
+351000	WI	SHEBOYGAN	LIMA TOWN HALL	N3689 COUNTY ROAD I	 SHEBOYGAN FALLS	53085
+351001	WI	GREEN LAKE	BERLIN TOWN HALL	N9291 WILLARD RD	 BERLIN	54923
+351002	WI	BROWN	Pulaski Municipal Building	585 E GLENBROOK DR	 PULASKI	54162
+351003	WI	ADAMS	JACKSON TOWN HALL	398 STATE ROAD 82	 OXFORD	53952
+351004	WI	OZAUKEE	CROSSROADS CHURCH	6031 W CHAPEL HILL RD	 MEQUON	53097
+351005	WI	WINNEBAGO	CLAYTON TOWN HALL	8348 COUNTY ROAD T	 LARSEN	54947
+351006	WI	LACROSSE	FARMINGTON TOWN HALL	N8309 STATE ROAD 108	 MINDORO	54644
+351007	WI	WASHINGTON	Slinger Municipal Garage	220 SLINGER RD	 SLINGER	53086
+351008	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 202	NA	NA	\N
+351009	WI	WASHINGTON	BARTON TOWN HALL	3482 TOWN HALL RD	 KEWASKUM	53040
+351010	WI	POLK	LUCK VILLAGE HALL	401 S MAIN ST	 LUCK	54853
+351011	WI	WAUKESHA	SUMMIT VILLAGE HALL	2911N N DOUSMAN RD	 OCONOMOWOC	53066
+351012	WI	EAU CLAIRE	LUDINGTON TOWN HALL	E19980 COUNTY ROAD D	 FALL CREEK	54742
+351013	WI	OCONTO	LAKEWOOD TOWN HALL	17181 TWIN PINES RD	 LAKEWOOD	54138
+351014	WI	ASHLAND	Ashland - City Of Ashland - Multiple Counties - Ward 007	NA	NA	\N
+351015	WI	ST CROIX	BALDWIN COMMUNITY CENTER	400 CEDAR ST	 BALDWIN	54002
+351016	WI	RACINE	NORWAY TOWN HALL	6419 HEG PARK RD	 WIND LAKE	53185
+351017	WI	WAUKESHA	WAGNER PARK	N31W23320 GREEN RD	 PEWAUKEE	53072
+351018	WI	MARINETTE	WAUSAUKEE TOWN HALL	N11856 US HIGHWAY 141	 WAUSAUKEE	54177
+351019	WI	SHEBOYGAN	RHINE TOWN HALL	W5250 COUNTY ROAD FF	 ELKHART LAKE	53020
+351020	WI	BROWN	GREEN BAY TOWN HALL	5999 COUNTY ROAD K	 NEW FRANKEN	54229
+351021	WI	WALWORTH	WILLIAMS BAY VILLAGE HALL	250 WILLIAMS ST	 WILLIAMS BAY	53191
+351022	WI	BROWN	DENMARK VILLAGE HALL	118 E MAIN ST	 DENMARK	54208
+351023	WI	DANE	CROSS PLAINS TOWN HALL	3734 COUNTY ROAD P	 CROSS PLAINS	53528
+351024	WI	DODGE	RUBICON TOWN HALL	N3864 COUNTY ROAD P	 RUBICON	53078
+351025	WI	WASHINGTON	WEST BEND TOWN HALL	6355 COUNTY ROAD Z	 WEST BEND	53095
+351026	WI	POLK	ALDEN TOWN HALL	183 155TH ST	 STAR PRAIRIE	54026
+351027	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 007	NA	NA	\N
+351028	WI	SAUK	GREENFIELD TOWN HALL	E13098 COUNTY ROAD W	 BARABOO	53913
+351029	WI	LINCOLN	BRADLEY TOWN HALL	1518 W MOHAWK DR	 TOMAHAWK	54487
+351030	WI	KENOSHA	UW-PARKSIDE CAMPUS	4001 OUTER LOOP RD	 KENOSHA	53144
+351031	WI	SAWYER	SAND LAKE MUNICIPAL BUILDING	6058 N STONE LAKE RD	 STONE LAKE	54876
+351032	WI	JEFFERSON	KOSHKONONG TOWN SHOP	W5609 STAR SCHOOL RD	 FORT ATKINSON	53538
+351033	WI	DUNN	TAINTER TOWN HALL	N8150 COUNTY ROAD D	 COLFAX	54730
+351034	WI	WAUKESHA	MUKWONAGO VILLAGE HALL	440 RIVERCREST CT	 MUKWONAGO	53149
+351035	WI	WAUKESHA	MUKWONAGO TOWN HALL	W320S8315 BEULAH RD	 MUKWONAGO	53149
+351036	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 013	NA	NA	\N
+351037	WI	CHIPPEWA	WHEATON TOWN HALL	4975 COUNTY HIGHWAY T	 CHIPPEWA FALLS	54729
+351038	WI	TAYLOR	MEDFORD TOWN HALL	W6462 CENTER AVE	 MEDFORD	54451
+351039	WI	SHEBOYGAN	GREENBUSH TOWN HALL	N6644 SUGARBUSH RD	 GLENBEULAH	53023
+351040	WI	DOUGLAS	WITC CONF CENTER	603 North 21st Street	SUPERIOR	54880
+351041	WI	SHAWANO	Cecil Comm Hall/Tn of Wash Fire Station	111 E HOFMAN ST	 CECIL	54111
+351042	WI	WAUPACA	LEBANON TOWN HALL	N5844 BUELOW RD	 NEW LONDON	54961
+351043	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 209	NA	NA	\N
+351044	WI	PORTAGE	HI-RISE MANOR	1300 BRIGGS CT	 STEVENS POINT	54481
+351045	WI	OZAUKEE	BELGIUM VILLAGE HALL	104 PETER THEIN AVE	 BELGIUM	53004
+351046	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 215	NA	NA	\N
+351047	WI	JEFFERSON	WATERTOWN TOWN HALL	N8302 HIGH RD	 WATERTOWN	53094
+351048	WI	GRANT	PLATTEVILLE TOWN HALL	880 MASON ST	 PLATTEVILLE	53818
+351049	WI	LINCOLN	City Hall	1004 E 1st St	Merrill	54452
+351050	WI	ADAMS	BIG FLATS TOWN HALL	1104 COUNTY ROAD C	 ARKDALE	54613
+351051	WI	KENOSHA	Holy Cross Church	18700 116th St	Bristol	53104
+351052	WI	OZAUKEE	TOWN OF CEDARBURG FIRE STATION NO. 2	1350 COVERED BRIDGE RD	 CEDARBURG	53012
+351053	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 241	NA	NA	\N
+351054	WI	DODGE	TRINITY CHURCH - UNITED METHODIST	308 ONEIDA ST	 BEAVER DAM	53916
+351055	WI	ONEIDA	CRESCENT TOWN HALL	3231 GOLF COURSE RD	 RHINELANDER	54501
+351056	WI	DOOR	WASHINGTON COMMUNITY CENTER	910 MAIN RD	 WASHINGTON IS	54246
+351057	WI	BAYFIELD	IRON RIVER COMMUNITY CENTER	8275 E MILL ST	 IRON RIVER	54847
+351058	WI	KEWAUNEE	LUXEMBURG MUNICIPAL BUILDING	206 MAPLE ST	 LUXEMBURG	54217
+351059	WI	FOND DU LAC	OSCEOLA TOWN HALL	W1476 COUNTY ROAD F	 CAMPBELLSPORT	53010
+351060	WI	SHEBOYGAN	PLYMOUTH TOWN HALL	120 SUHRKE RD	 PLYMOUTH	53073
+351061	WI	MARATHON	D.C. EVEREST PROFESSIONAL DEVELOPMENT CENTER	4704 CAMP PHILLIPS RD	 WESTON	54476
+351062	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 292	NA	NA	\N
+351063	WI	MONROE	LA GRANGE TOWN HALL	22731 FLINT AVE	 TOMAH	54660
+351064	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 011	NA	NA	\N
+351065	WI	EAU CLAIRE	CEDARCREEK COMMUNITY CHURCH	3520 EASTWIND DR	 EAU CLAIRE	54701
+351066	WI	MONROE	SPARTA TOWN HALL	5724 HAMLET AVE	 SPARTA	54656
+351067	WI	WAUKESHA	VERNON FIRE STATION NO. 1	W233S7475 WOODLAND LN	 BIG BEND	53103
+351068	WI	POLK	OSCEOLA TOWN HALL	516 N EAST AVE	 DRESSER	54009
+351069	WI	SHEBOYGAN	HERMAN TOWN HALL	N8139 FRANKLIN RD	 PLYMOUTH	53073
+351070	WI	DANE	ALBION TOWN HALL	620 ALBION RD	 EDGERTON	53534
+351071	WI	PORTAGE	DEWEY TOWN HALL	430 DEWEY DR	 STEVENS POINT	54482
+351072	WI	RACINE	RAYMOND TOWN HALL	2255 76TH ST	 FRANKSVILLE	53126
+351073	WI	WASHINGTON	FARMINGTON TOWN HALL	9422 STATE ROAD 144	 KEWASKUM	53040
+351074	WI	ADAMS	SPRINGVILLE TOWN HALL	3243 STATE HIGHWAY 13	 WISC DELLS	53965
+351075	WI	DOUGLAS	SOLON SPRINGS TOWN HALL	11407 S CEMETERY RD	 SOLON SPRINGS	54873
+351076	WI	DANE	COTTAGE GROVE TOWN HALL	4058 COUNTY ROAD N	 COTTAGE GROVE	53527
+351077	WI	DANE	Dane - City Of Madison - Dane County - Ward 053	NA	NA	\N
+351078	WI	SHAWANO	WESCOTT TOWN HALL	N6251 LAKE DR	 SHAWANO	54166
+351079	WI	COLUMBIA	RIO VILLAGE HALL	205 LINCOLN AVE	 RIO	53960
+351080	WI	DANE	BURKE TOWN HALL	5365 REINER RD	 MADISON	53718
+351081	WI	MILWAUKEE	HILLSIDE FAMILY RESOURCE CENTER	1452 N 7TH ST	 MILWAUKEE	53205
+351082	WI	WAUKESHA	EAGLE MUNICIPAL BUILDING	820 E MAIN ST	 EAGLE	53119
+351083	WI	DODGE	ASHIPPUN TOWN HALL	W1266 COUNTY ROAD O	 OCONOMOWOC	53066
+351084	WI	COLUMBIA	COLUMBUS SENIOR CENTER	125 N DICKASON BLVD	 COLUMBUS	53925
+351085	WI	VILAS	PHELPS FIRE HALL	4495 TOWN HALL RD	 PHELPS	54554
+351086	WI	WAUPACA	MATTESON TOWN HALL	N10891 JEPSON RD	 CLINTONVILLE	54929
+351087	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 141	NA	NA	\N
+351088	WI	BROWN	SCOTT TOWN HALL	2621 JODY DR	 NEW FRANKEN	54229
+351089	WI	WAUKESHA	BRANDYBROOK SCHOOL	S11W29980 SUMMIT AVE	 WAUKESHA	53188
+351090	WI	BROWN	EATON TOWN HALL	3063 S COUNTY ROAD T	 GREEN BAY	54311
+351091	WI	DANE	DE FOREST AREA PUBLIC LIBRARY	203 LIBRARY ST	 DE FOREST	53532
+351092	WI	BAYFIELD	BARNES TOWN HALL	3360 COUNTY HWY N	 BARNES	54873
+351093	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 308	NA	NA	\N
+351094	WI	MARATHON	GREENHECK FIELDHOUSE	6400 ALDERSON ST	 WESTON	54476
+351095	WI	WAUKESHA	NASHOTAH VILLAGE HALL	N44W32950 WATERTOWN PLANK RD	 NASHOTAH	53058
+351096	WI	ONEIDA	WOODRUFF TOWN HALL	1418 1ST AVE	 WOODRUFF	54568
+351097	WI	MONROE	LEON TOWN HALL	8108 JACKRABBIT AVE	 SPARTA	54656
+351098	WI	RACINE	STURTEVANT MUNICIPAL BUILDING	2801 89TH ST	 STURTEVANT	53177
+351099	WI	CRAWFORD	BRIDGEPORT TOWN HALL	38466 OLD SCHOOL LN	 PRAIRIE DU CHIEN	53821
+351100	WI	CALUMET	Brillion Municipal Building	N8892 RANDOLPH STREET	 FOREST JUNCTION	\N
+351101	WI	DOOR	EGG HARBOR TOWN HALL	5242 COUNTY I	 STURGEO BAY	54235
+351102	WI	SHEBOYGAN	HOLLAND TOWN HALL	W3005 COUNTY ROAD G	 CEDAR GROVE	53013
+351103	WI	WAUSHARA	AURORA TOWN HALL	W2319 STATE ROAD 21	 BERLIN	54923
+351104	WI	DUNN	DUNN TOWN HALL	E4583 COUNTY ROAD C	 MENOMONIE	54751
+351105	WI	ONEIDA	NOKOMIS TOWN HALL	2541 LAKE NOKOMIS RD	 TOMAHAWK	54487
+351106	WI	BAYFIELD	WASHBURN CITY HALL	119 WASHINGTON AVE	 WASHBURN	54891
+351107	WI	FOND DU LAC	FOREST TOWN HALL	N5739 COUNTY RD W	 MOUNT CALVARY	53057
+351108	WI	JEFFERSON	Aztalan Town Hall	W6260 COUNTY ROAD B	 JEFFERSON	53549
+351109	WI	WALWORTH	TROY TOWN HALL	N8870 BRIGGS ST	 EAST TROY	53120
+351110	WI	DANE	COTTAGE GROVE VILLAGE HALL	221 E COTTAGE GROVE RD	 COTTAGE GROVE	53527
+351111	WI	JEFFERSON	OAKLAND TOWN HALL	N4450 COUNTY ROAD A	 CAMBRIDGE	53523
+351112	WI	SHEBOYGAN	RANDOM LAKE VILLAGE HALL	96 RUSSELL DR	 RANDOM LAKE	53075
+351113	WI	WOOD	GRAND RAPIDS MUNICIPAL BUILDING	2410 48TH ST S	 WISC RAPIDS	54494
+351114	WI	MANITOWOC	SAINT PETER SCHOOL	1322 33RD ST	 TWO RIVERS	54241
+351115	WI	KEWAUNEE	AHNAPEE TOWN HALL	303 N WATER ST	 ALGOMA	54201
+351116	WI	LINCOLN	KING TOWN HALL	W4450 COUNTY ROAD A	 TOMAHAWK	54487
+351117	WI	EAU CLAIRE	MESSIAH LUTHERAN CHURCH	2015 N HASTINGS WAY	 EAU CLAIRE	54703
+351118	WI	POLK	MILLTOWN FIRE HALL	127 EIDER ST	 MILLTOWN	54858
+351119	WI	ROCK	MILTON TOWN HALL	23 1ST ST	 MILTON	53563
+351120	WI	OCONTO	CHASE COMMUNITY HALL	8481 COUNTY RD S	 PULASKI	54162
+351121	WI	BARRON	STANLEY TOWN HALL	2026 15TH AVE	 CAMERON	54822
+351122	WI	WAUKESHA	WAUKESHA TOWN FIRE STATION	W250S3567 CENTER RD	 WAUKESHA	53189
+351123	WI	DODGE	MAYVILLE CITY HALL	15 S SCHOOL ST	 MAYVILLE	53050
+351124	WI	KEWAUNEE	FRANKLIN TOWN HALL	N1885 COUNTY ROAD AB	 DENMARK	54208
+351125	WI	BUFFALO	MONDOVI CITY HALL	156 S FRANKLIN ST	 MONDOVI	54755
+351126	WI	DOUGLAS	SUPERIOR TOWN HALL	4917 S STATE ROAD 35	 SUPERIOR	54880
+351127	WI	WINNEBAGO	Town Hall	380 E Black Wolf Ave	Oshkosh	54902
+351128	WI	JEFFERSON	PALMYRA VILLAGE HALL	100 W TAFT ST	 PALMYRA	53156
+351129	WI	DANE	SHOREWOOD HILLS VILLAGE HALL	810 SHOREWOOD BLVD	 MADISON	53705
+351130	WI	DUNN	SPRING BROOK TOWN HALL	N3519 810TH ST	 ELK MOUND	54739
+351131	WI	ROCK	PORTER TOWN HALL	8809 N WILDER RD	 EDGERTON	53534
+351132	WI	POLK	CUSHING COMMUNITY CENTER	2510 241ST ST	 CUSHING	54006
+351133	WI	PORTAGE	AMHERST VILLAGE HALL	160 MILL ST	 AMHERST	54406
+351134	WI	LACROSSE	HOLLAND TOWN HALL	W7937 COUNTY ROAD MH	 HOLMEN	54636
+351135	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 121	NA	NA	\N
+351136	WI	OCONTO	Abrams Town Hall	5877 MAIN ST	 ABRAMS	54101
+351137	WI	WAUKESHA	Community Room 1	13600 JUNEAU BLVD	 ELM GROVE	53122
+351138	WI	CALUMET	Brillion Community Center	120 Center St	Brillion	54110
+351139	WI	DANE	MONONA COMMUNITY CENTER	1011 NICHOLS RD	 MONONA	53716
+351140	WI	FOND DU LAC	ROSENDALE MUNICIPAL BUILDING	211 N GRANT ST	 ROSENDALE	54974
+351141	WI	PORTAGE	EAU PLEINE TOWN HALL	3191 STATE HIGHWAY 34	 JUNCTION CITY	54443
+351142	WI	MARATHON	ROTHSCHILD VILLAGE HALL B	211 GRAND AVE	 ROTHSCHILD	54474
+351143	WI	WAUPACA	THE RECREATION CENTER	407 SCHOOL ST	 WAUPACA	54981
+351144	WI	MANITOWOC	CATO TOWN HALL	14004 UPPER FALLS RD	 CATO	54230
+351145	WI	PIERCE	CLIFTON TOWN HALL	W11705 COUNTY ROAD FF	 RIVER FALLS	54022
+351146	WI	LACROSSE	BURNS TOWN HALL	W1313 JEWETT RD	 BANGOR	54614
+351147	WI	WALWORTH	LINN TOWN HALL	W3728 FRANKLIN WALSH ST	 ZENDA	53195
+351148	WI	VILAS	PRESQUE ISLE TOWN HALL	8306 SCHOOL LOOP RD	 PRESQUE ISLE	54557
+351149	WI	WAUPACA	MUKWA TOWN HALL	E8514 WEYAUWEGA RD	 NEW LONDON	54961
+351150	WI	DOOR	LIBERTY GROVE TOWN HALL	11161 OLD STAGE RD	 SISTER BAY	54234
+351151	WI	OUTAGAMIE	CENTER TOWN HALL	N3990 STATE HWY 47	 APPLETON	54914
+351152	WI	WAUKESHA	CHURCH OF THE RESURRECTION	W287N3700 COUNTY HIGHWAY KE	 PEWAUKEE	53072
+351153	WI	ADAMS	ADAMS TOWN HALL	1980 11TH AVE	 FRIENDSHIP	53934
+351154	WI	MILWAUKEE	FOX POINT POLICE DEPARTMENT	7300 N SANTA MONICA BLVD	 FOX POINT	53217
+351155	WI	JEFFERSON	SULLIVAN TOWN HALL	N3866 WEST ST	 SULLIVAN	53178
+351156	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 247	NA	NA	\N
+351157	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 178	NA	NA	\N
+351158	WI	OZAUKEE	RANGE LINE RECREATION CENTER	11040 N RANGE LINE RD	 MEQUON	53092
+351159	WI	DANE	OREGON TOWN HALL	1138 UNION RD	 OREGON	53575
+351160	WI	GREEN LAKE	BERLIN NATIONAL GUARD ARMORY	147 MEMORIAL DR	 BERLIN	54923
+351161	WI	WASHINGTON	MORAINE PARK TECHNICAL COLLEGE	2151 N MAIN ST	 WEST BEND	53090
+351162	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 183	NA	NA	\N
+351163	WI	LACROSSE	WEST SALEM COMMUNITY CENTER	175 LEONARD ST S	 WEST SALEM	54669
+351164	WI	DODGE	GRACE PRESBYTERIAN CHURCH	215 GOULD ST	 BEAVER DAM	53916
+351165	WI	MILWAUKEE	LONGACRE PAVILION	7343 N LONGACRE RD	 FOX POINT	53217
+351166	WI	WINNEBAGO	ROOSEVELT ELEMENTARY SCHOOL	215 E FOREST AVE	 NEENAH	54956
+351167	WI	VILAS	MANITOWISH WATERS TOWN HALL	4 AIRPORT RD	 MANITOWISH WATERS	54545
+351168	WI	DANE	DANE TOWN HALL	213 W MAIN ST	 DANE	53529
+351169	WI	BAYFIELD	CABLE COMMUNITY CENTER	13660 COUNTY HIGHWAY M	 CABLE	54821
+351170	WI	SAUK	Village of Prairie du Sac	335 GALENA ST	 PR DU SAC	53578
+351171	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 203	NA	NA	\N
+351172	WI	SHEBOYGAN	LYNDON TOWN HALL	W6081 COUNTY RD N	 PLYMOUTH	53073
+351173	WI	JEFFERSON	JEFFERSON CITY HALL	317 S MAIN ST	 JEFFERSON	53549
+351174	WI	DANE	VERMONT TOWN HALL	4017 COUNTY ROAD JJ	 BLACK EARTH	53515
+351175	WI	TREMPEALEAU	TOWN OF TREMPEALEAU TOWN HALL	W24854 STATE ROAD 54 93	 GALESVILLE	54630
+351176	WI	LINCOLN	PINE RIVER TOWN HALL	N1647 DEER RUN AVE	 MERRILL	54452
+351177	WI	SAUK	MARSHALL MEMORIAL HALL	30 WISCONSIN DELLS PARKWAY SOUTH	 LAKE DELTON	53940
+351178	WI	OCONTO	MORGAN TOWN HALL	3276 COUNTY ROAD C	 OCONTO FALLS	54154
+351179	WI	BURNETT	JACKSON TOWN HALL	4599 COUNTY ROAD A	 WEBSTER	54893
+351180	WI	RICHLAND	BUENA VISTA TOWN HALL	32886 SOUTH THIRD ST	 GOTHAM	53540
+351181	WI	MANITOWOC	KIEL COMMUNITY CENTER	510 3RD ST	 KIEL	53042
+351182	WI	POLK	BALSAM LAKE MUNICIPAL BUILDING	404 MAIN ST	 BALSAM LAKE	54810
+351183	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 014	NA	NA	\N
+351184	WI	MARATHON	TEXAS MUNICIPAL CENTER	T4510 RIVER HILLS RD	 WAUSAU	54403
+351185	WI	DOUGLAS	BILLINGS PARK CIVIC CENTER	3903 N 18TH ST	 SUPERIOR	54880
+351186	WI	LACROSSE	CAMPBELL TOWN HALL	2219 BAINBRIDGE ST	 LA CROSSE	54603
+351187	WI	COLUMBIA	DEKORRA TOWN HALL	W8460 BILKIE RD	 POYNETTE	53955
+351188	WI	PIERCE	ELLSWORTH TOWN HALL	W6058 490TH AVE	 ELLSWORTH	54011
+351189	WI	WAUKESHA	VERNON TOWN HALL	W249S8910 CENTER DR	 BIG BEND	53103
+351190	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 210	NA	NA	\N
+351191	WI	OUTAGAMIE	COMBINED LOCKS CIVIC CENTER	405 WALLACE ST	 COMBINED LCKS	54113
+351192	WI	LINCOLN	Marc Center	1100 Marc Dr	Merrill	54452
+351193	WI	WASHINGTON	TRENTON TOWN HALL	1071 HIGHWAY 33	 WEST BEND	53095
+351194	WI	WALWORTH	LAKE GENEVA CITY HALL	626 GENEVA ST	 LAKE GENEVA	53147
+351195	WI	DUNN	BOYCEVILLE COMMUNITY CENTER	1233 CHARLOTTE ST	 BOYCEVILLE	54725
+351196	WI	WAUKESHA	GENESEE TOWN HALL	S43W31391 HIGHWAY 83	 GENESEE DEPOT	53127
+351197	WI	OUTAGAMIE	HORTONVILLE COMMUNITY CENTER	531 N NASH ST	 HORTONVILLE	54944
+351198	WI	BROWN	ROCKLAND TOWN HALL	1712 BOB BEA JAN RD	 DE PERE	54115
+351199	WI	WAUSHARA	POY SIPPI FIRE STATION/TOWN HALL	N4398 SPRING ST	 POY SIPPI	54967
+351200	WI	MANITOWOC	SCHLESWIG TOWN HALL	21935 ROCKVILLE RD	 KIEL	53042
+351201	WI	LACROSSE	HAMILTON TOWN HALL	N5105 LEONARD N	 WEST SALEM	54669
+351202	WI	PORTAGE	SHARON TOWN HALL	6704 STATE HIGHWAY 66	 CUSTER	54423
+351203	WI	OZAUKEE	CEDARBURG TOWN HALL	1293 WASHINGTON AVE	 CEDARBURG	53012
+351204	WI	ONEIDA	RAYMOND SLOAN CENTER	7246 MAIN ST	 LAKE TOMAHAWK	54539
+351205	WI	WAUSHARA	SAXEVILLE TOWN HALL	W4022 ARCHER AVE	 PINE RIVER	54965
+351206	WI	GRANT	JAMESTOWN TOWN HALL	2135 ELM ST	 KIELER	53812
+351207	WI	WAUKESHA	Community Room 2	13600 JUNEAU BLVD	 ELM GROVE	53122
+351208	WI	ROCK	HARMONY TOWN HALL	440 N US HIGHWAY 14	 JANESVILLE	53546
+351209	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 012	NA	NA	\N
+351210	WI	WAUKESHA	DELAFIELD TOWN HALL	W302N1254 MAPLE AVE	 DELAFIELD	53018
+351211	WI	MARATHON	BERLIN TOWN HALL	11248 BERLIN LN	 ATHENS	54411
+351212	WI	LANGLADE	NEVA TOWN HALL	N5500 COUNTY ROAD A	 DEERBROOK	54424
+351213	WI	VERNON	FRANKLIN TOWN HALL	S6635 US HIGHWAY 27	 VIROQUA	54665
+351214	WI	GREEN	SYLVESTER TOWN HALL	N4505 STATE ROAD 59	 ALBANY	53502
+351215	WI	OZAUKEE	BELGIUM TOWN HALL	171 MAIN STREET	 BELGIUM	53004
+351216	WI	MILWAUKEE	BAYSIDE VILLAGE HALL	9075 N REGENT RD	 BAYSIDE	53217
+351217	WI	DANE	MAPLE BLUFF VILLAGE CENTER	18 OXFORD PL	 MADISON	53704
+351218	WI	POLK	CLAYTON TOWN HALL	462 105TH AVE	 CLAYTON	54004
+351219	WI	PIERCE	GILMAN TOWN HALL	W3616 770TH AVE	 SPRING VALLEY	54767
+351220	WI	WAUPACA	LIND TOWN HALL	N1315 COUNTY ROAD A	 WAUPACA	54981
+351221	WI	SHEBOYGAN	KOHLER VILLAGE HALL	319 HIGHLAND DR	 KOHLER	53044
+351222	WI	FOND DU LAC	RIPON CITY HALL BUILDING	100 JACKSON ST	 RIPON	54971
+351223	WI	DODGE	FIRST EVANGELICAL LUTHERAN CHURCH	311 W MACKIE ST	BEAVER DAM	53916
+351224	WI	ST CROIX	SOMERSET VILLAGE HALL	110 SPRING ST	 SOMERSET	54025
+351225	WI	SAUK	KAY C. MACKESEY ADMINISTRATION BUILDING	50 S WISCONSIN DELLS PKWY	 LAKE DELTON	53940
+351226	WI	COLUMBIA	PARDEEVILLE VILLAGE HALL	114 LAKE ST	 PARDEEVILLE	53954
+351227	WI	OUTAGAMIE	FREEDOM TOWN HALL	W2004 COUNTY RD S	 FREEDOM	54130
+351228	WI	DOUGLAS	WASCOTT TOWN HALL	16362 S TOWN HALL RD	 MINONG	54859
+351229	WI	WINNEBAGO	CLOVIS GROVE SCHOOL	974 9TH ST	 MENASHA	54952
+351230	WI	LANGLADE	ROLLING TOWN HALL	W10468 COUNTY ROAD G	 ANTIGO	54409
+351231	WI	DANE	Dane - City Of Madison - Dane County - Ward 057	NA	NA	\N
+351232	WI	JACKSON	BROCKWAY TOWN HALL	236 GEBHARDT RD	 BLK RIVER FLS	54615
+351233	WI	DANE	SPRINGFIELD TOWN HALL	6157 COUNTY ROAD P	 DANE	53529
+351234	WI	MANITOWOC	NEWTON TOWN HALL	6532 CARSTENS LAKE RD	 MANITOWOC	54220
+351235	WI	LANGLADE	POLAR TOWN HALL	W6979 STATE HIGHWAY 64	 BRYANT	54418
+351236	WI	MARATHON	Wisconsin National Guard Armory	1000 Jackson St	Mosinee	54455
+351237	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 207	NA	NA	\N
+351238	WI	OUTAGAMIE	HORTONIA FIRE HALL	700 NYE ST	 HORTONVILLE	54944
+351239	WI	WAUPACA	ROYALTON TOWN HALL	E6132 STATE ROAD 54	 NEW LONDON	54961
+351240	WI	EAU CLAIRE	PLEASANT VALLEY TOWN HALL AND FIRE STATION	S10414 COUNTY ROAD HH I	 ELEVA	54738
+351241	WI	DANE	DUNN TOWN HALL	4156 COUNTY ROAD B	 MC FARLAND	53558
+351242	WI	PIERCE	TRIMBELLE TOWN HALL	N5310 800TH ST	 ELLSWORTH	54011
+351243	WI	ONEIDA	HAZELHURST TOWN HALL	9805 YAWKEY ST	 HAZELHURST	54531
+351244	WI	DANE	WHITEHORSE MIDDLE SCHOOL	218 SCHENK ST	 MADISON	53714
+351245	WI	PIERCE	Pierce - City Of River Falls - Multiple Counties - Ward 007	NA	NA	\N
+351246	WI	OCONTO	LITTLE SUAMICO TOWN HALL	5964 COUNTY RD S	 SOBIESKI	54171
+351247	WI	WAUKESHA	LISBON TOWN HALL	W234N8676 WOODSIDE RD	 LISBON	53089
+351248	WI	DODGE	BEAVER DAM TOWN HALL	W8540 COUNTY ROAD W	 BEAVER DAM	53916
+351249	WI	EAU CLAIRE	WASHINGTON TOWN HALL	5750 OLD TOWN HALL RD	 EAU CLAIRE	54701
+351250	WI	SAWYER	WINTER TOWN HALL	4680 N COUNTY RD W	 WINTER	54896
+351251	WI	CALUMET	CHILTON CITY HALL	42 SCHOOL ST	 CHILTON	53014
+351252	WI	WAUKESHA	STONE BANK FIRE HOUSE	W335N7107 STONE BANK RD	 OCONOMOWOC	53066
+351253	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 131	NA	NA	\N
+351254	WI	WAUKESHA	DELAFIELD FIRE STATION NO. 2	W329S690 COUNTY ROAD C	 DELAFIELD	53018
+351255	WI	BROWN	WRIGHTSTOWN TOWN HALL	1527 DAY ST	 GREENLEAF	54126
+351256	WI	ROCK	BRADFORD TOWN HALL	3622 S CARVERS ROCK ROAD	 AVALON	53505
+351257	WI	WINNEBAGO	JEFFERSON SCHOOL	105 ICE ST	 MENASHA	54952
+351258	WI	DUNN	ELK MOUND TOWN HALL	N6299 906TH ST	 ELK MOUND	54739
+351259	WI	FOND DU LAC	CALUMET TOWN HALL	W2104 COUNTY ROAD HH	 MALONE	53049
+351260	WI	MARATHON	WAUSAU MUNICIPAL CENTER	7208 COUNTY ROAD Z	 WAUSAU	54403
+351261	WI	MARATHON	RIB FALLS TOWN HALL	1744 COUNTY R0AD S	 EDGAR	54426
+351262	WI	CRAWFORD	PRAIRIE DU CHIEN TOWN HALL	33890 STATE HWY 35	 PR DU CHIEN	53821
+351263	WI	ST CROIX	BALDWIN TOWN HALL	2399 90TH AVE	 BALDWIN	54002
+351264	WI	PIERCE	RIVER FALLS TOWN HALL	W9015 770TH AVE	 RIVER FALLS	54022
+351265	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 007	NA	NA	\N
+351266	WI	DOOR	FORESTVILLE TOWN HALL	7705 COUNTY ROAD H	 STURGEON BAY	54235
+351267	WI	MANITOWOC	MEEME TOWN HALL	15318 COUNTY ROAD X	 KIEL	53042
+351268	WI	JEFFERSON	SUMNER TOWN HALL	N1525 CHURCH ST	 EDGERTON	53534
+351269	WI	MARINETTE	AMBERG COMMUNITY CENTER	N15035 GRANT ST	 AMBERG	54102
+351270	WI	DANE	Dane - City Of Madison - Dane County - Ward 060	NA	NA	\N
+351271	WI	SHEBOYGAN	SCOTT TOWN HALL	N1306 BOLTONVILLE RD	 ADELL	53001
+351272	WI	SHAWANO	PELLA TOWN HALL	W11021 COUNTY ROAD D	 MARION	54950
+351273	WI	BROWN	HUMBOLDT TOWN HALL	5500 HUMBOLDT RD	 GREEN BAY	54311
+351274	WI	SAWYER	LENROOT TOWN HALL	12215 N US HIGHWAY 63	 HAYWARD	54843
+351275	WI	BARRON	Town of Rice Lake Municipal Bldg	1830 MACAULEY AVE	 RICE LAKE	54868
+351276	WI	LANGLADE	ANTIGO CITY HALL	700 EDISON ST	 ANTIGO	54409
+351277	WI	MANITOWOC	LIBERTY TOWN HALL	13812 ENGLISH LAKE RD	 VALDERS	54245
+351278	WI	JEFFERSON	CONCORD COMMUNITY CENTER	W1095 CONCORD CENTER DR	 SULLIVAN	53178
+351279	WI	DUNN	ROCK CREEK TOWN HALL	N995 COUNTY ROAD H	 MONDOVI	54755
+351280	WI	ROCK	NEWARK TOWN HALL	9528 W BELOIT NEWARK RD	 BELOIT	53511
+351281	WI	ST CROIX	SPRINGFIELD TOWN HALL	856 310TH ST	 GLENWOOD CITY	54013
+351282	WI	MILWAUKEE	Milwaukee - City Of Glendale - Milwaukee County - Ward 008	NA	NA	\N
+351283	WI	SAWYER	Hayown Hall	15460 W State Road 77	Hayward	54843
+351284	WI	WASHINGTON	HARTFORD TOWN HALL	3360 COUNTY ROAD K	 HARTFORD	53027
+351285	WI	MILWAUKEE	SAINT FRANCIS CIVIC CENTER	3400 E HOWARD AVE	 SAINT FRANCIS	53235
+351286	WI	MARATHON	NORRIE TOWN HALL	N4593 CORNELL ST	 BIRNAMWOOD	54414
+351287	WI	OUTAGAMIE	KIMBERLY VILLAGE HALL EVERGREEN	515 W KIMBERLY AVE	 KIMBERLY	54136
+351288	WI	WAUKESHA	RICHARD JUNG MEMORIAL FIRE STATION	N54W26455 LISBON RD	 PEWAUKEE	53072
+351289	WI	CHIPPEWA	BLOOMER TOWN HALL	21281 STATE HIGHWAY 40	 BLOOMER	54724
+351290	WI	CHIPPEWA	SAMPSON TOWN HALL	10770 270TH AVE	 NEW AUBURN	54757
+351291	WI	LACROSSE	BARRE TOWN HALL	W3541 COUNTY ROAD M	 LA CROSSE	54601
+351292	WI	WAUKESHA	Waukesha - Town Of Brookfield - Waukesha County - Ward 001	NA	NA	\N
+351293	WI	CRAWFORD	BLUFF HAVEN	720 S FREMONT ST	 PR DU CHIEN	53821
+351294	WI	MILWAUKEE	COLUMBUS PARK PAVILION	7301 W COURTLAND AVE	 MILWAUKEE	53218
+351295	WI	GREEN	YORK TOWN HALL	N8105 POSTVILLE RD	 BLANCHARDVILLE	53516
+351296	WI	POLK	SAINT CROIX FALLS TOWN HALL	1305 200TH ST	 ST CROIX FLS	54024
+351297	WI	MARINETTE	NIAGARA TOWN HALL	W6889 US HIGHWAY 8	 NIAGARA	54151
+351298	WI	ST CROIX	KINNICKINNIC TOWN HALL	1271 COUNTY ROAD J	 RIVER FALLS	54022
+351299	WI	WALWORTH	WHITEWATER TOWN HALL	W8590 WILLIS RAY RD	 WHITEWATER	53190
+351300	WI	DOOR	JACKSONPORT TOWN HALL	3365 COUNTY ROAD V	 STURGEON BAY	54235
+351301	WI	WAUPACA	BEAN CITY BALLROOM	N2505 BEAN CITY RD	 NEW LONDON	54961
+351302	WI	KENOSHA	Paris Town Hall	16607 Burlington Rd	Union Grove	53182
+351303	WI	JUNEAU	NECEDAH VILLAGE HALL	101 CENTER ST	 NECEDAH	54646
+351304	WI	DUNN	SHERMAN TOWN HALL	N8425 COUNTY ROAD F	 MENOMONIE	54751
+351305	WI	VILAS	BOULDER JUNCTION COMMUNITY CENTER	5386 PARK ST	 BOULDER JCT	54512
+351306	WI	WALWORTH	ELKHORN RECREATION CENTER	200 DEVENDORF ST	 ELKHORN	53121
+351307	WI	MARATHON	Marathon - Village Of Kronenwetter - Marathon County - Ward 003	NA	NA	\N
+351308	WI	SHAWANO	LESSOR TOWN HALL	W4055 LANDSTAD RD	 BONDUEL	54107
+351309	WI	ONEIDA	WOODBORO TOWN HALL	8672 OLD COUNTY K	 HARSHAW	54529
+351310	WI	LAFAYETTE	WIOTA TOWN HALL	9830 PARK ST	 SOUTH WAYNE	53587
+351311	WI	BROWN	GREEN BAY COMMUNITY CHURCH	600 CARDINAL LN	 GREEN BAY	54313
+351312	WI	KEWAUNEE	LINCOLN TOWN HALL	N8497 COUNTY ROAD C	 CASCO	54205
+351313	WI	DANE	MAZOMANIE MUNICIPAL BUILDING	133 CRESCENT ST	 MAZOMANIE	53560
+351314	WI	DANE	BLUE MOUNDS TOWN HALL	10566 BLUE VISTA RD	 BLUE MOUNDS	53517
+351315	WI	WALWORTH	SHARON VILLAGE HALL	125 PLAIN ST	 SHARON	53585
+351316	WI	ADAMS	ROME MUNICIPAL BUILDING	1156 ALPINE DR	 NEKOOSA	54457
+351317	WI	DANE	LIBERTY EDUCATIONAL CENTER	3494 OAK PARK RD	 DEERFIELD	53531
+351318	WI	SHEBOYGAN	SHEBOYGAN FALLS TOWN HALL	W3860 COUNTY ROAD O	 SHEBOYGAN FLS	53085
+351319	WI	EAU CLAIRE	UNION TOWN HALL	1506 N TOWN HALL RD	 EAU CLAIRE	54703
+351320	WI	WINNEBAGO	TOWN HALL	13069 STATE HIGHWAY 61	 SOLDIERS GROVE	54655
+351321	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 004	NA	NA	\N
+351322	WI	ST CROIX	NORTH HUDSON VILLAGE HALL	400 7TH ST N	 HUDSON	54016
+351323	WI	JUNEAU	LEMONWEIR TOWN HALL	N3935 19TH AVE	 MAUSTON	53948
+351324	WI	PORTAGE	HULL MUNICIPAL BUILDING	4550 WOJCIK MEMORIAL DR	 STEVENS POINT	54482
+351325	WI	ROCK	MCKEARN PARK BUILDING	2711 PARK AVE	 BELOIT	53511
+351326	WI	WAUSHARA	LEON TOWN HALL	N4819 COUNTY ROAD E	 PINE RIVER	54965
+351327	WI	WASHINGTON	TOWN OF KEWASKUM COMMUNITY CENTER	9019 KETTLE MORAINE DR	 KEWASKUM	53040
+351328	WI	LANGLADE	UPHAM TOWN HALL	N9575 COUNTY ROAD B	 SUMMIT LAKE	54485
+351329	WI	WAUPACA	Waupaca - Town Of Farmington - Waupaca County - Ward 003	NA	NA	\N
+351330	WI	SHAWANO	RED SPRINGS TOWN HALL	W10208 E TOWN HALL RD	 GRESHAM	54128
+351331	WI	EAU CLAIRE	BRUNSWICK TOWN HALL	W5485 COUNTY ROAD Z	 EAU CLAIRE	54701
+351332	WI	POLK	LINCOLN TOWN HALL	661 85TH ST	 AMERY	54001
+351333	WI	JACKSON	ALBION TOWN HALL	N5740 STATE HIGHWAY 54	 BLK RIVER FLS	54615
+351334	WI	ST CROIX	HUDSON TOWN HALL	980 COUNTY ROAD A	 HUDSON	54016
+351335	WI	CHIPPEWA	EAGLE POINT TOWN HALL	14802 STATE HIGHWAY 124	 CHIPPEWA FLS	54729
+351336	WI	MARATHON	ROTHSCHILD VILLAGE HALL	211 GRAND AVE	 ROTHSCHILD	54474
+351337	WI	MARATHON	HALDER COMMUNITY HALL	3365 HALDER DR	 MOSINEE	54455
+351338	WI	WINNEBAGO	NEKIMI TOWN HALL	3790 PICKETT RD	 OSHKOSH	54904
+351339	WI	LINCOLN	SARA PARK	900 W SOMO AVE	 TOMAHAWK	54487
+351340	WI	DODGE	IRON RIDGE COMMUNITY CENTER	205 PARK ST	 IRON RIDGE	53035
+351341	WI	FOND DU LAC	BYRON TOWN HALL	N3097 STATE ROAD 175	 BYRON	53006
+351342	WI	WINNEBAGO	ALGOMA TOWN HALL	15 N OAKWOOD RD	 OSHKOSH	54904
+351343	WI	TREMPEALEAU	TREMPEALEAU COMMUNITY CENTER	24455 3rd St	Trempealeau	54661
+351344	WI	LANGLADE	NORWOOD TOWN HALL	W7380 STATE HIGHWAY 47	 ANTIGO	54409
+351345	WI	MARQUETTE	HARRIS FIREHOUSE	W4987 COUNTY ROAD J	 WESTFIELD	53964
+351346	WI	FOND DU LAC	Auburn Town Hall	W1728 Sunset Dr	Campbellsport	53010
+351347	WI	WAUKESHA	HARTLAND MUNICIPAL BUILDING	210 COTTONWOOD AVE	 HARTLAND	53029
+351348	WI	TREMPEALEAU	CALEDONIA TOWN HALL	N14399 COUNTY ROAD M	 GALESVILLE	54630
+351349	WI	WASHBURN	EVERGREEN TOWN HALL	W8896 CARLTON RD	 SPOONER	54801
+351350	WI	PORTAGE	CENTRAL WISCONSIN ELECTRIC COOPERATIVE	10401 LYSTUL RD	 ROSHOLT	54473
+351351	WI	VERNON	CHRISTIANA TOWN HALL	505 SAUGSTAD RD	 WESTBY	54667
+351352	WI	SHAWANO	CITY OF SHAWANO CITY HALL	127 S SAWYER ST	 SHAWANO	54166
+351353	WI	WALWORTH	DELAVAN MUNICIPAL BUILDING	123 S 2ND ST	 DELAVAN	53115
+351354	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 153	NA	NA	\N
+351355	WI	ASHLAND	ASHLAND NATIONAL GUARD ARMORY	420 SANBORN AVE	 ASHLAND	54806
+351356	WI	WAUSHARA	SPRINGWATER TOWN HALL	W7033 COUNTY ROAD GH	 WILD ROSE	54984
+351357	WI	WAUKESHA	WAUKESHA TOWN HALL	W250S3567 CENTER RD	 WAUKESHA	53189
+351358	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 132	NA	NA	\N
+351359	WI	JEFFERSON	WATERLOO TOWN HALL	N8193 STATE ROAD 89	 WATERLOO	53594
+351360	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 260	NA	NA	\N
+351361	WI	DODGE	HORICON CITY HALL	404 E LAKE ST	 HORICON	53032
+351362	WI	GREEN LAKE	BROOKLYN TOWN HALL	N5988 COUNTY ROAD A	 GREEN LAKE	54941
+351363	WI	CHIPPEWA	EDSON TOWN HALL	31595 COUNTY HIGHWAY MM	 BOYD	54726
+351364	WI	WINNEBAGO	OSHKOSH TOWN HALL	230 E COUNTY ROAD Y	 OSHKOSH	54901
+351365	WI	ST CROIX	PIONEER BUILDING	102 S MAIN ST	 WOODVILLE	54028
+351366	WI	WAUKESHA	HAMILTON HIGH SCHOOL	W220N6151 TOWN LINE RD	 SUSSEX	53089
+351367	WI	DANE	VIENNA TOWN HALL	7161 COUNTY ROAD I	 DE FOREST	53532
+351368	WI	WALWORTH	SHARON TOWN HALL	N1097 BOLLINGER RD	 SHARON	53585
+351369	WI	SAUK	SAUK CITY VILLAGE HALL	726 WATER ST	 SAUK CITY	53583
+351370	WI	DODGE	Dodge - Town Of Rubicon - Dodge County - Ward 002	NA	NA	\N
+351371	WI	TREMPEALEAU	Town Of Sumner Shop	14310 5th St	Osseo	54758
+351372	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 009	NA	NA	\N
+351373	WI	DODGE	LEBANON TOWN HALL	N1738 COUNTY ROAD R	 LEBANON	53047
+351374	WI	BROWN	HOLLAND TOWN HALL	1671 HILL RD	 GREENLEAF	54126
+351375	WI	WAUKESHA	NORTH PRAIRIE VILLAGE HALL	130 N HARRISON ST	 NORTH PRAIRIE	53153
+351376	WI	MILWAUKEE	RIVER HILLS VILLAGE HALL	7650 N PHEASANT LN	 RIVER HILLS	53217
+351377	WI	MANITOWOC	VALDERS VILLAGE OFFICE	207 S LIBERTY ST	 VALDERS	54245
+351378	WI	WAUPACA	FOX VALLEY TECHNICAL COLLEGE CLINTONVILLE	525 S MAIN ST	 CLINTONVILLE	54929
+351379	WI	DODGE	HUBBARD TOWN HALL	W2864 W NEDA RD	 IRON RIDGE	53035
+351380	WI	TREMPEALEAU	ARCADIA TOWN HALL	W26051 STATE ROAD 95	 ARCADIA	54612
+351381	WI	MARINETTE	PORTERFIELD TOWN HALL	W3435 COUNTY ROAD G	 PORTERFIELD	54159
+351382	WI	BARRON	CUMBERLAND TOWN HALL	902 20TH AVE	 CUMBERLAND	54829
+351383	WI	DANE	WAUNAKEE COMMUNITY CENTER-GYM	333 S MADISON ST	 WAUNAKEE	53597
+351384	WI	DANE	SUN PRAIRIE TOWN HALL	5556 TWIN LANE RD	 MARSHALL	53559
+351385	WI	PORTAGE	TOWN OF STOCKTON TOWN HALL	7252 6TH ST	 CUSTER	54423
+351386	WI	GREEN	NEW GLARUS VILLAGE HALL	319 2ND ST	 NEW GLARUS	53574
+351387	WI	COLUMBIA	LEWISTON ELEMENTARY SCHOOL	W11195 HIGHWAY 127	 PORTAGE	53901
+351388	WI	CHIPPEWA	CADOTT AREA FIRE STATION	436 HARTFORD ST	 CADOTT	54727
+351389	WI	ROCK	CLINTON TOWN HALL	8647 E COUNTY ROAD X	 CLINTON	53525
+351390	WI	SHAWANO	BONDUEL VILLAGE HALL	117 E GREEN BAY ST	 BONDUEL	54107
+351391	WI	MILWAUKEE	PARKVIEW SCHOOL	5555 S NICHOLSON AVE	 CUDAHY	53110
+351392	WI	PIERCE	HARTLAND TOWN HALL	W6170 COUNTY ROAD EE	 BAY CITY	54723
+351393	WI	GRANT	LANCASTER CITY HALL	206 S MADISON ST	 LANCASTER	53813
+351394	WI	SAUK	REEDSBURG TOWN HALL	600 W MAIN ST	 REEDSBURG	53959
+351395	WI	PIERCE	CITY OF RIVER FALLS CITY HALL	222 LEWIS ST	 RIVER FALLS	54022
+351396	WI	BROWN	PITTSFIELD TOWN HALL	3041 KUNESH NORTH RD	 PULASKI	54162
+351397	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 281	NA	NA	\N
+351398	WI	ONEIDA	PELICAN TOWN HALL	4093 COUNTY P	 RHINELANDER	54501
+351399	WI	MARQUETTE	DOUGLAS TOWN HALL	N436 COUNTY ROAD A	 BRIGGSVILLE	53920
+351400	WI	POLK	BLACK BROOK TOWN HALL	99 75TH ST	 CLEAR LAKE	54005
+351401	WI	WOOD	ROCK TOWN HALL	10970 COUNTY RD N	 MARSHFIELD	54449
+351402	WI	MARATHON	STETTIN TOWN HALL	12004 STETTIN DR	 MARATHON	54448
+351403	WI	KENOSHA	TWIN LAKES VILLAGE HALL	108 E MAIN ST	 TWIN LAKES	53181
+351404	WI	MANITOWOC	CLEVELAND VILLAGE HALL	1150 W WASHINGTON AVE	 CLEVELAND	53015
+351405	WI	WAUPACA	IOLA TOWN HALL	150 DEPOT ST	 IOLA	54945
+351406	WI	GRANT	Grant - City Of Platteville - Grant County - Ward 005	NA	NA	\N
+351407	WI	GRANT	DICKEYVILLE COMMUNITY CENTER	500 EAST AVE	 DICKEYVILLE	53808
+351408	WI	RACINE	Racine - City Of Racine - Racine County - Ward 005	NA	NA	\N
+351409	WI	MARATHON	RIETBROCK MUNICIPAL HALL	R394 CHERRY LN	 EDGAR	54426
+351410	WI	CHIPPEWA	DELMAR TOWN HALL	11528 320TH ST	 BOYD	54726
+351411	WI	WINNEBAGO	POYGAN TOWN HALL	8693 TOWN HALL RD	 WINNECONNE	54986
+351412	WI	POLK	MILLTOWN COMMUNITY CENTER	301 2ND AVE SW	 MILLTOWN	54858
+351413	WI	SAUK	EXCELSIOR TOWN HALL	100 E BROADWAY	 ROCK SPRINGS	53961
+351414	WI	WOOD	WOOD TOWN HALL	8210 MAIN ST	 PITTSVILLE	54466
+351415	WI	WALWORTH	RICHMOND TOWN HALL	W9046 COUNTY ROAD A	 DELAVAN	53115
+351416	WI	RACINE	PRAIRIE SCHOOL/ATHLETIC CENTER	4050 LIGHTHOUSE DR	 RACINE	53402
+351417	WI	JEFFERSON	Jefferson - City Of Jefferson - Jefferson County - Ward 006	NA	NA	\N
+351418	WI	IOWA	HIGHLAND VILLAGE HALL	530 MAIN ST	 HIGHLAND	53543
+351419	WI	SHEBOYGAN	MOSEL TOWN HALL/FIRE STATION	W982 COUNTY ROAD FF	 SHEBOYGAN	53083
+351420	WI	JUNEAU	LYNDON TOWN HALL	W1797 COUNTY ROAD J	 WISC DELLS	53965
+351421	WI	JUNEAU	GERMANTOWN TOWN HALL	N7560 17TH AVE	 NEW LISBON	53950
+351422	WI	WALWORTH	GENEVA TOWN HALL	N3496 COMO RD	 LAKE GENEVA	53147
+351423	WI	SAUK	SPRING GREEN COMMUNITY LIBRARY	230 E MONROE ST	 SPRING GREEN	53588
+351424	WI	MONROE	LITTLE FALLS TOWN HALL	4124 COUNTY HIGHWAY I	 SPARTA	54656
+351425	WI	KENOSHA	WILMOT FIRE STATION	30400 WILMOT RD	 WILMOT	53192
+351426	WI	OCONTO	UNDERHILL COMMUNITY CENTER	5597 CARDINAL RD	 GILLETT	54124
+351427	WI	LAFAYETTE	BELMONT COMMUNITY BUILDING	222 S MOUND AVE	 BELMONT	53510
+351428	WI	MARATHON	CASSEL TOWN HALL	3400 COUNTY RD S	 MARATHON	54448
+351429	WI	POLK	EUREKA TOWN HALL	2395 210TH ST	 ST CROIX FLS	54024
+351430	WI	OZAUKEE	AMERICAN LEGION POST	601 W DEKORA ST	 SAUKVILLE	53080
+351431	WI	BARRON	CAMERON VILLAGE HALL	300 N 1ST ST	 CAMERON	54822
+351432	WI	MARATHON	MCMILLAN TOWN HALL	M403 ELM ST	 MARSHFIELD	54449
+351433	WI	WINNEBAGO	UTICA TOWN HALL	1730 COUNTY ROAD FF	 OSHKOSH	54904
+351434	WI	BARRON	Turtle Lake Library	114 Martin Ave E	Turtle Lake	54889
+351435	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 204	NA	NA	\N
+351436	WI	SHEBOYGAN	OOSTBURG MUNICIPAL BUILDING	1140 MINNESOTA AVE	 OOSTBURG	53070
+351437	WI	BROWN	MORRISON TOWN HALL	3792 PARK RD	 GREENLEAF	54126
+351438	WI	WASHBURN	LONG LAKE TOWN HALL	N1584 COUNTY HIGHWAY MD	 SARONA	54870
+351439	WI	COLUMBIA	VILLAGE OF POYNETTE	106 S. MAIN STREET	 POYNETTE	53955
+351440	WI	MARINETTE	POUND TOWN HALL	W8484 COUNTY ROAD B	 COLEMAN	54112
+351441	WI	WASHINGTON	ADDISON TOWN HALL	127 FIRST ST	 ALLENTON	53002
+351442	WI	VERNON	VIROQUA NATIONAL GUARD ARMORY	600 DYSON ST	 VIROQUA	54665
+351443	WI	MILWAUKEE	WISCONSIN HUMANE SOCIETY	4500 W WISCONSIN AVE	 MILWAUKEE	53208
+351444	WI	DOUGLAS	LAKE NEBAGAMON VILLAGE HALL	11596 E WATERFRONT DR	 LK NEBAGAMON	54849
+351445	WI	PIERCE	ELMWOOD VILLAGE HALL	323 W WINTER AVE	 ELMWOOD	54740
+351446	WI	WOOD	BIRON MUNICIPAL CENTER	451 KAHOUN RD	 WISC RAPIDS	54494
+351447	WI	WAUPACA	CALEDONIA TOWN HALL	E9181 STATE ROAD 96	 READFIELD	54969
+351448	WI	OCONTO	OCONTO FALLS MUNICIPAL BUILDING	500 N CHESTNUT AVE	 OCONTO FALLS	54154
+351449	WI	LINCOLN	CORNING TOWN HALL	N1569 STATE HIGHWAY 64	 MERRILL	54452
+351450	WI	BAYFIELD	BAYFIELD TOWN HALL	85450 COUNTY HIGHWAY J	 BAYFIELD	54814
+351451	WI	BARRON	CUMBERLAND MUNICIPAL BUILDING	950 1ST AVE	 CUMBERLAND	54829
+351452	WI	OZAUKEE	GRAFTON TOWN HALL	1230 11TH AVE	 GRAFTON	53024
+351453	WI	MARATHON	Edgar Village Hall	224 S 3rd Ave	Edgar	54426
+351454	WI	MANITOWOC	KOSSUTH TOWN HALL	129 PACKER DR COUNTY RD R	 FRANCIS CREEK	54214
+351455	WI	GRANT	PLATTEVILLE NATIONAL GUARD ARMORY 1	475 N WATER ST	 PLATTEVILLE	53818
+351456	WI	VERNON	STODDARD VILLAGE HALL	180 N MAIN ST	 STODDARD	54658
+351457	WI	CRAWFORD	SENECA TOWN HALL	21041 TOWN HALL RD	 SENECA	54654
+351458	WI	GRANT	PLATTEVILLE NATIONAL GUARD ARMORY 2	475 N WATER ST	 PLATTEVILLE	53818
+351459	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 175	NA	NA	\N
+351460	WI	ROCK	Edgerton City Hall	12 ALBION ST	 EDGERTON	53534
+351461	WI	MARATHON	SPENCER MUNICIPAL BUILDING	105 S PARK ST	 SPENCER	54479
+351462	WI	WAUPACA	CLINTONVILLE CITY HALL	50 10TH ST	 CLINTONVILLE	54929
+351463	WI	GRANT	Blaine Gym	104 E OAK	 BOSCOBEL	53805
+351464	WI	MARATHON	MAINE MUNICIPAL CENTER	6111 N 44TH AVE	 WAUSAU	54401
+351465	WI	WALWORTH	BLOOMFIELD TOWN HALL	N1100 COUNTY ROAD H	 GENOA CITY	53128
+351466	WI	MARINETTE	NIAGARA CITY HALL	1029 ROOSEVELT RD	 NIAGARA	54151
+351467	WI	DANE	PEOPLE'S UNITED METHODIST CHURCH	103 N ALPINE PKWY	 OREGON	53575
+351468	WI	WALWORTH	LYONS TOWN HALL	6339 HOSPITAL RD	 BURLINGTON	53105
+351469	WI	OUTAGAMIE	MAINE TOWN HALL	N8551 STATE HIGHWAY 187	 SHIOCTON	54170
+351470	WI	OUTAGAMIE	CICERO TOWN HALL	N9195 COUNTY ROAD X	 BLACK CREEK	54106
+351471	WI	POLK	BALSAM LAKE TOWN SHOP	1494 150TH AVE	 BALSAM LAKE	54810
+351472	WI	WOOD	PORT EDWARDS TOWN HALL	2000 COUNTY ROAD G	 NEKOOSA	54457
+351473	WI	MANITOWOC	EATON TOWN HALL	316 WEST MAIN STREET	 ST NAZIANZ	54232
+351474	WI	ROCK	MILTON CITY HALL	710 S JANESVILLE ST	 MILTON	53563
+351475	WI	LACROSSE	MEDARY TOWN HALL	N3393 SMITH VALLEY RD	 LA CROSSE	54601
+351476	WI	KENOSHA	RANDALL TOWN HALL	34530 BASSETT RD	 BURLINGTON	53105
+351477	WI	LAFAYETTE	BUSINESS INCUBATOR SUITE	244 RIDGE AVE	 BENTON	53803
+351478	WI	ST CROIX	SOMERSET TOWN HALL	748 STATE HIGHWAY 35	 SOMERSET	54025
+351479	WI	JEFFERSON	WATERLOO MUNICIPAL BUILDING	136 N MONROE ST	 WATERLOO	53594
+351480	WI	BAYFIELD	BARKSDALE TOWN HALL	29025 E ONDOSSAGON RD	 ASHLAND	54806
+351481	WI	BARRON	PRAIRIE LAKE MUNICIPAL BUILDING	796 21ST ST	 CHETEK	54728
+351482	WI	DANE	DANE VILLAGE HALL	102 W MAIN ST	 DANE	53529
+351483	WI	LACROSSE	BANGOR VILLAGE HALL	100 17TH ST N	 BANGOR	54614
+351484	WI	DOOR	STURGEON BAY CITY HALL	421 MICHIGAN ST	 STURGEON BAY	54235
+351485	WI	JEFFERSON	PALMYRA TOWN HALL	W1125 STATE ROAD 106	 PALMYRA	53156
+351486	WI	OUTAGAMIE	Outagamie - Village Of Kimberly - Outagamie County - Ward 003	NA	NA	\N
+351487	WI	COLUMBIA	FORT WINNEBAGO ELEMENTARY SCHOOL	W8349 DUMKE RD	 PORTAGE	53901
+351488	WI	FOND DU LAC	NORTH FOND DU LAC COMMUNITY CENTER	280 GARFIELD ST	 N FOND DU LAC	54937
+351489	WI	EAU CLAIRE	BRIDGE CREEK TOWN HALL	S9515 STATE ROAD 27	 AUGUSTA	54722
+351490	WI	TAYLOR	RIB LAKE VILLAGE HALL	655 PEARL ST	 RIB LAKE	54470
+351491	WI	DANE	DUNKIRK TOWN HALL	654 COUNTY ROAD N	 STOUGHTON	53589
+351492	WI	ST CROIX	WARREN TOWN HALL	720 112TH ST	 ROBERTS	54023
+351493	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 143	NA	NA	\N
+351494	WI	CALUMET	HARRISON FIRE STATION 70	N8714 COUNTY ROAD LP	 MENASHA	54952
+351495	WI	MANITOWOC	ROSECRANS TOWN HALL	11626 COUNTY ROAD Z	 MARIBEL	54227
+351496	WI	SHAWANO	RICHMOND TOWN HALL	N5170 COUNTY ROAD MM	 SHAWANO	54166
+351497	WI	PORTAGE	LANARK TOWN HALL	7174 COUNTY ROAD TT	 AMHERST	54406
+351498	WI	MARQUETTE	SPRINGFIELD TOWN HALL	W8094 DUCK CREEK AVE	 WESTFIELD	53964
+351499	WI	FOND DU LAC	BRANDON VILLAGE HALL	115 N CENTER ST	 BRANDON	53919
+351500	WI	MARINETTE	LAKE TOWN HALL	W6202 LOOMIS RD	 PORTERFIELD	54159
+351501	WI	MARATHON	City Hall - City Of Mosinee	225 Main St	Mosinee	54455
+351502	WI	DANE	ALICIA ASHMAN LIBRARY	733 N HIGH POINT RD	 MADISON	53717
+351503	WI	ROCK	CREEKSIDE PLACE	102 MAPLE ST	 EVANSVILLE	53536
+351504	WI	OUTAGAMIE	Outagamie - Village Of Kimberly - Outagamie County - Ward 006	NA	NA	\N
+351505	WI	OCONTO	STILES TOWN HALL	5718 WATERCREST RD	 LENA	54139
+351506	WI	VILAS	WASHINGTON TOWN HALL	2301 TOWN HALL RD	 EAGLE RIVER	54521
+351507	WI	WALWORTH	Darien Town Hall	N2826 Foundry Rd	Darien	53114
+351508	WI	GREEN	DECATUR TOWN HALL	1408 14TH ST	 BRODHEAD	53520
+351509	WI	ST CROIX	VILLAGE OF HAMMOND CLERKS OFFICE	455 Davis St	Hammond	54015
+351510	WI	BAYFIELD	Town of Russell Garage	35900 STATE HIGHWAY 13	 BAYFIELD	54814
+351511	WI	BROWN	HOWARD VILLAGE HALL	2456 GLENDALE AVE	 GREEN BAY	54313
+351512	WI	OZAUKEE	PORT WASHINGTON TOWN HALL	3715 HIGHLAND DR	 PRT WASHINGTN	53074
+351513	WI	MANITOWOC	Maple Grove Town Hall	8432 N County Road W	Reedsville	54230
+351514	WI	KENOSHA	Kenosha - Village Of Somers - Kenosha County - Ward 008	NA	NA	\N
+351515	WI	RACINE	BURLINGTON UNITED METHODIST CHURCH	857 W STATE ST	 BURLINGTON	53105
+351516	WI	BURNETT	TRADE LAKE TOWN HALL	11810 TOWN HALL RD	 FREDERIC	54837
+351517	WI	DODGE	LOMIRA MUNICIPAL BUILDING	425 S WATER ST	 LOMIRA	53048
+351518	WI	COLUMBIA	LODI CITY HALL	134 S MAIN ST	LODI	53555
+351519	WI	RACINE	BOHNER'S LAKE FIRE HOUSE	7211 MCHENRY ST	 BURLINGTON	53105
+351520	WI	WAUSHARA	MARION TOWN HALL	N1279 COUNTY ROAD Z	 WAUTOMA	54982
+351521	WI	SHEBOYGAN	SILVER CREEK FIRE STATION	W6566 STATE HIGHWAY 144	 RANDOM LAKE	53075
+351522	WI	MONROE	LINCOLN TOWN FIRE STATION	FIRE STATION	 WARRENS	54666
+351523	WI	KEWAUNEE	KEWAUNEE CITY HALL	401 5TH ST	 KEWAUNEE	54216
+351524	WI	LINCOLN	MERRILL TOWN HALL	W4594 PROGRESS AVE	 MERRILL	54452
+351525	WI	BARRON	CHETEK TOWN HALL	213 KNAPP ST	 CHETEK	54728
+351526	WI	WOOD	MARSHFIELD TOWN HALL	11133 MAIN ST	 HEWITT	54441
+351527	WI	JEFFERSON	FARMINGTON TOWN HALL	N6468 S FARMINGTON RD	 WATERTOWN	53094
+351528	WI	BARRON	MAPLE PLAIN TOWN HALL	393 26TH AVE	 CUMBERLAND	54829
+351529	WI	MARATHON	HAMBURG MUNICIPAL BUILDING	8230 3RD LN	 MARATHON	54448
+351530	WI	POLK	BEAVER TOWN HALL	1541 10TH ST	 TURTLE LAKE	54889
+351531	WI	BARRON	CRYSTAL LAKE TOWN HALL	1876 STATE ROAD 63	 COMSTOCK	54826
+351532	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 139	NA	NA	\N
+351533	WI	DOOR	BAY VIEW LUTHERAN CHURCH	340 W MAPLE ST	 STURGEON BAY	54235
+351534	WI	VERNON	WESTBY COMMUNITY CENTER	206 S MAIN ST	 WESTBY	54667
+351535	WI	WAUPACA	WAUPACA TOWN HALL	E3514 COUNTY RD E	 WAUPACA	54981
+351536	WI	WASHBURN	BASHAW TOWN HALL	N3410 SAWYER CREEK RD	 SHELL LAKE	54871
+351537	WI	KEWAUNEE	RED RIVER TOWN HALL	E0505 COUNTY RD S	 LUXEMBURG	54217
+351538	WI	SHAWANO	HARTLAND TOWN HALL	W3454 COUNTY ROAD BE	 BONDUEL	54107
+351539	WI	OUTAGAMIE	LIBERTY TOWN HALL	N3918 HOLLOW RD	 NEW LONDON	54961
+351540	WI	DODGE	FIRST EVANGELICAL LUTHERAN CHURCH	310 W MACKIE ST	BEAVER DAM	53916
+351541	WI	IOWA	Barneveld-Brigham Municipal Building	407 COUNTY ROAD ID	 BARNEVELD	53507
+351542	WI	COLUMBIA	FALL RIVER MUNICIPAL BUILDING	641 S MAIN ST	 FALL RIVER	53932
+351543	WI	EAU CLAIRE	FALL CREEK VILLAGE HALL	122 E LINCOLN AVE	 FALL CREEK	54742
+351544	WI	BUFFALO	BUFFALO COMMUNITY PARK	W387 STATE ROAD 35/54	 FOUNTAIN CITY	54629
+351545	WI	SAUK	GREEN TECHNOLOGY TRAINING AND ENTERPRISE CENTER	1110 LEED PKWY	 PLAIN	53577
+351546	WI	WAUKESHA	BROOKFIELD TOWN HALL	645 JANACEK RD	 BROOKFIELD	53045
+351547	WI	KEWAUNEE	CASCO TOWN HALL	E3675 COUNTY ROAD T	 CASCO	54205
+351548	WI	MARATHON	RINGLE MUNICIPAL CENTER	R7107 TOWN HALL RD	 RINGLE	54471
+351549	WI	MANITOWOC	SHOTO TOWN HALL	6525 COUNTY ROAD B	 TWO RIVERS	54241
+351550	WI	GREEN	CADIZ TOWN HALL	W8445 COUNTY ROAD B	 BROWNTOWN	53522
+351551	WI	OUTAGAMIE	ELLINGTON MUNICIPAL BUILDING	N3802 STATE ROAD 76	 HORTONVILLE	54944
+351552	WI	MONROE	CITY OF TOMAH MUNICIPAL CENTER	819 SUPERIOR AVE	 TOMAH	54660
+351553	WI	OUTAGAMIE	DALE MUNCIPAL BUILDING	W9641 STATE ROAD 96	 DALE	54931
+351554	WI	PORTAGE	NORTH NEW HOPE CHURCH	845 COUNTY ROAD T	 AMHERST JUNCTION	54407
+351555	WI	VERNON	COON VALLEY VILLAGE HALL	108 ROOSEVELT ST	 COON VALLEY	54623
+351556	WI	ROCK	JOHNSTOWN COMMUNITY CENTER	9937 E COUNTY ROAD A	 JANESVILLE	53546
+351557	WI	DANE	Dane - City Of Madison - Dane County - Ward 058	NA	NA	\N
+351558	WI	ST CROIX	CADY TOWN HALL	398 STATE ROAD 128	 WILSON	54027
+351559	WI	TREMPEALEAU	ETTRICK TOWN HALL	22734 WEST AVE	 ETTRICK	54627
+351560	WI	COLUMBIA	WISCONSIN DELLS MUNICIPAL BUILDING	300 LA CROSSE ST	 WISC DELLS	53965
+351561	WI	JUNEAU	MAUSTON CITY HALL	303 MANSION ST	 MAUSTON	53948
+351562	WI	WAUPACA	FREMONT VILLAGE HALL	317 WOLF RIVER DR	 FREMONT	54940
+351563	WI	JUNEAU	WONEWOC VILLAGE HALL	200 WEST ST	 WONEWOC	53968
+351564	WI	BARRON	RICE LAKE CITY HALL	30 E EAU CLAIRE ST	 RICE LAKE	54868
+351565	WI	BARRON	BARRON CITY HALL	1456 E LA SALLE AVE	 BARRON	54812
+351566	WI	OUTAGAMIE	SHIOCTON VILLAGE HALL	N5605 STATE HIGHWAY 76	 SHIOCTON	54170
+351567	WI	WOOD	LINCOLN TOWN HALL	10905 FALCON RD	 MARSHFIELD	54449
+351568	WI	MANITOWOC	MISHICOT VFW HALL	314 W MAIN ST	 MISHICOT	54228
+351569	WI	CALUMET	NEW HOLSTEIN CITY HALL	2110 WASHINGTON ST	 NEW HOLSTEIN	53061
+351570	WI	WOOD	SENECA TOWN HALL	3540 COUNTY ROAD Q	 WISC RAPIDS	54495
+351571	WI	LACROSSE	GREENFIELD TOWN HALL	N1800 TOWN HALL RD	 LA CROSSE	54601
+351572	WI	RACINE	UNION GROVE MUNICIPAL BUILDING	925 15TH AVE	 UNION GROVE	53182
+351573	WI	DANE	PRIMROSE TOWN HALL	8468 COUNTY ROAD A	 VERONA	53593
+351574	WI	MARQUETTE	PACKWAUKEE TOWN HALL	N3511 STATE ST	 PACKWAUKEE	53953
+351575	WI	LANGLADE	WOLF RIVER TOWN HALL	N4393 BLUE GOOSE DR	 WHITE LAKE	54491
+351576	WI	DUNN	SAINT HENRY'S PARISH HALL	N448 COUNTY ROAD D	 EAU GALLE	54737
+351577	WI	GREEN	SPRING GROVE TOWN HALL	N2475 COUNTY ROAD GG	 BRODHEAD	53520
+351578	WI	DANE	PERRY TOWN HALL	10084 COUNTY ROAD A	 MOUNT HOREB	53572
+351579	WI	SAUK	DELLONA TOWN HALL	E8062 COUNTY ROAD H	 LYNDON STA	53944
+351580	WI	CHIPPEWA	LAKE HOLCOMBE TOWN HALL	26194 276TH ST	 HOLCOMBE	54745
+351581	WI	KEWAUNEE	ALGOMA CITY HALL	416 FREMONT ST	 ALGOMA	54201
+351582	WI	WOOD	SHERRY TOWN HALL	9285 2ND ST	 MILLADORE	54454
+351583	WI	WINNEBAGO	VINLAND TOWN HALL	6085 COUNTY ROAD T	 OSHKOSH	54904
+351584	WI	FOND DU LAC	RIPON TOWN OFFICE	N8191 DOUGLAS ST	 RIPON	54971
+351585	WI	BURNETT	SWISS TOWN HALL	7551 MAIN ST	 DANBURY	54830
+351586	WI	ROCK	TODD ELEMENTARY SCHOOL	1621 OAKWOOD AVE	 BELOIT	53511
+351587	WI	IOWA	ARENA VILLAGE HALL	345 WEST ST	 ARENA	53503
+351588	WI	CHIPPEWA	ANSON TOWN HALL	13836 COUNTY HIGHWAY S S	 JIM FALLS	54748
+351589	WI	FOND DU LAC	ELDORADO COMMUNITY HALL	N7664 COUNTY ROAD C	 ELDORADO	54932
+351590	WI	OUTAGAMIE	ONEIDA TOWN HALL	N6593 COUNTY ROAD H	 ONEIDA	54155
+351591	WI	SAUK	TROY TOWN HALL	S10372 COUNTY ROAD C	 SPRING GREEN	53588
+351592	WI	MILWAUKEE	WEST MILWAUKEE COMMUNITY CENTER	1345 S 47TH ST	 W MILWAUKEE	53214
+351593	WI	VERNON	HAMBURG TOWN HALL	S1631 COUNTY ROAD K A	 CHASEBURG	54621
+351594	WI	WOOD	RUDOLPH TOWN HALL	6432 2ND AVE	 RUDOLPH	54475
+351595	WI	WOOD	AUBURNDALE VILLAGE HALL	5988 1ST ST	 AUBURNDALE	54412
+351596	WI	CHIPPEWA	CLEVELAND TOWN HALL	20470 STATE HIGHWAY 64	 CORNELL	54732
+351597	WI	DANE	AMUNDSON COMMUNITY CENTER	200 SPRING ST	 CAMBRIDGE	53523
+351598	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 010	NA	NA	\N
+351599	WI	WAUSHARA	TUSTIN FIRE STATION	N5115 CENTER ST	 FREMONT	54940
+351600	WI	MARATHON	Mosinee Town Hall	1104 Town Hall Rd	Mosinee	54455
+351601	WI	EAU CLAIRE	DRAMMEN TOWN HALL	W6505 COUNTY ROAD ZZ	 MONDOVI	54755
+351602	WI	DODGE	LOWELL TOWN OFFICE BUILDING	W8906 OLD SIXTEEN RD	 REESEVILLE	53579
+351603	WI	WAUKESHA	BUTLER VILLAGE HALL	12621 W HAMPTON AVE	 BUTLER	53007
+351604	WI	ROCK	ORFORDVILLE FIRE STATION	173 N WRIGHT ST	 ORFORDVILLE	53576
+351605	WI	EAU CLAIRE	ALTOONA CITY HALL	1303 LYNN AVE	 ALTOONA	54720
+351606	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 182	NA	NA	\N
+351607	WI	DODGE	EMMET TOWN HALL	W6777 2ND STREET RD	 WATERTOWN	53098
+351608	WI	MANITOWOC	MANITOWOC TOWN HALL & SILVER CREEK FIRE DEPT	1822 SILVER CREEK RD	 MANITOWOC	54220
+351609	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 213	NA	NA	\N
+351610	WI	WAUPACA	UNION TOWN HALL	E6592 STATE ROAD 22	 BEAR CREEK	54922
+351611	WI	SAUK	HONEY CREEK TOWN HALL	E8712 COUNTY ROAD C	 NORTH FREEDOM	53951
+351612	WI	GREEN LAKE	MANCHESTER TOWN HALL	W9757 COUNTY ROAD O	 BLK RIVER FLS	54615
+351613	WI	DODGE	WILLIAMSTOWN TOWN HALL	W3275 COUNTY ROAD TW	 MAYVILLE	53050
+351614	WI	EAU CLAIRE	LINCOLN TOWN HALL	S5555 GREEN MEADOW RD	 FALL CREEK	54742
+351615	WI	WASHBURN	TREGO TOWN HALL	W5690 TREGO RIVER ST	 TREGO	54888
+351616	WI	OUTAGAMIE	SEYMOUR TOWN HALL	10975 COUNTY ROAD O	 SHULLSBURG	53586
+351617	WI	DANE	WAUNAKEE COMMUNITY CENTER-COMMUNITY ROOMS	333 S MADISON ST	 WAUNAKEE	53597
+351618	WI	DANE	BERRY TOWN HALL	9046 STATE ROAD 19	 MAZOMANIE	53560
+351619	WI	DANE	BLUE MOUNDS VILLAGE HALL	11011 BRIGHAM AVE	 BLUE MOUNDS	53517
+351620	WI	SAUK	REEDSBURG RECREATION CENTER	134 S LOCUST ST	 REEDSBURG	53959
+351621	WI	DOUGLAS	GORDON TOWN HALL	9709 E COUNTY ROAD Y	 GORDON	54838
+351622	WI	OUTAGAMIE	CELEBRATION MINISTRY CENTER (FAITH LUTHERAN CHURCH)	3100 E EVERGREEN DR	 APPLETON	54913
+351623	WI	GREEN LAKE	GREEN LAKE TOWN HALL	N4454 HORNER RD	 MARKESAN	53946
+351624	WI	DUNN	ELK MOUND MUNICIPAL BUILDING	E206 MENOMONIE ST	 ELK MOUND	54739
+351625	WI	OCONTO	Breed Community Center	11155 STATE HIGHWAY 32	 SURING	54174
+351626	WI	WAUPACA	BEAR CREEK TOWN HALL	E9107 SILVER CREEK RD	 BEAR CREEK	54922
+351627	WI	MARATHON	MARATHON COUNTY SHERIFF DEPT BUILDING	7255 STEWART AVE	 WAUSAU	54401
+351628	WI	MONROE	BYRON TOWN HALL	23286 STATE HIGHWAY 21	 WARRENS	54666
+351629	WI	DOOR	JAYCEE HALL	340 JAYCEE CT	 STURGEON BAY	54235
+351630	WI	WAUSHARA	WAUTOMA TOWN HALL	W8241 BROWN DEER DR	 WAUTOMA	54982
+351631	WI	ASHLAND	BRETTING COMMUNITY CENTER	400 4TH AVE W	 ASHLAND	54806
+351632	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 208	NA	NA	\N
+351633	WI	KENOSHA	WHEATLAND TOWN HALL	34315 GENEVA RD	 NEW MUNSTER	53152
+351634	WI	WAUSHARA	MT MORRIS COMMUNITY CENTER	N3109 21ST LN	 WAUTOMA	54982
+351635	WI	CALUMET	STOCKBRIDGE FIRE STATION	175 S MILITARY RD	 STOCKBRIDGE	53088
+351636	WI	PORTAGE	GRANT TOWN HALL	9011 COUNTY ROAD WW	 WISC RAPIDS	54494
+351637	WI	KENOSHA	Kenosha - Village Of Somers - Kenosha County - Ward 007	NA	NA	\N
+351638	WI	OCONTO	SPRUCE TOWN HALL	9097 COUNTY ROAD B	 OCONTO FALLS	54154
+351639	WI	SAWYER	BASS LAKE TOWN HALL	14412 W COUNTY ROAD K	 HAYWARD	54843
+351640	WI	ASHLAND	JACOBS TOWN HALL	273 GRANT ST	 GLIDDEN	54527
+351641	WI	KEWAUNEE	LUXEMBURG TOWN HALL	E1027 STATE RD 54	 LUXEMBURG	54217
+351642	WI	MARQUETTE	MECAN TOWN HALL	W1561 EVERGREEN LN	 MONTELLO	53949
+351643	WI	GRANT	ULLSVIK HALL	30 S HICKORY ST	 PLATTEVILLE	53818
+351644	WI	ONEIDA	RUSTIC MANOR MOTOR LODGE	6343 STATE HIGHWAY 70 E	 SAINT GERMAIN	54558
+351645	WI	SAUK	Sauk - City Of Reedsburg - Sauk County - Ward 010	NA	NA	\N
+351646	WI	TREMPEALEAU	OSSEO CITY HALL	13712 8TH ST	 OSSEO	54758
+351647	WI	WALWORTH	SPRING PRAIRIE TOWN HALL	N6097 STATE ROAD 120	 ELKHORN	53121
+351648	WI	KENOSHA	Somers Town Hall	7511 12th St	Kenosha	53144
+351649	WI	KENOSHA	PADDOCK LAKE VILLAGE HALL	6969 236TH AVE	 SALEM	53168
+351650	WI	COLUMBIA	WYOCENA TOWN HALL	119 N WASHINGTON ST	 WYOCENA	53969
+351651	WI	MARQUETTE	BUFFALO TOWN HALL	W3205 COUNTY ROAD O	 MONTELLO	53949
+351652	WI	DOOR	BAILEYS HARBOR TOWN HALL	2392 COUNTY ROAD F	 BAILEYS HARBOR	54202
+351653	WI	GRANT	POTOSI VILLAGE HALL	105 N MAIN ST	 POTOSI	53820
+351654	WI	DANE	VERONA TOWN HALL	335 N NINE MOUND RD	 VERONA	53593
+351655	WI	SHAWANO	BARTELME TOWN HALL	N7685 ELM RD	 BOWLER	54416
+351656	WI	DUNN	LUCAS TOWN HALL	E2301 STATE ROAD 29	 MENOMONIE	54751
+351657	WI	MARINETTE	Grover Town Hall	W5161 TOWN HALL RD	 PESHTIGO	54157
+351658	WI	MARATHON	WIEN TOWN HALL	W4302 COUNTY ROAD M	 EDGAR	54426
+351659	WI	BURNETT	DANIELS TOWN HALL	9697 DANIELS 70	 SIREN	54872
+351660	WI	WOOD	RICHFIELD MUNICIPAL BUILDING	8478 RICHFIELD DR	 MARSHFIELD	54449
+351661	WI	POLK	BONE LAKE CHURCH	1101 255TH AVE	 LUCK	54853
+351662	WI	WALWORTH	GENOA CITY VILLAGE HALL	715 WALWORTH ST	 GENOA CITY	53128
+351663	WI	WAUPACA	IOLA VILLAGE HALL	180 N MAIN ST	 IOLA	54945
+351664	WI	CHIPPEWA	HOWARD TOWN HALL AND FIRE STATION	4052 COUNTY HIGHWAY B	 COLFAX	54730
+351665	WI	MARATHON	JOHNSON TOWN HALL	5675 TOWN HALL RD	 ATHENS	54411
+351666	WI	MANITOWOC	WHITELAW VILLAGE HALL	147 W MENASHA AVE	 WHITELAW	54247
+351667	WI	COLUMBIA	RANDOLPH TOWN HALL	109 S MADISON ST	 FRIESLAND	53935
+351668	WI	MARINETTE	COLEMAN MUNICIPAL BUILDING	202 E MAIN ST	 COLEMAN	54112
+351669	WI	MARINETTE	STEPHENSON TOWN HALL	W11280 COUNTY ROAD X	 CRIVITZ	54114
+351670	WI	DUNN	STANTON TOWN SHOP	E1940 890TH AVE	 KNAPP	54749
+351671	WI	GREEN	WASHINGTON TOWN HALL	W6113 COUNTY ROAD C	 MONTICELLO	53570
+351672	WI	PORTAGE	AMHERST TOWN HALL	4023 COUNTY ROAD Q	 AMHERST JUNCTION	54407
+351673	WI	MARQUETTE	WESTFIELD VILLAGE HALL	129 E 3RD ST	 WESTFIELD	53964
+351674	WI	FOND DU LAC	WAUPUN TOWN HALL	N4369 COUNTY ROAD M	 BRANDON	53919
+351675	WI	COLUMBIA	CAMBRIA COMMUNITY ROOM	NA	 W EDGEWATER ST	\N
+351676	WI	FOND DU LAC	SPRINGVALE TOWN HALL	W10758 COUNTY ROAD T	 BRANDON	53919
+351677	WI	WASHBURN	SHELL LAKE CITY HALL	501 1ST ST	 SHELL LAKE	54871
+351678	WI	POLK	OSCEOLA HIGH SCHOOL	1111 OAK RIDGE DR	 OSCEOLA	54020
+351679	WI	DANE	MADISON TOWN HALL	2120 FISH HATCHERY RD	 MADISON	53713
+351680	WI	TAYLOR	WESTBORO COMMUNITY CENTER	N8855 2ND ST	 WESTBORO	54490
+351681	WI	MONROE	PORTLAND TOWN HALL	6736 STATE HIGHWAY 33	 CASHTON	54619
+351682	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 290	NA	NA	\N
+351683	WI	MANITOWOC	GIBSON TOWN HALL	14920 COUNTY ROAD Q	 MISHICOT	54228
+351684	WI	WASHBURN	MINONG TOWN HALL	W7095 NANCY LAKE RD	 MINONG	54859
+351685	WI	ASHLAND	Ashland - City Of Ashland - Multiple Counties - Ward 003	NA	NA	\N
+351686	WI	FOND DU LAC	ROSENDALE TOWN HALL	N8472 COUNTY ROAD M	 RIPON	54971
+351687	WI	FOND DU LAC	ALTO COMMUNITY CENTER	W12785 COUNTY ROAD AS	 WAUPUN	53963
+351688	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 133	NA	NA	\N
+351689	WI	MARINETTE	WAGNER TOWN HALL	W2379 COUNTY ROAD JJ	 WAUSAUKEE	54177
+351690	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 227	NA	NA	\N
+351691	WI	LINCOLN	SCOTT TOWN HALL	N563 LAKE RD	 MERRILL	54452
+351692	WI	VERNON	LA FARGE EMERGENCY SERVICES BUILDING	201 S CHERRY ST	 LA FARGE	54639
+351693	WI	MARATHON	BERGEN TOWN HALL	644 ANGLERS LN	 MOSINEE	54455
+351694	WI	SHAWANO	BELLE PLAINE COMMUNITY CENTER	N3002 STATE ROAD 22	 CLINTONVILLE	54929
+351695	WI	ADAMS	NEW HAVEN TOWN HALL	330 GOLDEN CT	 WISC DELLS	53965
+351696	WI	KENOSHA	Kenosha - Village Of Somers - Kenosha County - Ward 004	NA	NA	\N
+351697	WI	WAUKESHA	SAINT JOHN'S LUTHERAN CHURCH	20275 DAVIDSON RD	 BROOKFIELD	53045
+351698	WI	GRANT	HAZEL GREEN TOWN GARAGE	3910 N PERCIVAL ST	 HAZEL GREEN	53811
+351699	WI	PEPIN	Durand City Hall	104 E Main St	Durand	54736
+351700	WI	DOOR	BRUSSELS COMMUNITY CENTER	1366 JUNCTION RD	 BRUSSELS	54204
+351701	WI	GREEN	BROOKLYN TOWN HALL	400 W MAIN ST	 BROOKLYN	53521
+351702	WI	CHIPPEWA	ARTHUR TOWN HALL	25091 COUNTY HWY S	 CADOTT	54727
+351703	WI	ONEIDA	CASSIAN TOWN HALL	9110 CHURCH RD	 HARSHAW	54529
+351704	WI	ST CROIX	GLENWOOD TOWN HALL	3099 160TH AVE	 GLENWOOD CITY	54013
+351705	WI	DANE	MARSHALL MUNICIPAL BUILDING	130 S PARDEE ST	 MARSHALL	53559
+351706	WI	MARATHON	EAU PLEINE TOWN HALL	EP410 EQUITY ST	 STRATFORD	54484
+351707	WI	BURNETT	WOOD RIVER TOWN HALL	11626 STATE ROAD 70	 GRANTSBURG	54840
+351708	WI	ASHLAND	SANBORN TOWN HALL	69393 LAKE SHORE DR E	 ASHLAND	54806
+351709	WI	COLUMBIA	LEEDS TOWN HALL	N1485 PRIBBENOW DR	 ARLINGTON	53911
+351710	WI	RUSK	ATLANTA TOWN HALL	N5170 STATE ROAD 40	 BRUCE	54819
+351711	WI	ST CROIX	STAR PRAIRIE TOWN HALL	2118 COOK DR	 SOMERSET	54025
+351712	WI	ROCK	MAGNOLIA TOWN HALL	14729 W COUNTY ROAD A	 EVANSVILLE	53536
+351713	WI	MARINETTE	PESHTIGO MUNICIPAL BUILDING/ CITY HALL	331 FRENCH ST	 PESHTIGO	54157
+351714	WI	CALUMET	HILBERT VILLAGE HALL	26 N 6TH ST	 HILBERT	54129
+351715	WI	CLARK	YORK TOWN HALL	N5890 COUNTY ROAD K	 GRANTON	54436
+351716	WI	MARINETTE	MIDDLE INLET TOWN HALL	W7901 COUNTY ROAD X	 MIDDLE INLET	54114
+351717	WI	PRICE	OGEMA PUBLIC LIBRARY	W5005 STATE HIGHWAY 86	 OGEMA	54459
+351718	WI	MARATHON	KNOWLTON TOWN HALL	1243 S OLD HIGHWAY 51	 MOSINEE	54455
+351719	WI	MANITOWOC	Reedsville Municipal Building	217 Menasha St	Reedsville	54230
+351720	WI	MARINETTE	GOODMAN MUNICIPAL BUILDING	506 MILL ST	 GOODMAN	54125
+351721	WI	LAFAYETTE	ARGYLE PUBLIC LIBRARY	401 E MILWAUKEE ST	 ARGYLE	53504
+351722	WI	PRICE	LAKE TOWN HALL	W8095 COUNTY RD E	 PARK FALLS	54552
+351723	WI	MARATHON	STRATFORD COMMUNITY HALL	300 E LARCH ST	 STRATFORD	54484
+351724	WI	BROWN	NEW DENMARK TOWN HALL	5531 W TOWN HALL RD	 DENMARK	54208
+351725	WI	KENOSHA	SILVER LAKE VILLAGE HALL	113 S FIRST ST	 SILVER LAKE	53170
+351726	WI	WINNEBAGO	NEPEUSKUN TOWN HALL	1475 COUNTY RD E	 RIPON	54971
+351727	WI	TAYLOR	CHELSEA TOWN HALL	N5917 SETTLEMENT DR	 MEDFORD	54451
+351728	WI	CRAWFORD	FREEMAN TOWN HALL	58596 COUNTY ROAD B	 FERRYVILLE	54628
+351729	WI	FOND DU LAC	OAKFIELD TOWN HALL	N3349 OAK CENTER RD	 OAKFIELD	53065
+351730	WI	GREEN	NEW GLARUS TOWN HALL	1101 STATE HWY 69	 NEW GLARUS	53574
+351731	WI	BROWN	GLENMORE COMMUNITY CENTER	5718 DICKINSON RD	 DE PERE	54115
+351732	WI	OCONTO	OCONTO TOWN HALL	6120 CREAM CITY RD	 OCONTO	54153
+351733	WI	POLK	DRESSER VILLAGE HALL	102 W MAIN ST	 DRESSER	54009
+351734	WI	PORTAGE	WHITING MUNICIPAL CENTER	3600 WATER ST	 STEVENS POINT	54481
+351735	WI	CLARK	LOYAL CITY HALL	301 N MAIN ST	 LOYAL	54446
+351736	WI	COLUMBIA	ARLINGTON VILLAGE HALL	200 COMMERCIAL ST	 ARLINGTON	53911
+351737	WI	SAWYER	ROUND LAKE TOWN HALL	10625 N COUNTY ROAD A	 HAYWARD	54843
+351738	WI	FOND DU LAC	METOMEN TOWN HALL	N6971 STATE ROAD 44 49	 RIPON	54971
+351739	WI	DODGE	JUNEAU COMMUNITY CENTER	500 LINCOLN DR	 JUNEAU	53039
+351740	WI	WASHBURN	SPOONER CITY HALL	515 N SUMMIT ST	 SPOONER	54801
+351741	WI	GRANT	FENNIMORE MEMORIAL BUILDING	860 LINCOLN AVE	 FENNIMORE	53809
+351742	WI	FOND DU LAC	MARSHFIELD/MT.CALVARY TOWN HALL	999 FOND DU LAC ST	 MOUNT CALVARY	53057
+351743	WI	OUTAGAMIE	BLACK CREEK COMMUNITY CENTER	507 S MAPLE ST	 BLACK CREEK	54106
+351744	WI	WINNEBAGO	WOLF RIVER TOWN HALL	8800 COUNTY RD II BLDG -	 FREMONT	54940
+351745	WI	WAUKESHA	Waukesha - Town Of Brookfield - Waukesha County - Ward 004	NA	NA	\N
+351746	WI	SAUK	LA VALLE TOWN HALL	314 STATE ROAD 33/58	 LA VALLE	53941
+351747	WI	WOOD	PORT EDWARDS FIRE STATION	431 LETENDRE AVE	 PORT EDWARDS	54469
+351748	WI	DOUGLAS	SUPERIOR VILLAGE HALL	6702 OGDEN AVE	 SUPERIOR	54880
+351749	WI	DANE	MEDINA TOWN GARAGE	634 STATE ROAD 19	 MARSHALL	53559
+351750	WI	BURNETT	SIREN VILLAGE HALL	24049 1ST AVE	 SIREN	54872
+351751	WI	MARQUETTE	WESTFIELD TOWN HALL	W7703 EMBER AVE	 WESTFIELD	53964
+351752	WI	WOOD	VESPER MUNICIPAL BUILDING	6554 CAMERON AVE	 VESPER	54489
+351753	WI	CHIPPEWA	COOKS VALLEY TOWN HALL	15751 40TH ST	 BLOOMER	54724
+351754	WI	DANE	YORK TOWN HALL	796 YORK CENTER RD	 MARSHALL	53559
+351755	WI	DOUGLAS	LAKESIDE TOWN HALL	3196 S POPLAR RIVER RD	 POPLAR	54864
+351756	WI	IOWA	MINERAL POINT CITY HALL	138 HIGH ST Suite 1	MINERALAL POINT	53565
+351757	WI	DUNN	COLFAX TOWN HALL	N8409 COUNTY ROAD M	 COLFAX	54730
+351758	WI	CLARK	DORCHESTER VILLAGE HALL	188 S 2ND ST	 DORCHESTER	54425
+351759	WI	PORTAGE	CARSON TOWN HALL	3756 COUNTY ROAD M	 STEVENS POINT	54481
+351760	WI	OCONTO	GILLETT TOWN HALL	10908 TOWN HALL RD	 GILLETT	54124
+351761	WI	MILWAUKEE	CONGRESS SCHOOL	5225 W LINCOLN CREEK DR	 MILWAUKEE	53218
+351762	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 008	NA	NA	\N
+351763	WI	TREMPEALEAU	Indepndence City Hall	23688 Adams St	Independence	54747
+351764	WI	CHIPPEWA	TILDEN TOWN HALL	10790 100TH AVE	 CHIPPEWA FLS	54729
+351765	WI	MANITOWOC	LAKESHORE TECHNICAL COLLEGE	1290 NORTH AVE	 CLEVELAND	53015
+351766	WI	WAUKESHA	OCONOMOWOC LAKE VILLAGE HALL	35328 PABST RD	 OCONOMOWOC	53066
+351767	WI	DODGE	HUSTISFORD VILLAGE HALL	201 S LAKE ST	 HUSTISFORD	53034
+351768	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 001	NA	NA	\N
+351769	WI	TAYLOR	BROWNING TOWN HALL	N3030 LEKIE DR	 MEDFORD	54451
+351770	WI	SHEBOYGAN	CASCADE VILLAGE HALL	301 1ST ST	 CASCADE	53011
+351771	WI	MONROE	ADRIAN TOWN HALL	15937 COUNTY HIGHWAY T	 TOMAH	54660
+351772	WI	CLARK	FREMONT TOWN HALL	N5671 OAK ST	 CHILI	54420
+351773	WI	GRANT	MUSCODA MEMORIAL BUILDING	206 N WISCONSIN AVE	 MUSCODA	53573
+351774	WI	COLUMBIA	PORTAGE MUNICIPAL BUILDING	115 W PLEASANT ST	 PORTAGE	53901
+351775	WI	ST CROIX	Civic Center	156 EAST FIRST STREET	 NEW RICHMOND	54017
+351776	WI	MONROE	GREENFIELD TOWN HALL	11575 FISHER RD	 TOMAH	54660
+351777	WI	CHIPPEWA	COLBURN TOWN HALL	18476 COUNTY HIGHWAY S N	 STANLEY	54768
+351778	WI	RICHLAND	RICHLAND TOWN GARAGE	1190 E HASELTINE ST	 RICHLAND CTR	53581
+351779	WI	PIERCE	MARTELL TOWN HALL	W5581 US HIGHWAY 63	 SPRING VALLEY	54767
+351780	WI	POLK	LUCK TOWN HALL	135 1st Ave W	 LUCK	54853
+351781	WI	WINNEBAGO	WINNECONNE MUNICIPAL CENTER	30 S 1ST ST	 WINNECONNE	54986
+351782	WI	ADAMS	QUINCY TOWN HALL	2599 COUNTY ROAD Z	 FRIENDSHIP	53934
+351783	WI	LINCOLN	SCHLEY TOWN HALL	W1696 COUNTY ROAD C	 GLEASON	54435
+351784	WI	DANE	BLOOMING GROVE TOWN HALL	1880 S STOUGHTON RD	 MADISON	53716
+351785	WI	WAUPACA	LITTLE WOLF TOWN HALL	E6325 COUNTY ROAD N	 MANAWA	54949
+351786	WI	PORTAGE	ALMOND AMERICAN LEGION	1401 DIVISION ST	 ALMOND	54909
+351787	WI	MONROE	ANGELO TOWN HALL	14123 COUNTY HIGHWAY I	 SPARTA	54656
+351788	WI	MONROE	SPARTA CITY HALL	201 W OAK ST	 SPARTA	54656
+351789	WI	SAUK	BARABOO TOWN HALL	101 CEDAR ST	 BARABOO	53913
+351790	WI	OCONTO	Brazeau Town Hall	10892 PARKWAY RD	 POUND	54161
+351791	WI	BURNETT	GRANTSBURG VILLAGE HALL	316 S BRAD ST	 GRANTSBURG	54840
+351792	WI	OCONTO	RIVERVIEW TOWN HALL	15471 STATE HIGHWAY 32	 MOUNTAIN	54149
+351793	WI	ROCK	LIMA TOWN HALL	11053 E WILLOW DR	 WHITEWATER	53190
+351794	WI	ASHLAND	ASHLAND SENIOR COMMUNITY CENTER	400 CHAPPLE AVE	 ASHLAND	54806
+351795	WI	LANGLADE	ELCHO COMMUNITY CENTER	N11234 DORR ST	 ELCHO	54428
+351796	WI	FOND DU LAC	OAKFIELD COMMUNITY CENTER	130 N MAIN ST	 OAKFIELD	53065
+351797	WI	IOWA	DODGEVILLE CITY HALL	100 E FOUNTAIN ST	 DODGEVILLE	53533
+351798	WI	MARINETTE	BEAVER TOWN HALL	W8405 COUNTY ROAD P	 CRIVITZ	54114
+351799	WI	MANITOWOC	ST NAZIANZ VILLAGE HALL	228 W MAIN ST	 ST NAZIANZ	54232
+351800	WI	ADAMS	EASTON TOWN HALL	1163 COUNTY ROAD A	 ADAMS	53910
+351801	WI	KENOSHA	Bristol Municipal Building	19801 83rd St	Bristol	53104
+351802	WI	POLK	AMERY CITY HALL	118 CENTER ST W	 AMERY	54001
+351803	WI	LINCOLN	RUSSELL FIRE STATION	N5369 STATE HIGHWAY 17	 GLEASON	54435
+351804	WI	SHAWANO	TIGERTON VILLAGE HALL	221 BIRCH ST	 TIGERTON	54486
+351805	WI	WAUPACA	SCANDINAVIA TOWN AND VILLAGE MUNICIPAL CENTER	349 N MAIN ST	 SCANDINAVIA	54977
+351806	WI	WAUSHARA	WARREN TOWN HALL	N1708 29TH LN	 REDGRANITE	54970
+351807	WI	RICHLAND	LONE ROCK VILLAGE OFFICE BUILDING	314 E FOREST ST	 LONE ROCK	53556
+351808	WI	OCONTO	OCONTO FALLS TOWN HALL	8680 STATE HIGHWAY 22	 OCONTO FALLS	54154
+351809	WI	DANE	BLACK EARTH VILLAGE HALL	1210 MILLS ST	 BLACK EARTH	53515
+351810	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 017	NA	NA	\N
+351811	WI	PRICE	WORCESTER TOWN HALL	W6895 SPRINGS DR	 PHILLIPS	54555
+351812	WI	MARATHON	SPENCER MUNICIPAL BUILDING	S671 KARAU AVE	 MARSHFIELD	54449
+351813	WI	POLK	CENTURIA VILLAGE HALL	305 WISCONSIN AVE	 CENTURIA	54824
+351814	WI	CALUMET	BROTHERTOWN TOWN HALL	W3880 SAINT CHARLES RD	 CHILTON	53014
+351815	WI	COLUMBIA	OTSEGO TOWN HALL	W3199 STATE ROAD 16	 COLUMBUS	53925
+351816	WI	CALUMET	Chilton Town Hall	N4695 COUNTY ROAD BB	 CHILTON	53014
+351817	WI	MARATHON	REID TOWN HALL	1603 COUNTY ROAD Y	 HATLEY	54440
+351818	WI	OUTAGAMIE	VANDENBROEK COMMUNITY CENTER	W2030 COUNTY ROAD JJ	 FREEDOM	54130
+351819	WI	BARRON	DOVRE TOWN HALL	304 25 1/2 ST	 NEW AUBURN	54757
+351820	WI	JUNEAU	LINDINA TOWN HALL	N3485 COUNTY ROAD G	 MAUSTON	53948
+351821	WI	TREMPEALEAU	ARCADIA SENIOR COMMUNITY CENTER	401 W MAIN ST	 ARCADIA	54612
+351822	WI	VERNON	COON TOWN HALL	S1770 TOWN HALL LANE	 WESTBY	54667
+351823	WI	DANE	BROOKLYN VILLAGE HALL	102 N RUTLAND AVE	 BROOKLYN	53521
+351824	WI	ASHLAND	Ashland - City Of Ashland - Multiple Counties - Ward 002	NA	NA	\N
+351825	WI	WAUPACA	WASHINGTON CENTER	600 W WASHINGTON ST	 NEW LONDON	54961
+351826	WI	OUTAGAMIE	Municipal Building	328 N Main St	Seymour	54165
+351827	WI	DANE	CHRISTIANA TOWN HALL	773 KOSHKONONG RD	 CAMBRIDGE	53523
+351828	WI	DODGE	HUSTISFORD TOWN HALL	N3906 COUNTY ROAD EE	 NEOSHO	53059
+351829	WI	DANE	SAINT MARY'S CARE CENTER	3401 MAPLE GROVE DR	 MADISON	53719
+351830	WI	WALWORTH	FONTANA VILLAGE HALL	175 VALLEY VIEW DR	 FONTANA	53125
+351831	WI	CHIPPEWA	CORNELL CITY COUNCIL CHAMBERS	102 N 3RD ST	 CORNELL	54732
+351832	WI	CLARK	PINE VALLEY TOWN HALL	N3907 MARG AVE	 NEILLSVILLE	54456
+351833	WI	SAUK	WEST BARABOO VILLAGE HALL	500 CEDAR ST	 BARABOO	53913
+351834	WI	WAUKESHA	Waukesha - Town Of Brookfield - Waukesha County - Ward 010	NA	NA	\N
+351835	WI	OCONTO	PENSAUKEE TOWN HALL	4684 BROOKSIDE RD	 ABRAMS	54101
+351836	WI	GRANT	SMELSER TOWN HALL	1233 SAINT ROSE RD	 CUBA CITY	53807
+351837	WI	COLUMBIA	SCOTT TOWN HALL	W3696 ROSS RD	 CAMBRIA	53923
+351838	WI	WOOD	MILLADORE TOWN HALL	3720 COUNTY ROAD P	 MILLADORE	\N
+351839	WI	OUTAGAMIE	VFW HALL	305 E BECKERT RD	 NEW LONDON	54961
+351840	WI	FOND DU LAC	FRIENDSHIP TOWN HALL	W6931 COUNTY RD N	 VAN DYNE	54979
+351841	WI	SAWYER	EDGEWATER TOWN HALL	1470 N WOODDALE RD	 BIRCHWOOD	54817
+351842	WI	SAUK	WOODLAND TOWN HALL	S548 COUNTY ROAD G	 WONEWOC	53968
+351843	WI	OCONTO	OCONTO CITY HALL	1210 MAIN ST	 OCONTO	54153
+351844	WI	SAUK	FAIRFIELD TOWN HALL	E12891 COUNTY ROAD U	 BARABOO	53913
+351845	WI	MONROE	TOMAH GARAGE	24381 HERITAGE AVE	 TOMAH	54660
+351846	WI	CHIPPEWA	AUBURN TOWN HALL	3826 STATE HIGHWAY 64	 BLOOMER	54724
+351847	WI	GRANT	LIMA TOWN HALL	8712 TOWN HALL RD	 PLATTEVILLE	53818
+351848	WI	DUNN	COLFAX MUNICIPAL BUILDING	613 MAIN ST	 COLFAX	54730
+351849	WI	MARATHON	ATHENS MUNICIPAL BUILDING	221 CAROLINE ST	 ATHENS	54411
+351850	WI	ONEIDA	STELLA TOWN HALL	2496 COUNTY C	 RHINELANDER	54501
+351851	WI	MARATHON	CLEVELAND MUNICIPAL CENTER	C4262 COUNTY ROAD M	 STRATFORD	54484
+351852	WI	COLUMBIA	NEWPORT MEMORIAL TOWN HALL	N9236 TOWN HALL ROAD	 WISCONSIN DELLS	53965
+351853	WI	IOWA	MINERAL POINT CITY HALL	137 HIGH ST Suite 1	MINERALAL POINT	53565
+351854	WI	MANITOWOC	MANITOWOC RAPIDS TOWN HALL	8624 COUNTY ROAD JJ	 MANITOWOC	54220
+351855	WI	BARRON	STANFOLD TOWN HALL	2097 15TH ST	 RICE LAKE	54868
+351856	WI	ADAMS	ADAMS CITY HALL	101 N MAIN ST	 ADAMS	53910
+351857	WI	ROCK	FOOTVILLE VILLAGE HALL	156 DEPOT ST	 FOOTVILLE	53537
+351858	WI	MANITOWOC	FRANKLIN TOWN SHOP	7524 COUNTY HWY J	 CATO	54230
+351859	WI	JEFFERSON	MILFORD TOWN HALL	W6335 COUNTY ROAD A	 JOHNSON CREEK	53038
+351860	WI	BURNETT	WEBSTER COMMUNITY CENTER	7421 MAIN ST W	 WEBSTER	54893
+351861	WI	WAUPACA	FREMONT TOWN HALL	E7403 STATE ROAD 110	 FREMONT	54940
+351862	WI	BURNETT	MEENON TOWN HALL	7396 KRUGER RD	 WEBSTER	54893
+351863	WI	MARATHON	HULL TOWN HALL	H3306 BLUEBERRY RD	 COLBY	54421
+351864	WI	PIERCE	SPRING VALLEY VILLAGE HALL	E121 N 2ND ST	 SPRING VALLEY	54767
+351865	WI	VERNON	HARMONY TOWN HALL	E2905 NEWTON RD	 GENOA	54632
+351866	WI	PEPIN	PEPIN VILLAGE HALL	508 2ND ST	 PEPIN	54759
+351867	WI	JUNEAU	ARMENIA TOWN HALL	W5310 COUNTY ROAD G	 NECEDAH	54646
+351868	WI	BARRON	BEAR LAKE TOWN HALL	2498 17TH ST	 RICE LAKE	54868
+351869	WI	ST CROIX	ERIN PRAIRIE TOWN HALL	1952 COUNTY ROAD G	 NEW RICHMOND	54017
+351870	WI	KEWAUNEE	WEST KEWAUNEE TOWN HALL	1523 ELLIS ST	 KEWAUNEE	54216
+351871	WI	ASHLAND	GINGLES TOWN HALL	49833 STATE HIGHWAY 112	 ASHLAND	54806
+351872	WI	GRANT	CASSVILLE VILLAGE HALL	100 E AMELIA ST	 CASSVILLE	53806
+351873	WI	DODGE	REESEVILLE MUNICIPAL BUILDING	206 S MAIN ST	 REESEVILLE	53579
+351874	WI	MILWAUKEE	HAWLEY SCHOOL	5610 W WISCONSIN AVE	 MILWAUKEE	53213
+351875	WI	DOUGLAS	BRULE TOWN HALL	5814 S MAPLE ST	 BRULE	54820
+351876	WI	CHIPPEWA	STANLEY FIRE STATION	239 E 1ST AVE	 STANLEY	54768
+351877	WI	JEFFERSON	SAINT COLETTA'S CABIN	N4390 COUNTY HWY Y	 JEFFERSON	53549
+351878	WI	RUSK	STUBBS TOWN HALL	N3305 HUTCHINSON RD S	 BRUCE	54819
+351879	WI	WAUPACA	FIRST PRESBYTERIAN CHURCH	200 S PINE ST	 WEYAUWEGA	54983
+351880	WI	IOWA	MINERAL POINT TOWN HALL	4070 STATE HWY 39	 MINERAL POINT	53565
+351881	WI	ST CROIX	SAINT JOSEPH TOWN HALL	1337 COUNTY ROAD V	 HUDSON	54016
+351882	WI	CALUMET	NEW HOLSTEIN TOWN HALL	1465 TECUMSEH RD	 NEW HOLSTEIN	53061
+351883	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 026	NA	NA	\N
+351884	WI	BUFFALO	NAPLES TOWN HALL	S283 COUNTY ROAD BB	 MONDOVI	54755
+351885	WI	VERNON	WEBSTER TOWN HALL	E10614 STATE HIGHWAY 82	 LA FARGE	54639
+351886	WI	LAFAYETTE	WILLOW SPRINGS TOWN HALL	17614 RIDGE ST	 MINERAL POINT	53565
+351887	WI	MANITOWOC	FRANCIS CREEK VILLAGE HALL	200 NORWOOD DR	 FRANCIS CREEK	54214
+351888	WI	PORTAGE	BELMONT TOWN HALL	9110 16TH RD	 ALMOND	54909
+351889	WI	RICHLAND	ITHACA TOWN GARAGE	29464 WILLOW CREEK RD	 RICHLAND CENTER	53581
+351890	WI	JEFFERSON	Sullivan Village Park	408 Grove St	Sullivan	53178
+351891	WI	DOUGLAS	AMNICON TOWN HALL	8985 E US HIGHWAY 2	 SOUTH RANGE	54874
+351892	WI	KEWAUNEE	MONTPELIER TOWN HALL	E0704 DOUBLE J RD	 LUXEMBURG	54217
+351893	WI	FOND DU LAC	ASHFORD TOWN HALL	N1410 ROLLING DR	 CAMPBELLSPORT	53010
+351894	WI	PRICE	Village Hall	403 Center St	Prentice	54556
+351895	WI	DODGE	HERMAN CONSOLIDATED SCHOOL	N6409 COUNTY ROAD P	 MAYVILLE	53050
+351896	WI	OUTAGAMIE	BLACK CREEK TOWN HALL	N6051 TWELVE CORNERS RD	 BLACK CREEK	54106
+351897	WI	FOND DU LAC	LAMARTINE MUNICIPAL BUILDING	N5269 SCHAEFER DR	 OAKFIELD	53065
+351898	WI	RICHLAND	DAYTON TOWN HALL	24225 COUNTY HWY ZZ	 RICHLAND CTR	53581
+351899	WI	ADAMS	STRONGS PRAIRIE TOWN HALL	1588 STATE HWY 21	 ARKDALE	54613
+351900	WI	TAYLOR	GREENWOOD TOWN HALL	W2790 TROUT AVE	 RIB LAKE	54470
+351901	WI	OUTAGAMIE	BOVINA TOWN HALL	N5289 REXFORD RD	 SHIOCTON	54170
+351902	WI	MARATHON	BEVENT TOWN HALL	1096 S COUNTY ROAD Y	 HATLEY	54440
+351903	WI	PORTAGE	BUENA VISTA TOWN HALL	6684 COUNTY ROAD BB	 BANCROFT	54921
+351904	WI	ROCK	CLINTON VILLAGE HALL	301 CROSS ST	 CLINTON	53525
+351905	WI	JUNEAU	Summit Town Hall	N1025 HWY 58	 MAUSTON	53948
+351906	WI	VERNON	VIROQUA TOWN HALL	E7560A COUNTY ROAD BB	 VIROQUA	54665
+351907	WI	WOOD	NEKOOSA SENIOR/COMMUNITY CENTER	416 CRESTVIEW LN	 NEKOOSA	54457
+351908	WI	DOUGLAS	BENNETT TOWN HALL	9215 E COUNTY ROAD L	 BENNETT	54873
+351909	WI	WAUKESHA	Chenequa Village Hall	31275 COUNTY ROAD K	 HARTLAND	53029
+351910	WI	SHAWANO	ANGELICA TOWN HALL	N3285 COUNTY ROAD C	 PULASKI	54162
+351911	WI	DOUGLAS	PARKLAND TOWN HALL	6221 E VETERANS DR	 SOUTH RANGE	54874
+351912	WI	BARRON	CHETEK CITY HALL	220 STOUT ST	 CHETEK	54728
+351913	WI	ST CROIX	EAU GALLE TOWN HALL	285 COUNTY ROAD BB	 WOODVILLE	54028
+351914	WI	MARATHON	SCHOFIELD CITY HALL	200 PARK ST	 SCHOFIELD	54476
+351915	WI	ROCK	ORFORDVILLE VILLAGE HALL	106 N CENTER ST	 ORFORDVILLE	53576
+351916	WI	GRANT	BLOOMINGTON MUNICIPAL LIBRARY	453 CANAL ST	 BLOOMINGTON	53804
+351917	WI	DOUGLAS	MAPLE COMMUNITY CENTER	11037 E US HIGHWAY 2	 MAPLE	54854
+351918	WI	DOUGLAS	POPLAR VILLAGE HALL	4932 S VILLAGE RD	 POPLAR	54864
+351919	WI	CRAWFORD	SOLDIERS GROVE COMMUNITY BUILDING	102 PASSIVE SUN DR	 SOLDIERS GROVE	54655
+351920	WI	DANE	LAKEWOOD GARDENS	1909 SHERMAN AVE APT 22	 MADISON	53704
+351921	WI	DUNN	NEW HAVEN TOWN HALL	E1318 1260TH AVE	 BOYCEVILLE	54725
+351922	WI	WAUSHARA	DAKOTA TOWN HALL	N1470 STATE ROAD 22	 WAUTOMA	54982
+351923	WI	BUFFALO	FOUNTAIN CITY AUDITORIUM	42 N MAIN ST	 FOUNTAIN CITY	54629
+351924	WI	CRAWFORD	WAUZEKA VILLAGE HALL	212 MAIN ST	 WAUZEKA	53826
+351925	WI	DANE	MONTROSE TOWN HALL	1341 DIANE AVE	 BELLEVILLE	53508
+351926	WI	JUNEAU	LISBON TOWN HALL	N5807 US HIGHWAY 12 AND 16	 NEW LISBON	53950
+351927	WI	PIERCE	UNION TOWN HALL	1119 1ST ST	 PLUM CITY	54761
+351928	WI	MILWAUKEE	TIPPECANOE LIBRARY	3912 S HOWELL AVE	 MILWAUKEE	53207
+351929	WI	MONROE	GLENDALE TOWN HALL	27337 MOCHA RD	 KENDALL	54638
+351930	WI	WAUSHARA	COLOMA PUBLIC LIBRARY	155 FRONT ST	 COLOMA	54930
+351931	WI	GREEN	JUDA COMMUNITY CENTER	W2895 COUNTY ROAD KS	 JUDA	53550
+351932	WI	GRANT	BEETOWN TOWN HALL	7764 COUNTY ROAD U	 BEETOWN	53802
+351933	WI	POLK	CLEAR LAKE TOWN HALL	375 46TH ST	 CLEAR LAKE	54005
+351934	WI	SHEBOYGAN	MITCHELL TOWN HALL	W8095 PARNELL RD	 CASCADE	53011
+351935	WI	BARRON	LAKELAND TOWN HALL	791 29 11/16 AVE	 BARRONETT	54813
+351936	WI	POLK	GARFIELD TOWN HALL	690 MINNEAPOLIS ST	 AMERY	54001
+351937	WI	CLARK	UNITY TOWN HALL	W1296 CAPITAL RD	 SPENCER	54479
+351938	WI	DODGE	RANDOLPH VILLAGE HALL	248 W STROUD ST	 RANDOLPH	53956
+351939	WI	SAUK	BEAR CREEK TOWN HALL	S9497 COUNTY ROAD G	 PLAIN	53577
+351940	WI	BURNETT	OAKLAND TOWN HALL	27826 LONE PINE RD	 WEBSTER	54893
+351941	WI	OZAUKEE	SAUKVILLE TOWN HALL	3762 LAKELAND RD	 SAUKVILLE	53080
+351942	WI	CLARK	SHERMAN TOWN HALL	W896 WILLARD RD	 SPENCER	54479
+351943	WI	BARRON	ALMENA VILLAGE HALL	131 SOO AVE E	 ALMENA	54805
+351944	WI	CALUMET	WOODVILLE TOWN HALL	W3350 COUNTY ROAD B	 HILBERT	54129
+351945	WI	MONROE	OAKDALE TOWN HALL	228 BALLPARK DR	 OAKDALE	54649
+351946	WI	MARATHON	PLOVER TOWN HALL	P4261 COUNTY ROAD Z	 BIRNAMWOOD	54414
+351947	WI	WAUSHARA	ROSE TOWN HALL/LEGION HALL	545 FRONT ST	 WILD ROSE	54984
+351948	WI	CLARK	WITHEE TOWN HALL	N15590 BACHELORS AVE	 THORP	54771
+351949	WI	POLK	APPLE RIVER TOWN HALL	612 US HIGHWAY 8	 AMERY	54001
+351950	WI	SHAWANO	MATSCHE COMMUNITY CENTER	362 RAILROAD AVE	 BIRNAMWOOD	54414
+351951	WI	WAUPACA	WEYAUWEGA OLD MIDDLE SCHOOL	310 E MAIN ST	 WEYAUWEGA	54983
+351952	WI	POLK	GEORGETOWN TOWN HALL	1847 100TH ST	 BALSAM LAKE	54810
+351953	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 291	NA	NA	\N
+351954	WI	ST CROIX	CYLON-DEER PARK COMMUNITY CENTER	120 FRONT ST	 DEER PARK	54007
+351955	WI	WAUPACA	NEW LONDON MUNICIPAL BUILDING	215 N SHAWANO ST	 NEW LONDON	54961
+351956	WI	ST CROIX	EMERALD TOWN HALL	2432 COUNTY ROAD G	 EMERALD	54013
+351957	WI	DOUGLAS	SOLON SPRINGS COMMUNITY CENTER	11523 S BUS HIGHWAY 53	 SOLON SPRINGS	54873
+351958	WI	CRAWFORD	COMMUNITY COMMERCE CENTER	16381 STATE HIGHWAY 131	 GAYS MILLS	54631
+351959	WI	LANGLADE	AINSWORTH TOWN HALL	N9299 COUNTY ROAD TT	 DEERBROOK	54424
+351960	WI	ADAMS	FRIENDSHIP VILLAGE HALL	507 W LAKE ST	 FRIENDSHIP	53934
+351961	WI	OCONTO	LITTLE RIVER TOWN HALL	3627 COUNTY ROAD A	 OCONTO	54153
+351962	WI	SAWYER	CITY OF HAYWARD - CITY HALL	15889 W 3RD ST	 HAYWARD	54843
+351963	WI	MARATHON	HEWITT MUNICIPAL CENTER	H12399 COUNTY ROAD Q	 WAUSAU	54403
+351964	WI	JACKSON	ADAMS TOWN HALL	N7370 US HIGHWAY 12/27	 BLACK RIVER FALLS	54615
+351965	WI	BARRON	VANCE CREEK TOWN HALL	174 2ND AVE	 CLAYTON	54004
+351966	WI	BARRON	SIOUX CREEK TOWN HALL	2067 3 1/2 AVE	 CHETEK	54728
+351967	WI	CLARK	COLBY TOWN HALL	N13295 BADGER AVE	 COLBY	54421
+351968	WI	LAFAYETTE	BLANCHARDVILLE VILLAGE HALL	208 MASON ST	 BLANCHARDVILLE	53516
+351969	WI	RACINE	CROSS LUTHERAN CHURCH	126 CHAPEL TER	 BURLINGTON	53105
+351970	WI	CLARK	THORP TOWN HALL	W10902 COUNTY ROAD X	 STANLEY	54768
+351971	WI	GRANT	POTOSI TOWN HALL	125 CROSS ST	 POTOSI	53820
+351972	WI	PIERCE	MAIDEN ROCK TOWN HALL	W2096 COUNTY ROAD CC	 MAIDEN ROCK	54750
+351973	WI	DODGE	LOMIRA TOWN HALL	N10479 COUNTY ROAD AY	 LOMIRA	53048
+351974	WI	BAYFIELD	WASHBURN TOWN HALL	30015 COUNTY HIGHWAY C	 WASHBURN	54891
+351975	WI	BARRON	ARLAND TOWN HALL	653 9TH AVE	 CLAYTON	54004
+351976	WI	BARRON	OAK GROVE TOWN HALL	2798 22ND ST	 RICE LAKE	54868
+351977	WI	OUTAGAMIE	MAPLE CREEK TOWN HALL	W10388 COUNTY ROAD W	 NEW LONDON	54961
+351978	WI	POLK	FREDERIC VILLAGE HALL	107 HOPE RD W	 FREDERIC	54837
+351979	WI	SHEBOYGAN	GRASHORN MEMORIAL CIVIC CENTER	84 LAKE ST	 ELKHART LAKE	53020
+351980	WI	GREEN	MONTICELLO VILLAGE HALL	140 N MAIN ST	 MONTICELLO	53570
+351981	WI	RACINE	DOVER TOWN HALL	4110 S BEAUMONT AVE	 KANSASVILLE	53139
+351982	WI	DODGE	NEOSHO VILLAGE HALL	210 S SCHUYLER ST	 NEOSHO	53059
+351983	WI	LACROSSE	TOWN OF WASHINGTON TOWN HALL	NEWBURGS CORNER STATE ROAD 33	 BANGOR	54614
+351984	WI	PORTAGE	LINWOOD TOWN HALL	3160 MILL CREEK DR	 STEVENS POINT	54481
+351985	WI	WALWORTH	Darien Village Hall	24 WISCONSIN ST	 DARIEN	53114
+351986	WI	VILAS	WINCHESTER TOWN HALL	10363 COUNTY RD W	 WINCHESTER	54557
+351987	WI	MARATHON	ELDERON COMMUNITY CENTER	1490 CHERRY DR	 ELAND	54427
+351988	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 009	NA	NA	\N
+351989	WI	ST CROIX	STANTON TOWN HALL	2245 COUNTY ROAD T	 DEER PARK	54007
+351990	WI	WAUKESHA	LANNON VILLAGE HALL	20399 W MAIN ST	 LANNON	53046
+351991	WI	IOWA	RIDGEWAY VILLAGE HALL	113 DOUGHERTY CT	 RIDGEWAY	53582
+351992	WI	COLUMBIA	HAMPDEN TOWN HALL	N1291 COUNTY RD N	 COLUMBUS	53925
+351993	WI	BARRON	TURTLE LAKE TOWN HALL	1076 3RD ST	 TURTLE LAKE	54889
+351994	WI	CALUMET	CHARLESTOWN TOWN HALL	N3685 COUNTY ROAD T	 CHILTON	53014
+351995	WI	DOUGLAS	COUNTRY PEACE PRESBYTERIAN CHURCH	4694 S COUNTY ROAD A	 SUPERIOR	54880
+351996	WI	DANE	MAZOMANIE TOWN HALL	711 W HUDSON ST	 MAZOMANIE	53560
+351997	WI	MARATHON	MARATHON TOWN HALL	3684 MARATHON RD	 MARATHON	54448
+351998	WI	DODGE	PORTLAND TOWN HALL	W11720 TAYLOR ST	 WATERLOO	53594
+351999	WI	SAUK	Sauk - City Of Baraboo - Sauk County - Ward 014	NA	NA	\N
+352000	WI	KENOSHA	BRIGHTON TOWN HALL	25000 BURLINGTON RD	 KANSASVILLE	53139
+352001	WI	RICHLAND	MARSHALL TOWN HALL	18475 GILLINGHAM DR	 RICHLAND CTR	53581
+352002	WI	BARRON	POSKIN COMMUNITY CENTER	940 14TH AVE	 POSKIN	54812
+352003	WI	JUNEAU	KILDARE TOWN HALL	N2592 26TH AVE	 LYNDON STA	53944
+352004	WI	SAUK	Town of Winfield Town Hall	S1992 COUNTY ROAD K	 REEDSBURG	53959
+352005	WI	RUSK	DEWEY TOWN HALL	N5323 COUNTY ROAD I	 TONY	54563
+352006	WI	FOND DU LAC	CAMPBELLSPORT PUBLIC LIBRARY	220 N HELENA ST	 CAMPBELLSPORT	53010
+352007	WI	DODGE	THERESA TOWN HALL	N8679 COUNTY ROAD P	 THERESA	53091
+352008	WI	OUTAGAMIE	Outagamie - Village Of Kimberly - Outagamie County - Ward 005	NA	NA	\N
+352009	WI	RACINE	BURLINGTON TOWN HALL	32288 BUSHNELL RD	 BURLINGTON	53105
+352010	WI	OUTAGAMIE	KAUKAUNA TOWN HALL	W780 GREINER RD	 KAUKAUNA	54130
+352011	WI	LACROSSE	BANGOR TOWN HALL	N4400 STATE ROAD 162	 BANGOR	54614
+352012	WI	TREMPEALEAU	Village Of Eleva Hall	25952 E Mondovi St	Eleva	54738
+352013	WI	GREEN	JORDAN TOWN HALL	W8495 STATE HWY 81	 ARGYLE	53504
+352014	WI	PIERCE	PLUM CITY VILLAGE HALL	501 MAIN ST	 PLUM CITY	54761
+352015	WI	CHIPPEWA	BOYD VILLAGE HALL	705 E MURRAY ST	 BOYD	54726
+352016	WI	MARATHON	FRANKFORT TOWN HALL	F2295 COUNTY RD N	 COLBY	54421
+352017	WI	MARATHON	EASTON MUNICIPAL CENTER	E15212 COUNTY ROAD Z	 RINGLE	54471
+352018	WI	MARQUETTE	CRYSTAL LAKE TOWN HALL	N8508 STATE ROAD 22	 NESHKORO	54960
+352019	WI	WALWORTH	WALWORTH TOWN HALL	W6741 BRICK CHURCH RD	 WALWORTH	53184
+352020	WI	COLUMBIA	WYOCENA VILLAGE HALL	165 E DODGE ST	 WYOCENA	53969
+352021	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 007	NA	NA	\N
+352022	WI	DOUGLAS	HAWTHORNE TOWN HALL	7221 S TOWN HALL ROAD	 HAWTHORNE	54842
+352023	WI	GRANT	HAZEL GREEN MUNICIPAL HALL	1610 E FAIRPLAY ST	 HAZEL GREEN	53811
+352024	WI	COLUMBIA	COLUMBUS TOWN HALL	N1120 SCHAEFER RD	 COLUMBUS	53925
+352025	WI	DUNN	CLARELLA HACKETT JOHNSON LIBRARY	E9311 CR-I	 SAND CREEK	54765
+352026	WI	PRICE	PARK FALLS CITY HALL	400 4TH AVE S	 PARK FALLS	54552
+352027	WI	RUSK	GRANT TOWN HALL	W8494 COUNTY ROAD P	 LADYSMITH	54848
+352028	WI	KEWAUNEE	CARLTON TOWN HALL	N1296 TOWN HALL RD	 KEWAUNEE	54216
+352029	WI	FOREST	LINCOLN TOWN HALL	5376 COUNTY RD W	 CRANDON	54520
+352030	WI	JUNEAU	FOUNTAIN TOWN HALL	W9921 JACOBSON RD	 CAMP DOUGLAS	54618
+352031	WI	DODGE	BURNETT TOWN HALL	W6246 W MAIN ST	 BURNETT	53922
+352032	WI	SHAWANO	Wittenberg Comm Center	208 W VINAL ST	 WITTENBERG	54499
+352033	WI	BAYFIELD	DRUMMOND CIVIC CENTER	52540 FRONT AVE	 DRUMMOND	54832
+352034	WI	VERNON	STERLING TOWN HALL	E4621 STATE HIGHWAY 82	 VIROQUA	54665
+352035	WI	VERNON	GENOA TOWN SHOP	S5165 S CREEK RD	 GENOA	54632
+352036	WI	ST CROIX	STAR PRAIRIE COMMUNITY CENTER	207 BRIDGE AVE	 STAR PRAIRIE	54026
+352037	WI	COLUMBIA	LOWVILLE TOWN HALL	W6604 TRAUT RD	 POYNETTE	53955
+352038	WI	GREEN	ALBANY VILLAGE HALL	206 N WATER ST	 ALBANY	53502
+352039	WI	MARATHON	MARATHON MUNICIPAL CENTER	311 WALNUT ST	 MARATHON	54448
+352040	WI	JACKSON	NORTHFIELD TOWN HALL	N10752 SCHOOL HOUSE RD	 NORTHFIELD	54635
+352041	WI	JACKSON	GARFIELD TOWN HALL	W15974 COUNTY ROAD B	 OSSEO	54758
+352042	WI	GRANT	Livingston-Clifton Fire Station	230 N GRAND ST	 LIVINGSTON	53554
+352043	WI	BUFFALO	NELSON TOWN HALL	W2164 COUNTY ROAD D	 NELSON	54756
+352044	WI	ASHLAND	ASHLAND TOWN HALL	39227 STATE HIGHWAY 13	 HIGH BRIDGE	54846
+352045	WI	WALWORTH	UWW UC HAMILTON ROOM	800 W MAIN ST	 WHITEWATER	53190
+352046	WI	SAUK	VILLAGE OF NORTH FREEDOM COMMUNITY CENTER	105 N MAPLE ST	 NORTH FREEDOM	53951
+352047	WI	KEWAUNEE	PIERCE TOWN HALL	N6061 COUNTY ROAD D	 KEWAUNEE	54216
+352048	WI	MARINETTE	PEMBINE TOWN HALL	N18765 SAULD ST	 PEMBINE	54156
+352049	WI	GREEN	MONROE TOWN HALL	N3302 MONROE RD	 MONROE	53566
+352050	WI	JACKSON	ALMA TOWN HALL	110 W CLARK ST	 ALMA CENTER	54611
+352051	WI	RACINE	ELMWOOD PARK TAYLOR COMPLEX	3131 TAYLOR AVE	 RACINE	53405
+352052	WI	IRON	KIMBALL COMMUNITY CENTER	5708 W CENTER DR	 HURLEY	54534
+352053	WI	BAYFIELD	BAYVIEW TOWN HALL	32030 MAKI RD	 WASHBURN	54891
+352054	WI	GREEN	CLARNO TOWN HALL	W6126 COUNTY ROAD B	 MONROE	53566
+352055	WI	TAYLOR	MEDFORD CITY HALL	639 S 2ND ST	 MEDFORD	54451
+352056	WI	RICHLAND	RICHLAND CENTER COMMUNITY CENTER	1050 N ORANGE ST	 RICHLAND CTR	53581
+352057	WI	JACKSON	MERRILLAN VILLAGE HALL	101 S MAIN ST	 MERRILLAN	54754
+352058	WI	TREMPEALEAU	STRUM VILLAGE HALL	202 5TH AVE S	 STRUM	54770
+352059	WI	WOOD	VESPER MUNICIPAL BLDG	6554 CAMERON AVE	 VESPER	54489
+352060	WI	POLK	CLAM FALLS TOWN HALL	3178 80TH ST	 FREDERIC	54837
+352061	WI	CRAWFORD	EASTMAN COMMUNITY BUILDING	112 SHANGHAI RIDGE RD	 EASTMAN	54626
+352062	WI	VERNON	WHEATLAND COMMUNITY CENTER	E2177 STATE HIGHWAY 82	 DE SOTO	54624
+352063	WI	LAFAYETTE	GRATIOT FIRE STATION	5835 SHELDON ST	 GRATIOT	53541
+352064	WI	DUNN	Dunn - City Of Menomonie - Dunn County - Ward 005	NA	NA	\N
+352065	WI	SHAWANO	SENECA TOWN HALL	W13104 COUNTY ROAD D	 TILLEDA	54978
+352066	WI	DODGE	CHESTER TOWN HALL	W6498 OAKWOOD RD	 WAUPUN	53963
+352067	WI	MARATHON	EVEREST METRO SAFETY BUILDING	5303 MESKER ST	 WESTON	54476
+352068	WI	VILAS	PLUM LAKE TOWN HALL	235 LAKE ST	 SAYNER	54560
+352069	WI	RICHLAND	ASH CREEK METHODIST CHURCH	29135 COUNTY HWY O	 RICHLAND CENTER	53581
+352070	WI	BAYFIELD	OULU TOWN HALL	2525 W COLBY RD	 BRULE	54820
+352071	WI	WAUPACA	FIRST CONGREGATIONAL UNITED CHURCH OF CHRIST	110 E HANCOCK ST	 NEW LONDON	54961
+352072	WI	CALUMET	POTTER VILLAGE HALL	309 CENTRAL ST	 POTTER	54160
+352073	WI	BAYFIELD	Eileen Conference Building	68760 STATE FARM RD	 ASHLAND	54806
+352074	WI	ST CROIX	HUDSON CITY HALL	505 3RD ST	 HUDSON	54016
+352075	WI	POLK	WEST SWEDEN TOWN HALL	3147 3RD AVE N	 FREDERIC	54837
+352076	WI	LAFAYETTE	DARLINGTON MUNICIPAL BUILDING	627 MAIN ST	 DARLINGTON	53530
+352077	WI	GRANT	PARIS TOWN HALL	2757 SHOESTRING RD	 CUBA CITY	53807
+352078	WI	BUFFALO	MILTON TOWN HALL	W984 LOWER EAGLE VALLEY RD	 FOUNTAIN CITY	54629
+352079	WI	CHIPPEWA	BIRCH CREEK TOWN HALL	26755 240TH ST	 HOLCOMBE	54745
+352080	WI	BURNETT	DEWEY TOWN HALL	24433 TOWN HALL RD	 HERTEL	54845
+352081	WI	KEWAUNEE	CASCO VILLAGE HALL - FIRE DEPARTMENT	211 1ST ST	 CASCO	54205
+352082	WI	MARATHON	FRANZEN TOWN HALL	1695 S STATE HIGHWAY 49	 WITTENBERG	54499
+352083	WI	SHAWANO	HUTCHINS TOWN HALL	W15698 RED RIVER RD	 BIRNAMWOOD	54414
+352084	WI	WINNEBAGO	OMRO AREA COMMUNITY CENTER	130 W LARRABEE ST	 OMRO	54963
+352085	WI	PRICE	FIFIELD TOWN HALL	N13935 RIDGE AVE	 FIFIELD	54524
+352086	WI	MARATHON	TOWN OF DAY MUNICIPAL CENTER	D1838 COUNTY ROAD C	 STRATFORD	54484
+352087	WI	BAYFIELD	GRAND VIEW TOWN HALL	22010 GRANDVIEW BLVD	 GRAND VIEW	54839
+352088	WI	WAUSHARA	HANCOCK VILLAGE HALL	420 N JEFFERSON ST	 HANCOCK	54943
+352089	WI	PEPIN	ALBANY TOWN HALL	W1155 COUNTY ROAD R	 MONDOVI	54755
+352090	WI	EAU CLAIRE	UW-EAU CLAIRE DAVIES CENTER	105 GARFIELD AVE	 EAU CLAIRE	54701
+352091	WI	BURNETT	SAND LAKE TOWN HALL	5364 COUNTY ROAD X	 WEBSTER	54893
+352092	WI	PORTAGE	PARK RIDGE VILLAGE HALL	24 CRESTWOOD DR	 STEVENS POINT	54481
+352093	WI	TREMPEALEAU	GALESVILLE PUBLIC LIBRARY	16787 S MAIN ST	 GALESVILLE	54630
+352094	WI	WAUPACA	DUPONT TOWN HALL	N11297 TOWN HALL RD	 MARION	54950
+352095	WI	SAUK	IRONTON TOWN HALL	E4206 OLD K RD	 REEDSBURG	53959
+352096	WI	WASHBURN	SPOONER TOWN HALL	N6124 BLOOMING VALE RD	 SPOONER	54801
+352097	WI	IOWA	HIGHLAND TOWN HALL	844 MAIN ST	 HIGHLAND	53543
+352098	WI	ONEIDA	HEALTH & AGING FACILITY	100 W KEENAN ST	 RHINELANDER	54501
+352099	WI	MARATHON	GREEN VALLEY TOWN HALL	879 ANCESTOR LN	 MOSINEE	54455
+352100	WI	MARQUETTE	SHIELDS TOWN HALL	W2800 COUNTY ROAD J	 MONTELLO	53949
+352101	WI	VERNON	HILLS MANOR	118 MADISON ST	 HILLSBORO	54634
+352102	WI	GRANT	WATERLOO TOWN HALL	8046 BURTON LN	 POTOSI	53820
+352103	WI	WASHBURN	BEAVER BROOK TOWN HALL	W7110 HARRINGTON RD	 SHELL LAKE	54871
+352104	WI	PRICE	FLAMBEAU TOWN HALL	N11195 TOWN HALL RD	 PHILLIPS	54555
+352105	WI	DODGE	BROWNSVILLE COMMUNITY CLUB	871 MAIN ST	 BROWNSVILLE	53006
+352106	WI	GREEN LAKE	MACKFORD TOWN HALL	N2270 COUNTY ROAD A	 MARKESAN	53946
+352107	WI	GRANT	MONTFORT FIRE/RESCUE BUILDING	605 S WALL ST	 MONTFORT	53569
+352108	WI	RICHLAND	EAGLE TOWN HALL	29435 TOWN HALL DR	 MUSCODA	53573
+352109	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 011	NA	NA	\N
+352110	WI	JEFFERSON	HEBRON COMMUNITY CENTER	N2313 COUNTY ROAD D	 FORT ATKINSON	53538
+352111	WI	IOWA	BARNEVELD MUNICIPAL BUILDING	403 E COUNTY HWY ID	 BARNEVELD	53507
+352112	WI	SAUK	PRAIRIE DU SAC TOWN HALL	S9903 US HIGHWAY 12 APT 12	 PR DU SAC	53578
+352113	WI	RUSK	FLAMBEAU TOWN HALL	W8493 E PARKVIEW RD	 LADYSMITH	54848
+352114	WI	WOOD	CAMERON TOWN HALL	9301 MILL CREEK DR	 MARSHFIELD	54449
+352115	WI	WAUPACA	TRINITY LUTHERAN CHURCH	709 W BECKERT RD	 NEW LONDON	54961
+352116	WI	SHAWANO	WAUKECHON TOWN HALL	N3999 COUNTY ROAD K	 SHAWANO	54166
+352117	WI	ST CROIX	FOREST TOWN HALL	1895 COUNTY ROAD D	 EMERALD	54013
+352118	WI	FOREST	ARGONNE TOWN HALL	8842 BLACK BEAR AVE	 ARGONNE	54511
+352119	WI	DOUGLAS	SUMMIT TOWN HALL	2731 E MILCHESKY RD	 FOXBORO	54836
+352120	WI	MARQUETTE	NESHKORO TOWN HALL	W698 COUNTY ROAD DD	 NESHKORO	54960
+352121	WI	JUNEAU	ORANGE TOWN HALL	N8242 6TH AVE	 NEW LISBON	53950
+352122	WI	SHAWANO	SAINT STANISLAUS SOCIAL HALL	W1888 HOFA PARK DR	 SEYMOUR	54165
+352123	WI	IRON	MERCER TOWN HALL	2657W RAILROAD ST	 MERCER	54547
+352124	WI	FLORENCE	FLORENCE COMMUNITY CENTER	749 CENTRAL AVE	 FLORENCE	54121
+352125	WI	WAUSHARA	REDGRANITE VILLAGE HALL	161 DEARBORN ST	 REDGRANITE	54970
+352126	WI	GREEN LAKE	MARKESAN MUNICIPAL BUILDING	150 S BRIDGE ST	 MARKESAN	53946
+352127	WI	WOOD	SIGEL TOWN HALL	3678 TOWN HALL RD	 WISCONSIN RAPIDS	54495
+352128	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 002	NA	NA	\N
+352129	WI	GRANT	HARRISON TOWN HALL	6139 STANTON RD	 PLATTEVILLE	53818
+352130	WI	ROCK	LA PRAIRIE GRANGE HALL	3610 S LAPRAIRIE TOWN HALL RD	 JANESVILLE	53546
+352131	WI	CHIPPEWA	SIGEL TOWN HALL	5511 STATE HIGHWAY 27	 CADOTT	54727
+352132	WI	OCONTO	GILLETT CITY HALL	150 N MCKENZIE ST	 GILLETT	54124
+352133	WI	TREMPEALEAU	BLAIR CITY HALL	122 URBERG ST	 BLAIR	54616
+352134	WI	ASHLAND	WHITE RIVER TOWN HALL	61939 STATE HIGHWAY 112	 ASHLAND	54806
+352135	WI	FOREST	LAONA TOWN HALL	5146 LINDEN ST	 LAONA	54541
+352136	WI	GREEN LAKE	MARQUETTE TOWN HALL	306 LYONS ST	 MARKESAN	53946
+352137	WI	BARRON	MAPLE GROVE TOWN HALL	753 14 1/2 ST	 BARRON	54812
+352138	WI	WASHBURN	BASS LAKE TOWN HALL	W2103 TOWN HALL RD	 SPRINGBROOK	54875
+352139	WI	COLUMBIA	SPRINGVALE TOWN HALL	N6195 RADDATZ RD	 CAMBRIA	53923
+352140	WI	LANGLADE	EVERGREEN TOWN HALL	N3880 FLAK RD	 ELTON	54430
+352141	WI	CLARK	NEILLSVILLE CITY HALL	118 W 5TH ST	 NEILLSVILLE	54456
+352142	WI	TAYLOR	LITTLE BLACK TOWN HALL	W6022 COUNTY ROAD A	 MEDFORD	54451
+352143	WI	RACINE	Rochester Village Hall	300 W. SPRING STREET	 ROCHESTER	53167
+352144	WI	BAYFIELD	PORT WING TOWN HALL	83030 GRAND AVE	 PORT WING	54865
+352145	WI	COLUMBIA	FOUNTAIN PRAIRIE TOWN HALL	W1514 COUNTY ROAD Z	 FALL RIVER	53932
+352146	WI	FOND DU LAC	SAINT CLOUD VILLAGE HALL	1105 MAIN ST	 SAINT CLOUD	53079
+352147	WI	OUTAGAMIE	OSBORN COMMUNITY CENTER AND TOWN HALL	W3389 COUNTY ROAD EE	 SEYMOUR	54165
+352148	WI	MARATHON	HALSEY TOWN HALL	6316 NEHRBASS RD	 ATHENS	54411
+352149	WI	JACKSON	MELROSE VILLAGE HALL	112 N WASHINGTON ST	 MELROSE	54642
+352150	WI	CLARK	GRANT TOWN HALL	W3696 RIDGE RD	 GRANTON	54436
+352151	WI	ROCK	AVON TOWN HALL	16513 W BELOIT NEWARK RD	 BRODHEAD	53520
+352152	WI	WASHBURN	STONE LAKE TOWN HALL	N6071 STONE LAKE RD	 STONE LAKE	54876
+352153	WI	GREEN	ALBANY TOWN HALL	N6065 COUNTY ROAD E	 ALBANY	53502
+352154	WI	LINCOLN	ROCK FALLS TOWN HALL	W5895 ROCK FALLS DR	 IRMA	54442
+352155	WI	TAYLOR	DEER CREEK TOWN HALL	W4983 COUNTY ROAD A	 STETSONVILLE	54480
+352156	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 004	NA	NA	\N
+352157	WI	PEPIN	Riverview Senior & Community Center	606 W MADISON STREET	 DURAND	54736
+352158	WI	SHAWANO	GREEN VALLEY TOWN HALL	W1734 COUNTY RD E	 CECIL	54111
+352159	WI	COLUMBIA	MARCELLON SCHOOL	W6180 SCHOOL RD	 PARDEEVILLE	53954
+352160	WI	FOREST	CRANDON TOWN HALL	5474 COUNTY RD S	 CRANDON	54520
+352161	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 214	NA	NA	\N
+352162	WI	TAYLOR	HOLWAY TOWN HALL	W8581 COUNTY ROAD A	 CURTISS	54422
+352163	WI	GRANT	MOUNT IDA TOWN HALL	6679 US HIGHWAY 18	 FENNIMORE	53809
+352164	WI	PIERCE	ROCK ELM TOWN HALL	N5412 170TH ST	 ELMWOOD	54740
+352165	WI	MILWAUKEE	SAVELAND PARK PAVILION	3700 S 2ND ST	 MILWAUKEE	53207
+352166	WI	MONROE	JEFFERSON TOWN SHOP AND OFFICE	12035 OLYMPIC AVE	 CASHTON	54619
+352167	WI	PEPIN	COMMUNITY OF CHRIST CHURCH	N6378 COUNTY ROAD D	 ARKANSAW	54721
+352168	WI	LANGLADE	ACKLEY TOWN HALL	W11095 STATE HIGHWAY 64	 ANTIGO	54409
+352169	WI	BARRON	ALMENA TOWN HALL	211 SOO AVE E	 ALMENA	54805
+352170	WI	POLK	CLEAR LAKE MUNICIPAL BUILDING	350 4TH AVE	 CLEAR LAKE	54005
+352171	WI	VERNON	HILLSBORO CITY HALL	123 MECHANIC ST	 HILLSBORO	54634
+352172	WI	MARATHON	Marathon - City Of Schofield - Marathon County - Ward 001	NA	NA	\N
+352173	WI	PORTAGE	PLOVER TOWN HALL	5081 HOOVER AVE	 PLOVER	54467
+352174	WI	ASHLAND	AGENDA TOWN HALL	13922 AGENDA RD	 BUTTERNUT	54514
+352175	WI	COLUMBIA	ARLINGTON COMMUNITY CENTER	200 COMMERCIAL ST	 ARLINGTON	53911
+352176	WI	ST CROIX	RUSH RIVER TOWN HALL	2008 COUNTY RD N	 BALDWIN	54002
+352177	WI	VERNON	FOREST TOWN GARAGE	E15784 STATE HIGHWAY 33	 HILLSBORO	54634
+352178	WI	FOREST	ARMSTRONG CREEK COMMUNITY CENTER	7860 OLD 101 RD	 ARMSTRONG CRK	54103
+352179	WI	FLORENCE	AURORA TOWN HALL	1358 CALVARY DR	 NIAGARA	54151
+352180	WI	CRAWFORD	MARIETTA TOWN HALL	45550 MAPLE RIDGE RD	 BOSCOBEL	53805
+352181	WI	LACROSSE	Village Hall	105 Center St	Rockland	54653
+352182	WI	JUNEAU	CAMP DOUGLAS VILLAGE HALL	304 CENTER ST	 CAMP DOUGLAS	54618
+352183	WI	TREMPEALEAU	HALE TOWN HALL	N41978 HAMMERSTAD RD	 OSSEO	54758
+352184	WI	CLARK	GREENWOOD FIRE HALL	103 CANNERY ST	 GREENWOOD	54437
+352185	WI	RICHLAND	WILLOW COMMUNITY BUILDING	31401 COMMUNITY ST	 CAZENOVIA	53924
+352186	WI	SHEBOYGAN	ADELL VILLAGE HALL	508 SEIFERT ST	 ADELL	53001
+352187	WI	SHAWANO	GRANT TOWN HALL	W12610 COUNTY ROAD M	 CAROLINE	54928
+352188	WI	SHAWANO	ANIWA TOWN HALL	W17712 COUNTY ROAD Z	 BIRNAMWOOD	54414
+352189	WI	EAU CLAIRE	CLEAR CREEK TOWN HALL	S12455 N RAVEN DR	 STRUM	54770
+352190	WI	PIERCE	DIAMOND BLUFF TOWN HALL	W9870 290TH AVE	 HAGER CITY	54014
+352191	WI	CLARK	Abbotsford City Hall	203 N 1st St	Abbotsford	54405
+352192	WI	CLARK	MENTOR TOWN HALL	N3057 KING ST	 HUMBIRD	54746
+352193	WI	RUSK	BIG BEND TOWN HALL	N1195 STATE HIGHWAY 40	 NEW AUBURN	54757
+352194	WI	DODGE	FOX LAKE CITY HALL	248 E STATE ST	 FOX LAKE	53933
+352195	WI	JUNEAU	CLEARFIELD TOWN HALL	N8111 8TH AVE	 NEW LISBON	53950
+352196	WI	ONEIDA	SCHOEPKE TOWN HALL	769 HIGHWAY 45 S	 PELICAN LAKE	54463
+352197	WI	IRON	MONTREAL CITY HALL	54 WISCONSIN AVE	 MONTREAL	54550
+352198	WI	TREMPEALEAU	WHITEHALL FIRE STATION	36260 TOWER DR	 WHITEHALL	54773
+352199	WI	IOWA	AVOCA VILLAGE HALL	401 WISCONSIN ST	 AVOCA	53506
+352200	WI	IOWA	WALDWICK TOWN HALL	6308 STATE ROAD 39	 MINERAL POINT	53565
+352201	WI	DUNN	OTTER CREEK TOWN HALL	E5905 COUNTY ROAD S	 WHEELER	54772
+352202	WI	OCONTO	SURING VILLAGE HALL	604 E MAIN ST	 SURING	54174
+352203	WI	ST CROIX	St. Croix - City Of Hudson - St. Croix County - Ward 002	NA	NA	\N
+352204	WI	MANITOWOC	ROCKLAND TOWN HALL	615 MILWAUKEE ST	 COLLINS	54207
+352205	WI	SAWYER	SPIDER LAKE TOWN HALL	10896 W TOWN HALL RD	 HAYWARD	54843
+352206	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 008	NA	NA	\N
+352207	WI	BURNETT	SIREN T0WN HALL	7240 S LONG LAKE RD	 SIREN	54872
+352208	WI	PRICE	PIKE LAKE FIRE HALL	N14885 SHADY KNOLL RD	 PARK FALLS	54552
+352209	WI	WAUPACA	HARRISON TOWN HALL -NORTHLAND CHURCH	E1389 COUNTY ROAD C	 IOLA	54945
+352210	WI	DODGE	CALAMUS TOWN HALL	W9820 COUNTY ROAD D	 BEAVER DAM	53916
+352211	WI	DOOR	FORESTVILLE VILLAGE HALL	123 S FORESTVILLE AVE	 FORESTVILLE	54213
+352212	WI	JACKSON	ALMA CENTER VILLAGE HALL	200 N CHURCH ST	 ALMA CENTER	54611
+352213	WI	LAFAYETTE	NEW DIGGINGS TOWN HALL	26897 AETNA RD	 BENTON	53803
+352214	WI	PEPIN	LIMA TOWN HALL	W4195 FORSTER RD	 DURAND	54736
+352215	WI	DODGE	FOX LAKE TOWN HALL	W10543 COUNTY ROAD F	 FOX LAKE	53933
+352216	WI	DODGE	THERESA PUBLIC LIBRARY	290 MAYVILLE ST	 THERESA	53091
+352217	WI	PRICE	EISENSTEIN TOWN HALL	N15664 TOWN HALL RD	 PARK FALLS	54552
+352218	WI	GRANT	LIBERTY TOWN HALL	11698 MAIN ST	 STITZER	53825
+352219	WI	DUNN	WILSON TOWN HALL	E5506 1370TH AVE	 RIDGELAND	54763
+352220	WI	POLK	JOHNSTOWN TOWN SHED/HALL	2181 20TH ST	 COMSTOCK	54826
+352221	WI	CLARK	GREEN GROVE TOWN HALL	N12865 SPARROW AVE	 OWEN	54460
+352222	WI	DANE	EAST HIGH SCHOOL	2222 E WASHINGTON AVE	 MADISON	53704
+352223	WI	VERNON	KICKAPOO TOWN HALL	120 W CHARLES ST	 READSTOWN	54652
+352224	WI	IOWA	MIFFLIN TOWN HALL	1098 CHURCH ST	 REWEY	53580
+352225	WI	PIERCE	SPRING LAKE TOWN HALL	N7717 COUNTY ROAD B	 SPRING VALLEY	54767
+352226	WI	SHAWANO	AMERICAN LEGION HALL	951 MAIN ST	 GRESHAM	54128
+352227	WI	ADAMS	MONROE TOWN HALL	981 COUNTY ROAD Z	 ARKDALE	54613
+352228	WI	IOWA	LINDEN MUNICIPAL BUILDING	444 JEFFERSON AVE	 LINDEN	53553
+352229	WI	TAYLOR	STETSONVILLE LIBRARY	105 N GERSHWIN ST	 STETSONVILLE	54480
+352230	WI	DODGE	TRENTON TOWN HALL	N10584 JERSEY RD	 FOX LAKE	53933
+352231	WI	MARQUETTE	OXFORD TOWN HALL	N2985 COUNTY ROAD O	 OXFORD	53952
+352232	WI	TAYLOR	HAMMEL TOWN HALL	W8792 CENTER AVE	 MEDFORD	54451
+352233	WI	MONROE	KENDALL COMMUNITY HALL	219 W SOUTH RAILROAD ST	 KENDALL	54638
+352234	WI	MONROE	Wilton Community Center Complex	400 EAST ST	 WILTON	54670
+352235	WI	GREEN	BRODHEAD CITY HALL	1111 W 2ND AVE	 BRODHEAD	53520
+352236	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 010	NA	NA	\N
+352237	WI	RICHLAND	Richland - City Of Richland Center - Richland County - Ward 012	NA	NA	\N
+352238	WI	WAUSHARA	WILD ROSE VILLAGE HALL	500 MAIN ST	 WILD ROSE	54984
+352239	WI	WAUSHARA	WAUTOMA CITY HALL	210 E MAIN ST	 WAUTOMA	54982
+352240	WI	MARQUETTE	MONTELLO CITY HALL	20 UNDERWOOD AVE	 MONTELLO	53949
+352241	WI	MARQUETTE	OXFORD VILLAGE HALL	129 S FRANKLIN AVE	 OXFORD	53952
+352242	WI	BUFFALO	WAUMANDEE FIRE STATION	S2004 COUNTY ROAD U	 WAUMANDEE	54622
+352243	WI	WAUPACA	MANAWA CITY HALL	500 S BRIDGE ST	 MANAWA	54949
+352244	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 011	NA	NA	\N
+352245	WI	CRAWFORD	CLAYTON TOWN HALL	13069 STATE HWY 61	 SOLDIERS GROVE	54655
+352246	WI	DOOR	KNIGHTS OF COLUMBUS HALL	692 TACOMA BEACH RD	 STURGEON BAY	54235
+352247	WI	WASHBURN	CASEY TOWN HALL	N7894 LOWER MCKENZIE RD	 SPOONER	54801
+352248	WI	WAUPACA	MARION FIRE STATION	128 W GARFIELD AVE	 MARION	54950
+352249	WI	MARATHON	BRIGHTON TOWN HALL	B1001 TOWN HALL RD	 UNITY	54488
+352250	WI	WAUSHARA	PLAINFIELD TOWN HALL	W13505 STATE ROAD 73	 PLAINFIELD	54966
+352251	WI	MONROE	WELLS TOWN HALL	11754 COUNTY HIGHWAY XX	 NORWALK	54648
+352252	WI	OCONTO	LENA MUNICIPAL BUILDING	117 E MAIN ST	 LENA	54139
+352253	WI	EAU CLAIRE	OTTER CREEK TOWN HALL	E15425 COUNTY ROAD HH	 OSSEO	54758
+352254	WI	BURNETT	GRANTSBURG TOWN HALL	23211 STATE ROAD 48/87	 GRANTSBURG	54840
+352255	WI	TREMPEALEAU	ETTRICK VILLAGE HALL	22864 N MAIN ST	 ETTRICK	54627
+352256	WI	GREEN	ADAMS TOWN HALL	N5705 BIGGS RD	 ARGYLE	53504
+352257	WI	IOWA	American Legion Building	200 5TH AVE	 HOLLANDALE	53544
+352258	WI	JUNEAU	LYNDON STATION VILLAGE HALL	116 LEMONWEIR ST	 LYNDON STA	53944
+352259	WI	CLARK	WARNER TOWN HALL	W6194 RIPLINGER RD	 GREENWOOD	54437
+352260	WI	TAYLOR	RIB LAKE TOWN HALL	W2382 STATE HIGHWAY 102	 RIB LAKE	54470
+352261	WI	MARINETTE	WAUSAUKEE VILLAGE HALL	428 HARRISON AVE	 WAUSAUKEE	54177
+352262	WI	DODGE	LEROY TOWN HALL	N10725 COUNTY ROAD YY	 LOMIRA	53048
+352263	WI	SAUK	Sauk - City Of Baraboo - Sauk County - Ward 001	NA	NA	\N
+352264	WI	PIERCE	Pierce - City Of River Falls - Multiple Counties - Ward 010	NA	NA	\N
+352265	WI	BUFFALO	COCHRANE VFW POST 10406	100 MICHAELS ST	 COCHRANE	54622
+352266	WI	CHIPPEWA	NEW AUBURN VILLAGE HALL	130 E ELM ST	 NEW AUBURN	54757
+352267	WI	CLARK	WESTON TOWN HALL	W6105 COUNTY ROAD H	 NEILLSVILLE	54456
+352268	WI	IOWA	COBB COMMUNITY CENTER	404 MOTEL ST	 COBB	53526
+352269	WI	RUSK	WILLARD TOWN HALL	W1510 STATE ROAD 27	 CONRATH	54731
+352270	WI	GRANT	BAGLEY FIRE HOUSE	400 JACKLEY LN	 BAGLEY	53801
+352271	WI	WASHBURN	BIRCHWOOD VILLAGE HALL	101 N MAIN ST	 BIRCHWOOD	54817
+352272	WI	FOREST	City Of Crandon City Hall	601 W Washington St	Crandon	54520
+352273	WI	WASHBURN	MINONG VILLAGE HALL	123 5TH AVE W	 MINONG	54859
+352274	WI	OCONTO	MAPLE VALLEY TOWN HALL	9088 COUNTY ROAD Z	 SURING	54174
+352275	WI	CHIPPEWA	ESTELLA TOWN HALL	22111 270TH ST	 CORNELL	54732
+352276	WI	MONROE	RIDGEVILLE TOWN HALL	309 MAIN ST	 NORWALK	54648
+352277	WI	CLARK	WITHEE VILLAGE HALL	504 DIVISION ST	 WITHEE	54498
+352278	WI	SHEBOYGAN	WALDO VILLAGE HALL	810 W 2ND ST.	 WALDO	53093
+352279	WI	BAYFIELD	HUGHES TOWN HALL	66225 HUGHES TOWN HALL RD	 IRON RIVER	54847
+352280	WI	WASHINGTON	NEWBURG VILLAGE HALL	614 MAIN ST	 WEST BEND	53090
+352281	WI	LAFAYETTE	SHULLSBURG COMMUNITY TOWNSEND CENTER	190 N JUDGEMENT ST	 SHULLSBURG	53586
+352282	WI	DUNN	HAY RIVER TOWN HALL	N10655 COUNTY ROAD F	 BOYCEVILLE	54725
+352283	WI	ADAMS	PRESTON TOWN HALL	1801 11TH AVE	 FRIENDSHIP	53934
+352284	WI	MONROE	CASHTON COMMUNITY HALL	811 MAIN ST	 CASHTON	54619
+352285	WI	PORTAGE	PINE GROVE MUNICIPAL CENTER	5444 COUNTY RD W	 BANCROFT	54921
+352286	WI	JUNEAU	Town Hall	W9902 State Road 82	Elroy	53929
+352287	WI	DODGE	ELBA TOWN HALL	N3799 COUNTY ROAD T	 COLUMBUS	53925
+352288	WI	RUSK	LADYSMITH FIRE HALL	511 MINER AVE W	 LADYSMITH	54848
+352289	WI	CLARK	EATON TOWN HALL	N8598 STATE HIGHWAY 73	 GREENWOOD	54437
+352290	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 007	NA	NA	\N
+352291	WI	MANITOWOC	TWO CREEKS TOWN HALL	5128 TAPAWINGO RD	 TWO RIVERS	54241
+352292	WI	SHAWANO	WITTENBERG TOWN HALL	W17395 COUNTY ROAD Q	 WITTENBERG	54499
+352293	WI	ADAMS	NEW CHESTER TOWN HALL	629 MASON ST	 GRAND MARSH	53936
+352294	WI	BURNETT	WEBB LAKE TOWN HALL	31000 NAMEKAGON RD	 WEBB LAKE	54830
+352295	WI	MARQUETTE	NESHKORO VILLAGE HALL	322 S MAIN ST	 NESHKORO	54960
+352296	WI	MONROE	Monroe - City Of Tomah - Monroe County - Ward 003	NA	NA	\N
+352297	WI	LAFAYETTE	SOUTH WAYNE FIREHOUSE	107 E CENTER ST	 SOUTH WAYNE	53587
+352298	WI	SHEBOYGAN	GLENBEULAH VILLAGE HALL	110 N SWIFT ST	 GLENBEULAH	53023
+352299	WI	DOOR	EPHRAIM ADMINISTRATION BUILDING	10005 COUNTY ROAD Q	 EPHRAIM	54211
+352300	WI	MONROE	GRANT TOWN HALL	19460 BITTERSWEET AVE	 WARRENS	54666
+352301	WI	OCONTO	MOUNTAIN TOWN OFFICE	13503 WELLER RD	 MOUNTAIN	54149
+352302	WI	CRAWFORD	PRAIRIE DU CHIEN CITY HALL	214 E BLACKHAWK AVE	 PR DU CHIEN	53821
+352303	WI	OCONTO	LENA TOWN HALL	6087 GOATSVILLE RD	 LENA	54139
+352304	WI	PORTAGE	ROSHOLT VILLAGE HALL	101 S MAIN ST	 ROSHOLT	54473
+352305	WI	BARRON	DOYLE TOWN HALL	2248 27TH ST	 RICE LAKE	54868
+352306	WI	MARATHON	HATLEY VILLAGE COMMUNITY CENTER	435 CURTIS AVE	 HATLEY	54440
+352307	WI	PEPIN	PEPIN SPORTSMEN'S CLUB	W10076 SAND RIDGE RD	 PEPIN	54759
+352308	WI	WAUKESHA	BIG BEND VILLAGE HALL	W230S9185 NEVINS ST	 BIG BEND	53103
+352309	WI	BUFFALO	GILMANTON TOWN HALL	W736 COUNTY ROAD B	 MONDOVI	54755
+352310	WI	CLARK	WILLARD COMMUNITY CENTER	W8178 DOVE RD	 WILLARD	54493
+352311	WI	CHIPPEWA	GOETZ TOWN HALL	8985 257TH ST	 CADOTT	54727
+352312	WI	RICHLAND	HENRIETTA TOWN HALL	13095 COUNTY HIGHWAY C	 HILLSBORO	54634
+352313	WI	GRANT	CUBA CITY FIRE/RESCUE BUILDING	1013 S MAIN ST	 CUBA CITY	53807
+352314	WI	BURNETT	LAFOLLETTE TOWN HALL	24184 MALONE RD	 WEBSTER	54893
+352315	WI	JACKSON	NORTH BEND TOWN HALL	N631 N BEND DR	 MELROSE	54642
+352316	WI	WASHBURN	SPRINGBROOK TOWN HALL	N8585 CTY RD M	 SPRINGBROOK	54875
+352317	WI	CLARK	HIXON TOWN HALL	N16004 FRENCH TOWN AVE	 WITHEE	54498
+352318	WI	ST CROIX	PLEASANT VALLEY TOWN HALL	1630 30TH AVE	 HAMMOND	54015
+352319	WI	MARQUETTE	MONTELLO TOWN HALL	N3849 COUNTY ROAD F	 MONTELLO	53949
+352320	WI	MONROE	NORWALK VILLAGE HALL	208 S CHURCH ST	 NORWALK	54648
+352321	WI	CRAWFORD	SCOTT TOWN HALL	43590 COUNTY RD W	 GAYS MILLS	54631
+352322	WI	WAUSHARA	OASIS TOWN HALL	W10699 STATE ROAD 73	 PLAINFIELD	54966
+352323	WI	BURNETT	SCOTT TOWN HALL	28390 COUNTY ROAD H	 SPOONER	54801
+352324	WI	GREEN LAKE	KINGSTON TOWN HALL	W6408 E PINE ST	 DALTON	53926
+352325	WI	RICHLAND	WESTFORD TOWN GARAGE	30874 COUNTY HWY I	 CAZENOVIA	53924
+352326	WI	BUFFALO	City Hall	314 N Main St	Alma	54610
+352327	WI	RICHLAND	BLOOM TOWN HALL	13775 COUNTY HIGHWAY H	 HILLSBORO	54634
+352328	WI	EAU CLAIRE	MASTIN COMMUNITY CENTER	241 N FRONT ST	 FAIRCHILD	54741
+352329	WI	BARRON	PRAIRIE FARM VILLAGE HALL	115 RIVER AVE N	 PRAIRIE FARM	54762
+352330	WI	BARRON	BARRON TOWN HALL	1307 16TH ST	 BARRON	54812
+352331	WI	FOREST	NASHVILLE TOWN HALL	4265 STATE HIGHWAY 55	 CRANDON	54520
+352332	WI	DOOR	CLAY BANKS TOWN HALL	6098 COUNTY ROAD OO	 STURGEON BAY	54235
+352333	WI	IOWA	LINDEN TOWN HALL	332 CHURCH ST	 LINDEN	53553
+352334	WI	PIERCE	BAY CITY VILLAGE HALL	W6391 MAIN ST	 BAY CITY	54723
+352335	WI	LAFAYETTE	DARLINGTON TOWN HALL	11150 AMES RD	 DARLINGTON	53530
+352336	WI	JACKSON	HIXTON VILLAGE HALL	145 E MAIN ST	 HIXTON	54635
+352337	WI	JACKSON	TAYLOR VILLAGE HALL	420 2ND ST	 TAYLOR	54659
+352338	WI	WAUSHARA	Anna Follett Memorial Center	155 N FRONT ST RM A	 COLOMA	54930
+352339	WI	JACKSON	CLEVELAND TOWN HALL	N13745 TOWN HALL RD	 FAIRCHILD	54741
+352340	WI	MARQUETTE	ADA MILLS DONNER AND MELVIN R DONNER CIVIC CENTER	400 S CHURCH ST	 ENDEAVOR	53930
+352341	WI	RICHLAND	AKAN TOWN HALL	12249 STATE HWY 171	 BLUE RIVER	53518
+352342	WI	TAYLOR	GOODRICH TOWN HALL	W1196 MIRA AVE	 MEDFORD	54451
+352343	WI	WOOD	CARY TOWN HALL	5688 ACCOLA RD	 PITTSVILLE	54466
+352344	WI	VERNON	GREENWOOD TOWN HALL	S4105 COUNTY HIGHWAY C	 HILLSBORO	54634
+352345	WI	RUSK	THORNAPPLE TOWN HALL	N4502 COUNTY ROAD E	 BRUCE	54819
+352346	WI	FLORENCE	HOMESTEAD TOWN HALL	2808 CHURCH RD	 FLORENCE	54121
+352347	WI	RACINE	Racine - City Of Racine - Racine County - Ward 001	NA	NA	\N
+352348	WI	JUNEAU	MARION TOWN HALL	N4895 COUNTY ROAD HH	 MAUSTON	53948
+352349	WI	TREMPEALEAU	PIGEON TOWN HALL	N39631 FULLER COULEE RD	 WHITEHALL	54773
+352350	WI	GRANT	MUSCODA TOWN HALL	18514 COUNTY ROAD G	 MUSCODA	53573
+352351	WI	GREEN LAKE	SENECA TOWN HALL	W3102 COUNTY ROAD F	 BERLIN	54923
+352352	WI	BUFFALO	COCHRANE VILLAGE HALL	102 E 5TH ST	 COCHRANE	54622
+352353	WI	MARATHON	COLBY CITY HALL	211 W SPENCE ST	 COLBY	54421
+352354	WI	GRANT	Youth and Ag Building	913 E ELM ST	 LANCASTER	53813
+352355	WI	IRON	HURLEY CITY HALL	405 5TH AVE N	 HURLEY	54534
+352356	WI	CRAWFORD	PRAIRIE DU CHIEN NATIONAL GUARD ARMORY	601 N MARQUETTE RD	 PR DU CHIEN	53821
+352357	WI	SHAWANO	NAVARINO TOWN HALL	W5041 STATE HIGHWAY 156	 BONDUEL	54107
+352358	WI	SAUK	MERRIMAC MUNICIPAL BUILDING	100 COOK ST	 MERRIMAC	53561
+352359	WI	EAU CLAIRE	SPIRIT (PREVIOUSLY NAMED OUR SAVIOR'S) LUTHERAN CHURCH	1310 MAIN ST	 EAU CLAIRE	54701
+352360	WI	TAYLOR	GILMAN MUNICIPAL BUILDING	380 E MAIN	 GILMAN	54433
+352361	WI	IOWA	MINERAL POINT CITY HALL	139 HIGH ST Suite 1	MINERALAL POINT	53565
+352362	WI	SAWYER	HUNTER TOWN HALL	9316 N COUNTY ROAD CC	 HAYWARD	54843
+352363	WI	BUFFALO	GLENCOE TOWN HALL	W104 STATE ROAD 95	 ARCADIA	54612
+352364	WI	GRANT	AMERICAN LEGION	106 1/2 E OAK ST	 BOSCOBEL	53805
+352365	WI	VILAS	EAGLE RIVER CITY HALL	525 MAPLE ST	 EAGLE RIVER	54521
+352366	WI	MARATHON	BERN TOWN HALL	6585 COUNTY ROAD M	 ATHENS	54411
+352367	WI	WAUPACA	HELVETIA TOWN HALL	E2544 COUNTY ROAD GG	 IOLA	54945
+352368	WI	FOREST	HILES TOWN HALL	9193 N MAIN ST	 ARGONNE	54511
+352369	WI	RUSK	GROW TOWN HALL	N4310 COUNTY ROAD I	 TONY	54563
+352370	WI	GREEN LAKE	PRINCETON FIRE STATION	438 W MAIN ST	 PRINCETON	54968
+352371	WI	WAUSHARA	DEERFIELD TOWN HALL	W10760 COUNTY ROAD BC	 HANCOCK	54943
+352372	WI	DUNN	SHERIDAN TOWN HALL	E3705 COUNTY ROAD VVV	 WHEELER	54772
+352373	WI	LINCOLN	SKANAWAN TOWN HALL	N8506 COUNTY ROAD H	 IRMA	54442
+352374	WI	MONROE	CLIFTON TOWN HALL	31819 COUNTY HIGHWAY A	 CAMP DOUGLAS	54618
+352375	WI	WOOD	RUDOLPH VILLAGE MUNICIPAL BUILDING	1580 MAIN ST	 RUDOLPH	54475
+352376	WI	CHIPPEWA	WOODMOHR TOWN HALL	16738 125TH ST	 BLOOMER	54724
+352377	WI	VERNON	READSTOWN MUNICIPAL BUILDING	116 N 4TH ST	 READSTOWN	54652
+352378	WI	LAFAYETTE	BELMONT TOWN HALL	123 W COMMERCE ST	 BELMONT	53510
+352379	WI	JACKSON	HIXTON TOWN HALL	W13298 SAND PRAIRIE RD N	 HIXTON	54635
+352380	WI	OUTAGAMIE	DEER CREEK TOWN HALL	N8680 COUNTY ROAD F	 BEAR CREEK	54961
+352381	WI	WAUSHARA	PLAINFIELD MUNICIPAL BUILDING	114 W CLARK ST	 PLAINFIELD	54966
+352382	WI	GRANT	Blue River Community Building	201 CLINTON ST	 BLUE RIVER	53518
+352383	WI	MARINETTE	BEECHER TOWN HALL	W7971 COUNTY ROAD Z	 PEMBINE	54156
+352384	WI	TREMPEALEAU	DODGE TOWN HALL	W29861 BAMBENEK ST	 DODGE	54625
+352385	WI	JACKSON	SPRINGFIELD TOWN HALL	N6495 COUNTY RD N	 TAYLOR	54659
+352386	WI	BAYFIELD	NAMAKAGON TOWN HALL	23845 COUNTY HIGHWAY M	 CABLE	54821
+352387	WI	SAWYER	Sawyer - City Of Hayward - Sawyer County - Ward 002	NA	NA	\N
+352388	WI	VERNON	Jefferson Town Hall	S4020 County Road B	Viroqua	54665
+352389	WI	DUNN	KNAPP COMMUNITY HALL	111 OAK ST	 KNAPP	54749
+352390	WI	WAUSHARA	LOHRVILLE VILLAGE HALL	123 PARK RD	 REDGRANITE	54970
+352391	WI	VERNON	ONTARIO FIRE STATION/MUNICIPAL BUILDING	205 STATE ST	 ONTARIO	54651
+352392	WI	RICHLAND	VIOLA VILLAGE HALL	106 W WISCONSIN ST	 VIOLA	54664
+352393	WI	EAU CLAIRE	WILSON TOWN HALL	E26936 COUNTY ROAD G	 BOYD	54726
+352394	WI	ASHLAND	LA POINTE EMERGENCY SERVICES BUILDING	320 BIG BAY RD	 LAPOINTE	54850
+352395	WI	BAYFIELD	KELLY TOWN HALL	27525 MAPLE RIDGE RD	 MASON	54856
+352396	WI	IRON	SHERMAN TOWN HALL	3063 W STATE HIGHWAY 182	 PARK FALLS	54552
+352397	WI	SAUK	SUMPTER COMMUNITY CENTER	E10496 COUNTY ROAD C	 NORTH FREEDOM	53951
+352398	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 009	NA	NA	\N
+352399	WI	DUNN	GRANT TOWN HALL	N10360 COUNTY RD W	 COLFAX	54730
+352400	WI	ONEIDA	LITTLE RICE TOWN HALL	3737 COUNTY Y	 TOMAHAWK	54487
+352401	WI	DODGE	CLYMAN TOWN HALL	735 MAIN ST	 CLYMAN	53016
+352402	WI	CHIPPEWA	RUBY TOWN HALL	33150 280TH AVE	 SHELDON	54766
+352403	WI	COLUMBIA	LODI CITY HALL	131 S MAIN ST	LODI	53555
+352404	WI	SAUK	FRANKLIN TOWN HALL	550 MAIN ST	 PLAIN	53577
+352405	WI	WAUPACA	SAINT LAWRENCE TOWN HALL ANNEX	507 FRANKLIN ST	 OGDENSBURG	54962
+352406	WI	ASHLAND	CHIPPEWA TOWN HALL	77504 WEST RD	 BUTTERNUT	54514
+352407	WI	RICHLAND	Richland - City Of Richland Center - Richland County - Ward 011	NA	NA	\N
+352408	WI	MARATHON	Marathon - City Of Schofield - Marathon County - Ward 002	NA	NA	\N
+352409	WI	ASHLAND	MELLEN LIBRARY/SENIOR CITIZEN CENTER	106 IRON ST	 MELLEN	54546
+352410	WI	BURNETT	ANDERSON TOWN HALL	13808 ANDERSON RD	 GRANTSBURG	54840
+352411	WI	IRON	SAXON COMMUNITY CENTER	14280 N CHURCH ST	 SAXON	54559
+352412	WI	BUFFALO	DOVER TOWN HALL	W248 STATE ROAD 121	 MONDOVI	54755
+352413	WI	IOWA	MINERAL POINT CITY HALL	142 HIGH ST Suite 1	MINERALAL POINT	53565
+352414	WI	VERNON	WHITESTOWN TOWN HALL	S1701 SANDHILL RD	 LA FARGE	54639
+352415	WI	BARRON	Prairie Farm Town Hall	866 3 2 3/4 AVE	Prairie Farm	54762
+352416	WI	TREMPEALEAU	PIGEON VILLAGE OFFICE	40185 WINSAND DR4	 PIGEON FALLS	54760
+352417	WI	LAFAYETTE	ELK GROVE TOWN HALL	1232 COUNTY ROAD X	 BELMONT	53510
+352418	WI	CLARK	MAYVILLE TOWN HALL	W1296 CENTER RD	 DORCHESTER	54425
+352419	WI	MARQUETTE	ENDEAVOR/MOUNDVILLE FIRE DEPARTMENT	631 S LIMITS RD	 ENDEAVOR	53930
+352420	WI	PIERCE	EL PASO TOWN HALL	N5325 450TH ST	 ELLSWORTH	54011
+352421	WI	JACKSON	IRVING TOWN HALL	N3291 NICHOLS RD	 BLACK RIVER FALLS	54615
+352422	WI	FOREST	FREEDOM TOWN HALL	918 MACARTHUR TRL	 WABENO	54566
+352423	WI	SHAWANO	HERMAN TOWN HALL	N5628 COUNTY ROAD U	 SHAWANO	54166
+352424	WI	PRICE	PHILLIPS MUNICIPAL BUILDING	174 S EYDER AVE	 PHILLIPS	54555
+352425	WI	GREEN LAKE	SAINT MARIE TOWN HALL	N7090 COUNTY ROAD D	 PRINCETON	54968
+352426	WI	FOREST	NASHVILLE COMMUNITY CENTER AND TOWN OFFICES	1038 COUNTY ROAD Q	 PICKEREL	54465
+352427	WI	PORTAGE	ALMOND MUNICIPAL CENTER	122 MAIN ST	 ALMOND	54909
+352428	WI	RICHLAND	RICHWOOD TOWN HALL	11801 DD LN	 BLUE RIVER	53518
+352429	WI	JUNEAU	ELROY LIBRARY	501 2ND MAIN ST	 ELROY	53929
+352430	WI	ONEIDA	ENTERPRISE COMMUNITY BUILDING	2977 PLANTATION RD	 PELICAN LAKE	54463
+352431	WI	WASHBURN	BARRONETT TOWN HALL	N1608 S HEART LAKE RD	 SHELL LAKE	54871
+352432	WI	LINCOLN	HARDING TOWN HALL	N3246 COUNTY RD E	 MERRILL	54452
+352433	WI	CLARK	WORDEN TOWN HALL	N13691 KOSER AVE	 THORP	54771
+352434	WI	RUSK	WASHINGTON TOWN HALL	N1146 COUNTY ROAD E	 BRUCE	54819
+352435	WI	SHEBOYGAN	RUSSELL TOWN HALL	N9691 COUNTY ROAD H	 ELKHART LAKE	53020
+352436	WI	GREEN LAKE	GREEN LAKE CITY HALL	534 MILL ST	 GREEN LAKE	54941
+352437	WI	BURNETT	UNION TOWN HALL	9015 COUNTY ROAD F	 DANBURY	54830
+352438	WI	SAWYER	WEIRGOR TOWN HALL	11039 W 3RD ST	 EXELAND	54835
+352439	WI	POLK	CLAYTON VILLAGE HALL	133 CLAYTON AVE E	 CLAYTON	54004
+352440	WI	TREMPEALEAU	ALBION TOWN HALL	N50005 COUNTY ROAD Y	 ELEVA	54738
+352441	WI	JACKSON	GARDEN VALLEY TOWN HALL	W13760 STATE ROAD 121	 ALMA CENTER	54611
+352442	WI	WASHBURN	SARONA TOWN HALL	W5308 RIPLEY RD	 SARONA	54870
+352443	WI	BUFFALO	ALMA TOWN HALL	S1445 COUNTY ROAD F	 ALMA	54610
+352444	WI	CLARK	RESEBURG TOWN HALL	N13710 GORMAN AVE	 THORP	54771
+352445	WI	TAYLOR	ROOSEVELT TOWN HALL	N1219 WEST ST	 LUBLIN	54447
+352446	WI	LANGLADE	PECK TOWN HALL	N5702 ORMSBY RD	 DEERBROOK	54424
+352447	WI	IRON	OMA TOWN HALL	4514 W TOWN HALL RD	 HURLEY	54534
+352448	WI	DANE	ELVER PARK SHELTER	1250 MCKENNA BLVD	 MADISON	53719
+352449	WI	ASHLAND	GORDON TOWN HALL	24357 GORDON LAKE RD	 GLIDDEN	54527
+352450	WI	PRICE	Kennan-Georgetown Municipal Building	N4315 MEQUON ST	 KENNAN	54537
+352451	WI	BUFFALO	CROSS TOWN HALL	W605 BUEHLER VALLEY RD	 FOUNTAIN CITY	54629
+352452	WI	PRICE	Price - City Of Park Falls - Price County - Ward 007	NA	NA	\N
+352453	WI	MONROE	SHELDON TOWN HALL	29215 STATE HIGHWAY 131	 NORWALK	54648
+352454	WI	IOWA	RIDGEWAY TOWN HALL	6300 PRAIRIE RD	 RIDGEWAY	53582
+352455	WI	WASHBURN	MADGE TOWN HALL	N3481 COUNTY HIGHWAY M	 SARONA	54870
+352456	WI	RICHLAND	Richland - City Of Richland Center - Richland County - Ward 002	NA	NA	\N
+352457	WI	DOUGLAS	WITC CONF CENTER	601 North 21st Street	SUPERIOR	54880
+352458	WI	GRANT	CASSVILLE TOWN HALL	215 DES MOINES ST	 CASSVILLE	53806
+352459	WI	IOWA	PULASKI TOWN HALL	1727 CLYDE ST	 AVOCA	53506
+352460	WI	POLK	MCKINLEY TOWN HALL	2527 15TH ST	 CUMBERLAND	54829
+352461	WI	MARINETTE	DUNBAR TOWN HALL	N18956 CC CAMP RD	 DUNBAR	54119
+352462	WI	LANGLADE	LANGLADE TOWN HALL	N7770 STATE HIGHWAY 55	 LILY	54491
+352463	WI	SHAWANO	GERMANIA TOWN HALL	W18101 COUNTY ROAD M	 TIGERTON	54486
+352464	WI	DODGE	OAK GROVE TOWN HALL	N5801 S GROVE RD	 JUNEAU	53039
+352465	WI	BAYFIELD	KEYSTONE TOWN HALL	23960 KLOBUCHER RD	 MASON	54856
+352466	WI	LAFAYETTE	SHULLSBURG TOWN HALL	535 W ESTEY ST	 SHULLSBURG	53586
+352467	WI	JUNEAU	WONEWOC TOWN HALL	762 BRIDGE ST	 UNION CENTER	53962
+352468	WI	DOUGLAS	OLIVER VILLAGE HALL	2125 E STATE ST	 SUPERIOR	54880
+352469	WI	EAU CLAIRE	Eau Claire - City Of Altoona - Eau Claire County - Ward 010	NA	NA	\N
+352470	WI	PRICE	PRENTICE TOWN HALL	400 CENTER ST	 PRENTICE	54556
+352471	WI	SAUK	WESTFIELD TOWN HALL	200 MILL ST	 LOGANVILLE	53943
+352472	WI	SAUK	ROCK SPRINGS COMMUNITY CENTER	101 1ST ST	 ROCK SPRINGS	53961
+352473	WI	TREMPEALEAU	UNITY TOWN HALL	N50241 COUNTY ROAD D	 STRUM	54770
+352474	WI	MARATHON	HARRISON TOWN HALL	2992 COUNTY ROAD Y	 ANIWA	54408
+352475	WI	TAYLOR	AURORA TOWN HALL	W16018 STATE HIGHWAY 64	 GILMAN	54433
+352476	WI	IOWA	WYOMING TOWN HALL	6294 HIGHWAY 23	 SPRING GREEN	53588
+352477	WI	WOOD	DEXTER TOWN HALL	3730 TOWN HALL ROAD	 PITTSVILLE	54466
+352478	WI	PEPIN	PEPIN COUNTY GOVERNMENT CENTER	740 7TH AVE W	 DURAND	54736
+352479	WI	GRANT	TENNYSON TOWN HALL	101 BUNKER HILL ST	 POTOSI	53820
+352480	WI	JACKSON	FRANKLIN TOWN HALL	W16177 COUNTY ROAD C	 TAYLOR	54659
+352481	WI	DOOR	BERTSCHINGER COMMUNITY CENTER	7860 STATE HIGHWAY 42	 EGG HARBOR	54209
+352482	WI	CLARK	DEWHURST TOWN HALL	N103 RIVIERA AVE	 MERRILLAN	54754
+352483	WI	MANITOWOC	KELLNERSVILLE COMMUNITY CENTER	PARK ST	 KELLNERSVILLE	54215
+352484	WI	MARINETTE	ATHELSTANE TOWN HALL	N12244 COUNTY HIGHWAY A C	 ATHELSTANE	54104
+352485	WI	BAYFIELD	DELTA TOWN HALL	15990 COUNTY HIGHWAY H	 MASON	54856
+352486	WI	FOND DU LAC	FAIRWATER CIVIC CENTER	104 MAIN ST	 FAIRWATER	53931
+352487	WI	WAUKESHA	SANG HALL	600 LAC LA BELLE DR	 OCONOMOWOC	53066
+352488	WI	IOWA	MINERAL POINT CITY HALL	140 HIGH ST Suite 1	MINERALAL POINT	53565
+352489	WI	RICHLAND	FOREST TOWN HALL	12931 STATE HIGHWAY 56	 VIOLA	54664
+352490	WI	PRICE	HILL TOWN HALL	W4391 HULTMAN LAKE RD	 OGEMA	54459
+352491	WI	IOWA	EDEN TOWN HALL	302 DIVISION ST	 COBB	53526
+352492	WI	GRANT	WYALUSING TOWN HALL	12296 DRY HOLLOW RD	 BAGLEY	53801
+352493	WI	WASHBURN	BIRCHWOOD TOWN HALL	N1549 COUNTY ROAD T	 BIRCHWOOD	54817
+352494	WI	JACKSON	CURRAN TOWN HALL	W15204 STATE HWY 95 95	 TAYLOR	54659
+352495	WI	SHAWANO	MATTOON MUNICIPAL BUILDING	310 SLATE AVE	 MATTOON	54450
+352496	WI	IRON	Iron - City Of Hurley - Iron County - Ward 003	NA	NA	\N
+352497	WI	BUFFALO	NELSON VILLAGE HALL	104 MAIN ST N	 NELSON	54756
+352498	WI	BAYFIELD	BELL COMMUNITY CENTER	22615 COUNTY HIGHWAY C	 CORNUCOPIA	54827
+352499	WI	TREMPEALEAU	PRESTON TOWN HALL	101 W BROADWAY ST	 BLAIR	54616
+352500	WI	PORTAGE	JUNCTION CITY VILLAGE HALL/FIRE STATION	1001 MAIN ST	 JUNCTION CITY	54443
+352501	WI	WAUSHARA	RICHFORD COMMUNITY CENTER AND TOWN HALL	W11127 CUMBERLAND RD	 COLOMA	54930
+352502	WI	JUNEAU	CUTLER TOWN HALL	N10846 COUNTY ROAD H	 CAMP DOUGLAS	54618
+352503	WI	CLARK	LYNN TOWN HALL	W1877 US HIGHWAY 10	 GRANTON	54436
+352504	WI	BURNETT	LINCOLN TOWN HALL	9110 PERIDA RD	 WEBSTER	54893
+352505	WI	ADAMS	LINCOLN TOWN HALL	2181 COUNTY ROAD G	 GRAND MARSH	53936
+352506	WI	GREEN LAKE	KINGSTON VILLAGE HALL	206 S SOUTH ST	 KINGSTON	53939
+352507	WI	TAYLOR	JUMP RIVER COMMUNITY CENTER	W14751 RIVER ST	 GILMAN	54433
+352508	WI	DODGE	CLYMAN VILLAGE HALL	713 MORGAN ST	 CLYMAN	53016
+352509	WI	MARATHON	GUENTHER TOWN HALL	2090 S COUNTY ROAD X	 MOSINEE	54455
+352510	WI	CRAWFORD	HANEY TOWN HALL	22399 STATE HIGHWAY 131	 GAYS MILLS	54631
+352511	WI	JUNEAU	NEW LISBON MUNICIPAL BUILDING	232 Pleasant St	New Lisbon	53950
+352512	WI	FOREST	WABENO TOWN HALL	4473 N BRANCH ST	 WABENO	54566
+352513	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 003	NA	NA	\N
+352514	WI	RUSK	HAWKINS COMMUNITY CENTER	509 MAIN ST	 HAWKINS	54530
+352515	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 001	NA	NA	\N
+352516	WI	BARRON	SUMNER TOWN HALL	1550 24 1/2 ST	 RICE LAKE	54868
+352517	WI	LINCOLN	WILSON TOWN HALL	N10802 COUNTY ROAD CC	 TOMAHAWK	54487
+352518	WI	PRICE	EMERY TOWN HALL	W2901 COUNTY ROAD D	 PHILLIPS	54555
+352519	WI	JACKSON	KOMENSKY TOWN HALL	N9140 COUNTY ROAD K	 MERRILLAN	54754
+352520	WI	BARRON	DALLAS VILLAGE HALL	205 W DALLAS ST	 DALLAS	54733
+352521	WI	TREMPEALEAU	BURNSIDE TOWN HALL	W241252 STARWOOD LN	 INDEPENDENCE	54747
+352522	WI	TAYLOR	TAFT TOWN HALL	W16018 COUNTY ROAD F	 THORP	54771
+352523	WI	BAYFIELD	MASON TOWN HALL	62655 BENOIT RD	 MASON	54856
+352524	WI	LINCOLN	HARRISON TOWN HALL	N10095 ROAD B C0UNTY	 TOMAHAWK	54487
+352525	WI	LAFAYETTE	BENTON TOWN BUILDING	455 RAILROAD AVE	 BENTON	53803
+352526	WI	SAUK	LAVALLE PUBLIC LIBRARY	101 W MAIN ST	 LA VALLE	53941
+352527	WI	WINNEBAGO	SAINT JOHN'S CHURCH	808 N MAIN ST	 OSHKOSH	54901
+352528	WI	GRANT	FENNIMORE TOWN HALL	835 JACKSON ST	 FENNIMORE	53809
+352529	WI	RUSK	SHELDON COMMUNITY CENTER	W5594 MAIN ST	 SHELDON	54766
+352530	WI	WAUPACA	EMBARRASS VILLAGE HALL	130 DEPOT ST	 EMBARRASS	54933
+352531	WI	SHAWANO	ALMON TOWN HALL	N8096 REGINA RD	 BOWLER	54416
+352532	WI	CLARK	THORP CITY HALL	300 W PROSPECT ST	 THORP	54771
+352533	WI	BUFFALO	MODENA TOWN HALL	S946 COUNTY ROAD J	 MONDOVI	54755
+352534	WI	DOUGLAS	HIGHLAND TOWN HALL	9360 S COUNTY RD S	 LAKE NEBAGAMON	54849
+352535	WI	ASHLAND	MORSE TOWN HALL	402 2ND AVE	 MELLEN	54546
+352536	WI	CLARK	GRANTON VILLAGE HALL	127 MAPLE ST	 GRANTON	54436
+352537	WI	LAFAYETTE	FAYETTE TOWN OFFICE	11065 2ND ST	 DARLINGTON	53530
+352538	WI	OCONTO	BAGLEY TOWN HALL	9812 COUNTY ROAD Z	 POUND	54161
+352539	WI	DODGE	LOWELL VILLAGE HALL	105 N RIVER ST	 LOWELL	53557
+352540	WI	WASHBURN	BROOKLYN TOWN HALL	N9689 BIRCHWOOD DR	 TREGO	54888
+352541	WI	GRANT	WINGVILLE TOWN HALL	310 DALE DR	 MONTFORT	53569
+352542	WI	PORTAGE	AMHERST JUNCTION VILLAGE HALL	3980 2ND ST	 AMHERST JCT	54407
+352543	WI	EAU CLAIRE	AUGUSTA CITY HALL	145 W LINCOLN ST	 AUGUSTA	54722
+352544	WI	LAFAYETTE	KENDALL TOWN HALL	15548 COUNTY ROAD O	 DARLINGTON	53530
+352545	WI	KEWAUNEE	Kewaunee - City Of Kewaunee - Kewaunee County - Ward 005	NA	NA	\N
+352546	WI	PRICE	SPIRIT TOWN HALL	W1316 STATE HIGHWAY 86	 BRANTWOOD	54513
+352547	WI	BAYFIELD	LINCOLN TOWN HALL	28985 E ALTAMONT RD	 MASON	54856
+352548	WI	MANITOWOC	MARIBEL VILLAGE HALL/COMMUNITY CENTER	14905 MULBERRY ST	 MARIBEL	54227
+352549	WI	ONEIDA	MONICO TOWN HALL	2333 FORREST ST	 MONICO	54501
+352550	WI	RUSK	LAWRENCE TOWN HALL	W3570 WALRATH RD	 GLEN FLORA	54526
+352551	WI	VERNON	CLINTON TOWN HALL	S1299 COUNTY ROAD D	 CASHTON	54619
+352552	WI	COLUMBIA	FRIESLAND VILLAGE HALL	113 S MADISON ST	 FRIESLAND	53935
+352553	WI	MARINETTE	POUND COMMUNITY CENTER	1013 COUNTY ROAD Q	 POUND	54161
+352554	WI	PEPIN	FRANKFORT TOWN HALL	W7804 COUNTY ROAD SS	 PEPIN	54759
+352555	WI	ASHLAND	MARENGO TOWN HALL	63478 COUNTY HIGHWAY C	 MARENGO	54855
+352556	WI	MONROE	WARRENS LIONS LOG BUILDING	601 PINE ST	 WARRENS	54666
+352557	WI	SAWYER	WINTER VILLAGE HALL	6593 W HAZEL ST	 WINTER	54896
+352558	WI	CLARK	LOYAL TOWN HALL	W3412 CHICKADEE RD	 LOYAL	54446
+352559	WI	LANGLADE	WHITE LAKE VILLAGE HALL	615 SCHOOL ST	 WHITE LAKE	54491
+352560	WI	RICHLAND	SYLVAN TOWN SHOP	20188 COUNTY HWY G	 RICHLAND CTR	53581
+352561	WI	SHAWANO	MORRIS TOWN HALL	W15320 BERG RD	 TIGERTON	54486
+352562	WI	WOOD	VILLAGE OF ARPIN MUNICIPAL BLDG	6190 COUNTY RD N	 ARPIN	54410
+352563	WI	RUSK	MURRY TOWN HALL	W10625 LONE PINE RD	 BRUCE	54819
+352564	WI	VERNON	UNION TOWN HALL	E15175 STATE ROAD 82	 HILLSBORO	54634
+352565	WI	WOOD	REMINGTON TOWN HALL	1596 STATE HIGHWAY 80	 BABCOCK	54413
+352566	WI	DUNN	WESTON TOWN HALL	N3665 175TH ST	 MENOMONIE	54751
+352567	WI	CRAWFORD	WAUZEKA TOWN HALL	304 E FRONT ST	 WAUZEKA	53826
+352568	WI	PRICE	BRANTWOOD COMMUNITY CENTER	N4888 STADIUM RD	 BRANTWOOD	54513
+352569	WI	MENOMINEE	NEOPIT FIRE STATION	N3580 STATE HIGHWAY 47	 NEOPIT	54150
+352570	WI	CLARK	OWEN PUBLIC LIBRARY	412 N CENTRAL AVE	 OWEN	54460
+352571	WI	BAYFIELD	CLOVER TOWN HALL	86780 LENAWEE RD	 HERBSTER	54844
+352572	WI	TAYLOR	MOLITOR TOWN HALL	N5188 DIVISION DR	 MEDFORD	54451
+352573	WI	BARRON	Barron - City Of Rice Lake - Barron County - Ward 002	NA	NA	\N
+352574	WI	WOOD	VILLAGE OF ARPIN MUNICIPAL BUILDING	6190 COUNTY RD N	 ARPIN	54410
+352575	WI	OUTAGAMIE	BEAR CREEK COMMUNITY CENTER	109 PROSPECT ST	 BEAR CREEK	54922
+352576	WI	GRANT	ELLENBORO TOWN HALL	3764 WILLOLW BRANCH RD	 PLATTEVILLE	53818
+352577	WI	COLUMBIA	DOYLESTOWN VILLAGE HALL	W3005 RAILROAD ST	 DOYLESTOWN	53928
+352578	WI	BAYFIELD	Bayfield City Hall	125 S 1st St	Bayfield	54814
+352579	WI	VERNON	VILLAGE OF GENOA FIRE STATION	126 MAIN ST	 GENOA	54632
+352580	WI	GREEN	BARNABY'S MONTICELLO HOUSE	149 N MAIN ST	 MONTICELLO	53570
+352581	WI	RACINE	Racine - Town Of Dover - Racine County - Ward 007	NA	NA	\N
+352582	WI	SAWYER	OJIBWA TOWN HALL	4411N STATE HWY 27	 OJIBWA	54862
+352583	WI	BUFFALO	MAXVILLE TOWN HALL	S451 STATE ROAD 25	 DURAND	54736
+352584	WI	TAYLOR	WESTERN SENIOR CENTER - FORD	385 E MAIN ST	 GILMAN	54433
+352585	WI	RUSK	GLEN FLORA AND TRUE MUNICIPAL HALL	N5746 CEDAR ST	 GLEN FLORA	54526
+352586	WI	WAUPACA	JR'S BANQUET HALL	120 N MAIN ST	 BIG FALLS	54926
+352587	WI	MARATHON	HOLTON TOWN HALL	5513 ROSEDALE AVE	 ABBOTSFORD	54405
+352588	WI	RUSK	STRICKLAND TOWN HALL	W16508 US HIGHWAY 8	 RICE LAKE	54868
+352589	WI	RICHLAND	ROCKBRIDGE TOWN HALL	19082 IRISH DR	 RICHLAND CTR	53581
+352590	WI	CLARK	HOARD TOWN HALL	W3715 CENTER RD	 OWEN	54460
+352591	WI	RICHLAND	Richland - City Of Richland Center - Richland County - Ward 004	NA	NA	\N
+352592	WI	JEFFERSON	COLD SPRING COMMUNITY CENTER	N1409 FREMONT RD	 WHITEWATER	53190
+352593	WI	RICHLAND	CAZENOVIA FIRE STATION	310 S STATE HWY 58	 CAZENOVIA	53924
+352594	WI	SHAWANO	BIRNAMWOOD TOWN HALL	N9291 RIVERVIEW RD	 BIRNAMWOOD	54414
+352595	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 004	NA	NA	\N
+352596	WI	GRANT	GLEN HAVEN TOWN HALL	8819 FOURTH STREET	 GLEN HAVEN	53810
+352597	WI	PRICE	CATAWBA MUNICIPAL BUILDING	N4508 HIGH ST	 CATAWBA	54515
+352598	WI	VERNON	CHASEBURG VILLAGE HALL	400 DEPOT ST	 CHASEBURG	54621
+352599	WI	PIERCE	SALEM TOWN HALL	N3599 COUNTY ROAD A	 MAIDEN ROCK	54750
+352600	WI	GRANT	BLOOMINGTON TOWNSHIP GARAGE	534 STATE HIGHWAY 35	 BLOOMINGTON	53804
+352601	WI	BARRON	HAUGEN VILLAGE HALL	104 3RD ST	 HAUGEN	54841
+352602	WI	DUNN	WHEELER VILLAGE HALL	105 W TOWER RD	 WHEELER	54772
+352603	WI	LAFAYETTE	LAMONT TOWN GARAGE	14495 COUNTY ROAD D	 DARLINGTON	53530
+352604	WI	ONEIDA	YMCA OF THE NORTHWOODS	2003 E WINNEBAGO ST	 RHINELANDER	54501
+352605	WI	JACKSON	KNAPP TOWN HALL	W3981 COUNTY ROAD O	 WARRENS	54666
+352606	WI	FLORENCE	FERN TOWN HALL	N3204 STATE HIGHWAY 101 FERN	 FLORENCE	54121
+352607	WI	MONROE	WELLINGTON TOWN HALL	27503 COUNTY HIGHWAY P	 KENDALL	54638
+352608	WI	RACINE	NORTH BAY VILLAGE HALL	3615 HENNEPIN PL	 RACINE	53402
+352609	WI	FOREST	Forest - Town Of Blackwell - Forest County - Ward 001	NA	NA	\N
+352610	WI	MARINETTE	SILVER CLIFF TOWN HALL	N11929 PARKWAY RD	 SILVER CLIFF	54104
+352611	WI	OCONTO	How Community Building	12896 STATE HIGHWAY 32	 SURING	54174
+352612	WI	ADAMS	PONDEROSA PINES	287 STATE ROAD 73	 PLAINFIELD	54966
+352613	WI	JACKSON	MELROSE TOWN HALL	N1701 NORTH RD	 MELROSE	54642
+352614	WI	COLUMBIA	COURTLAND TOWN HALL	W1999 COUNTY ROAD A	 RANDOLPH	53956
+352615	WI	GRANT	Castle Rock Town Hall	15070 COUNTY ROAD G	 MUSCODA	53573
+352616	WI	WOOD	PITTSVILLE COMMUNITY HALL	5291 3RD AVE	 PITTSVILLE	54466
+352617	WI	IRON	IRON BELT COMMUNITY CENTER	11778 N JOHNSON ST	 IRON BELT	54536
+352618	WI	JUNEAU	SEVEN MILE CREEK TOWN HALL	N1232 SAINT CLAIR RD	 MAUSTON	53948
+352619	WI	MARQUETTE	NEWTON TOWN HALL	N8309 COUNTY ROAD B	 WESTFIELD	53964
+352620	WI	BUFFALO	MONTANA TOWN HALL	S1601 COUNTY ROAD U	 INDEPENDENCE	54747
+352621	WI	EAU CLAIRE	FAIRCHILD TOWN HALL	E25215 COUNTY ROAD RR	 FAIRCHILD	54741
+352622	WI	BAYFIELD	PILSEN TOWN HALL	23700 PILSEN HALL RD	 ASHLAND	54806
+352623	WI	BUFFALO	CANTON TOWN HALL	S290 COUNTY ROAD J	 NELSON	54756
+352624	WI	VERNON	DE SOTO VILLAGE OFFICE	115 HOUGHTON ST	 DE SOTO	54624
+352625	WI	POLK	LORAIN TOWN HALL	252 345TH AVE	 FREDERIC	54837
+352626	WI	WOOD	Village of Milladore Office	120 MAIN ST	 MILLADORE	54454
+352627	WI	WASHINGTON	Rockfield Elementary School	N132W18473 ROCKFIELD RD	 RICHFIELD	53076
+352628	WI	PRICE	HARMONY TOWN HALL	W9095 COUNTY ROAD J	 CATAWBA	54515
+352629	WI	MONROE	WILTON TOWN SHOP	23988 STATE HIGHWAY 71	 WILTON	54670
+352630	WI	CLARK	HEWETT TOWN HALL	W7498 ARNDT RD	 NEILLSVILLE	54456
+352631	WI	CLARK	LEVIS TOWN HALL	W6235 BRYAN AVE	 NEILLSVILLE	54456
+352632	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 005	NA	NA	\N
+352633	WI	SAWYER	DRAPER TOWN HALL	6994 N MAIN ST	 LORETTA	54896
+352634	WI	CLARK	LONGWOOD TOWN HALL	W5725 COLBY FACTORY RD	 OWEN	54460
+352635	WI	CLARK	SHERWOOD TOWN HALL	W896 SHERWOOD RD	 GRANTON	54436
+352636	WI	SHAWANO	ELAND VILLAGE HALL	W19141 MAPLE ST	 ELAND	54427
+352637	WI	CRAWFORD	FERRYVILLE VILLAGE HALL	170 PINE ST	 FERRYVILLE	54628
+352638	WI	TAYLOR	New Hope Presbyterian Church	W14520 COUNTY ROAD M	 GILMAN	54433
+352639	WI	SAUK	LOGANVILLE VILLAGE HALL/FIRE STATION	140 WEST ST	 LOGANVILLE	53943
+352640	WI	LINCOLN	BIRCH TOWN HALL	W4762 COUNTY ROAD H	 IRMA	54442
+352641	WI	PIERCE	ISABELLE TOWN HALL	W7138 STATE ROAD 35	 BAY CITY	54723
+352642	WI	LAFAYETTE	EMS BUILDING	106 N BROADWAY STREET	 ARGYLE	53504
+352643	WI	DUNN	RIDGELAND VILLAGE HALL	103 ELLIOT ST N	 RIDGELAND	54763
+352644	WI	GRANT	PATCH GROVE TOWN HALL	633N MAIN ST	 PATCH GROVE	53817
+352645	WI	ASHLAND	BUTTERNUT VILLAGE HALL	301 W MICHIGAN ST	 BUTTERNUT	54514
+352646	WI	MONROE	LAFAYETTE TOWN HALL	11336 COUNTY HIGHWAY Q	 SPARTA	54656
+352647	WI	DUNN	TIFFANY TOWN HALL	N11502 STATE ROAD 79	 BOYCEVILLE	54725
+352648	WI	SHAWANO	BOWLER VILLAGE HALL	107 W MAIN ST	 BOWLER	54416
+352649	WI	TREMPEALEAU	CHIMNEY ROCK TOWN HALL	N43299 CHURCH RD	 STRUM	54770
+352650	WI	WASHBURN	GULL LAKE TOWN HALL	W3494 HADDICK RD	 SPRINGBROOK	54875
+352651	WI	DOUGLAS	CLOVERLAND TOWN HALL	2763 S STATE ROAD 13	 MAPLE	54854
+352652	WI	FLORENCE	COMMONWEALTH TOWN HALL	113 SOUTH ST	 FLORENCE	54121
+352653	WI	CLARK	MEAD TOWN HALL	N10516 BACHELORS AVE	 GREENWOOD	54437
+352654	WI	SAWYER	RADISSON VILLAGE HALL	10558 W RAILROAD ST	 RADISSON	54867
+352655	WI	OCONTO	DOTY TOWN HALL	14899 COUNTY ROAD T	 MOUNTAIN	54149
+352656	WI	IOWA	REWEY FIRE STATION	218 WEST ST	 REWEY	53580
+352657	WI	JUNEAU	UNION CENTER TOWN HALL	339 HIGH ST	 UNION CENTER	53962
+352658	WI	MONROE	OAKDALE VILLAGE HALL	133 WELL DRIVE	 OAKDALE	54649
+352659	WI	ADAMS	COLBURN TOWN HALL	198 COUNTY ROAD C	 HANCOCK	54943
+352660	WI	LANGLADE	VILAS TOWN HALL	N5697 COUNTY ROAD I	 DEERBROOK	54424
+352661	WI	PRICE	ELK TOWN HALL	W8314 DANISH SETTLEMENT RD	 PHILLIPS	54555
+352662	WI	DANE	ATTIC ANGEL ASSOCIATION	640 JUNCTION RD	 MADISON	53717
+352663	WI	TAYLOR	GROVER TOWN HALL	W11062 2ND ST	 MEDFORD	54451
+352664	WI	SHAWANO	Aniwa Community Center	W18996 1ST ST	 ANIWA	54408
+352665	WI	VERNON	LIBERTY TOWN HALL	E10491 GORE HOLLOW RD	 VIOLA	54664
+352666	WI	FLORENCE	FENCE TOWN HALL	577 MEMORY LN	FLORENCE	54120
+352667	WI	LINCOLN	TOMAHAWK TOWN HALL	W8904 STATE HIGHWAY 86	 TOMAHAWK	54487
+352668	WI	SAWYER	RADISSON TOWN HALL	10227 W OLD HIGHWAY 70	 RADISSON	54867
+352669	WI	WASHBURN	STINNETT TOWN HALL	N10361 COUNTY HIGHWAY M	 SPRINGBROOK	54875
+352670	WI	OUTAGAMIE	NICHOLS COMMUNITY CENTER	N9065 KRULL RD	 NICHOLS	54152
+352671	WI	DOUGLAS	DAIRYLAND TOWN HALL	15208 S STATE HIGHWAY 35	 DAIRYLAND	54830
+352672	WI	KENOSHA	KENOSHA COUNTY JOB CENTER	8600 SHERIDAN RD RM N	 KENOSHA	53143
+352673	WI	BAYFIELD	TRIPP TOWN COMPLEX	8590 COUNTY HIGHWAY A	 IRON RIVER	54847
+352674	WI	KENOSHA	Kenosha - Village Of Somers - Kenosha County - Ward 010	NA	NA	\N
+352675	WI	DANE	ROCKDALE VILLAGE HALL	208 BENTON ST	 CAMBRIDGE	53523
+352676	WI	BUFFALO	LINCOLN TOWN HALL	S1491 STATE ROAD 88	 ALMA	54610
+352677	WI	DUNN	PERU TOWN HALL	E7209 160TH AVE	 MONDOVI	54755
+352678	WI	GREEN	BROWNTOWN VILLAGE HALL	110 S MILL ST	 BROWNTOWN	53522
+352679	WI	FLORENCE	TIPLER TOWN HALL	1114 DREAM LAKE RD	 TIPLER	54542
+352680	WI	SAWYER	COUDERAY TOWN HALL	4452 N HOFFER RD	 COUDERAY	54828
+352681	WI	BURNETT	TIMBERLAND LUTHERN CHURCH	20805 COUNTY ROAD H	 BARRONETT	54813
+352682	WI	FLORENCE	LONG LAKE TOWN HALL	19207 STATE HIGHWAY 139	 LONG LAKE	54542
+352683	WI	LANGLADE	PRICE TOWN HALL	N4948 STATE HIGHWAY 52	 BRYANT	54418
+352684	WI	JACKSON	CITY POINT COMMUNITY CENTER	W1364 OLD HIGHWAY 54	 PITTSVILLE	54466
+352685	WI	DANE	Dane - City Of Madison - Dane County - Ward 055	NA	NA	\N
+352686	WI	BURNETT	NORTHLAND COMMUNITY CENTER	1232 E SCHOOL RD	 DANBURY	54830
+352687	WI	TAYLOR	MAPLEHURST TOWN HALL	N373 COUNTY ROAD T	 WITHEE	54498
+352688	WI	RUSK	HUBBARD TOWN HALL	W9667 COUNTY ROAD J	 LADYSMITH	54848
+352689	WI	MARATHON	UNITY VILLAGE HALL	202 W CLARK ST	 UNITY	54488
+352690	WI	LAFAYETTE	GRATIOT VILLAGE OFFICE	5895 MAIN ST	 GRATIOT	53541
+352691	WI	BARRON	Prairie Farm Town Hall	865 3 2 3/4 AVE	Prairie Farm	54762
+352692	WI	SAUK	IRONTON VILLAGE HALL	600 STATE ST	 LA VALLE	53941
+352693	WI	PEPIN	LUND FIRE HALL	W1498 COUNTY ROAD CC	 STOCKHOLM	54769
+352694	WI	VERNON	STARK TOWN HALL	S3803 CORPS RD	 LA FARGE	54639
+352695	WI	CLARK	SEIF TOWN HALL	N6738 IVES AVE	 WILLARD	54493
+352696	WI	IRON	PENCE COMMUNITY CENTER	6745 W STATE HIGHWAY 77	 MONTREAL	54550
+352697	WI	DUNN	LUEPKE CABINET SHOP	406 MAIN ST	 DOWNING	54734
+352698	WI	WOOD	VISITOR CENTER AT GLACIAL LAKE CRANBERRIES	2466C COUNTY ROAD D	 WISC RAPIDS	54495
+352699	WI	IRON	CAREY TOWN HALL	12005 N HAKALA RD	 HURLEY	54534
+352700	WI	MARATHON	BROKAW VILLAGE HALL	218 2ND ST	 BROKAW	54417
+352701	WI	ONEIDA	LYNNE TOWN HALL	5100 WILLOW RD	 TRIPOLI	54564
+352702	WI	CRAWFORD	MOUNT STERLING VILLAGE HALL	155 SECOND ST	 MOUNT STERLING	54645
+352703	WI	JACKSON	MILLSTON TOWN HALL	W6676 COUNTY ROAD O	 BLK RIVER FLS	54615
+352704	WI	SAWYER	EXELAND VILLAGE HALL	11042W STATE HWY 48	 EXELAND	54835
+352705	WI	BURNETT	WEST MARSHLAND TOWN HALL	12259 COUNTY ROAD F	 GRANTSBURG	54840
+352706	WI	ASHLAND	PEEKSVILLE TOWN HALL	78746 PEEKSVILLE RD	 BUTTERNUT	54514
+352707	WI	GRANT	MOUNT HOPE FIRE STATION	127 E MAIN ST	 MOUNT HOPE	53816
+352708	WI	WASHBURN	CHICOG TOWN HALL	W8499 HIGHWAY 77	 TREGO	54888
+352709	WI	LANGLADE	PARRISH TOWN HALL	N10829 COUNTY ROAD H	 GLEASON	54435
+352710	WI	WAUPACA	OGDENSBURG VILLAGE HALL	504 MAIN ST	 OGDENSBURG	54962
+352711	WI	RUSK	HAWKINS AREA LIBRARY	705 MAIN ST	 HAWKINS	54530
+352712	WI	FOREST	ROSS TOWN HALL	10170 CYPRESS ST	 NEWALD	54511
+352713	WI	ST CROIX	WILSON COMMUNITY CENTER	440 MAIN ST	 WILSON	54027
+352714	WI	WOOD	HILES TOWN HALL	10108 COUNTY ROAD V	 PITTSVILLE	54466
+352715	WI	MARATHON	ELDERON VILLAGE HALL	9187 STATE ROAD 153	 ELDERON	54429
+352716	WI	JUNEAU	HUSTLER TOWN HALL	113 W MAIN ST	 HUSTLER	54637
+352717	WI	ASHLAND	SHANAGOLDEN TOWN HALL	74268 MERTIG RD	 GLIDDEN	54527
+352718	WI	LAFAYETTE	Lafayette - City Of Darlington - Lafayette County - Ward 006	NA	NA	\N
+352719	WI	SAUK	LIME RIDGE VILLAGE HALL	109 S MAIN	 LIME RIDGE	53941
+352720	WI	SAWYER	MEADOWBROOK TOWN HALL	9436 W COUNTY HIGHWAY D	 EXELAND	54835
+352721	WI	CRAWFORD	LYNXVILLE COMMUNITY CENTER	362 SPRING ST	 LYNXVILLE	54626
+352722	WI	WASHBURN	CRYSTAL TOWN HALL	N3911 COUNTY HIGHWAY A	 SPOONER	54801
+352723	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 006	NA	NA	\N
+352724	WI	DANE	LUSSIER COMMUNITY EDUCATION CENTER	55 S GAMMON RD	 MADISON	53717
+352725	WI	GRANT	WOODMAN TOWN HALL	15047 COUNTY ROAD K	 WOODMAN	53827
+352726	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 026	NA	NA	\N
+352727	WI	IOWA	CLYDE TOWN HALL	6281 STATE ROAD 130	 AVOCA	53506
+352728	WI	PORTAGE	Tomorrow Valley Ag Building	3257 COUNTY RD Q OFC 3257	 NELSONVILLE	54458
+352729	WI	TAYLOR	PERSHING TOWN HALL	W16670 COUNTY ROAD M	 GILMAN	54433
+352730	WI	SHAWANO	FAIRBANKS TOWN HALL	N3272 COUNTY ROAD SS	 TIGERTON	54486
+352731	WI	FOREST	ALVIN TOWN HALL	16942 STATE HIGHWAY 55	 ALVIN	54542
+352732	WI	GREEN LAKE	MARQUETTE VILLAGE HALL	127 4TH ST	 MARQUETTE	53947
+352733	WI	IRON	GURNEY COMMUNITY CENTER	11322 W CYS RD	 GURNEY	54559
+352734	WI	RUSK	BIG FALLS TOWN HALL	W6945 COUNTY ROAD J	 LADYSMITH	54848
+352735	WI	GRANT	MILLVILLE TOWN HALL	10247 COUNTY ROAD C	 WOODMAN	53827
+352736	WI	CLARK	BEAVER TOWN HALL	W3742 CAPITAL RD	 LOYAL	54446
+352737	WI	MARATHON	FENWOOD VILLAGE HALL	3797 BEECH ST	 EDGAR	54426
+352738	WI	GRANT	HICKORY GROVE LUTHERAN CHURCH	15934 COUNTY ROAD T	 BOSCOBEL	53805
+352739	WI	RUSK	SAINT MARY'S CHURCH	N7384 COUNTY ROAD M	 HAWKINS	54530
+352740	WI	MONROE	NEW LYME TOWN HALL	2682 COUNTY HWY S	 SPARTA	54656
+352741	WI	RUSK	BRUCE VILLAGE HALL	100 W RIVER AVE	 BRUCE	54819
+352742	WI	SAWYER	METEOR TOWN HALL	1440 N COUNTY ROAD C APT C	 EXELAND	54835
+352743	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 013	NA	NA	\N
+352744	WI	GRANT	LITTLE GRANT TOWN HALL	8709 COUNTY ROAD A	 BLOOMINGTON	53804
+352745	WI	ADAMS	RICHFIELD TOWN HALL	1602 COUNTY ROAD G	 COLOMA	54930
+352746	WI	GRANT	PATCH GROVE VILLAGE HALL	112 NORTH ST	 PATCH GROVE	53817
+352747	WI	WASHBURN	FROG CREEK TOWN HALL	N13010 FROG CREEK RD	 MINONG	54859
+352748	WI	RUSK	RUSK TOWN HALL	N704 COUNTY ROAD F	 CHETEK	54728
+352749	WI	PIERCE	Maiden Rock Village Hall	W3535 STATE ROAD 35	 MAIDEN ROCK	54750
+352750	WI	JACKSON	BEAR BLUFF TOWN HALL	W919 COUNTY ROAD HH	 WARRENS	54666
+352751	WI	TAYLOR	LUBLIN VILLAGE HALL	N1217 RAILROAD ST	 LUBLIN	54447
+352752	WI	CRAWFORD	STEUBEN VILLAGE HALL	123 MIDWAY ST	 STEUBEN	54657
+352753	WI	LINCOLN	TRIPOLI COMMUNITY CENTER	N12066 FIRE STATION RD	 TRIPOLI	54564
+352754	WI	RICHLAND	BOAZ COMMUNITY BUILDING	17010 STATE HWY 171	 RICHLAND CENTER	53581
+352755	WI	CLARK	CURTISS COMMUNITY CENTER	1107 MERIDIAN ST	 CURTISS	54422
+352756	WI	BAYFIELD	ORIENTA TOWN GARAGE	8090 SORENSON RD	 PORT WING	54865
+352757	WI	PRICE	CATAWBA MUNICIPAL BUILDING	W9242 US HIGHWAY 8	 CATAWBA	54515
+352758	WI	BARRON	DALLAS TOWN HALL	410 W DALLAS ST	 DALLAS	54733
+352759	WI	RUSK	Rusk - City Of Ladysmith - Rusk County - Ward 014	NA	NA	\N
+352760	WI	PRICE	HACKETT TOWN HALL	W4891 EMERY HACKETT RD	 PHILLIPS	54555
+352761	WI	MONROE	WYEVILLE VILLAGE HALL	215 WYEVILLE AVE	 WYEVILLE	54660
+352762	WI	LAFAYETTE	MONTICELLO TOWN HALL	16787 COUNTY RD W	 GRATIOT	53541
+352763	WI	IOWA	MINERAL POINT CITY HALL	141 HIGH ST Suite 1	MINERALAL POINT	53565
+352764	WI	RUSK	Rusk - City Of Ladysmith - Rusk County - Ward 012	NA	NA	\N
+352765	WI	RUSK	WEYERHAEUSER VILLAGE HALL	N3723 2ND ST	 WEYERHAEUSER	54895
+352766	WI	CLARK	ROCK DAM ROD & GUN CLUB	8561 HAY CREEK RD	 WILLARD	54493
+352767	WI	LAFAYETTE	WHITE OAK SPRINGS TOWN HALL	1990 COUNTY ROAD O RD	 SHULLSBURG	53586
+352768	WI	RUSK	RICHLAND TOWN HALL	4500 DAHL ST	 INGRAM	54526
+352769	WI	COLUMBIA	LODI CITY HALL	132 S MAIN ST	LODI	53555
+352770	WI	CRAWFORD	BELL CENTER VILLAGE HALL	430 BELL CENTER RD	 GAYS MILLS	54631
+352771	WI	KENOSHA	JANE VERNON ELEMENTARY SCHOOL	8518 22ND AVE	 KENOSHA	53143
+352772	WI	MONROE	SCOTT TOWN HALL	28788 BUCKLEY AVE	 WARRENS	54666
+352773	WI	CLARK	BUTLER TOWN HALL	W10098 CAPITAL RD	 THORP	54771
+352774	WI	RUSK	CONRATH VILLAGE HALL	N2720 PARK ST	 CONRATH	54731
+352775	WI	PEPIN	STOCKHOLM VILLAGE HALL	N2040 SPRING ST	 STOCKHOLM	54769
+352776	WI	GRANT	WOODMAN VILLAGE HALL	300 SPENCER ST	 WOODMAN	53827
+352777	WI	BAYFIELD	MASON AREA RURAL FIRE DEPARTMENT	24450 COUNTY HWY E	 MASON	54856
+352778	WI	SAWYER	COUDERAY VILLAGE HALL	4477 N HOFFER RD	 COUDERAY	54828
+352779	WI	ONEIDA	PIEHL TOWN HALL	1415 TOWN HALL RD	 RHINELANDER	54501
+352780	WI	RUSK	INGRAM VILLAGE HALL	N5970 STATE HIGHWAY 73	 INGRAM	54526
+352781	WI	WALWORTH	CHAPEL ON THE HILL	N2482 CISCO RD	 LAKE GENEVA	53147
+352782	WI	WAUPACA	BIG FALLS VILLAGE HALL	220 S MAIN ST	 BIG FALLS	54926
+352783	WI	CLARK	WASHBURN TOWN HALL	W3808 STATE HIGHWAY 73	 NEILLSVILLE	54456
+352784	WI	FOREST	CAVOUR TOWN HALL	4045 VILLAGE RD	 CAVOUR	54511
+352785	WI	RUSK	WILSON TOWN HALL	W16097 N BUCKS LAKE RD	 BIRCHWOOD	54817
+352786	WI	RICHLAND	YUBA COMMUNITY CENTER	22099 MAIN ST	 YUBA	54634
+352787	WI	WASHINGTON	Washington - Village Of Jackson - Washington County - Ward 001	NA	NA	\N
+352788	WI	FOREST	POPPLE RIVER TOWN HALL	11690 OLD 139 RD	 ARGONNE	54511
+352789	WI	JUNEAU	FINLEY TOWN HALL	N15990 9TH AVE	 NECEDAH	54646
+352790	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 016	NA	NA	\N
+352791	WI	IRON	UPSON TOWN HALL	10886 N HWY 122	 UPSON	54565
+352792	WI	RUSK	WILKINSON TOWN HALL	N6304 STOUT RD	 WEYERHAEUSER	54895
+352793	WI	BURNETT	RUSK TOWN HALL	25195 COUNTY ROAD H	 SPOONER	54801
+352794	WI	WASHINGTON	Washington - Village Of Jackson - Washington County - Ward 010	NA	NA	\N
+352795	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 016	NA	NA	\N
+352796	WI	JUNEAU	KINGSTON TOWN SHOP	N13844 CRANBERRY ROAD	 MATHER	54641
+352797	WI	POLK	VILLAGE LIBRARY	114 MARTIN AVE E	Turtle Lake	54889
+352798	WI	MONROE	MELVINA VILLAGE HALL	604 CENTRAL DR	 CASHTON	54619
+352799	WI	RUSK	CEDAR RAPIDS TOWN HALL	W3160 COUNTY ROAD B	 GLEN FLORA	54526
+352800	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 022	NA	NA	\N
+352801	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 019	NA	NA	\N
+352802	WI	CHIPPEWA	LAKE HALLIE SANITARY DISTRICT BUILDING	13034 30TH AVE	 CHIPPEWA FLS	54729
+352803	WI	FOND DU LAC	FOND DU LAC FAIRGROUNDS EXPO BUILDING	510 FOND DU LAC AVE	 FOND DU LAC	54935
+352804	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 018	NA	NA	\N
+352805	WI	SHAWANO	Shawano - City Of Marion - Multiple Counties - Ward 004	NA	NA	\N
+352806	WI	KENOSHA	ST. PAUL'S LUTHERAN CHURCH	8760 37TH AVENUE	 KENOSHA	53142
+352807	WI	BARRON	New Auburn Village Hall	130 Est Elm Street	New Auburn	54757
+352808	WI	DOUGLAS	WITC CONF CENTER	600 North 21st Street	SUPERIOR	54880
+352809	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 001	NA	NA	\N
+352810	WI	DANE	COVENTRY VILLAGE	7707 N BROOKLINE DR	 MADISON	53719
+352811	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 018	NA	NA	\N
+352812	WI	KENOSHA	KENOSHA TRANSIT FACILITY	4303 39TH AVE	 KENOSHA	53144
+352813	WI	PORTAGE	Portage - Village Of Whiting - Portage County - Ward 004	NA	NA	\N
+352814	WI	CALUMET	WINNEGAMIE DOG CLUB	2043 MANITOWOC RD	 MENASHA	54952
+352815	WI	SHEBOYGAN	SENIOR ACTIVITY CENTER-FITNESS RM	428 WISCONSIN AVE	 SHEBOYGAN	53081
+352816	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 026	NA	NA	\N
+352817	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 020	NA	NA	\N
+352818	WI	DANE	MERITER MCKEE CLINIC	3102 MERITER WAY	 MADISON	53719
+352819	WI	MONROE	Monroe - Town Of Lafayette - Monroe County - Ward 002	NA	NA	\N
+352820	WI	KENOSHA	FOREST PARK ELEMENTARY SCHOOL	6810 45TH AVE	 KENOSHA	53142
+352821	WI	SHEBOYGAN	GOOD SHEPHERD LUTHERAN CHURCH	1614 S 23RD ST	 SHEBOYGAN	53081
+352822	WI	MANITOWOC	MANITOWOC SENIOR CENTER	3330 CUSTER ST	 MANITOWOC	54220
+352823	WI	WASHINGTON	CEDAR RIDGE	113 CEDAR RIDGE DR	 WEST BEND	53095
+352824	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 021	NA	NA	\N
+352825	WI	OUTAGAMIE	FAITH MINISTRY CENTER (FAITH LUTHERAN CHURCH)	601 E GLENDALE AVE	 APPLETON	54911
+352826	WI	DANE	HIGH POINT CHURCH	7702 OLD SAUK RD	 MADISON	53717
+352827	WI	KENOSHA	NORTH SHORE BANK	5117 GREEN BAY RD	 KENOSHA	53144
+352828	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 025	NA	NA	\N
+352829	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 027	NA	NA	\N
+352830	WI	PORTAGE	PORTAGE COUNTY HEALTH CARE CENTER	825 WHITING AVE	 STEVENS POINT	54481
+352831	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 031	NA	NA	\N
+352832	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 033	NA	NA	\N
+352833	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 035	NA	NA	\N
+352834	WI	DANE	MIDDLETON COURTHOUSE	7341 DONNA DR	 MIDDLETON	53562
+352835	WI	DANE	SAINT LUKE'S LUTHERAN CHURCH	7337 HUBBARD AVE	 MIDDLETON	53562
+352836	WI	KENOSHA	LANCE MIDDLE SCHOOL	4515 80TH ST	 KENOSHA	53142
+352837	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 012	NA	NA	\N
+352838	WI	KENOSHA	Kenosha - Village Of Paddock Lake - Kenosha County - Ward 006	NA	NA	\N
+352839	WI	KENOSHA	VFW POST 1865	6618 39TH AVE	 KENOSHA	53142
+352840	WI	KENOSHA	KENOSHA BIBLE CHURCH	5405 67TH ST	 KENOSHA	53142
+352841	WI	DANE	CANDLEWOOD SUITES	5421 CADDIS BEND	 FITCHBURG	53711
+352842	WI	DANE	FITCHBURG COMMUNITY CENTER	5510 LACY RD	 FITCHBURG	53711
+352843	WI	DANE	Dane - Village Of McFarland - Dane County - Ward 010	NA	NA	\N
+352844	WI	DANE	Dane - City Of Madison - Dane County - Ward 103	NA	NA	\N
+352845	WI	DANE	Dane - City Of Madison - Dane County - Ward 104	NA	NA	\N
+352846	WI	DANE	BLACKHAWK CHURCH	9620 BRADER WAY	 MIDDLETON	53562
+352847	WI	DANE	THE JEFFERSON	9401 OLD SAUK RD	 MIDDLETON	53562
+352848	WI	KENOSHA	CURTIS STRANGE ELEMENTARY SCHOOL	5414 49TH AVE	 KENOSHA	53144
+352849	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 070	NA	NA	\N
+352850	WI	KENOSHA	JOURNEY CHURCH	10700 75TH ST	 KENOSHA	53142
+352851	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 022	NA	NA	\N
+352852	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 023	NA	NA	\N
+352853	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 024	NA	NA	\N
+352854	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 025	NA	NA	\N
+352855	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 026	NA	NA	\N
+352856	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 027	NA	NA	\N
+352857	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 028	NA	NA	\N
+352858	WI	LACROSSE	GOOD SHEPHERD LUTHERAN CHURCH	4141 MORMON COULEE RD	 LA CROSSE	54601
+352859	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 019	NA	NA	\N
+352860	WI	MARATHON	Marathon - City Of Marshfield - Multiple Counties - Ward 024	NA	NA	\N
+352861	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 262	NA	NA	\N
+352862	WI	MILWAUKEE	SOUTH EIGHTY-EIGHTH STREET SCHOOL	3575 S 88TH ST	 MILWAUKEE	53228
+352863	WI	MILWAUKEE	VICTORY SCHOOL	2222 W HENRY AVE	 MILWAUKEE	53221
+352864	WI	MILWAUKEE	HOLLER PARK PAVILION	5151 S 6TH ST	 MILWAUKEE	53221
+352865	WI	MONROE	Monroe - Town Of Wilton - Monroe County - Ward 004	NA	NA	\N
+352866	WI	OUTAGAMIE	COMMUNITY CHURCH OF APPLETON	3701 N GILLETT ST	 GRAND CHUTE	54914
+352867	WI	PIERCE	RIVER FALLS HIGH SCHOOL	818 CEMETERY RD	 RIVER FALLS	54022
+352868	WI	PORTAGE	LINCOLN CENTER	1519 WATER ST	 STEVENS POINT	54481
+352869	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 032	NA	NA	\N
+352870	WI	RACINE	Racine - City Of Racine - Racine County - Ward 036	NA	NA	\N
+352871	WI	SAWYER	Sawyer - Town Of Hayward - Sawyer County - Ward 007	NA	NA	\N
+352872	WI	SHEBOYGAN	BETHANY REFORMED CHURCH	1315 WASHINGTON AVE	 SHEBOYGAN	53081
+352873	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 013	NA	NA	\N
+352874	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 014	NA	NA	\N
+352875	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 048	NA	NA	\N
+352876	WI	WAUKESHA	Waukesha - Town Of Oconomowoc - Waukesha County - Ward 010	NA	NA	\N
+352877	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 320	NA	NA	\N
+352878	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 321	NA	NA	\N
+352879	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 322	NA	NA	\N
+352880	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 323	NA	NA	\N
+352881	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 324	NA	NA	\N
+352882	WI	MILWAUKEE	UMOS CENTER	2701 S CHASE AVE	 MILWAUKEE	53207
+352883	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 326	NA	NA	\N
+352884	WI	MILWAUKEE	AUDUBON SCHOOL	3300 S 39TH ST	 MILWAUKEE	53215
+352885	WI	CALUMET	HARRISON MUNICIPAL BUILDING	W5298 HWY 114	 MENASHA	54952
+352886	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 058	NA	NA	\N
+352887	WI	ADAMS	Adams - Village Of Friendship - Adams County - Ward 003	NA	NA	\N
+352888	WI	EAU CLAIRE	Eau Claire - Town Of Washington - Eau Claire County - Ward 017	NA	NA	\N
+352889	WI	EAU CLAIRE	Eau Claire - Town Of Washington - Eau Claire County - Ward 028	NA	NA	\N
+352890	WI	GRANT	AMERICAN LEGION	107 1/2 E OAK ST	BOSCOBEL	53805
+352891	WI	KENOSHA	Kenosha - Village Of Somers - Kenosha County - Ward 015	NA	NA	\N
+352892	WI	LACROSSE	Lacrosse - Town Of Onalaska - La Crosse County - Ward 011	NA	NA	\N
+352893	WI	MANITOWOC	Manitowoc - City Of Two Rivers - Manitowoc County - Ward 017	NA	NA	\N
+352894	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 037	NA	NA	\N
+352895	WI	MARINETTE	Marinette - Town Of Middle Inlet - Marinette County - Ward 004	NA	NA	\N
+352896	WI	RICHLAND	Richland - Town Of Orion - Richland County - Ward 004	NA	NA	\N
+352897	WI	ROCK	Rock - Town Of Turtle - Rock County - Ward 023	NA	NA	\N
+352898	WI	ST CROIX	St. Croix - Village Of North Hudson - St. Croix County - Ward 010	NA	NA	\N
+352899	WI	WAUKESHA	Waukesha - Village Of Big Bend - Waukesha County - Ward 009	NA	NA	\N
 \.
