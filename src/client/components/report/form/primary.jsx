@@ -63,7 +63,6 @@ export default class PrimaryReport extends Submitable {
         <form ref={this.trackForm}>
         <input type="hidden" value="primary" name="report_type" />
         <PrecinctInput location={this.props.params.location}
-          required
           className={this.state.errorClasses.precinct_id}
         >
           <span className="error-message">{this.state.errorMessages.precinct_id}</span>
