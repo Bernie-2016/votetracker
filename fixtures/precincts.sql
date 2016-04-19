@@ -1,6586 +1,14664 @@
 TRUNCATE precincts;
 
 COPY precincts (id, state_code, county, name) FROM stdin DELIMITER E'\t';
-310000	WI	DANE	Dane - City Of Madison - Dane County - Ward 099
-310001	WI	DANE	Dane - City Of Madison - Dane County - Ward 044
-310002	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 020
-310003	WI	DANE	Dane - City Of Madison - Dane County - Ward 045
-310004	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 005
-310005	WI	DANE	Dane - City Of Madison - Dane County - Ward 034
-310006	WI	DANE	Dane - City Of Madison - Dane County - Ward 025
-310007	WI	DANE	Dane - City Of Madison - Dane County - Ward 042
-310008	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 005
-310009	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 054
-310010	WI	DANE	Dane - City Of Madison - Dane County - Ward 083
-310011	WI	DANE	Dane - City Of Madison - Dane County - Ward 061
-310012	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 058
-310013	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 039
-310014	WI	DANE	Dane - City Of Madison - Dane County - Ward 046
-310015	WI	DANE	Dane - City Of Madison - Dane County - Ward 050
-310016	WI	DANE	Dane - City Of Madison - Dane County - Ward 033
-310017	WI	DANE	Dane - City Of Madison - Dane County - Ward 039
-310018	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 036
-310019	WI	DANE	Dane - City Of Madison - Dane County - Ward 075
-310020	WI	DANE	Dane - City Of Madison - Dane County - Ward 001
-310021	WI	DANE	Dane - City Of Madison - Dane County - Ward 002
-310022	WI	DANE	Dane - City Of Madison - Dane County - Ward 067
-310023	WI	DANE	Dane - City Of Madison - Dane County - Ward 011
-310024	WI	DANE	Dane - City Of Madison - Dane County - Ward 040
-310025	WI	DANE	Dane - City Of Madison - Dane County - Ward 093
-310026	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 006
-310027	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 013
-310028	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 008
-310029	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 034
-310030	WI	DANE	Dane - City Of Madison - Dane County - Ward 092
-310031	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 017
-310032	WI	DANE	Dane - City Of Madison - Dane County - Ward 048
-310033	WI	DANE	Dane - City Of Madison - Dane County - Ward 098
-310034	WI	DANE	Dane - City Of Madison - Dane County - Ward 047
-310035	WI	DANE	Dane - City Of Madison - Dane County - Ward 005
-310036	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 009
-310037	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 231
-310038	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 018
-310039	WI	DANE	Dane - City Of Middleton - Dane County - Ward 006
-310040	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 008
-310041	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 009
-310042	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 005
-310043	WI	DANE	Dane - City Of Madison - Dane County - Ward 086
-310044	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 014
-310045	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 009
-310046	WI	DANE	Dane - City Of Madison - Dane County - Ward 043
-310047	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 014
-310048	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 037
-310049	WI	DANE	Dane - City Of Madison - Dane County - Ward 019
-310050	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 264
-310051	WI	WINNEBAGO	Winnebago - Town Of Menasha - Winnebago County - Ward 002
-310052	WI	DANE	Dane - City Of Madison - Dane County - Ward 096
-310053	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 273
-310054	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 044
-310055	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 200
-310056	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 012
-310057	WI	DANE	Dane - City Of Madison - Dane County - Ward 082
-310058	WI	DANE	Dane - City Of Madison - Dane County - Ward 032
-310059	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 023
-310060	WI	DANE	Dane - City Of Madison - Dane County - Ward 074
-310061	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 009
-310062	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 010
-310063	WI	RACINE	Racine - City Of Racine - Racine County - Ward 027
-310064	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 010
-310065	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 012
-310066	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 013
-310067	WI	DANE	Dane - City Of Madison - Dane County - Ward 035
-310068	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 007
-310069	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 016
-310070	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 029
-310071	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 001
-310072	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 002
-310073	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 031
-310074	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 017
-310075	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 001
-310076	WI	DANE	Dane - City Of Madison - Dane County - Ward 073
-310077	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 010
-310078	WI	DANE	Dane - City Of Madison - Dane County - Ward 007
-310079	WI	DANE	Dane - City Of Madison - Dane County - Ward 081
-310080	WI	DANE	Dane - City Of Madison - Dane County - Ward 070
-310081	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 051
-310082	WI	RACINE	Racine - City Of Racine - Racine County - Ward 023
-310083	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 020
-310084	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 013
-310085	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 007
-310086	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 040
-310087	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 015
-310088	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 003
-310089	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 042
-310090	WI	RACINE	Racine - City Of Racine - Racine County - Ward 018
-310091	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 152
-310092	WI	DANE	Dane - City Of Madison - Dane County - Ward 052
-310093	WI	DANE	Dane - City Of Madison - Dane County - Ward 064
-310094	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 010
-310095	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 016
-310096	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 311
-310097	WI	BROWN	Brown - City Of De Pere - Brown County - Ward 011
-310098	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 006
-310099	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 007
-310100	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 003
-310101	WI	RACINE	Racine - City Of Racine - Racine County - Ward 028
-310102	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 015
-310103	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 172
-310104	WI	RACINE	Racine - City Of Racine - Racine County - Ward 034
-310105	WI	DANE	Dane - City Of Madison - Dane County - Ward 091
-310106	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 056
-310107	WI	DANE	Dane - City Of Madison - Dane County - Ward 087
-310108	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 011
-310109	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 027
-310110	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 192
-310111	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 110
-310112	WI	MILWAUKEE	Milwaukee - City Of Cudahy - Milwaukee County - Ward 015
-310113	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 005
-310114	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 276
-310115	WI	RACINE	Racine - City Of Racine - Racine County - Ward 024
-310116	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 008
-310117	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 015
-310118	WI	DANE	Dane - City Of Madison - Dane County - Ward 008
-310119	WI	DANE	Dane - City Of Madison - Dane County - Ward 066
-310120	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 017
-310121	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 011
-310122	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 002
-310123	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 028
-310124	WI	RACINE	Racine - City Of Racine - Racine County - Ward 014
-310125	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 004
-310126	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 196
-310127	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 052
-310128	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 059
-310129	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 002
-310130	WI	DANE	Dane - City Of Madison - Dane County - Ward 037
-310131	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 004
-310132	WI	DANE	Dane - City Of Madison - Dane County - Ward 041
-310133	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 010
-310134	WI	DUNN	Dunn - City Of Menomonie - Dunn County - Ward 007
-310135	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 012
-310136	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 017
-310137	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 010
-310138	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 012
-310139	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 149
-310140	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 017
-310141	WI	RACINE	Racine - City Of Racine - Racine County - Ward 025
-310142	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 005
-310143	WI	DANE	Dane - City Of Madison - Dane County - Ward 065
-310144	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 261
-310145	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 016
-310146	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 030
-310147	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 015
-310148	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 019
-310149	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 002
-310150	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 013
-310151	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 011
-310152	WI	DANE	Dane - City Of Madison - Dane County - Ward 027
-310153	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 010
-310154	WI	BROWN	Brown - Village Of Bellevue - Brown County - Ward 009
-310155	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 269
-310156	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 029
-310157	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 092
-310158	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 271
-310159	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 004
-310160	WI	DANE	Dane - City Of Madison - Dane County - Ward 010
-310161	WI	RACINE	Racine - City Of Racine - Racine County - Ward 029
-310162	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 007
-310163	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 001
-310164	WI	DANE	Dane - City Of Madison - Dane County - Ward 017
-310165	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 025
-310166	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 013
-310167	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 012
-310168	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 031
-310169	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 026
-310170	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 021
-310171	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 011
-310172	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 103
-310173	WI	RACINE	Racine - City Of Racine - Racine County - Ward 031
-310174	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 024
-310175	WI	RACINE	Racine - City Of Racine - Racine County - Ward 022
-310176	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 001
-310177	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 060
-310178	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 026
-310179	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 017
-310180	WI	DANE	Dane - City Of Madison - Dane County - Ward 072
-310181	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 232
-310182	WI	DANE	Dane - City Of Madison - Dane County - Ward 006
-310183	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 022
-310184	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 009
-310185	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 024
-310186	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 024
-310187	WI	BROWN	Brown - City Of De Pere - Brown County - Ward 003
-310188	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 028
-310189	WI	PIERCE	Pierce - City Of River Falls - Multiple Counties - Ward 009
-310190	WI	DANE	Dane - City Of Madison - Dane County - Ward 078
-310191	WI	DANE	Dane - City Of Madison - Dane County - Ward 038
-310192	WI	DANE	Dane - City Of Middleton - Dane County - Ward 002
-310193	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 032
-310194	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 022
-310195	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 007
-310196	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 007
-310197	WI	DANE	Dane - City Of Madison - Dane County - Ward 056
-310198	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 180
-310199	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 027
-310200	WI	RACINE	Racine - City Of Racine - Racine County - Ward 015
-310201	WI	DANE	Dane - City Of Madison - Dane County - Ward 004
-310202	WI	RACINE	Racine - City Of Racine - Racine County - Ward 016
-310203	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 008
-310204	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 014
-310205	WI	DANE	Dane - City Of Madison - Dane County - Ward 069
-310206	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 028
-310207	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 033
-310208	WI	DANE	Dane - City Of Madison - Dane County - Ward 062
-310209	WI	RACINE	Racine - City Of Racine - Racine County - Ward 032
-310210	WI	WAUKESHA	Waukesha - City Of Muskego - Waukesha County - Ward 015
-310211	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 014
-310212	WI	RACINE	Racine - City Of Racine - Racine County - Ward 021
-310213	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 015
-310214	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 018
-310215	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 020
-310216	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 005
-310217	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 041
-310218	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 017
-310219	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 036
-310220	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 029
-310221	WI	WASHINGTON	Washington - Village Of Germantown - Washington County - Ward 017
-310222	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 019
-310223	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 004
-310224	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 008
-310225	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 021
-310226	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 008
-310227	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 033
-310228	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 015
-310229	WI	BROWN	Brown - Village Of Allouez - Brown County - Ward 006
-310230	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 001
-310231	WI	RACINE	Racine - City Of Racine - Racine County - Ward 026
-310232	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 197
-310233	WI	DANE	Dane - City Of Madison - Dane County - Ward 085
-310234	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 003
-310235	WI	BROWN	Brown - Village Of Allouez - Brown County - Ward 004
-310236	WI	RACINE	Racine - City Of Racine - Racine County - Ward 033
-310237	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 024
-310238	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 019
-310239	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 019
-310240	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 015
-310241	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 002
-310242	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 003
-310243	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 312
-310244	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 002
-310245	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 017
-310246	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 171
-310247	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 046
-310248	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 004
-310249	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 077
-310250	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 010
-310251	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 018
-310252	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 015
-310253	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 019
-310254	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 033
-310255	WI	RACINE	Racine - City Of Racine - Racine County - Ward 008
-310256	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 006
-310257	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 002
-310258	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 020
-310259	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 015
-310260	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 031
-310261	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 024
-310262	WI	RACINE	Racine - City Of Racine - Racine County - Ward 030
-310263	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 014
-310264	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 189
-310265	WI	KENOSHA	Kenosha - Village Of Pleasant Prairie - Kenosha County - Ward 013
-310266	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 002
-310267	WI	ST CROIX	St. Croix - City Of River Falls - Multiple Counties - Ward 002
-310268	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 002
-310269	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 011
-310270	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 267
-310271	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 011
-310272	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 026
-310273	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 045
-310274	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 017
-310275	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 016
-310276	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 159
-310277	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 008
-310278	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 017
-310279	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 053
-310280	WI	DANE	Dane - City Of Madison - Dane County - Ward 024
-310281	WI	OUTAGAMIE	Outagamie - Town Of Grand Chute - Outagamie County - Ward 001
-310282	WI	DANE	Dane - City Of Middleton - Dane County - Ward 007
-310283	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 030
-310284	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 020
-310285	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 022
-310286	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 009
-310287	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 018
-310288	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 001
-310289	WI	BROWN	Brown - City Of De Pere - Brown County - Ward 010
-310290	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 198
-310291	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 109
-310292	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 230
-310293	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 007
-310294	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 025
-310295	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 009
-310296	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 001
-310297	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 128
-310298	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 003
-310299	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 007
-310300	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 003
-310301	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 115
-310302	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 032
-310303	WI	DANE	Dane - City Of Middleton - Dane County - Ward 008
-310304	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 190
-310305	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 289
-310306	WI	WAUKESHA	Waukesha - City Of Pewaukee - Waukesha County - Ward 008
-310307	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 038
-310308	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 014
-310309	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 004
-310310	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 020
-310311	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 113
-310312	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 001
-310313	WI	OUTAGAMIE	Outagamie - Town Of Grand Chute - Outagamie County - Ward 012
-310314	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 007
-310315	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 014
-310316	WI	KENOSHA	Kenosha - Village Of Pleasant Prairie - Kenosha County - Ward 008
-310317	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 105
-310318	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 001
-310319	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 003
-310320	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 007
-310321	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 005
-310322	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 015
-310323	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 033
-310324	WI	JEFFERSON	Jefferson - City Of Whitewater - Multiple Counties - Ward 010
-310325	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 003
-310326	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 007
-310327	WI	DANE	Dane - City Of Middleton - Dane County - Ward 003
-310328	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 033
-310329	WI	BROWN	Brown - Village Of Bellevue - Brown County - Ward 007
-310330	WI	WAUKESHA	Waukesha - City Of Muskego - Waukesha County - Ward 013
-310331	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 259
-310332	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 184
-310333	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 007
-310334	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 001
-310335	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 009
-310336	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 011
-310337	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 005
-310338	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 002
-310339	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 022
-310340	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 049
-310341	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 004
-310342	WI	DANE	Dane - City Of Madison - Dane County - Ward 003
-310343	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 043
-310344	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 011
-310345	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 023
-310346	WI	WAUKESHA	Waukesha - City Of Pewaukee - Waukesha County - Ward 001
-310347	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 001
-310348	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 004
-310349	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 019
-310350	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 228
-310351	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 014
-310352	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 012
-310353	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 003
-310354	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 042
-310355	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 012
-310356	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 032
-310357	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 255
-310358	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 004
-310359	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 020
-310360	WI	DANE	Dane - City Of Madison - Dane County - Ward 014
-310361	WI	RACINE	Racine - City Of Racine - Racine County - Ward 017
-310362	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 043
-310363	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 012
-310364	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 117
-310365	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 188
-310366	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 008
-310367	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 003
-310368	WI	WAUKESHA	Waukesha - City Of Muskego - Waukesha County - Ward 016
-310369	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 008
-310370	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 013
-310371	WI	BROWN	Brown - City Of De Pere - Brown County - Ward 001
-310372	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 011
-310373	WI	WAUKESHA	Waukesha - City Of Pewaukee - Waukesha County - Ward 010
-310374	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 157
-310375	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 008
-310376	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 004
-310377	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 220
-310378	WI	OUTAGAMIE	Outagamie - Town Of Grand Chute - Outagamie County - Ward 003
-310379	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 010
-310380	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 002
-310381	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 023
-310382	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 026
-310383	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 275
-310384	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 229
-310385	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 020
-310386	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 022
-310387	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 011
-310388	WI	LACROSSE	Lacrosse - City Of Onalaska - La Crosse County - Ward 001
-310389	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 012
-310390	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 010
-310391	WI	BROWN	Brown - Village Of Allouez - Brown County - Ward 008
-310392	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 027
-310393	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 012
-310394	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 025
-310395	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 236
-310396	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 011
-310397	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 003
-310398	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 006
-310399	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 025
-310400	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 030
-310401	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 015
-310402	WI	RACINE	Racine - City Of Racine - Racine County - Ward 006
-310403	WI	WALWORTH	Walworth - City Of Whitewater - Multiple Counties - Ward 008
-310404	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 299
-310405	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 001
-310406	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 020
-310407	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 013
-310408	WI	DANE	Dane - City Of Madison - Dane County - Ward 059
-310409	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 010
-310410	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 027
-310411	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 016
-310412	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 006
-310413	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 008
-310414	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 024
-310415	WI	BROWN	Brown - City Of De Pere - Brown County - Ward 006
-310416	WI	BROWN	Brown - Village Of Ashwaubenon - Brown County - Ward 011
-310417	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 001
-310418	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 020
-310419	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 029
-310420	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 029
-310421	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 038
-310422	WI	WALWORTH	Walworth - City Of Whitewater - Multiple Counties - Ward 006
-310423	WI	WAUKESHA	Waukesha - City Of Muskego - Waukesha County - Ward 010
-310424	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 001
-310425	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 014
-310426	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 006
-310427	WI	BROWN	Brown - Village Of Ashwaubenon - Brown County - Ward 010
-310428	WI	WAUKESHA	Waukesha - City Of Muskego - Waukesha County - Ward 005
-310429	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 001
-310430	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 055
-310431	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 258
-310432	WI	DANE	Dane - City Of Madison - Dane County - Ward 051
-310433	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 018
-310434	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 046
-310435	WI	WAUKESHA	Waukesha - City Of Pewaukee - Waukesha County - Ward 005
-310436	WI	CHIPPEWA	Chippewa - City Of Chippewa Falls - Chippewa County - Ward 003
-310437	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 016
-310438	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 193
-310439	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 011
-310440	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 170
-310441	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 044
-310442	WI	OUTAGAMIE	Outagamie - City Of Kaukauna - Multiple Counties - Ward 008
-310443	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 005
-310444	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 024
-310445	WI	LACROSSE	Lacrosse - City Of Onalaska - La Crosse County - Ward 012
-310446	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 002
-310447	WI	DANE	Dane - City Of Madison - Dane County - Ward 018
-310448	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 014
-310449	WI	KENOSHA	Kenosha - Village Of Pleasant Prairie - Kenosha County - Ward 007
-310450	WI	OUTAGAMIE	Outagamie - Town Of Grand Chute - Outagamie County - Ward 007
-310451	WI	DANE	Dane - City Of Madison - Dane County - Ward 054
-310452	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 024
-310453	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 011
-310454	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 030
-310455	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 179
-310456	WI	WINNEBAGO	Winnebago - City Of Menasha - Multiple Counties - Ward 001
-310457	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 001
-310458	WI	MILWAUKEE	Milwaukee - City Of Cudahy - Milwaukee County - Ward 003
-310459	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 020
-310460	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 023
-310461	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 033
-310462	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 012
-310463	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 018
-310464	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 001
-310465	WI	DANE	Dane - City Of Madison - Dane County - Ward 084
-310466	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 005
-310467	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 010
-310468	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 011
-310469	WI	KENOSHA	Kenosha - Village Of Pleasant Prairie - Kenosha County - Ward 010
-310470	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 238
-310471	WI	WINNEBAGO	Winnebago - Town Of Menasha - Winnebago County - Ward 006
-310472	WI	MILWAUKEE	Milwaukee - Village Of Brown Deer - Milwaukee County - Ward 001
-310473	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 015
-310474	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 221
-310475	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 088
-310476	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 008
-310477	WI	DANE	Dane - City Of Stoughton - Dane County - Ward 009
-310478	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 071
-310479	WI	BROWN	Brown - Village Of Ashwaubenon - Brown County - Ward 006
-310480	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 006
-310481	WI	JEFFERSON	Jefferson - City Of Watertown - Multiple Counties - Ward 009
-310482	WI	MILWAUKEE	Milwaukee - City Of Glendale - Milwaukee County - Ward 002
-310483	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 101
-310484	WI	MILWAUKEE	Milwaukee - Village Of Brown Deer - Milwaukee County - Ward 002
-310485	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 095
-310486	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 031
-310487	WI	WALWORTH	Walworth - City Of Whitewater - Multiple Counties - Ward 002
-310488	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 048
-310489	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 012
-310490	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 028
-310491	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 019
-310492	WI	WINNEBAGO	Winnebago - City Of Menasha - Multiple Counties - Ward 006
-310493	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 045
-310494	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 005
-310495	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 003
-310496	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 001
-310497	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 022
-310498	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 023
-310499	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 023
-310500	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 002
-310501	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 021
-310502	WI	JEFFERSON	Jefferson - City Of Watertown - Multiple Counties - Ward 018
-310503	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 007
-310504	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 038
-310505	WI	MILWAUKEE	Milwaukee - Village Of Greendale - Milwaukee County - Ward 009
-310506	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 017
-310507	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 015
-310508	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 034
-310509	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 050
-310510	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 014
-310511	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 147
-310512	WI	WOOD	Wood - Town Of Saratoga - Wood County - Ward 002
-310513	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 005
-310514	WI	MILWAUKEE	Milwaukee - Village Of Greendale - Milwaukee County - Ward 004
-310515	WI	SHEBOYGAN	Sheboygan - Town Of Sheboygan - Sheboygan County - Ward 005
-310516	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 005
-310517	WI	DANE	Dane - City Of Madison - Dane County - Ward 076
-310518	WI	WAUKESHA	Waukesha - City Of Pewaukee - Waukesha County - Ward 006
-310519	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 006
-310520	WI	DANE	Dane - City Of Madison - Dane County - Ward 022
-310521	WI	MILWAUKEE	Milwaukee - Village Of Shorewood - Milwaukee County - Ward 003
-310522	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 009
-310523	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 012
-310524	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 023
-310525	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 021
-310526	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 004
-310527	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 154
-310528	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 009
-310529	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 001
-310530	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 009
-310531	WI	OUTAGAMIE	Outagamie - Town Of Grand Chute - Outagamie County - Ward 011
-310532	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 027
-310533	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 076
-310534	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 013
-310535	WI	DANE	Dane - City Of Madison - Dane County - Ward 030
-310536	WI	MILWAUKEE	Milwaukee - Village Of Greendale - Milwaukee County - Ward 003
-310537	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 003
-310538	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 162
-310539	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 013
-310540	WI	LACROSSE	Lacrosse - City Of Onalaska - La Crosse County - Ward 002
-310541	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 023
-310542	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 074
-310543	WI	DANE	Dane - City Of Middleton - Dane County - Ward 004
-310544	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 120
-310545	WI	OUTAGAMIE	Outagamie - Village Of Little Chute - Outagamie County - Ward 006
-310546	WI	DOOR	Door - Town Of Nasewaupee - Door County - Ward 001
-310547	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 165
-310548	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 003
-310549	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 005
-310550	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 062
-310551	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 012
-310552	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 156
-310553	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 015
-310554	WI	WAUKESHA	Waukesha - City Of Oconomowoc - Waukesha County - Ward 001
-310555	WI	CHIPPEWA	Chippewa - City Of Chippewa Falls - Chippewa County - Ward 002
-310556	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 010
-310557	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 009
-310558	WI	DANE	Dane - City Of Madison - Dane County - Ward 090
-310559	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 041
-310560	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 155
-310561	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 006
-310562	WI	MENOMINEE	Menominee - Town Of Menominee - Menominee County - Ward 001
-310563	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 014
-310564	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 037
-310565	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 016
-310566	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 004
-310567	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 003
-310568	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 030
-310569	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 047
-310570	WI	LACROSSE	Lacrosse - Town Of Onalaska - La Crosse County - Ward 006
-310571	WI	DANE	Dane - City Of Middleton - Dane County - Ward 005
-310572	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 013
-310573	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 004
-310574	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 084
-310575	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 018
-310576	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 022
-310577	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 018
-310578	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 251
-310579	WI	OZAUKEE	Ozaukee - Village Of Grafton - Ozaukee County - Ward 005
-310580	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 223
-310581	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 015
-310582	WI	RACINE	Racine - City Of Racine - Racine County - Ward 002
-310583	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 100
-310584	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 012
-310585	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 003
-310586	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 003
-310587	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 127
-310588	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 013
-310589	WI	LACROSSE	Lacrosse - Town Of Onalaska - La Crosse County - Ward 004
-310590	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 015
-310591	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 019
-310592	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 138
-310593	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 002
-310594	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 010
-310595	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 003
-310596	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 014
-310597	WI	MARATHON	Marathon - Village Of Weston - Marathon County - Ward 006
-310598	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 199
-310599	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 021
-310600	WI	OUTAGAMIE	Outagamie - Town Of Grand Chute - Outagamie County - Ward 004
-310601	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 012
-310602	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 032
-310603	WI	BROWN	Brown - Village Of Allouez - Brown County - Ward 005
-310604	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 253
-310605	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 021
-310606	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 008
-310607	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 288
-310608	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 006
-310609	WI	DUNN	Dunn - City Of Menomonie - Dunn County - Ward 001
-310610	WI	POLK	Polk - Town Of Farmington - Polk County - Ward 001
-310611	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 003
-310612	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 017
-310613	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 287
-310614	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 009
-310615	WI	CHIPPEWA	Chippewa - City Of Eau Claire - Multiple Counties - Ward 016
-310616	WI	DODGE	Dodge - City Of Watertown - Multiple Counties - Ward 001
-310617	WI	WAUKESHA	Waukesha - City Of Muskego - Waukesha County - Ward 003
-310618	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 016
-310619	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 018
-310620	WI	DANE	Dane - City Of Madison - Dane County - Ward 012
-310621	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 010
-310622	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 256
-310623	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 012
-310624	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 015
-310625	WI	DANE	Dane - City Of Madison - Dane County - Ward 031
-310626	WI	MANITOWOC	Manitowoc - City Of Two Rivers - Manitowoc County - Ward 004
-310627	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 001
-310628	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 302
-310629	WI	BROWN	Brown - City Of De Pere - Brown County - Ward 005
-310630	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 094
-310631	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 169
-310632	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 003
-310633	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 007
-310634	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 013
-310635	WI	MANITOWOC	Manitowoc - City Of Two Rivers - Manitowoc County - Ward 005
-310636	WI	JEFFERSON	Jefferson - City Of Lake Mills - Jefferson County - Ward 002
-310637	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 017
-310638	WI	MILWAUKEE	Milwaukee - Village Of Greendale - Milwaukee County - Ward 010
-310639	WI	CHIPPEWA	Chippewa - City Of Chippewa Falls - Chippewa County - Ward 001
-310640	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 252
-310641	WI	DANE	Dane - City Of Stoughton - Dane County - Ward 004
-310642	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 005
-310643	WI	MILWAUKEE	Milwaukee - City Of South Milwaukee - Milwaukee County - Ward 009
-310644	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 019
-310645	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 145
-310646	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 278
-310647	WI	JEFFERSON	Jefferson - City Of Watertown - Multiple Counties - Ward 016
-310648	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 004
-310649	WI	MILWAUKEE	Milwaukee - Village Of Shorewood - Milwaukee County - Ward 002
-310650	WI	DUNN	Dunn - Town Of Red Cedar - Dunn County - Ward 001
-310651	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 006
-310652	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 024
-310653	WI	WASHINGTON	Washington - Village Of Germantown - Washington County - Ward 011
-310654	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 014
-310655	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 168
-310656	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 040
-310657	WI	RACINE	Racine - City Of Racine - Racine County - Ward 020
-310658	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 019
-310659	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan Falls - Sheboygan County - Ward 002
-310660	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 019
-310661	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 018
-310662	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 016
-310663	WI	DANE	Dane - City Of Madison - Dane County - Ward 063
-310664	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 020
-310665	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 166
-310666	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 144
-310667	WI	CHIPPEWA	Chippewa - City Of Chippewa Falls - Chippewa County - Ward 006
-310668	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 158
-310669	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 019
-310670	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 148
-310671	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 012
-310672	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 002
-310673	WI	OUTAGAMIE	Outagamie - City Of Kaukauna - Multiple Counties - Ward 001
-310674	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 008
-310675	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 031
-310676	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 020
-310677	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 265
-310678	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 125
-310679	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 225
-310680	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 250
-310681	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 224
-310682	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 235
-310683	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 237
-310684	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 004
-310685	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 003
-310686	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 006
-310687	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 018
-310688	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 047
-310689	WI	RACINE	Racine - City Of Racine - Racine County - Ward 007
-310690	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 013
-310691	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 007
-310692	WI	BROWN	Brown - Village Of Allouez - Brown County - Ward 002
-310693	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 001
-310694	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 011
-310695	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 010
-310696	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 002
-310697	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 010
-310698	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 016
-310699	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 142
-310700	WI	CHIPPEWA	Chippewa - City Of Chippewa Falls - Chippewa County - Ward 007
-310701	WI	MILWAUKEE	Milwaukee - Village Of Greendale - Milwaukee County - Ward 008
-310702	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 089
-310703	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 001
-310704	WI	BROWN	Brown - Village Of Howard - Multiple Counties - Ward 015
-310705	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 218
-310706	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 022
-310707	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 021
-310708	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 017
-310709	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 020
-310710	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 025
-310711	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 099
-310712	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 057
-310713	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 075
-310714	WI	DANE	Dane - Town Of Westport - Dane County - Ward 002
-310715	WI	WALWORTH	Walworth - City Of Whitewater - Multiple Counties - Ward 004
-310716	WI	DOOR	Door - Town Of Sevastopol - Door County - Ward 001
-310717	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 016
-310718	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 015
-310719	WI	BROWN	Brown - Village Of Allouez - Brown County - Ward 003
-310720	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 135
-310721	WI	DANE	Dane - City Of Madison - Dane County - Ward 071
-310722	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 012
-310723	WI	OUTAGAMIE	Outagamie - Village Of Little Chute - Outagamie County - Ward 007
-310724	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 005
-310725	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 008
-310726	WI	BROWN	Brown - City Of De Pere - Brown County - Ward 008
-310727	WI	DANE	Dane - City Of Madison - Dane County - Ward 049
-310728	WI	WASHINGTON	Washington - Village Of Germantown - Washington County - Ward 005
-310729	WI	ST CROIX	St. Croix - Town Of Hammond - St. Croix County - Ward 001
-310730	WI	OZAUKEE	Ozaukee - City Of Port Washington - Ozaukee County - Ward 001
-310731	WI	RACINE	Racine - City Of Racine - Racine County - Ward 019
-310732	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 005
-310733	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 037
-310734	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 097
-310735	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 035
-310736	WI	WASHINGTON	Washington - Village Of Germantown - Washington County - Ward 008
-310737	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 002
-310738	WI	MARATHON	Marathon - Village Of Weston - Marathon County - Ward 001
-310739	WI	WINNEBAGO	Winnebago - Town Of Menasha - Winnebago County - Ward 009
-310740	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 002
-310741	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 017
-310742	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 233
-310743	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 126
-310744	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 222
-310745	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 123
-310746	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 007
-310747	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 015
-310748	WI	WINNEBAGO	Winnebago - City Of Menasha - Multiple Counties - Ward 005
-310749	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 017
-310750	WI	BROWN	Brown - Village Of Howard - Multiple Counties - Ward 014
-310751	WI	ROCK	Rock - Town Of Turtle - Rock County - Ward 002
-310752	WI	BROWN	Brown - Village Of Ashwaubenon - Brown County - Ward 008
-310753	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 191
-310754	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 298
-310755	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 002
-310756	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 001
-310757	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 303
-310758	WI	CHIPPEWA	Chippewa - City Of Chippewa Falls - Chippewa County - Ward 005
-310759	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 002
-310760	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 021
-310761	WI	WASHINGTON	Washington - Village Of Richfield - Washington County - Ward 001
-310762	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 011
-310763	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 217
-310764	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 136
-310765	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 146
-310766	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 108
-310767	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 014
-310768	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 009
-310769	WI	CHIPPEWA	Chippewa - City Of Chippewa Falls - Chippewa County - Ward 004
-310770	WI	MILWAUKEE	Milwaukee - Village Of Greendale - Milwaukee County - Ward 005
-310771	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 022
-310772	WI	OUTAGAMIE	Outagamie - City Of Kaukauna - Multiple Counties - Ward 004
-310773	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 035
-310774	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 313
-310775	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 015
-310776	WI	BROWN	Brown - Town Of Lawrence - Brown County - Ward 003
-310777	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 226
-310778	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 014
-310779	WI	DANE	Dane - City Of Verona - Dane County - Ward 003
-310780	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 201
-310781	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 003
-310782	WI	MILWAUKEE	Milwaukee - City Of Glendale - Milwaukee County - Ward 009
-310783	WI	MILWAUKEE	Milwaukee - Village Of Whitefish Bay - Milwaukee County - Ward 010
-310784	WI	WASHINGTON	Washington - Village Of Jackson - Washington County - Ward 007
-310785	WI	BROWN	Brown - Town Of Ledgeview - Brown County - Ward 001
-310786	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 093
-310787	WI	OUTAGAMIE	Outagamie - Town Of Greenville - Outagamie County - Ward 007
-310788	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 004
-310789	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 021
-310790	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 027
-310791	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 021
-310792	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 017
-310793	WI	DANE	Dane - City Of Middleton - Dane County - Ward 009
-310794	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 064
-310795	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 014
-310796	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 001
-310797	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 086
-310798	WI	PORTAGE	Portage - Village Of Plover - Portage County - Ward 004
-310799	WI	MILWAUKEE	Milwaukee - City Of St. Francis - Milwaukee County - Ward 012
-310800	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 129
-310801	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 014
-310802	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 016
-310803	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 009
-310804	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 013
-310805	WI	ROCK	Rock - Town Of Rock - Rock County - Ward 007
-310806	WI	RACINE	Racine - City Of Racine - Racine County - Ward 009
-310807	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 017
-310808	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 013
-310809	WI	MILWAUKEE	Milwaukee - Village Of Brown Deer - Milwaukee County - Ward 004
-310810	WI	CALUMET	Calumet - City Of Appleton - Multiple Counties - Ward 044
-310811	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 016
-310812	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 014
-310813	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 150
-310814	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 009
-310815	WI	MILWAUKEE	Milwaukee - City Of Cudahy - Milwaukee County - Ward 010
-310816	WI	MILWAUKEE	Milwaukee - Village Of Greendale - Milwaukee County - Ward 001
-310817	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 012
-310818	WI	WINNEBAGO	Winnebago - City Of Menasha - Multiple Counties - Ward 007
-310819	WI	SHEBOYGAN	Sheboygan - Town Of Wilson - Sheboygan County - Ward 001
-310820	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 021
-310821	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 284
-310822	WI	PIERCE	Pierce - City Of River Falls - Multiple Counties - Ward 012
-310823	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 017
-310824	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 022
-310825	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 016
-310826	WI	CALUMET	Calumet - Village Of Sherwood - Calumet County - Ward 002
-310827	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 007
-310828	WI	JEFFERSON	Jefferson - City Of Watertown - Multiple Counties - Ward 012
-310829	WI	DANE	Dane - City Of Madison - Dane County - Ward 079
-310830	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 013
-310831	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 010
-310832	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 234
-310833	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 164
-310834	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 008
-310835	WI	GREEN	Green - Town Of Exeter - Green County - Ward 001
-310836	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 021
-310837	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 118
-310838	WI	VILAS	Vilas - Town Of Arbor Vitae - Vilas County - Ward 001
-310839	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 005
-310840	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 017
-310841	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 007
-310842	WI	BROWN	Brown - City Of De Pere - Brown County - Ward 013
-310843	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 279
-310844	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 277
-310845	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 007
-310846	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 019
-310847	WI	MANITOWOC	Manitowoc - City Of Two Rivers - Manitowoc County - Ward 007
-310848	WI	OZAUKEE	Ozaukee - City Of Port Washington - Ozaukee County - Ward 006
-310849	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 023
-310850	WI	DANE	Dane - Village Of McFarland - Dane County - Ward 004
-310851	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 020
-310852	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 098
-310853	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 005
-310854	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 240
-310855	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 008
-310856	WI	WAUKESHA	Waukesha - City Of Muskego - Waukesha County - Ward 012
-310857	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 011
-310858	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 016
-310859	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 039
-310860	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 007
-310861	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 012
-310862	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 013
-310863	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 008
-310864	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 124
-310865	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 013
-310866	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 020
-310867	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 015
-310868	WI	DUNN	Dunn - City Of Menomonie - Dunn County - Ward 003
-310869	WI	WINNEBAGO	Winnebago - City Of Menasha - Multiple Counties - Ward 002
-310870	WI	OUTAGAMIE	Outagamie - Town Of Grand Chute - Outagamie County - Ward 005
-310871	WI	WAUKESHA	Waukesha - City Of Muskego - Waukesha County - Ward 008
-310872	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 022
-310873	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 025
-310874	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 268
-310875	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 008
-310876	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 012
-310877	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 002
-310878	WI	DANE	Dane - City Of Madison - Dane County - Ward 068
-310879	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 082
-310880	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 030
-310881	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 314
-310882	WI	DANE	Dane - City Of Madison - Dane County - Ward 080
-310883	WI	PORTAGE	Portage - Village Of Plover - Portage County - Ward 003
-310884	WI	MILWAUKEE	Milwaukee - Village Of Whitefish Bay - Milwaukee County - Ward 012
-310885	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 023
-310886	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 006
-310887	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 016
-310888	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 014
-310889	WI	ROCK	Rock - Town Of Beloit - Rock County - Ward 009
-310890	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 028
-310891	WI	DUNN	Dunn - Town Of Menomonie - Dunn County - Ward 003
-310892	WI	DANE	Dane - City Of Verona - Dane County - Ward 008
-310893	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 025
-310894	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 286
-310895	WI	MILWAUKEE	Milwaukee - Village Of Greendale - Milwaukee County - Ward 002
-310896	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 090
-310897	WI	WINNEBAGO	Winnebago - Town Of Winneconne - Winnebago County - Ward 001
-310898	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 011
-310899	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 216
-310900	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 310
-310901	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 239
-310902	WI	WAUKESHA	Waukesha - Village Of Pewaukee - Waukesha County - Ward 008
-310903	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 008
-310904	WI	JEFFERSON	Jefferson - City Of Fort Atkinson - Jefferson County - Ward 001
-310905	WI	WINNEBAGO	Winnebago - Town Of Menasha - Winnebago County - Ward 001
-310906	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 300
-310907	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 272
-310908	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 007
-310909	WI	LACROSSE	Lacrosse - City Of Onalaska - La Crosse County - Ward 003
-310910	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 022
-310911	WI	MILWAUKEE	Milwaukee - Village Of Greendale - Milwaukee County - Ward 007
-310912	WI	MILWAUKEE	Milwaukee - City Of Glendale - Milwaukee County - Ward 004
-310913	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 024
-310914	WI	MILWAUKEE	Milwaukee - City Of South Milwaukee - Milwaukee County - Ward 001
-310915	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 257
-310916	WI	ST CROIX	St. Croix - City Of Hudson - St. Croix County - Ward 005
-310917	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 283
-310918	WI	MILWAUKEE	Milwaukee - Village Of Shorewood - Milwaukee County - Ward 004
-310919	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 021
-310920	WI	VILAS	Vilas - Town Of Conover - Vilas County - Ward 001
-310921	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 019
-310922	WI	COLUMBIA	Columbia - Town Of West Point - Columbia County - Ward 001
-310923	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 270
-310924	WI	PIERCE	Pierce - City Of River Falls - Multiple Counties - Ward 011
-310925	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 002
-310926	WI	BROWN	Brown - City Of De Pere - Brown County - Ward 009
-310927	WI	MARATHON	Marathon - Village Of Weston - Marathon County - Ward 005
-310928	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 010
-310929	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 296
-310930	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 080
-310931	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 001
-310932	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 006
-310933	WI	BROWN	Brown - Village Of Suamico - Brown County - Ward 007
-310934	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 030
-310935	WI	LACROSSE	Lacrosse - Village Of Holmen - La Crosse County - Ward 008
-310936	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 173
-310937	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 177
-310938	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 013
-310939	WI	WAUKESHA	Waukesha - City Of Oconomowoc - Waukesha County - Ward 008
-310940	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 067
-310941	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 072
-310942	WI	DOOR	Door - Town Of Gardner - Door County - Ward 001
-310943	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 009
-310944	WI	DANE	Dane - Town Of Middleton - Dane County - Ward 003
-310945	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 096
-310946	WI	WAUKESHA	Waukesha - City Of Pewaukee - Waukesha County - Ward 007
-310947	WI	WASHINGTON	Washington - Village Of Richfield - Washington County - Ward 002
-310948	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 006
-310949	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 018
-310950	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 024
-310951	WI	WAUKESHA	Waukesha - City Of Oconomowoc - Waukesha County - Ward 012
-310952	WI	MILWAUKEE	Milwaukee - Village Of Brown Deer - Milwaukee County - Ward 003
-310953	WI	MILWAUKEE	Milwaukee - Village Of Brown Deer - Milwaukee County - Ward 005
-310954	WI	LACROSSE	Lacrosse - City Of Onalaska - La Crosse County - Ward 005
-310955	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 006
-310956	WI	LACROSSE	Lacrosse - City Of Onalaska - La Crosse County - Ward 009
-310957	WI	OUTAGAMIE	Outagamie - Town Of Grand Chute - Outagamie County - Ward 009
-310958	WI	MILWAUKEE	Milwaukee - City Of Glendale - Milwaukee County - Ward 006
-310959	WI	BROWN	Brown - Village Of Ashwaubenon - Brown County - Ward 001
-310960	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 004
-310961	WI	DUNN	Dunn - City Of Menomonie - Dunn County - Ward 002
-310962	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 004
-310963	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 007
-310964	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 167
-310965	WI	MILWAUKEE	Milwaukee - City Of South Milwaukee - Milwaukee County - Ward 011
-310966	WI	MILWAUKEE	Milwaukee - Village Of Greendale - Milwaukee County - Ward 006
-310967	WI	WALWORTH	Walworth - Town Of Delavan - Walworth County - Ward 001
-310968	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 018
-310969	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 091
-310970	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 005
-310971	WI	DANE	Dane - Town Of Middleton - Dane County - Ward 002
-310972	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 112
-310973	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 006
-310974	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 019
-310975	WI	DANE	Dane - City Of Monona - Dane County - Ward 001
-310976	WI	MARINETTE	Marinette - City Of Marinette - Marinette County - Ward 004
-310977	WI	BROWN	Brown - Town Of Ledgeview - Brown County - Ward 003
-310978	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 015
-310979	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 021
-310980	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 013
-310981	WI	MILWAUKEE	Milwaukee - Village Of Shorewood - Milwaukee County - Ward 005
-310982	WI	WASHINGTON	Washington - City Of Hartford - Multiple Counties - Ward 002
-310983	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 266
-310984	WI	DUNN	Dunn - City Of Menomonie - Dunn County - Ward 006
-310985	WI	DANE	Dane - Village Of McFarland - Dane County - Ward 007
-310986	WI	VILAS	Vilas - Town Of St. Germain - Vilas County - Ward 001
-310987	WI	DUNN	Dunn - City Of Menomonie - Dunn County - Ward 011
-310988	WI	DANE	Dane - City Of Madison - Dane County - Ward 023
-310989	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 137
-310990	WI	WINNEBAGO	Winnebago - Town Of Rushford - Winnebago County - Ward 001
-310991	WI	WINNEBAGO	Winnebago - Town Of Algoma - Winnebago County - Ward 006
-310992	WI	DUNN	Dunn - City Of Menomonie - Dunn County - Ward 010
-310993	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 016
-310994	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 186
-310995	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 020
-310996	WI	WOOD	Wood - Town Of Saratoga - Wood County - Ward 004
-310997	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 016
-310998	WI	MILWAUKEE	Milwaukee - City Of South Milwaukee - Milwaukee County - Ward 014
-310999	WI	BROWN	Brown - Village Of Bellevue - Brown County - Ward 008
-311000	WI	DANE	Dane - City Of Madison - Dane County - Ward 009
-311001	WI	DODGE	Dodge - City Of Watertown - Multiple Counties - Ward 002
-311002	WI	WALWORTH	Walworth - Village Of East Troy - Walworth County - Ward 001
-311003	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 285
-311004	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 010
-311005	WI	WAUKESHA	Waukesha - City Of Oconomowoc - Waukesha County - Ward 007
-311006	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 003
-311007	WI	MILWAUKEE	Milwaukee - City Of West Allis - Milwaukee County - Ward 006
-311008	WI	FOND DU LAC	Fond Du Lac - City Of Waupun - Multiple Counties - Ward 010
-311009	WI	MILWAUKEE	Milwaukee - City Of South Milwaukee - Milwaukee County - Ward 015
-311010	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 036
-311011	WI	FOND DU LAC	Fond Du Lac - Town Of Taycheedah - Fond Du Lac County - Ward 001
-311012	WI	WALWORTH	Walworth - Village Of Walworth - Walworth County - Ward 001
-311013	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 014
-311014	WI	CHIPPEWA	Chippewa - Village Of Lake Hallie - Chippewa County - Ward 001
-311015	WI	DANE	Dane - Village Of Cross Plains - Dane County - Ward 004
-311016	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 034
-311017	WI	DANE	Dane - City Of Madison - Dane County - Ward 077
-311018	WI	VILAS	Vilas - Town Of Lincoln - Vilas County - Ward 001
-311019	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 016
-311020	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 249
-311021	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 009
-311022	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 013
-311023	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 004
-311024	WI	BROWN	Brown - Village Of Allouez - Brown County - Ward 007
-311025	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 219
-311026	WI	ROCK	Rock - Town Of Janesville - Rock County - Ward 004
-311027	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 006
-311028	WI	BROWN	Brown - Village Of Allouez - Brown County - Ward 001
-311029	WI	KENOSHA	Kenosha - Village Of Pleasant Prairie - Kenosha County - Ward 006
-311030	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 002
-311031	WI	CHIPPEWA	Chippewa - Town Of Lafayette - Chippewa County - Ward 001
-311032	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 140
-311033	WI	VILAS	Vilas - Town Of Lac Du Flambeau - Vilas County - Ward 001
-311034	WI	RACINE	Racine - City Of Racine - Racine County - Ward 003
-311035	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 309
-311036	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 005
-311037	WI	RACINE	Racine - City Of Racine - Racine County - Ward 004
-311038	WI	CHIPPEWA	Chippewa - City Of Bloomer - Chippewa County - Ward 001
-311039	WI	WINNEBAGO	Winnebago - Town Of Menasha - Winnebago County - Ward 005
-311040	WI	WAUKESHA	Waukesha - City Of Muskego - Waukesha County - Ward 011
-311041	WI	PORTAGE	Portage - Village Of Plover - Portage County - Ward 006
-311042	WI	DANE	Dane - Village Of Oregon - Dane County - Ward 004
-311043	WI	SHEBOYGAN	Sheboygan - City Of Plymouth - Sheboygan County - Ward 007
-311044	WI	MILWAUKEE	Milwaukee - City Of South Milwaukee - Milwaukee County - Ward 016
-311045	WI	MILWAUKEE	Milwaukee - Village Of Whitefish Bay - Milwaukee County - Ward 001
-311046	WI	ST CROIX	St. Croix - Village Of Roberts - St. Croix County - Ward 001
-311047	WI	WAUKESHA	Waukesha - Town Of Brookfield - Waukesha County - Ward 006
-311048	WI	BROWN	Brown - Village Of Howard - Multiple Counties - Ward 007
-311049	WI	JEFFERSON	Jefferson - City Of Fort Atkinson - Jefferson County - Ward 002
-311050	WI	MARINETTE	Marinette - City Of Marinette - Marinette County - Ward 003
-311051	WI	JEFFERSON	Jefferson - City Of Lake Mills - Jefferson County - Ward 003
-311052	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 018
-311053	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 002
-311054	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 024
-311055	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 017
-311056	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 005
-311057	WI	MILWAUKEE	Milwaukee - Village Of Whitefish Bay - Milwaukee County - Ward 009
-311058	WI	GRANT	Grant - City Of Platteville - Grant County - Ward 008
-311059	WI	MILWAUKEE	Milwaukee - City Of Glendale - Milwaukee County - Ward 005
-311060	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 282
-311061	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 305
-311062	WI	KENOSHA	Kenosha - Village Of Pleasant Prairie - Kenosha County - Ward 012
-311063	WI	WOOD	Wood - Town Of Saratoga - Wood County - Ward 006
-311064	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 022
-311065	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 007
-311066	WI	BROWN	Brown - Town Of Ledgeview - Brown County - Ward 002
-311067	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 061
-311068	WI	TREMPEALEAU	Trempealeau - Town Of Gale - Trempealeau County - Ward 002
-311069	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 023
-311070	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 161
-311071	WI	WAUKESHA	Waukesha - Village Of Pewaukee - Waukesha County - Ward 001
-311072	WI	MILWAUKEE	Milwaukee - City Of Glendale - Milwaukee County - Ward 001
-311073	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 301
-311074	WI	BROWN	Brown - Village Of Ashwaubenon - Brown County - Ward 004
-311075	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 008
-311076	WI	ONEIDA	Oneida - Town Of Minocqua - Oneida County - Ward 003
-311077	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 019
-311078	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 010
-311079	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 022
-311080	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 023
-311081	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 016
-311082	WI	WAUKESHA	Waukesha - Village Of Dousman - Waukesha County - Ward 001
-311083	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 035
-311084	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 122
-311085	WI	DANE	Dane - City Of Verona - Dane County - Ward 007
-311086	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 304
-311087	WI	DANE	Dane - City Of Stoughton - Dane County - Ward 005
-311088	WI	DANE	Dane - City Of Verona - Dane County - Ward 005
-311089	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 002
-311090	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 009
-311091	WI	LACROSSE	Lacrosse - Town Of Shelby - La Crosse County - Ward 002
-311092	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 007
-311093	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 022
-311094	WI	DANE	Dane - Town Of Middleton - Dane County - Ward 001
-311095	WI	ONEIDA	Oneida - Town Of Sugar Camp - Oneida County - Ward 001
-311096	WI	MILWAUKEE	Milwaukee - Village Of Whitefish Bay - Milwaukee County - Ward 004
-311097	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 107
-311098	WI	BROWN	Brown - City Of De Pere - Brown County - Ward 002
-311099	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 081
-311100	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 036
-311101	WI	WAUKESHA	Waukesha - Village Of Sussex - Waukesha County - Ward 008
-311102	WI	VILAS	Vilas - Town Of Land O-Lakes - Vilas County - Ward 001
-311103	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 005
-311104	WI	FOND DU LAC	Fond Du Lac - Town Of Fond Du Lac - Fond Du Lac County - Ward 003
-311105	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 023
-311106	WI	JEFFERSON	Jefferson - City Of Fort Atkinson - Jefferson County - Ward 004
-311107	WI	ROCK	Rock - Town Of Beloit - Rock County - Ward 008
-311108	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 016
-311109	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 306
-311110	WI	DOOR	Door - Town Of Sevastopol - Door County - Ward 003
-311111	WI	COLUMBIA	Columbia - Town Of Pacific - Columbia County - Ward 002
-311112	WI	DANE	Dane - City Of Madison - Dane County - Ward 094
-311113	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 007
-311114	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 009
-311115	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 085
-311116	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 018
-311117	WI	MARINETTE	Marinette - City Of Marinette - Marinette County - Ward 005
-311118	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 025
-311119	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 245
-311120	WI	RACINE	Racine - City Of Racine - Racine County - Ward 010
-311121	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 004
-311122	WI	JACKSON	Jackson - City Of Black River Falls - Jackson County - Ward 001
-311123	WI	MILWAUKEE	Milwaukee - City Of South Milwaukee - Milwaukee County - Ward 006
-311124	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 019
-311125	WI	ROCK	Rock - Town Of Fulton - Rock County - Ward 004
-311126	WI	DANE	Dane - Village Of Belleville - Multiple Counties - Ward 001
-311127	WI	BROWN	Brown - Village Of Ashwaubenon - Brown County - Ward 007
-311128	WI	ONEIDA	Oneida - Town Of Newbold - Oneida County - Ward 002
-311129	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 021
-311130	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 006
-311131	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 070
-311132	WI	MARINETTE	Marinette - City Of Marinette - Marinette County - Ward 001
-311133	WI	VILAS	Vilas - Town Of Cloverland - Vilas County - Ward 001
-311134	WI	DANE	Dane - Town Of Bristol - Dane County - Ward 002
-311135	WI	WINNEBAGO	Winnebago - Town Of Menasha - Winnebago County - Ward 007
-311136	WI	DANE	Dane - Town Of Springdale - Dane County - Ward 001
-311137	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 130
-311138	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 028
-311139	WI	PIERCE	Pierce - Town Of Oak Grove - Pierce County - Ward 001
-311140	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 087
-311141	WI	MILWAUKEE	Milwaukee - City Of Glendale - Milwaukee County - Ward 011
-311142	WI	DUNN	Dunn - City Of Menomonie - Dunn County - Ward 009
-311143	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 185
-311144	WI	JEFFERSON	Jefferson - City Of Fort Atkinson - Jefferson County - Ward 008
-311145	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 263
-311146	WI	MILWAUKEE	Milwaukee - Village Of Brown Deer - Milwaukee County - Ward 006
-311147	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 006
-311148	WI	DANE	Dane - Village Of Deerfield - Dane County - Ward 001
-311149	WI	MILWAUKEE	Milwaukee - Village Of Shorewood - Milwaukee County - Ward 007
-311150	WI	DUNN	Dunn - City Of Menomonie - Dunn County - Ward 004
-311151	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 013
-311152	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 008
-311153	WI	MILWAUKEE	Milwaukee - City Of South Milwaukee - Milwaukee County - Ward 010
-311154	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 009
-311155	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 007
-311156	WI	KENOSHA	Kenosha - Town Of Salem - Kenosha County - Ward 001
-311157	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 005
-311158	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 015
-311159	WI	ST CROIX	St. Croix - Town Of Richmond - St. Croix County - Ward 001
-311160	WI	OUTAGAMIE	Outagamie - Town Of Grand Chute - Outagamie County - Ward 008
-311161	WI	DOOR	Door - Town Of Gibraltar - Door County - Ward 001
-311162	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 006
-311163	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 016
-311164	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 254
-311165	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 006
-311166	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 011
-311167	WI	BROWN	Brown - Village Of Hobart - Brown County - Ward 006
-311168	WI	BROWN	Brown - Village Of Suamico - Brown County - Ward 004
-311169	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 242
-311170	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 009
-311171	WI	OZAUKEE	Ozaukee - Village Of Thiensville - Ozaukee County - Ward 003
-311172	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 002
-311173	WI	DANE	Dane - Village Of Oregon - Dane County - Ward 001
-311174	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 010
-311175	WI	DUNN	Dunn - Town Of Menomonie - Dunn County - Ward 002
-311176	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 083
-311177	WI	COLUMBIA	Columbia - Town Of Lodi - Columbia County - Ward 004
-311178	WI	WAUKESHA	Waukesha - Village Of Merton - Waukesha County - Ward 001
-311179	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 006
-311180	WI	MARATHON	Marathon - Village Of Kronenwetter - Marathon County - Ward 006
-311181	WI	MILWAUKEE	Milwaukee - Village Of Whitefish Bay - Milwaukee County - Ward 007
-311182	WI	BROWN	Brown - Village Of Bellevue - Brown County - Ward 004
-311183	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 014
-311184	WI	OUTAGAMIE	Outagamie - City Of Kaukauna - Multiple Counties - Ward 006
-311185	WI	RACINE	Racine - Village Of Waterford - Racine County - Ward 001
-311186	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 012
-311187	WI	WAUKESHA	Waukesha - City Of Oconomowoc - Waukesha County - Ward 006
-311188	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 116
-311189	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 015
-311190	WI	JEFFERSON	Jefferson - City Of Lake Mills - Jefferson County - Ward 004
-311191	WI	BROWN	Brown - Village Of Suamico - Brown County - Ward 005
-311192	WI	MARINETTE	Marinette - City Of Marinette - Marinette County - Ward 008
-311193	WI	PORTAGE	Portage - Village Of Plover - Portage County - Ward 002
-311194	WI	CHIPPEWA	Chippewa - Village Of Lake Hallie - Chippewa County - Ward 002
-311195	WI	MARATHON	Marathon - Village Of Weston - Marathon County - Ward 004
-311196	WI	WASHINGTON	Washington - Town Of Wayne - Washington County - Ward 001
-311197	WI	WAUKESHA	Waukesha - Town Of Oconomowoc - Waukesha County - Ward 003
-311198	WI	MANITOWOC	Manitowoc - City Of Two Rivers - Manitowoc County - Ward 008
-311199	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 016
-311200	WI	OUTAGAMIE	Outagamie - Village Of Little Chute - Outagamie County - Ward 011
-311201	WI	MARINETTE	Marinette - City Of Marinette - Marinette County - Ward 007
-311202	WI	DANE	Dane - Town Of Bristol - Dane County - Ward 003
-311203	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 036
-311204	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 021
-311205	WI	PORTAGE	Portage - Village Of Plover - Portage County - Ward 005
-311206	WI	JEFFERSON	Jefferson - City Of Fort Atkinson - Jefferson County - Ward 009
-311207	WI	DODGE	Dodge - City Of Beaver Dam - Dodge County - Ward 009
-311208	WI	OCONTO	Oconto - Town Of Townsend - Oconto County - Ward 001
-311209	WI	WASHINGTON	Washington - Village Of Richfield - Washington County - Ward 008
-311210	WI	PORTAGE	Portage - Village Of Plover - Portage County - Ward 009
-311211	WI	WAUPACA	Waupaca - Town Of Dayton - Waupaca County - Ward 001
-311212	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 008
-311213	WI	WASHINGTON	Washington - Village Of Germantown - Washington County - Ward 006
-311214	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 078
-311215	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 006
-311216	WI	DANE	Dane - City Of Madison - Dane County - Ward 095
-311217	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 029
-311218	WI	LACROSSE	Lacrosse - City Of Onalaska - La Crosse County - Ward 004
-311219	WI	POLK	Polk - City Of St. Croix Falls - Polk County - Ward 001
-311220	WI	CALUMET	Calumet - City Of Appleton - Multiple Counties - Ward 014
-311221	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 013
-311222	WI	MILWAUKEE	Milwaukee - Village Of Shorewood - Milwaukee County - Ward 012
-311223	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 011
-311224	WI	ST CROIX	St. Croix - City Of Hudson - St. Croix County - Ward 007
-311225	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 019
-311226	WI	OUTAGAMIE	Outagamie - Village Of Little Chute - Outagamie County - Ward 009
-311227	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 012
-311228	WI	WAUKESHA	Waukesha - City Of Muskego - Waukesha County - Ward 009
-311229	WI	DANE	Dane - Town Of Middleton - Dane County - Ward 004
-311230	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 015
-311231	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 011
-311232	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 005
-311233	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 021
-311234	WI	DANE	Dane - City Of Madison - Dane County - Ward 015
-311235	WI	SHEBOYGAN	Sheboygan - Town Of Sheboygan - Sheboygan County - Ward 001
-311236	WI	SAUK	Sauk - City Of Baraboo - Sauk County - Ward 010
-311237	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 106
-311238	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 028
-311239	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 030
-311240	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 006
-311241	WI	DANE	Dane - Village Of Mount Horeb - Dane County - Ward 003
-311242	WI	WAUKESHA	Waukesha - Town Of Oconomowoc - Waukesha County - Ward 004
-311243	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 004
-311244	WI	MILWAUKEE	Milwaukee - City Of South Milwaukee - Milwaukee County - Ward 002
-311245	WI	MILWAUKEE	Milwaukee - City Of South Milwaukee - Milwaukee County - Ward 013
-311246	WI	DANE	Dane - Village Of Mount Horeb - Dane County - Ward 005
-311247	WI	WALWORTH	Walworth - Town Of Lafayette - Walworth County - Ward 001
-311248	WI	WASHINGTON	Washington - City Of Hartford - Multiple Counties - Ward 010
-311249	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 007
-311250	WI	JEFFERSON	Jefferson - City Of Lake Mills - Jefferson County - Ward 001
-311251	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 009
-311252	WI	ROCK	Rock - Town Of Plymouth - Rock County - Ward 001
-311253	WI	MILWAUKEE	Milwaukee - City Of South Milwaukee - Milwaukee County - Ward 008
-311254	WI	MILWAUKEE	Milwaukee - City Of Cudahy - Milwaukee County - Ward 004
-311255	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 013
-311256	WI	SHEBOYGAN	Sheboygan - Town Of Sheboygan - Sheboygan County - Ward 007
-311257	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 016
-311258	WI	BROWN	Brown - Village Of Hobart - Brown County - Ward 005
-311259	WI	ROCK	Rock - Town Of Union - Rock County - Ward 001
-311260	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 194
-311261	WI	BROWN	Brown - City Of De Pere - Brown County - Ward 007
-311262	WI	OZAUKEE	Ozaukee - City Of Cedarburg - Ozaukee County - Ward 004
-311263	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 307
-311264	WI	BROWN	Brown - Village Of Bellevue - Brown County - Ward 002
-311265	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 026
-311266	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 114
-311267	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 212
-311268	WI	DANE	Dane - Town Of Westport - Dane County - Ward 004
-311269	WI	JEFFERSON	Jefferson - City Of Watertown - Multiple Counties - Ward 015
-311270	WI	JEFFERSON	Jefferson - City Of Fort Atkinson - Jefferson County - Ward 007
-311271	WI	OUTAGAMIE	Outagamie - Town Of Buchanan - Outagamie County - Ward 001
-311272	WI	MILWAUKEE	Milwaukee - City Of Cudahy - Milwaukee County - Ward 005
-311273	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 007
-311274	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 163
-311275	WI	BROWN	Brown - Village Of Suamico - Brown County - Ward 006
-311276	WI	GREEN	Green - City Of Monroe - Green County - Ward 008
-311277	WI	JEFFERSON	Jefferson - Town Of Lake Mills - Jefferson County - Ward 001
-311278	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 024
-311279	WI	WINNEBAGO	Winnebago - Town Of Omro - Winnebago County - Ward 002
-311280	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 010
-311281	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 295
-311282	WI	VILAS	Vilas - Town Of St. Germain - Vilas County - Ward 002
-311283	WI	MILWAUKEE	Milwaukee - Village Of Whitefish Bay - Milwaukee County - Ward 006
-311284	WI	VILAS	Vilas - Town Of Lac Du Flambeau - Vilas County - Ward 002
-311285	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 008
-311286	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 019
-311287	WI	WAUKESHA	Waukesha - City Of Delafield - Waukesha County - Ward 002
-311288	WI	ST CROIX	St. Croix - Town Of Troy - St. Croix County - Ward 001
-311289	WI	WAUKESHA	Waukesha - Village Of Wales - Waukesha County - Ward 001
-311290	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 011
-311291	WI	DANE	Dane - Town Of Westport - Dane County - Ward 003
-311292	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 016
-311293	WI	DANE	Dane - Village Of Mount Horeb - Dane County - Ward 006
-311294	WI	WAUKESHA	Waukesha - City Of Delafield - Waukesha County - Ward 003
-311295	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 079
-311296	WI	MILWAUKEE	Milwaukee - City Of Glendale - Milwaukee County - Ward 012
-311297	WI	JEFFERSON	Jefferson - City Of Fort Atkinson - Jefferson County - Ward 003
-311298	WI	MILWAUKEE	Milwaukee - Village Of Shorewood - Milwaukee County - Ward 010
-311299	WI	DANE	Dane - Village Of McFarland - Dane County - Ward 005
-311300	WI	MILWAUKEE	Milwaukee - Village Of Whitefish Bay - Milwaukee County - Ward 005
-311301	WI	BUFFALO	Buffalo - City Of Buffalo City - Buffalo County - Ward 001
-311302	WI	KENOSHA	Kenosha - Village Of Pleasant Prairie - Kenosha County - Ward 002
-311303	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 151
-311304	WI	JEFFERSON	Jefferson - City Of Watertown - Multiple Counties - Ward 013
-311305	WI	GREEN LAKE	Green Lake - Town Of Princeton - Green Lake County - Ward 001
-311306	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 102
-311307	WI	OZAUKEE	Ozaukee - City Of Port Washington - Ozaukee County - Ward 002
-311308	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 019
-311309	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 187
-311310	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 010
-311311	WI	DODGE	Dodge - City Of Watertown - Multiple Counties - Ward 005
-311312	WI	MARINETTE	Marinette - Town Of Dunbar - Marinette County - Ward 002
-311313	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 006
-311314	WI	ST CROIX	St. Croix - City Of Hudson - St. Croix County - Ward 004
-311315	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 018
-311316	WI	DANE	Dane - Village Of Windsor - Dane County - Ward 001
-311317	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 280
-311318	WI	SAUK	Sauk - Town Of Spring Green - Sauk County - Ward 001
-311319	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 007
-311320	WI	WASHINGTON	Washington - Village Of Kewaskum - Multiple Counties - Ward 002
-311321	WI	BROWN	Brown - Village Of Wrightstown - Multiple Counties - Ward 002
-311322	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 174
-311323	WI	BROWN	Brown - Village Of Howard - Multiple Counties - Ward 009
-311324	WI	WASHINGTON	Washington - City Of Hartford - Multiple Counties - Ward 011
-311325	WI	ROCK	Rock - Town Of Beloit - Rock County - Ward 001
-311326	WI	WAUKESHA	Waukesha - Town Of Merton - Waukesha County - Ward 001
-311327	WI	MILWAUKEE	Milwaukee - City Of South Milwaukee - Milwaukee County - Ward 004
-311328	WI	JEFFERSON	Jefferson - Village Of Johnson Creek - Jefferson County - Ward 002
-311329	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 002
-311330	WI	LACROSSE	Lacrosse - City Of Onalaska - La Crosse County - Ward 006
-311331	WI	DODGE	Dodge - City Of Watertown - Multiple Counties - Ward 004
-311332	WI	VILAS	Vilas - Town Of Arbor Vitae - Vilas County - Ward 002
-311333	WI	WINNEBAGO	Winnebago - Town Of Menasha - Winnebago County - Ward 011
-311334	WI	WAUKESHA	Waukesha - City Of Oconomowoc - Waukesha County - Ward 003
-311335	WI	LACROSSE	Lacrosse - Town Of Shelby - La Crosse County - Ward 004
-311336	WI	SHEBOYGAN	Sheboygan - Village Of Cedar Grove - Sheboygan County - Ward 001
-311337	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 015
-311338	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 211
-311339	WI	DANE	Dane - Town Of Pleasant Springs - Dane County - Ward 001
-311340	WI	BROWN	Brown - Village Of Ashwaubenon - Brown County - Ward 003
-311341	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 009
-311342	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 066
-311343	WI	MILWAUKEE	Milwaukee - Village Of Hales Corners - Milwaukee County - Ward 008
-311344	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 026
-311345	WI	BROWN	Brown - Village Of Bellevue - Brown County - Ward 006
-311346	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 011
-311347	WI	WAUKESHA	Waukesha - City Of Brookfield - Waukesha County - Ward 014
-311348	WI	CALUMET	Calumet - Village Of Sherwood - Calumet County - Ward 001
-311349	WI	DANE	Dane - City Of Madison - Dane County - Ward 089
-311350	WI	BROWN	Brown - City Of De Pere - Brown County - Ward 012
-311351	WI	WAUPACA	Waupaca - Town Of Farmington - Waupaca County - Ward 001
-311352	WI	DODGE	Dodge - City Of Beaver Dam - Dodge County - Ward 006
-311353	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 002
-311354	WI	VERNON	Vernon - Town Of Bergen - Vernon County - Ward 001
-311355	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 009
-311356	WI	OZAUKEE	Ozaukee - Town Of Fredonia - Ozaukee County - Ward 001
-311357	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 004
-311358	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 160
-311359	WI	DANE	Dane - City Of Stoughton - Dane County - Ward 001
-311360	WI	SHEBOYGAN	Sheboygan - Village Of Howards Grove - Sheboygan County - Ward 001
-311361	WI	ADAMS	Adams - Town Of Dell Prairie - Adams County - Ward 002
-311362	WI	KENOSHA	Kenosha - Village Of Pleasant Prairie - Kenosha County - Ward 004
-311363	WI	COLUMBIA	Columbia - Town Of Caledonia - Columbia County - Ward 001
-311364	WI	ROCK	Rock - Town Of Center - Rock County - Ward 001
-311365	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 195
-311366	WI	OUTAGAMIE	Outagamie - Town Of Greenville - Outagamie County - Ward 001
-311367	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 035
-311368	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 013
-311369	WI	ONEIDA	Oneida - Town Of Three Lakes - Oneida County - Ward 001
-311370	WI	WAUKESHA	Waukesha - Town Of Mukwonago - Waukesha County - Ward 002
-311371	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 020
-311372	WI	PIERCE	Pierce - Village Of Ellsworth - Pierce County - Ward 001
-311373	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 025
-311374	WI	DOOR	Door - Village Of Sister Bay - Door County - Ward 001
-311375	WI	OUTAGAMIE	Outagamie - Town Of Greenville - Outagamie County - Ward 006
-311376	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 181
-311377	WI	OUTAGAMIE	Outagamie - Village Of Kimberly - Outagamie County - Ward 007
-311378	WI	BROWN	Brown - Village Of Howard - Multiple Counties - Ward 013
-311379	WI	WINNEBAGO	Winnebago - Town Of Winchester - Winnebago County - Ward 001
-311380	WI	WAUKESHA	Waukesha - City Of Muskego - Waukesha County - Ward 014
-311381	WI	DANE	Dane - Village Of Deforest - Dane County - Ward 007
-311382	WI	JEFFERSON	Jefferson - Town Of Ixonia - Jefferson County - Ward 003
-311383	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 022
-311384	WI	OZAUKEE	Ozaukee - Village Of Fredonia - Ozaukee County - Ward 001
-311385	WI	DANE	Dane - City Of Verona - Dane County - Ward 001
-311386	WI	WALWORTH	Walworth - Town Of Sugar Creek - Walworth County - Ward 003
-311387	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 134
-311388	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 034
-311389	WI	MILWAUKEE	Milwaukee - Village Of Whitefish Bay - Milwaukee County - Ward 011
-311390	WI	WAUKESHA	Waukesha - Village Of Merton - Waukesha County - Ward 002
-311391	WI	WASHINGTON	Washington - Town Of Erin - Washington County - Ward 001
-311392	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 006
-311393	WI	OUTAGAMIE	Outagamie - Village Of Little Chute - Outagamie County - Ward 004
-311394	WI	BROWN	Brown - Town Of Lawrence - Brown County - Ward 001
-311395	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 038
-311396	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 018
-311397	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 008
-311398	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 244
-311399	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 009
-311400	WI	SAUK	Sauk - City Of Baraboo - Sauk County - Ward 003
-311401	WI	ST CROIX	St. Croix - City Of Glenwood City - St. Croix County - Ward 001
-311402	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 006
-311403	WI	BROWN	Brown - Village Of Suamico - Brown County - Ward 003
-311404	WI	MARINETTE	Marinette - City Of Marinette - Marinette County - Ward 002
-311405	WI	KENOSHA	Kenosha - Town Of Somers - Kenosha County - Ward 001
-311406	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 111
-311407	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 034
-311408	WI	SHEBOYGAN	Sheboygan - Town Of Sheboygan - Sheboygan County - Ward 004
-311409	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 248
-311410	WI	GREEN	Green - City Of Monroe - Green County - Ward 003
-311411	WI	MILWAUKEE	Milwaukee - Village Of Whitefish Bay - Milwaukee County - Ward 008
-311412	WI	FOND DU LAC	Fond Du Lac - Town Of Empire - Fond Du Lac County - Ward 002
-311413	WI	DANE	Dane - City Of Stoughton - Dane County - Ward 006
-311414	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 031
-311415	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 243
-311416	WI	OZAUKEE	Ozaukee - City Of Cedarburg - Ozaukee County - Ward 009
-311417	WI	DANE	Dane - City Of Stoughton - Dane County - Ward 002
-311418	WI	WASHINGTON	Washington - Town Of Jackson - Washington County - Ward 001
-311419	WI	OZAUKEE	Ozaukee - City Of Cedarburg - Ozaukee County - Ward 006
-311420	WI	LACROSSE	Lacrosse - City Of Onalaska - La Crosse County - Ward 011
-311421	WI	MARATHON	Marathon - Town Of Rib Mountain - Marathon County - Ward 007
-311422	WI	OZAUKEE	Ozaukee - Village Of Thiensville - Ozaukee County - Ward 002
-311423	WI	WINNEBAGO	Winnebago - City Of Menasha - Multiple Counties - Ward 009
-311424	WI	JUNEAU	Juneau - Town Of Necedah - Juneau County - Ward 002
-311425	WI	WASHINGTON	Washington - Village Of Richfield - Washington County - Ward 004
-311426	WI	PORTAGE	Portage - Village Of Plover - Portage County - Ward 008
-311427	WI	WAUKESHA	Waukesha - City Of Oconomowoc - Waukesha County - Ward 004
-311428	WI	PIERCE	Pierce - City Of Prescott - Pierce County - Ward 002
-311429	WI	MARINETTE	Marinette - Village Of Crivitz - Marinette County - Ward 001
-311430	WI	DANE	Dane - Village Of Deforest - Dane County - Ward 008
-311431	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 011
-311432	WI	WASHINGTON	Washington - Town Of Polk - Washington County - Ward 001
-311433	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 010
-311434	WI	DANE	Dane - Village Of Windsor - Dane County - Ward 003
-311435	WI	DODGE	Dodge - Town Of Westford - Dodge County - Ward 001
-311436	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 008
-311437	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 014
-311438	WI	PIERCE	Pierce - Town Of Trenton - Pierce County - Ward 001
-311439	WI	JEFFERSON	Jefferson - City Of Fort Atkinson - Jefferson County - Ward 005
-311440	WI	ONEIDA	Oneida - Town Of Pine Lake - Oneida County - Ward 002
-311441	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 002
-311442	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 004
-311443	WI	MARINETTE	Marinette - Town Of Peshtigo - Marinette County - Ward 005
-311444	WI	WASHINGTON	Washington - Village Of Germantown - Washington County - Ward 004
-311445	WI	OUTAGAMIE	Outagamie - Town Of Buchanan - Outagamie County - Ward 007
-311446	WI	WASHINGTON	Washington - Village Of Germantown - Washington County - Ward 013
-311447	WI	EAU CLAIRE	Eau Claire - Town Of Seymour - Eau Claire County - Ward 002
-311448	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 010
-311449	WI	WAUKESHA	Waukesha - Town Of Ottawa - Waukesha County - Ward 003
-311450	WI	COLUMBIA	Columbia - City Of Lodi - Columbia County - Ward 004
-311451	WI	DANE	Dane - Town Of Rutland - Dane County - Ward 001
-311452	WI	WALWORTH	Walworth - Town Of La Grange - Walworth County - Ward 003
-311453	WI	CHIPPEWA	Chippewa - Village Of Lake Hallie - Chippewa County - Ward 004
-311454	WI	BARRON	Barron - Town Of Cedar Lake - Barron County - Ward 001
-311455	WI	MANITOWOC	Manitowoc - City Of Two Rivers - Manitowoc County - Ward 006
-311456	WI	IOWA	Iowa - Town Of Arena - Iowa County - Ward 002
-311457	WI	WAUKESHA	Waukesha - Town Of Oconomowoc - Waukesha County - Ward 005
-311458	WI	RACINE	Racine - Town Of Waterford - Racine County - Ward 001
-311459	WI	PIERCE	Pierce - City Of Prescott - Pierce County - Ward 004
-311460	WI	FOND DU LAC	Fond Du Lac - Town Of Eden - Fond Du Lac County - Ward 001
-311461	WI	WAUKESHA	Waukesha - Town Of Ottawa - Waukesha County - Ward 004
-311462	WI	DANE	Dane - Town Of Roxbury - Dane County - Ward 001
-311463	WI	LANGLADE	Langlade - Town Of Antigo - Langlade County - Ward 001
-311464	WI	WAUKESHA	Waukesha - Town Of Oconomowoc - Waukesha County - Ward 002
-311465	WI	WALWORTH	Walworth - Town Of East Troy - Walworth County - Ward 001
-311466	WI	PIERCE	Pierce - City Of River Falls - Multiple Counties - Ward 006
-311467	WI	OZAUKEE	Ozaukee - Village Of Grafton - Ozaukee County - Ward 008
-311468	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 019
-311469	WI	BROWN	Brown - Village Of Ashwaubenon - Brown County - Ward 009
-311470	WI	OUTAGAMIE	Outagamie - Town Of Buchanan - Outagamie County - Ward 006
-311471	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 027
-311472	WI	SHEBOYGAN	Sheboygan - Town Of Sheboygan - Sheboygan County - Ward 002
-311473	WI	MILWAUKEE	Milwaukee - City Of South Milwaukee - Milwaukee County - Ward 005
-311474	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 021
-311475	WI	OUTAGAMIE	Outagamie - Town Of Greenville - Outagamie County - Ward 004
-311476	WI	CHIPPEWA	Chippewa - Town Of Lafayette - Chippewa County - Ward 005
-311477	WI	MILWAUKEE	Milwaukee - Village Of Hales Corners - Milwaukee County - Ward 002
-311478	WI	BROWN	Brown - Village Of Ashwaubenon - Brown County - Ward 012
-311479	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 012
-311480	WI	WAUKESHA	Waukesha - City Of Delafield - Waukesha County - Ward 007
-311481	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 020
-311482	WI	WALWORTH	Walworth - City Of Lake Geneva - Walworth County - Ward 006
-311483	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 119
-311484	WI	SAUK	Sauk - Town Of Merrimac - Sauk County - Ward 001
-311485	WI	IOWA	Iowa - Town Of Dodgeville - Iowa County - Ward 001
-311486	WI	WAUKESHA	Waukesha - City Of Muskego - Waukesha County - Ward 006
-311487	WI	BROWN	Brown - Village Of Bellevue - Brown County - Ward 003
-311488	WI	DOOR	Door - Town Of Union - Door County - Ward 001
-311489	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 001
-311490	WI	KENOSHA	Kenosha - Town Of Salem - Kenosha County - Ward 010
-311491	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 001
-311492	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 065
-311493	WI	MARINETTE	Marinette - Town Of Peshtigo - Marinette County - Ward 001
-311494	WI	FOND DU LAC	Fond Du Lac - Town Of Taycheedah - Fond Du Lac County - Ward 005
-311495	WI	SHEBOYGAN	Sheboygan - Town Of Lima - Sheboygan County - Ward 001
-311496	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 009
-311497	WI	WINNEBAGO	Winnebago - Town Of Menasha - Winnebago County - Ward 008
-311498	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 004
-311499	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 010
-311500	WI	GREEN LAKE	Green Lake - Town Of Berlin - Green Lake County - Ward 001
-311501	WI	BROWN	Brown - Village Of Pulaski - Multiple Counties - Ward 001
-311502	WI	ADAMS	Adams - Town Of Jackson - Adams County - Ward 001
-311503	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 002
-311504	WI	WINNEBAGO	Winnebago - Town Of Clayton - Winnebago County - Ward 002
-311505	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 010
-311506	WI	LACROSSE	Lacrosse - Town Of Farmington - La Crosse County - Ward 001
-311507	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 014
-311508	WI	WASHINGTON	Washington - Village Of Slinger - Washington County - Ward 002
-311509	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 202
-311510	WI	KENOSHA	Kenosha - Village Of Pleasant Prairie - Kenosha County - Ward 003
-311511	WI	WASHINGTON	Washington - Town Of Barton - Washington County - Ward 001
-311512	WI	MARINETTE	Marinette - City Of Marinette - Marinette County - Ward 006
-311513	WI	POLK	Polk - Village Of Luck - Polk County - Ward 001
-311514	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 020
-311515	WI	OZAUKEE	Ozaukee - Town Of Fredonia - Ozaukee County - Ward 003
-311516	WI	WAUKESHA	Waukesha - Village Of Summit - Waukesha County - Ward 004
-311517	WI	EAU CLAIRE	Eau Claire - Town Of Ludington - Eau Claire County - Ward 001
-311518	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 008
-311519	WI	OCONTO	Oconto - Town Of Lakewood - Oconto County - Ward 001
-311520	WI	ASHLAND	Ashland - City Of Ashland - Multiple Counties - Ward 007
-311521	WI	BROWN	Brown - Town Of Ledgeview - Brown County - Ward 004
-311522	WI	ST CROIX	St. Croix - Village Of Baldwin - St. Croix County - Ward 001
-311523	WI	OUTAGAMIE	Outagamie - Village Of Little Chute - Outagamie County - Ward 010
-311524	WI	RACINE	Racine - Town Of Norway - Racine County - Ward 003
-311525	WI	DANE	Dane - Town Of Pleasant Springs - Dane County - Ward 002
-311526	WI	WAUKESHA	Waukesha - City Of Pewaukee - Waukesha County - Ward 002
-311527	WI	MARINETTE	Marinette - Town Of Wausaukee - Marinette County - Ward 001
-311528	WI	SHEBOYGAN	Sheboygan - Town Of Rhine - Sheboygan County - Ward 001
-311529	WI	SHEBOYGAN	Sheboygan - Village Of Howards Grove - Sheboygan County - Ward 003
-311530	WI	BROWN	Brown - Town Of Green Bay - Brown County - Ward 001
-311531	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 004
-311532	WI	ROCK	Rock - Town Of Fulton - Rock County - Ward 001
-311533	WI	KENOSHA	Kenosha - Village Of Pleasant Prairie - Kenosha County - Ward 005
-311534	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 023
-311535	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 012
-311536	WI	DODGE	Dodge - City Of Beaver Dam - Dodge County - Ward 007
-311537	WI	MILWAUKEE	Milwaukee - City Of South Milwaukee - Milwaukee County - Ward 003
-311538	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 017
-311539	WI	WALWORTH	Walworth - Village Of Williams Bay - Walworth County - Ward 002
-311540	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 028
-311541	WI	BROWN	Brown - Village Of Denmark - Brown County - Ward 001
-311542	WI	DANE	Dane - Town Of Cross Plains - Dane County - Ward 002
-311543	WI	RACINE	Racine - City Of Racine - Racine County - Ward 011
-311544	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 014
-311545	WI	DODGE	Dodge - Town Of Rubicon - Dodge County - Ward 001
-311546	WI	WASHINGTON	Washington - Town Of West Bend - Washington County - Ward 001
-311547	WI	WASHINGTON	Washington - Town Of Erin - Washington County - Ward 004
-311548	WI	WASHINGTON	Washington - Town Of Erin - Washington County - Ward 002
-311549	WI	MILWAUKEE	Milwaukee - City Of South Milwaukee - Milwaukee County - Ward 012
-311550	WI	POLK	Polk - Town Of Alden - Polk County - Ward 001
-311551	WI	DUNN	Dunn - City Of Menomonie - Dunn County - Ward 008
-311552	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 007
-311553	WI	SAUK	Sauk - Town Of Greenfield - Sauk County - Ward 001
-311554	WI	LINCOLN	Lincoln - Town Of Bradley - Lincoln County - Ward 001
-311555	WI	KENOSHA	Kenosha - Village Of Somers - Kenosha County - Ward 009
-311556	WI	WASHINGTON	Washington - Village Of Jackson - Washington County - Ward 004
-311557	WI	SAWYER	Sawyer - Town Of Sand Lake - Sawyer County - Ward 001
-311558	WI	OUTAGAMIE	Outagamie - City Of Kaukauna - Multiple Counties - Ward 002
-311559	WI	JEFFERSON	Jefferson - Town Of Koshkonong - Jefferson County - Ward 002
-311560	WI	DUNN	Dunn - Town Of Tainter - Dunn County - Ward 001
-311561	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 009
-311562	WI	WAUKESHA	Waukesha - Village Of Mukwonago - Multiple Counties - Ward 002
-311563	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 018
-311564	WI	WAUKESHA	Waukesha - Town Of Mukwonago - Waukesha County - Ward 001
-311565	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 013
-311566	WI	CHIPPEWA	Chippewa - Town Of Wheaton - Chippewa County - Ward 003
-311567	WI	TAYLOR	Taylor - Town Of Medford - Taylor County - Ward 002
-311568	WI	SHEBOYGAN	Sheboygan - Town Of Greenbush - Sheboygan County - Ward 001
-311569	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 020
-311570	WI	SHAWANO	Shawano - Town Of Washington - Shawano County - Ward 001
-311571	WI	MARINETTE	Marinette - Town Of Peshtigo - Marinette County - Ward 003
-311572	WI	RACINE	Racine - City Of Racine - Racine County - Ward 013
-311573	WI	WAUPACA	Waupaca - Town Of Lebanon - Waupaca County - Ward 001
-311574	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 209
-311575	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 001
-311576	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 005
-311577	WI	CHIPPEWA	Chippewa - Village Of Lake Hallie - Chippewa County - Ward 005
-311578	WI	OZAUKEE	Ozaukee - Village Of Belgium - Ozaukee County - Ward 001
-311579	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 215
-311580	WI	JEFFERSON	Jefferson - Town Of Watertown - Jefferson County - Ward 001
-311581	WI	GRANT	Grant - Town Of Platteville - Grant County - Ward 001
-311582	WI	CHIPPEWA	Chippewa - Town Of Lafayette - Chippewa County - Ward 006
-311583	WI	OZAUKEE	Ozaukee - City Of Port Washington - Ozaukee County - Ward 004
-311584	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 004
-311585	WI	OUTAGAMIE	Outagamie - City Of Kaukauna - Multiple Counties - Ward 007
-311586	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 013
-311587	WI	MILWAUKEE	Milwaukee - Village Of Shorewood - Milwaukee County - Ward 008
-311588	WI	MILWAUKEE	Milwaukee - City Of Cudahy - Milwaukee County - Ward 014
-311589	WI	ADAMS	Adams - Town Of Big Flats - Adams County - Ward 001
-311590	WI	KENOSHA	Kenosha - Village Of Bristol - Kenosha County - Ward 006
-311591	WI	DANE	Dane - Village Of McFarland - Dane County - Ward 002
-311592	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 029
-311593	WI	DODGE	Dodge - City Of Waupun - Multiple Counties - Ward 002
-311594	WI	OUTAGAMIE	Outagamie - City Of Kaukauna - Multiple Counties - Ward 009
-311595	WI	OZAUKEE	Ozaukee - Town Of Cedarburg - Ozaukee County - Ward 007
-311596	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 241
-311597	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 021
-311598	WI	DODGE	Dodge - City Of Beaver Dam - Dodge County - Ward 001
-311599	WI	ONEIDA	Oneida - Town Of Crescent - Oneida County - Ward 002
-311600	WI	DOOR	Door - Town Of Washington - Door County - Ward 001
-311601	WI	BAYFIELD	Bayfield - Town Of Iron River - Bayfield County - Ward 001
-311602	WI	KEWAUNEE	Kewaunee - Village Of Luxemburg - Kewaunee County - Ward 001
-311603	WI	FOND DU LAC	Fond Du Lac - Town Of Osceola - Fond Du Lac County - Ward 002
-311604	WI	SHEBOYGAN	Sheboygan - Town Of Plymouth - Sheboygan County - Ward 001
-311605	WI	MARATHON	Marathon - Village Of Weston - Marathon County - Ward 003
-311606	WI	DANE	Dane - City Of Middleton - Dane County - Ward 001
-311607	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 292
-311608	WI	MILWAUKEE	Milwaukee - Village Of Shorewood - Milwaukee County - Ward 009
-311609	WI	MONROE	Monroe - Town Of La Grange - Monroe County - Ward 001
-311610	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 011
-311611	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 039
-311612	WI	KEWAUNEE	Kewaunee - Village Of Luxemburg - Kewaunee County - Ward 002
-311613	WI	MONROE	Monroe - Town Of Sparta - Monroe County - Ward 001
-311614	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 017
-311615	WI	WAUKESHA	Waukesha - Town Of Vernon - Waukesha County - Ward 008
-311616	WI	POLK	Polk - Town Of Osceola - Polk County - Ward 001
-311617	WI	WAUKESHA	Waukesha - Village Of Sussex - Waukesha County - Ward 003
-311618	WI	SHEBOYGAN	Sheboygan - Town Of Herman - Sheboygan County - Ward 001
-311619	WI	DANE	Dane - Town Of Albion - Dane County - Ward 001
-311620	WI	PORTAGE	Portage - Town Of Dewey - Portage County - Ward 001
-311621	WI	RACINE	Racine - Town Of Raymond - Racine County - Ward 004
-311622	WI	WASHINGTON	Washington - Town Of Farmington - Washington County - Ward 001
-311623	WI	PORTAGE	Portage - Village Of Plover - Portage County - Ward 007
-311624	WI	ADAMS	Adams - Town Of Springville - Adams County - Ward 002
-311625	WI	FOND DU LAC	Fond Du Lac - Town Of Osceola - Fond Du Lac County - Ward 001
-311626	WI	DOUGLAS	Douglas - Town Of Solon Springs - Douglas County - Ward 001
-311627	WI	COLUMBIA	Columbia - Town Of Pacific - Columbia County - Ward 001
-311628	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 017
-311629	WI	DODGE	Dodge - City Of Waupun - Multiple Counties - Ward 005
-311630	WI	DANE	Dane - Town Of Cottage Grove - Dane County - Ward 003
-311631	WI	DANE	Dane - City Of Madison - Dane County - Ward 053
-311632	WI	SHAWANO	Shawano - Town Of Wescott - Shawano County - Ward 001
-311633	WI	COLUMBIA	Columbia - Village Of Rio - Columbia County - Ward 001
-311634	WI	DANE	Dane - Town Of Burke - Dane County - Ward 001
-311635	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 176
-311636	WI	WAUKESHA	Waukesha - Village Of Eagle - Waukesha County - Ward 002
-311637	WI	BROWN	Brown - Village Of Ashwaubenon - Brown County - Ward 002
-311638	WI	DANE	Dane - Village Of Mount Horeb - Dane County - Ward 001
-311639	WI	DODGE	Dodge - Town Of Ashippun - Dodge County - Ward 002
-311640	WI	COLUMBIA	Columbia - City Of Columbus - Multiple Counties - Ward 001
-311641	WI	WINNEBAGO	Winnebago - Town Of Menasha - Winnebago County - Ward 010
-311642	WI	VILAS	Vilas - Town Of Arbor Vitae - Vilas County - Ward 003
-311643	WI	VILAS	Vilas - Town Of Phelps - Vilas County - Ward 002
-311644	WI	OUTAGAMIE	Outagamie - Town Of Grand Chute - Outagamie County - Ward 013
-311645	WI	WALWORTH	Walworth - Town Of East Troy - Walworth County - Ward 002
-311646	WI	WAUKESHA	Waukesha - City Of Delafield - Waukesha County - Ward 004
-311647	WI	DANE	Dane - Town Of Bristol - Dane County - Ward 001
-311648	WI	WAUPACA	Waupaca - Town Of Matteson - Waupaca County - Ward 001
-311649	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 141
-311650	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 019
-311651	WI	MILWAUKEE	Milwaukee - Village Of Hales Corners - Milwaukee County - Ward 003
-311652	WI	BROWN	Brown - Town Of Scott - Brown County - Ward 004
-311653	WI	WAUKESHA	Waukesha - Town Of Delafield - Waukesha County - Ward 007
-311654	WI	BROWN	Brown - Town Of Eaton - Brown County - Ward 001
-311655	WI	DANE	Dane - Village Of Deforest - Dane County - Ward 005
-311656	WI	BAYFIELD	Bayfield - Town Of Barnes - Bayfield County - Ward 001
-311657	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 014
-311658	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 308
-311659	WI	MILWAUKEE	Milwaukee - City Of Cudahy - Milwaukee County - Ward 001
-311660	WI	MARATHON	Marathon - Village Of Weston - Marathon County - Ward 010
-311661	WI	WAUKESHA	Waukesha - Village Of Nashotah - Waukesha County - Ward 002
-311662	WI	JEFFERSON	Jefferson - City Of Watertown - Multiple Counties - Ward 010
-311663	WI	DANE	Dane - City Of Verona - Dane County - Ward 004
-311664	WI	ONEIDA	Oneida - Town Of Woodruff - Oneida County - Ward 002
-311665	WI	MONROE	Monroe - Town Of Leon - Monroe County - Ward 001
-311666	WI	RACINE	Racine - Village Of Sturtevant - Racine County - Ward 005
-311667	WI	CHIPPEWA	Chippewa - Town Of Lafayette - Chippewa County - Ward 002
-311668	WI	CRAWFORD	Crawford - Town Of Bridgeport - Crawford County - Ward 001
-311669	WI	BROWN	Brown - Village Of Suamico - Brown County - Ward 008
-311670	WI	CALUMET	Calumet - Town Of Brillion - Calumet County - Ward 001
-311671	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 011
-311672	WI	LACROSSE	Lacrosse - Village Of Holmen - La Crosse County - Ward 003
-311673	WI	OZAUKEE	Ozaukee - Village Of Grafton - Ozaukee County - Ward 013
-311674	WI	WINNEBAGO	Winnebago - Town Of Menasha - Winnebago County - Ward 004
-311675	WI	SHAWANO	Shawano - Town Of Washington - Shawano County - Ward 002
-311676	WI	DODGE	Dodge - City Of Watertown - Multiple Counties - Ward 007
-311677	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 004
-311678	WI	DOOR	Door - Town Of Egg Harbor - Door County - Ward 001
-311679	WI	SHEBOYGAN	Sheboygan - Town Of Holland - Sheboygan County - Ward 002
-311680	WI	WAUSHARA	Waushara - Town Of Aurora - Waushara County - Ward 001
-311681	WI	DUNN	Dunn - Town Of Dunn - Dunn County - Ward 001
-311682	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 010
-311683	WI	RACINE	Racine - Town Of Norway - Racine County - Ward 002
-311684	WI	DANE	Dane - Town Of Cottage Grove - Dane County - Ward 004
-311685	WI	DANE	Dane - City Of Stoughton - Dane County - Ward 007
-311686	WI	ONEIDA	Oneida - Town Of Nokomis - Oneida County - Ward 002
-311687	WI	WAUKESHA	Waukesha - Village Of Summit - Waukesha County - Ward 001
-311688	WI	SAUK	Sauk - City Of Baraboo - Sauk County - Ward 006
-311689	WI	DODGE	Dodge - City Of Watertown - Multiple Counties - Ward 003
-311690	WI	BAYFIELD	Bayfield - City Of Washburn - Bayfield County - Ward 001
-311691	WI	MILWAUKEE	Milwaukee - City Of Glendale - Milwaukee County - Ward 010
-311692	WI	FOND DU LAC	Fond Du Lac - Town Of Forest - Fond Du Lac County - Ward 001
-311693	WI	JEFFERSON	Jefferson - Town Of Aztalan - Jefferson County - Ward 001
-311694	WI	WINNEBAGO	Winnebago - Town Of Clayton - Winnebago County - Ward 003
-311695	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 001
-311696	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 005
-311697	WI	WALWORTH	Walworth - Town Of Troy - Walworth County - Ward 001
-311698	WI	MILWAUKEE	Milwaukee - City Of Glendale - Milwaukee County - Ward 003
-311699	WI	MILWAUKEE	Milwaukee - Village Of Whitefish Bay - Milwaukee County - Ward 002
-311700	WI	DANE	Dane - Village Of Cottage Grove - Dane County - Ward 001
-311701	WI	JEFFERSON	Jefferson - Town Of Oakland - Jefferson County - Ward 002
-311702	WI	SHEBOYGAN	Sheboygan - Village Of Random Lake - Sheboygan County - Ward 001
-311703	WI	OZAUKEE	Ozaukee - Town Of Cedarburg - Ozaukee County - Ward 005
-311704	WI	WOOD	Wood - Town Of Grand Rapids - Wood County - Ward 011
-311705	WI	BROWN	Brown - Village Of Bellevue - Brown County - Ward 001
-311706	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 018
-311707	WI	MANITOWOC	Manitowoc - City Of Two Rivers - Manitowoc County - Ward 002
-311708	WI	KEWAUNEE	Kewaunee - Town Of Ahnapee - Kewaunee County - Ward 001
-311709	WI	LINCOLN	Lincoln - Town Of King - Lincoln County - Ward 001
-311710	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 010
-311711	WI	POLK	Polk - Town Of Milltown - Polk County - Ward 001
-311712	WI	FOND DU LAC	Fond Du Lac - Town Of Empire - Fond Du Lac County - Ward 001
-311713	WI	WAUKESHA	Waukesha - Town Of Merton - Waukesha County - Ward 002
-311714	WI	ROCK	Rock - Town Of Milton - Rock County - Ward 002
-311715	WI	OCONTO	Oconto - Town Of Chase - Oconto County - Ward 003
-311716	WI	BARRON	Barron - Town Of Stanley - Barron County - Ward 003
-311717	WI	WAUKESHA	Waukesha - Town Of Waukesha - Waukesha County - Ward 003
-311718	WI	DODGE	Dodge - City Of Mayville - Dodge County - Ward 007
-311719	WI	KEWAUNEE	Kewaunee - Town Of Franklin - Kewaunee County - Ward 001
-311720	WI	WAUKESHA	Waukesha - Town Of Eagle - Waukesha County - Ward 001
-311721	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 014
-311722	WI	BUFFALO	Buffalo - City Of Mondovi - Buffalo County - Ward 001
-311723	WI	DOUGLAS	Douglas - Town Of Superior - Douglas County - Ward 002
-311724	WI	WINNEBAGO	Winnebago - Town Of Black Wolf - Winnebago County - Ward 001
-311725	WI	GREEN	Green - City Of Monroe - Green County - Ward 001
-311726	WI	JEFFERSON	Jefferson - Village Of Palmyra - Jefferson County - Ward 001
-311727	WI	DANE	Dane - Village Of Shorewood Hills - Dane County - Ward 001
-311728	WI	DUNN	Dunn - Town Of Spring Brook - Dunn County - Ward 002
-311729	WI	ROCK	Rock - Town Of Porter - Rock County - Ward 001
-311730	WI	DODGE	Dodge - City Of Beaver Dam - Dodge County - Ward 011
-311731	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 004
-311732	WI	POLK	Polk - Town Of Laketown - Polk County - Ward 001
-311733	WI	PORTAGE	Portage - Village Of Amherst - Portage County - Ward 001
-311734	WI	EAU CLAIRE	Eau Claire - Town Of Seymour - Eau Claire County - Ward 001
-311735	WI	DANE	Dane - Village Of Oregon - Dane County - Ward 005
-311736	WI	WOOD	Wood - Town Of Grand Rapids - Wood County - Ward 005
-311737	WI	JEFFERSON	Jefferson - City Of Watertown - Multiple Counties - Ward 014
-311738	WI	DODGE	Dodge - Town Of Ashippun - Dodge County - Ward 001
-311739	WI	LACROSSE	Lacrosse - Town Of Holland - La Crosse County - Ward 001
-311740	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 121
-311741	WI	MARATHON	Marathon - Village Of Weston - Marathon County - Ward 011
-311742	WI	WINNEBAGO	Winnebago - Town Of Black Wolf - Winnebago County - Ward 002
-311743	WI	OCONTO	Oconto - Town Of Abrams - Oconto County - Ward 001
-311744	WI	WAUKESHA	Waukesha - Village Of Elm Grove - Waukesha County - Ward 002
-311745	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 027
-311746	WI	WAUKESHA	Waukesha - Village Of Mukwonago - Multiple Counties - Ward 005
-311747	WI	CALUMET	Calumet - City Of Brillion - Calumet County - Ward 002
-311748	WI	WAUKESHA	Waukesha - Town Of Mukwonago - Waukesha County - Ward 004
-311749	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 017
-311750	WI	DANE	Dane - City Of Monona - Dane County - Ward 009
-311751	WI	BROWN	Brown - Town Of Scott - Brown County - Ward 003
-311752	WI	WALWORTH	Walworth - Town Of East Troy - Walworth County - Ward 005
-311753	WI	MANITOWOC	Manitowoc - City Of Two Rivers - Manitowoc County - Ward 001
-311754	WI	DANE	Dane - Town Of Rutland - Dane County - Ward 002
-311755	WI	FOND DU LAC	Fond Du Lac - Village Of Rosendale - Fond Du Lac County - Ward 001
-311756	WI	PORTAGE	Portage - Town Of Eau Pleine - Portage County - Ward 001
-311757	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 010
-311758	WI	MARATHON	Marathon - Village Of Rothschild - Marathon County - Ward 006
-311759	WI	MILWAUKEE	Milwaukee - Village Of Hales Corners - Milwaukee County - Ward 004
-311760	WI	MILWAUKEE	Milwaukee - City Of Greenfield - Milwaukee County - Ward 015
-311761	WI	WAUPACA	Waupaca - City Of Waupaca - Waupaca County - Ward 001
-311762	WI	MANITOWOC	Manitowoc - Town Of Cato - Manitowoc County - Ward 002
-311763	WI	PIERCE	Pierce - Town Of Clifton - Pierce County - Ward 001
-311764	WI	DANE	Dane - Village Of Cross Plains - Dane County - Ward 001
-311765	WI	LACROSSE	Lacrosse - Town Of Burns - La Crosse County - Ward 001
-311766	WI	ROCK	Rock - Town Of Janesville - Rock County - Ward 003
-311767	WI	WAUKESHA	Waukesha - Town Of Oconomowoc - Waukesha County - Ward 006
-311768	WI	WALWORTH	Walworth - Town Of Linn - Walworth County - Ward 001
-311769	WI	OUTAGAMIE	Outagamie - Town Of Greenville - Outagamie County - Ward 003
-311770	WI	VILAS	Vilas - Town Of Presque Isle - Vilas County - Ward 001
-311771	WI	WAUPACA	Waupaca - Town Of Mukwa - Waupaca County - Ward 002
-311772	WI	MILWAUKEE	Milwaukee - City Of Wauwatosa - Milwaukee County - Ward 021
-311773	WI	DOOR	Door - Town Of Liberty Grove - Door County - Ward 003
-311774	WI	OUTAGAMIE	Outagamie - Town Of Center - Outagamie County - Ward 003
-311775	WI	WAUKESHA	Waukesha - Town Of Delafield - Waukesha County - Ward 004
-311776	WI	ADAMS	Adams - Town Of Adams - Adams County - Ward 001
-311777	WI	MILWAUKEE	Milwaukee - Village Of Fox Point - Milwaukee County - Ward 003
-311778	WI	WINNEBAGO	Winnebago - Town Of Algoma - Winnebago County - Ward 005
-311779	WI	WASHINGTON	Washington - City Of Hartford - Multiple Counties - Ward 003
-311780	WI	WAUKESHA	Waukesha - City Of Delafield - Waukesha County - Ward 001
-311781	WI	JEFFERSON	Jefferson - Town Of Sullivan - Jefferson County - Ward 001
-311782	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 247
-311783	WI	OZAUKEE	Ozaukee - Village Of Grafton - Ozaukee County - Ward 011
-311784	WI	WASHINGTON	Washington - Town Of Farmington - Washington County - Ward 002
-311785	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 178
-311786	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 020
-311787	WI	DANE	Dane - Town Of Oregon - Dane County - Ward 004
-311788	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 012
-311789	WI	DANE	Dane - City Of Verona - Dane County - Ward 006
-311790	WI	GREEN LAKE	Green Lake - City Of Berlin - Multiple Counties - Ward 001
-311791	WI	GREEN	Green - City Of Monroe - Green County - Ward 004
-311792	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 020
-311793	WI	CHIPPEWA	Chippewa - Town Of Wheaton - Chippewa County - Ward 002
-311794	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 183
-311795	WI	JEFFERSON	Jefferson - City Of Fort Atkinson - Jefferson County - Ward 006
-311796	WI	LACROSSE	Lacrosse - Village Of West Salem - La Crosse County - Ward 001
-311797	WI	KENOSHA	Kenosha - Village Of Somers - Kenosha County - Ward 006
-311798	WI	DODGE	Dodge - City Of Beaver Dam - Dodge County - Ward 008
-311799	WI	SHEBOYGAN	Sheboygan - Village Of Howards Grove - Sheboygan County - Ward 002
-311800	WI	MILWAUKEE	Milwaukee - Village Of Fox Point - Milwaukee County - Ward 008
-311801	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 004
-311802	WI	VILAS	Vilas - Town Of Manitowish Waters - Vilas County - Ward 001
-311803	WI	WASHINGTON	Washington - Village Of Germantown - Washington County - Ward 014
-311804	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 005
-311805	WI	DANE	Dane - Town Of Dane - Dane County - Ward 001
-311806	WI	BAYFIELD	Bayfield - Town Of Cable - Bayfield County - Ward 001
-311807	WI	SAUK	Sauk - Village Of Prairie Du Sac - Sauk County - Ward 002
-311808	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 203
-311809	WI	SHEBOYGAN	Sheboygan - Town Of Lyndon - Sheboygan County - Ward 002
-311810	WI	JEFFERSON	Jefferson - City Of Jefferson - Jefferson County - Ward 003
-311811	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 020
-311812	WI	DANE	Dane - Town Of Vermont - Dane County - Ward 001
-311813	WI	DANE	Dane - Village Of Oregon - Dane County - Ward 003
-311814	WI	JEFFERSON	Jefferson - City Of Jefferson - Jefferson County - Ward 008
-311815	WI	BROWN	Brown - Village Of Ashwaubenon - Brown County - Ward 005
-311816	WI	TREMPEALEAU	Trempealeau - Town Of Trempealeau - Trempealeau County - Ward 002
-311817	WI	LINCOLN	Lincoln - Town Of Pine River - Lincoln County - Ward 001
-311818	WI	SAUK	Sauk - Town Of Delton - Sauk County - Ward 001
-311819	WI	OCONTO	Oconto - Town Of Morgan - Oconto County - Ward 001
-311820	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 037
-311821	WI	BURNETT	Burnett - Town Of Jackson - Burnett County - Ward 001
-311822	WI	BROWN	Brown - Village Of Suamico - Brown County - Ward 001
-311823	WI	RICHLAND	Richland - Town Of Buena Vista - Richland County - Ward 001
-311824	WI	MANITOWOC	Manitowoc - City Of Kiel - Multiple Counties - Ward 001
-311825	WI	JEFFERSON	Jefferson - City Of Watertown - Multiple Counties - Ward 017
-311826	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 022
-311827	WI	DANE	Dane - Village Of Shorewood Hills - Dane County - Ward 002
-311828	WI	POLK	Polk - Village Of Balsam Lake - Polk County - Ward 001
-311829	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 014
-311830	WI	MARATHON	Marathon - Town Of Texas - Marathon County - Ward 001
-311831	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 003
-311832	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 025
-311833	WI	LACROSSE	Lacrosse - Town Of Campbell - La Crosse County - Ward 005
-311834	WI	SHEBOYGAN	Sheboygan - City Of Plymouth - Sheboygan County - Ward 010
-311835	WI	COLUMBIA	Columbia - Town Of Dekorra - Columbia County - Ward 002
-311836	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan Falls - Sheboygan County - Ward 004
-311837	WI	PIERCE	Pierce - Town Of Ellsworth - Pierce County - Ward 001
-311838	WI	JEFFERSON	Jefferson - Town Of Ixonia - Jefferson County - Ward 001
-311839	WI	MILWAUKEE	Milwaukee - City Of Cudahy - Milwaukee County - Ward 006
-311840	WI	JEFFERSON	Jefferson - Town Of Watertown - Jefferson County - Ward 002
-311841	WI	WAUKESHA	Waukesha - Town Of Vernon - Waukesha County - Ward 003
-311842	WI	WASHINGTON	Washington - Town Of Barton - Washington County - Ward 004
-311843	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 210
-311844	WI	OUTAGAMIE	Outagamie - Village Of Combined Locks - Outagamie County - Ward 002
-311845	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 008
-311846	WI	WAUKESHA	Waukesha - Town Of Merton - Waukesha County - Ward 008
-311847	WI	WAUKESHA	Waukesha - Town Of Oconomowoc - Waukesha County - Ward 001
-311848	WI	WASHINGTON	Washington - Town Of Trenton - Washington County - Ward 002
-311849	WI	WALWORTH	Walworth - City Of Lake Geneva - Walworth County - Ward 002
-311850	WI	DUNN	Dunn - Village Of Boyceville - Dunn County - Ward 001
-311851	WI	WAUKESHA	Waukesha - Town Of Genesee - Waukesha County - Ward 004
-311852	WI	OUTAGAMIE	Outagamie - Village Of Hortonville - Outagamie County - Ward 001
-311853	WI	BROWN	Brown - Town Of Rockland - Brown County - Ward 001
-311854	WI	DANE	Dane - Village Of McFarland - Dane County - Ward 006
-311855	WI	ONEIDA	Oneida - Town Of Three Lakes - Oneida County - Ward 002
-311856	WI	WAUSHARA	Waushara - Town Of Poy Sippi - Waushara County - Ward 001
-311857	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 003
-311858	WI	WALWORTH	Walworth - Village Of East Troy - Walworth County - Ward 004
-311859	WI	MANITOWOC	Manitowoc - Town Of Schleswig - Manitowoc County - Ward 002
-311860	WI	LACROSSE	Lacrosse - Town Of Hamilton - La Crosse County - Ward 002
-311861	WI	WAUKESHA	Waukesha - Village Of Elm Grove - Waukesha County - Ward 003
-311862	WI	PORTAGE	Portage - Town Of Sharon - Portage County - Ward 001
-311863	WI	OZAUKEE	Ozaukee - Town Of Cedarburg - Ozaukee County - Ward 003
-311864	WI	WOOD	Wood - Town Of Grand Rapids - Wood County - Ward 008
-311865	WI	ONEIDA	Oneida - Town Of Lake Tomahawk - Oneida County - Ward 001
-311866	WI	WAUSHARA	Waushara - Town Of Saxeville - Waushara County - Ward 001
-311867	WI	OZAUKEE	Ozaukee - Village Of Fredonia - Ozaukee County - Ward 002
-311868	WI	WAUKESHA	Waukesha - Town Of Merton - Waukesha County - Ward 009
-311869	WI	GRANT	Grant - Town Of Jamestown - Grant County - Ward 001
-311870	WI	WAUKESHA	Waukesha - Village Of Elm Grove - Waukesha County - Ward 005
-311871	WI	ROCK	Rock - Town Of Harmony - Rock County - Ward 003
-311872	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 026
-311873	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 012
-311874	WI	WAUKESHA	Waukesha - Town Of Delafield - Waukesha County - Ward 005
-311875	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 003
-311876	WI	WASHINGTON	Washington - Town Of West Bend - Washington County - Ward 003
-311877	WI	MARATHON	Marathon - Town Of Berlin - Marathon County - Ward 001
-311878	WI	LANGLADE	Langlade - Town Of Neva - Langlade County - Ward 001
-311879	WI	DANE	Dane - Town Of Oregon - Dane County - Ward 003
-311880	WI	JEFFERSON	Jefferson - Village Of Johnson Creek - Jefferson County - Ward 001
-311881	WI	VERNON	Vernon - Town Of Franklin - Vernon County - Ward 001
-311882	WI	GREEN	Green - City Of Monroe - Green County - Ward 002
-311883	WI	GREEN	Green - Town Of Sylvester - Green County - Ward 001
-311884	WI	SHEBOYGAN	Sheboygan - City Of Plymouth - Sheboygan County - Ward 004
-311885	WI	OZAUKEE	Ozaukee - Town Of Belgium - Ozaukee County - Ward 001
-311886	WI	MILWAUKEE	Milwaukee - Village Of Bayside - Multiple Counties - Ward 003
-311887	WI	DANE	Dane - Village Of Maple Bluff - Dane County - Ward 002
-311888	WI	JEFFERSON	Jefferson - Town Of Lake Mills - Jefferson County - Ward 002
-311889	WI	SHEBOYGAN	Sheboygan - Town Of Rhine - Sheboygan County - Ward 003
-311890	WI	POLK	Polk - Town Of Clayton - Polk County - Ward 001
-311891	WI	PIERCE	Pierce - Town Of Gilman - Pierce County - Ward 001
-311892	WI	WAUPACA	Waupaca - Town Of Lind - Waupaca County - Ward 002
-311893	WI	SHEBOYGAN	Sheboygan - Village Of Kohler - Sheboygan County - Ward 002
-311894	WI	DANE	Dane - City Of Monona - Dane County - Ward 010
-311895	WI	JEFFERSON	Jefferson - Town Of Ixonia - Jefferson County - Ward 002
-311896	WI	MARATHON	Marathon - Village Of Kronenwetter - Marathon County - Ward 001
-311897	WI	LACROSSE	Lacrosse - Town Of Onalaska - La Crosse County - Ward 001
-311898	WI	FOND DU LAC	Fond Du Lac - City Of Ripon - Fond Du Lac County - Ward 004
-311899	WI	ONEIDA	Oneida - Town Of Minocqua - Oneida County - Ward 004
-311900	WI	WASHINGTON	Washington - City Of Hartford - Multiple Counties - Ward 009
-311901	WI	DODGE	Dodge - City Of Beaver Dam - Dodge County - Ward 013
-311902	WI	ST CROIX	St. Croix - Village Of Somerset - St. Croix County - Ward 001
-311903	WI	SAUK	Sauk - Village Of Lake Delton - Sauk County - Ward 002
-311904	WI	COLUMBIA	Columbia - Village Of Pardeeville - Columbia County - Ward 003
-311905	WI	OUTAGAMIE	Outagamie - Town Of Freedom - Outagamie County - Ward 007
-311906	WI	DOUGLAS	Douglas - Town Of Wascott - Douglas County - Ward 001
-311907	WI	WINNEBAGO	Winnebago - City Of Menasha - Multiple Counties - Ward 010
-311908	WI	LANGLADE	Langlade - Town Of Rolling - Langlade County - Ward 002
-311909	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 019
-311910	WI	DANE	Dane - City Of Madison - Dane County - Ward 057
-311911	WI	JACKSON	Jackson - Town Of Brockway - Jackson County - Ward 001
-311912	WI	DANE	Dane - Town Of Springfield - Dane County - Ward 001
-311913	WI	MANITOWOC	Manitowoc - Town Of Newton - Manitowoc County - Ward 001
-311914	WI	LANGLADE	Langlade - Town Of Polar - Langlade County - Ward 001
-311915	WI	OZAUKEE	Ozaukee - City Of Cedarburg - Ozaukee County - Ward 008
-311916	WI	WAUKESHA	Waukesha - Town Of Vernon - Waukesha County - Ward 001
-311917	WI	MARATHON	Marathon - City Of Mosinee - Marathon County - Ward 004
-311918	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 207
-311919	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 297
-311920	WI	OUTAGAMIE	Outagamie - Town Of Hortonia - Outagamie County - Ward 001
-311921	WI	WAUPACA	Waupaca - Town Of Royalton - Waupaca County - Ward 001
-311922	WI	MILWAUKEE	Milwaukee - Village Of Bayside - Multiple Counties - Ward 005
-311923	WI	EAU CLAIRE	Eau Claire - Town Of Pleasant Valley - Eau Claire County - Ward 004
-311924	WI	WAUKESHA	Waukesha - City Of Pewaukee - Waukesha County - Ward 004
-311925	WI	PIERCE	Pierce - City Of Prescott - Pierce County - Ward 001
-311926	WI	SAUK	Sauk - Village Of Lake Delton - Sauk County - Ward 001
-311927	WI	DANE	Dane - Town Of Dunn - Dane County - Ward 006
-311928	WI	PIERCE	Pierce - Town Of Trimbelle - Pierce County - Ward 001
-311929	WI	ONEIDA	Oneida - Town Of Hazelhurst - Oneida County - Ward 002
-311930	WI	WAUKESHA	Waukesha - Village Of Sussex - Waukesha County - Ward 006
-311931	WI	COLUMBIA	Columbia - City Of Lodi - Columbia County - Ward 001
-311932	WI	DANE	Dane - City Of Madison - Dane County - Ward 016
-311933	WI	CALUMET	Calumet - City Of Brillion - Calumet County - Ward 003
-311934	WI	PIERCE	Pierce - City Of River Falls - Multiple Counties - Ward 007
-311935	WI	OCONTO	Oconto - Town Of Little Suamico - Oconto County - Ward 001
-311936	WI	MILWAUKEE	Milwaukee - Village Of Hales Corners - Milwaukee County - Ward 009
-311937	WI	MILWAUKEE	Milwaukee - City Of South Milwaukee - Milwaukee County - Ward 007
-311938	WI	WAUKESHA	Waukesha - Town Of Lisbon - Waukesha County - Ward 006
-311939	WI	DODGE	Dodge - Town Of Beaver Dam - Dodge County - Ward 005
-311940	WI	OUTAGAMIE	Outagamie - Town Of Freedom - Outagamie County - Ward 006
-311941	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 003
-311942	WI	EAU CLAIRE	Eau Claire - Town Of Washington - Eau Claire County - Ward 008
-311943	WI	ONEIDA	Oneida - Town Of Minocqua - Oneida County - Ward 001
-311944	WI	SAWYER	Sawyer - Town Of Winter - Sawyer County - Ward 001
-311945	WI	CALUMET	Calumet - City Of Chilton - Calumet County - Ward 003
-311946	WI	DANE	Dane - Town Of Dunn - Dane County - Ward 004
-311947	WI	SHEBOYGAN	Sheboygan - City Of Plymouth - Sheboygan County - Ward 005
-311948	WI	WAUKESHA	Waukesha - Town Of Merton - Waukesha County - Ward 005
-311949	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 015
-311950	WI	WASHINGTON	Washington - Town Of Farmington - Washington County - Ward 004
-311951	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan Falls - Sheboygan County - Ward 001
-311952	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 131
-311953	WI	WAUKESHA	Waukesha - Town Of Delafield - Waukesha County - Ward 009
-311954	WI	WINNEBAGO	Winnebago - Town Of Algoma - Winnebago County - Ward 003
-311955	WI	BROWN	Brown - Town Of Wrightstown - Brown County - Ward 001
-311956	WI	ROCK	Rock - Town Of Bradford - Rock County - Ward 001
-311957	WI	WINNEBAGO	Winnebago - City Of Menasha - Multiple Counties - Ward 003
-311958	WI	LACROSSE	Lacrosse - City Of Onalaska - La Crosse County - Ward 010
-311959	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 025
-311960	WI	DUNN	Dunn - Town Of Elk Mound - Dunn County - Ward 001
-311961	WI	FOND DU LAC	Fond Du Lac - Town Of Calumet - Fond Du Lac County - Ward 001
-311962	WI	MARATHON	Marathon - Town Of Wausau - Marathon County - Ward 001
-311963	WI	MARATHON	Marathon - Town Of Rib Falls - Marathon County - Ward 001
-311964	WI	DANE	Dane - City Of Madison - Dane County - Ward 036
-311965	WI	CRAWFORD	Crawford - Town Of Prairie Du Chien - Crawford County - Ward 001
-311966	WI	MILWAUKEE	Milwaukee - Village Of Shorewood - Milwaukee County - Ward 001
-311967	WI	ST CROIX	St. Croix - Town Of Baldwin - St. Croix County - Ward 001
-311968	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 008
-311969	WI	PIERCE	Pierce - Town Of River Falls - Pierce County - Ward 002
-311970	WI	LACROSSE	Lacrosse - Town Of Shelby - La Crosse County - Ward 005
-311971	WI	BROWN	Brown - Town Of Green Bay - Brown County - Ward 002
-311972	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 007
-311973	WI	MILWAUKEE	Milwaukee - City Of Cudahy - Milwaukee County - Ward 011
-311974	WI	DANE	Dane - City Of Verona - Dane County - Ward 002
-311975	WI	DOOR	Door - Town Of Forestville - Door County - Ward 001
-311976	WI	DANE	Dane - Village Of Windsor - Dane County - Ward 002
-311977	WI	MANITOWOC	Manitowoc - Town Of Meeme - Manitowoc County - Ward 001
-311978	WI	WAUKESHA	Waukesha - Town Of Merton - Waukesha County - Ward 007
-311979	WI	JEFFERSON	Jefferson - Town Of Sumner - Jefferson County - Ward 001
-311980	WI	MARINETTE	Marinette - Town Of Amberg - Marinette County - Ward 001
-311981	WI	DANE	Dane - City Of Madison - Dane County - Ward 060
-311982	WI	SHEBOYGAN	Sheboygan - Town Of Scott - Sheboygan County - Ward 002
-311983	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 007
-311984	WI	WAUKESHA	Waukesha - Town Of Genesee - Waukesha County - Ward 005
-311985	WI	SHAWANO	Shawano - Town Of Pella - Shawano County - Ward 001
-311986	WI	BROWN	Brown - Town Of Humboldt - Brown County - Ward 001
-311987	WI	SAWYER	Sawyer - Town Of Lenroot - Sawyer County - Ward 001
-311988	WI	BARRON	Barron - Town Of Rice Lake - Barron County - Ward 001
-311989	WI	OZAUKEE	Ozaukee - Village Of Grafton - Ozaukee County - Ward 012
-311990	WI	CALUMET	Calumet - City Of Appleton - Multiple Counties - Ward 013
-311991	WI	LANGLADE	Langlade - City Of Antigo - Langlade County - Ward 002
-311992	WI	WAUKESHA	Waukesha - City Of Pewaukee - Waukesha County - Ward 009
-311993	WI	COLUMBIA	Columbia - Town Of Dekorra - Columbia County - Ward 001
-311994	WI	WAUKESHA	Waukesha - Village Of Pewaukee - Waukesha County - Ward 002
-311995	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 104
-311996	WI	WASHINGTON	Washington - Town Of Jackson - Washington County - Ward 004
-311997	WI	MANITOWOC	Manitowoc - Town Of Liberty - Manitowoc County - Ward 001
-311998	WI	JEFFERSON	Jefferson - Town Of Concord - Jefferson County - Ward 001
-311999	WI	DANE	Dane - City Of Monona - Dane County - Ward 006
-312000	WI	DUNN	Dunn - Town Of Rock Creek - Dunn County - Ward 001
-312001	WI	ROCK	Rock - Town Of Newark - Rock County - Ward 001
-312002	WI	ST CROIX	St. Croix - Town Of Springfield - St. Croix County - Ward 001
-312003	WI	MILWAUKEE	Milwaukee - City Of Glendale - Milwaukee County - Ward 008
-312004	WI	SAWYER	Sawyer - Town Of Hayward - Sawyer County - Ward 001
-312005	WI	WASHINGTON	Washington - Town Of Hartford - Washington County - Ward 001
-312006	WI	MILWAUKEE	Milwaukee - City Of St. Francis - Milwaukee County - Ward 008
-312007	WI	MARATHON	Marathon - Town Of Norrie - Marathon County - Ward 001
-312008	WI	OUTAGAMIE	Outagamie - Village Of Kimberly - Outagamie County - Ward 004
-312009	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan Falls - Sheboygan County - Ward 003
-312010	WI	JEFFERSON	Jefferson - Town Of Sullivan - Jefferson County - Ward 002
-312011	WI	WAUKESHA	Waukesha - Town Of Waukesha - Waukesha County - Ward 005
-312012	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 012
-312013	WI	WAUKESHA	Waukesha - Town Of Lisbon - Waukesha County - Ward 005
-312014	WI	OUTAGAMIE	Outagamie - Town Of Grand Chute - Outagamie County - Ward 010
-312015	WI	CHIPPEWA	Chippewa - Town Of Bloomer - Chippewa County - Ward 001
-312016	WI	CHIPPEWA	Chippewa - Town Of Sampson - Chippewa County - Ward 001
-312017	WI	LACROSSE	Lacrosse - Town Of Barre - La Crosse County - Ward 002
-312018	WI	WAUKESHA	Waukesha - Town Of Brookfield - Waukesha County - Ward 001
-312019	WI	CRAWFORD	Crawford - City Of Prairie Du Chien - Crawford County - Ward 001
-312020	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 073
-312021	WI	GREEN	Green - Town Of York - Green County - Ward 001
-312022	WI	KENOSHA	Kenosha - Village Of Pleasant Prairie - Kenosha County - Ward 001
-312023	WI	POLK	Polk - Town Of St. Croix Falls - Polk County - Ward 001
-312024	WI	MARINETTE	Marinette - Town Of Niagara - Marinette County - Ward 001
-312025	WI	PIERCE	Pierce - Town Of Clifton - Pierce County - Ward 002
-312026	WI	ST CROIX	St. Croix - Town Of Kinnickinnic - St. Croix County - Ward 001
-312027	WI	WALWORTH	Walworth - Town Of Whitewater - Walworth County - Ward 002
-312028	WI	DOOR	Door - Town Of Jacksonport - Door County - Ward 001
-312029	WI	SAUK	Sauk - City Of Baraboo - Sauk County - Ward 007
-312030	WI	DOOR	Door - Town Of Liberty Grove - Door County - Ward 001
-312031	WI	WAUPACA	Waupaca - Town Of Mukwa - Waupaca County - Ward 004
-312032	WI	KENOSHA	Kenosha - Town Of Paris - Kenosha County - Ward 001
-312033	WI	MILWAUKEE	Milwaukee - Village Of Fox Point - Milwaukee County - Ward 009
-312034	WI	JUNEAU	Juneau - Village Of Necedah - Juneau County - Ward 001
-312035	WI	DUNN	Dunn - Town Of Sherman - Dunn County - Ward 001
-312036	WI	WAUKESHA	Waukesha - Village Of Elm Grove - Waukesha County - Ward 008
-312037	WI	VILAS	Vilas - Town Of Boulder Junction - Vilas County - Ward 001
-312038	WI	WASHINGTON	Washington - Village Of Germantown - Washington County - Ward 009
-312039	WI	WINNEBAGO	Winnebago - City Of Menasha - Multiple Counties - Ward 008
-312040	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 018
-312041	WI	DANE	Dane - Village Of Mount Horeb - Dane County - Ward 004
-312042	WI	WALWORTH	Walworth - City Of Elkhorn - Walworth County - Ward 004
-312043	WI	MARATHON	Marathon - Village Of Kronenwetter - Marathon County - Ward 003
-312044	WI	DANE	Dane - Town Of Springfield - Dane County - Ward 002
-312045	WI	SHAWANO	Shawano - Town Of Lessor - Shawano County - Ward 001
-312046	WI	DANE	Dane - Village Of Deforest - Dane County - Ward 002
-312047	WI	ONEIDA	Oneida - Town Of Woodboro - Oneida County - Ward 001
-312048	WI	WAUKESHA	Waukesha - Town Of Genesee - Waukesha County - Ward 007
-312049	WI	LAFAYETTE	Lafayette - Town Of Wiota - Lafayette County - Ward 001
-312050	WI	WAUKESHA	Waukesha - Town Of Merton - Waukesha County - Ward 003
-312051	WI	DANE	Dane - Village Of McFarland - Dane County - Ward 001
-312052	WI	DANE	Dane - Town Of Springfield - Dane County - Ward 003
-312053	WI	BROWN	Brown - Village Of Howard - Multiple Counties - Ward 012
-312054	WI	KENOSHA	Kenosha - Village Of Bristol - Kenosha County - Ward 005
-312055	WI	WASHINGTON	Washington - Town Of Polk - Washington County - Ward 003
-312056	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 021
-312057	WI	BROWN	Brown - Village Of Wrightstown - Multiple Counties - Ward 001
-312058	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 001
-312059	WI	DODGE	Dodge - City Of Watertown - Multiple Counties - Ward 006
-312060	WI	KEWAUNEE	Kewaunee - Town Of Lincoln - Kewaunee County - Ward 001
-312061	WI	DANE	Dane - Village Of Mazomanie - Dane County - Ward 002
-312062	WI	DANE	Dane - Town Of Blue Mounds - Dane County - Ward 001
-312063	WI	WALWORTH	Walworth - Village Of Sharon - Walworth County - Ward 001
-312064	WI	ADAMS	Adams - Town Of Rome - Adams County - Ward 002
-312065	WI	DANE	Dane - Town Of Deerfield - Dane County - Ward 001
-312066	WI	WASHINGTON	Washington - Village Of Germantown - Washington County - Ward 016
-312067	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 013
-312068	WI	SHEBOYGAN	Sheboygan - Town Of Sheboygan Falls - Sheboygan County - Ward 001
-312069	WI	EAU CLAIRE	Eau Claire - Town Of Union - Eau Claire County - Ward 002
-312070	WI	WINNEBAGO	Winnebago - Town Of Neenah - Winnebago County - Ward 003
-312071	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 004
-312072	WI	ST CROIX	St. Croix - Village Of North Hudson - St. Croix County - Ward 006
-312073	WI	SHEBOYGAN	Sheboygan - Town Of Scott - Sheboygan County - Ward 001
-312074	WI	JUNEAU	Juneau - Town Of Lemonweir - Juneau County - Ward 001
-312075	WI	WAUKESHA	Waukesha - Town Of Eagle - Waukesha County - Ward 003
-312076	WI	PORTAGE	Portage - Town Of Hull - Portage County - Ward 004
-312077	WI	ROCK	Rock - Town Of Beloit - Rock County - Ward 005
-312078	WI	WAUKESHA	Waukesha - Town Of Lisbon - Waukesha County - Ward 001
-312079	WI	LANGLADE	Langlade - City Of Antigo - Langlade County - Ward 009
-312080	WI	WAUSHARA	Waushara - Town Of Leon - Waushara County - Ward 001
-312081	WI	WAUKESHA	Waukesha - Town Of Delafield - Waukesha County - Ward 003
-312082	WI	WASHINGTON	Washington - Town Of Kewaskum - Washington County - Ward 002
-312083	WI	LANGLADE	Langlade - Town Of Upham - Langlade County - Ward 001
-312084	WI	WAUPACA	Waupaca - Town Of Farmington - Waupaca County - Ward 003
-312085	WI	WAUKESHA	Waukesha - Village Of Pewaukee - Waukesha County - Ward 004
-312086	WI	SHAWANO	Shawano - Town Of Red Springs - Shawano County - Ward 001
-312087	WI	WAUKESHA	Waukesha - Town Of Merton - Waukesha County - Ward 004
-312088	WI	CALUMET	Calumet - City Of Chilton - Calumet County - Ward 002
-312089	WI	WAUKESHA	Waukesha - City Of Oconomowoc - Waukesha County - Ward 002
-312090	WI	EAU CLAIRE	Eau Claire - Town Of Brunswick - Eau Claire County - Ward 002
-312091	WI	POLK	Polk - Town Of Lincoln - Polk County - Ward 001
-312092	WI	JACKSON	Jackson - Town Of Albion - Jackson County - Ward 001
-312093	WI	ST CROIX	St. Croix - Town Of Hudson - St. Croix County - Ward 004
-312094	WI	CHIPPEWA	Chippewa - Town Of Eagle Point - Chippewa County - Ward 004
-312095	WI	MARATHON	Marathon - Village Of Rothschild - Marathon County - Ward 004
-312096	WI	MARATHON	Marathon - Town Of Emmet - Marathon County - Ward 001
-312097	WI	DODGE	Dodge - City Of Beaver Dam - Dodge County - Ward 002
-312098	WI	WINNEBAGO	Winnebago - Town Of Nekimi - Winnebago County - Ward 002
-312099	WI	LINCOLN	Lincoln - City Of Tomahawk - Lincoln County - Ward 001
-312100	WI	DODGE	Dodge - Village Of Iron Ridge - Dodge County - Ward 001
-312101	WI	MILWAUKEE	Milwaukee - Village Of Bayside - Multiple Counties - Ward 002
-312102	WI	FOND DU LAC	Fond Du Lac - Town Of Byron - Fond Du Lac County - Ward 002
-312103	WI	SAUK	Sauk - City Of Baraboo - Sauk County - Ward 005
-312104	WI	WINNEBAGO	Winnebago - Town Of Algoma - Winnebago County - Ward 001
-312105	WI	CALUMET	Calumet - City Of Chilton - Calumet County - Ward 001
-312106	WI	DANE	Dane - Town Of Burke - Dane County - Ward 003
-312107	WI	TREMPEALEAU	Trempealeau - Village Of Trempealeau - Trempealeau County - Ward 001
-312108	WI	LANGLADE	Langlade - Town Of Norwood - Langlade County - Ward 001
-312109	WI	MARQUETTE	Marquette - Town Of Harris - Marquette County - Ward 001
-312110	WI	FOND DU LAC	Fond Du Lac - Town Of Auburn - Fond Du Lac County - Ward 001
-312111	WI	WAUKESHA	Waukesha - Village Of Hartland - Waukesha County - Ward 011
-312112	WI	FOND DU LAC	Fond Du Lac - City Of Ripon - Fond Du Lac County - Ward 008
-312113	WI	WAUKESHA	Waukesha - Village Of Summit - Waukesha County - Ward 005
-312114	WI	TREMPEALEAU	Trempealeau - Town Of Caledonia - Trempealeau County - Ward 001
-312115	WI	OZAUKEE	Ozaukee - Village Of Belgium - Ozaukee County - Ward 002
-312116	WI	WASHBURN	Washburn - Town Of Evergreen - Washburn County - Ward 001
-312117	WI	WASHINGTON	Washington - Town Of Hartford - Washington County - Ward 005
-312118	WI	PORTAGE	Portage - Town Of Alban - Portage County - Ward 001
-312119	WI	VERNON	Vernon - Town Of Christiana - Vernon County - Ward 001
-312120	WI	SHAWANO	Shawano - City Of Shawano - Shawano County - Ward 009
-312121	WI	MILWAUKEE	Milwaukee - City Of Cudahy - Milwaukee County - Ward 012
-312122	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 002
-312123	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 153
-312124	WI	ASHLAND	Ashland - City Of Ashland - Multiple Counties - Ward 001
-312125	WI	WAUSHARA	Waushara - Town Of Springwater - Waushara County - Ward 001
-312126	WI	WAUKESHA	Waukesha - Town Of Waukesha - Waukesha County - Ward 010
-312127	WI	POLK	Polk - Town Of Lincoln - Polk County - Ward 002
-312128	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 132
-312129	WI	JEFFERSON	Jefferson - Town Of Waterloo - Jefferson County - Ward 001
-312130	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 260
-312131	WI	DODGE	Dodge - City Of Horicon - Dodge County - Ward 001
-312132	WI	MARATHON	Marathon - Town Of Rib Mountain - Marathon County - Ward 004
-312133	WI	GREEN LAKE	Green Lake - Town Of Brooklyn - Green Lake County - Ward 002
-312134	WI	BROWN	Brown - Village Of Howard - Multiple Counties - Ward 001
-312135	WI	CHIPPEWA	Chippewa - Town Of Edson - Chippewa County - Ward 001
-312136	WI	WINNEBAGO	Winnebago - Town Of Oshkosh - Winnebago County - Ward 001
-312137	WI	ST CROIX	St. Croix - Village Of Woodville - St. Croix County - Ward 001
-312138	WI	MARATHON	Marathon - Village Of Rothschild - Marathon County - Ward 005
-312139	WI	OZAUKEE	Ozaukee - Village Of Grafton - Ozaukee County - Ward 006
-312140	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 002
-312141	WI	GREEN	Green - City Of Monroe - Green County - Ward 007
-312142	WI	DANE	Dane - Town Of Albion - Dane County - Ward 002
-312143	WI	DODGE	Dodge - City Of Beaver Dam - Dodge County - Ward 010
-312144	WI	WAUKESHA	Waukesha - Town Of Vernon - Waukesha County - Ward 004
-312145	WI	WAUKESHA	Waukesha - Town Of Lisbon - Waukesha County - Ward 002
-312146	WI	DANE	Dane - Town Of Vienna - Dane County - Ward 002
-312147	WI	WAUKESHA	Waukesha - City Of Delafield - Waukesha County - Ward 005
-312148	WI	SHEBOYGAN	Sheboygan - Town Of Wilson - Sheboygan County - Ward 003
-312149	WI	WALWORTH	Walworth - Town Of Sharon - Walworth County - Ward 001
-312150	WI	SAUK	Sauk - Village Of Sauk City - Sauk County - Ward 001
-312151	WI	WAUKESHA	Waukesha - Village Of Hartland - Waukesha County - Ward 001
-312152	WI	DODGE	Dodge - Town Of Rubicon - Dodge County - Ward 002
-312153	WI	DANE	Dane - Village Of Windsor - Dane County - Ward 006
-312154	WI	WAUKESHA	Waukesha - Town Of Genesee - Waukesha County - Ward 003
-312155	WI	TREMPEALEAU	Trempealeau - Town Of Sumner - Trempealeau County - Ward 001
-312156	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 009
-312157	WI	DANE	Dane - City Of Monona - Dane County - Ward 004
-312158	WI	DODGE	Dodge - Town Of Lebanon - Dodge County - Ward 001
-312159	WI	WAUPACA	Waupaca - Town Of Dayton - Waupaca County - Ward 002
-312160	WI	BROWN	Brown - Town Of Holland - Brown County - Ward 002
-312161	WI	DODGE	Dodge - City Of Beaver Dam - Dodge County - Ward 003
-312162	WI	DANE	Dane - Village Of Mount Horeb - Dane County - Ward 002
-312163	WI	WAUKESHA	Waukesha - Village Of North Prairie - Waukesha County - Ward 002
-312164	WI	OUTAGAMIE	Outagamie - Town Of Greenville - Outagamie County - Ward 008
-312165	WI	RACINE	Racine - City Of Racine - Racine County - Ward 012
-312166	WI	MILWAUKEE	Milwaukee - Village Of River Hills - Milwaukee County - Ward 002
-312167	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 003
-312168	WI	MANITOWOC	Manitowoc - Village Of Valders - Manitowoc County - Ward 001
-312169	WI	WAUPACA	Waupaca - Town Of Larrabee - Waupaca County - Ward 001
-312170	WI	WASHINGTON	Washington - Village Of Kewaskum - Multiple Counties - Ward 001
-312171	WI	DODGE	Dodge - Town Of Hubbard - Dodge County - Ward 002
-312172	WI	WALWORTH	Walworth - Town Of Sugar Creek - Walworth County - Ward 002
-312173	WI	RACINE	Racine - Town Of Raymond - Racine County - Ward 001
-312174	WI	BROWN	Brown - Town Of Scott - Brown County - Ward 002
-312175	WI	TREMPEALEAU	Trempealeau - Town Of Arcadia - Trempealeau County - Ward 001
-312176	WI	WINNEBAGO	Winnebago - Town Of Oshkosh - Winnebago County - Ward 003
-312177	WI	DANE	Dane - Village Of Deforest - Dane County - Ward 004
-312178	WI	MARINETTE	Marinette - Town Of Porterfield - Marinette County - Ward 001
-312179	WI	BARRON	Barron - Town Of Cumberland - Barron County - Ward 001
-312180	WI	EAU CLAIRE	Eau Claire - Town Of Pleasant Valley - Eau Claire County - Ward 001
-312181	WI	BROWN	Brown - Village Of Hobart - Brown County - Ward 003
-312182	WI	DANE	Dane - Village Of Waunakee - Dane County - Ward 008
-312183	WI	RACINE	Racine - Town Of Norway - Racine County - Ward 007
-312184	WI	DANE	Dane - Village Of Cross Plains - Dane County - Ward 002
-312185	WI	DANE	Dane - Town Of Sun Prairie - Dane County - Ward 003
-312186	WI	PORTAGE	Portage - Town Of Stockton - Portage County - Ward 003
-312187	WI	ONEIDA	Oneida - Town Of Woodruff - Oneida County - Ward 001
-312188	WI	GREEN	Green - Village Of New Glarus - Green County - Ward 001
-312189	WI	WAUKESHA	Waukesha - City Of Delafield - Waukesha County - Ward 006
-312190	WI	BROWN	Brown - Village Of Howard - Multiple Counties - Ward 016
-312191	WI	COLUMBIA	Columbia - Town Of Lewiston - Columbia County - Ward 001
-312192	WI	WASHINGTON	Washington - Town Of West Bend - Washington County - Ward 005
-312193	WI	SHEBOYGAN	Sheboygan - City Of Plymouth - Sheboygan County - Ward 009
-312194	WI	SHEBOYGAN	Sheboygan - Village Of Cedar Grove - Sheboygan County - Ward 002
-312195	WI	GREEN	Green - City Of Monroe - Green County - Ward 005
-312196	WI	EAU CLAIRE	Eau Claire - Town Of Union - Eau Claire County - Ward 001
-312197	WI	WINNEBAGO	Winnebago - Town Of Neenah - Winnebago County - Ward 002
-312198	WI	CHIPPEWA	Chippewa - Village Of Cadott - Chippewa County - Ward 001
-312199	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 004
-312200	WI	ADAMS	Adams - Town Of Rome - Adams County - Ward 004
-312201	WI	WAUKESHA	Waukesha - Village Of Sussex - Waukesha County - Ward 002
-312202	WI	ROCK	Rock - Town Of Clinton - Rock County - Ward 001
-312203	WI	JEFFERSON	Jefferson - Town Of Koshkonong - Jefferson County - Ward 004
-312204	WI	DANE	Dane - Village Of Deforest - Dane County - Ward 001
-312205	WI	WALWORTH	Walworth - Town Of East Troy - Walworth County - Ward 003
-312206	WI	SHAWANO	Shawano - Village Of Bonduel - Shawano County - Ward 002
-312207	WI	WASHINGTON	Washington - Town Of Erin - Washington County - Ward 003
-312208	WI	MILWAUKEE	Milwaukee - City Of Cudahy - Milwaukee County - Ward 009
-312209	WI	WASHINGTON	Washington - Village Of Richfield - Washington County - Ward 007
-312210	WI	PIERCE	Pierce - Town Of Hartland - Pierce County - Ward 001
-312211	WI	GRANT	Grant - City Of Lancaster - Grant County - Ward 001
-312212	WI	OUTAGAMIE	Outagamie - Village Of Hortonville - Outagamie County - Ward 002
-312213	WI	SAUK	Sauk - Town Of Reedsburg - Sauk County - Ward 001
-312214	WI	PIERCE	Pierce - City Of River Falls - Multiple Counties - Ward 005
-312215	WI	BROWN	Brown - Town Of Pittsfield - Brown County - Ward 003
-312216	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 281
-312217	WI	LANGLADE	Langlade - City Of Antigo - Langlade County - Ward 007
-312218	WI	CRAWFORD	Crawford - City Of Prairie Du Chien - Crawford County - Ward 006
-312219	WI	ONEIDA	Oneida - Town Of Pelican - Oneida County - Ward 002
-312220	WI	WASHINGTON	Washington - Village Of Germantown - Washington County - Ward 001
-312221	WI	WAUKESHA	Waukesha - Town Of Waukesha - Waukesha County - Ward 004
-312222	WI	MARATHON	Marathon - Town Of Rib Mountain - Marathon County - Ward 006
-312223	WI	MARQUETTE	Marquette - Town Of Douglas - Marquette County - Ward 001
-312224	WI	POLK	Polk - Town Of Black Brook - Polk County - Ward 001
-312225	WI	WOOD	Wood - Town Of Rock - Wood County - Ward 001
-312226	WI	MARATHON	Marathon - Town Of Stettin - Marathon County - Ward 001
-312227	WI	KENOSHA	Kenosha - Village Of Twin Lakes - Kenosha County - Ward 001
-312228	WI	MANITOWOC	Manitowoc - Village Of Cleveland - Manitowoc County - Ward 001
-312229	WI	WAUPACA	Waupaca - Town Of Iola - Waupaca County - Ward 001
-312230	WI	WAUKESHA	Waukesha - Town Of Vernon - Waukesha County - Ward 007
-312231	WI	GRANT	Grant - City Of Platteville - Grant County - Ward 005
-312232	WI	GRANT	Grant - Village Of Dickeyville - Grant County - Ward 001
-312233	WI	RACINE	Racine - City Of Racine - Racine County - Ward 005
-312234	WI	WINNEBAGO	Winnebago - City Of Menasha - Multiple Counties - Ward 004
-312235	WI	OUTAGAMIE	Outagamie - Village Of Kimberly - Outagamie County - Ward 002
-312236	WI	MARATHON	Marathon - Town Of Rietbrock - Marathon County - Ward 001
-312237	WI	CHIPPEWA	Chippewa - Town Of Delmar - Chippewa County - Ward 001
-312238	WI	WAUKESHA	Waukesha - Village Of Sussex - Waukesha County - Ward 001
-312239	WI	MILWAUKEE	Milwaukee - Village Of Fox Point - Milwaukee County - Ward 007
-312240	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 018
-312241	WI	WINNEBAGO	Winnebago - Town Of Poygan - Winnebago County - Ward 002
-312242	WI	RACINE	Racine - Town Of Raymond - Racine County - Ward 002
-312243	WI	POLK	Polk - Village Of Milltown - Polk County - Ward 001
-312244	WI	SAUK	Sauk - Town Of Excelsior - Sauk County - Ward 001
-312245	WI	JEFFERSON	Jefferson - Town Of Concord - Jefferson County - Ward 002
-312246	WI	WOOD	Wood - Town Of Wood - Wood County - Ward 001
-312247	WI	WAUKESHA	Waukesha - Town Of Genesee - Waukesha County - Ward 009
-312248	WI	WALWORTH	Walworth - Town Of Richmond - Walworth County - Ward 002
-312249	WI	RACINE	Racine - Village Of Wind Point - Racine County - Ward 001
-312250	WI	JEFFERSON	Jefferson - City Of Jefferson - Jefferson County - Ward 006
-312251	WI	WAUKESHA	Waukesha - Town Of Oconomowoc - Waukesha County - Ward 009
-312252	WI	WALWORTH	Walworth - Town Of Delavan - Walworth County - Ward 004
-312253	WI	WINNEBAGO	Winnebago - Town Of Clayton - Winnebago County - Ward 004
-312254	WI	FOND DU LAC	Fond Du Lac - Town Of Byron - Fond Du Lac County - Ward 001
-312255	WI	IOWA	Iowa - Village Of Highland - Iowa County - Ward 001
-312256	WI	WAUKESHA	Waukesha - Village Of Mukwonago - Multiple Counties - Ward 001
-312257	WI	MILWAUKEE	Milwaukee - City Of Cudahy - Milwaukee County - Ward 007
-312258	WI	MARATHON	Marathon - Village Of Kronenwetter - Marathon County - Ward 005
-312259	WI	DANE	Dane - City Of Monona - Dane County - Ward 005
-312260	WI	SHEBOYGAN	Sheboygan - Town Of Mosel - Sheboygan County - Ward 001
-312261	WI	JUNEAU	Juneau - Town Of Lyndon - Juneau County - Ward 001
-312262	WI	JUNEAU	Juneau - Town Of Germantown - Juneau County - Ward 001
-312263	WI	WALWORTH	Walworth - Town Of Geneva - Walworth County - Ward 006
-312264	WI	MONROE	Monroe - Town Of Sparta - Monroe County - Ward 002
-312265	WI	SAUK	Sauk - Village Of Spring Green - Sauk County - Ward 001
-312266	WI	MONROE	Monroe - Town Of Little Falls - Monroe County - Ward 001
-312267	WI	SHEBOYGAN	Sheboygan - City Of Plymouth - Sheboygan County - Ward 008
-312268	WI	KENOSHA	Kenosha - Town Of Salem - Kenosha County - Ward 007
-312269	WI	OCONTO	Oconto - Town Of Underhill - Oconto County - Ward 001
-312270	WI	LAFAYETTE	Lafayette - Village Of Belmont - Lafayette County - Ward 001
-312271	WI	MARATHON	Marathon - Town Of Cassel - Marathon County - Ward 001
-312272	WI	WASHINGTON	Washington - Town Of West Bend - Washington County - Ward 002
-312273	WI	DANE	Dane - Town Of Cottage Grove - Dane County - Ward 002
-312274	WI	POLK	Polk - Town Of Eureka - Polk County - Ward 001
-312275	WI	WAUKESHA	Waukesha - Village Of Pewaukee - Waukesha County - Ward 005
-312276	WI	OZAUKEE	Ozaukee - Village Of Saukville - Ozaukee County - Ward 001
-312277	WI	BARRON	Barron - Village Of Cameron - Barron County - Ward 001
-312278	WI	WAUKESHA	Waukesha - City Of Muskego - Waukesha County - Ward 007
-312279	WI	OCONTO	Oconto - Town Of Chase - Oconto County - Ward 001
-312280	WI	JEFFERSON	Jefferson - Town Of Oakland - Jefferson County - Ward 003
-312281	WI	LACROSSE	Lacrosse - City Of Onalaska - La Crosse County - Ward 007
-312282	WI	MARATHON	Marathon - Town Of McMillan - Marathon County - Ward 003
-312283	WI	WINNEBAGO	Winnebago - Town Of Neenah - Winnebago County - Ward 001
-312284	WI	BROWN	Brown - Village Of Suamico - Brown County - Ward 002
-312285	WI	KENOSHA	Kenosha - Village Of Somers - Kenosha County - Ward 005
-312286	WI	SHEBOYGAN	Sheboygan - Town Of Sheboygan Falls - Sheboygan County - Ward 002
-312287	WI	OZAUKEE	Ozaukee - Town Of Cedarburg - Ozaukee County - Ward 001
-312288	WI	BROWN	Brown - Village Of Denmark - Brown County - Ward 002
-312289	WI	WALWORTH	Walworth - Village Of East Troy - Walworth County - Ward 002
-312290	WI	WINNEBAGO	Winnebago - Town Of Utica - Winnebago County - Ward 001
-312291	WI	SAUK	Sauk - City Of Baraboo - Sauk County - Ward 012
-312292	WI	BARRON	Barron - Village Of Turtle Lake - Multiple Counties - Ward 001
-312293	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 204
-312294	WI	WALWORTH	Walworth - Town Of La Grange - Walworth County - Ward 001
-312295	WI	SHEBOYGAN	Sheboygan - Village Of Oostburg - Sheboygan County - Ward 002
-312296	WI	WAUKESHA	Waukesha - Town Of Lisbon - Waukesha County - Ward 003
-312297	WI	BROWN	Brown - Town Of Morrison - Brown County - Ward 002
-312298	WI	WASHBURN	Washburn - Town Of Long Lake - Washburn County - Ward 001
-312299	WI	COLUMBIA	Columbia - Village Of Poynette - Columbia County - Ward 003
-312300	WI	MARINETTE	Marinette - Town Of Pound - Marinette County - Ward 001
-312301	WI	MILWAUKEE	Milwaukee - Village Of Fox Point - Milwaukee County - Ward 004
-312302	WI	MILWAUKEE	Milwaukee - Village Of Fox Point - Milwaukee County - Ward 005
-312303	WI	DODGE	Dodge - City Of Beaver Dam - Dodge County - Ward 005
-312304	WI	WASHINGTON	Washington - Town Of Addison - Washington County - Ward 006
-312305	WI	VERNON	Vernon - City Of Viroqua - Vernon County - Ward 001
-312306	WI	MARATHON	Marathon - Village Of Weston - Marathon County - Ward 007
-312307	WI	MARATHON	Marathon - Village Of Rothschild - Marathon County - Ward 001
-312308	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 206
-312309	WI	SHEBOYGAN	Sheboygan - Village Of Oostburg - Sheboygan County - Ward 003
-312310	WI	RACINE	Racine - Town Of Raymond - Racine County - Ward 003
-312311	WI	DOUGLAS	Douglas - Village Of Lake Nebagamon - Douglas County - Ward 001
-312312	WI	OUTAGAMIE	Outagamie - Town Of Buchanan - Outagamie County - Ward 002
-312313	WI	PIERCE	Pierce - Village Of Elmwood - Pierce County - Ward 001
-312314	WI	WALWORTH	Walworth - City Of Lake Geneva - Walworth County - Ward 008
-312315	WI	WOOD	Wood - Village Of Biron - Wood County - Ward 001
-312316	WI	WASHINGTON	Washington - Village Of Germantown - Washington County - Ward 012
-312317	WI	WAUPACA	Waupaca - Town Of Caledonia - Waupaca County - Ward 002
-312318	WI	GREEN	Green - City Of Monroe - Green County - Ward 009
-312319	WI	OCONTO	Oconto - City Of Oconto Falls - Oconto County - Ward 004
-312320	WI	MILWAUKEE	Milwaukee - Village Of Fox Point - Milwaukee County - Ward 002
-312321	WI	LINCOLN	Lincoln - Town Of Corning - Lincoln County - Ward 001
-312322	WI	SHEBOYGAN	Sheboygan - Town Of Wilson - Sheboygan County - Ward 004
-312323	WI	BAYFIELD	Bayfield - Town Of Bayfield - Bayfield County - Ward 001
-312324	WI	WAUKESHA	Waukesha - Village Of Elm Grove - Waukesha County - Ward 004
-312325	WI	DANE	Dane - City Of Monona - Dane County - Ward 007
-312326	WI	WALWORTH	Walworth - Town Of Delavan - Walworth County - Ward 005
-312327	WI	DANE	Dane - Village Of McFarland - Dane County - Ward 003
-312328	WI	PORTAGE	Portage - Village Of Plover - Portage County - Ward 001
-312329	WI	BARRON	Barron - City Of Cumberland - Barron County - Ward 001
-312330	WI	OZAUKEE	Ozaukee - Town Of Grafton - Ozaukee County - Ward 005
-312331	WI	MARATHON	Marathon - Village Of Edgar - Marathon County - Ward 001
-312332	WI	MANITOWOC	Manitowoc - Town Of Kossuth - Manitowoc County - Ward 001
-312333	WI	GRANT	Grant - City Of Platteville - Grant County - Ward 002
-312334	WI	VERNON	Vernon - Village Of Stoddard - Vernon County - Ward 001
-312335	WI	ST CROIX	St. Croix - City Of Hudson - St. Croix County - Ward 006
-312336	WI	CRAWFORD	Crawford - Town Of Seneca - Crawford County - Ward 001
-312337	WI	GRANT	Grant - City Of Platteville - Grant County - Ward 003
-312338	WI	WASHINGTON	Washington - Village Of Jackson - Washington County - Ward 003
-312339	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 175
-312340	WI	OZAUKEE	Ozaukee - Village Of Grafton - Ozaukee County - Ward 004
-312341	WI	ROCK	Rock - City Of Edgerton - Multiple Counties - Ward 002
-312342	WI	WASHINGTON	Washington - City Of Hartford - Multiple Counties - Ward 013
-312343	WI	DODGE	Dodge - City Of Mayville - Dodge County - Ward 002
-312344	WI	POLK	Polk - Town Of Alden - Polk County - Ward 002
-312345	WI	MARATHON	Marathon - Village Of Spencer - Marathon County - Ward 001
-312346	WI	DODGE	Dodge - City Of Waupun - Multiple Counties - Ward 001
-312347	WI	FOND DU LAC	Fond Du Lac - Town Of Fond Du Lac - Fond Du Lac County - Ward 001
-312348	WI	WAUPACA	Waupaca - City Of Clintonville - Waupaca County - Ward 003
-312349	WI	GRANT	Grant - City Of Boscobel - Grant County - Ward 001
-312350	WI	MARATHON	Marathon - Village Of Maine - Marathon County - Ward 001
-312351	WI	WALWORTH	Walworth - Town Of Bloomfield - Walworth County - Ward 001
-312352	WI	WASHINGTON	Washington - Village Of Slinger - Washington County - Ward 001
-312353	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 007
-312354	WI	MILWAUKEE	Milwaukee - Village Of Shorewood - Milwaukee County - Ward 011
-312355	WI	WAUKESHA	Waukesha - Village Of Wales - Waukesha County - Ward 003
-312356	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 017
-312357	WI	MARINETTE	Marinette - City Of Niagara - Marinette County - Ward 001
-312358	WI	SHEBOYGAN	Sheboygan - Town Of Plymouth - Sheboygan County - Ward 004
-312359	WI	DANE	Dane - Village Of Oregon - Dane County - Ward 007
-312360	WI	LACROSSE	Lacrosse - Town Of Hamilton - La Crosse County - Ward 003
-312361	WI	WALWORTH	Walworth - Town Of Lyons - Walworth County - Ward 005
-312362	WI	WAUKESHA	Waukesha - City Of Pewaukee - Waukesha County - Ward 003
-312363	WI	SAUK	Sauk - Village Of Sauk City - Sauk County - Ward 003
-312364	WI	ROCK	Rock - Town Of Milton - Rock County - Ward 004
-312365	WI	OUTAGAMIE	Outagamie - Town Of Maine - Outagamie County - Ward 001
-312366	WI	OUTAGAMIE	Outagamie - Town Of Cicero - Outagamie County - Ward 001
-312367	WI	BUFFALO	Buffalo - City Of Mondovi - Buffalo County - Ward 003
-312368	WI	POLK	Polk - Town Of Balsam Lake - Polk County - Ward 001
-312369	WI	WOOD	Wood - Town Of Port Edwards - Wood County - Ward 001
-312370	WI	ROCK	Rock - Town Of Harmony - Rock County - Ward 002
-312371	WI	WAUKESHA	Waukesha - City Of Muskego - Waukesha County - Ward 002
-312372	WI	WAUKESHA	Waukesha - Village Of Hartland - Waukesha County - Ward 007
-312373	WI	MANITOWOC	Manitowoc - Town Of Eaton - Manitowoc County - Ward 001
-312374	WI	DANE	Dane - Town Of Dunn - Dane County - Ward 003
-312375	WI	ROCK	Rock - City Of Milton - Rock County - Ward 001
-312376	WI	MILWAUKEE	Milwaukee - City Of Cudahy - Milwaukee County - Ward 008
-312377	WI	OUTAGAMIE	Outagamie - Town Of Buchanan - Outagamie County - Ward 005
-312378	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 009
-312379	WI	WALWORTH	Walworth - Town Of Lyons - Walworth County - Ward 002
-312380	WI	LACROSSE	Lacrosse - Town Of Medary - La Crosse County - Ward 001
-312381	WI	MILWAUKEE	Milwaukee - Village Of Shorewood - Milwaukee County - Ward 006
-312382	WI	FOND DU LAC	Fond Du Lac - Town Of Empire - Fond Du Lac County - Ward 003
-312383	WI	KENOSHA	Kenosha - Town Of Randall - Kenosha County - Ward 003
-312384	WI	MILWAUKEE	Milwaukee - City Of Cudahy - Milwaukee County - Ward 002
-312385	WI	LAFAYETTE	Lafayette - Village Of Benton - Lafayette County - Ward 001
-312386	WI	WAUKESHA	Waukesha - Village Of Pewaukee - Waukesha County - Ward 003
-312387	WI	WAUKESHA	Waukesha - Village Of Mukwonago - Multiple Counties - Ward 004
-312388	WI	PORTAGE	Portage - Town Of Hull - Portage County - Ward 008
-312389	WI	ST CROIX	St. Croix - Town Of Somerset - St. Croix County - Ward 004
-312390	WI	VILAS	Vilas - Town Of Lincoln - Vilas County - Ward 004
-312391	WI	EAU CLAIRE	Eau Claire - Town Of Washington - Eau Claire County - Ward 009
-312392	WI	JEFFERSON	Jefferson - City Of Waterloo - Jefferson County - Ward 001
-312393	WI	SHEBOYGAN	Sheboygan - City Of Plymouth - Sheboygan County - Ward 002
-312394	WI	BAYFIELD	Bayfield - Town Of Barksdale - Bayfield County - Ward 001
-312395	WI	DANE	Dane - Village Of Deforest - Dane County - Ward 003
-312396	WI	BARRON	Barron - Town Of Prairie Lake - Barron County - Ward 001
-312397	WI	BROWN	Brown - Town Of Pittsfield - Brown County - Ward 002
-312398	WI	DANE	Dane - Village Of Dane - Dane County - Ward 001
-312399	WI	ST CROIX	St. Croix - Town Of Somerset - St. Croix County - Ward 005
-312400	WI	LACROSSE	Lacrosse - Village Of Bangor - La Crosse County - Ward 001
-312401	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 006
-312402	WI	DODGE	Dodge - City Of Mayville - Dodge County - Ward 001
-312403	WI	ONEIDA	Oneida - Town Of Crescent - Oneida County - Ward 001
-312404	WI	ONEIDA	Oneida - Town Of Minocqua - Oneida County - Ward 005
-312405	WI	MILWAUKEE	Milwaukee - Village Of Hales Corners - Milwaukee County - Ward 006
-312406	WI	JEFFERSON	Jefferson - Town Of Palmyra - Jefferson County - Ward 002
-312407	WI	OUTAGAMIE	Outagamie - Village Of Kimberly - Outagamie County - Ward 003
-312408	WI	WAUKESHA	Waukesha - Town Of Mukwonago - Waukesha County - Ward 003
-312409	WI	WAUKESHA	Waukesha - Village Of Eagle - Waukesha County - Ward 001
-312410	WI	COLUMBIA	Columbia - Town Of Fort Winnebago - Columbia County - Ward 001
-312411	WI	OZAUKEE	Ozaukee - Village Of Saukville - Ozaukee County - Ward 003
-312412	WI	FOND DU LAC	Fond Du Lac - Village Of North Fond Du Lac - Fond Du Lac County - Ward 003
-312413	WI	WAUKESHA	Waukesha - Town Of Mukwonago - Waukesha County - Ward 009
-312414	WI	EAU CLAIRE	Eau Claire - Town Of Bridge Creek - Eau Claire County - Ward 002
-312415	WI	TAYLOR	Taylor - Village Of Rib Lake - Taylor County - Ward 001
-312416	WI	RACINE	Racine - Town Of Norway - Racine County - Ward 010
-312417	WI	OZAUKEE	Ozaukee - Village Of Grafton - Ozaukee County - Ward 001
-312418	WI	WAUKESHA	Waukesha - Town Of Vernon - Waukesha County - Ward 005
-312419	WI	ONEIDA	Oneida - Town Of Three Lakes - Oneida County - Ward 003
-312420	WI	WAUKESHA	Waukesha - Village Of Elm Grove - Waukesha County - Ward 001
-312421	WI	MARATHON	Marathon - Village Of Kronenwetter - Marathon County - Ward 002
-312422	WI	DANE	Dane - Town Of Dunkirk - Dane County - Ward 003
-312423	WI	EAU CLAIRE	Eau Claire - Town Of Pleasant Valley - Eau Claire County - Ward 003
-312424	WI	WASHINGTON	Washington - Village Of Germantown - Washington County - Ward 015
-312425	WI	ST CROIX	St. Croix - Town Of Warren - St. Croix County - Ward 001
-312426	WI	WAUKESHA	Waukesha - Town Of Ottawa - Waukesha County - Ward 002
-312427	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 143
-312428	WI	MILWAUKEE	Milwaukee - City Of Glendale - Milwaukee County - Ward 007
-312429	WI	CALUMET	Calumet - Town Of Harrison - Calumet County - Ward 007
-312430	WI	DODGE	Dodge - Town Of Lebanon - Dodge County - Ward 002
-312431	WI	MANITOWOC	Manitowoc - Town Of Cooperstown - Manitowoc County - Ward 001
-312432	WI	FOND DU LAC	Fond Du Lac - Town Of Auburn - Fond Du Lac County - Ward 003
-312433	WI	SHAWANO	Shawano - Town Of Richmond - Shawano County - Ward 001
-312434	WI	PORTAGE	Portage - Town Of Lanark - Portage County - Ward 001
-312435	WI	MARQUETTE	Marquette - Town Of Springfield - Marquette County - Ward 001
-312436	WI	FOND DU LAC	Fond Du Lac - Village Of Brandon - Fond Du Lac County - Ward 001
-312437	WI	DANE	Dane - Village Of Oregon - Dane County - Ward 002
-312438	WI	MARINETTE	Marinette - Town Of Lake - Marinette County - Ward 001
-312439	WI	MARATHON	Marathon - City Of Mosinee - Marathon County - Ward 006
-312440	WI	WASHINGTON	Washington - Village Of Germantown - Washington County - Ward 010
-312441	WI	DANE	Dane - Town Of Oregon - Dane County - Ward 001
-312442	WI	DANE	Dane - City Of Madison - Dane County - Ward 088
-312443	WI	WAUKESHA	Waukesha - Town Of Waukesha - Waukesha County - Ward 011
-312444	WI	ROCK	Rock - City Of Evansville - Rock County - Ward 001
-312445	WI	OZAUKEE	Ozaukee - Town Of Grafton - Ozaukee County - Ward 001
-312446	WI	WAUKESHA	Waukesha - Town Of Waukesha - Waukesha County - Ward 006
-312447	WI	OUTAGAMIE	Outagamie - Village Of Kimberly - Outagamie County - Ward 006
-312448	WI	WASHINGTON	Washington - Village Of Richfield - Washington County - Ward 005
-312449	WI	OCONTO	Oconto - Town Of Stiles - Oconto County - Ward 001
-312450	WI	WAUKESHA	Waukesha - Town Of Mukwonago - Waukesha County - Ward 008
-312451	WI	OUTAGAMIE	Outagamie - Village Of Kimberly - Outagamie County - Ward 001
-312452	WI	DANE	Dane - Village Of Oregon - Dane County - Ward 008
-312453	WI	WINNEBAGO	Winnebago - Town Of Menasha - Winnebago County - Ward 003
-312454	WI	VILAS	Vilas - Town Of Washington - Vilas County - Ward 001
-312455	WI	WALWORTH	Walworth - Town Of Darien - Walworth County - Ward 001
-312456	WI	GREEN	Green - City Of Monroe - Green County - Ward 006
-312457	WI	GREEN	Green - Town Of Decatur - Green County - Ward 001
-312458	WI	ST CROIX	St. Croix - Village Of Hammond - St. Croix County - Ward 002
-312459	WI	BAYFIELD	Bayfield - Town Of Russell - Bayfield County - Ward 001
-312460	WI	BROWN	Brown - Village Of Howard - Multiple Counties - Ward 005
-312461	WI	OZAUKEE	Ozaukee - Town Of Port Washington - Ozaukee County - Ward 001
-312462	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 003
-312463	WI	DODGE	Dodge - City Of Beaver Dam - Dodge County - Ward 004
-312464	WI	MANITOWOC	Manitowoc - Town Of Maple Grove - Manitowoc County - Ward 001
-312465	WI	KENOSHA	Kenosha - Village Of Somers - Kenosha County - Ward 008
-312466	WI	DANE	Dane - Village Of Deerfield - Dane County - Ward 002
-312467	WI	RACINE	Racine - City Of Burlington - Multiple Counties - Ward 008
-312468	WI	LACROSSE	Lacrosse - Town Of Campbell - La Crosse County - Ward 001
-312469	WI	BURNETT	Burnett - Town Of Trade Lake - Burnett County - Ward 001
-312470	WI	BROWN	Brown - Village Of Howard - Multiple Counties - Ward 003
-312471	WI	DODGE	Dodge - Village Of Lomira - Dodge County - Ward 003
-312472	WI	COLUMBIA	Columbia - Town Of Lodi - Columbia County - Ward 005
-312473	WI	RACINE	Racine - Town Of Burlington - Racine County - Ward 010
-312474	WI	BROWN	Brown - Village Of Howard - Multiple Counties - Ward 002
-312475	WI	WAUSHARA	Waushara - Town Of Marion - Waushara County - Ward 003
-312476	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 023
-312477	WI	FOND DU LAC	Fond Du Lac - City Of Ripon - Fond Du Lac County - Ward 005
-312478	WI	OZAUKEE	Ozaukee - City Of Cedarburg - Ozaukee County - Ward 002
-312479	WI	WAUKESHA	Waukesha - Village Of Hartland - Waukesha County - Ward 006
-312480	WI	SAUK	Sauk - Village Of Prairie Du Sac - Sauk County - Ward 001
-312481	WI	SHEBOYGAN	Sheboygan - Town Of Sherman - Sheboygan County - Ward 001
-312482	WI	DANE	Dane - Town Of Dunn - Dane County - Ward 005
-312483	WI	MONROE	Monroe - Town Of Lincoln - Monroe County - Ward 001
-312484	WI	WALWORTH	Walworth - Town Of Troy - Walworth County - Ward 003
-312485	WI	BROWN	Brown - Village Of Hobart - Brown County - Ward 001
-312486	WI	MILWAUKEE	Milwaukee - City Of St. Francis - Milwaukee County - Ward 010
-312487	WI	KEWAUNEE	Kewaunee - City Of Kewaunee - Kewaunee County - Ward 001
-312488	WI	LINCOLN	Lincoln - Town Of Merrill - Lincoln County - Ward 003
-312489	WI	JEFFERSON	Jefferson - City Of Jefferson - Jefferson County - Ward 004
-312490	WI	DANE	Dane - Village Of Waunakee - Dane County - Ward 010
-312491	WI	BARRON	Barron - Town Of Chetek - Barron County - Ward 001
-312492	WI	WOOD	Wood - Town Of Marshfield - Wood County - Ward 001
-312493	WI	JEFFERSON	Jefferson - City Of Jefferson - Jefferson County - Ward 001
-312494	WI	JEFFERSON	Jefferson - Town Of Farmington - Jefferson County - Ward 001
-312495	WI	BARRON	Barron - Town Of Maple Plain - Barron County - Ward 001
-312496	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 022
-312497	WI	ST CROIX	St. Croix - Village Of Somerset - St. Croix County - Ward 002
-312498	WI	WASHINGTON	Washington - Village Of Jackson - Washington County - Ward 002
-312499	WI	OUTAGAMIE	Outagamie - Town Of Greenville - Outagamie County - Ward 002
-312500	WI	DANE	Dane - City Of Monona - Dane County - Ward 002
-312501	WI	MARATHON	Marathon - Town Of Hamburg - Marathon County - Ward 001
-312502	WI	POLK	Polk - Town Of Beaver - Polk County - Ward 001
-312503	WI	BARRON	Barron - Town Of Crystal Lake - Barron County - Ward 001
-312504	WI	WALWORTH	Walworth - Town Of Troy - Walworth County - Ward 002
-312505	WI	MILWAUKEE	Milwaukee - Village Of Whitefish Bay - Milwaukee County - Ward 003
-312506	WI	EAU CLAIRE	Eau Claire - Town Of Washington - Eau Claire County - Ward 005
-312507	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 004
-312508	WI	MARATHON	Marathon - Town Of Rib Mountain - Marathon County - Ward 003
-312509	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 139
-312510	WI	WASHINGTON	Washington - Village Of Germantown - Washington County - Ward 002
-312511	WI	ST CROIX	St. Croix - Town Of Troy - St. Croix County - Ward 005
-312512	WI	OZAUKEE	Ozaukee - Village Of Grafton - Ozaukee County - Ward 007
-312513	WI	WASHINGTON	Washington - Village Of Richfield - Washington County - Ward 009
-312514	WI	FOND DU LAC	Fond Du Lac - City Of Ripon - Fond Du Lac County - Ward 007
-312515	WI	MILWAUKEE	Milwaukee - Village Of River Hills - Milwaukee County - Ward 003
-312516	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 003
-312517	WI	WASHINGTON	Washington - Village Of Germantown - Washington County - Ward 007
-312518	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 007
-312519	WI	VERNON	Vernon - City Of Westby - Vernon County - Ward 001
-312520	WI	CALUMET	Calumet - City Of Chilton - Calumet County - Ward 004
-312521	WI	WAUPACA	Waupaca - Town Of Waupaca - Waupaca County - Ward 001
-312522	WI	RACINE	Racine - Village Of Sturtevant - Racine County - Ward 001
-312523	WI	WASHBURN	Washburn - Town Of Bashaw - Washburn County - Ward 001
-312524	WI	KEWAUNEE	Kewaunee - Town Of Red River - Kewaunee County - Ward 001
-312525	WI	SHAWANO	Shawano - Town Of Hartland - Shawano County - Ward 001
-312526	WI	OUTAGAMIE	Outagamie - Town Of Liberty - Outagamie County - Ward 001
-312527	WI	DODGE	Dodge - City Of Beaver Dam - Dodge County - Ward 012
-312528	WI	IOWA	Iowa - Town Of Brigham - Iowa County - Ward 002
-312529	WI	WASHINGTON	Washington - Town Of Addison - Washington County - Ward 001
-312530	WI	COLUMBIA	Columbia - Village Of Fall River - Columbia County - Ward 001
-312531	WI	EAU CLAIRE	Eau Claire - Village Of Fall Creek - Eau Claire County - Ward 002
-312532	WI	GREEN LAKE	Green Lake - City Of Berlin - Multiple Counties - Ward 006
-312533	WI	BUFFALO	Buffalo - Town Of Buffalo - Buffalo County - Ward 001
-312534	WI	SAUK	Sauk - Village Of Plain - Sauk County - Ward 001
-312535	WI	LINCOLN	Lincoln - Town Of Bradley - Lincoln County - Ward 003
-312536	WI	WAUKESHA	Waukesha - Town Of Brookfield - Waukesha County - Ward 003
-312537	WI	KEWAUNEE	Kewaunee - Town Of Casco - Kewaunee County - Ward 001
-312538	WI	MARATHON	Marathon - Town Of Ringle - Marathon County - Ward 001
-312539	WI	ST CROIX	St. Croix - Town Of Hudson - St. Croix County - Ward 010
-312540	WI	EAU CLAIRE	Eau Claire - Town Of Brunswick - Eau Claire County - Ward 001
-312541	WI	MANITOWOC	Manitowoc - Town Of Two Rivers - Manitowoc County - Ward 002
-312542	WI	GREEN	Green - Town Of Cadiz - Green County - Ward 001
-312543	WI	OUTAGAMIE	Outagamie - Town Of Ellington - Outagamie County - Ward 001
-312544	WI	MONROE	Monroe - City Of Tomah - Monroe County - Ward 008
-312545	WI	BROWN	Brown - Village Of Howard - Multiple Counties - Ward 011
-312546	WI	OUTAGAMIE	Outagamie - Town Of Dale - Outagamie County - Ward 002
-312547	WI	PORTAGE	Portage - Town Of New Hope - Portage County - Ward 001
-312548	WI	ST CROIX	St. Croix - Village Of Baldwin - St. Croix County - Ward 002
-312549	WI	VERNON	Vernon - Village Of Coon Valley - Vernon County - Ward 001
-312550	WI	ROCK	Rock - Town Of Johnstown - Rock County - Ward 001
-312551	WI	SHEBOYGAN	Sheboygan - Town Of Holland - Sheboygan County - Ward 001
-312552	WI	LACROSSE	Lacrosse - Town Of Campbell - La Crosse County - Ward 003
-312553	WI	MARATHON	Marathon - Town Of Rib Mountain - Marathon County - Ward 001
-312554	WI	WINNEBAGO	Winnebago - Town Of Clayton - Winnebago County - Ward 001
-312555	WI	DANE	Dane - City Of Madison - Dane County - Ward 058
-312556	WI	DANE	Dane - Village Of Cottage Grove - Dane County - Ward 002
-312557	WI	WAUKESHA	Waukesha - Town Of Genesee - Waukesha County - Ward 008
-312558	WI	ST CROIX	St. Croix - Town Of Cady - St. Croix County - Ward 001
-312559	WI	TREMPEALEAU	Trempealeau - Town Of Ettrick - Trempealeau County - Ward 002
-312560	WI	WAUKESHA	Waukesha - Town Of Eagle - Waukesha County - Ward 004
-312561	WI	COLUMBIA	Columbia - City Of Wisconsin Dells - Multiple Counties - Ward 002
-312562	WI	LACROSSE	Lacrosse - Town Of Holland - La Crosse County - Ward 004
-312563	WI	JUNEAU	Juneau - City Of Mauston - Juneau County - Ward 001
-312564	WI	WAUPACA	Waupaca - Village Of Fremont - Waupaca County - Ward 001
-312565	WI	JUNEAU	Juneau - Village Of Wonewoc - Juneau County - Ward 001
-312566	WI	BARRON	Barron - City Of Rice Lake - Barron County - Ward 006
-312567	WI	BARRON	Barron - City Of Barron - Barron County - Ward 001
-312568	WI	ROCK	Rock - City Of Edgerton - Multiple Counties - Ward 004
-312569	WI	DODGE	Dodge - Village Of Lomira - Dodge County - Ward 001
-312570	WI	OUTAGAMIE	Outagamie - Village Of Shiocton - Outagamie County - Ward 001
-312571	WI	WOOD	Wood - Town Of Lincoln - Wood County - Ward 001
-312572	WI	MANITOWOC	Manitowoc - Village Of Mishicot - Manitowoc County - Ward 001
-312573	WI	DANE	Dane - Town Of Dunn - Dane County - Ward 007
-312574	WI	CALUMET	Calumet - City Of New Holstein - Calumet County - Ward 004
-312575	WI	WASHINGTON	Washington - Town Of Hartford - Washington County - Ward 002
-312576	WI	WOOD	Wood - Town Of Seneca - Wood County - Ward 001
-312577	WI	OUTAGAMIE	Outagamie - Town Of Freedom - Outagamie County - Ward 003
-312578	WI	OZAUKEE	Ozaukee - City Of Port Washington - Ozaukee County - Ward 007
-312579	WI	LACROSSE	Lacrosse - Town Of Greenfield - La Crosse County - Ward 002
-312580	WI	RACINE	Racine - Town Of Yorkville - Racine County - Ward 005
-312581	WI	LANGLADE	Langlade - City Of Antigo - Langlade County - Ward 001
-312582	WI	WASHINGTON	Washington - Village Of Germantown - Washington County - Ward 003
-312583	WI	DANE	Dane - Town Of Primrose - Dane County - Ward 001
-312584	WI	MARQUETTE	Marquette - Town Of Packwaukee - Marquette County - Ward 002
-312585	WI	LANGLADE	Langlade - Town Of Wolf River - Langlade County - Ward 001
-312586	WI	DUNN	Dunn - Town Of Eau Galle - Dunn County - Ward 001
-312587	WI	GREEN	Green - Town Of Spring Grove - Green County - Ward 001
-312588	WI	DANE	Dane - Town Of Perry - Dane County - Ward 001
-312589	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 001
-312590	WI	CHIPPEWA	Chippewa - Town Of Eagle Point - Chippewa County - Ward 003
-312591	WI	LANGLADE	Langlade - City Of Antigo - Langlade County - Ward 008
-312592	WI	LACROSSE	Lacrosse - Village Of West Salem - La Crosse County - Ward 003
-312593	WI	FOND DU LAC	Fond Du Lac - Town Of Taycheedah - Fond Du Lac County - Ward 004
-312594	WI	SAUK	Sauk - Town Of Dellona - Sauk County - Ward 002
-312595	WI	ROCK	Rock - City Of Milton - Rock County - Ward 003
-312596	WI	KENOSHA	Kenosha - Town Of Randall - Kenosha County - Ward 001
-312597	WI	OZAUKEE	Ozaukee - Town Of Grafton - Ozaukee County - Ward 004
-312598	WI	CHIPPEWA	Chippewa - Town Of Lake Holcombe - Chippewa County - Ward 001
-312599	WI	OUTAGAMIE	Outagamie - Village Of Combined Locks - Outagamie County - Ward 004
-312600	WI	COLUMBIA	Columbia - City Of Columbus - Multiple Counties - Ward 005
-312601	WI	LANGLADE	Langlade - City Of Antigo - Langlade County - Ward 004
-312602	WI	DANE	Dane - City Of Monona - Dane County - Ward 003
-312603	WI	KEWAUNEE	Kewaunee - City Of Algoma - Kewaunee County - Ward 003
-312604	WI	WOOD	Wood - Town Of Sherry - Wood County - Ward 001
-312605	WI	WINNEBAGO	Winnebago - Town Of Black Wolf - Winnebago County - Ward 003
-312606	WI	WINNEBAGO	Winnebago - Town Of Vinland - Winnebago County - Ward 002
-312607	WI	JACKSON	Jackson - City Of Black River Falls - Jackson County - Ward 004
-312608	WI	FOND DU LAC	Fond Du Lac - Town Of Ripon - Fond Du Lac County - Ward 002
-312609	WI	DANE	Dane - Village Of Cottage Grove - Dane County - Ward 004
-312610	WI	FOND DU LAC	Fond Du Lac - City Of Ripon - Fond Du Lac County - Ward 003
-312611	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 023
-312612	WI	WOOD	Wood - Town Of Lincoln - Wood County - Ward 002
-312613	WI	WAUKESHA	Waukesha - Town Of Oconomowoc - Waukesha County - Ward 007
-312614	WI	MARATHON	Marathon - Town Of Ringle - Marathon County - Ward 002
-312615	WI	BURNETT	Burnett - Town Of Swiss - Burnett County - Ward 001
-312616	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 018
-312617	WI	IOWA	Iowa - Village Of Arena - Iowa County - Ward 001
-312618	WI	WAUKESHA	Waukesha - City Of Muskego - Waukesha County - Ward 001
-312619	WI	CHIPPEWA	Chippewa - Town Of Anson - Chippewa County - Ward 001
-312620	WI	WASHINGTON	Washington - Town Of Trenton - Washington County - Ward 001
-312621	WI	DANE	Dane - Town Of Westport - Dane County - Ward 001
-312622	WI	FOND DU LAC	Fond Du Lac - Town Of Eldorado - Fond Du Lac County - Ward 001
-312623	WI	GRANT	Grant - City Of Platteville - Grant County - Ward 007
-312624	WI	OUTAGAMIE	Outagamie - Town Of Oneida - Outagamie County - Ward 004
-312625	WI	SAUK	Sauk - Town Of Troy - Sauk County - Ward 001
-312626	WI	MILWAUKEE	Milwaukee - Village Of West Milwaukee - Milwaukee County - Ward 001
-312627	WI	WASHINGTON	Washington - Village Of Jackson - Washington County - Ward 005
-312628	WI	LANGLADE	Langlade - City Of Antigo - Langlade County - Ward 005
-312629	WI	VERNON	Vernon - Town Of Hamburg - Vernon County - Ward 001
-312630	WI	DANE	Dane - Village Of Windsor - Dane County - Ward 007
-312631	WI	WOOD	Wood - Town Of Rudolph - Wood County - Ward 001
-312632	WI	WOOD	Wood - Town Of Auburndale - Wood County - Ward 001
-312633	WI	CHIPPEWA	Chippewa - Town Of Cleveland - Chippewa County - Ward 001
-312634	WI	LANGLADE	Langlade - City Of Antigo - Langlade County - Ward 003
-312635	WI	CHIPPEWA	Chippewa - Town Of Wheaton - Chippewa County - Ward 001
-312636	WI	WAUKESHA	Waukesha - Town Of Eagle - Waukesha County - Ward 002
-312637	WI	DANE	Dane - Village Of Cambridge - Multiple Counties - Ward 003
-312638	WI	FOND DU LAC	Fond Du Lac - Town Of Fond Du Lac - Fond Du Lac County - Ward 002
-312639	WI	MILWAUKEE	Milwaukee - Village Of Fox Point - Milwaukee County - Ward 001
-312640	WI	OZAUKEE	Ozaukee - Town Of Port Washington - Ozaukee County - Ward 002
-312641	WI	COLUMBIA	Columbia - Town Of Lodi - Columbia County - Ward 001
-312642	WI	EAU CLAIRE	Eau Claire - Town Of Union - Eau Claire County - Ward 003
-312643	WI	ROCK	Rock - Town Of Union - Rock County - Ward 002
-312644	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 010
-312645	WI	DANE	Dane - Village Of Oregon - Dane County - Ward 006
-312646	WI	ROCK	Rock - City Of Milton - Rock County - Ward 008
-312647	WI	SAUK	Sauk - Village Of Sauk City - Sauk County - Ward 002
-312648	WI	PIERCE	Pierce - Town Of River Falls - Pierce County - Ward 001
-312649	WI	WAUSHARA	Waushara - Town Of Bloomfield - Waushara County - Ward 001
-312650	WI	PORTAGE	Portage - Town Of Hull - Portage County - Ward 003
-312651	WI	MARATHON	Marathon - Town Of Mosinee - Marathon County - Ward 001
-312652	WI	ROCK	Rock - City Of Edgerton - Multiple Counties - Ward 005
-312653	WI	EAU CLAIRE	Eau Claire - Town Of Drammen - Eau Claire County - Ward 001
-312654	WI	WAUKESHA	Waukesha - Village Of Mukwonago - Multiple Counties - Ward 006
-312655	WI	ONEIDA	Oneida - Town Of Pine Lake - Oneida County - Ward 001
-312656	WI	COLUMBIA	Columbia - City Of Columbus - Multiple Counties - Ward 004
-312657	WI	MANITOWOC	Manitowoc - City Of Two Rivers - Manitowoc County - Ward 003
-312658	WI	DODGE	Dodge - Town Of Lowell - Dodge County - Ward 002
-312659	WI	OUTAGAMIE	Outagamie - City Of Kaukauna - Multiple Counties - Ward 005
-312660	WI	WAUKESHA	Waukesha - Village Of Butler - Waukesha County - Ward 003
-312661	WI	ROCK	Rock - Town Of Spring Valley - Rock County - Ward 001
-312662	WI	LINCOLN	Lincoln - Town Of Merrill - Lincoln County - Ward 002
-312663	WI	EAU CLAIRE	Eau Claire - City Of Altoona - Eau Claire County - Ward 007
-312664	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 182
-312665	WI	DODGE	Dodge - City Of Mayville - Dodge County - Ward 005
-312666	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 011
-312667	WI	FOND DU LAC	Fond Du Lac - City Of Waupun - Multiple Counties - Ward 012
-312668	WI	OUTAGAMIE	Outagamie - Town Of Oneida - Outagamie County - Ward 002
-312669	WI	BARRON	Barron - City Of Barron - Barron County - Ward 002
-312670	WI	SHEBOYGAN	Sheboygan - Town Of Lima - Sheboygan County - Ward 004
-312671	WI	OUTAGAMIE	Outagamie - Town Of Dale - Outagamie County - Ward 001
-312672	WI	DODGE	Dodge - Town Of Emmet - Dodge County - Ward 002
-312673	WI	ASHLAND	Ashland - City Of Ashland - Multiple Counties - Ward 004
-312674	WI	MANITOWOC	Manitowoc - Town Of Manitowoc - Manitowoc County - Ward 001
-312675	WI	EAU CLAIRE	Eau Claire - Town Of Seymour - Eau Claire County - Ward 003
-312676	WI	WAUKESHA	Waukesha - Village Of Dousman - Waukesha County - Ward 002
-312677	WI	DANE	Dane - City Of Stoughton - Dane County - Ward 008
-312678	WI	WAUKESHA	Waukesha - Town Of Ottawa - Waukesha County - Ward 001
-312679	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 213
-312680	WI	JEFFERSON	Jefferson - City Of Waterloo - Jefferson County - Ward 002
-312681	WI	DANE	Dane - City Of Madison - Dane County - Ward 013
-312682	WI	MANITOWOC	Manitowoc - Town Of Mishicot - Manitowoc County - Ward 001
-312683	WI	WAUPACA	Waupaca - Town Of Union - Waupaca County - Ward 001
-312684	WI	SAUK	Sauk - Town Of Honey Creek - Sauk County - Ward 001
-312685	WI	BROWN	Brown - Town Of Rockland - Brown County - Ward 002
-312686	WI	CALUMET	Calumet - City Of New Holstein - Calumet County - Ward 003
-312687	WI	RACINE	Racine - Village Of Sturtevant - Racine County - Ward 004
-312688	WI	GREEN LAKE	Green Lake - Town Of Manchester - Green Lake County - Ward 001
-312689	WI	DODGE	Dodge - Town Of Williamstown - Dodge County - Ward 001
-312690	WI	EAU CLAIRE	Eau Claire - Town Of Lincoln - Eau Claire County - Ward 001
-312691	WI	WASHBURN	Washburn - Town Of Trego - Washburn County - Ward 002
-312692	WI	WAUKESHA	Waukesha - Town Of Delafield - Waukesha County - Ward 002
-312693	WI	DODGE	Dodge - Town Of Beaver Dam - Dodge County - Ward 004
-312694	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 006
-312695	WI	OUTAGAMIE	Outagamie - Town Of Seymour - Outagamie County - Ward 001
-312696	WI	DANE	Dane - Village Of Waunakee - Dane County - Ward 004
-312697	WI	RACINE	Racine - Village Of Union Grove - Racine County - Ward 004
-312698	WI	DANE	Dane - Town Of Berry - Dane County - Ward 002
-312699	WI	DANE	Dane - Village Of Waunakee - Dane County - Ward 001
-312700	WI	DANE	Dane - Village Of Blue Mounds - Dane County - Ward 001
-312701	WI	DANE	Dane - Town Of Burke - Dane County - Ward 002
-312702	WI	SAUK	Sauk - City Of Reedsburg - Sauk County - Ward 002
-312703	WI	DANE	Dane - City Of Madison - Dane County - Ward 020
-312704	WI	GRANT	Grant - City Of Platteville - Grant County - Ward 004
-312705	WI	DOUGLAS	Douglas - Town Of Gordon - Douglas County - Ward 001
-312706	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 037
-312707	WI	GREEN LAKE	Green Lake - Town Of Green Lake - Green Lake County - Ward 001
-312708	WI	DUNN	Dunn - Village Of Elk Mound - Dunn County - Ward 001
-312709	WI	OZAUKEE	Ozaukee - City Of Cedarburg - Ozaukee County - Ward 001
-312710	WI	KENOSHA	Kenosha - Village Of Pleasant Prairie - Kenosha County - Ward 009
-312711	WI	CHIPPEWA	Chippewa - City Of Bloomer - Chippewa County - Ward 003
-312712	WI	OUTAGAMIE	Outagamie - Town Of Oneida - Outagamie County - Ward 001
-312713	WI	OCONTO	Oconto - Town Of Breed - Oconto County - Ward 001
-312714	WI	WAUPACA	Waupaca - Town Of Bear Creek - Waupaca County - Ward 001
-312715	WI	MARATHON	Marathon - Town Of Stettin - Marathon County - Ward 003
-312716	WI	MONROE	Monroe - Town Of Byron - Monroe County - Ward 001
-312717	WI	BROWN	Brown - Village Of Bellevue - Brown County - Ward 005
-312718	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 011
-312719	WI	OCONTO	Oconto - Town Of Little Suamico - Oconto County - Ward 004
-312720	WI	RACINE	Racine - Town Of Waterford - Racine County - Ward 003
-312721	WI	DANE	Dane - Village Of Windsor - Dane County - Ward 005
-312722	WI	WOOD	Wood - Village Of Hewitt - Wood County - Ward 001
-312723	WI	BROWN	Brown - Village Of Hobart - Brown County - Ward 004
-312724	WI	WASHINGTON	Washington - Town Of Polk - Washington County - Ward 005
-312725	WI	WAUKESHA	Waukesha - Town Of Delafield - Waukesha County - Ward 001
-312726	WI	SHEBOYGAN	Sheboygan - Town Of Sherman - Sheboygan County - Ward 002
-312727	WI	WAUSHARA	Waushara - Town Of Wautoma - Waushara County - Ward 002
-312728	WI	WAUKESHA	Waukesha - Town Of Mukwonago - Waukesha County - Ward 007
-312729	WI	ASHLAND	Ashland - City Of Ashland - Multiple Counties - Ward 011
-312730	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 208
-312731	WI	KENOSHA	Kenosha - Town Of Wheatland - Kenosha County - Ward 005
-312732	WI	WAUSHARA	Waushara - Town Of Mount Morris - Waushara County - Ward 001
-312733	WI	WAUPACA	Waupaca - City Of Clintonville - Waupaca County - Ward 004
-312734	WI	CALUMET	Calumet - Town Of Stockbridge - Calumet County - Ward 001
-312735	WI	RACINE	Racine - Village Of Union Grove - Racine County - Ward 002
-312736	WI	WAUKESHA	Waukesha - Town Of Waukesha - Waukesha County - Ward 007
-312737	WI	WAUPACA	Waupaca - City Of Clintonville - Waupaca County - Ward 005
-312738	WI	PORTAGE	Portage - Town Of Grant - Portage County - Ward 001
-312739	WI	KENOSHA	Kenosha - Village Of Somers - Kenosha County - Ward 007
-312740	WI	WAUKESHA	Waukesha - Town Of Oconomowoc - Waukesha County - Ward 008
-312741	WI	SHEBOYGAN	Sheboygan - Town Of Sheboygan - Sheboygan County - Ward 003
-312742	WI	LACROSSE	Lacrosse - Village Of West Salem - La Crosse County - Ward 006
-312743	WI	ONEIDA	Oneida - Town Of Pine Lake - Oneida County - Ward 004
-312744	WI	OCONTO	Oconto - Town Of Spruce - Oconto County - Ward 001
-312745	WI	POLK	Polk - Town Of Alden - Polk County - Ward 003
-312746	WI	SAWYER	Sawyer - Town Of Bass Lake - Sawyer County - Ward 001
-312747	WI	ASHLAND	Ashland - Town Of Jacobs - Ashland County - Ward 001
-312748	WI	JEFFERSON	Jefferson - Town Of Oakland - Jefferson County - Ward 001
-312749	WI	BROWN	Brown - Town Of Morrison - Brown County - Ward 001
-312750	WI	ST CROIX	St. Croix - Village Of North Hudson - St. Croix County - Ward 001
-312751	WI	KEWAUNEE	Kewaunee - Town Of Luxemburg - Kewaunee County - Ward 001
-312752	WI	MARQUETTE	Marquette - Town Of Mecan - Marquette County - Ward 001
-312753	WI	CHIPPEWA	Chippewa - Town Of Eagle Point - Chippewa County - Ward 001
-312754	WI	WAUKESHA	Waukesha - Town Of Waukesha - Waukesha County - Ward 009
-312755	WI	SHAWANO	Shawano - City Of Shawano - Shawano County - Ward 011
-312756	WI	RACINE	Racine - Village Of Union Grove - Racine County - Ward 001
-312757	WI	DANE	Dane - Town Of Cottage Grove - Dane County - Ward 001
-312758	WI	GRANT	Grant - City Of Platteville - Grant County - Ward 006
-312759	WI	JACKSON	Jackson - City Of Black River Falls - Jackson County - Ward 002
-312760	WI	ONEIDA	Oneida - Town Of Newbold - Oneida County - Ward 001
-312761	WI	PORTAGE	Portage - Town Of Stockton - Portage County - Ward 002
-312762	WI	SAUK	Sauk - City Of Reedsburg - Sauk County - Ward 012
-312763	WI	BARRON	Barron - Town Of Rice Lake - Barron County - Ward 002
-312764	WI	SAUK	Sauk - City Of Reedsburg - Sauk County - Ward 010
-312765	WI	TREMPEALEAU	Trempealeau - City Of Osseo - Trempealeau County - Ward 001
-312766	WI	WALWORTH	Walworth - Town Of Spring Prairie - Walworth County - Ward 001
-312767	WI	PORTAGE	Portage - Town Of Sharon - Portage County - Ward 002
-312768	WI	COLUMBIA	Columbia - City Of Wisconsin Dells - Multiple Counties - Ward 001
-312769	WI	OZAUKEE	Ozaukee - Town Of Cedarburg - Ozaukee County - Ward 006
-312770	WI	WAUKESHA	Waukesha - Village Of Hartland - Waukesha County - Ward 009
-312771	WI	JEFFERSON	Jefferson - City Of Jefferson - Jefferson County - Ward 002
-312772	WI	KENOSHA	Kenosha - Town Of Somers - Kenosha County - Ward 003
-312773	WI	KENOSHA	Kenosha - Village Of Paddock Lake - Kenosha County - Ward 002
-312774	WI	COLUMBIA	Columbia - Town Of Wyocena - Columbia County - Ward 002
-312775	WI	CHIPPEWA	Chippewa - Town Of Eagle Point - Chippewa County - Ward 002
-312776	WI	WASHINGTON	Washington - Town Of Trenton - Washington County - Ward 005
-312777	WI	KENOSHA	Kenosha - Town Of Wheatland - Kenosha County - Ward 001
-312778	WI	WASHINGTON	Washington - Town Of Barton - Washington County - Ward 002
-312779	WI	MARQUETTE	Marquette - Town Of Buffalo - Marquette County - Ward 001
-312780	WI	DOOR	Door - Town Of Baileys Harbor - Door County - Ward 001
-312781	WI	GRANT	Grant - Village Of Potosi - Grant County - Ward 001
-312782	WI	DANE	Dane - Town Of Verona - Dane County - Ward 003
-312783	WI	OZAUKEE	Ozaukee - Village Of Thiensville - Ozaukee County - Ward 004
-312784	WI	SAUK	Sauk - Village Of Spring Green - Sauk County - Ward 002
-312785	WI	SHAWANO	Shawano - Town Of Bartelme - Shawano County - Ward 001
-312786	WI	SHEBOYGAN	Sheboygan - Town Of Plymouth - Sheboygan County - Ward 002
-312787	WI	DUNN	Dunn - Town Of Lucas - Dunn County - Ward 001
-312788	WI	BROWN	Brown - Village Of Pulaski - Multiple Counties - Ward 006
-312789	WI	WAUPACA	Waupaca - Town Of Caledonia - Waupaca County - Ward 001
-312790	WI	VILAS	Vilas - Town Of Washington - Vilas County - Ward 002
-312791	WI	RACINE	Racine - Village Of Sturtevant - Racine County - Ward 002
-312792	WI	OUTAGAMIE	Outagamie - Town Of Oneida - Outagamie County - Ward 005
-312793	WI	LACROSSE	Lacrosse - Town Of Holland - La Crosse County - Ward 002
-312794	WI	MARINETTE	Marinette - Town Of Grover - Marinette County - Ward 002
-312795	WI	JEFFERSON	Jefferson - City Of Watertown - Multiple Counties - Ward 008
-312796	WI	KENOSHA	Kenosha - Village Of Twin Lakes - Kenosha County - Ward 003
-312797	WI	MARATHON	Marathon - Town Of Wien - Marathon County - Ward 001
-312798	WI	BURNETT	Burnett - Town Of Daniels - Burnett County - Ward 001
-312799	WI	WOOD	Wood - Town Of Richfield - Wood County - Ward 001
-312800	WI	POLK	Polk - Town Of Bone Lake - Polk County - Ward 001
-312801	WI	KEWAUNEE	Kewaunee - City Of Algoma - Kewaunee County - Ward 004
-312802	WI	COLUMBIA	Columbia - Village Of Poynette - Columbia County - Ward 002
-312803	WI	ROCK	Rock - Town Of Beloit - Rock County - Ward 004
-312804	WI	LACROSSE	Lacrosse - Village Of Holmen - La Crosse County - Ward 002
-312805	WI	ASHLAND	Ashland - City Of Ashland - Multiple Counties - Ward 010
-312806	WI	WALWORTH	Walworth - Village Of Genoa City - Multiple Counties - Ward 003
-312807	WI	WAUPACA	Waupaca - Village Of Iola - Waupaca County - Ward 001
-312808	WI	CHIPPEWA	Chippewa - Town Of Howard - Chippewa County - Ward 001
-312809	WI	MARATHON	Marathon - Town Of Johnson - Marathon County - Ward 001
-312810	WI	ROCK	Rock - City Of Milton - Rock County - Ward 004
-312811	WI	MANITOWOC	Manitowoc - Village Of Whitelaw - Manitowoc County - Ward 001
-312812	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 009
-312813	WI	COLUMBIA	Columbia - Town Of Randolph - Columbia County - Ward 001
-312814	WI	BROWN	Brown - Village Of Howard - Multiple Counties - Ward 010
-312815	WI	MARINETTE	Marinette - Village Of Coleman - Marinette County - Ward 001
-312816	WI	WAUKESHA	Waukesha - Village Of Summit - Waukesha County - Ward 006
-312817	WI	MILWAUKEE	Milwaukee - City Of St. Francis - Milwaukee County - Ward 009
-312818	WI	MARINETTE	Marinette - Town Of Stephenson - Marinette County - Ward 001
-312819	WI	MILWAUKEE	Milwaukee - Village Of Hales Corners - Milwaukee County - Ward 007
-312820	WI	WAUKESHA	Waukesha - Town Of Merton - Waukesha County - Ward 006
-312821	WI	MARINETTE	Marinette - Town Of Porterfield - Marinette County - Ward 002
-312822	WI	OUTAGAMIE	Outagamie - Town Of Grand Chute - Outagamie County - Ward 006
-312823	WI	DUNN	Dunn - Town Of Stanton - Dunn County - Ward 001
-312824	WI	WAUPACA	Waupaca - City Of Waupaca - Waupaca County - Ward 003
-312825	WI	MARATHON	Marathon - Town Of Mosinee - Marathon County - Ward 002
-312826	WI	WAUKESHA	Waukesha - City Of Muskego - Waukesha County - Ward 004
-312827	WI	GREEN	Green - Town Of Washington - Green County - Ward 001
-312828	WI	PORTAGE	Portage - Town Of Hull - Portage County - Ward 002
-312829	WI	ONEIDA	Oneida - Town Of Pelican - Oneida County - Ward 001
-312830	WI	WALWORTH	Walworth - Town Of Geneva - Walworth County - Ward 008
-312831	WI	ROCK	Rock - Town Of Fulton - Rock County - Ward 002
-312832	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 008
-312833	WI	PORTAGE	Portage - Town Of Amherst - Portage County - Ward 002
-312834	WI	GREEN LAKE	Green Lake - City Of Berlin - Multiple Counties - Ward 005
-312835	WI	WAUKESHA	Waukesha - Village Of Summit - Waukesha County - Ward 002
-312836	WI	OZAUKEE	Ozaukee - Village Of Grafton - Ozaukee County - Ward 002
-312837	WI	WALWORTH	Walworth - Town Of Delavan - Walworth County - Ward 002
-312838	WI	JEFFERSON	Jefferson - Town Of Koshkonong - Jefferson County - Ward 001
-312839	WI	WAUKESHA	Waukesha - Village Of Summit - Waukesha County - Ward 003
-312840	WI	WAUKESHA	Waukesha - Village Of Sussex - Waukesha County - Ward 004
-312841	WI	LINCOLN	Lincoln - Town Of Merrill - Lincoln County - Ward 001
-312842	WI	MARQUETTE	Marquette - Village Of Westfield - Marquette County - Ward 001
-312843	WI	FOND DU LAC	Fond Du Lac - Town Of Waupun - Fond Du Lac County - Ward 002
-312844	WI	OUTAGAMIE	Outagamie - Town Of Oneida - Outagamie County - Ward 003
-312845	WI	WOOD	Wood - Town Of Grand Rapids - Wood County - Ward 001
-312846	WI	EAU CLAIRE	Eau Claire - City Of Altoona - Eau Claire County - Ward 011
-312847	WI	PORTAGE	Portage - Town Of Hull - Portage County - Ward 001
-312848	WI	DANE	Dane - Village Of Cottage Grove - Dane County - Ward 003
-312849	WI	RACINE	Racine - Village Of Sturtevant - Racine County - Ward 003
-312850	WI	COLUMBIA	Columbia - Village Of Cambria - Columbia County - Ward 001
-312851	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 002
-312852	WI	FOND DU LAC	Fond Du Lac - Town Of Springvale - Fond Du Lac County - Ward 001
-312853	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 005
-312854	WI	WASHBURN	Washburn - City Of Shell Lake - Washburn County - Ward 002
-312855	WI	LINCOLN	Lincoln - Town Of Bradley - Lincoln County - Ward 002
-312856	WI	POLK	Polk - Village Of Osceola - Polk County - Ward 002
-312857	WI	BROWN	Brown - City Of De Pere - Brown County - Ward 014
-312858	WI	DANE	Dane - Town Of Madison - Dane County - Ward 007
-312859	WI	TAYLOR	Taylor - Town Of Westboro - Taylor County - Ward 001
-312860	WI	MONROE	Monroe - Town Of Portland - Monroe County - Ward 001
-312861	WI	MARATHON	Marathon - Village Of Weston - Marathon County - Ward 008
-312862	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 290
-312863	WI	ONEIDA	Oneida - Town Of Sugar Camp - Oneida County - Ward 002
-312864	WI	WALWORTH	Walworth - City Of Whitewater - Multiple Counties - Ward 001
-312865	WI	MANITOWOC	Manitowoc - Town Of Gibson - Manitowoc County - Ward 001
-312866	WI	WASHBURN	Washburn - Town Of Minong - Washburn County - Ward 001
-312867	WI	ASHLAND	Ashland - City Of Ashland - Multiple Counties - Ward 003
-312868	WI	FOND DU LAC	Fond Du Lac - Town Of Rosendale - Fond Du Lac County - Ward 001
-312869	WI	RACINE	Racine - Village Of Waterford - Racine County - Ward 004
-312870	WI	FOND DU LAC	Fond Du Lac - Town Of Alto - Fond Du Lac County - Ward 001
-312871	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 133
-312872	WI	WINNEBAGO	Winnebago - Town Of Winchester - Winnebago County - Ward 002
-312873	WI	MARINETTE	Marinette - Town Of Wagner - Marinette County - Ward 001
-312874	WI	POLK	Polk - Village Of Osceola - Polk County - Ward 001
-312875	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 015
-312876	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 227
-312877	WI	LINCOLN	Lincoln - Town Of Scott - Lincoln County - Ward 001
-312878	WI	MILWAUKEE	Milwaukee - Village Of Hales Corners - Milwaukee County - Ward 005
-312879	WI	VERNON	Vernon - Village Of La Farge - Vernon County - Ward 001
-312880	WI	LACROSSE	Lacrosse - Town Of Medary - La Crosse County - Ward 002
-312881	WI	ROCK	Rock - Town Of Janesville - Rock County - Ward 002
-312882	WI	WAUKESHA	Waukesha - Town Of Genesee - Waukesha County - Ward 001
-312883	WI	MARATHON	Marathon - Town Of Bergen - Marathon County - Ward 001
-312884	WI	SHAWANO	Shawano - Town Of Belle Plaine - Shawano County - Ward 002
-312885	WI	MILWAUKEE	Milwaukee - Village Of Bayside - Multiple Counties - Ward 004
-312886	WI	SHAWANO	Shawano - Town Of Wescott - Shawano County - Ward 003
-312887	WI	BARRON	Barron - Town Of Stanley - Barron County - Ward 002
-312888	WI	MARATHON	Marathon - Town Of Wausau - Marathon County - Ward 002
-312889	WI	ADAMS	Adams - Town Of New Haven - Adams County - Ward 001
-312890	WI	MONROE	Monroe - Town Of La Grange - Monroe County - Ward 002
-312891	WI	KENOSHA	Kenosha - Village Of Somers - Kenosha County - Ward 004
-312892	WI	WAUKESHA	Waukesha - Town Of Brookfield - Waukesha County - Ward 007
-312893	WI	GRANT	Grant - Town Of Hazel Green - Grant County - Ward 002
-312894	WI	PEPIN	Pepin - City Of Durand - Pepin County - Ward 001
-312895	WI	DOOR	Door - Town Of Brussels - Door County - Ward 002
-312896	WI	WASHINGTON	Washington - Village Of Richfield - Washington County - Ward 006
-312897	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 022
-312898	WI	GREEN	Green - Town Of Brooklyn - Green County - Ward 001
-312899	WI	WAUKESHA	Waukesha - Village Of Wales - Waukesha County - Ward 002
-312900	WI	BROWN	Brown - Town Of Pittsfield - Brown County - Ward 001
-312901	WI	ST CROIX	St. Croix - Town Of Hudson - St. Croix County - Ward 003
-312902	WI	CHIPPEWA	Chippewa - Town Of Arthur - Chippewa County - Ward 001
-312903	WI	ONEIDA	Oneida - Town Of Cassian - Oneida County - Ward 001
-312904	WI	LACROSSE	Lacrosse - Town Of Holland - La Crosse County - Ward 003
-312905	WI	MARATHON	Marathon - Town Of McMillan - Marathon County - Ward 002
-312906	WI	RACINE	Racine - Town Of Waterford - Racine County - Ward 010
-312907	WI	BROWN	Brown - Village Of Howard - Multiple Counties - Ward 004
-312908	WI	WAUKESHA	Waukesha - City Of Oconomowoc - Waukesha County - Ward 010
-312909	WI	GREEN LAKE	Green Lake - Town Of Brooklyn - Green Lake County - Ward 003
-312910	WI	WASHINGTON	Washington - Town Of West Bend - Washington County - Ward 006
-312911	WI	ST CROIX	St. Croix - Town Of Hudson - St. Croix County - Ward 008
-312912	WI	DANE	Dane - Town Of Dunn - Dane County - Ward 001
-312913	WI	MILWAUKEE	Milwaukee - City Of St. Francis - Milwaukee County - Ward 011
-312914	WI	COLUMBIA	Columbia - Town Of Pacific - Columbia County - Ward 003
-312915	WI	ST CROIX	St. Croix - Town Of Glenwood - St. Croix County - Ward 001
-312916	WI	ONEIDA	Oneida - Town Of Minocqua - Oneida County - Ward 006
-312917	WI	DANE	Dane - Village Of Marshall - Dane County - Ward 004
-312918	WI	WALWORTH	Walworth - Town Of Spring Prairie - Walworth County - Ward 003
-312919	WI	WAUKESHA	Waukesha - Town Of Mukwonago - Waukesha County - Ward 005
-312920	WI	OZAUKEE	Ozaukee - Village Of Grafton - Ozaukee County - Ward 003
-312921	WI	MARATHON	Marathon - Town Of Eau Pleine - Marathon County - Ward 001
-312922	WI	BURNETT	Burnett - Town Of Wood River - Burnett County - Ward 002
-312923	WI	OUTAGAMIE	Outagamie - Town Of Greenville - Outagamie County - Ward 005
-312924	WI	ASHLAND	Ashland - Town Of Sanborn - Ashland County - Ward 001
-312925	WI	COLUMBIA	Columbia - Town Of Leeds - Columbia County - Ward 002
-312926	WI	WINNEBAGO	Winnebago - Town Of Omro - Winnebago County - Ward 003
-312927	WI	RUSK	Rusk - Town Of Atlanta - Rusk County - Ward 001
-312928	WI	LACROSSE	Lacrosse - Town Of Onalaska - La Crosse County - Ward 002
-312929	WI	MANITOWOC	Manitowoc - Town Of Gibson - Manitowoc County - Ward 002
-312930	WI	ST CROIX	St. Croix - Town Of Star Prairie - St. Croix County - Ward 004
-312931	WI	WAUKESHA	Waukesha - Village Of Elm Grove - Waukesha County - Ward 007
-312932	WI	MARATHON	Marathon - Village Of Rothschild - Marathon County - Ward 002
-312933	WI	ROCK	Rock - Town Of Magnolia - Rock County - Ward 001
-312934	WI	JACKSON	Jackson - Town Of Manchester - Jackson County - Ward 001
-312935	WI	MARINETTE	Marinette - City Of Peshtigo - Marinette County - Ward 004
-312936	WI	DANE	Dane - Town Of Roxbury - Dane County - Ward 002
-312937	WI	CALUMET	Calumet - Village Of Hilbert - Calumet County - Ward 001
-312938	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 016
-312939	WI	TREMPEALEAU	Trempealeau - Town Of Arcadia - Trempealeau County - Ward 002
-312940	WI	CLARK	Clark - Town Of York - Clark County - Ward 001
-312941	WI	MARINETTE	Marinette - Town Of Middle Inlet - Marinette County - Ward 001
-312942	WI	PRICE	Price - Town Of Ogema - Price County - Ward 001
-312943	WI	WINNEBAGO	Winnebago - Town Of Algoma - Winnebago County - Ward 004
-312944	WI	MARATHON	Marathon - Town Of Knowlton - Marathon County - Ward 003
-312945	WI	MANITOWOC	Manitowoc - Village Of Reedsville - Manitowoc County - Ward 001
-312946	WI	POLK	Polk - Town Of Osceola - Polk County - Ward 002
-312947	WI	RACINE	Racine - Village Of Wind Point - Racine County - Ward 002
-312948	WI	MARINETTE	Marinette - Town Of Goodman - Marinette County - Ward 001
-312949	WI	KEWAUNEE	Kewaunee - Town Of Luxemburg - Kewaunee County - Ward 002
-312950	WI	JEFFERSON	Jefferson - City Of Jefferson - Jefferson County - Ward 005
-312951	WI	LAFAYETTE	Lafayette - Village Of Argyle - Lafayette County - Ward 001
-312952	WI	WASHINGTON	Washington - Town Of Trenton - Washington County - Ward 007
-312953	WI	FOND DU LAC	Fond Du Lac - Village Of Eden - Fond Du Lac County - Ward 001
-312954	WI	PIERCE	Pierce - Town Of Trimbelle - Pierce County - Ward 002
-312955	WI	PRICE	Price - Town Of Lake - Price County - Ward 002
-312956	WI	GREEN LAKE	Green Lake - City Of Berlin - Multiple Counties - Ward 004
-312957	WI	MARATHON	Marathon - Village Of Stratford - Marathon County - Ward 001
-312958	WI	LANGLADE	Langlade - City Of Antigo - Langlade County - Ward 006
-312959	WI	SAUK	Sauk - Town Of Washington - Sauk County - Ward 001
-312960	WI	BROWN	Brown - Town Of New Denmark - Brown County - Ward 001
-312961	WI	KENOSHA	Kenosha - Village Of Silver Lake - Kenosha County - Ward 003
-312962	WI	WINNEBAGO	Winnebago - Town Of Nepeuskun - Winnebago County - Ward 001
-312963	WI	SAUK	Sauk - City Of Reedsburg - Sauk County - Ward 006
-312964	WI	TAYLOR	Taylor - Town Of Chelsea - Taylor County - Ward 001
-312965	WI	CRAWFORD	Crawford - Town Of Freeman - Crawford County - Ward 001
-312966	WI	ST CROIX	St. Croix - Town Of Hudson - St. Croix County - Ward 005
-312967	WI	WAUKESHA	Waukesha - Village Of Menomonee Falls - Waukesha County - Ward 018
-312968	WI	FOND DU LAC	Fond Du Lac - Town Of Oakfield - Fond Du Lac County - Ward 001
-312969	WI	GREEN	Green - Town Of New Glarus - Green County - Ward 001
-312970	WI	BROWN	Brown - Town Of Glenmore - Brown County - Ward 001
-312971	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 003
-312972	WI	OUTAGAMIE	Outagamie - Town Of Center - Outagamie County - Ward 005
-312973	WI	ST CROIX	St. Croix - City Of Hudson - St. Croix County - Ward 011
-312974	WI	OCONTO	Oconto - Town Of Oconto - Oconto County - Ward 001
-312975	WI	POLK	Polk - Village Of Dresser - Polk County - Ward 001
-312976	WI	PORTAGE	Portage - Village Of Whiting - Portage County - Ward 001
-312977	WI	DANE	Dane - Town Of Madison - Dane County - Ward 002
-312978	WI	CLARK	Clark - City Of Loyal - Clark County - Ward 001
-312979	WI	SAUK	Sauk - Town Of Dellona - Sauk County - Ward 001
-312980	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 246
-312981	WI	JEFFERSON	Jefferson - Town Of Ixonia - Jefferson County - Ward 004
-312982	WI	SAUK	Sauk - City Of Baraboo - Sauk County - Ward 011
-312983	WI	MARATHON	Marathon - Town Of Texas - Marathon County - Ward 002
-312984	WI	COLUMBIA	Columbia - Village Of Arlington - Columbia County - Ward 001
-312985	WI	SAWYER	Sawyer - Town Of Round Lake - Sawyer County - Ward 001
-312986	WI	FOND DU LAC	Fond Du Lac - Town Of Metomen - Fond Du Lac County - Ward 001
-312987	WI	DANE	Dane - Town Of Verona - Dane County - Ward 001
-312988	WI	BROWN	Brown - Town Of New Denmark - Brown County - Ward 002
-312989	WI	DODGE	Dodge - City Of Juneau - Dodge County - Ward 001
-312990	WI	WASHBURN	Washburn - City Of Spooner - Washburn County - Ward 004
-312991	WI	GRANT	Grant - City Of Fennimore - Grant County - Ward 001
-312992	WI	FOND DU LAC	Fond Du Lac - Town Of Marshfield - Fond Du Lac County - Ward 001
-312993	WI	OUTAGAMIE	Outagamie - Village Of Black Creek - Outagamie County - Ward 002
-312994	WI	WINNEBAGO	Winnebago - Town Of Wolf River - Winnebago County - Ward 001
-312995	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 011
-312996	WI	GREEN	Green - Village Of New Glarus - Green County - Ward 003
-312997	WI	WAUKESHA	Waukesha - Town Of Brookfield - Waukesha County - Ward 004
-312998	WI	SAUK	Sauk - Town Of La Valle - Sauk County - Ward 002
-312999	WI	CALUMET	Calumet - Village Of Stockbridge - Calumet County - Ward 001
-313000	WI	WOOD	Wood - Village Of Port Edwards - Wood County - Ward 002
-313001	WI	WAUKESHA	Waukesha - Village Of Pewaukee - Waukesha County - Ward 009
-313002	WI	DOUGLAS	Douglas - Village Of Superior - Douglas County - Ward 001
-313003	WI	DANE	Dane - Town Of Medina - Dane County - Ward 002
-313004	WI	DANE	Dane - Village Of Deforest - Dane County - Ward 006
-313005	WI	BAYFIELD	Bayfield - City Of Washburn - Bayfield County - Ward 004
-313006	WI	PEPIN	Pepin - City Of Durand - Pepin County - Ward 002
-313007	WI	BURNETT	Burnett - Village Of Siren - Burnett County - Ward 001
-313008	WI	MARQUETTE	Marquette - Town Of Westfield - Marquette County - Ward 001
-313009	WI	EAU CLAIRE	Eau Claire - Town Of Washington - Eau Claire County - Ward 007
-313010	WI	WOOD	Wood - Town Of Hansen - Wood County - Ward 001
-313011	WI	CHIPPEWA	Chippewa - Town Of Cooks Valley - Chippewa County - Ward 001
-313012	WI	GREEN LAKE	Green Lake - City Of Berlin - Multiple Counties - Ward 002
-313013	WI	MANITOWOC	Manitowoc - Town Of Newton - Manitowoc County - Ward 002
-313014	WI	DANE	Dane - Town Of York - Dane County - Ward 001
-313015	WI	DOUGLAS	Douglas - Town Of Lakeside - Douglas County - Ward 001
-313016	WI	ROCK	Rock - City Of Edgerton - Multiple Counties - Ward 003
-313017	WI	OCONTO	Oconto - Town Of Little Suamico - Oconto County - Ward 003
-313018	WI	OUTAGAMIE	Outagamie - Town Of Center - Outagamie County - Ward 001
-313019	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 007
-313020	WI	JEFFERSON	Jefferson - Town Of Oakland - Jefferson County - Ward 004
-313021	WI	IOWA	Iowa - City Of Mineral Point - Iowa County - Ward 002
-313022	WI	DUNN	Dunn - Town Of Colfax - Dunn County - Ward 001
-313023	WI	TAYLOR	Taylor - Town Of Medford - Taylor County - Ward 003
-313024	WI	WASHINGTON	Washington - Town Of Polk - Washington County - Ward 006
-313025	WI	CLARK	Clark - Village Of Dorchester - Multiple Counties - Ward 001
-313026	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 034
-313027	WI	PORTAGE	Portage - Town Of Carson - Portage County - Ward 001
-313028	WI	OCONTO	Oconto - Town Of Gillett - Oconto County - Ward 001
-313029	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 069
-313030	WI	WAUKESHA	Waukesha - Town Of Vernon - Waukesha County - Ward 010
-313031	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 008
-313032	WI	TREMPEALEAU	Trempealeau - City Of Independence - Trempealeau County - Ward 001
-313033	WI	CHIPPEWA	Chippewa - Town Of Tilden - Chippewa County - Ward 003
-313034	WI	MANITOWOC	Manitowoc - Town Of Centerville - Manitowoc County - Ward 001
-313035	WI	DANE	Dane - Town Of Springdale - Dane County - Ward 002
-313036	WI	PIERCE	Pierce - Town Of River Falls - Pierce County - Ward 003
-313037	WI	CRAWFORD	Crawford - Town Of Utica - Crawford County - Ward 001
-313038	WI	COLUMBIA	Columbia - Village Of Poynette - Columbia County - Ward 001
-313039	WI	WAUKESHA	Waukesha - Village Of Hartland - Waukesha County - Ward 008
-313040	WI	KENOSHA	Kenosha - Town Of Paris - Kenosha County - Ward 002
-313041	WI	WAUKESHA	Waukesha - Village Of Oconomowoc Lake - Waukesha County - Ward 001
-313042	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 068
-313043	WI	KENOSHA	Kenosha - Village Of Somers - Kenosha County - Ward 011
-313044	WI	DODGE	Dodge - Village Of Hustisford - Dodge County - Ward 001
-313045	WI	CHIPPEWA	Chippewa - City Of Bloomer - Chippewa County - Ward 002
-313046	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 001
-313047	WI	TAYLOR	Taylor - Town Of Browning - Taylor County - Ward 001
-313048	WI	WALWORTH	Walworth - City Of Lake Geneva - Walworth County - Ward 003
-313049	WI	FOND DU LAC	Fond Du Lac - Town Of Auburn - Fond Du Lac County - Ward 002
-313050	WI	SHEBOYGAN	Sheboygan - Village Of Cascade - Sheboygan County - Ward 001
-313051	WI	WALWORTH	Walworth - City Of Lake Geneva - Walworth County - Ward 001
-313052	WI	MONROE	Monroe - Town Of Adrian - Monroe County - Ward 001
-313053	WI	MILWAUKEE	Milwaukee - City Of Cudahy - Milwaukee County - Ward 013
-313054	WI	LACROSSE	Lacrosse - Village Of Holmen - La Crosse County - Ward 004
-313055	WI	CLARK	Clark - Town Of Fremont - Clark County - Ward 001
-313056	WI	GRANT	Grant - Village Of Muscoda - Multiple Counties - Ward 001
-313057	WI	POLK	Polk - City Of St. Croix Falls - Polk County - Ward 002
-313058	WI	PORTAGE	Portage - Town Of Amherst - Portage County - Ward 001
-313059	WI	COLUMBIA	Columbia - City Of Portage - Columbia County - Ward 006
-313060	WI	WASHINGTON	Washington - Town Of Jackson - Washington County - Ward 002
-313061	WI	BARRON	Barron - Village Of Cameron - Barron County - Ward 002
-313062	WI	ST CROIX	St. Croix - City Of New Richmond - St. Croix County - Ward 005
-313063	WI	SHAWANO	Shawano - City Of Shawano - Shawano County - Ward 006
-313064	WI	DANE	Dane - Village Of Cottage Grove - Dane County - Ward 005
-313065	WI	DANE	Dane - Village Of Oregon - Dane County - Ward 009
-313066	WI	MONROE	Monroe - Town Of Greenfield - Monroe County - Ward 001
-313067	WI	RACINE	Racine - Town Of Norway - Racine County - Ward 006
-313068	WI	CHIPPEWA	Chippewa - Town Of Colburn - Chippewa County - Ward 001
-313069	WI	RICHLAND	Richland - Town Of Richland - Richland County - Ward 003
-313070	WI	PIERCE	Pierce - Town Of Martell - Pierce County - Ward 001
-313071	WI	DODGE	Dodge - City Of Waupun - Multiple Counties - Ward 004
-313072	WI	OUTAGAMIE	Outagamie - Village Of Combined Locks - Outagamie County - Ward 001
-313073	WI	BROWN	Brown - Village Of Howard - Multiple Counties - Ward 008
-313074	WI	WALWORTH	Walworth - City Of Whitewater - Multiple Counties - Ward 003
-313075	WI	POLK	Polk - Town Of Luck - Polk County - Ward 001
-313076	WI	WINNEBAGO	Winnebago - Village Of Winneconne - Winnebago County - Ward 001
-313077	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan Falls - Sheboygan County - Ward 009
-313078	WI	ADAMS	Adams - Town Of Quincy - Adams County - Ward 002
-313079	WI	LINCOLN	Lincoln - Town Of Schley - Lincoln County - Ward 002
-313080	WI	OUTAGAMIE	Outagamie - Town Of Dale - Outagamie County - Ward 003
-313081	WI	DANE	Dane - Town Of Blooming Grove - Dane County - Ward 001
-313082	WI	WAUPACA	Waupaca - Town Of Little Wolf - Waupaca County - Ward 001
-313083	WI	ST CROIX	St. Croix - Town Of Star Prairie - St. Croix County - Ward 001
-313084	WI	ST CROIX	St. Croix - City Of Hudson - St. Croix County - Ward 003
-313085	WI	PORTAGE	Portage - Town Of Almond - Portage County - Ward 001
-313086	WI	MONROE	Monroe - Town Of Angelo - Monroe County - Ward 001
-313087	WI	DODGE	Dodge - Town Of Ashippun - Dodge County - Ward 003
-313088	WI	RACINE	Racine - Town Of Norway - Racine County - Ward 011
-313089	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 001
-313090	WI	SAUK	Sauk - Town Of Baraboo - Sauk County - Ward 002
-313091	WI	COLUMBIA	Columbia - Town Of West Point - Columbia County - Ward 002
-313092	WI	ROCK	Rock - City Of Edgerton - Multiple Counties - Ward 006
-313093	WI	OCONTO	Oconto - Town Of Brazeau - Oconto County - Ward 001
-313094	WI	RACINE	Racine - Town Of Norway - Racine County - Ward 004
-313095	WI	BURNETT	Burnett - Village Of Grantsburg - Burnett County - Ward 002
-313096	WI	OCONTO	Oconto - Town Of Riverview - Oconto County - Ward 001
-313097	WI	LACROSSE	Lacrosse - City Of Onalaska - La Crosse County - Ward 008
-313098	WI	DANE	Dane - Town Of Blooming Grove - Dane County - Ward 003
-313099	WI	CHIPPEWA	Chippewa - Village Of Lake Hallie - Chippewa County - Ward 003
-313100	WI	ROCK	Rock - Town Of Lima - Rock County - Ward 001
-313101	WI	FOND DU LAC	Fond Du Lac - City Of Ripon - Fond Du Lac County - Ward 011
-313102	WI	ASHLAND	Ashland - City Of Ashland - Multiple Counties - Ward 006
-313103	WI	LANGLADE	Langlade - Town Of Elcho - Langlade County - Ward 001
-313104	WI	KEWAUNEE	Kewaunee - City Of Kewaunee - Kewaunee County - Ward 003
-313105	WI	WALWORTH	Walworth - Village Of Williams Bay - Walworth County - Ward 001
-313106	WI	ROCK	Rock - Town Of Beloit - Rock County - Ward 002
-313107	WI	FOND DU LAC	Fond Du Lac - Village Of Oakfield - Fond Du Lac County - Ward 001
-313108	WI	IOWA	Iowa - City Of Dodgeville - Iowa County - Ward 001
-313109	WI	WAUKESHA	Waukesha - Town Of Brookfield - Waukesha County - Ward 005
-313110	WI	MARINETTE	Marinette - Town Of Beaver - Marinette County - Ward 002
-313111	WI	DANE	Dane - Town Of Dunkirk - Dane County - Ward 001
-313112	WI	MANITOWOC	Manitowoc - Village Of St. Nazianz - Manitowoc County - Ward 001
-313113	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 005
-313114	WI	WASHINGTON	Washington - City Of Hartford - Multiple Counties - Ward 014
-313115	WI	WAUKESHA	Waukesha - Town Of Vernon - Waukesha County - Ward 009
-313116	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 001
-313117	WI	WAUKESHA	Waukesha - Village Of Mukwonago - Multiple Counties - Ward 003
-313118	WI	WOOD	Wood - Town Of Richfield - Wood County - Ward 002
-313119	WI	ADAMS	Adams - Town Of Easton - Adams County - Ward 002
-313120	WI	RACINE	Racine - Town Of Yorkville - Racine County - Ward 001
-313121	WI	KENOSHA	Kenosha - Village Of Bristol - Kenosha County - Ward 001
-313122	WI	PORTAGE	Portage - Town Of Carson - Portage County - Ward 002
-313123	WI	JEFFERSON	Jefferson - Town Of Koshkonong - Jefferson County - Ward 003
-313124	WI	DANE	Dane - City Of Stoughton - Dane County - Ward 003
-313125	WI	SHEBOYGAN	Sheboygan - City Of Plymouth - Sheboygan County - Ward 006
-313126	WI	WAUKESHA	Waukesha - Village Of Sussex - Waukesha County - Ward 005
-313127	WI	WALWORTH	Walworth - Town Of Linn - Walworth County - Ward 002
-313128	WI	ST CROIX	St. Croix - Town Of Hudson - St. Croix County - Ward 009
-313129	WI	DANE	Dane - Town Of Sun Prairie - Dane County - Ward 001
-313130	WI	LACROSSE	Lacrosse - Town Of Shelby - La Crosse County - Ward 003
-313131	WI	WASHBURN	Washburn - City Of Shell Lake - Washburn County - Ward 001
-313132	WI	OZAUKEE	Ozaukee - City Of Cedarburg - Ozaukee County - Ward 005
-313133	WI	POLK	Polk - City Of Amery - Polk County - Ward 005
-313134	WI	LINCOLN	Lincoln - Town Of Russell - Lincoln County - Ward 001
-313135	WI	WAUKESHA	Waukesha - Town Of Delafield - Waukesha County - Ward 010
-313136	WI	OUTAGAMIE	Outagamie - Village Of Hortonville - Outagamie County - Ward 003
-313137	WI	KENOSHA	Kenosha - Village Of Twin Lakes - Kenosha County - Ward 005
-313138	WI	SHAWANO	Shawano - Village Of Tigerton - Shawano County - Ward 001
-313139	WI	WAUPACA	Waupaca - Town Of Scandinavia - Waupaca County - Ward 001
-313140	WI	WAUSHARA	Waushara - Town Of Warren - Waushara County - Ward 001
-313141	WI	DANE	Dane - Village Of Cottage Grove - Dane County - Ward 006
-313142	WI	RICHLAND	Richland - Village Of Lone Rock - Richland County - Ward 001
-313143	WI	OCONTO	Oconto - Town Of Oconto Falls - Oconto County - Ward 002
-313144	WI	DANE	Dane - Village Of Black Earth - Dane County - Ward 002
-313145	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 017
-313146	WI	PRICE	Price - Town Of Worcester - Price County - Ward 001
-313147	WI	EAU CLAIRE	Eau Claire - City Of Altoona - Eau Claire County - Ward 005
-313148	WI	MARATHON	Marathon - Town Of Spencer - Marathon County - Ward 002
-313149	WI	POLK	Polk - Town Of Sterling - Polk County - Ward 001
-313150	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 009
-313151	WI	MANITOWOC	Manitowoc - Town Of Kossuth - Manitowoc County - Ward 002
-313152	WI	MARATHON	Marathon - City Of Mosinee - Marathon County - Ward 005
-313153	WI	WASHINGTON	Washington - Village Of Jackson - Washington County - Ward 006
-313154	WI	WOOD	Wood - Village Of Auburndale - Wood County - Ward 001
-313155	WI	POLK	Polk - Village Of Centuria - Polk County - Ward 001
-313156	WI	SHEBOYGAN	Sheboygan - Village Of Oostburg - Sheboygan County - Ward 001
-313157	WI	ROCK	Rock - City Of Edgerton - Multiple Counties - Ward 001
-313158	WI	DODGE	Dodge - Town Of Beaver Dam - Dodge County - Ward 001
-313159	WI	CALUMET	Calumet - Town Of Brothertown - Calumet County - Ward 001
-313160	WI	COLUMBIA	Columbia - Town Of Otsego - Columbia County - Ward 001
-313161	WI	CALUMET	Calumet - Town Of Chilton - Calumet County - Ward 002
-313162	WI	SHEBOYGAN	Sheboygan - Town Of Lima - Sheboygan County - Ward 003
-313163	WI	MARATHON	Marathon - Town Of Reid - Marathon County - Ward 002
-313164	WI	OUTAGAMIE	Outagamie - Town Of Vandenbroek - Outagamie County - Ward 002
-313165	WI	BARRON	Barron - Town Of Dovre - Barron County - Ward 001
-313166	WI	ASHLAND	Ashland - City Of Ashland - Multiple Counties - Ward 008
-313167	WI	JUNEAU	Juneau - Town Of Lindina - Juneau County - Ward 001
-313168	WI	MARINETTE	Marinette - Town Of Stephenson - Marinette County - Ward 005
-313169	WI	TREMPEALEAU	Trempealeau - City Of Arcadia - Trempealeau County - Ward 003
-313170	WI	VERNON	Vernon - Town Of Coon - Vernon County - Ward 001
-313171	WI	MANITOWOC	Manitowoc - Town Of Cato - Manitowoc County - Ward 001
-313172	WI	DANE	Dane - Village Of Brooklyn - Multiple Counties - Ward 001
-313173	WI	ASHLAND	Ashland - City Of Ashland - Multiple Counties - Ward 002
-313174	WI	WALWORTH	Walworth - Town Of Lyons - Walworth County - Ward 001
-313175	WI	WAUPACA	Waupaca - City Of New London - Multiple Counties - Ward 006
-313176	WI	OUTAGAMIE	Outagamie - City Of Seymour - Outagamie County - Ward 003
-313177	WI	DANE	Dane - Town Of Christiana - Dane County - Ward 002
-313178	WI	KENOSHA	Kenosha - Village Of Bristol - Kenosha County - Ward 004
-313179	WI	BROWN	Brown - Village Of Hobart - Brown County - Ward 002
-313180	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 016
-313181	WI	KENOSHA	Kenosha - Village Of Paddock Lake - Kenosha County - Ward 003
-313182	WI	WALWORTH	Walworth - Village Of Bloomfield - Walworth County - Ward 005
-313183	WI	DODGE	Dodge - Town Of Hustisford - Dodge County - Ward 001
-313184	WI	WAUPACA	Waupaca - Town Of Farmington - Waupaca County - Ward 005
-313185	WI	DANE	Dane - City Of Madison - Dane County - Ward 097
-313186	WI	WALWORTH	Walworth - City Of Lake Geneva - Walworth County - Ward 005
-313187	WI	WALWORTH	Walworth - Village Of Fontana - Walworth County - Ward 003
-313188	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan Falls - Sheboygan County - Ward 008
-313189	WI	OUTAGAMIE	Outagamie - Town Of Vandenbroek - Outagamie County - Ward 001
-313190	WI	CHIPPEWA	Chippewa - City Of Cornell - Chippewa County - Ward 001
-313191	WI	ASHLAND	Ashland - City Of Ashland - Multiple Counties - Ward 005
-313192	WI	PORTAGE	Portage - Town Of Lanark - Portage County - Ward 002
-313193	WI	DANE	Dane - Village Of Waunakee - Dane County - Ward 002
-313194	WI	FOND DU LAC	Fond Du Lac - Town Of Calumet - Fond Du Lac County - Ward 002
-313195	WI	WALWORTH	Walworth - Town Of Delavan - Walworth County - Ward 006
-313196	WI	CLARK	Clark - Town Of Pine Valley - Clark County - Ward 002
-313197	WI	MONROE	Monroe - City Of Tomah - Monroe County - Ward 016
-313198	WI	SAUK	Sauk - Village Of West Baraboo - Sauk County - Ward 002
-313199	WI	WAUKESHA	Waukesha - Town Of Brookfield - Waukesha County - Ward 010
-313200	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 027
-313201	WI	SAUK	Sauk - Village Of Sauk City - Sauk County - Ward 004
-313202	WI	POLK	Polk - City Of Amery - Polk County - Ward 002
-313203	WI	WAUKESHA	Waukesha - Town Of Vernon - Waukesha County - Ward 006
-313204	WI	OCONTO	Oconto - Town Of Pensaukee - Oconto County - Ward 001
-313205	WI	MARATHON	Marathon - Village Of Maine - Marathon County - Ward 003
-313206	WI	PORTAGE	Portage - Town Of Stockton - Portage County - Ward 004
-313207	WI	WASHINGTON	Washington - City Of Hartford - Multiple Counties - Ward 001
-313208	WI	GRANT	Grant - Town Of Smelser - Grant County - Ward 001
-313209	WI	DANE	Dane - Town Of Middleton - Dane County - Ward 005
-313210	WI	COLUMBIA	Columbia - Town Of Scott - Columbia County - Ward 001
-313211	WI	CHIPPEWA	Chippewa - City Of Bloomer - Chippewa County - Ward 004
-313212	WI	DUNN	Dunn - Town Of Tainter - Dunn County - Ward 002
-313213	WI	ST CROIX	St. Croix - City Of New Richmond - St. Croix County - Ward 011
-313214	WI	BARRON	Barron - Town Of Prairie Lake - Barron County - Ward 002
-313215	WI	KENOSHA	Kenosha - Village Of Twin Lakes - Kenosha County - Ward 002
-313216	WI	WOOD	Wood - Town Of Milladore - Wood County - Ward 001
-313217	WI	RACINE	Racine - Town Of Waterford - Racine County - Ward 006
-313218	WI	OUTAGAMIE	Outagamie - City Of New London - Multiple Counties - Ward 001
-313219	WI	WASHINGTON	Washington - Town Of Jackson - Washington County - Ward 005
-313220	WI	ST CROIX	St. Croix - Town Of Somerset - St. Croix County - Ward 003
-313221	WI	FOND DU LAC	Fond Du Lac - Town Of Friendship - Fond Du Lac County - Ward 001
-313222	WI	SAWYER	Sawyer - Town Of Edgewater - Sawyer County - Ward 001
-313223	WI	SAUK	Sauk - Town Of Woodland - Sauk County - Ward 001
-313224	WI	OCONTO	Oconto - City Of Oconto - Oconto County - Ward 001
-313225	WI	MONROE	Monroe - City Of Tomah - Monroe County - Ward 013
-313226	WI	POLK	Polk - Village Of Osceola - Polk County - Ward 003
-313227	WI	WINNEBAGO	Winnebago - Town Of Algoma - Winnebago County - Ward 002
-313228	WI	WINNEBAGO	Winnebago - Village Of Winneconne - Winnebago County - Ward 002
-313229	WI	RACINE	Racine - Town Of Norway - Racine County - Ward 009
-313230	WI	LACROSSE	Lacrosse - Town Of Farmington - La Crosse County - Ward 002
-313231	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 022
-313232	WI	SAUK	Sauk - Town Of Fairfield - Sauk County - Ward 001
-313233	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 008
-313234	WI	MONROE	Monroe - Town Of Tomah - Monroe County - Ward 001
-313235	WI	JEFFERSON	Jefferson - Town Of Farmington - Jefferson County - Ward 002
-313236	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 016
-313237	WI	PIERCE	Pierce - Town Of Trenton - Pierce County - Ward 002
-313238	WI	MARATHON	Marathon - Town Of Rib Mountain - Marathon County - Ward 005
-313239	WI	MARATHON	Marathon - Town Of Rib Mountain - Marathon County - Ward 008
-313240	WI	BARRON	Barron - Town Of Rice Lake - Barron County - Ward 003
-313241	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 006
-313242	WI	OUTAGAMIE	Outagamie - Town Of Freedom - Outagamie County - Ward 005
-313243	WI	OZAUKEE	Ozaukee - Village Of Thiensville - Ozaukee County - Ward 001
-313244	WI	DANE	Dane - Village Of Black Earth - Dane County - Ward 001
-313245	WI	CHIPPEWA	Chippewa - Town Of Auburn - Chippewa County - Ward 001
-313246	WI	GRANT	Grant - Town Of Lima - Grant County - Ward 001
-313247	WI	RACINE	Racine - Village Of Union Grove - Racine County - Ward 005
-313248	WI	JEFFERSON	Jefferson - City Of Waterloo - Jefferson County - Ward 003
-313249	WI	MARATHON	Marathon - Village Of Rothschild - Marathon County - Ward 003
-313250	WI	DUNN	Dunn - Village Of Colfax - Dunn County - Ward 001
-313251	WI	WAUKESHA	Waukesha - Village Of Elm Grove - Waukesha County - Ward 006
-313252	WI	ROCK	Rock - Town Of Beloit - Rock County - Ward 007
-313253	WI	LACROSSE	Lacrosse - Village Of West Salem - La Crosse County - Ward 002
-313254	WI	FOND DU LAC	Fond Du Lac - Town Of Waupun - Fond Du Lac County - Ward 001
-313255	WI	MARATHON	Marathon - Village Of Athens - Marathon County - Ward 001
-313256	WI	WAUKESHA	Waukesha - Town Of Genesee - Waukesha County - Ward 006
-313257	WI	ONEIDA	Oneida - Town Of Stella - Oneida County - Ward 001
-313258	WI	WALWORTH	Walworth - Village Of Bloomfield - Walworth County - Ward 003
-313259	WI	MARATHON	Marathon - Town Of Cleveland - Marathon County - Ward 001
-313260	WI	COLUMBIA	Columbia - Town Of Newport - Columbia County - Ward 001
-313261	WI	SHEBOYGAN	Sheboygan - Village Of Random Lake - Sheboygan County - Ward 002
-313262	WI	WOOD	Wood - Village Of Port Edwards - Wood County - Ward 003
-313263	WI	IOWA	Iowa - City Of Mineral Point - Iowa County - Ward 001
-313264	WI	JEFFERSON	Jefferson - Village Of Palmyra - Jefferson County - Ward 002
-313265	WI	MANITOWOC	Manitowoc - Town Of Manitowoc Rapids - Manitowoc County - Ward 001
-313266	WI	BARRON	Barron - Town Of Stanfold - Barron County - Ward 001
-313267	WI	DODGE	Dodge - City Of Beaver Dam - Dodge County - Ward 014
-313268	WI	ADAMS	Adams - City Of Adams - Adams County - Ward 001
-313269	WI	ROCK	Rock - Village Of Footville - Rock County - Ward 001
-313270	WI	MANITOWOC	Manitowoc - Town Of Franklin - Manitowoc County - Ward 001
-313271	WI	BROWN	Brown - Town Of Scott - Brown County - Ward 001
-313272	WI	KENOSHA	Kenosha - Village Of Somers - Kenosha County - Ward 012
-313273	WI	JEFFERSON	Jefferson - Town Of Milford - Jefferson County - Ward 001
-313274	WI	BURNETT	Burnett - Village Of Webster - Burnett County - Ward 001
-313275	WI	WAUPACA	Waupaca - Town Of Fremont - Waupaca County - Ward 001
-313276	WI	KENOSHA	Kenosha - Village Of Paddock Lake - Kenosha County - Ward 001
-313277	WI	BARRON	Barron - Town Of Stanley - Barron County - Ward 001
-313278	WI	WAUKESHA	Waukesha - Town Of Waukesha - Waukesha County - Ward 008
-313279	WI	WINNEBAGO	Winnebago - Village Of Winneconne - Winnebago County - Ward 004
-313280	WI	KEWAUNEE	Kewaunee - City Of Kewaunee - Kewaunee County - Ward 002
-313281	WI	ROCK	Rock - Town Of Newark - Rock County - Ward 002
-313282	WI	MILWAUKEE	Milwaukee - City Of St. Francis - Milwaukee County - Ward 004
-313283	WI	ROCK	Rock - City Of Evansville - Rock County - Ward 004
-313284	WI	BURNETT	Burnett - Town Of Meenon - Burnett County - Ward 001
-313285	WI	SHAWANO	Shawano - Town Of Richmond - Shawano County - Ward 003
-313286	WI	LINCOLN	Lincoln - Town Of Scott - Lincoln County - Ward 002
-313287	WI	SHAWANO	Shawano - City Of Shawano - Shawano County - Ward 012
-313288	WI	RACINE	Racine - Town Of Yorkville - Racine County - Ward 002
-313289	WI	WOOD	Wood - Town Of Grand Rapids - Wood County - Ward 002
-313290	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan Falls - Sheboygan County - Ward 007
-313291	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 024
-313292	WI	MARATHON	Marathon - Town Of Hull - Marathon County - Ward 001
-313293	WI	ST CROIX	St. Croix - Village Of Hammond - St. Croix County - Ward 001
-313294	WI	PIERCE	Pierce - Village Of Spring Valley - Multiple Counties - Ward 002
-313295	WI	SHEBOYGAN	Sheboygan - Town Of Lyndon - Sheboygan County - Ward 001
-313296	WI	CALUMET	Calumet - Town Of Brothertown - Calumet County - Ward 002
-313297	WI	VERNON	Vernon - Town Of Harmony - Vernon County - Ward 001
-313298	WI	OZAUKEE	Ozaukee - Village Of Saukville - Ozaukee County - Ward 002
-313299	WI	MILWAUKEE	Milwaukee - Village Of Hales Corners - Milwaukee County - Ward 001
-313300	WI	COLUMBIA	Columbia - City Of Columbus - Multiple Counties - Ward 002
-313301	WI	OUTAGAMIE	Outagamie - City Of Seymour - Outagamie County - Ward 002
-313302	WI	PEPIN	Pepin - Village Of Pepin - Pepin County - Ward 001
-313303	WI	JUNEAU	Juneau - Town Of Armenia - Juneau County - Ward 001
-313304	WI	FOND DU LAC	Fond Du Lac - Town Of Ripon - Fond Du Lac County - Ward 001
-313305	WI	BARRON	Barron - Town Of Bear Lake - Barron County - Ward 001
-313306	WI	ST CROIX	St. Croix - Town Of Erin Prairie - St. Croix County - Ward 001
-313307	WI	ONEIDA	Oneida - Town Of Minocqua - Oneida County - Ward 002
-313308	WI	KEWAUNEE	Kewaunee - Town Of West Kewaunee - Kewaunee County - Ward 001
-313309	WI	ASHLAND	Ashland - Town Of Gingles - Ashland County - Ward 001
-313310	WI	GRANT	Grant - Village Of Cassville - Grant County - Ward 001
-313311	WI	KENOSHA	Kenosha - Village Of Silver Lake - Kenosha County - Ward 002
-313312	WI	PIERCE	Pierce - Village Of Ellsworth - Pierce County - Ward 004
-313313	WI	DODGE	Dodge - City Of Juneau - Dodge County - Ward 002
-313314	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 013
-313315	WI	DODGE	Dodge - Village Of Reeseville - Dodge County - Ward 001
-313316	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 205
-313317	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 018
-313318	WI	COLUMBIA	Columbia - City Of Lodi - Columbia County - Ward 002
-313319	WI	MENOMINEE	Menominee - Town Of Menominee - Menominee County - Ward 005
-313320	WI	DOUGLAS	Douglas - Town Of Brule - Douglas County - Ward 001
-313321	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 063
-313322	WI	DODGE	Dodge - City Of Mayville - Dodge County - Ward 006
-313323	WI	CHIPPEWA	Chippewa - City Of Stanley - Multiple Counties - Ward 001
-313324	WI	WAUKESHA	Waukesha - City Of Oconomowoc - Waukesha County - Ward 011
-313325	WI	LACROSSE	Lacrosse - Town Of Campbell - La Crosse County - Ward 006
-313326	WI	WAUKESHA	Waukesha - City Of Oconomowoc - Waukesha County - Ward 005
-313327	WI	JEFFERSON	Jefferson - Town Of Jefferson - Jefferson County - Ward 001
-313328	WI	WAUKESHA	Waukesha - Town Of Waukesha - Waukesha County - Ward 012
-313329	WI	JEFFERSON	Jefferson - Town Of Jefferson - Jefferson County - Ward 003
-313330	WI	KENOSHA	Kenosha - Town Of Salem - Kenosha County - Ward 009
-313331	WI	DANE	Dane - Village Of Maple Bluff - Dane County - Ward 001
-313332	WI	SAWYER	Sawyer - Town Of Bass Lake - Sawyer County - Ward 002
-313333	WI	RUSK	Rusk - Town Of Stubbs - Rusk County - Ward 001
-313334	WI	WAUKESHA	Waukesha - Village Of Pewaukee - Waukesha County - Ward 007
-313335	WI	WAUPACA	Waupaca - City Of Weyauwega - Waupaca County - Ward 001
-313336	WI	KENOSHA	Kenosha - Village Of Silver Lake - Kenosha County - Ward 001
-313337	WI	IOWA	Iowa - Town Of Mineral Point - Iowa County - Ward 001
-313338	WI	WASHINGTON	Washington - Town Of Jackson - Washington County - Ward 003
-313339	WI	ST CROIX	St. Croix - Town Of St. Joseph - St. Croix County - Ward 001
-313340	WI	DANE	Dane - Town Of Dunn - Dane County - Ward 002
-313341	WI	RACINE	Racine - Town Of Waterford - Racine County - Ward 002
-313342	WI	CALUMET	Calumet - Town Of New Holstein - Calumet County - Ward 002
-313343	WI	ASHLAND	Ashland - City Of Ashland - Multiple Counties - Ward 009
-313344	WI	BARRON	Barron - City Of Rice Lake - Barron County - Ward 011
-313345	WI	WALWORTH	Walworth - Town Of Sugar Creek - Walworth County - Ward 001
-313346	WI	BROWN	Brown - City Of Green Bay - Brown County - Ward 026
-313347	WI	KENOSHA	Kenosha - Town Of Salem - Kenosha County - Ward 008
-313348	WI	BUFFALO	Buffalo - Town Of Naples - Buffalo County - Ward 001
-313349	WI	VERNON	Vernon - Town Of Webster - Vernon County - Ward 001
-313350	WI	LAFAYETTE	Lafayette - Town Of Willow Springs - Lafayette County - Ward 001
-313351	WI	MANITOWOC	Manitowoc - Village Of Francis Creek - Manitowoc County - Ward 001
-313352	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 012
-313353	WI	PORTAGE	Portage - Town Of Belmont - Portage County - Ward 001
-313354	WI	DANE	Dane - Town Of Verona - Dane County - Ward 002
-313355	WI	RICHLAND	Richland - Town Of Ithaca - Richland County - Ward 001
-313356	WI	CHIPPEWA	Chippewa - Town Of Anson - Chippewa County - Ward 002
-313357	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 021
-313358	WI	JEFFERSON	Jefferson - Village Of Sullivan - Jefferson County - Ward 001
-313359	WI	WAUPACA	Waupaca - City Of Waupaca - Waupaca County - Ward 004
-313360	WI	CALUMET	Calumet - City Of New Holstein - Calumet County - Ward 005
-313361	WI	DOUGLAS	Douglas - Town Of Amnicon - Douglas County - Ward 002
-313362	WI	KEWAUNEE	Kewaunee - Town Of Montpelier - Kewaunee County - Ward 001
-313363	WI	FOND DU LAC	Fond Du Lac - Town Of Ashford - Fond Du Lac County - Ward 003
-313364	WI	PRICE	Price - Village Of Prentice - Price County - Ward 001
-313365	WI	DANE	Dane - Town Of Sun Prairie - Dane County - Ward 002
-313366	WI	DODGE	Dodge - Town Of Herman - Dodge County - Ward 001
-313367	WI	EAU CLAIRE	Eau Claire - Town Of Washington - Eau Claire County - Ward 002
-313368	WI	OUTAGAMIE	Outagamie - Town Of Black Creek - Outagamie County - Ward 001
-313369	WI	PORTAGE	Portage - Town Of Grant - Portage County - Ward 003
-313370	WI	WAUPACA	Waupaca - Town Of Farmington - Waupaca County - Ward 004
-313371	WI	WASHINGTON	Washington - Village Of Slinger - Washington County - Ward 005
-313372	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 020
-313373	WI	SAUK	Sauk - City Of Reedsburg - Sauk County - Ward 007
-313374	WI	ST CROIX	St. Croix - Town Of Hudson - St. Croix County - Ward 001
-313375	WI	WASHINGTON	Washington - Town Of Hartford - Washington County - Ward 004
-313376	WI	MILWAUKEE	Milwaukee - City Of St. Francis - Milwaukee County - Ward 007
-313377	WI	FOND DU LAC	Fond Du Lac - Town Of Lamartine - Fond Du Lac County - Ward 002
-313378	WI	DODGE	Dodge - City Of Mayville - Dodge County - Ward 003
-313379	WI	RICHLAND	Richland - Town Of Dayton - Richland County - Ward 001
-313380	WI	ADAMS	Adams - Town Of Strongs Prairie - Adams County - Ward 001
-313381	WI	OCONTO	Oconto - City Of Oconto Falls - Oconto County - Ward 005
-313382	WI	BURNETT	Burnett - Village Of Grantsburg - Burnett County - Ward 001
-313383	WI	WALWORTH	Walworth - Village Of East Troy - Walworth County - Ward 003
-313384	WI	TAYLOR	Taylor - Town Of Greenwood - Taylor County - Ward 001
-313385	WI	OUTAGAMIE	Outagamie - Town Of Bovina - Outagamie County - Ward 001
-313386	WI	CALUMET	Calumet - Town Of Stockbridge - Calumet County - Ward 002
-313387	WI	MARATHON	Marathon - Town Of Bevent - Marathon County - Ward 002
-313388	WI	CALUMET	Calumet - City Of Appleton - Multiple Counties - Ward 045
-313389	WI	PORTAGE	Portage - Town Of Buena Vista - Portage County - Ward 002
-313390	WI	OZAUKEE	Ozaukee - City Of Cedarburg - Ozaukee County - Ward 003
-313391	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 010
-313392	WI	FOND DU LAC	Fond Du Lac - Town Of Lamartine - Fond Du Lac County - Ward 001
-313393	WI	RICHLAND	Richland - Town Of Buena Vista - Richland County - Ward 002
-313394	WI	FOND DU LAC	Fond Du Lac - City Of Waupun - Multiple Counties - Ward 011
-313395	WI	SAUK	Sauk - Town Of Delton - Sauk County - Ward 003
-313396	WI	SHAWANO	Shawano - City Of Shawano - Shawano County - Ward 004
-313397	WI	ROCK	Rock - Village Of Clinton - Rock County - Ward 001
-313398	WI	FOND DU LAC	Fond Du Lac - Town Of Ashford - Fond Du Lac County - Ward 001
-313399	WI	JUNEAU	Juneau - Town Of Summit - Juneau County - Ward 001
-313400	WI	MARATHON	Marathon - Town Of Spencer - Marathon County - Ward 001
-313401	WI	WAUPACA	Waupaca - City Of New London - Multiple Counties - Ward 007
-313402	WI	POLK	Polk - Town Of Eureka - Polk County - Ward 002
-313403	WI	VERNON	Vernon - Town Of Viroqua - Vernon County - Ward 002
-313404	WI	SHEBOYGAN	Sheboygan - Village Of Kohler - Sheboygan County - Ward 003
-313405	WI	OZAUKEE	Ozaukee - Town Of Grafton - Ozaukee County - Ward 002
-313406	WI	WOOD	Wood - City Of Nekoosa - Wood County - Ward 001
-313407	WI	DOUGLAS	Douglas - Town Of Bennett - Douglas County - Ward 001
-313408	WI	FOND DU LAC	Fond Du Lac - City Of Ripon - Fond Du Lac County - Ward 001
-313409	WI	WAUKESHA	Waukesha - Village Of Chenequa - Waukesha County - Ward 001
-313410	WI	SHAWANO	Shawano - Town Of Angelica - Shawano County - Ward 002
-313411	WI	DOUGLAS	Douglas - Town Of Parkland - Douglas County - Ward 001
-313412	WI	LACROSSE	Lacrosse - Town Of Greenfield - La Crosse County - Ward 001
-313413	WI	BROWN	Brown - Town Of Lawrence - Brown County - Ward 002
-313414	WI	BARRON	Barron - City Of Chetek - Barron County - Ward 001
-313415	WI	WASHINGTON	Washington - Village Of Kewaskum - Multiple Counties - Ward 003
-313416	WI	RACINE	Racine - Town Of Burlington - Racine County - Ward 009
-313417	WI	MARATHON	Marathon - Town Of Cleveland - Marathon County - Ward 002
-313418	WI	MARATHON	Marathon - Town Of Mosinee - Marathon County - Ward 003
-313419	WI	ST CROIX	St. Croix - Town Of Eau Galle - St. Croix County - Ward 002
-313420	WI	SHAWANO	Shawano - Town Of Wescott - Shawano County - Ward 004
-313421	WI	MARATHON	Marathon - City Of Schofield - Marathon County - Ward 003
-313422	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 021
-313423	WI	MARINETTE	Marinette - Town Of Grover - Marinette County - Ward 001
-313424	WI	DANE	Dane - Village Of Mazomanie - Dane County - Ward 001
-313425	WI	ROCK	Rock - Village Of Orfordville - Rock County - Ward 002
-313426	WI	GRANT	Grant - Village Of Bloomington - Grant County - Ward 001
-313427	WI	DOUGLAS	Douglas - Town Of Maple - Douglas County - Ward 001
-313428	WI	DOUGLAS	Douglas - Village Of Poplar - Douglas County - Ward 001
-313429	WI	ROCK	Rock - Village Of Clinton - Rock County - Ward 002
-313430	WI	CRAWFORD	Crawford - Village Of Soldiers Grove - Crawford County - Ward 001
-313431	WI	DUNN	Dunn - Town Of Tainter - Dunn County - Ward 003
-313432	WI	DANE	Dane - Village Of Belleville - Multiple Counties - Ward 002
-313433	WI	DANE	Dane - Town Of Madison - Dane County - Ward 001
-313434	WI	MILWAUKEE	Milwaukee - Village Of West Milwaukee - Milwaukee County - Ward 004
-313435	WI	DUNN	Dunn - Town Of New Haven - Dunn County - Ward 001
-313436	WI	WINNEBAGO	Winnebago - Town Of Wolf River - Winnebago County - Ward 002
-313437	WI	WAUSHARA	Waushara - Town Of Dakota - Waushara County - Ward 001
-313438	WI	BUFFALO	Buffalo - City Of Fountain City - Buffalo County - Ward 001
-313439	WI	WAUPACA	Waupaca - City Of Waupaca - Waupaca County - Ward 002
-313440	WI	CRAWFORD	Crawford - Village Of Wauzeka - Crawford County - Ward 001
-313441	WI	WAUKESHA	Waukesha - Village Of Hartland - Waukesha County - Ward 005
-313442	WI	MILWAUKEE	Milwaukee - Village Of West Milwaukee - Milwaukee County - Ward 003
-313443	WI	GREEN LAKE	Green Lake - City Of Berlin - Multiple Counties - Ward 003
-313444	WI	DODGE	Dodge - Town Of Beaver Dam - Dodge County - Ward 002
-313445	WI	DODGE	Dodge - City Of Horicon - Dodge County - Ward 004
-313446	WI	DANE	Dane - Town Of Montrose - Dane County - Ward 001
-313447	WI	POLK	Polk - Town Of Balsam Lake - Polk County - Ward 002
-313448	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 005
-313449	WI	RACINE	Racine - Town Of Norway - Racine County - Ward 008
-313450	WI	JUNEAU	Juneau - Town Of Lisbon - Juneau County - Ward 001
-313451	WI	MARATHON	Marathon - Town Of Wausau - Marathon County - Ward 003
-313452	WI	PIERCE	Pierce - Town Of Union - Pierce County - Ward 001
-313453	WI	DANE	Dane - Village Of Cottage Grove - Dane County - Ward 007
-313454	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 294
-313455	WI	WAUKESHA	Waukesha - Village Of Mukwonago - Multiple Counties - Ward 008
-313456	WI	DANE	Dane - Village Of Waunakee - Dane County - Ward 007
-313457	WI	MONROE	Monroe - Town Of Glendale - Monroe County - Ward 001
-313458	WI	WAUSHARA	Waushara - Town Of Coloma - Waushara County - Ward 001
-313459	WI	GRANT	Grant - City Of Boscobel - Grant County - Ward 004
-313460	WI	GREEN	Green - Town Of Jefferson - Green County - Ward 001
-313461	WI	MARATHON	Marathon - Town Of Knowlton - Marathon County - Ward 002
-313462	WI	ST CROIX	St. Croix - Town Of Kinnickinnic - St. Croix County - Ward 003
-313463	WI	ST CROIX	St. Croix - City Of New Richmond - St. Croix County - Ward 002
-313464	WI	GRANT	Grant - Town Of Beetown - Grant County - Ward 001
-313465	WI	POLK	Polk - Town Of Clear Lake - Polk County - Ward 001
-313466	WI	SHEBOYGAN	Sheboygan - Town Of Mitchell - Sheboygan County - Ward 001
-313467	WI	SAWYER	Sawyer - Town Of Hayward - Sawyer County - Ward 003
-313468	WI	BARRON	Barron - Town Of Lakeland - Barron County - Ward 002
-313469	WI	MILWAUKEE	Milwaukee - City Of St. Francis - Milwaukee County - Ward 001
-313470	WI	FOND DU LAC	Fond Du Lac - Town Of Friendship - Fond Du Lac County - Ward 002
-313471	WI	POLK	Polk - Town Of Garfield - Polk County - Ward 002
-313472	WI	CLARK	Clark - Town Of Unity - Clark County - Ward 001
-313473	WI	DODGE	Dodge - Village Of Randolph - Multiple Counties - Ward 002
-313474	WI	POLK	Polk - Town Of Garfield - Polk County - Ward 001
-313475	WI	BROWN	Brown - City Of De Pere - Brown County - Ward 004
-313476	WI	WALWORTH	Walworth - City Of Elkhorn - Walworth County - Ward 007
-313477	WI	KEWAUNEE	Kewaunee - City Of Algoma - Kewaunee County - Ward 001
-313478	WI	SAUK	Sauk - Town Of Bear Creek - Sauk County - Ward 001
-313479	WI	ADAMS	Adams - Town Of Strongs Prairie - Adams County - Ward 002
-313480	WI	WASHINGTON	Washington - City Of Hartford - Multiple Counties - Ward 005
-313481	WI	MANITOWOC	Manitowoc - Village Of Mishicot - Manitowoc County - Ward 002
-313482	WI	BURNETT	Burnett - Town Of Oakland - Burnett County - Ward 001
-313483	WI	WAUKESHA	Waukesha - Town Of Genesee - Waukesha County - Ward 002
-313484	WI	WAUKESHA	Waukesha - City Of Oconomowoc - Waukesha County - Ward 009
-313485	WI	OZAUKEE	Ozaukee - Town Of Saukville - Ozaukee County - Ward 003
-313486	WI	DODGE	Dodge - Village Of Randolph - Multiple Counties - Ward 001
-313487	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 010
-313488	WI	CLARK	Clark - Town Of Sherman - Clark County - Ward 001
-313489	WI	MARATHON	Marathon - Town Of Rib Mountain - Marathon County - Ward 009
-313490	WI	MARATHON	Marathon - Village Of Weston - Marathon County - Ward 009
-313491	WI	WAUKESHA	Waukesha - Village Of Hartland - Waukesha County - Ward 013
-313492	WI	BARRON	Barron - Village Of Almena - Barron County - Ward 001
-313493	WI	CALUMET	Calumet - Town Of Woodville - Calumet County - Ward 001
-313494	WI	KENOSHA	Kenosha - Village Of Twin Lakes - Kenosha County - Ward 006
-313495	WI	MONROE	Monroe - Town Of Oakdale - Monroe County - Ward 001
-313496	WI	DANE	Dane - Town Of Pleasant Springs - Dane County - Ward 004
-313497	WI	MARATHON	Marathon - Town Of Plover - Marathon County - Ward 001
-313498	WI	KENOSHA	Kenosha - Town Of Randall - Kenosha County - Ward 002
-313499	WI	PORTAGE	Portage - Town Of Hull - Portage County - Ward 007
-313500	WI	PORTAGE	Portage - Town Of Stockton - Portage County - Ward 001
-313501	WI	WAUSHARA	Waushara - Town Of Rose - Waushara County - Ward 001
-313502	WI	CLARK	Clark - Town Of Withee - Clark County - Ward 001
-313503	WI	POLK	Polk - Town Of Apple River - Polk County - Ward 002
-313504	WI	SHAWANO	Shawano - Village Of Birnamwood - Multiple Counties - Ward 001
-313505	WI	WAUPACA	Waupaca - Town Of Weyauwega - Waupaca County - Ward 001
-313506	WI	POLK	Polk - Town Of Georgetown - Polk County - Ward 002
-313507	WI	WASHBURN	Washburn - City Of Spooner - Washburn County - Ward 001
-313508	WI	OUTAGAMIE	Outagamie - Town Of Freedom - Outagamie County - Ward 004
-313509	WI	WASHINGTON	Washington - Village Of Kewaskum - Multiple Counties - Ward 004
-313510	WI	PORTAGE	Portage - Village Of Whiting - Portage County - Ward 003
-313511	WI	ST CROIX	St. Croix - City Of New Richmond - St. Croix County - Ward 009
-313512	WI	WAUKESHA	Waukesha - Village Of Hartland - Waukesha County - Ward 003
-313513	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 291
-313514	WI	FOND DU LAC	Fond Du Lac - Town Of Taycheedah - Fond Du Lac County - Ward 003
-313515	WI	DANE	Dane - Town Of Montrose - Dane County - Ward 002
-313516	WI	ST CROIX	St. Croix - Town Of Troy - St. Croix County - Ward 004
-313517	WI	ST CROIX	St. Croix - Town Of Cylon - St. Croix County - Ward 001
-313518	WI	WAUPACA	Waupaca - City Of New London - Multiple Counties - Ward 012
-313519	WI	MONROE	Monroe - City Of Tomah - Monroe County - Ward 005
-313520	WI	OUTAGAMIE	Outagamie - Town Of Buchanan - Outagamie County - Ward 003
-313521	WI	IOWA	Iowa - City Of Dodgeville - Iowa County - Ward 008
-313522	WI	BROWN	Brown - Village Of Howard - Multiple Counties - Ward 006
-313523	WI	ST CROIX	St. Croix - Town Of Emerald - St. Croix County - Ward 001
-313524	WI	DOUGLAS	Douglas - Village Of Solon Springs - Douglas County - Ward 001
-313525	WI	COLUMBIA	Columbia - City Of Columbus - Multiple Counties - Ward 007
-313526	WI	OUTAGAMIE	Outagamie - Town Of Freedom - Outagamie County - Ward 001
-313527	WI	CRAWFORD	Crawford - Village Of Gays Mills - Crawford County - Ward 001
-313528	WI	LANGLADE	Langlade - Town Of Ainsworth - Langlade County - Ward 001
-313529	WI	BARRON	Barron - City Of Barron - Barron County - Ward 004
-313530	WI	COLUMBIA	Columbia - Town Of Wyocena - Columbia County - Ward 001
-313531	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 004
-313532	WI	MILWAUKEE	Milwaukee - Village Of Bayside - Multiple Counties - Ward 001
-313533	WI	ADAMS	Adams - Village Of Friendship - Adams County - Ward 001
-313534	WI	MARATHON	Marathon - Village Of Stratford - Marathon County - Ward 002
-313535	WI	MANITOWOC	Manitowoc - Town Of Franklin - Manitowoc County - Ward 002
-313536	WI	OCONTO	Oconto - Town Of Little River - Oconto County - Ward 001
-313537	WI	MILWAUKEE	Milwaukee - City Of St. Francis - Milwaukee County - Ward 006
-313538	WI	SAWYER	Sawyer - City Of Hayward - Sawyer County - Ward 004
-313539	WI	MARATHON	Marathon - Town Of Hewitt - Marathon County - Ward 001
-313540	WI	ADAMS	Adams - Town Of Quincy - Adams County - Ward 001
-313541	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 008
-313542	WI	OZAUKEE	Ozaukee - Village Of Saukville - Ozaukee County - Ward 006
-313543	WI	JACKSON	Jackson - Town Of Adams - Jackson County - Ward 001
-313544	WI	BARRON	Barron - Town Of Vance Creek - Barron County - Ward 001
-313545	WI	BARRON	Barron - Town Of Sioux Creek - Barron County - Ward 001
-313546	WI	CLARK	Clark - Town Of Colby - Clark County - Ward 001
-313547	WI	LAFAYETTE	Lafayette - Village Of Blanchardville - Multiple Counties - Ward 001
-313548	WI	RACINE	Racine - City Of Burlington - Multiple Counties - Ward 003
-313549	WI	CLARK	Clark - Town Of Thorp - Clark County - Ward 001
-313550	WI	TREMPEALEAU	Trempealeau - Village Of Trempealeau - Trempealeau County - Ward 002
-313551	WI	WALWORTH	Walworth - Town Of Richmond - Walworth County - Ward 001
-313552	WI	WALWORTH	Walworth - Town Of Sugar Creek - Walworth County - Ward 004
-313553	WI	PRICE	Price - Town Of Lake - Price County - Ward 001
-313554	WI	GRANT	Grant - Town Of Potosi - Grant County - Ward 001
-313555	WI	MANITOWOC	Manitowoc - Village Of Cleveland - Manitowoc County - Ward 002
-313556	WI	VERNON	Vernon - Town Of Viroqua - Vernon County - Ward 003
-313557	WI	WINNEBAGO	Winnebago - Town Of Nekimi - Winnebago County - Ward 001
-313558	WI	PIERCE	Pierce - Town Of Maiden Rock - Pierce County - Ward 001
-313559	WI	DANE	Dane - Town Of Oregon - Dane County - Ward 002
-313560	WI	DODGE	Dodge - Town Of Lomira - Dodge County - Ward 002
-313561	WI	OZAUKEE	Ozaukee - City Of Cedarburg - Ozaukee County - Ward 007
-313562	WI	OUTAGAMIE	Outagamie - City Of Kaukauna - Multiple Counties - Ward 003
-313563	WI	RACINE	Racine - City Of Burlington - Multiple Counties - Ward 005
-313564	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 023
-313565	WI	LACROSSE	Lacrosse - Village Of West Salem - La Crosse County - Ward 005
-313566	WI	BAYFIELD	Bayfield - Town Of Washburn - Bayfield County - Ward 001
-313567	WI	PRICE	Price - Town Of Worcester - Price County - Ward 002
-313568	WI	FOND DU LAC	Fond Du Lac - Village Of Mount Calvary - Fond Du Lac County - Ward 001
-313569	WI	COLUMBIA	Columbia - Village Of Pardeeville - Columbia County - Ward 002
-313570	WI	BARRON	Barron - Town Of Arland - Barron County - Ward 001
-313571	WI	OUTAGAMIE	Outagamie - City Of Seymour - Outagamie County - Ward 001
-313572	WI	BARRON	Barron - Town Of Oak Grove - Barron County - Ward 001
-313573	WI	BROWN	Brown - Village Of Bellevue - Brown County - Ward 010
-313574	WI	OUTAGAMIE	Outagamie - Town Of Maple Creek - Outagamie County - Ward 001
-313575	WI	WALWORTH	Walworth - Village Of Genoa City - Multiple Counties - Ward 001
-313576	WI	WASHINGTON	Washington - Town Of Addison - Washington County - Ward 002
-313577	WI	POLK	Polk - Village Of Frederic - Polk County - Ward 001
-313578	WI	SHEBOYGAN	Sheboygan - Village Of Elkhart Lake - Sheboygan County - Ward 001
-313579	WI	GREEN	Green - Village Of Monticello - Green County - Ward 001
-313580	WI	RACINE	Racine - Town Of Dover - Racine County - Ward 003
-313581	WI	ROCK	Rock - Village Of Orfordville - Rock County - Ward 001
-313582	WI	WASHBURN	Washburn - City Of Spooner - Washburn County - Ward 003
-313583	WI	SHAWANO	Shawano - City Of Shawano - Shawano County - Ward 008
-313584	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 011
-313585	WI	DODGE	Dodge - Village Of Neosho - Dodge County - Ward 001
-313586	WI	LACROSSE	Lacrosse - Town Of Washington - La Crosse County - Ward 001
-313587	WI	PORTAGE	Portage - Town Of Linwood - Portage County - Ward 001
-313588	WI	WALWORTH	Walworth - Village Of Darien - Walworth County - Ward 001
-313589	WI	LACROSSE	Lacrosse - Town Of Shelby - La Crosse County - Ward 006
-313590	WI	VILAS	Vilas - Town Of Winchester - Vilas County - Ward 001
-313591	WI	MILWAUKEE	Milwaukee - City Of St. Francis - Milwaukee County - Ward 005
-313592	WI	MARATHON	Marathon - Town Of Elderon - Marathon County - Ward 001
-313593	WI	LACROSSE	Lacrosse - Town Of Campbell - La Crosse County - Ward 004
-313594	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 009
-313595	WI	VILAS	Vilas - Town Of Lac Du Flambeau - Vilas County - Ward 003
-313596	WI	WAUPACA	Waupaca - City Of Waupaca - Waupaca County - Ward 010
-313597	WI	SHEBOYGAN	Sheboygan - Village Of Oostburg - Sheboygan County - Ward 004
-313598	WI	ST CROIX	St. Croix - Town Of Stanton - St. Croix County - Ward 001
-313599	WI	WAUKESHA	Waukesha - Village Of Lannon - Waukesha County - Ward 001
-313600	WI	LACROSSE	Lacrosse - Town Of Shelby - La Crosse County - Ward 001
-313601	WI	IOWA	Iowa - Village Of Ridgeway - Iowa County - Ward 001
-313602	WI	COLUMBIA	Columbia - Town Of Hampden - Columbia County - Ward 001
-313603	WI	BARRON	Barron - Town Of Turtle Lake - Barron County - Ward 001
-313604	WI	ST CROIX	St. Croix - Town Of Hudson - St. Croix County - Ward 002
-313605	WI	CALUMET	Calumet - Town Of Charlestown - Calumet County - Ward 001
-313606	WI	DOUGLAS	Douglas - Town Of Oakland - Douglas County - Ward 001
-313607	WI	DANE	Dane - Town Of Mazomanie - Dane County - Ward 002
-313608	WI	ROCK	Rock - City Of Evansville - Rock County - Ward 002
-313609	WI	COLUMBIA	Columbia - City Of Wisconsin Dells - Multiple Counties - Ward 003
-313610	WI	MARINETTE	Marinette - Town Of Stephenson - Marinette County - Ward 004
-313611	WI	ST CROIX	St. Croix - City Of Hudson - St. Croix County - Ward 008
-313612	WI	JUNEAU	Juneau - Town Of Necedah - Juneau County - Ward 003
-313613	WI	MARATHON	Marathon - Town Of Marathon - Marathon County - Ward 001
-313614	WI	GRANT	Grant - Town Of Jamestown - Grant County - Ward 002
-313615	WI	OZAUKEE	Ozaukee - Town Of Belgium - Ozaukee County - Ward 003
-313616	WI	SHAWANO	Shawano - Town Of Belle Plaine - Shawano County - Ward 001
-313617	WI	MANITOWOC	Manitowoc - Town Of Kossuth - Manitowoc County - Ward 003
-313618	WI	DANE	Dane - Town Of Christiana - Dane County - Ward 001
-313619	WI	WASHBURN	Washburn - City Of Spooner - Washburn County - Ward 002
-313620	WI	MILWAUKEE	Milwaukee - City Of St. Francis - Milwaukee County - Ward 003
-313621	WI	KENOSHA	Kenosha - Town Of Salem - Kenosha County - Ward 004
-313622	WI	WAUKESHA	Waukesha - Village Of Sussex - Waukesha County - Ward 007
-313623	WI	MONROE	Monroe - City Of Tomah - Monroe County - Ward 001
-313624	WI	GRANT	Grant - City Of Lancaster - Grant County - Ward 004
-313625	WI	RACINE	Racine - Village Of Caledonia - Racine County - Ward 019
-313626	WI	DODGE	Dodge - Town Of Portland - Dodge County - Ward 001
-313627	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 004
-313628	WI	SAUK	Sauk - City Of Baraboo - Sauk County - Ward 014
-313629	WI	KENOSHA	Kenosha - Town Of Brighton - Kenosha County - Ward 002
-313630	WI	WAUKESHA	Waukesha - Town Of Lisbon - Waukesha County - Ward 004
-313631	WI	POLK	Polk - City Of Amery - Polk County - Ward 001
-313632	WI	RICHLAND	Richland - Town Of Marshall - Richland County - Ward 001
-313633	WI	BARRON	Barron - Town Of Clinton - Barron County - Ward 001
-313634	WI	MANITOWOC	Manitowoc - City Of Kiel - Multiple Counties - Ward 002
-313635	WI	ROCK	Rock - Town Of Milton - Rock County - Ward 003
-313636	WI	SAUK	Sauk - City Of Baraboo - Sauk County - Ward 002
-313637	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 013
-313638	WI	JUNEAU	Juneau - Town Of Kildare - Juneau County - Ward 001
-313639	WI	SAUK	Sauk - Town Of Winfield - Sauk County - Ward 001
-313640	WI	FOND DU LAC	Fond Du Lac - Village Of North Fond Du Lac - Fond Du Lac County - Ward 007
-313641	WI	SHAWANO	Shawano - City Of Shawano - Shawano County - Ward 002
-313642	WI	OUTAGAMIE	Outagamie - Town Of Freedom - Outagamie County - Ward 002
-313643	WI	RUSK	Rusk - Town Of Dewey - Rusk County - Ward 001
-313644	WI	FOND DU LAC	Fond Du Lac - Village Of Campbellsport - Fond Du Lac County - Ward 001
-313645	WI	OUTAGAMIE	Outagamie - Town Of Ellington - Outagamie County - Ward 003
-313646	WI	SAUK	Sauk - Town Of La Valle - Sauk County - Ward 001
-313647	WI	DODGE	Dodge - Town Of Theresa - Dodge County - Ward 002
-313648	WI	RACINE	Racine - Town Of Yorkville - Racine County - Ward 003
-313649	WI	OUTAGAMIE	Outagamie - Village Of Kimberly - Outagamie County - Ward 005
-313650	WI	ST CROIX	St. Croix - Town Of Star Prairie - St. Croix County - Ward 002
-313651	WI	ADAMS	Adams - Town Of Rome - Adams County - Ward 003
-313652	WI	WAUKESHA	Waukesha - Village Of Butler - Waukesha County - Ward 001
-313653	WI	RACINE	Racine - Town Of Burlington - Racine County - Ward 006
-313654	WI	OUTAGAMIE	Outagamie - Town Of Kaukauna - Outagamie County - Ward 001
-313655	WI	LACROSSE	Lacrosse - Town Of Bangor - La Crosse County - Ward 001
-313656	WI	OUTAGAMIE	Outagamie - City Of New London - Multiple Counties - Ward 002
-313657	WI	OUTAGAMIE	Outagamie - Town Of Grand Chute - Outagamie County - Ward 002
-313658	WI	RACINE	Racine - Village Of Waterford - Racine County - Ward 003
-313659	WI	EAU CLAIRE	Eau Claire - Town Of Pleasant Valley - Eau Claire County - Ward 002
-313660	WI	RACINE	Racine - City Of Burlington - Multiple Counties - Ward 001
-313661	WI	TREMPEALEAU	Trempealeau - Village Of Eleva - Trempealeau County - Ward 001
-313662	WI	GREEN	Green - Town Of Jordan - Green County - Ward 001
-313663	WI	WAUKESHA	Waukesha - Town Of Waukesha - Waukesha County - Ward 002
-313664	WI	PIERCE	Pierce - Village Of Plum City - Pierce County - Ward 001
-313665	WI	CHIPPEWA	Chippewa - Village Of Boyd - Chippewa County - Ward 001
-313666	WI	MARATHON	Marathon - Town Of Frankfort - Marathon County - Ward 001
-313667	WI	ST CROIX	St. Croix - Village Of Baldwin - St. Croix County - Ward 003
-313668	WI	TREMPEALEAU	Trempealeau - City Of Arcadia - Trempealeau County - Ward 001
-313669	WI	RACINE	Racine - Village Of Waterford - Racine County - Ward 006
-313670	WI	MARATHON	Marathon - Town Of Easton - Marathon County - Ward 001
-313671	WI	MARQUETTE	Marquette - Town Of Crystal Lake - Marquette County - Ward 001
-313672	WI	WALWORTH	Walworth - Town Of Walworth - Walworth County - Ward 002
-313673	WI	COLUMBIA	Columbia - Village Of Wyocena - Columbia County - Ward 001
-313674	WI	OUTAGAMIE	Outagamie - Town Of Ellington - Outagamie County - Ward 004
-313675	WI	WALWORTH	Walworth - City Of Whitewater - Multiple Counties - Ward 005
-313676	WI	CHIPPEWA	Chippewa - Town Of Anson - Chippewa County - Ward 003
-313677	WI	FOND DU LAC	Fond Du Lac - Village Of North Fond Du Lac - Fond Du Lac County - Ward 004
-313678	WI	RACINE	Racine - Village Of Waterford - Racine County - Ward 007
-313679	WI	SHEBOYGAN	Sheboygan - Town Of Plymouth - Sheboygan County - Ward 003
-313680	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 007
-313681	WI	SHEBOYGAN	Sheboygan - Town Of Mitchell - Sheboygan County - Ward 002
-313682	WI	WALWORTH	Walworth - City Of Lake Geneva - Walworth County - Ward 004
-313683	WI	DOUGLAS	Douglas - Town Of Hawthorne - Douglas County - Ward 001
-313684	WI	GRANT	Grant - Village Of Hazel Green - Multiple Counties - Ward 001
-313685	WI	BUFFALO	Buffalo - City Of Mondovi - Buffalo County - Ward 002
-313686	WI	COLUMBIA	Columbia - Town Of Columbus - Columbia County - Ward 001
-313687	WI	DANE	Dane - Village Of Waunakee - Dane County - Ward 006
-313688	WI	WAUKESHA	Waukesha - Village Of North Prairie - Waukesha County - Ward 001
-313689	WI	DANE	Dane - Town Of Medina - Dane County - Ward 001
-313690	WI	OUTAGAMIE	Outagamie - Town Of Kaukauna - Outagamie County - Ward 002
-313691	WI	DUNN	Dunn - Town Of Sand Creek - Dunn County - Ward 001
-313692	WI	SAUK	Sauk - Village Of Prairie Du Sac - Sauk County - Ward 004
-313693	WI	PRICE	Price - City Of Park Falls - Price County - Ward 001
-313694	WI	RUSK	Rusk - Town Of Grant - Rusk County - Ward 001
-313695	WI	ST CROIX	St. Croix - Town Of Star Prairie - St. Croix County - Ward 005
-313696	WI	DOOR	Door - Town Of Baileys Harbor - Door County - Ward 002
-313697	WI	KEWAUNEE	Kewaunee - Town Of Carlton - Kewaunee County - Ward 002
-313698	WI	MONROE	Monroe - Town Of Tomah - Monroe County - Ward 002
-313699	WI	FOREST	Forest - Town Of Lincoln - Forest County - Ward 001
-313700	WI	EAU CLAIRE	Eau Claire - City Of Altoona - Eau Claire County - Ward 001
-313701	WI	JUNEAU	Juneau - Town Of Fountain - Juneau County - Ward 001
-313702	WI	DODGE	Dodge - City Of Juneau - Dodge County - Ward 003
-313703	WI	DOUGLAS	Douglas - Town Of Oakland - Douglas County - Ward 002
-313704	WI	DODGE	Dodge - Town Of Burnett - Dodge County - Ward 002
-313705	WI	SHAWANO	Shawano - Village Of Wittenberg - Shawano County - Ward 001
-313706	WI	BAYFIELD	Bayfield - Town Of Drummond - Bayfield County - Ward 001
-313707	WI	LINCOLN	Lincoln - City Of Tomahawk - Lincoln County - Ward 004
-313708	WI	VERNON	Vernon - Town Of Sterling - Vernon County - Ward 001
-313709	WI	WAUKESHA	Waukesha - Town Of Brookfield - Waukesha County - Ward 009
-313710	WI	OZAUKEE	Ozaukee - Village Of Grafton - Ozaukee County - Ward 009
-313711	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 003
-313712	WI	ST CROIX	St. Croix - Town Of Warren - St. Croix County - Ward 002
-313713	WI	VERNON	Vernon - Town Of Genoa - Vernon County - Ward 001
-313714	WI	ST CROIX	St. Croix - Village Of Star Prairie - St. Croix County - Ward 001
-313715	WI	MANITOWOC	Manitowoc - Town Of Manitowoc Rapids - Manitowoc County - Ward 004
-313716	WI	COLUMBIA	Columbia - Town Of Lowville - Columbia County - Ward 002
-313717	WI	GREEN	Green - Village Of Albany - Green County - Ward 001
-313718	WI	MARATHON	Marathon - Village Of Marathon City - Marathon County - Ward 003
-313719	WI	JUNEAU	Juneau - Town Of Germantown - Juneau County - Ward 002
-313720	WI	KENOSHA	Kenosha - Town Of Somers - Kenosha County - Ward 002
-313721	WI	JACKSON	Jackson - Town Of Northfield - Jackson County - Ward 001
-313722	WI	JACKSON	Jackson - Town Of Garfield - Jackson County - Ward 001
-313723	WI	RACINE	Racine - Town Of Waterford - Racine County - Ward 004
-313724	WI	MANITOWOC	Manitowoc - Town Of Manitowoc Rapids - Manitowoc County - Ward 005
-313725	WI	MARATHON	Marathon - Town Of Knowlton - Marathon County - Ward 001
-313726	WI	GRANT	Grant - Village Of Livingston - Multiple Counties - Ward 001
-313727	WI	WAUSHARA	Waushara - Town Of Wautoma - Waushara County - Ward 001
-313728	WI	OCONTO	Oconto - Town Of Oconto Falls - Oconto County - Ward 001
-313729	WI	MARATHON	Marathon - City Of Mosinee - Marathon County - Ward 003
-313730	WI	BROWN	Brown - Town Of Wrightstown - Brown County - Ward 002
-313731	WI	BUFFALO	Buffalo - Town Of Nelson - Buffalo County - Ward 001
-313732	WI	ASHLAND	Ashland - Town Of Ashland - Ashland County - Ward 001
-313733	WI	WALWORTH	Walworth - City Of Whitewater - Multiple Counties - Ward 007
-313734	WI	SAUK	Sauk - Village Of North Freedom - Sauk County - Ward 001
-313735	WI	DODGE	Dodge - Town Of Hustisford - Dodge County - Ward 002
-313736	WI	MONROE	Monroe - City Of Tomah - Monroe County - Ward 009
-313737	WI	BARRON	Barron - Town Of Rice Lake - Barron County - Ward 004
-313738	WI	KEWAUNEE	Kewaunee - Town Of Pierce - Kewaunee County - Ward 002
-313739	WI	BARRON	Barron - City Of Rice Lake - Barron County - Ward 008
-313740	WI	MARINETTE	Marinette - Town Of Pembine - Marinette County - Ward 001
-313741	WI	DANE	Dane - Town Of Dunkirk - Dane County - Ward 002
-313742	WI	GREEN	Green - Town Of Monroe - Green County - Ward 001
-313743	WI	OZAUKEE	Ozaukee - Village Of Grafton - Ozaukee County - Ward 010
-313744	WI	DOOR	Door - Town Of Liberty Grove - Door County - Ward 002
-313745	WI	JACKSON	Jackson - Town Of Alma - Jackson County - Ward 002
-313746	WI	RACINE	Racine - Town Of Dover - Racine County - Ward 006
-313747	WI	WALWORTH	Walworth - City Of Elkhorn - Walworth County - Ward 006
-313748	WI	WALWORTH	Walworth - Town Of Bloomfield - Walworth County - Ward 002
-313749	WI	RACINE	Racine - Village Of Elmwood Park - Racine County - Ward 001
-313750	WI	IRON	Iron - Town Of Kimball - Iron County - Ward 001
-313751	WI	BARRON	Barron - City Of Chetek - Barron County - Ward 004
-313752	WI	MILWAUKEE	Milwaukee - Village Of Fox Point - Milwaukee County - Ward 006
-313753	WI	GREEN	Green - Town Of New Glarus - Green County - Ward 002
-313754	WI	LACROSSE	Lacrosse - Town Of Campbell - La Crosse County - Ward 002
-313755	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 012
-313756	WI	WALWORTH	Walworth - Town Of Spring Prairie - Walworth County - Ward 002
-313757	WI	OUTAGAMIE	Outagamie - Town Of Center - Outagamie County - Ward 002
-313758	WI	VERNON	Vernon - City Of Westby - Vernon County - Ward 002
-313759	WI	SHEBOYGAN	Sheboygan - Village Of Kohler - Sheboygan County - Ward 001
-313760	WI	BAYFIELD	Bayfield - Town Of Bayview - Bayfield County - Ward 001
-313761	WI	GREEN	Green - Town Of Clarno - Green County - Ward 001
-313762	WI	JACKSON	Jackson - City Of Black River Falls - Jackson County - Ward 003
-313763	WI	GRANT	Grant - City Of Fennimore - Grant County - Ward 004
-313764	WI	WASHINGTON	Washington - Town Of Farmington - Washington County - Ward 003
-313765	WI	LACROSSE	Lacrosse - Village Of Holmen - La Crosse County - Ward 007
-313766	WI	TAYLOR	Taylor - City Of Medford - Taylor County - Ward 001
-313767	WI	RICHLAND	Richland - City Of Richland Center - Richland County - Ward 010
-313768	WI	WAUPACA	Waupaca - Town Of Farmington - Waupaca County - Ward 002
-313769	WI	JACKSON	Jackson - Village Of Merrillan - Jackson County - Ward 001
-313770	WI	BROWN	Brown - Village Of Pulaski - Multiple Counties - Ward 003
-313771	WI	DOUGLAS	Douglas - Town Of Parkland - Douglas County - Ward 002
-313772	WI	OZAUKEE	Ozaukee - Town Of Saukville - Ozaukee County - Ward 001
-313773	WI	TREMPEALEAU	Trempealeau - Village Of Strum - Trempealeau County - Ward 001
-313774	WI	TREMPEALEAU	Trempealeau - Town Of Trempealeau - Trempealeau County - Ward 001
-313775	WI	OCONTO	Oconto - Town Of Pensaukee - Oconto County - Ward 002
-313776	WI	FOND DU LAC	Fond Du Lac - Village Of North Fond Du Lac - Fond Du Lac County - Ward 006
-313777	WI	WAUKESHA	Waukesha - Village Of North Prairie - Waukesha County - Ward 003
-313778	WI	WOOD	Wood - Village Of Vesper - Wood County - Ward 001
-313779	WI	POLK	Polk - Town Of Clam Falls - Polk County - Ward 001
-313780	WI	WAUKESHA	Waukesha - Town Of Genesee - Waukesha County - Ward 010
-313781	WI	MANITOWOC	Manitowoc - Town Of Meeme - Manitowoc County - Ward 002
-313782	WI	DODGE	Dodge - Town Of Shields - Dodge County - Ward 001
-313783	WI	CRAWFORD	Crawford - Town Of Eastman - Crawford County - Ward 001
-313784	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 005
-313785	WI	VERNON	Vernon - Town Of Wheatland - Vernon County - Ward 001
-313786	WI	RACINE	Racine - Village Of Wind Point - Racine County - Ward 003
-313787	WI	LAFAYETTE	Lafayette - Town Of Gratiot - Lafayette County - Ward 001
-313788	WI	DUNN	Dunn - City Of Menomonie - Dunn County - Ward 005
-313789	WI	SHEBOYGAN	Sheboygan - Town Of Sheboygan - Sheboygan County - Ward 006
-313790	WI	SHAWANO	Shawano - Town Of Seneca - Shawano County - Ward 001
-313791	WI	DODGE	Dodge - Town Of Chester - Dodge County - Ward 001
-313792	WI	ONEIDA	Oneida - Town Of Nokomis - Oneida County - Ward 001
-313793	WI	MARATHON	Marathon - Town Of Weston - Marathon County - Ward 001
-313794	WI	VILAS	Vilas - Town Of Plum Lake - Vilas County - Ward 001
-313795	WI	RACINE	Racine - Village Of Mount Pleasant - Racine County - Ward 015
-313796	WI	FOND DU LAC	Fond Du Lac - Town Of Taycheedah - Fond Du Lac County - Ward 002
-313797	WI	MARATHON	Marathon - Town Of Reid - Marathon County - Ward 001
-313798	WI	WALWORTH	Walworth - Village Of Walworth - Walworth County - Ward 002
-313799	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 012
-313800	WI	PORTAGE	Portage - Town Of Linwood - Portage County - Ward 002
-313801	WI	OCONTO	Oconto - Town Of Stiles - Oconto County - Ward 002
-313802	WI	JEFFERSON	Jefferson - City Of Jefferson - Jefferson County - Ward 007
-313803	WI	RICHLAND	Richland - Town Of Orion - Richland County - Ward 001
-313804	WI	BAYFIELD	Bayfield - Town Of Oulu - Bayfield County - Ward 001
-313805	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 013
-313806	WI	WAUPACA	Waupaca - City Of New London - Multiple Counties - Ward 009
-313807	WI	SHAWANO	Shawano - City Of Shawano - Shawano County - Ward 010
-313808	WI	SAWYER	Sawyer - Town Of Hayward - Sawyer County - Ward 004
-313809	WI	WASHINGTON	Washington - City Of Hartford - Multiple Counties - Ward 012
-313810	WI	CALUMET	Calumet - Town Of Rantoul - Calumet County - Ward 001
-313811	WI	SHAWANO	Shawano - Town Of Angelica - Shawano County - Ward 003
-313812	WI	KENOSHA	Kenosha - Village Of Bristol - Kenosha County - Ward 002
-313813	WI	PORTAGE	Portage - Town Of Grant - Portage County - Ward 002
-313814	WI	DANE	Dane - Town Of Vienna - Dane County - Ward 001
-313815	WI	DODGE	Dodge - Town Of Herman - Dodge County - Ward 002
-313816	WI	EAU CLAIRE	Eau Claire - Town Of Washington - Eau Claire County - Ward 003
-313817	WI	BARRON	Barron - City Of Rice Lake - Barron County - Ward 005
-313818	WI	MARATHON	Marathon - Town Of Rib Mountain - Marathon County - Ward 002
-313819	WI	BAYFIELD	Bayfield - Town Of Eileen - Bayfield County - Ward 001
-313820	WI	ST CROIX	St. Croix - Town Of Somerset - St. Croix County - Ward 001
-313821	WI	DANE	Dane - City Of Madison - Dane County - Ward 021
-313822	WI	PEPIN	Pepin - City Of Durand - Pepin County - Ward 003
-313823	WI	ST CROIX	St. Croix - City Of Hudson - St. Croix County - Ward 010
-313824	WI	KENOSHA	Kenosha - Town Of Salem - Kenosha County - Ward 003
-313825	WI	MARATHON	Marathon - Village Of Kronenwetter - Marathon County - Ward 004
-313826	WI	ST CROIX	St. Croix - Village Of North Hudson - St. Croix County - Ward 005
-313827	WI	DODGE	Dodge - Town Of Emmet - Dodge County - Ward 001
-313828	WI	WOOD	Wood - Town Of Grand Rapids - Wood County - Ward 004
-313829	WI	POLK	Polk - Town Of West Sweden - Polk County - Ward 001
-313830	WI	LAFAYETTE	Lafayette - City Of Darlington - Lafayette County - Ward 001
-313831	WI	OUTAGAMIE	Outagamie - Town Of Ellington - Outagamie County - Ward 002
-313832	WI	FOND DU LAC	Fond Du Lac - City Of Ripon - Fond Du Lac County - Ward 009
-313833	WI	FOND DU LAC	Fond Du Lac - Town Of Eldorado - Fond Du Lac County - Ward 002
-313834	WI	GRANT	Grant - Town Of Paris - Grant County - Ward 001
-313835	WI	BUFFALO	Buffalo - Town Of Milton - Buffalo County - Ward 001
-313836	WI	COLUMBIA	Columbia - City Of Portage - Columbia County - Ward 008
-313837	WI	CHIPPEWA	Chippewa - Town Of Birch Creek - Chippewa County - Ward 001
-313838	WI	JACKSON	Jackson - Town Of Adams - Jackson County - Ward 002
-313839	WI	TAYLOR	Taylor - Town Of Medford - Taylor County - Ward 001
-313840	WI	MARATHON	Marathon - City Of Mosinee - Marathon County - Ward 002
-313841	WI	ROCK	Rock - City Of Milton - Rock County - Ward 007
-313842	WI	BURNETT	Burnett - Town Of Dewey - Burnett County - Ward 001
-313843	WI	KEWAUNEE	Kewaunee - Village Of Casco - Kewaunee County - Ward 001
-313844	WI	FOND DU LAC	Fond Du Lac - Village Of North Fond Du Lac - Fond Du Lac County - Ward 005
-313845	WI	MARATHON	Marathon - Town Of Franzen - Marathon County - Ward 001
-313846	WI	SHAWANO	Shawano - Town Of Hutchins - Shawano County - Ward 001
-313847	WI	WINNEBAGO	Winnebago - City Of Omro - Winnebago County - Ward 004
-313848	WI	OUTAGAMIE	Outagamie - Town Of Black Creek - Outagamie County - Ward 002
-313849	WI	WALWORTH	Walworth - Village Of Fontana - Walworth County - Ward 001
-313850	WI	PIERCE	Pierce - Town Of Oak Grove - Pierce County - Ward 002
-313851	WI	PRICE	Price - Town Of Fifield - Price County - Ward 001
-313852	WI	BROWN	Brown - Town Of Holland - Brown County - Ward 001
-313853	WI	MARATHON	Marathon - Town Of Day - Marathon County - Ward 002
-313854	WI	WINNEBAGO	Winnebago - Town Of Oshkosh - Winnebago County - Ward 002
-313855	WI	PIERCE	Pierce - City Of Prescott - Pierce County - Ward 003
-313856	WI	JUNEAU	Juneau - Town Of Lemonweir - Juneau County - Ward 002
-313857	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 005
-313858	WI	ST CROIX	St. Croix - City Of Hudson - St. Croix County - Ward 012
-313859	WI	BAYFIELD	Bayfield - Town Of Grand View - Bayfield County - Ward 001
-313860	WI	ST CROIX	St. Croix - Town Of St. Joseph - St. Croix County - Ward 002
-313861	WI	WAUPACA	Waupaca - City Of New London - Multiple Counties - Ward 011
-313862	WI	WAUSHARA	Waushara - Town Of Hancock - Waushara County - Ward 001
-313863	WI	PEPIN	Pepin - Town Of Albany - Pepin County - Ward 001
-313864	WI	SAUK	Sauk - City Of Baraboo - Sauk County - Ward 013
-313865	WI	DANE	Dane - Town Of Deerfield - Dane County - Ward 002
-313866	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 024
-313867	WI	GRANT	Grant - City Of Boscobel - Grant County - Ward 003
-313868	WI	BURNETT	Burnett - Town Of Sand Lake - Burnett County - Ward 001
-313869	WI	ST CROIX	St. Croix - Town Of Troy - St. Croix County - Ward 003
-313870	WI	PORTAGE	Portage - Village Of Park Ridge - Portage County - Ward 001
-313871	WI	CHIPPEWA	Chippewa - Town Of Lafayette - Chippewa County - Ward 003
-313872	WI	WALWORTH	Walworth - Town Of Walworth - Walworth County - Ward 003
-313873	WI	TREMPEALEAU	Trempealeau - City Of Galesville - Trempealeau County - Ward 001
-313874	WI	DODGE	Dodge - City Of Horicon - Dodge County - Ward 006
-313875	WI	WAUPACA	Waupaca - Town Of Dupont - Waupaca County - Ward 001
-313876	WI	RACINE	Racine - Town Of Burlington - Racine County - Ward 001
-313877	WI	COLUMBIA	Columbia - City Of Portage - Columbia County - Ward 005
-313878	WI	SAUK	Sauk - Town Of Ironton - Sauk County - Ward 001
-313879	WI	WASHBURN	Washburn - Town Of Spooner - Washburn County - Ward 001
-313880	WI	RACINE	Racine - Town Of Waterford - Racine County - Ward 008
-313881	WI	EAU CLAIRE	Eau Claire - City Of Altoona - Eau Claire County - Ward 009
-313882	WI	IOWA	Iowa - Town Of Highland - Iowa County - Ward 002
-313883	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 014
-313884	WI	MARATHON	Marathon - Town Of Green Valley - Marathon County - Ward 001
-313885	WI	MARQUETTE	Marquette - Town Of Shields - Marquette County - Ward 001
-313886	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 009
-313887	WI	LACROSSE	Lacrosse - Village Of Holmen - La Crosse County - Ward 001
-313888	WI	MARATHON	Marathon - Town Of Marathon - Marathon County - Ward 002
-313889	WI	VERNON	Vernon - Town Of Hillsboro - Vernon County - Ward 001
-313890	WI	RACINE	Racine - Village Of Union Grove - Racine County - Ward 007
-313891	WI	GRANT	Grant - Town Of Waterloo - Grant County - Ward 001
-313892	WI	DODGE	Dodge - Town Of Lomira - Dodge County - Ward 001
-313893	WI	SAWYER	Sawyer - City Of Hayward - Sawyer County - Ward 003
-313894	WI	WASHBURN	Washburn - Town Of Beaver Brook - Washburn County - Ward 001
-313895	WI	PRICE	Price - Town Of Flambeau - Price County - Ward 001
-313896	WI	DODGE	Dodge - Village Of Brownsville - Dodge County - Ward 001
-313897	WI	GREEN LAKE	Green Lake - Town Of MacKford - Green Lake County - Ward 001
-313898	WI	WAUPACA	Waupaca - Town Of Lind - Waupaca County - Ward 001
-313899	WI	GRANT	Grant - Village Of Montfort - Multiple Counties - Ward 001
-313900	WI	SHEBOYGAN	Sheboygan - Town Of Herman - Sheboygan County - Ward 002
-313901	WI	OCONTO	Oconto - Town Of Oconto - Oconto County - Ward 002
-313902	WI	RICHLAND	Richland - Town Of Eagle - Richland County - Ward 001
-313903	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 011
-313904	WI	KENOSHA	Kenosha - Town Of Wheatland - Kenosha County - Ward 002
-313905	WI	PORTAGE	Portage - Town Of Hull - Portage County - Ward 006
-313906	WI	OUTAGAMIE	Outagamie - City Of Seymour - Outagamie County - Ward 005
-313907	WI	OCONTO	Oconto - Town Of Little Suamico - Oconto County - Ward 006
-313908	WI	GREEN	Green - Town Of Monroe - Green County - Ward 002
-313909	WI	JEFFERSON	Jefferson - Town Of Hebron - Jefferson County - Ward 001
-313910	WI	CHIPPEWA	Chippewa - Town Of Lafayette - Chippewa County - Ward 004
-313911	WI	IOWA	Iowa - Village Of Barneveld - Iowa County - Ward 002
-313912	WI	FOND DU LAC	Fond Du Lac - City Of Waupun - Multiple Counties - Ward 009
-313913	WI	SAUK	Sauk - Town Of Prairie Du Sac - Sauk County - Ward 001
-313914	WI	RUSK	Rusk - Town Of Flambeau - Rusk County - Ward 003
-313915	WI	WOOD	Wood - Town Of Cameron - Wood County - Ward 001
-313916	WI	WAUPACA	Waupaca - City Of New London - Multiple Counties - Ward 004
-313917	WI	TREMPEALEAU	Trempealeau - City Of Arcadia - Trempealeau County - Ward 002
-313918	WI	LINCOLN	Lincoln - City Of Tomahawk - Lincoln County - Ward 006
-313919	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 001
-313920	WI	RACINE	Racine - Village Of Waterford - Racine County - Ward 002
-313921	WI	SHAWANO	Shawano - Town Of Waukechon - Shawano County - Ward 002
-313922	WI	LINCOLN	Lincoln - City Of Tomahawk - Lincoln County - Ward 005
-313923	WI	WINNEBAGO	Winnebago - Town Of Winneconne - Winnebago County - Ward 002
-313924	WI	ST CROIX	St. Croix - Town Of Forest - St. Croix County - Ward 001
-313925	WI	WALWORTH	Walworth - Village Of Genoa City - Multiple Counties - Ward 002
-313926	WI	FOREST	Forest - Town Of Argonne - Forest County - Ward 001
-313927	WI	SHAWANO	Shawano - Town Of Belle Plaine - Shawano County - Ward 003
-313928	WI	ST CROIX	St. Croix - Town Of St. Joseph - St. Croix County - Ward 005
-313929	WI	DODGE	Dodge - City Of Horicon - Dodge County - Ward 005
-313930	WI	DOUGLAS	Douglas - Town Of Summit - Douglas County - Ward 002
-313931	WI	MARQUETTE	Marquette - Town Of Neshkoro - Marquette County - Ward 001
-313932	WI	TAYLOR	Taylor - City Of Medford - Taylor County - Ward 002
-313933	WI	COLUMBIA	Columbia - Village Of Pardeeville - Columbia County - Ward 001
-313934	WI	DODGE	Dodge - Town Of Hubbard - Dodge County - Ward 003
-313935	WI	SHAWANO	Shawano - Village Of Cecil - Shawano County - Ward 001
-313936	WI	JUNEAU	Juneau - Town Of Orange - Juneau County - Ward 001
-313937	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 010
-313938	WI	SHAWANO	Shawano - Town Of Maple Grove - Shawano County - Ward 001
-313939	WI	IRON	Iron - Town Of Mercer - Iron County - Ward 002
-313940	WI	PIERCE	Pierce - Village Of Ellsworth - Pierce County - Ward 002
-313941	WI	FLORENCE	Florence - Town Of Florence - Florence County - Ward 001
-313942	WI	WAUSHARA	Waushara - Village Of Redgranite - Waushara County - Ward 001
-313943	WI	GREEN LAKE	Green Lake - City Of Markesan - Green Lake County - Ward 001
-313944	WI	SHAWANO	Shawano - City Of Shawano - Shawano County - Ward 003
-313945	WI	ROCK	Rock - Town Of Beloit - Rock County - Ward 003
-313946	WI	WOOD	Wood - Town Of Sigel - Wood County - Ward 001
-313947	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 002
-313948	WI	GRANT	Grant - Town Of Harrison - Grant County - Ward 001
-313949	WI	LACROSSE	Lacrosse - Town Of Hamilton - La Crosse County - Ward 001
-313950	WI	IOWA	Iowa - City Of Dodgeville - Iowa County - Ward 003
-313951	WI	DANE	Dane - Town Of Cross Plains - Dane County - Ward 001
-313952	WI	ROCK	Rock - Town Of La Prairie - Rock County - Ward 001
-313953	WI	MARINETTE	Marinette - City Of Peshtigo - Marinette County - Ward 002
-313954	WI	DANE	Dane - Town Of Black Earth - Dane County - Ward 001
-313955	WI	CALUMET	Calumet - City Of Brillion - Calumet County - Ward 004
-313956	WI	PIERCE	Pierce - Village Of Ellsworth - Pierce County - Ward 003
-313957	WI	WAUPACA	Waupaca - Town Of Dayton - Waupaca County - Ward 004
-313958	WI	DANE	Dane - Village Of Waunakee - Dane County - Ward 009
-313959	WI	OUTAGAMIE	Outagamie - City Of Kaukauna - Multiple Counties - Ward 010
-313960	WI	WALWORTH	Walworth - Village Of Fontana - Walworth County - Ward 002
-313961	WI	CHIPPEWA	Chippewa - Town Of Sigel - Chippewa County - Ward 002
-313962	WI	OCONTO	Oconto - City Of Gillett - Oconto County - Ward 001
-313963	WI	TREMPEALEAU	Trempealeau - City Of Blair - Trempealeau County - Ward 001
-313964	WI	ASHLAND	Ashland - Town Of White River - Ashland County - Ward 001
-313965	WI	WALWORTH	Walworth - Town Of Geneva - Walworth County - Ward 001
-313966	WI	FOREST	Forest - Town Of Laona - Forest County - Ward 001
-313967	WI	GREEN LAKE	Green Lake - Town Of Marquette - Green Lake County - Ward 001
-313968	WI	LINCOLN	Lincoln - Town Of Pine River - Lincoln County - Ward 003
-313969	WI	DODGE	Dodge - Village Of Lomira - Dodge County - Ward 002
-313970	WI	PORTAGE	Portage - Town Of Buena Vista - Portage County - Ward 001
-313971	WI	RACINE	Racine - Town Of Raymond - Racine County - Ward 005
-313972	WI	OZAUKEE	Ozaukee - Town Of Cedarburg - Ozaukee County - Ward 004
-313973	WI	BARRON	Barron - Town Of Maple Grove - Barron County - Ward 002
-313974	WI	WASHBURN	Washburn - Town Of Bass Lake - Washburn County - Ward 001
-313975	WI	COLUMBIA	Columbia - Town Of Springvale - Columbia County - Ward 001
-313976	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 002
-313977	WI	LANGLADE	Langlade - Town Of Evergreen - Langlade County - Ward 001
-313978	WI	COLUMBIA	Columbia - Town Of Dekorra - Columbia County - Ward 003
-313979	WI	ST CROIX	St. Croix - Town Of Richmond - St. Croix County - Ward 002
-313980	WI	CLARK	Clark - City Of Neillsville - Clark County - Ward 001
-313981	WI	TAYLOR	Taylor - Town Of Little Black - Taylor County - Ward 001
-313982	WI	RACINE	Racine - Village Of Rochester - Racine County - Ward 001
-313983	WI	ST CROIX	St. Croix - Town Of St. Joseph - St. Croix County - Ward 006
-313984	WI	WASHINGTON	Washington - Town Of Trenton - Washington County - Ward 003
-313985	WI	IOWA	Iowa - City Of Dodgeville - Iowa County - Ward 007
-313986	WI	BAYFIELD	Bayfield - Town Of Port Wing - Bayfield County - Ward 001
-313987	WI	COLUMBIA	Columbia - Town Of Fountain Prairie - Columbia County - Ward 002
-313988	WI	DODGE	Dodge - Town Of Beaver Dam - Dodge County - Ward 003
-313989	WI	FOND DU LAC	Fond Du Lac - Village Of St. Cloud - Fond Du Lac County - Ward 001
-313990	WI	MILWAUKEE	Milwaukee - City Of St. Francis - Milwaukee County - Ward 002
-313991	WI	OUTAGAMIE	Outagamie - Town Of Osborn - Outagamie County - Ward 002
-313992	WI	ROCK	Rock - Village Of Clinton - Rock County - Ward 003
-313993	WI	MARATHON	Marathon - Town Of Halsey - Marathon County - Ward 001
-313994	WI	JACKSON	Jackson - Village Of Melrose - Jackson County - Ward 001
-313995	WI	PIERCE	Pierce - Village Of Spring Valley - Multiple Counties - Ward 001
-313996	WI	WAUSHARA	Waushara - Town Of Mount Morris - Waushara County - Ward 002
-313997	WI	CLARK	Clark - Town Of Grant - Clark County - Ward 001
-313998	WI	ROCK	Rock - Town Of Avon - Rock County - Ward 001
-313999	WI	WASHBURN	Washburn - Town Of Stone Lake - Washburn County - Ward 001
-314000	WI	WALWORTH	Walworth - Village Of Darien - Walworth County - Ward 002
-314001	WI	GREEN	Green - Town Of Albany - Green County - Ward 001
-314002	WI	LINCOLN	Lincoln - Town Of Rock Falls - Lincoln County - Ward 001
-314003	WI	SAWYER	Sawyer - Town Of Bass Lake - Sawyer County - Ward 004
-314004	WI	RACINE	Racine - Village Of Sturtevant - Racine County - Ward 006
-314005	WI	TAYLOR	Taylor - Town Of Deer Creek - Taylor County - Ward 001
-314006	WI	GREEN	Green - Village Of Monticello - Green County - Ward 002
-314007	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 004
-314008	WI	WOOD	Wood - Town Of Grand Rapids - Wood County - Ward 009
-314009	WI	PEPIN	Pepin - Town Of Durand - Pepin County - Ward 001
-314010	WI	SHAWANO	Shawano - Town Of Green Valley - Shawano County - Ward 001
-314011	WI	IOWA	Iowa - City Of Dodgeville - Iowa County - Ward 005
-314012	WI	DANE	Dane - Village Of Cambridge - Multiple Counties - Ward 002
-314013	WI	WASHINGTON	Washington - Village Of Slinger - Washington County - Ward 004
-314014	WI	COLUMBIA	Columbia - Town Of Marcellon - Columbia County - Ward 001
-314015	WI	FOREST	Forest - Town Of Crandon - Forest County - Ward 001
-314016	WI	SAUK	Sauk - City Of Baraboo - Sauk County - Ward 009
-314017	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 214
-314018	WI	RACINE	Racine - Town Of Norway - Racine County - Ward 001
-314019	WI	WASHINGTON	Washington - Village Of Slinger - Washington County - Ward 003
-314020	WI	WAUPACA	Waupaca - Town Of Lebanon - Waupaca County - Ward 002
-314021	WI	SAUK	Sauk - City Of Reedsburg - Sauk County - Ward 014
-314022	WI	COLUMBIA	Columbia - Town Of Lowville - Columbia County - Ward 001
-314023	WI	TAYLOR	Taylor - Town Of Holway - Taylor County - Ward 001
-314024	WI	TAYLOR	Taylor - City Of Medford - Taylor County - Ward 006
-314025	WI	MANITOWOC	Manitowoc - City Of Kiel - Multiple Counties - Ward 005
-314026	WI	WINNEBAGO	Winnebago - Town Of Winneconne - Winnebago County - Ward 003
-314027	WI	LACROSSE	Lacrosse - Village Of Holmen - La Crosse County - Ward 009
-314028	WI	GRANT	Grant - Town Of Mount Ida - Grant County - Ward 001
-314029	WI	BARRON	Barron - City Of Cumberland - Barron County - Ward 004
-314030	WI	SHAWANO	Shawano - Village Of Bonduel - Shawano County - Ward 001
-314031	WI	DANE	Dane - Town Of Berry - Dane County - Ward 001
-314032	WI	MARATHON	Marathon - Village Of Edgar - Marathon County - Ward 002
-314033	WI	PIERCE	Pierce - Town Of Rock Elm - Pierce County - Ward 001
-314034	WI	FOND DU LAC	Fond Du Lac - Town Of Ashford - Fond Du Lac County - Ward 002
-314035	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 293
-314036	WI	MONROE	Monroe - Town Of Jefferson - Monroe County - Ward 001
-314037	WI	SAUK	Sauk - City Of Baraboo - Sauk County - Ward 004
-314038	WI	JEFFERSON	Jefferson - Town Of Hebron - Jefferson County - Ward 002
-314039	WI	SAUK	Sauk - Town Of Fairfield - Sauk County - Ward 002
-314040	WI	GRANT	Grant - Town Of Hazel Green - Grant County - Ward 001
-314041	WI	PEPIN	Pepin - Town Of Waterville - Pepin County - Ward 001
-314042	WI	WAUSHARA	Waushara - Town Of Marion - Waushara County - Ward 004
-314043	WI	LANGLADE	Langlade - Town Of Ackley - Langlade County - Ward 001
-314044	WI	BARRON	Barron - Town Of Almena - Barron County - Ward 002
-314045	WI	POLK	Polk - Village Of Clear Lake - Polk County - Ward 002
-314046	WI	KENOSHA	Kenosha - Town Of Brighton - Kenosha County - Ward 001
-314047	WI	WALWORTH	Walworth - Town Of Geneva - Walworth County - Ward 005
-314048	WI	JEFFERSON	Jefferson - City Of Waterloo - Jefferson County - Ward 005
-314049	WI	VERNON	Vernon - City Of Hillsboro - Vernon County - Ward 001
-314050	WI	MARATHON	Marathon - City Of Schofield - Marathon County - Ward 001
-314051	WI	JUNEAU	Juneau - City Of Mauston - Juneau County - Ward 005
-314052	WI	PORTAGE	Portage - Town Of Plover - Portage County - Ward 002
-314053	WI	ASHLAND	Ashland - Town Of Agenda - Ashland County - Ward 001
-314054	WI	COLUMBIA	Columbia - Town Of Arlington - Columbia County - Ward 001
-314055	WI	WAUKESHA	Waukesha - Town Of Delafield - Waukesha County - Ward 006
-314056	WI	RACINE	Racine - Town Of Waterford - Racine County - Ward 009
-314057	WI	MANITOWOC	Manitowoc - Town Of Cooperstown - Manitowoc County - Ward 002
-314058	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 003
-314059	WI	ST CROIX	St. Croix - Town Of Rush River - St. Croix County - Ward 001
-314060	WI	DODGE	Dodge - City Of Waupun - Multiple Counties - Ward 008
-314061	WI	WAUSHARA	Waushara - Town Of Leon - Waushara County - Ward 002
-314062	WI	FOND DU LAC	Fond Du Lac - Village Of Campbellsport - Fond Du Lac County - Ward 004
-314063	WI	VERNON	Vernon - Town Of Forest - Vernon County - Ward 001
-314064	WI	ST CROIX	St. Croix - City Of New Richmond - St. Croix County - Ward 004
-314065	WI	WALWORTH	Walworth - Town Of Whitewater - Walworth County - Ward 001
-314066	WI	WINNEBAGO	Winnebago - Town Of Utica - Winnebago County - Ward 002
-314067	WI	FOREST	Forest - Town Of Armstrong Creek - Forest County - Ward 001
-314068	WI	MARINETTE	Marinette - City Of Peshtigo - Marinette County - Ward 001
-314069	WI	FLORENCE	Florence - Town Of Aurora - Florence County - Ward 001
-314070	WI	CRAWFORD	Crawford - Town Of Marietta - Crawford County - Ward 001
-314071	WI	DOUGLAS	Douglas - Town Of Summit - Douglas County - Ward 001
-314072	WI	MONROE	Monroe - Town Of Sparta - Monroe County - Ward 004
-314073	WI	TAYLOR	Taylor - Town Of Little Black - Taylor County - Ward 002
-314074	WI	LACROSSE	Lacrosse - Village Of Rockland - Multiple Counties - Ward 001
-314075	WI	JUNEAU	Juneau - Village Of Camp Douglas - Juneau County - Ward 001
-314076	WI	TREMPEALEAU	Trempealeau - Town Of Hale - Trempealeau County - Ward 001
-314077	WI	CLARK	Clark - City Of Greenwood - Clark County - Ward 001
-314078	WI	LACROSSE	Lacrosse - Village Of West Salem - La Crosse County - Ward 004
-314079	WI	RICHLAND	Richland - Town Of Willow - Richland County - Ward 001
-314080	WI	TREMPEALEAU	Trempealeau - Town Of Ettrick - Trempealeau County - Ward 001
-314081	WI	SHEBOYGAN	Sheboygan - Village Of Adell - Sheboygan County - Ward 001
-314082	WI	SHAWANO	Shawano - Town Of Grant - Shawano County - Ward 001
-314083	WI	SHAWANO	Shawano - Town Of Aniwa - Shawano County - Ward 001
-314084	WI	VILAS	Vilas - Town Of Phelps - Vilas County - Ward 001
-314085	WI	EAU CLAIRE	Eau Claire - Town Of Clear Creek - Eau Claire County - Ward 002
-314086	WI	OUTAGAMIE	Outagamie - Village Of Little Chute - Outagamie County - Ward 008
-314087	WI	PIERCE	Pierce - Town Of Diamond Bluff - Pierce County - Ward 001
-314088	WI	POLK	Polk - Village Of Frederic - Polk County - Ward 002
-314089	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 020
-314090	WI	SHAWANO	Shawano - City Of Shawano - Shawano County - Ward 001
-314091	WI	BROWN	Brown - Town Of Wrightstown - Brown County - Ward 003
-314092	WI	CLARK	Clark - City Of Abbotsford - Multiple Counties - Ward 004
-314093	WI	CLARK	Clark - Town Of Mentor - Clark County - Ward 001
-314094	WI	RUSK	Rusk - Town Of Big Bend - Rusk County - Ward 001
-314095	WI	DODGE	Dodge - City Of Fox Lake - Dodge County - Ward 001
-314096	WI	JEFFERSON	Jefferson - Town Of Palmyra - Jefferson County - Ward 001
-314097	WI	MARATHON	Marathon - City Of Schofield - Marathon County - Ward 004
-314098	WI	LINCOLN	Lincoln - Town Of Pine River - Lincoln County - Ward 002
-314099	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 014
-314100	WI	JUNEAU	Juneau - Town Of Clearfield - Juneau County - Ward 002
-314101	WI	DODGE	Dodge - City Of Fox Lake - Dodge County - Ward 002
-314102	WI	ONEIDA	Oneida - Town Of Schoepke - Oneida County - Ward 001
-314103	WI	OUTAGAMIE	Outagamie - Village Of Combined Locks - Outagamie County - Ward 003
-314104	WI	IRON	Iron - City Of Montreal - Iron County - Ward 001
-314105	WI	OZAUKEE	Ozaukee - Town Of Grafton - Ozaukee County - Ward 003
-314106	WI	TREMPEALEAU	Trempealeau - City Of Whitehall - Trempealeau County - Ward 003
-314107	WI	IOWA	Iowa - Village Of Avoca - Iowa County - Ward 001
-314108	WI	IOWA	Iowa - Town Of Waldwick - Iowa County - Ward 001
-314109	WI	TAYLOR	Taylor - City Of Medford - Taylor County - Ward 003
-314110	WI	DUNN	Dunn - Town Of Otter Creek - Dunn County - Ward 001
-314111	WI	ST CROIX	St. Croix - Town Of Richmond - St. Croix County - Ward 003
-314112	WI	OCONTO	Oconto - Village Of Suring - Oconto County - Ward 001
-314113	WI	SHEBOYGAN	Sheboygan - Village Of Elkhart Lake - Sheboygan County - Ward 002
-314114	WI	ROCK	Rock - City Of Evansville - Rock County - Ward 006
-314115	WI	ROCK	Rock - Town Of Rock - Rock County - Ward 006
-314116	WI	RACINE	Racine - City Of Burlington - Multiple Counties - Ward 002
-314117	WI	ST CROIX	St. Croix - City Of Hudson - St. Croix County - Ward 002
-314118	WI	MANITOWOC	Manitowoc - Town Of Rockland - Manitowoc County - Ward 002
-314119	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 003
-314120	WI	IOWA	Iowa - Village Of Barneveld - Iowa County - Ward 001
-314121	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 006
-314122	WI	FOND DU LAC	Fond Du Lac - Village Of North Fond Du Lac - Fond Du Lac County - Ward 002
-314123	WI	SAWYER	Sawyer - Town Of Spider Lake - Sawyer County - Ward 001
-314124	WI	MANITOWOC	Manitowoc - Town Of Manitowoc Rapids - Manitowoc County - Ward 003
-314125	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 008
-314126	WI	TREMPEALEAU	Trempealeau - City Of Osseo - Trempealeau County - Ward 002
-314127	WI	BURNETT	Burnett - Town Of Siren - Burnett County - Ward 001
-314128	WI	PRICE	Price - Town Of Fifield - Price County - Ward 002
-314129	WI	WAUPACA	Waupaca - Town Of Harrison - Waupaca County - Ward 001
-314130	WI	DODGE	Dodge - Town Of Calamus - Dodge County - Ward 001
-314131	WI	LANGLADE	Langlade - Town Of Rolling - Langlade County - Ward 001
-314132	WI	CLARK	Clark - Town Of Pine Valley - Clark County - Ward 001
-314133	WI	OZAUKEE	Ozaukee - Town Of Cedarburg - Ozaukee County - Ward 008
-314134	WI	JEFFERSON	Jefferson - Town Of Aztalan - Jefferson County - Ward 002
-314135	WI	MARATHON	Marathon - Town Of Rib Mountain - Marathon County - Ward 010
-314136	WI	DOOR	Door - Village Of Forestville - Door County - Ward 001
-314137	WI	JACKSON	Jackson - Village Of Alma Center - Jackson County - Ward 001
-314138	WI	LAFAYETTE	Lafayette - Town Of New Diggings - Lafayette County - Ward 001
-314139	WI	PEPIN	Pepin - Town Of Lima - Pepin County - Ward 001
-314140	WI	RACINE	Racine - Town Of Dover - Racine County - Ward 002
-314141	WI	KEWAUNEE	Kewaunee - Town Of Carlton - Kewaunee County - Ward 001
-314142	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 016
-314143	WI	GREEN	Green - Town Of Decatur - Green County - Ward 003
-314144	WI	RACINE	Racine - Town Of Burlington - Racine County - Ward 011
-314145	WI	DODGE	Dodge - Town Of Fox Lake - Dodge County - Ward 002
-314146	WI	SHAWANO	Shawano - Town Of Richmond - Shawano County - Ward 002
-314147	WI	WASHINGTON	Washington - City Of Hartford - Multiple Counties - Ward 004
-314148	WI	DODGE	Dodge - Village Of Theresa - Dodge County - Ward 001
-314149	WI	IRON	Iron - Town Of Mercer - Iron County - Ward 001
-314150	WI	EAU CLAIRE	Eau Claire - Town Of Washington - Eau Claire County - Ward 013
-314151	WI	EAU CLAIRE	Eau Claire - Town Of Washington - Eau Claire County - Ward 001
-314152	WI	WALWORTH	Walworth - Town Of Geneva - Walworth County - Ward 002
-314153	WI	OUTAGAMIE	Outagamie - Town Of Center - Outagamie County - Ward 004
-314154	WI	PRICE	Price - Town Of Eisenstein - Price County - Ward 001
-314155	WI	GRANT	Grant - Town Of Liberty - Grant County - Ward 001
-314156	WI	GREEN	Green - Town Of Clarno - Green County - Ward 002
-314157	WI	DUNN	Dunn - Town Of Wilson - Dunn County - Ward 001
-314158	WI	POLK	Polk - Town Of Johnstown - Polk County - Ward 001
-314159	WI	MARATHON	Marathon - Town Of Easton - Marathon County - Ward 002
-314160	WI	CLARK	Clark - Town Of Green Grove - Clark County - Ward 001
-314161	WI	SAUK	Sauk - Town Of Baraboo - Sauk County - Ward 004
-314162	WI	WAUPACA	Waupaca - Town Of Royalton - Waupaca County - Ward 002
-314163	WI	TAYLOR	Taylor - City Of Medford - Taylor County - Ward 005
-314164	WI	DANE	Dane - City Of Madison - Dane County - Ward 029
-314165	WI	KENOSHA	Kenosha - Town Of Wheatland - Kenosha County - Ward 004
-314166	WI	VERNON	Vernon - Town Of Kickapoo - Vernon County - Ward 001
-314167	WI	IOWA	Iowa - Town Of Mifflin - Iowa County - Ward 001
-314168	WI	ROCK	Rock - City Of Milton - Rock County - Ward 006
-314169	WI	PIERCE	Pierce - Town Of Spring Lake - Pierce County - Ward 001
-314170	WI	SHAWANO	Shawano - Village Of Gresham - Shawano County - Ward 001
-314171	WI	ADAMS	Adams - Town Of Monroe - Adams County - Ward 001
-314172	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 005
-314173	WI	WASHINGTON	Washington - Town Of West Bend - Washington County - Ward 004
-314174	WI	IOWA	Iowa - Village Of Linden - Iowa County - Ward 001
-314175	WI	TAYLOR	Taylor - Village Of Stetsonville - Taylor County - Ward 001
-314176	WI	OUTAGAMIE	Outagamie - Town Of Osborn - Outagamie County - Ward 001
-314177	WI	ST CROIX	St. Croix - Town Of Hudson - St. Croix County - Ward 011
-314178	WI	DODGE	Dodge - Town Of Trenton - Dodge County - Ward 002
-314179	WI	MARQUETTE	Marquette - Town Of Oxford - Marquette County - Ward 002
-314180	WI	WAUKESHA	Waukesha - Village Of Butler - Waukesha County - Ward 002
-314181	WI	TAYLOR	Taylor - Town Of Hammel - Taylor County - Ward 001
-314182	WI	GREEN LAKE	Green Lake - City Of Markesan - Green Lake County - Ward 003
-314183	WI	OCONTO	Oconto - City Of Oconto - Oconto County - Ward 005
-314184	WI	WALWORTH	Walworth - Village Of Williams Bay - Walworth County - Ward 003
-314185	WI	MONROE	Monroe - Village Of Kendall - Monroe County - Ward 001
-314186	WI	MONROE	Monroe - Village Of Wilton - Monroe County - Ward 001
-314187	WI	SAUK	Sauk - Town Of Excelsior - Sauk County - Ward 002
-314188	WI	GREEN	Green - City Of Brodhead - Multiple Counties - Ward 005
-314189	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 010
-314190	WI	RICHLAND	Richland - City Of Richland Center - Richland County - Ward 012
-314191	WI	CLARK	Clark - City Of Greenwood - Clark County - Ward 002
-314192	WI	SHAWANO	Shawano - City Of Shawano - Shawano County - Ward 007
-314193	WI	FOND DU LAC	Fond Du Lac - Village Of North Fond Du Lac - Fond Du Lac County - Ward 001
-314194	WI	POLK	Polk - Town Of Osceola - Polk County - Ward 003
-314195	WI	OZAUKEE	Ozaukee - Village Of Saukville - Ozaukee County - Ward 005
-314196	WI	SHEBOYGAN	Sheboygan - City Of Plymouth - Sheboygan County - Ward 001
-314197	WI	WAUSHARA	Waushara - Village Of Wild Rose - Waushara County - Ward 001
-314198	WI	WAUSHARA	Waushara - City Of Wautoma - Waushara County - Ward 001
-314199	WI	FOND DU LAC	Fond Du Lac - Town Of Friendship - Fond Du Lac County - Ward 003
-314200	WI	MARQUETTE	Marquette - City Of Montello - Marquette County - Ward 001
-314201	WI	MARQUETTE	Marquette - Village Of Oxford - Marquette County - Ward 001
-314202	WI	BUFFALO	Buffalo - Town Of Waumandee - Buffalo County - Ward 001
-314203	WI	WAUPACA	Waupaca - City Of Manawa - Waupaca County - Ward 001
-314204	WI	ROCK	Rock - City Of Beloit - Rock County - Ward 011
-314205	WI	CRAWFORD	Crawford - Town Of Clayton - Crawford County - Ward 001
-314206	WI	OCONTO	Oconto - City Of Oconto - Oconto County - Ward 004
-314207	WI	DOOR	Door - Town Of Sturgeon Bay - Door County - Ward 001
-314208	WI	WALWORTH	Walworth - Town Of La Grange - Walworth County - Ward 002
-314209	WI	WAUKESHA	Waukesha - Town Of Brookfield - Waukesha County - Ward 002
-314210	WI	POLK	Polk - Town Of Apple River - Polk County - Ward 001
-314211	WI	SHEBOYGAN	Sheboygan - Town Of Lima - Sheboygan County - Ward 002
-314212	WI	WINNEBAGO	Winnebago - City Of Omro - Winnebago County - Ward 003
-314213	WI	COLUMBIA	Columbia - City Of Portage - Columbia County - Ward 009
-314214	WI	MARINETTE	Marinette - Town Of Stephenson - Marinette County - Ward 002
-314215	WI	WASHBURN	Washburn - Town Of Casey - Washburn County - Ward 001
-314216	WI	CLARK	Clark - City Of Abbotsford - Multiple Counties - Ward 002
-314217	WI	MARQUETTE	Marquette - Town Of Packwaukee - Marquette County - Ward 001
-314218	WI	WINNEBAGO	Winnebago - City Of Omro - Winnebago County - Ward 001
-314219	WI	WAUPACA	Waupaca - City Of Marion - Multiple Counties - Ward 001
-314220	WI	MARATHON	Marathon - Town Of Stettin - Marathon County - Ward 002
-314221	WI	FLORENCE	Florence - Town Of Florence - Florence County - Ward 002
-314222	WI	MARATHON	Marathon - Town Of Brighton - Marathon County - Ward 001
-314223	WI	WALWORTH	Walworth - Town Of Lafayette - Walworth County - Ward 002
-314224	WI	LACROSSE	Lacrosse - Village Of Holmen - La Crosse County - Ward 006
-314225	WI	SAUK	Sauk - Village Of Prairie Du Sac - Sauk County - Ward 003
-314226	WI	DANE	Dane - Town Of Pleasant Springs - Dane County - Ward 003
-314227	WI	WAUSHARA	Waushara - Town Of Plainfield - Waushara County - Ward 001
-314228	WI	MONROE	Monroe - Town Of Wells - Monroe County - Ward 001
-314229	WI	MARATHON	Marathon - Town Of Bevent - Marathon County - Ward 001
-314230	WI	OCONTO	Oconto - City Of Oconto - Oconto County - Ward 003
-314231	WI	BARRON	Barron - City Of Rice Lake - Barron County - Ward 001
-314232	WI	OCONTO	Oconto - Village Of Lena - Oconto County - Ward 001
-314233	WI	EAU CLAIRE	Eau Claire - Town Of Otter Creek - Eau Claire County - Ward 001
-314234	WI	BURNETT	Burnett - Town Of Grantsburg - Burnett County - Ward 003
-314235	WI	DANE	Dane - City Of Madison - Dane County - Ward 026
-314236	WI	TREMPEALEAU	Trempealeau - Village Of Ettrick - Trempealeau County - Ward 001
-314237	WI	GREEN	Green - Town Of Adams - Green County - Ward 001
-314238	WI	IOWA	Iowa - Town Of Moscow - Iowa County - Ward 001
-314239	WI	DANE	Dane - Village Of Marshall - Dane County - Ward 002
-314240	WI	JUNEAU	Juneau - Village Of Lyndon Station - Juneau County - Ward 001
-314241	WI	SAUK	Sauk - Town Of Freedom - Sauk County - Ward 001
-314242	WI	SAWYER	Sawyer - Town Of Round Lake - Sawyer County - Ward 002
-314243	WI	CLARK	Clark - Town Of Warner - Clark County - Ward 001
-314244	WI	TAYLOR	Taylor - Town Of Rib Lake - Taylor County - Ward 001
-314245	WI	DOOR	Door - Town Of Sturgeon Bay - Door County - Ward 002
-314246	WI	FOND DU LAC	Fond Du Lac - City Of Ripon - Fond Du Lac County - Ward 010
-314247	WI	WASHINGTON	Washington - Town Of Addison - Washington County - Ward 004
-314248	WI	MARINETTE	Marinette - Village Of Wausaukee - Marinette County - Ward 001
-314249	WI	IOWA	Iowa - Town Of Arena - Iowa County - Ward 001
-314250	WI	ROCK	Rock - City Of Evansville - Rock County - Ward 005
-314251	WI	ROCK	Rock - City Of Evansville - Rock County - Ward 007
-314252	WI	WAUKESHA	Waukesha - Village Of Lannon - Waukesha County - Ward 002
-314253	WI	KENOSHA	Kenosha - Village Of Twin Lakes - Kenosha County - Ward 004
-314254	WI	MARATHON	Marathon - Village Of Maine - Marathon County - Ward 002
-314255	WI	DODGE	Dodge - Town Of Leroy - Dodge County - Ward 001
-314256	WI	RACINE	Racine - City Of Burlington - Multiple Counties - Ward 006
-314257	WI	SAUK	Sauk - City Of Baraboo - Sauk County - Ward 001
-314258	WI	CALUMET	Calumet - Town Of New Holstein - Calumet County - Ward 001
-314259	WI	CLARK	Clark - City Of Neillsville - Clark County - Ward 003
-314260	WI	DODGE	Dodge - Town Of Portland - Dodge County - Ward 002
-314261	WI	BARRON	Barron - Town Of Chetek - Barron County - Ward 002
-314262	WI	MARATHON	Marathon - Village Of Spencer - Marathon County - Ward 003
-314263	WI	DODGE	Dodge - Town Of Calamus - Dodge County - Ward 002
-314264	WI	DODGE	Dodge - Town Of Theresa - Dodge County - Ward 001
-314265	WI	PIERCE	Pierce - City Of River Falls - Multiple Counties - Ward 010
-314266	WI	BUFFALO	Buffalo - Town Of Belvidere - Buffalo County - Ward 001
-314267	WI	PIERCE	Pierce - City Of River Falls - Multiple Counties - Ward 008
-314268	WI	CHIPPEWA	Chippewa - Village Of New Auburn - Multiple Counties - Ward 001
-314269	WI	RACINE	Racine - Town Of Dover - Racine County - Ward 005
-314270	WI	CLARK	Clark - Town Of Weston - Clark County - Ward 002
-314271	WI	WALWORTH	Walworth - City Of Elkhorn - Walworth County - Ward 001
-314272	WI	IOWA	Iowa - Village Of Cobb - Iowa County - Ward 001
-314273	WI	WAUKESHA	Waukesha - Town Of Waukesha - Waukesha County - Ward 001
-314274	WI	WALWORTH	Walworth - Town Of Geneva - Walworth County - Ward 004
-314275	WI	LINCOLN	Lincoln - Town Of Merrill - Lincoln County - Ward 004
-314276	WI	DANE	Dane - City Of Monona - Dane County - Ward 008
-314277	WI	WOOD	Wood - Town Of Saratoga - Wood County - Ward 001
-314278	WI	ROCK	Rock - Town Of Turtle - Rock County - Ward 001
-314279	WI	WAUPACA	Waupaca - City Of Waupaca - Waupaca County - Ward 008
-314280	WI	MARATHON	Marathon - Village Of Marathon City - Marathon County - Ward 002
-314281	WI	KENOSHA	Kenosha - Village Of Paddock Lake - Kenosha County - Ward 005
-314282	WI	TAYLOR	Taylor - City Of Medford - Taylor County - Ward 007
-314283	WI	DODGE	Dodge - Town Of Trenton - Dodge County - Ward 001
-314284	WI	RUSK	Rusk - Town Of Willard - Rusk County - Ward 001
-314285	WI	OCONTO	Oconto - Town Of Little Suamico - Oconto County - Ward 005
-314286	WI	MANITOWOC	Manitowoc - Town Of Manitowoc Rapids - Manitowoc County - Ward 002
-314287	WI	VERNON	Vernon - City Of Viroqua - Vernon County - Ward 002
-314288	WI	ONEIDA	Oneida - Town Of Newbold - Oneida County - Ward 003
-314289	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 023
-314290	WI	IOWA	Iowa - City Of Dodgeville - Iowa County - Ward 004
-314291	WI	GRANT	Grant - Village Of Bagley - Grant County - Ward 001
-314292	WI	MILWAUKEE	Milwaukee - Village Of West Milwaukee - Milwaukee County - Ward 006
-314293	WI	WASHBURN	Washburn - Village Of Birchwood - Washburn County - Ward 001
-314294	WI	WAUPACA	Waupaca - City Of Clintonville - Waupaca County - Ward 006
-314295	WI	FOREST	Forest - City Of Crandon - Forest County - Ward 002
-314296	WI	WASHBURN	Washburn - Village Of Minong - Washburn County - Ward 001
-314297	WI	OCONTO	Oconto - Town Of Maple Valley - Oconto County - Ward 001
-314298	WI	RACINE	Racine - Village Of Rochester - Racine County - Ward 002
-314299	WI	MARATHON	Marathon - City Of Mosinee - Marathon County - Ward 001
-314300	WI	MARATHON	Marathon - Village Of Weston - Marathon County - Ward 002
-314301	WI	TAYLOR	Taylor - City Of Medford - Taylor County - Ward 004
-314302	WI	CHIPPEWA	Chippewa - Town Of Estella - Chippewa County - Ward 001
-314303	WI	MONROE	Monroe - Town Of Ridgeville - Monroe County - Ward 001
-314304	WI	CLARK	Clark - Village Of Withee - Clark County - Ward 001
-314305	WI	OZAUKEE	Ozaukee - Town Of Saukville - Ozaukee County - Ward 002
-314306	WI	SHAWANO	Shawano - Town Of Angelica - Shawano County - Ward 001
-314307	WI	GREEN	Green - City Of Brodhead - Multiple Counties - Ward 003
-314308	WI	DODGE	Dodge - City Of Horicon - Dodge County - Ward 003
-314309	WI	SHEBOYGAN	Sheboygan - Village Of Waldo - Sheboygan County - Ward 001
-314310	WI	EAU CLAIRE	Eau Claire - City Of Altoona - Eau Claire County - Ward 006
-314311	WI	BAYFIELD	Bayfield - Town Of Hughes - Bayfield County - Ward 001
-314312	WI	VERNON	Vernon - City Of Viroqua - Vernon County - Ward 006
-314313	WI	WASHINGTON	Washington - Village Of Newburg - Multiple Counties - Ward 002
-314314	WI	VILAS	Vilas - Town Of Lincoln - Vilas County - Ward 002
-314315	WI	LAFAYETTE	Lafayette - City Of Shullsburg - Lafayette County - Ward 001
-314316	WI	DUNN	Dunn - Town Of Hay River - Dunn County - Ward 001
-314317	WI	LACROSSE	Lacrosse - Village Of Holmen - La Crosse County - Ward 005
-314318	WI	BROWN	Brown - Town Of Eaton - Brown County - Ward 002
-314319	WI	ADAMS	Adams - Town Of Preston - Adams County - Ward 001
-314320	WI	WAUPACA	Waupaca - City Of Clintonville - Waupaca County - Ward 001
-314321	WI	IRON	Iron - Town Of Mercer - Iron County - Ward 003
-314322	WI	MANITOWOC	Manitowoc - City Of Kiel - Multiple Counties - Ward 003
-314323	WI	WASHINGTON	Washington - Town Of Trenton - Washington County - Ward 004
-314324	WI	MONROE	Monroe - Village Of Cashton - Monroe County - Ward 001
-314325	WI	ST CROIX	St. Croix - City Of New Richmond - St. Croix County - Ward 008
-314326	WI	KENOSHA	Kenosha - Town Of Wheatland - Kenosha County - Ward 003
-314327	WI	PORTAGE	Portage - Town Of Pine Grove - Portage County - Ward 001
-314328	WI	JUNEAU	Juneau - Town Of Plymouth - Juneau County - Ward 001
-314329	WI	DODGE	Dodge - Town Of Elba - Dodge County - Ward 001
-314330	WI	BUFFALO	Buffalo - Town Of Mondovi - Buffalo County - Ward 001
-314331	WI	POLK	Polk - Village Of Clear Lake - Polk County - Ward 001
-314332	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 011
-314333	WI	RUSK	Rusk - City Of Ladysmith - Rusk County - Ward 005
-314334	WI	CLARK	Clark - Town Of Eaton - Clark County - Ward 001
-314335	WI	ST CROIX	St. Croix - Village Of North Hudson - St. Croix County - Ward 002
-314336	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 007
-314337	WI	VILAS	Vilas - Town Of Boulder Junction - Vilas County - Ward 002
-314338	WI	LAFAYETTE	Lafayette - City Of Shullsburg - Lafayette County - Ward 002
-314339	WI	DUNN	Dunn - Town Of Spring Brook - Dunn County - Ward 001
-314340	WI	MARATHON	Marathon - Village Of Kronenwetter - Marathon County - Ward 007
-314341	WI	MANITOWOC	Manitowoc - Town Of Two Creeks - Manitowoc County - Ward 001
-314342	WI	SHAWANO	Shawano - Town Of Wittenberg - Shawano County - Ward 001
-314343	WI	ADAMS	Adams - Town Of New Chester - Adams County - Ward 001
-314344	WI	SAUK	Sauk - City Of Reedsburg - Sauk County - Ward 004
-314345	WI	BURNETT	Burnett - Town Of Webb Lake - Burnett County - Ward 001
-314346	WI	MARQUETTE	Marquette - Village Of Neshkoro - Marquette County - Ward 001
-314347	WI	VERNON	Vernon - City Of Viroqua - Vernon County - Ward 005
-314348	WI	TREMPEALEAU	Trempealeau - City Of Whitehall - Trempealeau County - Ward 001
-314349	WI	COLUMBIA	Columbia - Village Of Fall River - Columbia County - Ward 002
-314350	WI	MONROE	Monroe - City Of Tomah - Monroe County - Ward 003
-314351	WI	LAFAYETTE	Lafayette - Town Of Wayne - Lafayette County - Ward 001
-314352	WI	MANITOWOC	Manitowoc - City Of Kiel - Multiple Counties - Ward 004
-314353	WI	SHEBOYGAN	Sheboygan - Village Of Glenbeulah - Sheboygan County - Ward 001
-314354	WI	LANGLADE	Langlade - Town Of Antigo - Langlade County - Ward 002
-314355	WI	DOOR	Door - Village Of Ephraim - Door County - Ward 001
-314356	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 006
-314357	WI	WAUPACA	Waupaca - Town Of Scandinavia - Waupaca County - Ward 002
-314358	WI	RACINE	Racine - Town Of Dover - Racine County - Ward 001
-314359	WI	DODGE	Dodge - Town Of Leroy - Dodge County - Ward 002
-314360	WI	ADAMS	Adams - Town Of Rome - Adams County - Ward 001
-314361	WI	MONROE	Monroe - Town Of Grant - Monroe County - Ward 001
-314362	WI	SAUK	Sauk - City Of Baraboo - Sauk County - Ward 008
-314363	WI	OCONTO	Oconto - Town Of Mountain - Oconto County - Ward 001
-314364	WI	WALWORTH	Walworth - Town Of Lyons - Walworth County - Ward 004
-314365	WI	SHEBOYGAN	Sheboygan - Town Of Holland - Sheboygan County - Ward 003
-314366	WI	CRAWFORD	Crawford - City Of Prairie Du Chien - Crawford County - Ward 003
-314367	WI	OCONTO	Oconto - Town Of Lena - Oconto County - Ward 001
-314368	WI	ST CROIX	St. Croix - Town Of Hudson - St. Croix County - Ward 007
-314369	WI	TAYLOR	Taylor - City Of Medford - Taylor County - Ward 008
-314370	WI	PORTAGE	Portage - Village Of Rosholt - Portage County - Ward 001
-314371	WI	BARRON	Barron - Town Of Doyle - Barron County - Ward 001
-314372	WI	MARATHON	Marathon - Town Of McMillan - Marathon County - Ward 001
-314373	WI	MARATHON	Marathon - Village Of Hatley - Marathon County - Ward 001
-314374	WI	GRANT	Grant - City Of Lancaster - Grant County - Ward 006
-314375	WI	PEPIN	Pepin - Town Of Pepin - Pepin County - Ward 001
-314376	WI	DANE	Dane - Town Of Cottage Grove - Dane County - Ward 005
-314377	WI	WAUKESHA	Waukesha - Village Of Big Bend - Waukesha County - Ward 002
-314378	WI	SAUK	Sauk - Town Of Delton - Sauk County - Ward 002
-314379	WI	BUFFALO	Buffalo - Town Of Gilmanton - Buffalo County - Ward 001
-314380	WI	GREEN	Green - Town Of Albany - Green County - Ward 002
-314381	WI	CLARK	Clark - Town Of Hendren - Clark County - Ward 001
-314382	WI	GRANT	Grant - City Of Boscobel - Grant County - Ward 002
-314383	WI	CHIPPEWA	Chippewa - Town Of Goetz - Chippewa County - Ward 001
-314384	WI	WALWORTH	Walworth - City Of Elkhorn - Walworth County - Ward 005
-314385	WI	CLARK	Clark - City Of Neillsville - Clark County - Ward 002
-314386	WI	LAFAYETTE	Lafayette - City Of Darlington - Lafayette County - Ward 005
-314387	WI	DOUGLAS	Douglas - Town Of Hawthorne - Douglas County - Ward 002
-314388	WI	WAUKESHA	Waukesha - Village Of Nashotah - Waukesha County - Ward 001
-314389	WI	RICHLAND	Richland - Town Of Henrietta - Richland County - Ward 001
-314390	WI	GRANT	Grant - City Of Cuba City - Multiple Counties - Ward 003
-314391	WI	TREMPEALEAU	Trempealeau - City Of Galesville - Trempealeau County - Ward 002
-314392	WI	BURNETT	Burnett - Town Of La Follette - Burnett County - Ward 001
-314393	WI	JACKSON	Jackson - Town Of North Bend - Jackson County - Ward 001
-314394	WI	FOREST	Forest - City Of Crandon - Forest County - Ward 003
-314395	WI	EAU CLAIRE	Eau Claire - Village Of Fall Creek - Eau Claire County - Ward 001
-314396	WI	MANITOWOC	Manitowoc - Town Of Rockland - Manitowoc County - Ward 001
-314397	WI	MARINETTE	Marinette - Town Of Peshtigo - Marinette County - Ward 002
-314398	WI	SHAWANO	Shawano - Town Of Wescott - Shawano County - Ward 002
-314399	WI	WASHBURN	Washburn - Town Of Springbrook - Washburn County - Ward 001
-314400	WI	RACINE	Racine - Town Of Burlington - Racine County - Ward 008
-314401	WI	CLARK	Clark - Town Of Hixon - Clark County - Ward 001
-314402	WI	MARINETTE	Marinette - City Of Niagara - Marinette County - Ward 002
-314403	WI	CLARK	Clark - City Of Neillsville - Clark County - Ward 005
-314404	WI	OCONTO	Oconto - City Of Oconto - Oconto County - Ward 002
-314405	WI	OCONTO	Oconto - City Of Oconto Falls - Oconto County - Ward 002
-314406	WI	BARRON	Barron - City Of Chetek - Barron County - Ward 002
-314407	WI	ST CROIX	St. Croix - Town Of Pleasant Valley - St. Croix County - Ward 001
-314408	WI	MARQUETTE	Marquette - Town Of Montello - Marquette County - Ward 001
-314409	WI	DOUGLAS	Douglas - Town Of Amnicon - Douglas County - Ward 001
-314410	WI	CHIPPEWA	Chippewa - Village Of Cadott - Chippewa County - Ward 002
-314411	WI	MONROE	Monroe - Village Of Norwalk - Monroe County - Ward 001
-314412	WI	GRANT	Grant - City Of Cuba City - Multiple Counties - Ward 001
-314413	WI	POLK	Polk - Town Of Georgetown - Polk County - Ward 001
-314414	WI	FOND DU LAC	Fond Du Lac - Village Of Campbellsport - Fond Du Lac County - Ward 003
-314415	WI	GREEN LAKE	Green Lake - Town Of Brooklyn - Green Lake County - Ward 001
-314416	WI	FOND DU LAC	Fond Du Lac - Town Of Marshfield - Fond Du Lac County - Ward 002
-314417	WI	CRAWFORD	Crawford - Town Of Scott - Crawford County - Ward 001
-314418	WI	WAUSHARA	Waushara - Town Of Oasis - Waushara County - Ward 001
-314419	WI	COLUMBIA	Columbia - Town Of Marcellon - Columbia County - Ward 002
-314420	WI	BURNETT	Burnett - Town Of Scott - Burnett County - Ward 001
-314421	WI	GREEN LAKE	Green Lake - Town Of Kingston - Green Lake County - Ward 001
-314422	WI	RICHLAND	Richland - Town Of Westford - Richland County - Ward 001
-314423	WI	BUFFALO	Buffalo - City Of Alma - Buffalo County - Ward 001
-314424	WI	RACINE	Racine - Town Of Burlington - Racine County - Ward 005
-314425	WI	CALUMET	Calumet - City Of New Holstein - Calumet County - Ward 002
-314426	WI	RICHLAND	Richland - Town Of Bloom - Richland County - Ward 001
-314427	WI	EAU CLAIRE	Eau Claire - Village Of Fairchild - Eau Claire County - Ward 001
-314428	WI	BARRON	Barron - Village Of Prairie Farm - Barron County - Ward 001
-314429	WI	BARRON	Barron - City Of Rice Lake - Barron County - Ward 004
-314430	WI	RACINE	Racine - Town Of Yorkville - Racine County - Ward 004
-314431	WI	RICHLAND	Richland - City Of Richland Center - Richland County - Ward 001
-314432	WI	ROCK	Rock - Town Of Beloit - Rock County - Ward 006
-314433	WI	WINNEBAGO	Winnebago - Village Of Winneconne - Winnebago County - Ward 003
-314434	WI	ONEIDA	Oneida - Town Of Hazelhurst - Oneida County - Ward 001
-314435	WI	BARRON	Barron - Town Of Barron - Barron County - Ward 001
-314436	WI	ADAMS	Adams - City Of Adams - Adams County - Ward 002
-314437	WI	FOREST	Forest - Town Of Nashville - Forest County - Ward 002
-314438	WI	SAWYER	Sawyer - Town Of Hayward - Sawyer County - Ward 002
-314439	WI	DOOR	Door - Town Of Clay Banks - Door County - Ward 001
-314440	WI	SAWYER	Sawyer - City Of Hayward - Sawyer County - Ward 001
-314441	WI	IOWA	Iowa - Town Of Linden - Iowa County - Ward 001
-314442	WI	PIERCE	Pierce - Village Of Bay City - Pierce County - Ward 001
-314443	WI	ST CROIX	St. Croix - Town Of Troy - St. Croix County - Ward 006
-314444	WI	GREEN	Green - City Of Brodhead - Multiple Counties - Ward 001
-314445	WI	WAUSHARA	Waushara - Village Of Redgranite - Waushara County - Ward 002
-314446	WI	DANE	Dane - Town Of Mazomanie - Dane County - Ward 001
-314447	WI	LAFAYETTE	Lafayette - Town Of Darlington - Lafayette County - Ward 001
-314448	WI	MANITOWOC	Manitowoc - Town Of Liberty - Manitowoc County - Ward 002
-314449	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 029
-314450	WI	OUTAGAMIE	Outagamie - Town Of Bovina - Outagamie County - Ward 002
-314451	WI	ST CROIX	St. Croix - City Of New Richmond - St. Croix County - Ward 007
-314452	WI	ADAMS	Adams - Town Of New Chester - Adams County - Ward 002
-314453	WI	JACKSON	Jackson - Village Of Hixton - Jackson County - Ward 001
-314454	WI	JACKSON	Jackson - Village Of Taylor - Jackson County - Ward 001
-314455	WI	WAUSHARA	Waushara - Village Of Coloma - Waushara County - Ward 001
-314456	WI	MARQUETTE	Marquette - Town Of Oxford - Marquette County - Ward 001
-314457	WI	MARINETTE	Marinette - Town Of Stephenson - Marinette County - Ward 003
-314458	WI	GRANT	Grant - City Of Lancaster - Grant County - Ward 003
-314459	WI	DANE	Dane - Village Of Waunakee - Dane County - Ward 003
-314460	WI	MARATHON	Marathon - Village Of Marathon City - Marathon County - Ward 001
-314461	WI	JACKSON	Jackson - Town Of Cleveland - Jackson County - Ward 001
-314462	WI	MARQUETTE	Marquette - Village Of Endeavor - Marquette County - Ward 001
-314463	WI	COLUMBIA	Columbia - City Of Portage - Columbia County - Ward 001
-314464	WI	RICHLAND	Richland - Town Of Akan - Richland County - Ward 001
-314465	WI	TAYLOR	Taylor - Town Of Goodrich - Taylor County - Ward 001
-314466	WI	WOOD	Wood - Town Of Cary - Wood County - Ward 001
-314467	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 015
-314468	WI	CALUMET	Calumet - City Of New Holstein - Calumet County - Ward 001
-314469	WI	WAUPACA	Waupaca - City Of Weyauwega - Waupaca County - Ward 003
-314470	WI	VERNON	Vernon - Town Of Greenwood - Vernon County - Ward 001
-314471	WI	ROCK	Rock - City Of Milton - Rock County - Ward 002
-314472	WI	GREEN	Green - City Of Brodhead - Multiple Counties - Ward 004
-314473	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 008
-314474	WI	WAUPACA	Waupaca - City Of Clintonville - Waupaca County - Ward 007
-314475	WI	BROWN	Brown - Village Of Pulaski - Multiple Counties - Ward 002
-314476	WI	BARRON	Barron - City Of Rice Lake - Barron County - Ward 012
-314477	WI	VERNON	Vernon - City Of Viroqua - Vernon County - Ward 008
-314478	WI	SHEBOYGAN	Sheboygan - Town Of Wilson - Sheboygan County - Ward 002
-314479	WI	RUSK	Rusk - Town Of Thornapple - Rusk County - Ward 002
-314480	WI	DOOR	Door - Town Of Egg Harbor - Door County - Ward 002
-314481	WI	IOWA	Iowa - City Of Dodgeville - Iowa County - Ward 002
-314482	WI	FLORENCE	Florence - Town Of Homestead - Florence County - Ward 001
-314483	WI	RACINE	Racine - City Of Racine - Racine County - Ward 001
-314484	WI	BARRON	Barron - City Of Rice Lake - Barron County - Ward 009
-314485	WI	OCONTO	Oconto - Town Of Chase - Oconto County - Ward 004
-314486	WI	JUNEAU	Juneau - Town Of Marion - Juneau County - Ward 001
-314487	WI	RICHLAND	Richland - City Of Richland Center - Richland County - Ward 009
-314488	WI	TREMPEALEAU	Trempealeau - City Of Whitehall - Trempealeau County - Ward 002
-314489	WI	WALWORTH	Walworth - City Of Elkhorn - Walworth County - Ward 002
-314490	WI	ROCK	Rock - City Of Milton - Rock County - Ward 005
-314491	WI	WAUKESHA	Waukesha - Village Of Pewaukee - Waukesha County - Ward 006
-314492	WI	TREMPEALEAU	Trempealeau - Town Of Pigeon - Trempealeau County - Ward 002
-314493	WI	DOOR	Door - Town Of Nasewaupee - Door County - Ward 003
-314494	WI	MARATHON	Marathon - Town Of Day - Marathon County - Ward 001
-314495	WI	GRANT	Grant - Town Of Muscoda - Grant County - Ward 001
-314496	WI	GREEN LAKE	Green Lake - Town Of Seneca - Green Lake County - Ward 001
-314497	WI	ST CROIX	St. Croix - Town Of St. Joseph - St. Croix County - Ward 004
-314498	WI	BARRON	Barron - City Of Barron - Barron County - Ward 003
-314499	WI	WAUPACA	Waupaca - City Of New London - Multiple Counties - Ward 008
-314500	WI	DANE	Dane - Town Of Burke - Dane County - Ward 004
-314501	WI	LANGLADE	Langlade - Town Of Elcho - Langlade County - Ward 002
-314502	WI	BUFFALO	Buffalo - Village Of Cochrane - Buffalo County - Ward 001
-314503	WI	ST CROIX	St. Croix - Town Of Eau Galle - St. Croix County - Ward 001
-314504	WI	WAUKESHA	Waukesha - Village Of Big Bend - Waukesha County - Ward 001
-314505	WI	GRANT	Grant - City Of Fennimore - Grant County - Ward 002
-314506	WI	GRANT	Grant - Village Of Muscoda - Multiple Counties - Ward 002
-314507	WI	JEFFERSON	Jefferson - Town Of Milford - Jefferson County - Ward 002
-314508	WI	PORTAGE	Portage - Town Of Sharon - Portage County - Ward 003
-314509	WI	COLUMBIA	Columbia - City Of Portage - Columbia County - Ward 010
-314510	WI	SAWYER	Sawyer - Town Of Hayward - Sawyer County - Ward 006
-314511	WI	WAUPACA	Waupaca - Town Of Little Wolf - Waupaca County - Ward 003
-314512	WI	MARATHON	Marathon - City Of Colby - Multiple Counties - Ward 001
-314513	WI	GRANT	Grant - Town Of North Lancaster - Grant County - Ward 002
-314514	WI	ST CROIX	St. Croix - Village Of North Hudson - St. Croix County - Ward 004
-314515	WI	IRON	Iron - City Of Hurley - Iron County - Ward 002
-314516	WI	GREEN	Green - City Of Brodhead - Multiple Counties - Ward 002
-314517	WI	OCONTO	Oconto - City Of Oconto - Oconto County - Ward 007
-314518	WI	CRAWFORD	Crawford - City Of Prairie Du Chien - Crawford County - Ward 005
-314519	WI	OCONTO	Oconto - Town Of Abrams - Oconto County - Ward 003
-314520	WI	GRANT	Grant - Town Of Jamestown - Grant County - Ward 003
-314521	WI	KEWAUNEE	Kewaunee - Town Of West Kewaunee - Kewaunee County - Ward 002
-314522	WI	POLK	Polk - City Of Amery - Polk County - Ward 003
-314523	WI	RICHLAND	Richland - City Of Richland Center - Richland County - Ward 005
-314524	WI	SHAWANO	Shawano - Town Of Navarino - Shawano County - Ward 001
-314525	WI	DODGE	Dodge - City Of Waupun - Multiple Counties - Ward 007
-314526	WI	POLK	Polk - City Of Amery - Polk County - Ward 004
-314527	WI	VERNON	Vernon - City Of Viroqua - Vernon County - Ward 009
-314528	WI	MONROE	Monroe - Village Of Cashton - Monroe County - Ward 002
-314529	WI	FOREST	Forest - City Of Crandon - Forest County - Ward 004
-314530	WI	MANITOWOC	Manitowoc - Village Of Reedsville - Manitowoc County - Ward 002
-314531	WI	SAUK	Sauk - Town Of Baraboo - Sauk County - Ward 001
-314532	WI	PIERCE	Pierce - Town Of Martell - Pierce County - Ward 002
-314533	WI	SAUK	Sauk - Village Of Merrimac - Sauk County - Ward 001
-314534	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 032
-314535	WI	TAYLOR	Taylor - Village Of Gilman - Taylor County - Ward 001
-314536	WI	IRON	Iron - City Of Hurley - Iron County - Ward 001
-314537	WI	IOWA	Iowa - City Of Mineral Point - Iowa County - Ward 003
-314538	WI	SAWYER	Sawyer - Town Of Hunter - Sawyer County - Ward 001
-314539	WI	CLARK	Clark - City Of Neillsville - Clark County - Ward 004
-314540	WI	BUFFALO	Buffalo - Town Of Glencoe - Buffalo County - Ward 001
-314541	WI	GRANT	Grant - Town Of Marion - Grant County - Ward 001
-314542	WI	VILAS	Vilas - City Of Eagle River - Vilas County - Ward 001
-314543	WI	MONROE	Monroe - City Of Tomah - Monroe County - Ward 012
-314544	WI	MARATHON	Marathon - Town Of Bern - Marathon County - Ward 001
-314545	WI	VERNON	Vernon - Town Of Viroqua - Vernon County - Ward 001
-314546	WI	WINNEBAGO	Winnebago - City Of Omro - Winnebago County - Ward 002
-314547	WI	WOOD	Wood - Town Of Port Edwards - Wood County - Ward 002
-314548	WI	DANE	Dane - City Of Madison - Dane County - Ward 028
-314549	WI	RICHLAND	Richland - City Of Richland Center - Richland County - Ward 007
-314550	WI	COLUMBIA	Columbia - Village Of Randolph - Multiple Counties - Ward 003
-314551	WI	WAUPACA	Waupaca - Town Of Helvetia - Waupaca County - Ward 001
-314552	WI	ST CROIX	St. Croix - Town Of Somerset - St. Croix County - Ward 002
-314553	WI	FOREST	Forest - Town Of Laona - Forest County - Ward 003
-314554	WI	WAUKESHA	Waukesha - Village Of Hartland - Waukesha County - Ward 010
-314555	WI	FOREST	Forest - Town Of Hiles - Forest County - Ward 001
-314556	WI	RUSK	Rusk - Town Of Grow - Rusk County - Ward 001
-314557	WI	GREEN LAKE	Green Lake - City Of Princeton - Green Lake County - Ward 004
-314558	WI	WAUSHARA	Waushara - Town Of Deerfield - Waushara County - Ward 001
-314559	WI	COLUMBIA	Columbia - City Of Portage - Columbia County - Ward 004
-314560	WI	TREMPEALEAU	Trempealeau - Village Of Strum - Trempealeau County - Ward 002
-314561	WI	CLARK	Clark - City Of Colby - Multiple Counties - Ward 003
-314562	WI	RACINE	Racine - Town Of Burlington - Racine County - Ward 004
-314563	WI	RACINE	Racine - Town Of Burlington - Racine County - Ward 002
-314564	WI	KENOSHA	Kenosha - Town Of Randall - Kenosha County - Ward 005
-314565	WI	RACINE	Racine - Town Of Dover - Racine County - Ward 004
-314566	WI	SHAWANO	Shawano - Town Of Green Valley - Shawano County - Ward 002
-314567	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 021
-314568	WI	ST CROIX	St. Croix - Village Of Baldwin - St. Croix County - Ward 004
-314569	WI	DANE	Dane - Village Of Marshall - Dane County - Ward 001
-314570	WI	DUNN	Dunn - Town Of Sheridan - Dunn County - Ward 001
-314571	WI	LINCOLN	Lincoln - Town Of Skanawan - Lincoln County - Ward 001
-314572	WI	WAUPACA	Waupaca - Town Of Larrabee - Waupaca County - Ward 002
-314573	WI	JEFFERSON	Jefferson - City Of Watertown - Multiple Counties - Ward 011
-314574	WI	ADAMS	Adams - Town Of Preston - Adams County - Ward 002
-314575	WI	DODGE	Dodge - Town Of Fox Lake - Dodge County - Ward 003
-314576	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 002
-314577	WI	WINNEBAGO	Winnebago - Town Of Poygan - Winnebago County - Ward 001
-314578	WI	MONROE	Monroe - Town Of Clifton - Monroe County - Ward 001
-314579	WI	PRICE	Price - City Of Park Falls - Price County - Ward 002
-314580	WI	SHEBOYGAN	Sheboygan - City Of Plymouth - Sheboygan County - Ward 003
-314581	WI	WOOD	Wood - Village Of Rudolph - Wood County - Ward 001
-314582	WI	OUTAGAMIE	Outagamie - Village Of Black Creek - Outagamie County - Ward 001
-314583	WI	CHIPPEWA	Chippewa - Town Of Woodmohr - Chippewa County - Ward 001
-314584	WI	ADAMS	Adams - Town Of Rome - Adams County - Ward 005
-314585	WI	VERNON	Vernon - Village Of Readstown - Vernon County - Ward 001
-314586	WI	ST CROIX	St. Croix - City Of New Richmond - St. Croix County - Ward 010
-314587	WI	LAFAYETTE	Lafayette - Town Of Belmont - Lafayette County - Ward 001
-314588	WI	JACKSON	Jackson - Town Of Hixton - Jackson County - Ward 001
-314589	WI	RACINE	Racine - Village Of Waterford - Racine County - Ward 005
-314590	WI	RACINE	Racine - Town Of Waterford - Racine County - Ward 005
-314591	WI	POLK	Polk - Town Of Lincoln - Polk County - Ward 004
-314592	WI	SAUK	Sauk - Village Of West Baraboo - Sauk County - Ward 001
-314593	WI	FOREST	Forest - City Of Crandon - Forest County - Ward 001
-314594	WI	MONROE	Monroe - City Of Tomah - Monroe County - Ward 002
-314595	WI	OUTAGAMIE	Outagamie - Town Of Deer Creek - Outagamie County - Ward 001
-314596	WI	EAU CLAIRE	Eau Claire - Town Of Washington - Eau Claire County - Ward 010
-314597	WI	BARRON	Barron - City Of Rice Lake - Barron County - Ward 010
-314598	WI	BROWN	Brown - Town Of Glenmore - Brown County - Ward 002
-314599	WI	LACROSSE	Lacrosse - Village Of Bangor - La Crosse County - Ward 002
-314600	WI	WAUSHARA	Waushara - Village Of Plainfield - Waushara County - Ward 001
-314601	WI	WOOD	Wood - Town Of Sigel - Wood County - Ward 003
-314602	WI	GRANT	Grant - Village Of Blue River - Grant County - Ward 001
-314603	WI	WASHINGTON	Washington - Village Of Slinger - Washington County - Ward 006
-314604	WI	MARINETTE	Marinette - Town Of Beecher - Marinette County - Ward 001
-314605	WI	TREMPEALEAU	Trempealeau - Town Of Dodge - Trempealeau County - Ward 001
-314606	WI	ROCK	Rock - City Of Evansville - Rock County - Ward 003
-314607	WI	VERNON	Vernon - City Of Viroqua - Vernon County - Ward 007
-314608	WI	JACKSON	Jackson - Town Of Springfield - Jackson County - Ward 001
-314609	WI	LAFAYETTE	Lafayette - City Of Darlington - Lafayette County - Ward 004
-314610	WI	BARRON	Barron - City Of Cumberland - Barron County - Ward 003
-314611	WI	VERNON	Vernon - City Of Viroqua - Vernon County - Ward 004
-314612	WI	BAYFIELD	Bayfield - Town Of Namakagon - Bayfield County - Ward 001
-314613	WI	SAWYER	Sawyer - City Of Hayward - Sawyer County - Ward 002
-314614	WI	WAUKESHA	Waukesha - Town Of Mukwonago - Waukesha County - Ward 010
-314615	WI	RACINE	Racine - Village Of Union Grove - Racine County - Ward 006
-314616	WI	ROCK	Rock - Town Of Lima - Rock County - Ward 002
-314617	WI	ST CROIX	St. Croix - Village Of North Hudson - St. Croix County - Ward 003
-314618	WI	RACINE	Racine - Village Of Union Grove - Racine County - Ward 003
-314619	WI	WASHINGTON	Washington - Town Of Wayne - Washington County - Ward 003
-314620	WI	EAU CLAIRE	Eau Claire - Town Of Washington - Eau Claire County - Ward 011
-314621	WI	SAUK	Sauk - City Of Reedsburg - Sauk County - Ward 009
-314622	WI	MARINETTE	Marinette - Town Of Porterfield - Marinette County - Ward 003
-314623	WI	VERNON	Vernon - Town Of Jefferson - Vernon County - Ward 001
-314624	WI	WALWORTH	Walworth - Town Of Richmond - Walworth County - Ward 003
-314625	WI	ONEIDA	Oneida - Town Of Newbold - Oneida County - Ward 004
-314626	WI	MILWAUKEE	Milwaukee - Village Of West Milwaukee - Milwaukee County - Ward 005
-314627	WI	SHAWANO	Shawano - Village Of Wittenberg - Shawano County - Ward 002
-314628	WI	BUFFALO	Buffalo - City Of Alma - Buffalo County - Ward 002
-314629	WI	DUNN	Dunn - Village Of Knapp - Dunn County - Ward 001
-314630	WI	WAUSHARA	Waushara - Village Of Lohrville - Waushara County - Ward 001
-314631	WI	IRON	Iron - Town Of Mercer - Iron County - Ward 004
-314632	WI	VERNON	Vernon - Village Of Ontario - Multiple Counties - Ward 001
-314633	WI	EAU CLAIRE	Eau Claire - City Of Altoona - Eau Claire County - Ward 008
-314634	WI	DOUGLAS	Douglas - Town Of Superior - Douglas County - Ward 001
-314635	WI	DOUGLAS	Douglas - Village Of Lake Nebagamon - Douglas County - Ward 002
-314636	WI	RICHLAND	Richland - City Of Richland Center - Richland County - Ward 008
-314637	WI	RICHLAND	Richland - Village Of Viola - Multiple Counties - Ward 002
-314638	WI	EAU CLAIRE	Eau Claire - Town Of Wilson - Eau Claire County - Ward 001
-314639	WI	WASHINGTON	Washington - Village Of Newburg - Multiple Counties - Ward 001
-314640	WI	ASHLAND	Ashland - Town Of La Pointe - Ashland County - Ward 001
-314641	WI	WAUPACA	Waupaca - Town Of Mukwa - Waupaca County - Ward 003
-314642	WI	WOOD	Wood - City Of Nekoosa - Wood County - Ward 002
-314643	WI	COLUMBIA	Columbia - City Of Portage - Columbia County - Ward 007
-314644	WI	BAYFIELD	Bayfield - Town Of Kelly - Bayfield County - Ward 001
-314645	WI	DANE	Dane - Town Of Madison - Dane County - Ward 005
-314646	WI	BROWN	Brown - Village Of Hobart - Brown County - Ward 007
-314647	WI	IRON	Iron - Town Of Sherman - Iron County - Ward 001
-314648	WI	SAUK	Sauk - Town Of Sumpter - Sauk County - Ward 001
-314649	WI	MARINETTE	Marinette - Town Of Pound - Marinette County - Ward 002
-314650	WI	WALWORTH	Walworth - Town Of Lafayette - Walworth County - Ward 003
-314651	WI	SAUK	Sauk - City Of Reedsburg - Sauk County - Ward 008
-314652	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 009
-314653	WI	WALWORTH	Walworth - Town Of Walworth - Walworth County - Ward 001
-314654	WI	CALUMET	Calumet - Town Of Chilton - Calumet County - Ward 001
-314655	WI	LACROSSE	Lacrosse - Town Of Onalaska - La Crosse County - Ward 005
-314656	WI	GRANT	Grant - Village Of Hazel Green - Multiple Counties - Ward 002
-314657	WI	RICHLAND	Richland - City Of Richland Center - Richland County - Ward 003
-314658	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 004
-314659	WI	MARINETTE	Marinette - Town Of Pembine - Marinette County - Ward 002
-314660	WI	DODGE	Dodge - Village Of Theresa - Dodge County - Ward 002
-314661	WI	DUNN	Dunn - Town Of Grant - Dunn County - Ward 001
-314662	WI	WALWORTH	Walworth - Town Of Delavan - Walworth County - Ward 003
-314663	WI	SAUK	Sauk - City Of Reedsburg - Sauk County - Ward 001
-314664	WI	ONEIDA	Oneida - Town Of Little Rice - Oneida County - Ward 001
-314665	WI	MONROE	Monroe - Town Of Little Falls - Monroe County - Ward 002
-314666	WI	ONEIDA	Oneida - Town Of Cassian - Oneida County - Ward 002
-314667	WI	DODGE	Dodge - Town Of Clyman - Dodge County - Ward 001
-314668	WI	MARINETTE	Marinette - Town Of Peshtigo - Marinette County - Ward 004
-314669	WI	CHIPPEWA	Chippewa - Town Of Ruby - Chippewa County - Ward 001
-314670	WI	COLUMBIA	Columbia - Town Of Lodi - Columbia County - Ward 002
-314671	WI	SAUK	Sauk - Town Of Franklin - Sauk County - Ward 002
-314672	WI	WAUSHARA	Waushara - Town Of Marion - Waushara County - Ward 002
-314673	WI	PRICE	Price - Town Of Worcester - Price County - Ward 003
-314674	WI	WAUPACA	Waupaca - Town Of Saint Lawrence - Waupaca County - Ward 002
-314675	WI	BARRON	Barron - City Of Cumberland - Barron County - Ward 002
-314676	WI	WAUPACA	Waupaca - City Of Manawa - Waupaca County - Ward 003
-314677	WI	OCONTO	Oconto - Town Of Little River - Oconto County - Ward 002
-314678	WI	GREEN LAKE	Green Lake - City Of Princeton - Green Lake County - Ward 003
-314679	WI	TREMPEALEAU	Trempealeau - City Of Galesville - Trempealeau County - Ward 003
-314680	WI	ST CROIX	St. Croix - Town Of Star Prairie - St. Croix County - Ward 003
-314681	WI	ASHLAND	Ashland - Town Of Chippewa - Ashland County - Ward 001
-314682	WI	SHAWANO	Shawano - City Of Shawano - Shawano County - Ward 005
-314683	WI	WAUKESHA	Waukesha - Town Of Delafield - Waukesha County - Ward 008
-314684	WI	DUNN	Dunn - Village Of Colfax - Dunn County - Ward 002
-314685	WI	RICHLAND	Richland - City Of Richland Center - Richland County - Ward 011
-314686	WI	MARATHON	Marathon - City Of Schofield - Marathon County - Ward 002
-314687	WI	ASHLAND	Ashland - City Of Mellen - Ashland County - Ward 001
-314688	WI	DANE	Dane - Town Of Blooming Grove - Dane County - Ward 002
-314689	WI	OCONTO	Oconto - City Of Oconto - Oconto County - Ward 006
-314690	WI	SAWYER	Sawyer - Town Of Lenroot - Sawyer County - Ward 002
-314691	WI	WALWORTH	Walworth - City Of Lake Geneva - Walworth County - Ward 007
-314692	WI	BURNETT	Burnett - Town Of Anderson - Burnett County - Ward 001
-314693	WI	CHIPPEWA	Chippewa - City Of Stanley - Multiple Counties - Ward 002
-314694	WI	IRON	Iron - Town Of Saxon - Iron County - Ward 001
-314695	WI	BUFFALO	Buffalo - Town Of Dover - Buffalo County - Ward 001
-314696	WI	OZAUKEE	Ozaukee - Town Of Cedarburg - Ozaukee County - Ward 002
-314697	WI	EAU CLAIRE	Eau Claire - Town Of Seymour - Eau Claire County - Ward 004
-314698	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan Falls - Sheboygan County - Ward 005
-314699	WI	IOWA	Iowa - City Of Mineral Point - Iowa County - Ward 006
-314700	WI	SHAWANO	Shawano - Town Of Waukechon - Shawano County - Ward 001
-314701	WI	JUNEAU	Juneau - City Of Mauston - Juneau County - Ward 002
-314702	WI	JUNEAU	Juneau - Town Of Necedah - Juneau County - Ward 001
-314703	WI	WAUSHARA	Waushara - Town Of Marion - Waushara County - Ward 001
-314704	WI	WASHINGTON	Washington - Town Of Trenton - Washington County - Ward 006
-314705	WI	VERNON	Vernon - Town Of Whitestown - Vernon County - Ward 001
-314706	WI	BARRON	Barron - Town Of Prairie Farm - Barron County - Ward 002
-314707	WI	GRANT	Grant - Town Of South Lancaster - Grant County - Ward 001
-314708	WI	GREEN	Green - Village Of Brooklyn - Multiple Counties - Ward 002
-314709	WI	OUTAGAMIE	Outagamie - Village Of Little Chute - Outagamie County - Ward 005
-314710	WI	EAU CLAIRE	Eau Claire - Town Of Washington - Eau Claire County - Ward 004
-314711	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan Falls - Sheboygan County - Ward 006
-314712	WI	CRAWFORD	Crawford - City Of Prairie Du Chien - Crawford County - Ward 004
-314713	WI	ADAMS	Adams - Town Of Dell Prairie - Adams County - Ward 001
-314714	WI	TREMPEALEAU	Trempealeau - Village Of Pigeon Falls - Trempealeau County - Ward 001
-314715	WI	OCONTO	Oconto - Town Of Brazeau - Oconto County - Ward 003
-314716	WI	COLUMBIA	Columbia - City Of Portage - Columbia County - Ward 002
-314717	WI	LAFAYETTE	Lafayette - Town Of Elk Grove - Lafayette County - Ward 001
-314718	WI	RUSK	Rusk - City Of Ladysmith - Rusk County - Ward 006
-314719	WI	WAUSHARA	Waushara - Village Of Hancock - Waushara County - Ward 001
-314720	WI	CLARK	Clark - Town Of Mayville - Clark County - Ward 002
-314721	WI	MARQUETTE	Marquette - Town Of Moundville - Marquette County - Ward 001
-314722	WI	JACKSON	Jackson - Town Of Alma - Jackson County - Ward 001
-314723	WI	PORTAGE	Portage - Town Of Plover - Portage County - Ward 001
-314724	WI	WAUKESHA	Waukesha - Village Of Hartland - Waukesha County - Ward 002
-314725	WI	LINCOLN	Lincoln - City Of Tomahawk - Lincoln County - Ward 003
-314726	WI	PIERCE	Pierce - Town Of El Paso - Pierce County - Ward 001
-314727	WI	WALWORTH	Walworth - Town Of Sugar Creek - Walworth County - Ward 005
-314728	WI	BROWN	Brown - Town Of Humboldt - Brown County - Ward 002
-314729	WI	SHEBOYGAN	Sheboygan - Town Of Rhine - Sheboygan County - Ward 002
-314730	WI	WAUKESHA	Waukesha - Town Of Vernon - Waukesha County - Ward 002
-314731	WI	JACKSON	Jackson - Town Of Irving - Jackson County - Ward 001
-314732	WI	RICHLAND	Richland - City Of Richland Center - Richland County - Ward 006
-314733	WI	OCONTO	Oconto - City Of Oconto Falls - Oconto County - Ward 001
-314734	WI	FOREST	Forest - Town Of Freedom - Forest County - Ward 001
-314735	WI	FLORENCE	Florence - Town Of Florence - Florence County - Ward 006
-314736	WI	CHIPPEWA	Chippewa - City Of Stanley - Multiple Counties - Ward 003
-314737	WI	KEWAUNEE	Kewaunee - Town Of Montpelier - Kewaunee County - Ward 002
-314738	WI	WINNEBAGO	Winnebago - City Of Omro - Winnebago County - Ward 005
-314739	WI	ROCK	Rock - City Of Evansville - Rock County - Ward 008
-314740	WI	DODGE	Dodge - Town Of Lowell - Dodge County - Ward 001
-314741	WI	SHAWANO	Shawano - Town Of Herman - Shawano County - Ward 002
-314742	WI	PRICE	Price - City Of Phillips - Price County - Ward 003
-314743	WI	WALWORTH	Walworth - Village Of Bloomfield - Walworth County - Ward 004
-314744	WI	GREEN LAKE	Green Lake - Town Of St. Marie - Green Lake County - Ward 001
-314745	WI	RACINE	Racine - City Of Burlington - Multiple Counties - Ward 004
-314746	WI	FOREST	Forest - Town Of Nashville - Forest County - Ward 003
-314747	WI	PORTAGE	Portage - Village Of Almond - Portage County - Ward 001
-314748	WI	MONROE	Monroe - City Of Tomah - Monroe County - Ward 010
-314749	WI	RICHLAND	Richland - Town Of Richwood - Richland County - Ward 001
-314750	WI	CALUMET	Calumet - City Of Brillion - Calumet County - Ward 001
-314751	WI	DANE	Dane - Village Of Cross Plains - Dane County - Ward 003
-314752	WI	JUNEAU	Juneau - City Of Elroy - Juneau County - Ward 001
-314753	WI	BURNETT	Burnett - Town Of Siren - Burnett County - Ward 002
-314754	WI	JUNEAU	Juneau - Town Of Lyndon - Juneau County - Ward 002
-314755	WI	DODGE	Dodge - City Of Mayville - Dodge County - Ward 004
-314756	WI	SAUK	Sauk - Town Of Prairie Du Sac - Sauk County - Ward 002
-314757	WI	COLUMBIA	Columbia - City Of Portage - Columbia County - Ward 003
-314758	WI	ONEIDA	Oneida - Town Of Enterprise - Oneida County - Ward 001
-314759	WI	GRANT	Grant - City Of Lancaster - Grant County - Ward 002
-314760	WI	IOWA	Iowa - City Of Dodgeville - Iowa County - Ward 006
-314761	WI	WASHBURN	Washburn - Town Of Barronett - Washburn County - Ward 001
-314762	WI	LINCOLN	Lincoln - Town Of Harding - Lincoln County - Ward 001
-314763	WI	WAUPACA	Waupaca - City Of Waupaca - Waupaca County - Ward 005
-314764	WI	CLARK	Clark - Town Of Worden - Clark County - Ward 001
-314765	WI	VILAS	Vilas - Town Of Washington - Vilas County - Ward 003
-314766	WI	GRANT	Grant - City Of Fennimore - Grant County - Ward 003
-314767	WI	RUSK	Rusk - Town Of Washington - Rusk County - Ward 001
-314768	WI	ROCK	Rock - Town Of Turtle - Rock County - Ward 003
-314769	WI	WAUKESHA	Waukesha - Village Of Hartland - Waukesha County - Ward 004
-314770	WI	ROCK	Rock - Town Of Harmony - Rock County - Ward 001
-314771	WI	SHEBOYGAN	Sheboygan - Town Of Russell - Sheboygan County - Ward 001
-314772	WI	GREEN LAKE	Green Lake - City Of Green Lake - Green Lake County - Ward 002
-314773	WI	WASHINGTON	Washington - Town Of Addison - Washington County - Ward 003
-314774	WI	BURNETT	Burnett - Town Of Union - Burnett County - Ward 001
-314775	WI	RUSK	Rusk - City Of Ladysmith - Rusk County - Ward 004
-314776	WI	FLORENCE	Florence - Town Of Florence - Florence County - Ward 005
-314777	WI	PORTAGE	Portage - Village Of Whiting - Portage County - Ward 002
-314778	WI	OCONTO	Oconto - Town Of Little Suamico - Oconto County - Ward 002
-314779	WI	WALWORTH	Walworth - Village Of Sharon - Walworth County - Ward 002
-314780	WI	SAWYER	Sawyer - Town Of Weirgor - Sawyer County - Ward 001
-314781	WI	IRON	Iron - City Of Hurley - Iron County - Ward 004
-314782	WI	WAUKESHA	Waukesha - Town Of Delafield - Waukesha County - Ward 011
-314783	WI	POLK	Polk - Village Of Clayton - Polk County - Ward 001
-314784	WI	CRAWFORD	Crawford - Village Of Eastman - Crawford County - Ward 001
-314785	WI	WOOD	Wood - Town Of Grand Rapids - Wood County - Ward 006
-314786	WI	TREMPEALEAU	Trempealeau - Town Of Albion - Trempealeau County - Ward 001
-314787	WI	CLARK	Clark - City Of Colby - Multiple Counties - Ward 002
-314788	WI	COLUMBIA	Columbia - Town Of Lewiston - Columbia County - Ward 002
-314789	WI	MONROE	Monroe - City Of Tomah - Monroe County - Ward 006
-314790	WI	WALWORTH	Walworth - City Of Elkhorn - Walworth County - Ward 003
-314791	WI	FOND DU LAC	Fond Du Lac - City Of Ripon - Fond Du Lac County - Ward 002
-314792	WI	GREEN LAKE	Green Lake - Town Of Green Lake - Green Lake County - Ward 002
-314793	WI	MARATHON	Marathon - City Of Abbotsford - Multiple Counties - Ward 001
-314794	WI	JACKSON	Jackson - Town Of Garden Valley - Jackson County - Ward 001
-314795	WI	WAUSHARA	Waushara - City Of Wautoma - Waushara County - Ward 003
-314796	WI	WASHBURN	Washburn - Town Of Sarona - Washburn County - Ward 001
-314797	WI	GREEN LAKE	Green Lake - City Of Green Lake - Green Lake County - Ward 001
-314798	WI	DODGE	Dodge - Town Of Fox Lake - Dodge County - Ward 001
-314799	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 011
-314800	WI	FLORENCE	Florence - Town Of Aurora - Florence County - Ward 002
-314801	WI	WINNEBAGO	Winnebago - City Of Omro - Winnebago County - Ward 006
-314802	WI	WAUKESHA	Waukesha - Town Of Brookfield - Waukesha County - Ward 008
-314803	WI	WAUPACA	Waupaca - City Of Weyauwega - Waupaca County - Ward 002
-314804	WI	BUFFALO	Buffalo - Town Of Alma - Buffalo County - Ward 001
-314805	WI	CLARK	Clark - Town Of Reseburg - Clark County - Ward 001
-314806	WI	VERNON	Vernon - City Of Westby - Vernon County - Ward 003
-314807	WI	MONROE	Monroe - City Of Tomah - Monroe County - Ward 011
-314808	WI	TAYLOR	Taylor - Town Of Roosevelt - Taylor County - Ward 001
-314809	WI	LANGLADE	Langlade - Town Of Peck - Langlade County - Ward 001
-314810	WI	DODGE	Dodge - Town Of Burnett - Dodge County - Ward 001
-314811	WI	BURNETT	Burnett - Town Of Oakland - Burnett County - Ward 002
-314812	WI	MARATHON	Marathon - Village Of Spencer - Marathon County - Ward 002
-314813	WI	IRON	Iron - Town Of Oma - Iron County - Ward 001
-314814	WI	DANE	Dane - City Of Madison - Dane County - Ward 102
-314815	WI	GREEN LAKE	Green Lake - City Of Markesan - Green Lake County - Ward 002
-314816	WI	CALUMET	Calumet - Town Of Brillion - Calumet County - Ward 002
-314817	WI	BARRON	Barron - Town Of Barron - Barron County - Ward 002
-314818	WI	ASHLAND	Ashland - Town Of Gordon - Ashland County - Ward 001
-314819	WI	PRICE	Price - Town Of Kennan - Price County - Ward 001
-314820	WI	WOOD	Wood - City Of Nekoosa - Wood County - Ward 003
-314821	WI	WOOD	Wood - Village Of Port Edwards - Wood County - Ward 001
-314822	WI	BUFFALO	Buffalo - Town Of Cross - Buffalo County - Ward 001
-314823	WI	EAU CLAIRE	Eau Claire - Town Of Bridge Creek - Eau Claire County - Ward 001
-314824	WI	PRICE	Price - City Of Park Falls - Price County - Ward 007
-314825	WI	COLUMBIA	Columbia - Town Of Fountain Prairie - Columbia County - Ward 001
-314826	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 012
-314827	WI	WINNEBAGO	Winnebago - Town Of Vinland - Winnebago County - Ward 001
-314828	WI	SHAWANO	Shawano - Town Of Grant - Shawano County - Ward 002
-314829	WI	MONROE	Monroe - Town Of Sheldon - Monroe County - Ward 001
-314830	WI	IOWA	Iowa - Town Of Ridgeway - Iowa County - Ward 001
-314831	WI	BARRON	Barron - Town Of Lakeland - Barron County - Ward 001
-314832	WI	LAFAYETTE	Lafayette - Village Of South Wayne - Lafayette County - Ward 001
-314833	WI	GREEN	Green - City Of Brodhead - Multiple Counties - Ward 006
-314834	WI	JEFFERSON	Jefferson - Town Of Sullivan - Jefferson County - Ward 003
-314835	WI	MANITOWOC	Manitowoc - Town Of Schleswig - Manitowoc County - Ward 001
-314836	WI	DODGE	Dodge - City Of Fox Lake - Dodge County - Ward 003
-314837	WI	WASHBURN	Washburn - Town Of Madge - Washburn County - Ward 002
-314838	WI	WAUKESHA	Waukesha - Village Of Hartland - Waukesha County - Ward 012
-314839	WI	RICHLAND	Richland - City Of Richland Center - Richland County - Ward 002
-314840	WI	IOWA	Iowa - Town Of Dodgeville - Iowa County - Ward 003
-314841	WI	FOND DU LAC	Fond Du Lac - Village Of Campbellsport - Fond Du Lac County - Ward 002
-314842	WI	WAUPACA	Waupaca - City Of Clintonville - Waupaca County - Ward 002
-314843	WI	CHIPPEWA	Chippewa - Town Of Lake Holcombe - Chippewa County - Ward 002
-314844	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 014
-314845	WI	GRANT	Grant - Town Of Cassville - Grant County - Ward 001
-314846	WI	WALWORTH	Walworth - Town Of Geneva - Walworth County - Ward 003
-314847	WI	GRANT	Grant - City Of Cuba City - Multiple Counties - Ward 004
-314848	WI	IOWA	Iowa - Town Of Pulaski - Iowa County - Ward 001
-314849	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 003
-314850	WI	BARRON	Barron - City Of Chetek - Barron County - Ward 003
-314851	WI	DOOR	Door - Town Of Brussels - Door County - Ward 001
-314852	WI	POLK	Polk - Town Of McKinley - Polk County - Ward 001
-314853	WI	MARINETTE	Marinette - Town Of Dunbar - Marinette County - Ward 001
-314854	WI	LANGLADE	Langlade - Town Of Langlade - Langlade County - Ward 001
-314855	WI	SHAWANO	Shawano - Town Of Wittenberg - Shawano County - Ward 002
-314856	WI	SHAWANO	Shawano - Town Of Germania - Shawano County - Ward 001
-314857	WI	ST CROIX	St. Croix - Town Of St. Joseph - St. Croix County - Ward 003
-314858	WI	WAUPACA	Waupaca - City Of New London - Multiple Counties - Ward 003
-314859	WI	DODGE	Dodge - Town Of Oak Grove - Dodge County - Ward 002
-314860	WI	BAYFIELD	Bayfield - Town Of Keystone - Bayfield County - Ward 001
-314861	WI	LAFAYETTE	Lafayette - Town Of Shullsburg - Lafayette County - Ward 001
-314862	WI	MARATHON	Marathon - Village Of Maine - Marathon County - Ward 004
-314863	WI	SAUK	Sauk - Village Of Lake Delton - Sauk County - Ward 003
-314864	WI	JUNEAU	Juneau - Town Of Wonewoc - Juneau County - Ward 001
-314865	WI	ONEIDA	Oneida - Town Of Crescent - Oneida County - Ward 003
-314866	WI	OUTAGAMIE	Outagamie - Town Of Seymour - Outagamie County - Ward 002
-314867	WI	BARRON	Barron - City Of Rice Lake - Barron County - Ward 003
-314868	WI	DOUGLAS	Douglas - Village Of Oliver - Douglas County - Ward 001
-314869	WI	EAU CLAIRE	Eau Claire - City Of Altoona - Eau Claire County - Ward 010
-314870	WI	WINNEBAGO	Winnebago - City Of Omro - Winnebago County - Ward 007
-314871	WI	MARINETTE	Marinette - Town Of Lake - Marinette County - Ward 002
-314872	WI	PRICE	Price - Town Of Prentice - Price County - Ward 001
-314873	WI	SAUK	Sauk - City Of Reedsburg - Sauk County - Ward 003
-314874	WI	MONROE	Monroe - Town Of Sparta - Monroe County - Ward 003
-314875	WI	WAUPACA	Waupaca - City Of Marion - Multiple Counties - Ward 002
-314876	WI	SAUK	Sauk - Town Of Westfield - Sauk County - Ward 001
-314877	WI	SHEBOYGAN	Sheboygan - Town Of Greenbush - Sheboygan County - Ward 002
-314878	WI	WAUPACA	Waupaca - City Of New London - Multiple Counties - Ward 010
-314879	WI	ST CROIX	St. Croix - City Of New Richmond - St. Croix County - Ward 006
-314880	WI	DUNN	Dunn - Town Of Menomonie - Dunn County - Ward 001
-314881	WI	MARQUETTE	Marquette - Town Of Montello - Marquette County - Ward 003
-314882	WI	SAUK	Sauk - Village Of Rock Springs - Sauk County - Ward 001
-314883	WI	TREMPEALEAU	Trempealeau - Town Of Unity - Trempealeau County - Ward 001
-314884	WI	WOOD	Wood - Town Of Grand Rapids - Wood County - Ward 003
-314885	WI	KENOSHA	Kenosha - Village Of Bristol - Kenosha County - Ward 003
-314886	WI	MARATHON	Marathon - Town Of Harrison - Marathon County - Ward 001
-314887	WI	ROCK	Rock - Town Of Fulton - Rock County - Ward 003
-314888	WI	TAYLOR	Taylor - Town Of Aurora - Taylor County - Ward 001
-314889	WI	CHIPPEWA	Chippewa - City Of Stanley - Multiple Counties - Ward 004
-314890	WI	IOWA	Iowa - Town Of Wyoming - Iowa County - Ward 001
-314891	WI	GRANT	Grant - Town Of Platteville - Grant County - Ward 002
-314892	WI	ST CROIX	St. Croix - City Of New Richmond - St. Croix County - Ward 003
-314893	WI	VERNON	Vernon - City Of Viroqua - Vernon County - Ward 003
-314894	WI	CLARK	Clark - City Of Abbotsford - Multiple Counties - Ward 003
-314895	WI	WOOD	Wood - Town Of Dexter - Wood County - Ward 001
-314896	WI	CHIPPEWA	Chippewa - Town Of Sigel - Chippewa County - Ward 001
-314897	WI	PEPIN	Pepin - Town Of Waubeek - Pepin County - Ward 001
-314898	WI	POLK	Polk - Town Of Black Brook - Polk County - Ward 002
-314899	WI	GRANT	Grant - Village Of Tennyson - Grant County - Ward 001
-314900	WI	LINCOLN	Lincoln - City Of Tomahawk - Lincoln County - Ward 002
-314901	WI	JACKSON	Jackson - Town Of Franklin - Jackson County - Ward 001
-314902	WI	WINNEBAGO	Winnebago - Town Of Neenah - Winnebago County - Ward 004
-314903	WI	DOOR	Door - Village Of Egg Harbor - Door County - Ward 001
-314904	WI	CLARK	Clark - Town Of Dewhurst - Clark County - Ward 001
-314905	WI	KENOSHA	Kenosha - Village Of Twin Lakes - Kenosha County - Ward 007
-314906	WI	WINNEBAGO	Winnebago - City Of Neenah - Winnebago County - Ward 025
-314907	WI	MANITOWOC	Manitowoc - Village Of Kellnersville - Manitowoc County - Ward 001
-314908	WI	VILAS	Vilas - Town Of Lincoln - Vilas County - Ward 003
-314909	WI	MARINETTE	Marinette - Town Of Athelstane - Marinette County - Ward 002
-314910	WI	BAYFIELD	Bayfield - Town Of Delta - Bayfield County - Ward 001
-314911	WI	SHAWANO	Shawano - Town Of Herman - Shawano County - Ward 001
-314912	WI	FOND DU LAC	Fond Du Lac - Village Of Fairwater - Fond Du Lac County - Ward 001
-314913	WI	WAUKESHA	Waukesha - Village Of Lac La Belle - Multiple Counties - Ward 001
-314914	WI	IOWA	Iowa - City Of Mineral Point - Iowa County - Ward 004
-314915	WI	KEWAUNEE	Kewaunee - City Of Kewaunee - Kewaunee County - Ward 004
-314916	WI	GRANT	Grant - Town Of Watterstown - Grant County - Ward 001
-314917	WI	RICHLAND	Richland - Town Of Forest - Richland County - Ward 001
-314918	WI	JUNEAU	Juneau - City Of Mauston - Juneau County - Ward 007
-314919	WI	GREEN LAKE	Green Lake - City Of Princeton - Green Lake County - Ward 002
-314920	WI	MARATHON	Marathon - Town Of Stettin - Marathon County - Ward 004
-314921	WI	PRICE	Price - Town Of Hill - Price County - Ward 001
-314922	WI	DOOR	Door - Town Of Sevastopol - Door County - Ward 002
-314923	WI	WASHINGTON	Washington - Town Of Wayne - Washington County - Ward 002
-314924	WI	SAUK	Sauk - Town Of Spring Green - Sauk County - Ward 002
-314925	WI	DODGE	Dodge - City Of Horicon - Dodge County - Ward 002
-314926	WI	IOWA	Iowa - Town Of Eden - Iowa County - Ward 001
-314927	WI	GRANT	Grant - Town Of Wyalusing - Grant County - Ward 001
-314928	WI	ST CROIX	St. Croix - City Of River Falls - Multiple Counties - Ward 001
-314929	WI	ONEIDA	Oneida - Town Of Pine Lake - Oneida County - Ward 003
-314930	WI	WASHBURN	Washburn - Town Of Birchwood - Washburn County - Ward 002
-314931	WI	CLARK	Clark - Town Of Mayville - Clark County - Ward 001
-314932	WI	WAUKESHA	Waukesha - Town Of Mukwonago - Waukesha County - Ward 006
-314933	WI	EAU CLAIRE	Eau Claire - City Of Altoona - Eau Claire County - Ward 004
-314934	WI	ST CROIX	St. Croix - City Of New Richmond - St. Croix County - Ward 001
-314935	WI	JACKSON	Jackson - Town Of Curran - Jackson County - Ward 001
-314936	WI	GREEN	Green - Town Of Decatur - Green County - Ward 002
-314937	WI	OUTAGAMIE	Outagamie - City Of Seymour - Outagamie County - Ward 004
-314938	WI	BAYFIELD	Bayfield - Town Of Iron River - Bayfield County - Ward 002
-314939	WI	ROCK	Rock - Town Of La Prairie - Rock County - Ward 002
-314940	WI	SHAWANO	Shawano - Village Of Mattoon - Shawano County - Ward 001
-314941	WI	IRON	Iron - City Of Montreal - Iron County - Ward 002
-314942	WI	IRON	Iron - City Of Hurley - Iron County - Ward 003
-314943	WI	BUFFALO	Buffalo - Village Of Nelson - Buffalo County - Ward 001
-314944	WI	BAYFIELD	Bayfield - Town Of Bell - Bayfield County - Ward 001
-314945	WI	TREMPEALEAU	Trempealeau - Town Of Preston - Trempealeau County - Ward 001
-314946	WI	PORTAGE	Portage - Village Of Junction City - Portage County - Ward 001
-314947	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 018
-314948	WI	GREEN	Green - Village Of Belleville - Multiple Counties - Ward 003
-314949	WI	WAUSHARA	Waushara - Town Of Richford - Waushara County - Ward 001
-314950	WI	JUNEAU	Juneau - Town Of Cutler - Juneau County - Ward 001
-314951	WI	COLUMBIA	Columbia - City Of Columbus - Multiple Counties - Ward 006
-314952	WI	CLARK	Clark - Town Of Lynn - Clark County - Ward 001
-314953	WI	BURNETT	Burnett - Town Of Lincoln - Burnett County - Ward 001
-314954	WI	LAFAYETTE	Lafayette - Town Of Darlington - Lafayette County - Ward 002
-314955	WI	JUNEAU	Juneau - Town Of Wonewoc - Juneau County - Ward 002
-314956	WI	WALWORTH	Walworth - Town Of Lyons - Walworth County - Ward 003
-314957	WI	ADAMS	Adams - Town Of Lincoln - Adams County - Ward 001
-314958	WI	GREEN LAKE	Green Lake - Village Of Kingston - Green Lake County - Ward 001
-314959	WI	EAU CLAIRE	Eau Claire - Town Of Washington - Eau Claire County - Ward 012
-314960	WI	TAYLOR	Taylor - Town Of McKinley - Taylor County - Ward 001
-314961	WI	DODGE	Dodge - Village Of Clyman - Dodge County - Ward 001
-314962	WI	MARATHON	Marathon - Town Of Guenther - Marathon County - Ward 001
-314963	WI	ST CROIX	St. Croix - City Of Hudson - St. Croix County - Ward 001
-314964	WI	CRAWFORD	Crawford - Town Of Haney - Crawford County - Ward 001
-314965	WI	JUNEAU	Juneau - City Of New Lisbon - Juneau County - Ward 003
-314966	WI	FOREST	Forest - Town Of Wabeno - Forest County - Ward 001
-314967	WI	RACINE	Racine - Town Of Norway - Racine County - Ward 005
-314968	WI	RUSK	Rusk - Town Of Thornapple - Rusk County - Ward 001
-314969	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 003
-314970	WI	RUSK	Rusk - Village Of Hawkins - Rusk County - Ward 001
-314971	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 001
-314972	WI	OZAUKEE	Ozaukee - Village Of Saukville - Ozaukee County - Ward 004
-314973	WI	BARRON	Barron - Town Of Sumner - Barron County - Ward 001
-314974	WI	GREEN	Green - Town Of Brooklyn - Green County - Ward 002
-314975	WI	OCONTO	Oconto - Town Of Little Suamico - Oconto County - Ward 007
-314976	WI	FOREST	Forest - Town Of Lincoln - Forest County - Ward 002
-314977	WI	MARINETTE	Marinette - City Of Peshtigo - Marinette County - Ward 007
-314978	WI	WOOD	Wood - Town Of Rudolph - Wood County - Ward 002
-314979	WI	LINCOLN	Lincoln - Town Of Wilson - Lincoln County - Ward 001
-314980	WI	DANE	Dane - Village Of Windsor - Dane County - Ward 004
-314981	WI	ST CROIX	St. Croix - Town Of Hudson - St. Croix County - Ward 006
-314982	WI	PRICE	Price - Town Of Emery - Price County - Ward 001
-314983	WI	JACKSON	Jackson - Town Of Komensky - Jackson County - Ward 001
-314984	WI	KEWAUNEE	Kewaunee - Town Of Casco - Kewaunee County - Ward 002
-314985	WI	BARRON	Barron - Village Of Dallas - Barron County - Ward 001
-314986	WI	MILWAUKEE	Milwaukee - Village Of West Milwaukee - Milwaukee County - Ward 002
-314987	WI	LAFAYETTE	Lafayette - Town Of Seymour - Lafayette County - Ward 001
-314988	WI	ADAMS	Adams - Town Of Adams - Adams County - Ward 002
-314989	WI	OCONTO	Oconto - Town Of Brazeau - Oconto County - Ward 002
-314990	WI	TREMPEALEAU	Trempealeau - Town Of Burnside - Trempealeau County - Ward 001
-314991	WI	WAUPACA	Waupaca - Town Of Waupaca - Waupaca County - Ward 002
-314992	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 006
-314993	WI	RACINE	Racine - Town Of Burlington - Racine County - Ward 003
-314994	WI	TAYLOR	Taylor - Town Of Taft - Taylor County - Ward 001
-314995	WI	BAYFIELD	Bayfield - Town Of Mason - Bayfield County - Ward 001
-314996	WI	LINCOLN	Lincoln - Town Of Harrison - Lincoln County - Ward 003
-314997	WI	LAFAYETTE	Lafayette - Town Of Benton - Lafayette County - Ward 001
-314998	WI	SAUK	Sauk - Village Of Lavalle - Sauk County - Ward 001
-314999	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 005
-315000	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 015
-315001	WI	GRANT	Grant - Town Of Fennimore - Grant County - Ward 001
-315002	WI	RUSK	Rusk - Town Of Marshall - Rusk County - Ward 002
-315003	WI	FOREST	Forest - Town Of Laona - Forest County - Ward 002
-315004	WI	WAUPACA	Waupaca - Village Of Embarrass - Waupaca County - Ward 001
-315005	WI	ST CROIX	St. Croix - Town Of Troy - St. Croix County - Ward 002
-315006	WI	DODGE	Dodge - Town Of Oak Grove - Dodge County - Ward 001
-315007	WI	SHAWANO	Shawano - Town Of Almon - Shawano County - Ward 001
-315008	WI	CLARK	Clark - City Of Thorp - Clark County - Ward 002
-315009	WI	CHIPPEWA	Chippewa - Town Of Tilden - Chippewa County - Ward 002
-315010	WI	BUFFALO	Buffalo - Town Of Modena - Buffalo County - Ward 001
-315011	WI	WALWORTH	Walworth - Town Of Linn - Walworth County - Ward 003
-315012	WI	TAYLOR	Taylor - Town Of Rib Lake - Taylor County - Ward 002
-315013	WI	KEWAUNEE	Kewaunee - Town Of Red River - Kewaunee County - Ward 002
-315014	WI	MILWAUKEE	Milwaukee - Village Of River Hills - Milwaukee County - Ward 001
-315015	WI	DODGE	Dodge - Village Of Hustisford - Dodge County - Ward 002
-315016	WI	DOUGLAS	Douglas - Town Of Highland - Douglas County - Ward 001
-315017	WI	ASHLAND	Ashland - Town Of Morse - Ashland County - Ward 001
-315018	WI	CLARK	Clark - Village Of Granton - Clark County - Ward 001
-315019	WI	RACINE	Racine - Town Of Burlington - Racine County - Ward 007
-315020	WI	RUSK	Rusk - City Of Ladysmith - Rusk County - Ward 003
-315021	WI	ROCK	Rock - Town Of Rock - Rock County - Ward 003
-315022	WI	MARQUETTE	Marquette - City Of Montello - Marquette County - Ward 002
-315023	WI	LAFAYETTE	Lafayette - Town Of Fayette - Lafayette County - Ward 001
-315024	WI	MARATHON	Marathon - Village Of Athens - Marathon County - Ward 002
-315025	WI	OCONTO	Oconto - Town Of Bagley - Oconto County - Ward 001
-315026	WI	PEPIN	Pepin - Village Of Pepin - Pepin County - Ward 002
-315027	WI	MARQUETTE	Marquette - Town Of Buffalo - Marquette County - Ward 002
-315028	WI	TAYLOR	Taylor - Town Of Jump River - Taylor County - Ward 001
-315029	WI	EAU CLAIRE	Eau Claire - Town Of Lincoln - Eau Claire County - Ward 002
-315030	WI	DODGE	Dodge - Village Of Lowell - Dodge County - Ward 001
-315031	WI	PORTAGE	Portage - Town Of Hull - Portage County - Ward 005
-315032	WI	WASHBURN	Washburn - Town Of Brooklyn - Washburn County - Ward 001
-315033	WI	GRANT	Grant - Town Of Wingville - Grant County - Ward 001
-315034	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 008
-315035	WI	TREMPEALEAU	Trempealeau - City Of Osseo - Trempealeau County - Ward 003
-315036	WI	RICHLAND	Richland - Town Of Richland - Richland County - Ward 001
-315037	WI	OCONTO	Oconto - City Of Gillett - Oconto County - Ward 002
-315038	WI	PORTAGE	Portage - Village Of Amherst Junction - Portage County - Ward 001
-315039	WI	EAU CLAIRE	Eau Claire - City Of Augusta - Eau Claire County - Ward 002
-315040	WI	WINNEBAGO	Winnebago - Town Of Menasha - Winnebago County - Ward 013
-315041	WI	KENOSHA	Kenosha - Town Of Salem - Kenosha County - Ward 006
-315042	WI	PRICE	Price - City Of Park Falls - Price County - Ward 004
-315043	WI	WALWORTH	Walworth - Town Of East Troy - Walworth County - Ward 004
-315044	WI	OCONTO	Oconto - Town Of Gillett - Oconto County - Ward 002
-315045	WI	TREMPEALEAU	Trempealeau - City Of Blair - Trempealeau County - Ward 003
-315046	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 003
-315047	WI	CLARK	Clark - City Of Loyal - Clark County - Ward 002
-315048	WI	WINNEBAGO	Winnebago - Town Of Algoma - Winnebago County - Ward 007
-315049	WI	LAFAYETTE	Lafayette - Town Of Kendall - Lafayette County - Ward 001
-315050	WI	CALUMET	Calumet - Village Of Hilbert - Calumet County - Ward 002
-315051	WI	KEWAUNEE	Kewaunee - City Of Kewaunee - Kewaunee County - Ward 005
-315052	WI	PRICE	Price - Town Of Spirit - Price County - Ward 001
-315053	WI	BAYFIELD	Bayfield - Town Of Lincoln - Bayfield County - Ward 001
-315054	WI	WAUKESHA	Waukesha - Village Of Mukwonago - Multiple Counties - Ward 007
-315055	WI	BURNETT	Burnett - Town Of Wood River - Burnett County - Ward 001
-315056	WI	KEWAUNEE	Kewaunee - Town Of Montpelier - Kewaunee County - Ward 003
-315057	WI	MANITOWOC	Manitowoc - Village Of Maribel - Manitowoc County - Ward 001
-315058	WI	CLARK	Clark - City Of Colby - Multiple Counties - Ward 004
-315059	WI	ONEIDA	Oneida - Town Of Monico - Oneida County - Ward 001
-315060	WI	PRICE	Price - City Of Phillips - Price County - Ward 002
-315061	WI	FOND DU LAC	Fond Du Lac - City Of Ripon - Fond Du Lac County - Ward 006
-315062	WI	RUSK	Rusk - Town Of Lawrence - Rusk County - Ward 001
-315063	WI	VERNON	Vernon - Town Of Clinton - Vernon County - Ward 002
-315064	WI	GREEN	Green - Village Of Albany - Green County - Ward 002
-315065	WI	WAUSHARA	Waushara - Town Of Dakota - Waushara County - Ward 002
-315066	WI	COLUMBIA	Columbia - Village Of Friesland - Columbia County - Ward 001
-315067	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 026
-315068	WI	FOND DU LAC	Fond Du Lac - Village Of Oakfield - Fond Du Lac County - Ward 002
-315069	WI	MARINETTE	Marinette - Village Of Pound - Marinette County - Ward 001
-315070	WI	WOOD	Wood - Town Of Seneca - Wood County - Ward 002
-315071	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 023
-315072	WI	PEPIN	Pepin - Town Of Frankfort - Pepin County - Ward 001
-315073	WI	CRAWFORD	Crawford - Town Of Clayton - Crawford County - Ward 002
-315074	WI	ASHLAND	Ashland - Town Of Marengo - Ashland County - Ward 001
-315075	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 031
-315076	WI	WASHBURN	Washburn - Town Of Evergreen - Washburn County - Ward 002
-315077	WI	MONROE	Monroe - Village Of Warrens - Monroe County - Ward 001
-315078	WI	EAU CLAIRE	Eau Claire - Town Of Washington - Eau Claire County - Ward 006
-315079	WI	SAWYER	Sawyer - Village Of Winter - Sawyer County - Ward 001
-315080	WI	PRICE	Price - City Of Park Falls - Price County - Ward 006
-315081	WI	TREMPEALEAU	Trempealeau - Town Of Preston - Trempealeau County - Ward 002
-315082	WI	BURNETT	Burnett - Town Of Grantsburg - Burnett County - Ward 001
-315083	WI	RUSK	Rusk - City Of Ladysmith - Rusk County - Ward 007
-315084	WI	CLARK	Clark - Town Of Loyal - Clark County - Ward 001
-315085	WI	LANGLADE	Langlade - Village Of White Lake - Langlade County - Ward 001
-315086	WI	RICHLAND	Richland - Town Of Sylvan - Richland County - Ward 001
-315087	WI	WAUPACA	Waupaca - Village Of Scandinavia - Waupaca County - Ward 001
-315088	WI	SHAWANO	Shawano - Town Of Morris - Shawano County - Ward 001
-315089	WI	WOOD	Wood - Town Of Arpin - Wood County - Ward 002
-315090	WI	SAUK	Sauk - Town Of Baraboo - Sauk County - Ward 003
-315091	WI	RUSK	Rusk - Town Of Murry - Rusk County - Ward 001
-315092	WI	VERNON	Vernon - Town Of Union - Vernon County - Ward 001
-315093	WI	CHIPPEWA	Chippewa - Town Of Tilden - Chippewa County - Ward 001
-315094	WI	WOOD	Wood - Town Of Remington - Wood County - Ward 001
-315095	WI	MANITOWOC	Manitowoc - Town Of Newton - Manitowoc County - Ward 003
-315096	WI	BARRON	Barron - Town Of Oak Grove - Barron County - Ward 002
-315097	WI	DUNN	Dunn - Town Of Weston - Dunn County - Ward 001
-315098	WI	BURNETT	Burnett - Town Of Meenon - Burnett County - Ward 002
-315099	WI	CRAWFORD	Crawford - Town Of Wauzeka - Crawford County - Ward 001
-315100	WI	PRICE	Price - Town Of Knox - Price County - Ward 001
-315101	WI	WASHINGTON	Washington - Town Of Kewaskum - Washington County - Ward 001
-315102	WI	WAUKESHA	Waukesha - Village Of Big Bend - Waukesha County - Ward 003
-315103	WI	SAUK	Sauk - Town Of Sumpter - Sauk County - Ward 002
-315104	WI	MARINETTE	Marinette - City Of Peshtigo - Marinette County - Ward 006
-315105	WI	MENOMINEE	Menominee - Town Of Menominee - Menominee County - Ward 002
-315106	WI	CLARK	Clark - City Of Owen - Clark County - Ward 001
-315107	WI	BAYFIELD	Bayfield - City Of Washburn - Bayfield County - Ward 002
-315108	WI	MARQUETTE	Marquette - City Of Montello - Marquette County - Ward 003
-315109	WI	BAYFIELD	Bayfield - Town Of Clover - Bayfield County - Ward 001
-315110	WI	MARQUETTE	Marquette - Village Of Westfield - Marquette County - Ward 002
-315111	WI	VILAS	Vilas - City Of Eagle River - Vilas County - Ward 005
-315112	WI	DODGE	Dodge - Town Of Hubbard - Dodge County - Ward 001
-315113	WI	LINCOLN	Lincoln - Town Of Bradley - Lincoln County - Ward 004
-315114	WI	TAYLOR	Taylor - Town Of Molitor - Taylor County - Ward 001
-315115	WI	FOREST	Forest - Town Of Wabeno - Forest County - Ward 003
-315116	WI	VERNON	Vernon - City Of Hillsboro - Vernon County - Ward 003
-315117	WI	BARRON	Barron - City Of Rice Lake - Barron County - Ward 002
-315118	WI	RUSK	Rusk - Town Of Flambeau - Rusk County - Ward 002
-315119	WI	WOOD	Wood - Village Of Arpin - Wood County - Ward 001
-315120	WI	DODGE	Dodge - Town Of Westford - Dodge County - Ward 002
-315121	WI	OUTAGAMIE	Outagamie - Village Of Bear Creek - Outagamie County - Ward 001
-315122	WI	GRANT	Grant - Town Of Ellenboro - Grant County - Ward 001
-315123	WI	WAUPACA	Waupaca - Town Of Saint Lawrence - Waupaca County - Ward 001
-315124	WI	COLUMBIA	Columbia - Village Of Doylestown - Columbia County - Ward 001
-315125	WI	BAYFIELD	Bayfield - City Of Bayfield - Bayfield County - Ward 001
-315126	WI	VERNON	Vernon - Village Of Genoa - Vernon County - Ward 001
-315127	WI	GREEN	Green - Town Of Mount Pleasant - Green County - Ward 002
-315128	WI	IOWA	Iowa - Village Of Hollandale - Iowa County - Ward 001
-315129	WI	ADAMS	Adams - Town Of Easton - Adams County - Ward 001
-315130	WI	RACINE	Racine - Town Of Dover - Racine County - Ward 007
-315131	WI	GREEN	Green - Town Of Exeter - Green County - Ward 002
-315132	WI	SAWYER	Sawyer - Town Of Ojibwa - Sawyer County - Ward 001
-315133	WI	BUFFALO	Buffalo - Town Of Maxville - Buffalo County - Ward 001
-315134	WI	TAYLOR	Taylor - Town Of Ford - Taylor County - Ward 001
-315135	WI	SAUK	Sauk - City Of Reedsburg - Sauk County - Ward 011
-315136	WI	FOREST	Forest - Town Of Wabeno - Forest County - Ward 002
-315137	WI	ST CROIX	St. Croix - Village Of Baldwin - St. Croix County - Ward 005
-315138	WI	RUSK	Rusk - Town Of True - Rusk County - Ward 001
-315139	WI	WAUPACA	Waupaca - Town Of Wyoming - Waupaca County - Ward 001
-315140	WI	DANE	Dane - Village Of Waunakee - Dane County - Ward 005
-315141	WI	MARATHON	Marathon - Town Of Holton - Marathon County - Ward 001
-315142	WI	RUSK	Rusk - Town Of Strickland - Rusk County - Ward 001
-315143	WI	WAUSHARA	Waushara - Town Of Springwater - Waushara County - Ward 002
-315144	WI	CALUMET	Calumet - Town Of New Holstein - Calumet County - Ward 003
-315145	WI	RICHLAND	Richland - Town Of Rockbridge - Richland County - Ward 003
-315146	WI	KEWAUNEE	Kewaunee - Town Of Red River - Kewaunee County - Ward 003
-315147	WI	WALWORTH	Walworth - Village Of Walworth - Walworth County - Ward 003
-315148	WI	GRANT	Grant - Town Of Clifton - Grant County - Ward 001
-315149	WI	CLARK	Clark - Town Of Hoard - Clark County - Ward 001
-315150	WI	WASHINGTON	Washington - Town Of Addison - Washington County - Ward 005
-315151	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 033
-315152	WI	RICHLAND	Richland - City Of Richland Center - Richland County - Ward 004
-315153	WI	GREEN	Green - Town Of Mount Pleasant - Green County - Ward 001
-315154	WI	PORTAGE	Portage - Town Of Pine Grove - Portage County - Ward 002
-315155	WI	MARINETTE	Marinette - City Of Niagara - Marinette County - Ward 003
-315156	WI	JEFFERSON	Jefferson - Town Of Cold Spring - Jefferson County - Ward 001
-315157	WI	RICHLAND	Richland - Village Of Cazenovia - Multiple Counties - Ward 001
-315158	WI	WAUPACA	Waupaca - Town Of Mukwa - Waupaca County - Ward 001
-315159	WI	MARATHON	Marathon - Village Of Kronenwetter - Marathon County - Ward 008
-315160	WI	SHAWANO	Shawano - Town Of Birnamwood - Shawano County - Ward 001
-315161	WI	WASHINGTON	Washington - Town Of Hartford - Washington County - Ward 003
-315162	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 004
-315163	WI	WAUPACA	Waupaca - City Of Manawa - Waupaca County - Ward 002
-315164	WI	COLUMBIA	Columbia - Town Of Caledonia - Columbia County - Ward 002
-315165	WI	GRANT	Grant - City Of Lancaster - Grant County - Ward 005
-315166	WI	GRANT	Grant - Town Of Glen Haven - Grant County - Ward 001
-315167	WI	LAFAYETTE	Lafayette - City Of Darlington - Lafayette County - Ward 003
-315168	WI	PRICE	Price - Town Of Catawba - Price County - Ward 001
-315169	WI	VERNON	Vernon - Village Of Chaseburg - Vernon County - Ward 001
-315170	WI	PIERCE	Pierce - Town Of Salem - Pierce County - Ward 001
-315171	WI	WINNEBAGO	Winnebago - Town Of Omro - Winnebago County - Ward 001
-315172	WI	LAFAYETTE	Lafayette - Town Of Blanchard - Lafayette County - Ward 001
-315173	WI	GRANT	Grant - Town Of Bloomington - Grant County - Ward 001
-315174	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 018
-315175	WI	BARRON	Barron - Village Of Haugen - Barron County - Ward 001
-315176	WI	WAUPACA	Waupaca - Town Of Farmington - Waupaca County - Ward 006
-315177	WI	GREEN	Green - Village Of New Glarus - Green County - Ward 004
-315178	WI	DUNN	Dunn - Village Of Wheeler - Dunn County - Ward 001
-315179	WI	LAFAYETTE	Lafayette - Town Of Lamont - Lafayette County - Ward 001
-315180	WI	FOND DU LAC	Fond Du Lac - Town Of Alto - Fond Du Lac County - Ward 002
-315181	WI	FLORENCE	Florence - Town Of Florence - Florence County - Ward 003
-315182	WI	WASHINGTON	Washington - Town Of Polk - Washington County - Ward 002
-315183	WI	CLARK	Clark - City Of Owen - Clark County - Ward 003
-315184	WI	RICHLAND	Richland - Town Of Rockbridge - Richland County - Ward 001
-315185	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 009
-315186	WI	JACKSON	Jackson - Town Of Knapp - Jackson County - Ward 001
-315187	WI	EAU CLAIRE	Eau Claire - City Of Augusta - Eau Claire County - Ward 001
-315188	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 006
-315189	WI	FLORENCE	Florence - Town Of Fern - Florence County - Ward 001
-315190	WI	MONROE	Monroe - Town Of Wellington - Monroe County - Ward 002
-315191	WI	PRICE	Price - City Of Park Falls - Price County - Ward 005
-315192	WI	RACINE	Racine - Village Of North Bay - Racine County - Ward 001
-315193	WI	MENOMINEE	Menominee - Town Of Menominee - Menominee County - Ward 004
-315194	WI	GREEN	Green - Town Of Jefferson - Green County - Ward 002
-315195	WI	GREEN LAKE	Green Lake - Town Of Princeton - Green Lake County - Ward 003
-315196	WI	JACKSON	Jackson - Town Of Irving - Jackson County - Ward 002
-315197	WI	FOREST	Forest - Town Of Nashville - Forest County - Ward 001
-315198	WI	DUNN	Dunn - Town Of Elk Mound - Dunn County - Ward 002
-315199	WI	DUNN	Dunn - Town Of Dunn - Dunn County - Ward 002
-315200	WI	EAU CLAIRE	Eau Claire - Town Of Clear Creek - Eau Claire County - Ward 001
-315201	WI	FOREST	Forest - Town Of Blackwell - Forest County - Ward 001
-315202	WI	MARINETTE	Marinette - Town Of Silver Cliff - Marinette County - Ward 001
-315203	WI	OCONTO	Oconto - Town Of How - Oconto County - Ward 002
-315204	WI	ADAMS	Adams - Town Of Leola - Adams County - Ward 001
-315205	WI	DANE	Dane - Village Of Marshall - Dane County - Ward 003
-315206	WI	JACKSON	Jackson - Town Of Melrose - Jackson County - Ward 001
-315207	WI	DODGE	Dodge - Town Of Rubicon - Dodge County - Ward 003
-315208	WI	COLUMBIA	Columbia - Town Of Courtland - Columbia County - Ward 001
-315209	WI	GRANT	Grant - Town Of Boscobel - Grant County - Ward 001
-315210	WI	WAUPACA	Waupaca - City Of Marion - Multiple Counties - Ward 003
-315211	WI	GRANT	Grant - Town Of Castle Rock - Grant County - Ward 001
-315212	WI	WOOD	Wood - City Of Pittsville - Wood County - Ward 001
-315213	WI	IRON	Iron - Town Of Knight - Iron County - Ward 001
-315214	WI	CLARK	Clark - City Of Thorp - Clark County - Ward 003
-315215	WI	MONROE	Monroe - Town Of Angelo - Monroe County - Ward 003
-315216	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 023
-315217	WI	MENOMINEE	Menominee - Town Of Menominee - Menominee County - Ward 003
-315218	WI	JUNEAU	Juneau - Town Of Seven Mile Creek - Juneau County - Ward 002
-315219	WI	MARQUETTE	Marquette - Town Of Newton - Marquette County - Ward 002
-315220	WI	SHEBOYGAN	Sheboygan - Town Of Herman - Sheboygan County - Ward 003
-315221	WI	BUFFALO	Buffalo - Town Of Montana - Buffalo County - Ward 001
-315222	WI	KEWAUNEE	Kewaunee - City Of Algoma - Kewaunee County - Ward 006
-315223	WI	BARRON	Barron - City Of Rice Lake - Barron County - Ward 007
-315224	WI	EAU CLAIRE	Eau Claire - Town Of Fairchild - Eau Claire County - Ward 001
-315225	WI	JUNEAU	Juneau - City Of Mauston - Juneau County - Ward 004
-315226	WI	BAYFIELD	Bayfield - Town Of Pilsen - Bayfield County - Ward 001
-315227	WI	CHIPPEWA	Chippewa - City Of Cornell - Chippewa County - Ward 002
-315228	WI	LAFAYETTE	Lafayette - City Of Shullsburg - Lafayette County - Ward 003
-315229	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 013
-315230	WI	TREMPEALEAU	Trempealeau - Town Of Pigeon - Trempealeau County - Ward 001
-315231	WI	BUFFALO	Buffalo - Town Of Canton - Buffalo County - Ward 001
-315232	WI	JUNEAU	Juneau - Town Of Lisbon - Juneau County - Ward 002
-315233	WI	CALUMET	Calumet - City Of Kiel - Multiple Counties - Ward 007
-315234	WI	DANE	Dane - Town Of Madison - Dane County - Ward 006
-315235	WI	COLUMBIA	Columbia - City Of Columbus - Multiple Counties - Ward 008
-315236	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 028
-315237	WI	VERNON	Vernon - Village Of De Soto - Multiple Counties - Ward 001
-315238	WI	POLK	Polk - Town Of Lorain - Polk County - Ward 001
-315239	WI	POLK	Polk - Town Of St. Croix Falls - Polk County - Ward 002
-315240	WI	WOOD	Wood - Village Of Milladore - Multiple Counties - Ward 001
-315241	WI	OUTAGAMIE	Outagamie - Town Of Buchanan - Outagamie County - Ward 004
-315242	WI	TREMPEALEAU	Trempealeau - Town Of Gale - Trempealeau County - Ward 001
-315243	WI	WAUSHARA	Waushara - City Of Wautoma - Waushara County - Ward 002
-315244	WI	RACINE	Racine - Town Of Waterford - Racine County - Ward 007
-315245	WI	VILAS	Vilas - City Of Eagle River - Vilas County - Ward 002
-315246	WI	JUNEAU	Juneau - City Of Elroy - Juneau County - Ward 002
-315247	WI	WAUPACA	Waupaca - City Of Waupaca - Waupaca County - Ward 006
-315248	WI	OCONTO	Oconto - Town Of How - Oconto County - Ward 001
-315249	WI	WAUPACA	Waupaca - Town Of Dayton - Waupaca County - Ward 003
-315250	WI	BARRON	Barron - Town Of Almena - Barron County - Ward 001
-315251	WI	LAFAYETTE	Lafayette - City Of Darlington - Lafayette County - Ward 002
-315252	WI	CALUMET	Calumet - Village Of Potter - Calumet County - Ward 001
-315253	WI	WOOD	Wood - Town Of Grand Rapids - Wood County - Ward 010
-315254	WI	WASHINGTON	Washington - Town Of Germantown - Washington County - Ward 001
-315255	WI	SAUK	Sauk - City Of Reedsburg - Sauk County - Ward 005
-315256	WI	PRICE	Price - Town Of Harmony - Price County - Ward 001
-315257	WI	TREMPEALEAU	Trempealeau - City Of Blair - Trempealeau County - Ward 002
-315258	WI	DANE	Dane - Town Of Madison - Dane County - Ward 004
-315259	WI	MARQUETTE	Marquette - Town Of Newton - Marquette County - Ward 001
-315260	WI	DODGE	Dodge - Village Of Theresa - Dodge County - Ward 003
-315261	WI	MONROE	Monroe - City Of Tomah - Monroe County - Ward 004
-315262	WI	WAUPACA	Waupaca - Town Of Little Wolf - Waupaca County - Ward 002
-315263	WI	MONROE	Monroe - Town Of Wilton - Monroe County - Ward 001
-315264	WI	CLARK	Clark - Town Of Hewett - Clark County - Ward 001
-315265	WI	SAWYER	Sawyer - Town Of Bass Lake - Sawyer County - Ward 003
-315266	WI	JEFFERSON	Jefferson - Town Of Jefferson - Jefferson County - Ward 002
-315267	WI	DANE	Dane - Village Of Marshall - Dane County - Ward 005
-315268	WI	ROCK	Rock - Town Of Rock - Rock County - Ward 001
-315269	WI	SAUK	Sauk - Town Of Excelsior - Sauk County - Ward 003
-315270	WI	SAWYER	Sawyer - Town Of Winter - Sawyer County - Ward 002
-315271	WI	WASHBURN	Washburn - Town Of Minong - Washburn County - Ward 002
-315272	WI	CLARK	Clark - Town Of Levis - Clark County - Ward 001
-315273	WI	WOOD	Wood - Town Of Arpin - Wood County - Ward 003
-315274	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 005
-315275	WI	WAUPACA	Waupaca - Village Of Iola - Waupaca County - Ward 002
-315276	WI	SAWYER	Sawyer - Town Of Draper - Sawyer County - Ward 001
-315277	WI	JUNEAU	Juneau - City Of Elroy - Juneau County - Ward 005
-315278	WI	CLARK	Clark - Town Of Longwood - Clark County - Ward 002
-315279	WI	ROCK	Rock - Town Of Janesville - Rock County - Ward 005
-315280	WI	JUNEAU	Juneau - City Of Elroy - Juneau County - Ward 004
-315281	WI	BAYFIELD	Bayfield - City Of Washburn - Bayfield County - Ward 003
-315282	WI	EAU CLAIRE	Eau Claire - City Of Augusta - Eau Claire County - Ward 004
-315283	WI	MONROE	Monroe - City Of Tomah - Monroe County - Ward 014
-315284	WI	CLARK	Clark - Town Of Sherwood - Clark County - Ward 001
-315285	WI	SAWYER	Sawyer - Town Of Hayward - Sawyer County - Ward 005
-315286	WI	OCONTO	Oconto - Town Of Riverview - Oconto County - Ward 002
-315287	WI	OZAUKEE	Ozaukee - City Of Port Washington - Ozaukee County - Ward 003
-315288	WI	POLK	Polk - Town Of Garfield - Polk County - Ward 003
-315289	WI	WASHINGTON	Washington - City Of Hartford - Multiple Counties - Ward 022
-315290	WI	TREMPEALEAU	Trempealeau - City Of Independence - Trempealeau County - Ward 003
-315291	WI	JUNEAU	Juneau - City Of New Lisbon - Juneau County - Ward 001
-315292	WI	SHAWANO	Shawano - Village Of Eland - Shawano County - Ward 001
-315293	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 017
-315294	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 002
-315295	WI	EAU CLAIRE	Eau Claire - City Of Augusta - Eau Claire County - Ward 005
-315296	WI	CRAWFORD	Crawford - Village Of Ferryville - Crawford County - Ward 001
-315297	WI	DANE	Dane - Town Of Madison - Dane County - Ward 009
-315298	WI	PEPIN	Pepin - Town Of Pepin - Pepin County - Ward 002
-315299	WI	TAYLOR	Taylor - Town Of Cleveland - Taylor County - Ward 001
-315300	WI	SAUK	Sauk - Village Of Loganville - Sauk County - Ward 001
-315301	WI	LINCOLN	Lincoln - Town Of Birch - Lincoln County - Ward 001
-315302	WI	RUSK	Rusk - City Of Ladysmith - Rusk County - Ward 001
-315303	WI	KEWAUNEE	Kewaunee - Town Of Pierce - Kewaunee County - Ward 001
-315304	WI	PIERCE	Pierce - Town Of Isabelle - Pierce County - Ward 001
-315305	WI	CLARK	Clark - City Of Thorp - Clark County - Ward 001
-315306	WI	LAFAYETTE	Lafayette - Town Of Argyle - Lafayette County - Ward 001
-315307	WI	WAUPACA	Waupaca - Town Of Helvetia - Waupaca County - Ward 002
-315308	WI	POLK	Polk - Town Of Osceola - Polk County - Ward 004
-315309	WI	RUSK	Rusk - Village Of Sheldon - Rusk County - Ward 001
-315310	WI	DUNN	Dunn - Village Of Ridgeland - Dunn County - Ward 001
-315311	WI	MARQUETTE	Marquette - Town Of Montello - Marquette County - Ward 002
-315312	WI	IOWA	Iowa - Town Of Mineral Point - Iowa County - Ward 002
-315313	WI	GRANT	Grant - Town Of Patch Grove - Grant County - Ward 001
-315314	WI	WINNEBAGO	Winnebago - Town Of Rushford - Winnebago County - Ward 002
-315315	WI	OCONTO	Oconto - Town Of Abrams - Oconto County - Ward 002
-315316	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 003
-315317	WI	COLUMBIA	Columbia - City Of Columbus - Multiple Counties - Ward 003
-315318	WI	ASHLAND	Ashland - Town Of Sanborn - Ashland County - Ward 002
-315319	WI	WAUKESHA	Waukesha - Town Of Ottawa - Waukesha County - Ward 005
-315320	WI	TREMPEALEAU	Trempealeau - City Of Independence - Trempealeau County - Ward 002
-315321	WI	ASHLAND	Ashland - Village Of Butternut - Ashland County - Ward 001
-315322	WI	MANITOWOC	Manitowoc - Town Of Manitowoc - Manitowoc County - Ward 002
-315323	WI	JEFFERSON	Jefferson - Town Of Concord - Jefferson County - Ward 003
-315324	WI	MONROE	Monroe - Town Of Lafayette - Monroe County - Ward 001
-315325	WI	DUNN	Dunn - Town Of Tiffany - Dunn County - Ward 002
-315326	WI	ST CROIX	St. Croix - Town Of Troy - St. Croix County - Ward 007
-315327	WI	SHAWANO	Shawano - Village Of Bowler - Shawano County - Ward 001
-315328	WI	CHIPPEWA	Chippewa - City Of Cornell - Chippewa County - Ward 004
-315329	WI	MARINETTE	Marinette - Town Of Athelstane - Marinette County - Ward 001
-315330	WI	TREMPEALEAU	Trempealeau - Town Of Chimney Rock - Trempealeau County - Ward 001
-315331	WI	GRANT	Grant - Town Of South Lancaster - Grant County - Ward 002
-315332	WI	WASHBURN	Washburn - Town Of Gull Lake - Washburn County - Ward 001
-315333	WI	CHIPPEWA	Chippewa - Town Of Goetz - Chippewa County - Ward 002
-315334	WI	DOUGLAS	Douglas - Town Of Cloverland - Douglas County - Ward 001
-315335	WI	PEPIN	Pepin - Town Of Waterville - Pepin County - Ward 002
-315336	WI	PRICE	Price - Town Of Eisenstein - Price County - Ward 002
-315337	WI	ONEIDA	Oneida - Town Of Pelican - Oneida County - Ward 004
-315338	WI	FLORENCE	Florence - Town Of Commonwealth - Florence County - Ward 001
-315339	WI	CLARK	Clark - Town Of Mead - Clark County - Ward 001
-315340	WI	BURNETT	Burnett - Town Of Scott - Burnett County - Ward 002
-315341	WI	ST CROIX	St. Croix - Village Of Woodville - St. Croix County - Ward 002
-315342	WI	VERNON	Vernon - City Of Hillsboro - Vernon County - Ward 004
-315343	WI	SAWYER	Sawyer - Village Of Radisson - Sawyer County - Ward 001
-315344	WI	RUSK	Rusk - City Of Ladysmith - Rusk County - Ward 002
-315345	WI	OCONTO	Oconto - Town Of Doty - Oconto County - Ward 001
-315346	WI	IOWA	Iowa - Village Of Rewey - Iowa County - Ward 001
-315347	WI	JUNEAU	Juneau - Village Of Union Center - Juneau County - Ward 001
-315348	WI	OCONTO	Oconto - Town Of Chase - Oconto County - Ward 002
-315349	WI	VERNON	Vernon - Village Of Viola - Multiple Counties - Ward 001
-315350	WI	VERNON	Vernon - Town Of Jefferson - Vernon County - Ward 002
-315351	WI	OUTAGAMIE	Outagamie - City Of Seymour - Outagamie County - Ward 006
-315352	WI	TREMPEALEAU	Trempealeau - Town Of Albion - Trempealeau County - Ward 002
-315353	WI	ROCK	Rock - Town Of Harmony - Rock County - Ward 005
-315354	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 006
-315355	WI	MONROE	Monroe - Village Of Oakdale - Monroe County - Ward 001
-315356	WI	VERNON	Vernon - Town Of Jefferson - Vernon County - Ward 003
-315357	WI	ADAMS	Adams - Town Of Colburn - Adams County - Ward 001
-315358	WI	CLARK	Clark - Town Of Hoard - Clark County - Ward 002
-315359	WI	VERNON	Vernon - City Of Hillsboro - Vernon County - Ward 002
-315360	WI	RACINE	Racine - Town Of Dover - Racine County - Ward 008
-315361	WI	LANGLADE	Langlade - Town Of Vilas - Langlade County - Ward 001
-315362	WI	SAUK	Sauk - Town Of Spring Green - Sauk County - Ward 003
-315363	WI	ONEIDA	Oneida - Town Of Lake Tomahawk - Oneida County - Ward 002
-315364	WI	PRICE	Price - Town Of Elk - Price County - Ward 001
-315365	WI	DANE	Dane - City Of Madison - Dane County - Ward 110
-315366	WI	TAYLOR	Taylor - Town Of Grover - Taylor County - Ward 001
-315367	WI	SHAWANO	Shawano - Village Of Aniwa - Shawano County - Ward 001
-315368	WI	CLARK	Clark - Town Of Fremont - Clark County - Ward 002
-315369	WI	WASHBURN	Washburn - Town Of Birchwood - Washburn County - Ward 001
-315370	WI	BUFFALO	Buffalo - City Of Fountain City - Buffalo County - Ward 002
-315371	WI	IOWA	Iowa - Town Of Dodgeville - Iowa County - Ward 002
-315372	WI	DUNN	Dunn - Town Of Tiffany - Dunn County - Ward 001
-315373	WI	CLARK	Clark - City Of Owen - Clark County - Ward 002
-315374	WI	VERNON	Vernon - Town Of Liberty - Vernon County - Ward 001
-315375	WI	MONROE	Monroe - Town Of Wellington - Monroe County - Ward 001
-315376	WI	FLORENCE	Florence - Town Of Fence - Florence County - Ward 001
-315377	WI	MARINETTE	Marinette - Town Of Beaver - Marinette County - Ward 001
-315378	WI	LINCOLN	Lincoln - Town Of Tomahawk - Lincoln County - Ward 001
-315379	WI	PRICE	Price - City Of Phillips - Price County - Ward 001
-315380	WI	CLARK	Clark - Town Of Lynn - Clark County - Ward 002
-315381	WI	CRAWFORD	Crawford - City Of Prairie Du Chien - Crawford County - Ward 002
-315382	WI	WINNEBAGO	Winnebago - Town Of Oshkosh - Winnebago County - Ward 004
-315383	WI	SAUK	Sauk - Town Of Franklin - Sauk County - Ward 001
-315384	WI	POLK	Polk - Town Of Luck - Polk County - Ward 002
-315385	WI	PORTAGE	Portage - Town Of Plover - Portage County - Ward 003
-315386	WI	MANITOWOC	Manitowoc - Town Of Mishicot - Manitowoc County - Ward 002
-315387	WI	ROCK	Rock - Town Of Milton - Rock County - Ward 001
-315388	WI	SAWYER	Sawyer - Town Of Radisson - Sawyer County - Ward 002
-315389	WI	CHIPPEWA	Chippewa - Town Of Lafayette - Chippewa County - Ward 007
-315390	WI	CALUMET	Calumet - City Of Appleton - Multiple Counties - Ward 012
-315391	WI	ST CROIX	St. Croix - Village Of Deer Park - St. Croix County - Ward 001
-315392	WI	WASHBURN	Washburn - Town Of Stinnett - Washburn County - Ward 001
-315393	WI	JUNEAU	Juneau - City Of New Lisbon - Juneau County - Ward 002
-315394	WI	DUNN	Dunn - Town Of Red Cedar - Dunn County - Ward 002
-315395	WI	OUTAGAMIE	Outagamie - Village Of Nichols - Outagamie County - Ward 001
-315396	WI	JUNEAU	Juneau - City Of Elroy - Juneau County - Ward 003
-315397	WI	WAUSHARA	Waushara - Town Of Bloomfield - Waushara County - Ward 002
-315398	WI	DOUGLAS	Douglas - Town Of Dairyland - Douglas County - Ward 001
-315399	WI	VERNON	Vernon - City Of Westby - Vernon County - Ward 005
-315400	WI	MONROE	Monroe - City Of Tomah - Monroe County - Ward 015
-315401	WI	MARINETTE	Marinette - Town Of Grover - Marinette County - Ward 003
-315402	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 041
-315403	WI	BAYFIELD	Bayfield - Town Of Tripp - Bayfield County - Ward 001
-315404	WI	ST CROIX	St. Croix - City Of Hudson - St. Croix County - Ward 009
-315405	WI	CHIPPEWA	Chippewa - City Of Cornell - Chippewa County - Ward 003
-315406	WI	ADAMS	Adams - City Of Adams - Adams County - Ward 004
-315407	WI	OZAUKEE	Ozaukee - City Of Port Washington - Ozaukee County - Ward 005
-315408	WI	EAU CLAIRE	Eau Claire - City Of Altoona - Eau Claire County - Ward 002
-315409	WI	KENOSHA	Kenosha - Village Of Somers - Kenosha County - Ward 010
-315410	WI	BARRON	Barron - Town Of Maple Grove - Barron County - Ward 001
-315411	WI	DANE	Dane - Village Of Rockdale - Dane County - Ward 001
-315412	WI	JACKSON	Jackson - Town Of Brockway - Jackson County - Ward 005
-315413	WI	IOWA	Iowa - Town Of Ridgeway - Iowa County - Ward 002
-315414	WI	BUFFALO	Buffalo - Town Of Lincoln - Buffalo County - Ward 001
-315415	WI	DUNN	Dunn - Town Of Peru - Dunn County - Ward 001
-315416	WI	WOOD	Wood - Town Of Grand Rapids - Wood County - Ward 007
-315417	WI	TAYLOR	Taylor - Town Of Hammel - Taylor County - Ward 002
-315418	WI	WOOD	Wood - City Of Nekoosa - Wood County - Ward 004
-315419	WI	GREEN	Green - Village Of Browntown - Green County - Ward 001
-315420	WI	FLORENCE	Florence - Town Of Tipler - Florence County - Ward 001
-315421	WI	SAWYER	Sawyer - Town Of Couderay - Sawyer County - Ward 001
-315422	WI	BURNETT	Burnett - Town Of Roosevelt - Burnett County - Ward 001
-315423	WI	FLORENCE	Florence - Town Of Long Lake - Florence County - Ward 001
-315424	WI	ASHLAND	Ashland - Town Of Morse - Ashland County - Ward 002
-315425	WI	GREEN	Green - Village Of New Glarus - Green County - Ward 002
-315426	WI	KENOSHA	Kenosha - Town Of Brighton - Kenosha County - Ward 003
-315427	WI	MARQUETTE	Marquette - City Of Montello - Marquette County - Ward 004
-315428	WI	CRAWFORD	Crawford - Town Of Eastman - Crawford County - Ward 002
-315429	WI	LACROSSE	Lacrosse - Town Of Barre - La Crosse County - Ward 001
-315430	WI	LANGLADE	Langlade - Town Of Price - Langlade County - Ward 001
-315431	WI	JACKSON	Jackson - Town Of City Point - Jackson County - Ward 001
-315432	WI	EAU CLAIRE	Eau Claire - City Of Augusta - Eau Claire County - Ward 003
-315433	WI	DANE	Dane - City Of Madison - Dane County - Ward 055
-315434	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 019
-315435	WI	POLK	Polk - Town Of Milltown - Polk County - Ward 002
-315436	WI	WAUPACA	Waupaca - City Of Waupaca - Waupaca County - Ward 007
-315437	WI	ROCK	Rock - Town Of Janesville - Rock County - Ward 001
-315438	WI	CLARK	Clark - Town Of Grant - Clark County - Ward 002
-315439	WI	CLARK	Clark - Town Of Levis - Clark County - Ward 002
-315440	WI	BURNETT	Burnett - Town Of Blaine - Burnett County - Ward 001
-315441	WI	LINCOLN	Lincoln - Town Of Schley - Lincoln County - Ward 001
-315442	WI	ONEIDA	Oneida - Town Of Woodruff - Oneida County - Ward 003
-315443	WI	VERNON	Vernon - Town Of Jefferson - Vernon County - Ward 004
-315444	WI	WASHINGTON	Washington - Town Of West Bend - Washington County - Ward 007
-315445	WI	BURNETT	Burnett - Town Of Grantsburg - Burnett County - Ward 002
-315446	WI	JACKSON	Jackson - Town Of Adams - Jackson County - Ward 003
-315447	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 002
-315448	WI	ADAMS	Adams - Town Of Springville - Adams County - Ward 001
-315449	WI	TAYLOR	Taylor - Town Of Maplehurst - Taylor County - Ward 001
-315450	WI	RUSK	Rusk - Town Of Hubbard - Rusk County - Ward 001
-315451	WI	JUNEAU	Juneau - Town Of Clearfield - Juneau County - Ward 001
-315452	WI	OCONTO	Oconto - City Of Gillett - Oconto County - Ward 003
-315453	WI	DUNN	Dunn - Town Of Weston - Dunn County - Ward 002
-315454	WI	MARATHON	Marathon - Village Of Unity - Multiple Counties - Ward 001
-315455	WI	LAFAYETTE	Lafayette - Village Of Gratiot - Lafayette County - Ward 001
-315456	WI	BARRON	Barron - Town Of Prairie Farm - Barron County - Ward 001
-315457	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 001
-315458	WI	PRICE	Price - City Of Park Falls - Price County - Ward 003
-315459	WI	SAUK	Sauk - Village Of Ironton - Sauk County - Ward 001
-315460	WI	CLARK	Clark - Town Of Longwood - Clark County - Ward 001
-315461	WI	DUNN	Dunn - Town Of Elk Mound - Dunn County - Ward 003
-315462	WI	WINNEBAGO	Winnebago - Town Of Oshkosh - Winnebago County - Ward 005
-315463	WI	PEPIN	Pepin - Town Of Stockholm - Pepin County - Ward 001
-315464	WI	WASHINGTON	Washington - City Of Hartford - Multiple Counties - Ward 021
-315465	WI	IOWA	Iowa - Town Of Linden - Iowa County - Ward 003
-315466	WI	VERNON	Vernon - Town Of Stark - Vernon County - Ward 001
-315467	WI	WASHINGTON	Washington - Village Of Richfield - Washington County - Ward 003
-315468	WI	CLARK	Clark - Town Of Seif - Clark County - Ward 001
-315469	WI	DUNN	Dunn - Town Of Colfax - Dunn County - Ward 003
-315470	WI	SAUK	Sauk - Town Of Winfield - Sauk County - Ward 002
-315471	WI	OUTAGAMIE	Outagamie - Town Of Cicero - Outagamie County - Ward 002
-315472	WI	DODGE	Dodge - Village Of Kekoskee - Dodge County - Ward 001
-315473	WI	RICHLAND	Richland - Town Of Richland - Richland County - Ward 004
-315474	WI	IRON	Iron - Town Of Pence - Iron County - Ward 001
-315475	WI	DUNN	Dunn - Village Of Downing - Dunn County - Ward 001
-315476	WI	WOOD	Wood - Town Of Cranmoor - Wood County - Ward 001
-315477	WI	JUNEAU	Juneau - City Of Mauston - Juneau County - Ward 003
-315478	WI	IRON	Iron - Town Of Carey - Iron County - Ward 001
-315479	WI	SAWYER	Sawyer - Town Of Radisson - Sawyer County - Ward 001
-315480	WI	MARATHON	Marathon - Village Of Brokaw - Marathon County - Ward 001
-315481	WI	WASHBURN	Washburn - Town Of Beaver Brook - Washburn County - Ward 002
-315482	WI	IOWA	Iowa - Town Of Highland - Iowa County - Ward 001
-315483	WI	SHAWANO	Shawano - Town Of Lessor - Shawano County - Ward 002
-315484	WI	ONEIDA	Oneida - Town Of Lynne - Oneida County - Ward 001
-315485	WI	CHIPPEWA	Chippewa - Town Of Woodmohr - Chippewa County - Ward 002
-315486	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 007
-315487	WI	ROCK	Rock - Town Of Turtle - Rock County - Ward 004
-315488	WI	CRAWFORD	Crawford - Village Of Mt. Sterling - Crawford County - Ward 001
-315489	WI	JACKSON	Jackson - Town Of Millston - Jackson County - Ward 001
-315490	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 005
-315491	WI	SAWYER	Sawyer - Village Of Exeland - Sawyer County - Ward 001
-315492	WI	COLUMBIA	Columbia - City Of Wisconsin Dells - Multiple Counties - Ward 006
-315493	WI	BURNETT	Burnett - Town Of West Marshland - Burnett County - Ward 001
-315494	WI	OUTAGAMIE	Outagamie - Town Of Hortonia - Outagamie County - Ward 002
-315495	WI	DOOR	Door - Town Of Forestville - Door County - Ward 002
-315496	WI	KENOSHA	Kenosha - Village Of Bristol - Kenosha County - Ward 007
-315497	WI	CLARK	Clark - Town Of Loyal - Clark County - Ward 002
-315498	WI	KENOSHA	Kenosha - Town Of Randall - Kenosha County - Ward 004
-315499	WI	RACINE	Racine - City Of Burlington - Multiple Counties - Ward 007
-315500	WI	SAUK	Sauk - City Of Reedsburg - Sauk County - Ward 013
-315501	WI	ASHLAND	Ashland - Town Of Peeksville - Ashland County - Ward 001
-315502	WI	PIERCE	Pierce - Town Of Ellsworth - Pierce County - Ward 002
-315503	WI	GRANT	Grant - Town Of Mount Hope - Grant County - Ward 001
-315504	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 019
-315505	WI	WAUPACA	Waupaca - Town Of Mukwa - Waupaca County - Ward 005
-315506	WI	ADAMS	Adams - City Of Adams - Adams County - Ward 003
-315507	WI	LAFAYETTE	Lafayette - Town Of Argyle - Lafayette County - Ward 002
-315508	WI	WOOD	Wood - Town Of Arpin - Wood County - Ward 001
-315509	WI	WASHBURN	Washburn - Town Of Chicog - Washburn County - Ward 001
-315510	WI	BAYFIELD	Bayfield - Town Of Russell - Bayfield County - Ward 002
-315511	WI	LANGLADE	Langlade - Town Of Summit - Langlade County - Ward 001
-315512	WI	RUSK	Rusk - Town Of Flambeau - Rusk County - Ward 001
-315513	WI	WAUPACA	Waupaca - Village Of Ogdensburg - Waupaca County - Ward 001
-315514	WI	RUSK	Rusk - Town Of Grant - Rusk County - Ward 002
-315515	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 022
-315516	WI	RUSK	Rusk - Town Of Hawkins - Rusk County - Ward 001
-315517	WI	POLK	Polk - City Of St. Croix Falls - Polk County - Ward 003
-315518	WI	ASHLAND	Ashland - Town Of White River - Ashland County - Ward 002
-315519	WI	FOREST	Forest - Town Of Ross - Forest County - Ward 001
-315520	WI	LINCOLN	Lincoln - Town Of Harrison - Lincoln County - Ward 001
-315521	WI	ST CROIX	St. Croix - Village Of Wilson - St. Croix County - Ward 001
-315522	WI	WOOD	Wood - Town Of Hiles - Wood County - Ward 001
-315523	WI	MARATHON	Marathon - Village Of Elderon - Marathon County - Ward 001
-315524	WI	IOWA	Iowa - Town Of Brigham - Iowa County - Ward 001
-315525	WI	MARQUETTE	Marquette - Town Of Packwaukee - Marquette County - Ward 003
-315526	WI	JUNEAU	Juneau - Village Of Hustler - Juneau County - Ward 001
-315527	WI	GRANT	Grant - City Of Cuba City - Multiple Counties - Ward 002
-315528	WI	MANITOWOC	Manitowoc - Town Of Two Rivers - Manitowoc County - Ward 001
-315529	WI	GRANT	Grant - City Of Platteville - Grant County - Ward 001
-315530	WI	ASHLAND	Ashland - Town Of Shanagolden - Ashland County - Ward 001
-315531	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 015
-315532	WI	JUNEAU	Juneau - City Of New Lisbon - Juneau County - Ward 004
-315533	WI	WINNEBAGO	Winnebago - Town Of Algoma - Winnebago County - Ward 008
-315534	WI	CLARK	Clark - City Of Thorp - Clark County - Ward 004
-315535	WI	LANGLADE	Langlade - Town Of Langlade - Langlade County - Ward 002
-315536	WI	LAFAYETTE	Lafayette - City Of Darlington - Lafayette County - Ward 006
-315537	WI	FLORENCE	Florence - Town Of Aurora - Florence County - Ward 003
-315538	WI	VERNON	Vernon - Town Of Bergen - Vernon County - Ward 003
-315539	WI	SAUK	Sauk - Village Of Lime Ridge - Sauk County - Ward 001
-315540	WI	SAWYER	Sawyer - Town Of Meadowbrook - Sawyer County - Ward 001
-315541	WI	FLORENCE	Florence - Town Of Florence - Florence County - Ward 007
-315542	WI	COLUMBIA	Columbia - Town Of Leeds - Columbia County - Ward 001
-315543	WI	GREEN LAKE	Green Lake - City Of Princeton - Green Lake County - Ward 001
-315544	WI	CRAWFORD	Crawford - Village Of Lynxville - Crawford County - Ward 001
-315545	WI	OUTAGAMIE	Outagamie - Village Of Little Chute - Outagamie County - Ward 003
-315546	WI	JEFFERSON	Jefferson - Town Of Koshkonong - Jefferson County - Ward 005
-315547	WI	WASHBURN	Washburn - Town Of Crystal - Washburn County - Ward 001
-315548	WI	GRANT	Grant - Village Of Cassville - Grant County - Ward 002
-315549	WI	WINNEBAGO	Winnebago - City Of Menasha - Multiple Counties - Ward 013
-315550	WI	MANITOWOC	Manitowoc - City Of Kiel - Multiple Counties - Ward 006
-315551	WI	BAYFIELD	Bayfield - Town Of Eileen - Bayfield County - Ward 002
-315552	WI	WINNEBAGO	Winnebago - City Of Menasha - Multiple Counties - Ward 012
-315553	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 006
-315554	WI	WASHBURN	Washburn - Town Of Spooner - Washburn County - Ward 002
-315555	WI	MARINETTE	Marinette - Town Of Middle Inlet - Marinette County - Ward 002
-315556	WI	RICHLAND	Richland - Town Of Richwood - Richland County - Ward 002
-315557	WI	WOOD	Wood - Town Of Sigel - Wood County - Ward 002
-315558	WI	DANE	Dane - City Of Madison - Dane County - Ward 108
-315559	WI	GRANT	Grant - Town Of Woodman - Grant County - Ward 001
-315560	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 026
-315561	WI	IOWA	Iowa - Village Of Blanchardville - Multiple Counties - Ward 002
-315562	WI	VERNON	Vernon - Town Of Genoa - Vernon County - Ward 002
-315563	WI	WASHBURN	Washburn - Town Of Madge - Washburn County - Ward 001
-315564	WI	MONROE	Monroe - Town Of Wilton - Monroe County - Ward 003
-315565	WI	IOWA	Iowa - Town Of Clyde - Iowa County - Ward 001
-315566	WI	PRICE	Price - Town Of Georgetown - Price County - Ward 001
-315567	WI	LINCOLN	Lincoln - Town Of Merrill - Lincoln County - Ward 005
-315568	WI	WAUKESHA	Waukesha - Village Of Merton - Waukesha County - Ward 003
-315569	WI	LAFAYETTE	Lafayette - Town Of Belmont - Lafayette County - Ward 002
-315570	WI	MONROE	Monroe - City Of Tomah - Monroe County - Ward 007
-315571	WI	JACKSON	Jackson - Town Of Brockway - Jackson County - Ward 006
-315572	WI	KENOSHA	Kenosha - Town Of Salem - Kenosha County - Ward 002
-315573	WI	PORTAGE	Portage - Village Of Nelsonville - Portage County - Ward 001
-315574	WI	RUSK	Rusk - Town Of Marshall - Rusk County - Ward 001
-315575	WI	TAYLOR	Taylor - Town Of Pershing - Taylor County - Ward 001
-315576	WI	OZAUKEE	Ozaukee - Town Of Cedarburg - Ozaukee County - Ward 010
-315577	WI	FOND DU LAC	Fond Du Lac - Town Of Forest - Fond Du Lac County - Ward 002
-315578	WI	DANE	Dane - Town Of Madison - Dane County - Ward 003
-315579	WI	SHAWANO	Shawano - Town Of Fairbanks - Shawano County - Ward 001
-315580	WI	PEPIN	Pepin - Town Of Durand - Pepin County - Ward 002
-315581	WI	GREEN LAKE	Green Lake - City Of Green Lake - Green Lake County - Ward 003
-315582	WI	TREMPEALEAU	Trempealeau - Town Of Burnside - Trempealeau County - Ward 002
-315583	WI	PRICE	Price - Village Of Kennan - Price County - Ward 001
-315584	WI	SAUK	Sauk - Town Of Spring Green - Sauk County - Ward 004
-315585	WI	FOREST	Forest - Town Of Alvin - Forest County - Ward 001
-315586	WI	GREEN LAKE	Green Lake - Village Of Marquette - Green Lake County - Ward 001
-315587	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 035
-315588	WI	IRON	Iron - Town Of Gurney - Iron County - Ward 001
-315589	WI	MONROE	Monroe - Town Of Angelo - Monroe County - Ward 002
-315590	WI	LANGLADE	Langlade - Town Of Wolf River - Langlade County - Ward 002
-315591	WI	EAU CLAIRE	Eau Claire - City Of Altoona - Eau Claire County - Ward 003
-315592	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 018
-315593	WI	MARQUETTE	Marquette - Town Of Westfield - Marquette County - Ward 002
-315594	WI	BAYFIELD	Bayfield - City Of Bayfield - Bayfield County - Ward 002
-315595	WI	RUSK	Rusk - Town Of Big Falls - Rusk County - Ward 001
-315596	WI	GRANT	Grant - Town Of Smelser - Grant County - Ward 002
-315597	WI	JACKSON	Jackson - Town Of Hixton - Jackson County - Ward 002
-315598	WI	VERNON	Vernon - Town Of Hamburg - Vernon County - Ward 002
-315599	WI	GRANT	Grant - Town Of Millville - Grant County - Ward 001
-315600	WI	GRANT	Grant - Village Of Mount Hope - Grant County - Ward 001
-315601	WI	VERNON	Vernon - Town Of Stark - Vernon County - Ward 002
-315602	WI	CLARK	Clark - Town Of Beaver - Clark County - Ward 001
-315603	WI	COLUMBIA	Columbia - City Of Lodi - Columbia County - Ward 003
-315604	WI	WINNEBAGO	Winnebago - Town Of Algoma - Winnebago County - Ward 009
-315605	WI	MARATHON	Marathon - Village Of Fenwood - Marathon County - Ward 001
-315606	WI	GRANT	Grant - Village Of Dickeyville - Grant County - Ward 002
-315607	WI	KENOSHA	Kenosha - Town Of Salem - Kenosha County - Ward 005
-315608	WI	MARINETTE	Marinette - Town Of Wausaukee - Marinette County - Ward 002
-315609	WI	WASHBURN	Washburn - Town Of Chicog - Washburn County - Ward 002
-315610	WI	GRANT	Grant - Town Of Hickory Grove - Grant County - Ward 001
-315611	WI	VERNON	Vernon - Town Of Clinton - Vernon County - Ward 001
-315612	WI	RUSK	Rusk - Town Of South Fork - Rusk County - Ward 001
-315613	WI	MONROE	Monroe - Town Of New Lyme - Monroe County - Ward 001
-315614	WI	DUNN	Dunn - Town Of Red Cedar - Dunn County - Ward 003
-315615	WI	FOREST	Forest - Town Of Crandon - Forest County - Ward 002
-315616	WI	VILAS	Vilas - City Of Eagle River - Vilas County - Ward 003
-315617	WI	GRANT	Grant - Town Of Boscobel - Grant County - Ward 002
-315618	WI	BURNETT	Burnett - Village Of Siren - Burnett County - Ward 002
-315619	WI	RUSK	Rusk - Village Of Bruce - Rusk County - Ward 001
-315620	WI	SHEBOYGAN	Sheboygan - Town Of Greenbush - Sheboygan County - Ward 003
-315621	WI	WASHBURN	Washburn - Town Of Bashaw - Washburn County - Ward 002
-315622	WI	PRICE	Price - Town Of Elk - Price County - Ward 002
-315623	WI	CLARK	Clark - Village Of Unity - Multiple Counties - Ward 002
-315624	WI	VERNON	Vernon - Town Of Hillsboro - Vernon County - Ward 002
-315625	WI	WALWORTH	Walworth - Town Of Lyons - Walworth County - Ward 006
-315626	WI	SAWYER	Sawyer - Town Of Meteor - Sawyer County - Ward 001
-315627	WI	WAUPACA	Waupaca - Town Of Iola - Waupaca County - Ward 002
-315628	WI	WASHBURN	Washburn - Town Of Trego - Washburn County - Ward 001
-315629	WI	GRANT	Grant - Town Of Fennimore - Grant County - Ward 002
-315630	WI	ST CROIX	St. Croix - City Of New Richmond - St. Croix County - Ward 012
-315631	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 016
-315632	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 013
-315633	WI	DOOR	Door - Town Of Nasewaupee - Door County - Ward 002
-315634	WI	GRANT	Grant - Town Of Little Grant - Grant County - Ward 001
-315635	WI	KEWAUNEE	Kewaunee - City Of Algoma - Kewaunee County - Ward 005
-315636	WI	JACKSON	Jackson - Town Of Brockway - Jackson County - Ward 004
-315637	WI	ADAMS	Adams - Town Of Richfield - Adams County - Ward 001
-315638	WI	GRANT	Grant - Village Of Patch Grove - Grant County - Ward 001
-315639	WI	WASHBURN	Washburn - Town Of Frog Creek - Washburn County - Ward 001
-315640	WI	BURNETT	Burnett - Town Of Trade Lake - Burnett County - Ward 002
-315641	WI	JUNEAU	Juneau - City Of New Lisbon - Juneau County - Ward 006
-315642	WI	RUSK	Rusk - City Of Ladysmith - Rusk County - Ward 009
-315643	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 004
-315644	WI	DANE	Dane - Town Of Madison - Dane County - Ward 008
-315645	WI	FLORENCE	Florence - Town Of Commonwealth - Florence County - Ward 002
-315646	WI	POLK	Polk - Town Of Lincoln - Polk County - Ward 003
-315647	WI	RUSK	Rusk - Town Of Rusk - Rusk County - Ward 001
-315648	WI	OZAUKEE	Ozaukee - City Of Mequon - Ozaukee County - Ward 019
-315649	WI	VERNON	Vernon - Town Of Bergen - Vernon County - Ward 002
-315650	WI	LACROSSE	Lacrosse - Village Of Holmen - La Crosse County - Ward 010
-315651	WI	RUSK	Rusk - City Of Ladysmith - Rusk County - Ward 013
-315652	WI	KEWAUNEE	Kewaunee - City Of Algoma - Kewaunee County - Ward 002
-315653	WI	BROWN	Brown - Town Of New Denmark - Brown County - Ward 003
-315654	WI	BAYFIELD	Bayfield - City Of Bayfield - Bayfield County - Ward 004
-315655	WI	CLARK	Clark - Town Of Weston - Clark County - Ward 001
-315656	WI	LANGLADE	Langlade - Town Of Polar - Langlade County - Ward 002
-315657	WI	BAYFIELD	Bayfield - City Of Bayfield - Bayfield County - Ward 003
-315658	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 014
-315659	WI	GREEN LAKE	Green Lake - Town Of Kingston - Green Lake County - Ward 002
-315660	WI	PIERCE	Pierce - Village Of Maiden Rock - Pierce County - Ward 001
-315661	WI	JACKSON	Jackson - Town Of Bear Bluff - Jackson County - Ward 001
-315662	WI	TREMPEALEAU	Trempealeau - Town Of Preston - Trempealeau County - Ward 003
-315663	WI	TAYLOR	Taylor - Village Of Lublin - Taylor County - Ward 001
-315664	WI	GREEN LAKE	Green Lake - Town Of Princeton - Green Lake County - Ward 004
-315665	WI	WAUSHARA	Waushara - Town Of Leon - Waushara County - Ward 003
-315666	WI	CRAWFORD	Crawford - Village Of Steuben - Crawford County - Ward 001
-315667	WI	WASHBURN	Washburn - Town Of Crystal - Washburn County - Ward 002
-315668	WI	LINCOLN	Lincoln - Town Of Somo - Lincoln County - Ward 001
-315669	WI	ROCK	Rock - Town Of Rock - Rock County - Ward 004
-315670	WI	RICHLAND	Richland - Village Of Boaz - Richland County - Ward 001
-315671	WI	CLARK	Clark - Village Of Curtiss - Clark County - Ward 001
-315672	WI	DOOR	Door - Town Of Gibraltar - Door County - Ward 002
-315673	WI	IOWA	Iowa - Town Of Moscow - Iowa County - Ward 002
-315674	WI	TREMPEALEAU	Trempealeau - Town Of Unity - Trempealeau County - Ward 002
-315675	WI	BAYFIELD	Bayfield - Town Of Orienta - Bayfield County - Ward 001
-315676	WI	WAUPACA	Waupaca - City Of Waupaca - Waupaca County - Ward 009
-315677	WI	PRICE	Price - Village Of Catawba - Price County - Ward 001
-315678	WI	GRANT	Grant - Town Of Paris - Grant County - Ward 002
-315679	WI	BARRON	Barron - Town Of Dallas - Barron County - Ward 001
-315680	WI	MARINETTE	Marinette - City Of Peshtigo - Marinette County - Ward 005
-315681	WI	WALWORTH	Walworth - Town Of Spring Prairie - Walworth County - Ward 004
-315682	WI	OCONTO	Oconto - City Of Oconto Falls - Oconto County - Ward 003
-315683	WI	PIERCE	Pierce - Town Of Spring Lake - Pierce County - Ward 002
-315684	WI	OZAUKEE	Ozaukee - Village Of Saukville - Ozaukee County - Ward 007
-315685	WI	RUSK	Rusk - City Of Ladysmith - Rusk County - Ward 014
-315686	WI	DODGE	Dodge - Town Of Chester - Dodge County - Ward 002
-315687	WI	OUTAGAMIE	Outagamie - Village Of Little Chute - Outagamie County - Ward 013
-315688	WI	SAUK	Sauk - Town Of Reedsburg - Sauk County - Ward 002
-315689	WI	JEFFERSON	Jefferson - City Of Waterloo - Jefferson County - Ward 004
-315690	WI	PRICE	Price - Town Of Hackett - Price County - Ward 001
-315691	WI	MONROE	Monroe - Village Of Wyeville - Monroe County - Ward 001
-315692	WI	LAFAYETTE	Lafayette - Town Of Monticello - Lafayette County - Ward 001
-315693	WI	IOWA	Iowa - City Of Mineral Point - Iowa County - Ward 005
-315694	WI	OZAUKEE	Ozaukee - Town Of Cedarburg - Ozaukee County - Ward 009
-315695	WI	BURNETT	Burnett - Town Of West Marshland - Burnett County - Ward 002
-315696	WI	PRICE	Price - City Of Phillips - Price County - Ward 004
-315697	WI	MARQUETTE	Marquette - Town Of Neshkoro - Marquette County - Ward 002
-315698	WI	MARINETTE	Marinette - Town Of Pound - Marinette County - Ward 003
-315699	WI	MONROE	Monroe - Town Of La Grange - Monroe County - Ward 003
-315700	WI	GREEN LAKE	Green Lake - Town Of Berlin - Green Lake County - Ward 002
-315701	WI	RUSK	Rusk - Village Of Tony - Rusk County - Ward 001
-315702	WI	JACKSON	Jackson - Town Of Albion - Jackson County - Ward 003
-315703	WI	WAUPACA	Waupaca - Town Of Dupont - Waupaca County - Ward 002
-315704	WI	OZAUKEE	Ozaukee - Village Of Bayside - Multiple Counties - Ward 006
-315705	WI	RUSK	Rusk - City Of Ladysmith - Rusk County - Ward 012
-315706	WI	WAUKESHA	Waukesha - City Of Waukesha - Waukesha County - Ward 014
-315707	WI	VERNON	Vernon - Town Of Union - Vernon County - Ward 002
-315708	WI	JUNEAU	Juneau - City Of New Lisbon - Juneau County - Ward 005
-315709	WI	GREEN LAKE	Green Lake - Town Of Princeton - Green Lake County - Ward 002
-315710	WI	DUNN	Dunn - Town Of Colfax - Dunn County - Ward 002
-315711	WI	SAUK	Sauk - City Of Wisconsin Dells - Multiple Counties - Ward 004
-315712	WI	RICHLAND	Richland - Town Of Rockbridge - Richland County - Ward 002
-315713	WI	RUSK	Rusk - Village Of Weyerhaeuser - Rusk County - Ward 001
-315714	WI	SHAWANO	Shawano - Village Of Pulaski - Multiple Counties - Ward 004
-315715	WI	LACROSSE	Lacrosse - Town Of Onalaska - La Crosse County - Ward 007
-315716	WI	OUTAGAMIE	Outagamie - Village Of Little Chute - Outagamie County - Ward 012
-315717	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 036
-315718	WI	CLARK	Clark - Town Of Foster - Clark County - Ward 001
-315719	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 005
-315720	WI	FOND DU LAC	Fond Du Lac - Town Of Eldorado - Fond Du Lac County - Ward 003
-315721	WI	KENOSHA	Kenosha - Village Of Bristol - Kenosha County - Ward 008
-315722	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 016
-315723	WI	LAFAYETTE	Lafayette - Town Of White Oak Springs - Lafayette County - Ward 001
-315724	WI	POLK	Polk - Village Of Luck - Polk County - Ward 002
-315725	WI	RUSK	Rusk - Town Of Richland - Rusk County - Ward 002
-315726	WI	LANGLADE	Langlade - Town Of Parrish - Langlade County - Ward 001
-315727	WI	COLUMBIA	Columbia - Town Of Lodi - Columbia County - Ward 003
-315728	WI	SAUK	Sauk - Town Of Reedsburg - Sauk County - Ward 003
-315729	WI	LAFAYETTE	Lafayette - Town Of Benton - Lafayette County - Ward 002
-315730	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 017
-315731	WI	VILAS	Vilas - Town Of Arbor Vitae - Vilas County - Ward 004
-315732	WI	VERNON	Vernon - City Of Westby - Vernon County - Ward 004
-315733	WI	BARRON	Barron - City Of Barron - Barron County - Ward 005
-315734	WI	WOOD	Wood - Town Of Saratoga - Wood County - Ward 005
-315735	WI	CRAWFORD	Crawford - Village Of Bell Center - Crawford County - Ward 001
-315736	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 043
-315737	WI	MARATHON	Marathon - City Of Marshfield - Multiple Counties - Ward 021
-315738	WI	VERNON	Vernon - Town Of Coon - Vernon County - Ward 002
-315739	WI	WASHINGTON	Washington - City Of Hartford - Multiple Counties - Ward 006
-315740	WI	CALUMET	Calumet - City Of Appleton - Multiple Counties - Ward 046
-315741	WI	OZAUKEE	Ozaukee - Village Of Newburg - Multiple Counties - Ward 003
-315742	WI	JUNEAU	Juneau - Town Of Lemonweir - Juneau County - Ward 004
-315743	WI	MONROE	Monroe - Town Of Scott - Monroe County - Ward 001
-315744	WI	WASHINGTON	Washington - City Of Hartford - Multiple Counties - Ward 008
-315745	WI	ASHLAND	Ashland - Village Of Butternut - Ashland County - Ward 002
-315746	WI	MARINETTE	Marinette - City Of Peshtigo - Marinette County - Ward 003
-315747	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 011
-315748	WI	CLARK	Clark - Town Of Butler - Clark County - Ward 001
-315749	WI	ROCK	Rock - Town Of Plymouth - Rock County - Ward 002
-315750	WI	OCONTO	Oconto - Town Of Spruce - Oconto County - Ward 002
-315751	WI	RUSK	Rusk - City Of Ladysmith - Rusk County - Ward 008
-315752	WI	RUSK	Rusk - Village Of Conrath - Rusk County - Ward 001
-315753	WI	DUNN	Dunn - Town Of Hay River - Dunn County - Ward 002
-315754	WI	PEPIN	Pepin - Village Of Stockholm - Pepin County - Ward 001
-315755	WI	GRANT	Grant - Village Of Woodman - Grant County - Ward 001
-315756	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 009
-315757	WI	BAYFIELD	Bayfield - Village Of Mason - Bayfield County - Ward 001
-315758	WI	SAWYER	Sawyer - Village Of Couderay - Sawyer County - Ward 001
-315759	WI	ONEIDA	Oneida - Town Of Piehl - Oneida County - Ward 001
-315760	WI	CRAWFORD	Crawford - Village Of De Soto - Multiple Counties - Ward 002
-315761	WI	RUSK	Rusk - Town Of Richland - Rusk County - Ward 001
-315762	WI	MARQUETTE	Marquette - Town Of Moundville - Marquette County - Ward 002
-315763	WI	RUSK	Rusk - Village Of Ingram - Rusk County - Ward 001
-315764	WI	CRAWFORD	Crawford - Town Of Wauzeka - Crawford County - Ward 002
-315765	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 020
-315766	WI	PEPIN	Pepin - Town Of Lima - Pepin County - Ward 002
-315767	WI	WALWORTH	Walworth - Town Of Linn - Walworth County - Ward 005
-315768	WI	ST CROIX	St. Croix - Town Of Kinnickinnic - St. Croix County - Ward 002
-315769	WI	VILAS	Vilas - Town Of Plum Lake - Vilas County - Ward 002
-315770	WI	GRANT	Grant - Town Of North Lancaster - Grant County - Ward 001
-315771	WI	DOOR	Door - Town Of Egg Harbor - Door County - Ward 003
-315772	WI	WAUPACA	Waupaca - Village Of Big Falls - Waupaca County - Ward 001
-315773	WI	BURNETT	Burnett - Town Of La Follette - Burnett County - Ward 002
-315774	WI	WAUSHARA	Waushara - City Of Berlin - Multiple Counties - Ward 007
-315775	WI	BARRON	Barron - City Of Rice Lake - Barron County - Ward 013
-315776	WI	BURNETT	Burnett - Town Of Swiss - Burnett County - Ward 002
-315777	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 008
-315778	WI	CLARK	Clark - Town Of Washburn - Clark County - Ward 001
-315779	WI	OCONTO	Oconto - Town Of Oconto - Oconto County - Ward 003
-315780	WI	LINCOLN	Lincoln - Town Of Rock Falls - Lincoln County - Ward 002
-315781	WI	JEFFERSON	Jefferson - Village Of Cambridge - Multiple Counties - Ward 001
-315782	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 040
-315783	WI	FOREST	Forest - Town Of Caswell - Forest County - Ward 001
-315784	WI	RUSK	Rusk - Town Of Wilson - Rusk County - Ward 001
-315785	WI	RICHLAND	Richland - Village Of Yuba - Richland County - Ward 001
-315786	WI	WASHINGTON	Washington - Village Of Jackson - Washington County - Ward 001
-315787	WI	WALWORTH	Walworth - Town Of Whitewater - Walworth County - Ward 003
-315788	WI	OZAUKEE	Ozaukee - Town Of Fredonia - Ozaukee County - Ward 002
-315789	WI	IOWA	Iowa - Village Of Montfort - Multiple Counties - Ward 002
-315790	WI	JUNEAU	Juneau - City Of Mauston - Juneau County - Ward 006
-315791	WI	FOREST	Forest - Town Of Wabeno - Forest County - Ward 005
-315792	WI	WINNEBAGO	Winnebago - City Of Menasha - Multiple Counties - Ward 014
-315793	WI	CALUMET	Calumet - Town Of Stockbridge - Calumet County - Ward 003
-315794	WI	JACKSON	Jackson - Town Of Albion - Jackson County - Ward 004
-315795	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 024
-315796	WI	RUSK	Rusk - City Of Ladysmith - Rusk County - Ward 011
-315797	WI	WAUSHARA	Waushara - Town Of Richford - Waushara County - Ward 002
-315798	WI	WINNEBAGO	Winnebago - Town Of Menasha - Winnebago County - Ward 012
-315799	WI	JACKSON	Jackson - Town Of Albion - Jackson County - Ward 002
-315800	WI	FOREST	Forest - Town Of Popple River - Forest County - Ward 001
-315801	WI	BURNETT	Burnett - Town Of Meenon - Burnett County - Ward 003
-315802	WI	WALWORTH	Walworth - Town Of Geneva - Walworth County - Ward 007
-315803	WI	JUNEAU	Juneau - Town Of Finley - Juneau County - Ward 001
-315804	WI	RUSK	Rusk - Village Of Glen Flora - Rusk County - Ward 001
-315805	WI	IOWA	Iowa - Town Of Linden - Iowa County - Ward 002
-315806	WI	BROWN	Brown - City Of De Pere - Brown County - Ward 015
-315807	WI	CRAWFORD	Crawford - Town Of Clayton - Crawford County - Ward 003
-315808	WI	RUSK	Rusk - City Of Ladysmith - Rusk County - Ward 010
-315809	WI	WALWORTH	Walworth - Town Of East Troy - Walworth County - Ward 006
-315810	WI	WASHBURN	Washburn - Town Of Bashaw - Washburn County - Ward 003
-315811	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 016
-315812	WI	SAUK	Sauk - Town Of Sumpter - Sauk County - Ward 003
-315813	WI	IRON	Iron - Town Of Anderson - Iron County - Ward 001
-315814	WI	FLORENCE	Florence - Town Of Commonwealth - Florence County - Ward 003
-315815	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 018
-315816	WI	BROWN	Brown - Village Of Denmark - Brown County - Ward 003
-315817	WI	BARRON	Barron - City Of Barron - Barron County - Ward 006
-315818	WI	JACKSON	Jackson - Town Of Brockway - Jackson County - Ward 003
-315819	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 039
-315820	WI	OUTAGAMIE	Outagamie - Village Of Little Chute - Outagamie County - Ward 002
-315821	WI	RUSK	Rusk - Town Of Wilkinson - Rusk County - Ward 001
-315822	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 032
-315823	WI	JUNEAU	Juneau - Town Of Lemonweir - Juneau County - Ward 003
-315824	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 019
-315825	WI	VILAS	Vilas - City Of Eagle River - Vilas County - Ward 004
-315826	WI	JUNEAU	Juneau - Town Of Seven Mile Creek - Juneau County - Ward 001
-315827	WI	BURNETT	Burnett - Town Of Rusk - Burnett County - Ward 001
-315828	WI	WASHINGTON	Washington - Village Of Jackson - Washington County - Ward 010
-315829	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 016
-315830	WI	JUNEAU	Juneau - Town Of Kingston - Juneau County - Ward 001
-315831	WI	POLK	Polk - Village Of Turtle Lake - Multiple Counties - Ward 002
-315832	WI	WASHINGTON	Washington - Town Of West Bend - Washington County - Ward 008
-315833	WI	JACKSON	Jackson - Town Of Brockway - Jackson County - Ward 002
-315834	WI	CLARK	Clark - Town Of Hixon - Clark County - Ward 002
-315835	WI	WAUKESHA	Waukesha - City Of New Berlin - Waukesha County - Ward 027
-315836	WI	IOWA	Iowa - Village Of Muscoda - Multiple Counties - Ward 003
-315837	WI	WALWORTH	Walworth - Town Of Darien - Walworth County - Ward 003
-315838	WI	MONROE	Monroe - Village Of Melvina - Monroe County - Ward 001
-315839	WI	OZAUKEE	Ozaukee - Town Of Belgium - Ozaukee County - Ward 002
-315840	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 027
-315841	WI	CLARK	Clark - Town Of Hewett - Clark County - Ward 002
-315842	WI	CLARK	Clark - Town Of Reseburg - Clark County - Ward 002
-315843	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 035
-315844	WI	BARRON	Barron - City Of Barron - Barron County - Ward 007
-315845	WI	FOREST	Forest - Town Of Wabeno - Forest County - Ward 004
-315846	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 055
-315847	WI	WASHINGTON	Washington - Village Of Slinger - Washington County - Ward 007
-315848	WI	RUSK	Rusk - Town Of Cedar Rapids - Rusk County - Ward 001
-315849	WI	LACROSSE	Lacrosse - Town Of Onalaska - La Crosse County - Ward 003
-315850	WI	SAUK	Sauk - Town Of Franklin - Sauk County - Ward 003
-315851	WI	LANGLADE	Langlade - Town Of Price - Langlade County - Ward 002
-315852	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 017
-315853	WI	LINCOLN	Lincoln - Town Of Harrison - Lincoln County - Ward 002
-315854	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 025
-315855	WI	RICHLAND	Richland - Town Of Sylvan - Richland County - Ward 002
-315856	WI	ROCK	Rock - Town Of Rock - Rock County - Ward 002
-315857	WI	MONROE	Monroe - Town Of Wilton - Monroe County - Ward 002
-315858	WI	SAUK	Sauk - Town Of Delton - Sauk County - Ward 004
-315859	WI	VERNON	Vernon - Town Of Christiana - Vernon County - Ward 002
-315860	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 022
-315861	WI	WALWORTH	Walworth - Town Of Linn - Walworth County - Ward 004
-315862	WI	IOWA	Iowa - Town Of Mifflin - Iowa County - Ward 002
-315863	WI	TREMPEALEAU	Trempealeau - Town Of Arcadia - Trempealeau County - Ward 003
-315864	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 019
-315865	WI	ROCK	Rock - Town Of Janesville - Rock County - Ward 006
-315866	WI	OUTAGAMIE	Outagamie - Town Of Buchanan - Outagamie County - Ward 008
-315867	WI	WOOD	Wood - Town Of Saratoga - Wood County - Ward 003
-315868	WI	WASHBURN	Washburn - Town Of Madge - Washburn County - Ward 003
-315869	WI	WASHINGTON	Washington - Town Of Polk - Washington County - Ward 004
-315870	WI	CHIPPEWA	Chippewa - Town Of Hallie - Chippewa County - Ward 001
-315871	WI	WALWORTH	Walworth - City Of Lake Geneva - Walworth County - Ward 009
-315872	WI	MARATHON	Marathon - Village Of Birnamwood - Multiple Counties - Ward 002
-315873	WI	ROCK	Rock - Town Of Harmony - Rock County - Ward 004
-315874	WI	VERNON	Vernon - Town Of Viroqua - Vernon County - Ward 004
-315875	WI	CLARK	Clark - Town Of Eaton - Clark County - Ward 002
-315876	WI	WOOD	Wood - Town Of Seneca - Wood County - Ward 003
-315877	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 019
-315878	WI	WALWORTH	Walworth - Village Of Williams Bay - Walworth County - Ward 004
-315879	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 021
-315880	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 011
-315881	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 015
-315882	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 018
-315883	WI	WASHINGTON	Washington - Village Of Slinger - Washington County - Ward 008
-315884	WI	OUTAGAMIE	Outagamie - Town Of Buchanan - Outagamie County - Ward 009
-315885	WI	SHAWANO	Shawano - City Of Marion - Multiple Counties - Ward 004
-315886	WI	RICHLAND	Richland - Town Of Richland - Richland County - Ward 002
-315887	WI	ROCK	Rock - City Of Brodhead - Multiple Counties - Ward 007
-315888	WI	FLORENCE	Florence - Town Of Florence - Florence County - Ward 004
-315889	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 044
-315890	WI	GRANT	Grant - Town Of South Lancaster - Grant County - Ward 003
-315891	WI	BARRON	Barron - Village Of New Auburn - Multiple Counties - Ward 002
-315892	WI	CLARK	Clark - Town Of Warner - Clark County - Ward 002
-315893	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 013
-315894	WI	WASHBURN	Washburn - Town Of Beaver Brook - Washburn County - Ward 003
-315895	WI	VILAS	Vilas - Town Of Conover - Vilas County - Ward 002
-315896	WI	ROCK	Rock - Town Of Rock - Rock County - Ward 005
-315897	WI	DOUGLAS	Douglas - City Of Superior - Douglas County - Ward 008
-315898	WI	SAUK	Sauk - Village Of Cazenovia - Multiple Counties - Ward 002
-315899	WI	LAFAYETTE	Lafayette - Village Of Hazel Green - Multiple Counties - Ward 003
-315900	WI	WASHBURN	Washburn - Town Of Spooner - Washburn County - Ward 003
-315901	WI	MILWAUKEE	Milwaukee - City Of Franklin - Milwaukee County - Ward 001
-315902	WI	DANE	Dane - City Of Sun Prairie - Dane County - Ward 019
-315903	WI	ONEIDA	Oneida - Town Of Pelican - Oneida County - Ward 003
-315904	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 034
-315905	WI	FOREST	Forest - Town Of Lincoln - Forest County - Ward 003
-315906	WI	FOREST	Forest - Town Of Argonne - Forest County - Ward 002
-315907	WI	ADAMS	Adams - City Of Wisconsin Dells - Multiple Counties - Ward 005
-315908	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 035
-315909	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 054
-315910	WI	DANE	Dane - City Of Madison - Dane County - Ward 107
-315911	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 018
-315912	WI	WALWORTH	Walworth - Village Of East Troy - Walworth County - Ward 005
-315913	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 023
-315914	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 045
-315915	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 029
-315916	WI	PORTAGE	Portage - Village Of Whiting - Portage County - Ward 004
-315917	WI	IOWA	Iowa - Village Of Livingston - Multiple Counties - Ward 002
-315918	WI	ONEIDA	Oneida - City Of Rhinelander - Oneida County - Ward 012
-315919	WI	DANE	Dane - City Of Edgerton - Multiple Counties - Ward 007
-315920	WI	CLARK	Clark - City Of Stanley - Multiple Counties - Ward 005
-315921	WI	OUTAGAMIE	Outagamie - Village Of Little Chute - Outagamie County - Ward 001
-315922	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 048
-315923	WI	CALUMET	Calumet - City Of Menasha - Multiple Counties - Ward 017
-315924	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 020
-315925	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 025
-315926	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 026
-315927	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 020
-315928	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 024
-315929	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 018
-315930	WI	DANE	Dane - City Of Madison - Dane County - Ward 100
-315931	WI	MONROE	Monroe - Town Of Lafayette - Monroe County - Ward 002
-315932	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 058
-315933	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 022
-315934	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 023
-315935	WI	PORTAGE	Portage - Village Of Milladore - Multiple Counties - Ward 002
-315936	WI	DANE	Dane - City Of Madison - Dane County - Ward 133
-315937	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 053
-315938	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 021
-315939	WI	ST CROIX	St. Croix - Village Of Spring Valley - Multiple Counties - Ward 003
-315940	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 046
-315941	WI	WOOD	Wood - Town Of Port Edwards - Wood County - Ward 003
-315942	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 026
-315943	WI	KENOSHA	Kenosha - Village Of Paddock Lake - Kenosha County - Ward 004
-315944	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 023
-315945	WI	CALUMET	Calumet - Village Of Sherwood - Calumet County - Ward 003
-315946	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 025
-315947	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 021
-315948	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 033
-315949	WI	WINNEBAGO	Winnebago - City Of Oshkosh - Winnebago County - Ward 036
-315950	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 052
-315951	WI	CALUMET	Calumet - Village Of Sherwood - Calumet County - Ward 005
-315952	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 019
-315953	WI	DANE	Dane - Village Of Oregon - Dane County - Ward 010
-315954	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 022
-315955	WI	BROWN	Brown - City Of De Pere - Brown County - Ward 016
-315956	WI	CALUMET	Calumet - Village Of Sherwood - Calumet County - Ward 004
-315957	WI	DANE	Dane - Village Of Cottage Grove - Dane County - Ward 008
-315958	WI	DANE	Dane - Village Of Cottage Grove - Dane County - Ward 009
-315959	WI	DANE	Dane - City Of Madison - Dane County - Ward 109
-315960	WI	DANE	Dane - City Of Madison - Dane County - Ward 131
-315961	WI	DANE	Dane - Village Of Mazomanie - Dane County - Ward 003
-315962	WI	JEFFERSON	Jefferson - Village Of Johnson Creek - Jefferson County - Ward 003
-315963	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 038
-315964	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 042
-315965	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 050
-315966	WI	KENOSHA	Kenosha - Village Of Twin Lakes - Kenosha County - Ward 008
-315967	WI	MARATHON	Marathon - Village Of Dorchester - Multiple Counties - Ward 002
-315968	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 057
-315969	WI	OUTAGAMIE	Outagamie - Village Of Kimberly - Outagamie County - Ward 008
-315970	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 023
-315971	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 024
-315972	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 025
-315973	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 027
-315974	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 028
-315975	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 029
-315976	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 030
-315977	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 031
-315978	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 033
-315979	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 035
-315980	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 040
-315981	WI	WASHINGTON	Washington - Village Of Jackson - Washington County - Ward 008
-315982	WI	ST CROIX	St. Croix - Village Of Roberts - St. Croix County - Ward 003
-315983	WI	ST CROIX	St. Croix - Village Of Somerset - St. Croix County - Ward 003
-315984	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 059
-315985	WI	ROCK	Rock - City Of Brodhead - Multiple Counties - Ward 008
-315986	WI	CHIPPEWA	Chippewa - City Of Eau Claire - Multiple Counties - Ward 041
-315987	WI	DANE	Dane - City Of Middleton - Dane County - Ward 010
-315988	WI	DANE	Dane - City Of Middleton - Dane County - Ward 011
-315989	WI	DANE	Dane - City Of Middleton - Dane County - Ward 014
-315990	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 047
-315991	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 049
-315992	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 061
-315993	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 066
-315994	WI	RACINE	Racine - Village Of Rochester - Racine County - Ward 003
-315995	WI	RACINE	Racine - Village Of Rochester - Racine County - Ward 004
-315996	WI	RACINE	Racine - Village Of Rochester - Racine County - Ward 005
-315997	WI	RACINE	Racine - Village Of Rochester - Racine County - Ward 006
-315998	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 012
-315999	WI	WAUKESHA	Waukesha - Village Of Pewaukee - Waukesha County - Ward 010
-316000	WI	DANE	Dane - City Of Madison - Dane County - Ward 127
-316001	WI	DANE	Dane - City Of Middleton - Dane County - Ward 015
-316002	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 026
-316003	WI	KENOSHA	Kenosha - Village Of Paddock Lake - Kenosha County - Ward 006
-316004	WI	OZAUKEE	Ozaukee - Village Of Fredonia - Ozaukee County - Ward 003
-316005	WI	OZAUKEE	Ozaukee - Village Of Grafton - Ozaukee County - Ward 014
-316006	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 023
-316007	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 056
-316008	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 062
-316009	WI	LACROSSE	Lacrosse - Village Of Holmen - La Crosse County - Ward 011
-316010	WI	DANE	Dane - Village Of Deforest - Dane County - Ward 010
-316011	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 054
-316012	WI	ROCK	Rock - City Of Janesville - Rock County - Ward 028
-316013	WI	WALWORTH	Walworth - Town Of Delavan - Walworth County - Ward 007
-316014	WI	ADAMS	Adams - Town Of Adams - Adams County - Ward 003
-316015	WI	ADAMS	Adams - Town Of Big Flats - Adams County - Ward 002
-316016	WI	ADAMS	Adams - Town Of Dell Prairie - Adams County - Ward 003
-316017	WI	ADAMS	Adams - Town Of Jackson - Adams County - Ward 002
-316018	WI	ADAMS	Adams - Town Of New Chester - Adams County - Ward 003
-316019	WI	ADAMS	Adams - Town Of Quincy - Adams County - Ward 003
-316020	WI	ADAMS	Adams - Town Of Strongs Prairie - Adams County - Ward 003
-316021	WI	ASHLAND	Ashland - Town Of Gordon - Ashland County - Ward 002
-316022	WI	ASHLAND	Ashland - Town Of Marengo - Ashland County - Ward 002
-316023	WI	ASHLAND	Ashland - Town Of Morse - Ashland County - Ward 003
-316024	WI	ASHLAND	Ashland - Town Of Peeksville - Ashland County - Ward 002
-316025	WI	BARRON	Barron - Village Of Cameron - Barron County - Ward 003
-316026	WI	BARRON	Barron - Town Of Doyle - Barron County - Ward 002
-316027	WI	BARRON	Barron - Town Of Stanley - Barron County - Ward 004
-316028	WI	BROWN	Brown - Town Of Green Bay - Brown County - Ward 003
-316029	WI	BROWN	Brown - Village Of Hobart - Brown County - Ward 008
-316030	WI	BROWN	Brown - Village Of Howard - Multiple Counties - Ward 018
-316031	WI	BROWN	Brown - Town Of Lawrence - Brown County - Ward 004
-316032	WI	BROWN	Brown - Town Of Lawrence - Brown County - Ward 005
-316033	WI	BROWN	Brown - Town Of Lawrence - Brown County - Ward 006
-316034	WI	BROWN	Brown - Town Of Ledgeview - Brown County - Ward 005
-316035	WI	BROWN	Brown - Town Of Ledgeview - Brown County - Ward 006
-316036	WI	BROWN	Brown - Town Of Ledgeview - Brown County - Ward 007
-316037	WI	BROWN	Brown - Town Of Ledgeview - Brown County - Ward 008
-316038	WI	BROWN	Brown - Town Of Ledgeview - Brown County - Ward 009
-316039	WI	BROWN	Brown - Town Of Ledgeview - Brown County - Ward 010
-316040	WI	BROWN	Brown - Town Of Rockland - Brown County - Ward 003
-316041	WI	BROWN	Brown - Village Of Wrightstown - Multiple Counties - Ward 003
-316042	WI	BURNETT	Burnett - Village Of Grantsburg - Burnett County - Ward 003
-316043	WI	BURNETT	Burnett - Village Of Webster - Burnett County - Ward 002
-316044	WI	BURNETT	Burnett - Town Of Wood River - Burnett County - Ward 003
-316045	WI	CALUMET	Calumet - City Of Appleton - Multiple Counties - Ward 026
-316046	WI	CALUMET	Calumet - City Of Chilton - Calumet County - Ward 005
-316047	WI	CALUMET	Calumet - Town Of Chilton - Calumet County - Ward 003
-316048	WI	CALUMET	Calumet - Town Of Harrison - Calumet County - Ward 010
-316049	WI	CALUMET	Calumet - Town Of Harrison - Calumet County - Ward 011
-316050	WI	CALUMET	Calumet - Town Of Harrison - Calumet County - Ward 012
-316051	WI	CALUMET	Calumet - City Of Menasha - Multiple Counties - Ward 016
-316052	WI	CHIPPEWA	Chippewa - Town Of Bloomer - Chippewa County - Ward 002
-316053	WI	CHIPPEWA	Chippewa - Town Of Eagle Point - Chippewa County - Ward 005
-316054	WI	CHIPPEWA	Chippewa - Town Of Edson - Chippewa County - Ward 002
-316055	WI	CHIPPEWA	Chippewa - Town Of Lafayette - Chippewa County - Ward 008
-316056	WI	CHIPPEWA	Chippewa - Town Of Lafayette - Chippewa County - Ward 009
-316057	WI	CHIPPEWA	Chippewa - Village Of Lake Hallie - Chippewa County - Ward 006
-316058	WI	CHIPPEWA	Chippewa - Village Of Lake Hallie - Chippewa County - Ward 007
-316059	WI	CHIPPEWA	Chippewa - Village Of Lake Hallie - Chippewa County - Ward 008
-316060	WI	CHIPPEWA	Chippewa - City Of Stanley - Multiple Counties - Ward 007
-316061	WI	CLARK	Clark - City Of Abbotsford - Multiple Counties - Ward 005
-316062	WI	CLARK	Clark - Town Of Colby - Clark County - Ward 002
-316063	WI	CLARK	Clark - Town Of Colby - Clark County - Ward 003
-316064	WI	CLARK	Clark - Town Of Green Grove - Clark County - Ward 002
-316065	WI	CLARK	Clark - Town Of Sherman - Clark County - Ward 002
-316066	WI	CLARK	Clark - Town Of York - Clark County - Ward 002
-316067	WI	COLUMBIA	Columbia - City Of Lodi - Columbia County - Ward 005
-316068	WI	COLUMBIA	Columbia - City Of Lodi - Columbia County - Ward 006
-316069	WI	COLUMBIA	Columbia - Town Of Pacific - Columbia County - Ward 004
-316070	WI	COLUMBIA	Columbia - Village Of Poynette - Columbia County - Ward 004
-316071	WI	COLUMBIA	Columbia - Village Of Rio - Columbia County - Ward 002
-316072	WI	COLUMBIA	Columbia - Town Of Springvale - Columbia County - Ward 002
-316073	WI	COLUMBIA	Columbia - Town Of West Point - Columbia County - Ward 003
-316074	WI	CRAWFORD	Crawford - Town Of Prairie Du Chien - Crawford County - Ward 002
-316075	WI	DANE	Dane - Town Of Bristol - Dane County - Ward 004
-316076	WI	DANE	Dane - Town Of Cottage Grove - Dane County - Ward 006
-316077	WI	DANE	Dane - Village Of Deerfield - Dane County - Ward 003
-316078	WI	DANE	Dane - Village Of Deforest - Dane County - Ward 009
-316079	WI	DANE	Dane - Village Of Deforest - Dane County - Ward 011
-316080	WI	DANE	Dane - Village Of Deforest - Dane County - Ward 012
-316081	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 013
-316082	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 014
-316083	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 015
-316084	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 016
-316085	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 017
-316086	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 018
-316087	WI	DANE	Dane - City Of Fitchburg - Dane County - Ward 019
-316088	WI	DANE	Dane - Village Of McFarland - Dane County - Ward 008
-316089	WI	DANE	Dane - Village Of McFarland - Dane County - Ward 009
-316090	WI	DANE	Dane - Village Of McFarland - Dane County - Ward 010
-316091	WI	DANE	Dane - City Of Madison - Dane County - Ward 101
-316092	WI	DANE	Dane - City Of Madison - Dane County - Ward 103
-316093	WI	DANE	Dane - City Of Madison - Dane County - Ward 104
-316094	WI	DANE	Dane - City Of Madison - Dane County - Ward 105
-316095	WI	DANE	Dane - City Of Madison - Dane County - Ward 106
-316096	WI	DANE	Dane - City Of Madison - Dane County - Ward 111
-316097	WI	DANE	Dane - City Of Middleton - Dane County - Ward 012
-316098	WI	DANE	Dane - City Of Middleton - Dane County - Ward 013
-316099	WI	DANE	Dane - City Of Middleton - Dane County - Ward 016
-316100	WI	DANE	Dane - City Of Middleton - Dane County - Ward 017
-316101	WI	DANE	Dane - Town Of Middleton - Dane County - Ward 006
-316102	WI	DANE	Dane - Town Of Middleton - Dane County - Ward 007
-316103	WI	DANE	Dane - Town Of Middleton - Dane County - Ward 008
-316104	WI	DANE	Dane - Village Of Mount Horeb - Dane County - Ward 007
-316105	WI	DANE	Dane - Village Of Mount Horeb - Dane County - Ward 008
-316106	WI	DANE	Dane - Village Of Oregon - Dane County - Ward 011
-316107	WI	DANE	Dane - Village Of Oregon - Dane County - Ward 012
-316108	WI	DANE	Dane - City Of Verona - Dane County - Ward 009
-316109	WI	DANE	Dane - Town Of Westport - Dane County - Ward 005
-316110	WI	DANE	Dane - Village Of Windsor - Dane County - Ward 008
-316111	WI	DANE	Dane - Village Of Windsor - Dane County - Ward 009
-316112	WI	DANE	Dane - Village Of Windsor - Dane County - Ward 010
-316113	WI	DODGE	Dodge - Town Of Ashippun - Dodge County - Ward 004
-316114	WI	DODGE	Dodge - Town Of Beaver Dam - Dodge County - Ward 006
-316115	WI	DODGE	Dodge - Town Of Beaver Dam - Dodge County - Ward 007
-316116	WI	DODGE	Dodge - Town Of Fox Lake - Dodge County - Ward 004
-316117	WI	DODGE	Dodge - Town Of Hubbard - Dodge County - Ward 004
-316118	WI	DODGE	Dodge - Town Of Lomira - Dodge County - Ward 003
-316119	WI	DODGE	Dodge - Town Of Lowell - Dodge County - Ward 003
-316120	WI	DODGE	Dodge - Town Of Lowell - Dodge County - Ward 004
-316121	WI	DODGE	Dodge - Town Of Williamstown - Dodge County - Ward 002
-316122	WI	DODGE	Dodge - Town Of Williamstown - Dodge County - Ward 003
-316123	WI	DOOR	Door - Town Of Gardner - Door County - Ward 002
-316124	WI	DOOR	Door - Town Of Jacksonport - Door County - Ward 002
-316125	WI	DOOR	Door - Town Of Sevastopol - Door County - Ward 004
-316126	WI	DOOR	Door - Town Of Sevastopol - Door County - Ward 005
-316127	WI	DOOR	Door - City Of Sturgeon Bay - Door County - Ward 027
-316128	WI	DOUGLAS	Douglas - Town Of Brule - Douglas County - Ward 002
-316129	WI	DOUGLAS	Douglas - Town Of Solon Springs - Douglas County - Ward 002
-316130	WI	DOUGLAS	Douglas - Town Of Solon Springs - Douglas County - Ward 003
-316131	WI	EAU CLAIRE	Eau Claire - Town Of Seymour - Eau Claire County - Ward 005
-316132	WI	EAU CLAIRE	Eau Claire - Town Of Seymour - Eau Claire County - Ward 006
-316133	WI	EAU CLAIRE	Eau Claire - Town Of Union - Eau Claire County - Ward 004
-316134	WI	FOND DU LAC	Fond Du Lac - Town Of Eden - Fond Du Lac County - Ward 002
-316135	WI	FOND DU LAC	Fond Du Lac - Town Of Empire - Fond Du Lac County - Ward 004
-316136	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 017
-316137	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 018
-316138	WI	FOND DU LAC	Fond Du Lac - City Of Fond Du Lac - Fond Du Lac County - Ward 021
-316139	WI	FOND DU LAC	Fond Du Lac - Town Of Fond Du Lac - Fond Du Lac County - Ward 004
-316140	WI	FOND DU LAC	Fond Du Lac - Town Of Fond Du Lac - Fond Du Lac County - Ward 005
-316141	WI	FOND DU LAC	Fond Du Lac - Town Of Fond Du Lac - Fond Du Lac County - Ward 006
-316142	WI	FOND DU LAC	Fond Du Lac - Town Of Fond Du Lac - Fond Du Lac County - Ward 007
-316143	WI	FOND DU LAC	Fond Du Lac - Town Of Fond Du Lac - Fond Du Lac County - Ward 008
-316144	WI	FOND DU LAC	Fond Du Lac - Town Of Metomen - Fond Du Lac County - Ward 002
-316145	WI	FOND DU LAC	Fond Du Lac - Town Of Oakfield - Fond Du Lac County - Ward 002
-316146	WI	FOND DU LAC	Fond Du Lac - Village Of Rosendale - Fond Du Lac County - Ward 002
-316147	WI	FOREST	Forest - Town Of Argonne - Forest County - Ward 003
-316148	WI	FOREST	Forest - Town Of Crandon - Forest County - Ward 003
-316149	WI	GRANT	Grant - Town Of Clifton - Grant County - Ward 002
-316150	WI	GRANT	Grant - Town Of Platteville - Grant County - Ward 003
-316151	WI	GRANT	Grant - Town Of Watterstown - Grant County - Ward 002
-316152	WI	GREEN	Green - Town Of Brooklyn - Green County - Ward 003
-316153	WI	GREEN	Green - Town Of Exeter - Green County - Ward 003
-316154	WI	GREEN	Green - Town Of Exeter - Green County - Ward 004
-316155	WI	GREEN	Green - Town Of Mount Pleasant - Green County - Ward 003
-316156	WI	GREEN	Green - Town Of Sylvester - Green County - Ward 002
-316157	WI	GREEN LAKE	Green Lake - Town Of Berlin - Green Lake County - Ward 003
-316158	WI	GREEN LAKE	Green Lake - Town Of St. Marie - Green Lake County - Ward 002
-316159	WI	IOWA	Iowa - City Of Dodgeville - Iowa County - Ward 009
-316160	WI	IOWA	Iowa - City Of Dodgeville - Iowa County - Ward 010
-316161	WI	IOWA	Iowa - Town Of Dodgeville - Iowa County - Ward 004
-316162	WI	IOWA	Iowa - Town Of Waldwick - Iowa County - Ward 002
-316163	WI	IOWA	Iowa - Town Of Wyoming - Iowa County - Ward 002
-316164	WI	JACKSON	Jackson - Town Of Alma - Jackson County - Ward 003
-316165	WI	JACKSON	Jackson - Town Of Irving - Jackson County - Ward 003
-316166	WI	JEFFERSON	Jefferson - Town Of Ixonia - Jefferson County - Ward 005
-316167	WI	JEFFERSON	Jefferson - Town Of Ixonia - Jefferson County - Ward 006
-316168	WI	JEFFERSON	Jefferson - City Of Jefferson - Jefferson County - Ward 009
-316169	WI	JEFFERSON	Jefferson - City Of Jefferson - Jefferson County - Ward 010
-316170	WI	JEFFERSON	Jefferson - Town Of Koshkonong - Jefferson County - Ward 006
-316171	WI	JEFFERSON	Jefferson - City Of Lake Mills - Jefferson County - Ward 005
-316172	WI	JEFFERSON	Jefferson - City Of Lake Mills - Jefferson County - Ward 006
-316173	WI	JEFFERSON	Jefferson - City Of Lake Mills - Jefferson County - Ward 007
-316174	WI	JEFFERSON	Jefferson - City Of Lake Mills - Jefferson County - Ward 008
-316175	WI	JEFFERSON	Jefferson - Town Of Lake Mills - Jefferson County - Ward 003
-316176	WI	JEFFERSON	Jefferson - City Of Whitewater - Multiple Counties - Ward 011
-316177	WI	JEFFERSON	Jefferson - City Of Whitewater - Multiple Counties - Ward 012
-316178	WI	JUNEAU	Juneau - City Of Elroy - Juneau County - Ward 006
-316179	WI	JUNEAU	Juneau - City Of Elroy - Juneau County - Ward 007
-316180	WI	JUNEAU	Juneau - Town Of Fountain - Juneau County - Ward 002
-316181	WI	JUNEAU	Juneau - Town Of Germantown - Juneau County - Ward 003
-316182	WI	JUNEAU	Juneau - Town Of Lisbon - Juneau County - Ward 003
-316183	WI	JUNEAU	Juneau - Town Of Lyndon - Juneau County - Ward 003
-316184	WI	JUNEAU	Juneau - Town Of Necedah - Juneau County - Ward 004
-316185	WI	JUNEAU	Juneau - City Of New Lisbon - Juneau County - Ward 007
-316186	WI	KENOSHA	Kenosha - Town Of Brighton - Kenosha County - Ward 004
-316187	WI	KENOSHA	Kenosha - Village Of Genoa City - Multiple Counties - Ward 005
-316188	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 037
-316189	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 051
-316190	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 052
-316191	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 053
-316192	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 055
-316193	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 057
-316194	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 060
-316195	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 063
-316196	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 064
-316197	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 065
-316198	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 067
-316199	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 068
-316200	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 069
-316201	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 070
-316202	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 071
-316203	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 072
-316204	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 073
-316205	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 074
-316206	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 075
-316207	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 076
-316208	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 077
-316209	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 078
-316210	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 079
-316211	WI	KENOSHA	Kenosha - Village Of Pleasant Prairie - Kenosha County - Ward 014
-316212	WI	KENOSHA	Kenosha - Town Of Randall - Kenosha County - Ward 006
-316213	WI	KENOSHA	Kenosha - Town Of Randall - Kenosha County - Ward 007
-316214	WI	KENOSHA	Kenosha - Town Of Wheatland - Kenosha County - Ward 006
-316215	WI	KEWAUNEE	Kewaunee - Town Of Casco - Kewaunee County - Ward 003
-316216	WI	KEWAUNEE	Kewaunee - Village Of Luxemburg - Kewaunee County - Ward 003
-316217	WI	KEWAUNEE	Kewaunee - Village Of Luxemburg - Kewaunee County - Ward 004
-316218	WI	KEWAUNEE	Kewaunee - Village Of Luxemburg - Kewaunee County - Ward 005
-316219	WI	KEWAUNEE	Kewaunee - Town Of Luxemburg - Kewaunee County - Ward 003
-316220	WI	LACROSSE	Lacrosse - Town Of Hamilton - La Crosse County - Ward 004
-316221	WI	LACROSSE	Lacrosse - Town Of Hamilton - La Crosse County - Ward 005
-316222	WI	LACROSSE	Lacrosse - Town Of Holland - La Crosse County - Ward 005
-316223	WI	LACROSSE	Lacrosse - Town Of Holland - La Crosse County - Ward 006
-316224	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 022
-316225	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 023
-316226	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 024
-316227	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 025
-316228	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 026
-316229	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 027
-316230	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 028
-316231	WI	LACROSSE	Lacrosse - City Of La Crosse - La Crosse County - Ward 029
-316232	WI	LACROSSE	Lacrosse - Town Of Onalaska - La Crosse County - Ward 008
-316233	WI	LAFAYETTE	Lafayette - Town Of Argyle - Lafayette County - Ward 003
-316234	WI	LAFAYETTE	Lafayette - City Of Cuba City - Multiple Counties - Ward 005
-316235	WI	LAFAYETTE	Lafayette - Town Of Darlington - Lafayette County - Ward 003
-316236	WI	LAFAYETTE	Lafayette - Town Of Elk Grove - Lafayette County - Ward 002
-316237	WI	LAFAYETTE	Lafayette - Town Of Fayette - Lafayette County - Ward 002
-316238	WI	LAFAYETTE	Lafayette - Town Of Lamont - Lafayette County - Ward 002
-316239	WI	LAFAYETTE	Lafayette - Town Of Seymour - Lafayette County - Ward 002
-316240	WI	LINCOLN	Lincoln - Town Of Bradley - Lincoln County - Ward 005
-316241	WI	LINCOLN	Lincoln - Town Of Corning - Lincoln County - Ward 002
-316242	WI	LINCOLN	Lincoln - Town Of King - Lincoln County - Ward 002
-316243	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 009
-316244	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 010
-316245	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 011
-316246	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 012
-316247	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 013
-316248	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 014
-316249	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 015
-316250	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 016
-316251	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 017
-316252	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 018
-316253	WI	LINCOLN	Lincoln - City Of Merrill - Lincoln County - Ward 019
-316254	WI	LINCOLN	Lincoln - Town Of Merrill - Lincoln County - Ward 006
-316255	WI	LINCOLN	Lincoln - Town Of Merrill - Lincoln County - Ward 007
-316256	WI	MANITOWOC	Manitowoc - Town Of Franklin - Manitowoc County - Ward 003
-316257	WI	MANITOWOC	Manitowoc - Town Of Meeme - Manitowoc County - Ward 003
-316258	WI	MANITOWOC	Manitowoc - Town Of Meeme - Manitowoc County - Ward 004
-316259	WI	MARATHON	Marathon - Town Of Berlin - Marathon County - Ward 002
-316260	WI	MARATHON	Marathon - Town Of Emmet - Marathon County - Ward 002
-316261	WI	MARATHON	Marathon - Village Of Kronenwetter - Marathon County - Ward 009
-316262	WI	MARATHON	Marathon - Village Of Kronenwetter - Marathon County - Ward 010
-316263	WI	MARATHON	Marathon - City Of Marshfield - Multiple Counties - Ward 012
-316264	WI	MARATHON	Marathon - City Of Marshfield - Multiple Counties - Ward 020
-316265	WI	MARATHON	Marathon - City Of Marshfield - Multiple Counties - Ward 024
-316266	WI	MARATHON	Marathon - City Of Mosinee - Marathon County - Ward 007
-316267	WI	MARATHON	Marathon - Village Of Weston - Marathon County - Ward 012
-316268	WI	MARATHON	Marathon - Village Of Weston - Marathon County - Ward 013
-316269	WI	MARINETTE	Marinette - Town Of Peshtigo - Marinette County - Ward 006
-316270	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 262
-316271	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 274
-316272	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 315
-316273	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 316
-316274	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 317
-316275	WI	MILWAUKEE	Milwaukee - City Of Oak Creek - Milwaukee County - Ward 019
-316276	WI	MONROE	Monroe - Town Of Greenfield - Monroe County - Ward 002
-316277	WI	MONROE	Monroe - Town Of Leon - Monroe County - Ward 002
-316278	WI	MONROE	Monroe - Town Of Sparta - Monroe County - Ward 005
-316279	WI	MONROE	Monroe - Town Of Sparta - Monroe County - Ward 006
-316280	WI	MONROE	Monroe - Town Of Wilton - Monroe County - Ward 004
-316281	WI	MONROE	Monroe - Town Of Wilton - Monroe County - Ward 005
-316282	WI	OCONTO	Oconto - Town Of Chase - Oconto County - Ward 005
-316283	WI	OCONTO	Oconto - Town Of Little Suamico - Oconto County - Ward 008
-316284	WI	OCONTO	Oconto - Town Of Morgan - Oconto County - Ward 002
-316285	WI	ONEIDA	Oneida - Town Of Minocqua - Oneida County - Ward 007
-316286	WI	ONEIDA	Oneida - Town Of Stella - Oneida County - Ward 002
-316287	WI	ONEIDA	Oneida - Town Of Three Lakes - Oneida County - Ward 004
-316288	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 038
-316289	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 039
-316290	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 040
-316291	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 041
-316292	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 042
-316293	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 043
-316294	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 048
-316295	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 049
-316296	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 050
-316297	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 051
-316298	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 056
-316299	WI	OUTAGAMIE	Outagamie - Town Of Center - Outagamie County - Ward 007
-316300	WI	OUTAGAMIE	Outagamie - Town Of Ellington - Outagamie County - Ward 005
-316301	WI	OUTAGAMIE	Outagamie - Town Of Freedom - Outagamie County - Ward 008
-316302	WI	OUTAGAMIE	Outagamie - Town Of Grand Chute - Outagamie County - Ward 014
-316303	WI	OUTAGAMIE	Outagamie - Town Of Grand Chute - Outagamie County - Ward 015
-316304	WI	OUTAGAMIE	Outagamie - Town Of Grand Chute - Outagamie County - Ward 016
-316305	WI	OUTAGAMIE	Outagamie - Town Of Grand Chute - Outagamie County - Ward 017
-316306	WI	OUTAGAMIE	Outagamie - Town Of Greenville - Outagamie County - Ward 009
-316307	WI	OUTAGAMIE	Outagamie - Town Of Kaukauna - Outagamie County - Ward 003
-316308	WI	OUTAGAMIE	Outagamie - Town Of Oneida - Outagamie County - Ward 006
-316309	WI	OUTAGAMIE	Outagamie - Town Of Vandenbroek - Outagamie County - Ward 003
-316310	WI	OUTAGAMIE	Outagamie - Village Of Wrightstown - Multiple Counties - Ward 004
-316311	WI	OZAUKEE	Ozaukee - Village Of Belgium - Ozaukee County - Ward 003
-316312	WI	OZAUKEE	Ozaukee - Town Of Fredonia - Ozaukee County - Ward 004
-316313	WI	PIERCE	Pierce - Town Of Clifton - Pierce County - Ward 003
-316314	WI	PIERCE	Pierce - Town Of Oak Grove - Pierce County - Ward 003
-316315	WI	PIERCE	Pierce - City Of Prescott - Pierce County - Ward 005
-316316	WI	PIERCE	Pierce - City Of Prescott - Pierce County - Ward 006
-316317	WI	PIERCE	Pierce - City Of River Falls - Multiple Counties - Ward 013
-316318	WI	PIERCE	Pierce - City Of River Falls - Multiple Counties - Ward 014
-316319	WI	POLK	Polk - Town Of Alden - Polk County - Ward 004
-316320	WI	POLK	Polk - Village Of Balsam Lake - Polk County - Ward 002
-316321	WI	POLK	Polk - Town Of Farmington - Polk County - Ward 002
-316322	WI	POLK	Polk - City Of St. Croix Falls - Polk County - Ward 004
-316323	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 026
-316324	WI	PORTAGE	Portage - City Of Stevens Point - Portage County - Ward 032
-316325	WI	PORTAGE	Portage - Town Of Stockton - Portage County - Ward 005
-316326	WI	RACINE	Racine - City Of Racine - Racine County - Ward 035
-316327	WI	RACINE	Racine - City Of Racine - Racine County - Ward 036
-316328	WI	RACINE	Racine - Town Of Raymond - Racine County - Ward 006
-316329	WI	RACINE	Racine - Village Of Sturtevant - Racine County - Ward 007
-316330	WI	RACINE	Racine - Village Of Sturtevant - Racine County - Ward 008
-316331	WI	RICHLAND	Richland - Town Of Buena Vista - Richland County - Ward 003
-316332	WI	RICHLAND	Richland - Town Of Marshall - Richland County - Ward 002
-316333	WI	ROCK	Rock - Town Of Beloit - Rock County - Ward 010
-316334	WI	ROCK	Rock - Town Of Beloit - Rock County - Ward 011
-316335	WI	ROCK	Rock - Town Of Bradford - Rock County - Ward 002
-316336	WI	ROCK	Rock - Town Of Center - Rock County - Ward 002
-316337	WI	ROCK	Rock - Town Of Fulton - Rock County - Ward 005
-316338	WI	ROCK	Rock - Town Of Fulton - Rock County - Ward 006
-316339	WI	ROCK	Rock - Town Of Janesville - Rock County - Ward 007
-316340	WI	ROCK	Rock - Town Of Janesville - Rock County - Ward 008
-316341	WI	ROCK	Rock - Town Of Janesville - Rock County - Ward 009
-316342	WI	ROCK	Rock - Town Of Newark - Rock County - Ward 003
-316343	WI	ROCK	Rock - Town Of Union - Rock County - Ward 003
-316344	WI	ROCK	Rock - Town Of Union - Rock County - Ward 004
-316345	WI	RUSK	Rusk - Town Of Atlanta - Rusk County - Ward 002
-316346	WI	RUSK	Rusk - Town Of Big Bend - Rusk County - Ward 002
-316347	WI	RUSK	Rusk - Town Of Grant - Rusk County - Ward 003
-316348	WI	RUSK	Rusk - Town Of Grant - Rusk County - Ward 004
-316349	WI	RUSK	Rusk - Town Of Grant - Rusk County - Ward 005
-316350	WI	RUSK	Rusk - Town Of Lawrence - Rusk County - Ward 002
-316351	WI	RUSK	Rusk - Town Of Strickland - Rusk County - Ward 002
-316352	WI	RUSK	Rusk - Town Of Thornapple - Rusk County - Ward 003
-316353	WI	RUSK	Rusk - Town Of Thornapple - Rusk County - Ward 004
-316354	WI	RUSK	Rusk - Town Of Thornapple - Rusk County - Ward 005
-316355	WI	ST CROIX	St. Croix - Village Of Baldwin - St. Croix County - Ward 006
-316356	WI	ST CROIX	St. Croix - Town Of Baldwin - St. Croix County - Ward 002
-316357	WI	ST CROIX	St. Croix - City Of Glenwood City - St. Croix County - Ward 002
-316358	WI	ST CROIX	St. Croix - Village Of Hammond - St. Croix County - Ward 003
-316359	WI	ST CROIX	St. Croix - Village Of Hammond - St. Croix County - Ward 004
-316360	WI	ST CROIX	St. Croix - Town Of Hammond - St. Croix County - Ward 002
-316361	WI	ST CROIX	St. Croix - Town Of Hammond - St. Croix County - Ward 003
-316362	WI	ST CROIX	St. Croix - Town Of Hudson - St. Croix County - Ward 012
-316363	WI	ST CROIX	St. Croix - Town Of Hudson - St. Croix County - Ward 013
-316364	WI	ST CROIX	St. Croix - Town Of Hudson - St. Croix County - Ward 014
-316365	WI	ST CROIX	St. Croix - Town Of Richmond - St. Croix County - Ward 004
-316366	WI	ST CROIX	St. Croix - Town Of Richmond - St. Croix County - Ward 005
-316367	WI	ST CROIX	St. Croix - City Of River Falls - Multiple Counties - Ward 003
-316368	WI	ST CROIX	St. Croix - City Of River Falls - Multiple Counties - Ward 004
-316369	WI	ST CROIX	St. Croix - Village Of Roberts - St. Croix County - Ward 002
-316370	WI	ST CROIX	St. Croix - Village Of Roberts - St. Croix County - Ward 004
-316371	WI	ST CROIX	St. Croix - Village Of Somerset - St. Croix County - Ward 004
-316372	WI	ST CROIX	St. Croix - Town Of Somerset - St. Croix County - Ward 006
-316373	WI	ST CROIX	St. Croix - Town Of Star Prairie - St. Croix County - Ward 006
-316374	WI	ST CROIX	St. Croix - Town Of Warren - St. Croix County - Ward 003
-316375	WI	SAUK	Sauk - Town Of Freedom - Sauk County - Ward 002
-316376	WI	SAUK	Sauk - Town Of La Valle - Sauk County - Ward 003
-316377	WI	SAUK	Sauk - Village Of Sauk City - Sauk County - Ward 005
-316378	WI	SAUK	Sauk - Town Of Washington - Sauk County - Ward 002
-316379	WI	SAWYER	Sawyer - Town Of Bass Lake - Sawyer County - Ward 005
-316380	WI	SAWYER	Sawyer - Town Of Edgewater - Sawyer County - Ward 002
-316381	WI	SAWYER	Sawyer - City Of Hayward - Sawyer County - Ward 005
-316382	WI	SAWYER	Sawyer - City Of Hayward - Sawyer County - Ward 006
-316383	WI	SAWYER	Sawyer - Town Of Hayward - Sawyer County - Ward 007
-316384	WI	SAWYER	Sawyer - Town Of Hayward - Sawyer County - Ward 008
-316385	WI	SAWYER	Sawyer - Town Of Ojibwa - Sawyer County - Ward 002
-316386	WI	SHAWANO	Shawano - Town Of Germania - Shawano County - Ward 002
-316387	WI	SHAWANO	Shawano - Town Of Red Springs - Shawano County - Ward 002
-316388	WI	SHAWANO	Shawano - Town Of Washington - Shawano County - Ward 003
-316389	WI	SHEBOYGAN	Sheboygan - Village Of Cedar Grove - Sheboygan County - Ward 003
-316390	WI	SHEBOYGAN	Sheboygan - Village Of Howards Grove - Sheboygan County - Ward 004
-316391	WI	SHEBOYGAN	Sheboygan - Town Of Lyndon - Sheboygan County - Ward 003
-316392	WI	SHEBOYGAN	Sheboygan - City Of Plymouth - Sheboygan County - Ward 011
-316393	WI	SHEBOYGAN	Sheboygan - City Of Plymouth - Sheboygan County - Ward 012
-316394	WI	SHEBOYGAN	Sheboygan - Town Of Scott - Sheboygan County - Ward 003
-316395	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 017
-316396	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 024
-316397	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 025
-316398	WI	SHEBOYGAN	Sheboygan - City Of Sheboygan - Sheboygan County - Ward 026
-316399	WI	SHEBOYGAN	Sheboygan - Town Of Sheboygan - Sheboygan County - Ward 008
-316400	WI	SHEBOYGAN	Sheboygan - Town Of Sheboygan - Sheboygan County - Ward 009
-316401	WI	SHEBOYGAN	Sheboygan - Town Of Sheboygan - Sheboygan County - Ward 010
-316402	WI	SHEBOYGAN	Sheboygan - Town Of Sheboygan Falls - Sheboygan County - Ward 003
-316403	WI	TREMPEALEAU	Trempealeau - Town Of Arcadia - Trempealeau County - Ward 004
-316404	WI	TREMPEALEAU	Trempealeau - Town Of Caledonia - Trempealeau County - Ward 002
-316405	WI	TREMPEALEAU	Trempealeau - Town Of Gale - Trempealeau County - Ward 003
-316406	WI	VERNON	Vernon - Town Of Franklin - Vernon County - Ward 002
-316407	WI	VERNON	Vernon - Town Of Harmony - Vernon County - Ward 002
-316408	WI	VERNON	Vernon - Town Of Harmony - Vernon County - Ward 003
-316409	WI	VERNON	Vernon - Town Of Hillsboro - Vernon County - Ward 003
-316410	WI	VERNON	Vernon - Town Of Union - Vernon County - Ward 003
-316411	WI	VERNON	Vernon - Town Of Webster - Vernon County - Ward 002
-316412	WI	VILAS	Vilas - Town Of Arbor Vitae - Vilas County - Ward 005
-316413	WI	VILAS	Vilas - Town Of Arbor Vitae - Vilas County - Ward 006
-316414	WI	VILAS	Vilas - Town Of Arbor Vitae - Vilas County - Ward 007
-316415	WI	VILAS	Vilas - Town Of Cloverland - Vilas County - Ward 002
-316416	WI	VILAS	Vilas - Town Of Lac Du Flambeau - Vilas County - Ward 004
-316417	WI	VILAS	Vilas - Town Of Lac Du Flambeau - Vilas County - Ward 005
-316418	WI	VILAS	Vilas - Town Of Lac Du Flambeau - Vilas County - Ward 006
-316419	WI	VILAS	Vilas - Town Of Lac Du Flambeau - Vilas County - Ward 007
-316420	WI	VILAS	Vilas - Town Of Lincoln - Vilas County - Ward 005
-316421	WI	WALWORTH	Walworth - Town Of Darien - Walworth County - Ward 002
-316422	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 010
-316423	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 013
-316424	WI	WALWORTH	Walworth - City Of Delavan - Walworth County - Ward 014
-316425	WI	WALWORTH	Walworth - Town Of Delavan - Walworth County - Ward 008
-316426	WI	WALWORTH	Walworth - Town Of Delavan - Walworth County - Ward 009
-316427	WI	WALWORTH	Walworth - Town Of Delavan - Walworth County - Ward 010
-316428	WI	WALWORTH	Walworth - Town Of Delavan - Walworth County - Ward 011
-316429	WI	WALWORTH	Walworth - Village Of Genoa City - Multiple Counties - Ward 004
-316430	WI	WALWORTH	Walworth - City Of Lake Geneva - Walworth County - Ward 010
-316431	WI	WALWORTH	Walworth - Town Of Linn - Walworth County - Ward 006
-316432	WI	WALWORTH	Walworth - Town Of Lyons - Walworth County - Ward 007
-316433	WI	WALWORTH	Walworth - Village Of Mukwonago - Multiple Counties - Ward 011
-316434	WI	WALWORTH	Walworth - City Of Whitewater - Multiple Counties - Ward 009
-316435	WI	WASHBURN	Washburn - Town Of Birchwood - Washburn County - Ward 003
-316436	WI	WASHBURN	Washburn - Town Of Sarona - Washburn County - Ward 002
-316437	WI	WASHINGTON	Washington - Town Of Farmington - Washington County - Ward 005
-316438	WI	WASHINGTON	Washington - City Of Hartford - Multiple Counties - Ward 007
-316439	WI	WASHINGTON	Washington - Village Of Jackson - Washington County - Ward 009
-316440	WI	WASHINGTON	Washington - Town Of Jackson - Washington County - Ward 006
-316441	WI	WASHINGTON	Washington - Village Of Kewaskum - Multiple Counties - Ward 005
-316442	WI	WASHINGTON	Washington - Town Of Trenton - Washington County - Ward 008
-316443	WI	WASHINGTON	Washington - City Of West Bend - Washington County - Ward 024
-316444	WI	WAUKESHA	Waukesha - City Of Delafield - Waukesha County - Ward 008
-316445	WI	WAUKESHA	Waukesha - City Of Delafield - Waukesha County - Ward 009
-316446	WI	WAUKESHA	Waukesha - City Of Delafield - Waukesha County - Ward 010
-316447	WI	WAUKESHA	Waukesha - City Of Delafield - Waukesha County - Ward 011
-316448	WI	WAUKESHA	Waukesha - City Of Delafield - Waukesha County - Ward 012
-316449	WI	WAUKESHA	Waukesha - City Of Delafield - Waukesha County - Ward 013
-316450	WI	WAUKESHA	Waukesha - City Of Delafield - Waukesha County - Ward 014
-316451	WI	WAUKESHA	Waukesha - Village Of Dousman - Waukesha County - Ward 003
-316452	WI	WAUKESHA	Waukesha - Village Of Merton - Waukesha County - Ward 004
-316453	WI	WAUKESHA	Waukesha - Town Of Merton - Waukesha County - Ward 010
-316454	WI	WAUKESHA	Waukesha - Village Of Mukwonago - Multiple Counties - Ward 009
-316455	WI	WAUKESHA	Waukesha - Village Of Mukwonago - Multiple Counties - Ward 010
-316456	WI	WAUKESHA	Waukesha - Town Of Mukwonago - Waukesha County - Ward 011
-316457	WI	WAUKESHA	Waukesha - Town Of Vernon - Waukesha County - Ward 011
-316458	WI	WAUKESHA	Waukesha - Village Of Wales - Waukesha County - Ward 004
-316459	WI	WAUPACA	Waupaca - Town Of Fremont - Waupaca County - Ward 002
-316460	WI	WAUPACA	Waupaca - Town Of Lebanon - Waupaca County - Ward 003
-316461	WI	WAUPACA	Waupaca - Town Of Lind - Waupaca County - Ward 003
-316462	WI	WAUPACA	Waupaca - Town Of Union - Waupaca County - Ward 002
-316463	WI	WAUSHARA	Waushara - Village Of Redgranite - Waushara County - Ward 003
-316464	WI	WAUSHARA	Waushara - Town Of Rose - Waushara County - Ward 002
-316465	WI	WAUSHARA	Waushara - Town Of Wautoma - Waushara County - Ward 003
-316466	WI	WINNEBAGO	Winnebago - Town Of Algoma - Winnebago County - Ward 010
-316467	WI	WINNEBAGO	Winnebago - City Of Appleton - Multiple Counties - Ward 031
-316468	WI	WINNEBAGO	Winnebago - City Of Appleton - Multiple Counties - Ward 032
-316469	WI	WINNEBAGO	Winnebago - Town Of Clayton - Winnebago County - Ward 005
-316470	WI	WINNEBAGO	Winnebago - Town Of Clayton - Winnebago County - Ward 006
-316471	WI	WINNEBAGO	Winnebago - Town Of Clayton - Winnebago County - Ward 007
-316472	WI	WINNEBAGO	Winnebago - City Of Menasha - Multiple Counties - Ward 011
-316473	WI	WINNEBAGO	Winnebago - City Of Menasha - Multiple Counties - Ward 015
-316474	WI	WINNEBAGO	Winnebago - Town Of Winneconne - Winnebago County - Ward 004
-316475	WI	WOOD	Wood - City Of Marshfield - Multiple Counties - Ward 022
-316476	WI	WOOD	Wood - Town Of Port Edwards - Wood County - Ward 004
-316477	WI	WOOD	Wood - Town Of Richfield - Wood County - Ward 003
-316478	WI	WOOD	Wood - Town Of Saratoga - Wood County - Ward 007
-316479	WI	WOOD	Wood - Town Of Saratoga - Wood County - Ward 008
-316480	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 042
-316481	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 043
-316482	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 044
-316483	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 045
-316484	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 046
-316485	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 047
-316486	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 048
-316487	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 049
-316488	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 050
-316489	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 051
-316490	WI	CHIPPEWA	Chippewa - Town Of Anson - Chippewa County - Ward 004
-316491	WI	CHIPPEWA	Chippewa - Town Of Goetz - Chippewa County - Ward 003
-316492	WI	DANE	Dane - Town Of Dunkirk - Dane County - Ward 004
-316493	WI	DANE	Dane - Town Of Dunkirk - Dane County - Ward 005
-316494	WI	DANE	Dane - Town Of Dunkirk - Dane County - Ward 006
-316495	WI	DODGE	Dodge - Town Of Beaver Dam - Dodge County - Ward 009
-316496	WI	DODGE	Dodge - Town Of Westford - Dodge County - Ward 003
-316497	WI	DUNN	Dunn - Town Of Grant - Dunn County - Ward 002
-316498	WI	JACKSON	Jackson - Town Of Alma - Jackson County - Ward 004
-316499	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 080
-316500	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 081
-316501	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 082
-316502	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 084
-316503	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 085
-316504	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 086
-316505	WI	KENOSHA	Kenosha - City Of Kenosha - Kenosha County - Ward 087
-316506	WI	MARQUETTE	Marquette - Town Of Montello - Marquette County - Ward 004
-316507	WI	OUTAGAMIE	Outagamie - City Of Appleton - Multiple Counties - Ward 059
-316508	WI	OUTAGAMIE	Outagamie - Town Of Center - Outagamie County - Ward 006
-316509	WI	POLK	Polk - Town Of Osceola - Polk County - Ward 005
-316510	WI	PORTAGE	Portage - Village Of Amherst - Portage County - Ward 002
-316511	WI	PORTAGE	Portage - Town Of Grant - Portage County - Ward 004
-316512	WI	RICHLAND	Richland - Town Of Buena Vista - Richland County - Ward 004
-316513	WI	ROCK	Rock - Town Of Harmony - Rock County - Ward 006
-316514	WI	RUSK	Rusk - City Of Ladysmith - Rusk County - Ward 015
-316515	WI	RUSK	Rusk - Town Of Stubbs - Rusk County - Ward 002
-316516	WI	SAUK	Sauk - City Of Wisconsin Dells - Multiple Counties - Ward 008
-316517	WI	WAUKESHA	Waukesha - Town Of Oconomowoc - Waukesha County - Ward 010
-316518	WI	WINNEBAGO	Winnebago - Town Of Winneconne - Winnebago County - Ward 005
-316519	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 024
-316520	WI	BARRON	Barron - Village Of New Auburn - Multiple Counties - Ward 003
-316521	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 052
-316522	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 320
-316523	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 321
-316524	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 322
-316525	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 323
-316526	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 324
-316527	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 325
-316528	WI	MILWAUKEE	Milwaukee - City Of Milwaukee - Multiple Counties - Ward 326
-316529	WI	WALWORTH	Walworth - Village Of Bloomfield - Walworth County - Ward 001
-316530	WI	WALWORTH	Walworth - Village Of Bloomfield - Walworth County - Ward 002
-316531	WI	DANE	Dane - Village Of Mount Horeb - Dane County - Ward 009
-316532	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 055
-316533	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 030
-316534	WI	CALUMET	Calumet - Village Of Harrison - Multiple Counties - Ward 013
-316535	WI	CALUMET	Calumet - Village Of Harrison - Multiple Counties - Ward 014
-316536	WI	CALUMET	Calumet - Village Of Harrison - Multiple Counties - Ward 015
-316537	WI	CALUMET	Calumet - Village Of Harrison - Multiple Counties - Ward 016
-316538	WI	DANE	Dane - City Of Middleton - Dane County - Ward 018
-316539	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 057
-316540	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 058
-316541	WI	MANITOWOC	Manitowoc - City Of Kiel - Multiple Counties - Ward 008
-316542	WI	MANITOWOC	Manitowoc - City Of Manitowoc - Manitowoc County - Ward 025
-316543	WI	WOOD	Wood - City Of Wisconsin Rapids - Wood County - Ward 026
-316544	WI	CALUMET	Calumet - Village Of Harrison - Multiple Counties - Ward 003
-316545	WI	CALUMET	Calumet - Village Of Harrison - Multiple Counties - Ward 004
-316546	WI	CALUMET	Calumet - Village Of Harrison - Multiple Counties - Ward 005
-316547	WI	CALUMET	Calumet - Village Of Harrison - Multiple Counties - Ward 006
-316548	WI	CALUMET	Calumet - Village Of Harrison - Multiple Counties - Ward 007
-316549	WI	CALUMET	Calumet - Village Of Harrison - Multiple Counties - Ward 008
-316550	WI	CALUMET	Calumet - Village Of Harrison - Multiple Counties - Ward 009
-316551	WI	CALUMET	Calumet - Village Of Harrison - Multiple Counties - Ward 010
-316552	WI	CALUMET	Calumet - Village Of Harrison - Multiple Counties - Ward 011
-316553	WI	CALUMET	Calumet - Village Of Harrison - Multiple Counties - Ward 012
-316554	WI	CALUMET	Calumet - Village Of Harrison - Multiple Counties - Ward 017
-316555	WI	MONROE	Monroe - City Of Sparta - Monroe County - Ward 020
-316556	WI	MONROE	Monroe - City Of Tomah - Monroe County - Ward 019
-316557	WI	WALWORTH	Walworth - City Of Burlington - Multiple Counties - Ward 010
-316558	WI	WASHINGTON	Washington - Village Of Kewaskum - Multiple Counties - Ward 007
-316559	WI	WAUKESHA	Waukesha - Village Of Merton - Waukesha County - Ward 005
-316560	WI	ADAMS	Adams - Village Of Friendship - Adams County - Ward 003
-316561	WI	CALUMET	Calumet - Village Of Harrison - Multiple Counties - Ward 018
-316562	WI	DANE	Dane - City Of Madison - Dane County - Ward 128
-316563	WI	DANE	Dane - City Of Madison - Dane County - Ward 129
-316564	WI	DANE	Dane - City Of Madison - Dane County - Ward 132
-316565	WI	DANE	Dane - City Of Madison - Dane County - Ward 134
-316566	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 065
-316567	WI	EAU CLAIRE	Eau Claire - City Of Eau Claire - Multiple Counties - Ward 066
-316568	WI	EAU CLAIRE	Eau Claire - Town Of Washington - Eau Claire County - Ward 017
-316569	WI	EAU CLAIRE	Eau Claire - Town Of Washington - Eau Claire County - Ward 028
-316570	WI	GRANT	Grant - Town Of Boscobel - Grant County - Ward 003
-316571	WI	KENOSHA	Kenosha - Village Of Somers - Kenosha County - Ward 015
-316572	WI	LACROSSE	Lacrosse - Town Of Onalaska - La Crosse County - Ward 011
-316573	WI	LANGLADE	Langlade - Town Of Antigo - Langlade County - Ward 009
-316574	WI	MANITOWOC	Manitowoc - City Of Two Rivers - Manitowoc County - Ward 017
-316575	WI	MARATHON	Marathon - City Of Wausau - Marathon County - Ward 037
-316576	WI	MARINETTE	Marinette - Town Of Middle Inlet - Marinette County - Ward 004
-316577	WI	OUTAGAMIE	Outagamie - Village Of Combined Locks - Outagamie County - Ward 005
-316578	WI	RICHLAND	Richland - Town Of Orion - Richland County - Ward 004
-316579	WI	ROCK	Rock - Town Of Turtle - Rock County - Ward 023
-316580	WI	ST CROIX	St. Croix - Village Of North Hudson - St. Croix County - Ward 010
-316581	WI	WAUKESHA	Waukesha - Village Of Big Bend - Waukesha County - Ward 009
+410000	NY	ALBANY	Albany-001-01
+410001	NY	ALBANY	Albany-001-02
+410002	NY	ALBANY	Albany-001-03
+410003	NY	ALBANY	Albany-001-04
+410004	NY	ALBANY	Albany-001-05
+410005	NY	ALBANY	Albany-001-06
+410006	NY	ALBANY	Albany-001-07
+410007	NY	ALBANY	Albany-001-08
+410008	NY	ALBANY	Albany-001-09
+410009	NY	ALBANY	Albany-001-10
+410010	NY	ALBANY	Albany-002-01
+410011	NY	ALBANY	Albany-002-02
+410012	NY	ALBANY	Albany-002-03
+410013	NY	ALBANY	Albany-002-04
+410014	NY	ALBANY	Albany-002-05
+410015	NY	ALBANY	Albany-002-06
+410016	NY	ALBANY	Albany-002-07
+410017	NY	ALBANY	Albany-002-08
+410018	NY	ALBANY	Albany-002-09
+410019	NY	ALBANY	Albany-003-01
+410020	NY	ALBANY	Albany-003-02
+410021	NY	ALBANY	Albany-003-03
+410022	NY	ALBANY	Albany-003-04
+410023	NY	ALBANY	Albany-003-05
+410024	NY	ALBANY	Albany-003-06
+410025	NY	ALBANY	Albany-003-07
+410026	NY	ALBANY	Albany-003-08
+410027	NY	ALBANY	Albany-003-09
+410028	NY	ALBANY	Albany-003-10
+410029	NY	ALBANY	Albany-004-01
+410030	NY	ALBANY	Albany-004-02
+410031	NY	ALBANY	Albany-004-03
+410032	NY	ALBANY	Albany-004-04
+410033	NY	ALBANY	Albany-004-05
+410034	NY	ALBANY	Albany-004-06
+410035	NY	ALBANY	Albany-005-01
+410036	NY	ALBANY	Albany-005-02
+410037	NY	ALBANY	Albany-005-03
+410038	NY	ALBANY	Albany-005-04
+410039	NY	ALBANY	Albany-005-05
+410040	NY	ALBANY	Albany-005-06
+410041	NY	ALBANY	Albany-005-07
+410042	NY	ALBANY	Albany-006-01
+410043	NY	ALBANY	Albany-006-02
+410044	NY	ALBANY	Albany-006-03
+410045	NY	ALBANY	Albany-006-04
+410046	NY	ALBANY	Albany-006-05
+410047	NY	ALBANY	Albany-006-06
+410048	NY	ALBANY	Albany-006-07
+410049	NY	ALBANY	Albany-006-08
+410050	NY	ALBANY	Albany-007-01
+410051	NY	ALBANY	Albany-007-02
+410052	NY	ALBANY	Albany-007-03
+410053	NY	ALBANY	Albany-007-04
+410054	NY	ALBANY	Albany-007-05
+410055	NY	ALBANY	Albany-007-06
+410056	NY	ALBANY	Albany-007-07
+410057	NY	ALBANY	Albany-008-01
+410058	NY	ALBANY	Albany-008-02
+410059	NY	ALBANY	Albany-008-03
+410060	NY	ALBANY	Albany-008-04
+410061	NY	ALBANY	Albany-008-05
+410062	NY	ALBANY	Albany-008-06
+410063	NY	ALBANY	Albany-008-07
+410064	NY	ALBANY	Albany-008-08
+410065	NY	ALBANY	Albany-008-09
+410066	NY	ALBANY	Albany-009-01
+410067	NY	ALBANY	Albany-009-02
+410068	NY	ALBANY	Albany-009-03
+410069	NY	ALBANY	Albany-009-04
+410070	NY	ALBANY	Albany-009-05
+410071	NY	ALBANY	Albany-009-06
+410072	NY	ALBANY	Albany-009-07
+410073	NY	ALBANY	Albany-009-08
+410074	NY	ALBANY	Albany-009-09
+410075	NY	ALBANY	Albany-010-01
+410076	NY	ALBANY	Albany-010-02
+410077	NY	ALBANY	Albany-010-03
+410078	NY	ALBANY	Albany-010-04
+410079	NY	ALBANY	Albany-010-05
+410080	NY	ALBANY	Albany-010-06
+410081	NY	ALBANY	Albany-010-07
+410082	NY	ALBANY	Albany-010-08
+410083	NY	ALBANY	Albany-011-02
+410084	NY	ALBANY	Albany-011-03
+410085	NY	ALBANY	Albany-011-04
+410086	NY	ALBANY	Albany-011-05
+410087	NY	ALBANY	Albany-011-06
+410088	NY	ALBANY	Albany-011-07
+410089	NY	ALBANY	Albany-011-08
+410090	NY	ALBANY	Albany-012-01
+410091	NY	ALBANY	Albany-012-02
+410092	NY	ALBANY	Albany-012-03
+410093	NY	ALBANY	Albany-012-04
+410094	NY	ALBANY	Albany-012-05
+410095	NY	ALBANY	Albany-012-06
+410096	NY	ALBANY	Albany-012-08
+410097	NY	ALBANY	Albany-013-01
+410098	NY	ALBANY	Albany-013-02
+410099	NY	ALBANY	Albany-013-03
+410100	NY	ALBANY	Albany-013-04
+410101	NY	ALBANY	Albany-013-05
+410102	NY	ALBANY	Albany-013-06
+410103	NY	ALBANY	Albany-013-07
+410104	NY	ALBANY	Albany-014-01
+410105	NY	ALBANY	Albany-014-02
+410106	NY	ALBANY	Albany-014-03
+410107	NY	ALBANY	Albany-014-04
+410108	NY	ALBANY	Albany-014-05
+410109	NY	ALBANY	Albany-014-06
+410110	NY	ALBANY	Albany-014-07
+410111	NY	ALBANY	Albany-014-08
+410112	NY	ALBANY	Albany-014-09
+410113	NY	ALBANY	Albany-015-01
+410114	NY	ALBANY	Albany-015-02
+410115	NY	ALBANY	Albany-015-03
+410116	NY	ALBANY	Albany-015-04
+410117	NY	ALBANY	Albany-015-05
+410118	NY	ALBANY	Albany-015-06
+410119	NY	ALBANY	Albany-015-07
+410120	NY	ALBANY	Cohoes-001-01
+410121	NY	ALBANY	Cohoes-001-02
+410122	NY	ALBANY	Cohoes-001-03
+410123	NY	ALBANY	Cohoes-002-01
+410124	NY	ALBANY	Cohoes-002-02
+410125	NY	ALBANY	Cohoes-002-03
+410126	NY	ALBANY	Cohoes-002-04
+410127	NY	ALBANY	Cohoes-002-05
+410128	NY	ALBANY	Cohoes-003-01
+410129	NY	ALBANY	Cohoes-003-02
+410130	NY	ALBANY	Cohoes-003-03
+410131	NY	ALBANY	Cohoes-003-04
+410132	NY	ALBANY	Cohoes-004-01
+410133	NY	ALBANY	Cohoes-004-02
+410134	NY	ALBANY	Cohoes-004-03
+410135	NY	ALBANY	Cohoes-004-04
+410136	NY	ALBANY	Cohoes-005-01
+410137	NY	ALBANY	Cohoes-005-02
+410138	NY	ALBANY	Cohoes-005-03
+410139	NY	ALBANY	Cohoes-005-04
+410140	NY	ALBANY	Cohoes-006-01
+410141	NY	ALBANY	Cohoes-006-02
+410142	NY	ALBANY	Cohoes-006-03
+410143	NY	ALBANY	Cohoes-006-04
+410144	NY	ALBANY	Watervliet-001-01
+410145	NY	ALBANY	Watervliet-001-02
+410146	NY	ALBANY	Watervliet-001-03
+410147	NY	ALBANY	Watervliet-002-01
+410148	NY	ALBANY	Watervliet-002-02
+410149	NY	ALBANY	Watervliet-002-03
+410150	NY	ALBANY	Watervliet-003-01
+410151	NY	ALBANY	Watervliet-003-02
+410152	NY	ALBANY	Watervliet-003-03
+410153	NY	ALBANY	Watervliet-004-01
+410154	NY	ALBANY	Watervliet-004-02
+410155	NY	ALBANY	Watervliet-004-03
+410156	NY	ALBANY	Watervliet-004-04
+410157	NY	ALBANY	Berne-01
+410158	NY	ALBANY	Berne-02
+410159	NY	ALBANY	Berne-03
+410160	NY	ALBANY	Bethlehem-01
+410161	NY	ALBANY	Bethlehem-02
+410162	NY	ALBANY	Bethlehem-03
+410163	NY	ALBANY	Bethlehem-04
+410164	NY	ALBANY	Bethlehem-05
+410165	NY	ALBANY	Bethlehem-06
+410166	NY	ALBANY	Bethlehem-07
+410167	NY	ALBANY	Bethlehem-08
+410168	NY	ALBANY	Bethlehem-09
+410169	NY	ALBANY	Bethlehem-10
+410170	NY	ALBANY	Bethlehem-11
+410171	NY	ALBANY	Bethlehem-12
+410172	NY	ALBANY	Bethlehem-13
+410173	NY	ALBANY	Bethlehem-14
+410174	NY	ALBANY	Bethlehem-15
+410175	NY	ALBANY	Bethlehem-16
+410176	NY	ALBANY	Bethlehem-17
+410177	NY	ALBANY	Bethlehem-18
+410178	NY	ALBANY	Bethlehem-19
+410179	NY	ALBANY	Bethlehem-20
+410180	NY	ALBANY	Bethlehem-21
+410181	NY	ALBANY	Bethlehem-22
+410182	NY	ALBANY	Bethlehem-23
+410183	NY	ALBANY	Bethlehem-24
+410184	NY	ALBANY	Bethlehem-25
+410185	NY	ALBANY	Bethlehem-26
+410186	NY	ALBANY	Bethlehem-27
+410187	NY	ALBANY	Bethlehem-28
+410188	NY	ALBANY	Bethlehem-29
+410189	NY	ALBANY	Bethlehem-30
+410190	NY	ALBANY	Coeymans-01
+410191	NY	ALBANY	Coeymans-02
+410192	NY	ALBANY	Coeymans-03
+410193	NY	ALBANY	Coeymans-04
+410194	NY	ALBANY	Coeymans-05
+410195	NY	ALBANY	Coeymans-06
+410196	NY	ALBANY	Colonie-01
+410197	NY	ALBANY	Colonie-02
+410198	NY	ALBANY	Colonie-03
+410199	NY	ALBANY	Colonie-04
+410200	NY	ALBANY	Colonie-05
+410201	NY	ALBANY	Colonie-06
+410202	NY	ALBANY	Colonie-07
+410203	NY	ALBANY	Colonie-08
+410204	NY	ALBANY	Colonie-09
+410205	NY	ALBANY	Colonie-10
+410206	NY	ALBANY	Colonie-11
+410207	NY	ALBANY	Colonie-12
+410208	NY	ALBANY	Colonie-13
+410209	NY	ALBANY	Colonie-14
+410210	NY	ALBANY	Colonie-15
+410211	NY	ALBANY	Colonie-16
+410212	NY	ALBANY	Colonie-17
+410213	NY	ALBANY	Colonie-18
+410214	NY	ALBANY	Colonie-19
+410215	NY	ALBANY	Colonie-20
+410216	NY	ALBANY	Colonie-21
+410217	NY	ALBANY	Colonie-22
+410218	NY	ALBANY	Colonie-23
+410219	NY	ALBANY	Colonie-24
+410220	NY	ALBANY	Colonie-25
+410221	NY	ALBANY	Colonie-26
+410222	NY	ALBANY	Colonie-27
+410223	NY	ALBANY	Colonie-28
+410224	NY	ALBANY	Colonie-29
+410225	NY	ALBANY	Colonie-30
+410226	NY	ALBANY	Colonie-31
+410227	NY	ALBANY	Colonie-32
+410228	NY	ALBANY	Colonie-33
+410229	NY	ALBANY	Colonie-34
+410230	NY	ALBANY	Colonie-35
+410231	NY	ALBANY	Colonie-36
+410232	NY	ALBANY	Colonie-37
+410233	NY	ALBANY	Colonie-38
+410234	NY	ALBANY	Colonie-39
+410235	NY	ALBANY	Colonie-40
+410236	NY	ALBANY	Colonie-41
+410237	NY	ALBANY	Colonie-42
+410238	NY	ALBANY	Colonie-43
+410239	NY	ALBANY	Colonie-44
+410240	NY	ALBANY	Colonie-45
+410241	NY	ALBANY	Colonie-46
+410242	NY	ALBANY	Colonie-47
+410243	NY	ALBANY	Colonie-48
+410244	NY	ALBANY	Colonie-49
+410245	NY	ALBANY	Colonie-50
+410246	NY	ALBANY	Colonie-51
+410247	NY	ALBANY	Colonie-52
+410248	NY	ALBANY	Colonie-53
+410249	NY	ALBANY	Colonie-54
+410250	NY	ALBANY	Colonie-55
+410251	NY	ALBANY	Colonie-56
+410252	NY	ALBANY	Colonie-57
+410253	NY	ALBANY	Colonie-58
+410254	NY	ALBANY	Colonie-59
+410255	NY	ALBANY	Colonie-60
+410256	NY	ALBANY	Green Island-01
+410257	NY	ALBANY	Green Island-02
+410258	NY	ALBANY	Green Island-03
+410259	NY	ALBANY	Green Island-04
+410260	NY	ALBANY	Guilderland-02
+410261	NY	ALBANY	Guilderland-03
+410262	NY	ALBANY	Guilderland-04
+410263	NY	ALBANY	Guilderland-05
+410264	NY	ALBANY	Guilderland-06
+410265	NY	ALBANY	Guilderland-07
+410266	NY	ALBANY	Guilderland-08
+410267	NY	ALBANY	Guilderland-09
+410268	NY	ALBANY	Guilderland-10
+410269	NY	ALBANY	Guilderland-11
+410270	NY	ALBANY	Guilderland-12
+410271	NY	ALBANY	Guilderland-13
+410272	NY	ALBANY	Guilderland-14
+410273	NY	ALBANY	Guilderland-15
+410274	NY	ALBANY	Guilderland-16
+410275	NY	ALBANY	Guilderland-17
+410276	NY	ALBANY	Guilderland-18
+410277	NY	ALBANY	Guilderland-19
+410278	NY	ALBANY	Guilderland-20
+410279	NY	ALBANY	Guilderland-21
+410280	NY	ALBANY	Guilderland-22
+410281	NY	ALBANY	Guilderland-23
+410282	NY	ALBANY	Guilderland-24
+410283	NY	ALBANY	Guilderland-25
+410284	NY	ALBANY	Guilderland-26
+410285	NY	ALBANY	Guilderland-27
+410286	NY	ALBANY	Guilderland-28
+410287	NY	ALBANY	Guilderland-29
+410288	NY	ALBANY	Guilderland-30
+410289	NY	ALBANY	Knox-01
+410290	NY	ALBANY	Knox-02
+410291	NY	ALBANY	New Scotland-01
+410292	NY	ALBANY	New Scotland-02
+410293	NY	ALBANY	New Scotland-03
+410294	NY	ALBANY	New Scotland-04
+410295	NY	ALBANY	New Scotland-05
+410296	NY	ALBANY	New Scotland-06
+410297	NY	ALBANY	New Scotland-07
+410298	NY	ALBANY	New Scotland-08
+410299	NY	ALBANY	Rensselaerville-01
+410300	NY	ALBANY	Rensselaerville-02
+410301	NY	ALBANY	Rensselaerville-03
+410302	NY	ALBANY	Westerlo-01
+410303	NY	ALBANY	Westerlo-02
+410304	NY	ALBANY	Westerlo-03
+410305	NY	ALLEGANY	Alfred-01
+410306	NY	ALLEGANY	Alfred-02
+410307	NY	ALLEGANY	Allen-01
+410308	NY	ALLEGANY	Alma-01
+410309	NY	ALLEGANY	Almond-01
+410310	NY	ALLEGANY	Amity-01
+410311	NY	ALLEGANY	Amity-02
+410312	NY	ALLEGANY	Andover-01
+410313	NY	ALLEGANY	Angelica-01
+410314	NY	ALLEGANY	Belfast-01
+410315	NY	ALLEGANY	Birdsall-01
+410316	NY	ALLEGANY	Bolivar-01
+410317	NY	ALLEGANY	Burns-01
+410318	NY	ALLEGANY	Caneadea-01
+410319	NY	ALLEGANY	Caneadea-02
+410320	NY	ALLEGANY	Centerville-01
+410321	NY	ALLEGANY	Clarksville-01
+410322	NY	ALLEGANY	Cuba-01
+410323	NY	ALLEGANY	Cuba-02
+410324	NY	ALLEGANY	Friendship-01
+410325	NY	ALLEGANY	Genesee-01
+410326	NY	ALLEGANY	Granger-01
+410327	NY	ALLEGANY	Grove-01
+410328	NY	ALLEGANY	Hume-01
+410329	NY	ALLEGANY	Independence-01
+410330	NY	ALLEGANY	New Hudson-01
+410331	NY	ALLEGANY	Rushford-01
+410332	NY	ALLEGANY	Scio-01
+410333	NY	ALLEGANY	Ward-01
+410334	NY	ALLEGANY	Wellsville-01
+410335	NY	ALLEGANY	Wellsville-02
+410336	NY	ALLEGANY	Wellsville-03
+410337	NY	ALLEGANY	Wellsville-04
+410338	NY	ALLEGANY	Wellsville-05
+410339	NY	ALLEGANY	West Almond-01
+410340	NY	ALLEGANY	Willing-01
+410341	NY	ALLEGANY	Wirt-01
+410342	NY	BRONX	77-001
+410343	NY	BRONX	77-002
+410344	NY	BRONX	77-003
+410345	NY	BRONX	77-004
+410346	NY	BRONX	77-005
+410347	NY	BRONX	77-006
+410348	NY	BRONX	77-007
+410349	NY	BRONX	77-008
+410350	NY	BRONX	77-009
+410351	NY	BRONX	77-010
+410352	NY	BRONX	77-011
+410353	NY	BRONX	77-012
+410354	NY	BRONX	77-013
+410355	NY	BRONX	77-014
+410356	NY	BRONX	77-015
+410357	NY	BRONX	77-016
+410358	NY	BRONX	77-017
+410359	NY	BRONX	77-018
+410360	NY	BRONX	77-019
+410361	NY	BRONX	77-020
+410362	NY	BRONX	77-021
+410363	NY	BRONX	77-022
+410364	NY	BRONX	77-023
+410365	NY	BRONX	77-024
+410366	NY	BRONX	77-025
+410367	NY	BRONX	77-026
+410368	NY	BRONX	77-027
+410369	NY	BRONX	77-028
+410370	NY	BRONX	77-029
+410371	NY	BRONX	77-030
+410372	NY	BRONX	77-031
+410373	NY	BRONX	77-032
+410374	NY	BRONX	77-033
+410375	NY	BRONX	77-034
+410376	NY	BRONX	77-035
+410377	NY	BRONX	77-036
+410378	NY	BRONX	77-037
+410379	NY	BRONX	77-038
+410380	NY	BRONX	77-039
+410381	NY	BRONX	77-040
+410382	NY	BRONX	77-041
+410383	NY	BRONX	77-042
+410384	NY	BRONX	77-043
+410385	NY	BRONX	77-044
+410386	NY	BRONX	77-045
+410387	NY	BRONX	77-046
+410388	NY	BRONX	77-047
+410389	NY	BRONX	77-048
+410390	NY	BRONX	77-049
+410391	NY	BRONX	77-050
+410392	NY	BRONX	77-051
+410393	NY	BRONX	77-052
+410394	NY	BRONX	77-053
+410395	NY	BRONX	77-054
+410396	NY	BRONX	77-055
+410397	NY	BRONX	77-056
+410398	NY	BRONX	77-057
+410399	NY	BRONX	77-058
+410400	NY	BRONX	77-059
+410401	NY	BRONX	77-060
+410402	NY	BRONX	77-061
+410403	NY	BRONX	77-062
+410404	NY	BRONX	77-063
+410405	NY	BRONX	77-064
+410406	NY	BRONX	77-065
+410407	NY	BRONX	77-066
+410408	NY	BRONX	77-067
+410409	NY	BRONX	77-068
+410410	NY	BRONX	77-071
+410411	NY	BRONX	77-072
+410412	NY	BRONX	77-074
+410413	NY	BRONX	77-075
+410414	NY	BRONX	77-076
+410415	NY	BRONX	77-077
+410416	NY	BRONX	78-001
+410417	NY	BRONX	78-002
+410418	NY	BRONX	78-003
+410419	NY	BRONX	78-004
+410420	NY	BRONX	78-005
+410421	NY	BRONX	78-006
+410422	NY	BRONX	78-007
+410423	NY	BRONX	78-008
+410424	NY	BRONX	78-009
+410425	NY	BRONX	78-010
+410426	NY	BRONX	78-011
+410427	NY	BRONX	78-012
+410428	NY	BRONX	78-013
+410429	NY	BRONX	78-014
+410430	NY	BRONX	78-015
+410431	NY	BRONX	78-016
+410432	NY	BRONX	78-017
+410433	NY	BRONX	78-018
+410434	NY	BRONX	78-019
+410435	NY	BRONX	78-020
+410436	NY	BRONX	78-021
+410437	NY	BRONX	78-022
+410438	NY	BRONX	78-023
+410439	NY	BRONX	78-024
+410440	NY	BRONX	78-025
+410441	NY	BRONX	78-026
+410442	NY	BRONX	78-027
+410443	NY	BRONX	78-028
+410444	NY	BRONX	78-029
+410445	NY	BRONX	78-030
+410446	NY	BRONX	78-031
+410447	NY	BRONX	78-032
+410448	NY	BRONX	78-033
+410449	NY	BRONX	78-034
+410450	NY	BRONX	78-035
+410451	NY	BRONX	78-036
+410452	NY	BRONX	78-037
+410453	NY	BRONX	78-038
+410454	NY	BRONX	78-039
+410455	NY	BRONX	78-040
+410456	NY	BRONX	78-041
+410457	NY	BRONX	78-042
+410458	NY	BRONX	78-043
+410459	NY	BRONX	78-044
+410460	NY	BRONX	78-045
+410461	NY	BRONX	78-046
+410462	NY	BRONX	78-047
+410463	NY	BRONX	78-048
+410464	NY	BRONX	78-049
+410465	NY	BRONX	78-050
+410466	NY	BRONX	78-051
+410467	NY	BRONX	78-052
+410468	NY	BRONX	78-053
+410469	NY	BRONX	78-054
+410470	NY	BRONX	78-059
+410471	NY	BRONX	78-060
+410472	NY	BRONX	78-061
+410473	NY	BRONX	78-062
+410474	NY	BRONX	78-063
+410475	NY	BRONX	78-064
+410476	NY	BRONX	78-065
+410477	NY	BRONX	78-067
+410478	NY	BRONX	79-001
+410479	NY	BRONX	79-002
+410480	NY	BRONX	79-003
+410481	NY	BRONX	79-004
+410482	NY	BRONX	79-005
+410483	NY	BRONX	79-006
+410484	NY	BRONX	79-007
+410485	NY	BRONX	79-008
+410486	NY	BRONX	79-009
+410487	NY	BRONX	79-010
+410488	NY	BRONX	79-011
+410489	NY	BRONX	79-012
+410490	NY	BRONX	79-013
+410491	NY	BRONX	79-014
+410492	NY	BRONX	79-015
+410493	NY	BRONX	79-016
+410494	NY	BRONX	79-017
+410495	NY	BRONX	79-018
+410496	NY	BRONX	79-019
+410497	NY	BRONX	79-020
+410498	NY	BRONX	79-021
+410499	NY	BRONX	79-022
+410500	NY	BRONX	79-023
+410501	NY	BRONX	79-024
+410502	NY	BRONX	79-025
+410503	NY	BRONX	79-026
+410504	NY	BRONX	79-027
+410505	NY	BRONX	79-028
+410506	NY	BRONX	79-029
+410507	NY	BRONX	79-030
+410508	NY	BRONX	79-031
+410509	NY	BRONX	79-032
+410510	NY	BRONX	79-033
+410511	NY	BRONX	79-034
+410512	NY	BRONX	79-035
+410513	NY	BRONX	79-036
+410514	NY	BRONX	79-037
+410515	NY	BRONX	79-038
+410516	NY	BRONX	79-039
+410517	NY	BRONX	79-040
+410518	NY	BRONX	79-041
+410519	NY	BRONX	79-042
+410520	NY	BRONX	79-043
+410521	NY	BRONX	79-044
+410522	NY	BRONX	79-045
+410523	NY	BRONX	79-046
+410524	NY	BRONX	79-047
+410525	NY	BRONX	79-048
+410526	NY	BRONX	79-049
+410527	NY	BRONX	79-050
+410528	NY	BRONX	79-051
+410529	NY	BRONX	79-052
+410530	NY	BRONX	79-053
+410531	NY	BRONX	79-054
+410532	NY	BRONX	79-055
+410533	NY	BRONX	79-056
+410534	NY	BRONX	79-057
+410535	NY	BRONX	79-058
+410536	NY	BRONX	79-059
+410537	NY	BRONX	79-060
+410538	NY	BRONX	79-061
+410539	NY	BRONX	79-062
+410540	NY	BRONX	79-063
+410541	NY	BRONX	79-064
+410542	NY	BRONX	79-065
+410543	NY	BRONX	79-066
+410544	NY	BRONX	79-067
+410545	NY	BRONX	79-068
+410546	NY	BRONX	79-069
+410547	NY	BRONX	79-070
+410548	NY	BRONX	79-071
+410549	NY	BRONX	79-072
+410550	NY	BRONX	79-073
+410551	NY	BRONX	79-074
+410552	NY	BRONX	79-075
+410553	NY	BRONX	79-077
+410554	NY	BRONX	79-078
+410555	NY	BRONX	79-079
+410556	NY	BRONX	79-082
+410557	NY	BRONX	79-083
+410558	NY	BRONX	79-084
+410559	NY	BRONX	79-086
+410560	NY	BRONX	80-001
+410561	NY	BRONX	80-002
+410562	NY	BRONX	80-003
+410563	NY	BRONX	80-004
+410564	NY	BRONX	80-005
+410565	NY	BRONX	80-006
+410566	NY	BRONX	80-007
+410567	NY	BRONX	80-008
+410568	NY	BRONX	80-009
+410569	NY	BRONX	80-010
+410570	NY	BRONX	80-011
+410571	NY	BRONX	80-012
+410572	NY	BRONX	80-013
+410573	NY	BRONX	80-014
+410574	NY	BRONX	80-015
+410575	NY	BRONX	80-016
+410576	NY	BRONX	80-017
+410577	NY	BRONX	80-018
+410578	NY	BRONX	80-019
+410579	NY	BRONX	80-020
+410580	NY	BRONX	80-021
+410581	NY	BRONX	80-022
+410582	NY	BRONX	80-023
+410583	NY	BRONX	80-024
+410584	NY	BRONX	80-025
+410585	NY	BRONX	80-026
+410586	NY	BRONX	80-027
+410587	NY	BRONX	80-028
+410588	NY	BRONX	80-029
+410589	NY	BRONX	80-030
+410590	NY	BRONX	80-031
+410591	NY	BRONX	80-032
+410592	NY	BRONX	80-033
+410593	NY	BRONX	80-034
+410594	NY	BRONX	80-035
+410595	NY	BRONX	80-036
+410596	NY	BRONX	80-037
+410597	NY	BRONX	80-038
+410598	NY	BRONX	80-039
+410599	NY	BRONX	80-040
+410600	NY	BRONX	80-041
+410601	NY	BRONX	80-042
+410602	NY	BRONX	80-043
+410603	NY	BRONX	80-044
+410604	NY	BRONX	80-045
+410605	NY	BRONX	80-046
+410606	NY	BRONX	80-047
+410607	NY	BRONX	80-048
+410608	NY	BRONX	80-049
+410609	NY	BRONX	80-050
+410610	NY	BRONX	80-051
+410611	NY	BRONX	80-052
+410612	NY	BRONX	80-053
+410613	NY	BRONX	80-054
+410614	NY	BRONX	80-055
+410615	NY	BRONX	80-056
+410616	NY	BRONX	80-057
+410617	NY	BRONX	80-058
+410618	NY	BRONX	80-059
+410619	NY	BRONX	80-060
+410620	NY	BRONX	80-061
+410621	NY	BRONX	80-062
+410622	NY	BRONX	80-063
+410623	NY	BRONX	80-064
+410624	NY	BRONX	80-065
+410625	NY	BRONX	80-066
+410626	NY	BRONX	80-067
+410627	NY	BRONX	80-068
+410628	NY	BRONX	80-069
+410629	NY	BRONX	80-070
+410630	NY	BRONX	80-071
+410631	NY	BRONX	80-072
+410632	NY	BRONX	80-073
+410633	NY	BRONX	80-074
+410634	NY	BRONX	80-075
+410635	NY	BRONX	80-076
+410636	NY	BRONX	80-077
+410637	NY	BRONX	80-078
+410638	NY	BRONX	80-079
+410639	NY	BRONX	80-080
+410640	NY	BRONX	80-081
+410641	NY	BRONX	80-082
+410642	NY	BRONX	80-083
+410643	NY	BRONX	80-084
+410644	NY	BRONX	80-085
+410645	NY	BRONX	80-086
+410646	NY	BRONX	80-087
+410647	NY	BRONX	81-001
+410648	NY	BRONX	81-002
+410649	NY	BRONX	81-003
+410650	NY	BRONX	81-004
+410651	NY	BRONX	81-005
+410652	NY	BRONX	81-006
+410653	NY	BRONX	81-007
+410654	NY	BRONX	81-008
+410655	NY	BRONX	81-009
+410656	NY	BRONX	81-010
+410657	NY	BRONX	81-011
+410658	NY	BRONX	81-012
+410659	NY	BRONX	81-013
+410660	NY	BRONX	81-014
+410661	NY	BRONX	81-015
+410662	NY	BRONX	81-017
+410663	NY	BRONX	81-018
+410664	NY	BRONX	81-019
+410665	NY	BRONX	81-020
+410666	NY	BRONX	81-021
+410667	NY	BRONX	81-022
+410668	NY	BRONX	81-023
+410669	NY	BRONX	81-024
+410670	NY	BRONX	81-025
+410671	NY	BRONX	81-026
+410672	NY	BRONX	81-027
+410673	NY	BRONX	81-028
+410674	NY	BRONX	81-029
+410675	NY	BRONX	81-030
+410676	NY	BRONX	81-031
+410677	NY	BRONX	81-032
+410678	NY	BRONX	81-033
+410679	NY	BRONX	81-034
+410680	NY	BRONX	81-035
+410681	NY	BRONX	81-036
+410682	NY	BRONX	81-037
+410683	NY	BRONX	81-038
+410684	NY	BRONX	81-039
+410685	NY	BRONX	81-040
+410686	NY	BRONX	81-041
+410687	NY	BRONX	81-042
+410688	NY	BRONX	81-043
+410689	NY	BRONX	81-044
+410690	NY	BRONX	81-045
+410691	NY	BRONX	81-046
+410692	NY	BRONX	81-047
+410693	NY	BRONX	81-048
+410694	NY	BRONX	81-049
+410695	NY	BRONX	81-050
+410696	NY	BRONX	81-051
+410697	NY	BRONX	81-052
+410698	NY	BRONX	81-053
+410699	NY	BRONX	81-054
+410700	NY	BRONX	81-055
+410701	NY	BRONX	81-056
+410702	NY	BRONX	81-057
+410703	NY	BRONX	81-058
+410704	NY	BRONX	81-059
+410705	NY	BRONX	81-060
+410706	NY	BRONX	81-061
+410707	NY	BRONX	81-062
+410708	NY	BRONX	81-063
+410709	NY	BRONX	81-064
+410710	NY	BRONX	81-065
+410711	NY	BRONX	81-066
+410712	NY	BRONX	81-067
+410713	NY	BRONX	81-068
+410714	NY	BRONX	81-069
+410715	NY	BRONX	81-070
+410716	NY	BRONX	81-071
+410717	NY	BRONX	81-072
+410718	NY	BRONX	81-073
+410719	NY	BRONX	81-074
+410720	NY	BRONX	81-075
+410721	NY	BRONX	81-076
+410722	NY	BRONX	81-077
+410723	NY	BRONX	81-078
+410724	NY	BRONX	81-079
+410725	NY	BRONX	81-080
+410726	NY	BRONX	81-081
+410727	NY	BRONX	81-082
+410728	NY	BRONX	81-083
+410729	NY	BRONX	81-084
+410730	NY	BRONX	81-085
+410731	NY	BRONX	81-086
+410732	NY	BRONX	81-087
+410733	NY	BRONX	81-088
+410734	NY	BRONX	81-089
+410735	NY	BRONX	81-090
+410736	NY	BRONX	81-091
+410737	NY	BRONX	81-094
+410738	NY	BRONX	81-097
+410739	NY	BRONX	81-098
+410740	NY	BRONX	82-001
+410741	NY	BRONX	82-002
+410742	NY	BRONX	82-003
+410743	NY	BRONX	82-004
+410744	NY	BRONX	82-005
+410745	NY	BRONX	82-006
+410746	NY	BRONX	82-007
+410747	NY	BRONX	82-008
+410748	NY	BRONX	82-009
+410749	NY	BRONX	82-010
+410750	NY	BRONX	82-011
+410751	NY	BRONX	82-012
+410752	NY	BRONX	82-013
+410753	NY	BRONX	82-014
+410754	NY	BRONX	82-015
+410755	NY	BRONX	82-016
+410756	NY	BRONX	82-017
+410757	NY	BRONX	82-018
+410758	NY	BRONX	82-019
+410759	NY	BRONX	82-020
+410760	NY	BRONX	82-021
+410761	NY	BRONX	82-022
+410762	NY	BRONX	82-023
+410763	NY	BRONX	82-024
+410764	NY	BRONX	82-025
+410765	NY	BRONX	82-027
+410766	NY	BRONX	82-028
+410767	NY	BRONX	82-029
+410768	NY	BRONX	82-030
+410769	NY	BRONX	82-031
+410770	NY	BRONX	82-032
+410771	NY	BRONX	82-033
+410772	NY	BRONX	82-034
+410773	NY	BRONX	82-035
+410774	NY	BRONX	82-036
+410775	NY	BRONX	82-037
+410776	NY	BRONX	82-038
+410777	NY	BRONX	82-039
+410778	NY	BRONX	82-040
+410779	NY	BRONX	82-041
+410780	NY	BRONX	82-042
+410781	NY	BRONX	82-043
+410782	NY	BRONX	82-044
+410783	NY	BRONX	82-045
+410784	NY	BRONX	82-046
+410785	NY	BRONX	82-047
+410786	NY	BRONX	82-048
+410787	NY	BRONX	82-049
+410788	NY	BRONX	82-050
+410789	NY	BRONX	82-051
+410790	NY	BRONX	82-052
+410791	NY	BRONX	82-053
+410792	NY	BRONX	82-054
+410793	NY	BRONX	82-055
+410794	NY	BRONX	82-056
+410795	NY	BRONX	82-057
+410796	NY	BRONX	82-058
+410797	NY	BRONX	82-059
+410798	NY	BRONX	82-060
+410799	NY	BRONX	82-061
+410800	NY	BRONX	82-062
+410801	NY	BRONX	82-063
+410802	NY	BRONX	82-065
+410803	NY	BRONX	82-066
+410804	NY	BRONX	82-067
+410805	NY	BRONX	82-068
+410806	NY	BRONX	82-069
+410807	NY	BRONX	82-070
+410808	NY	BRONX	82-071
+410809	NY	BRONX	82-072
+410810	NY	BRONX	82-073
+410811	NY	BRONX	82-074
+410812	NY	BRONX	82-075
+410813	NY	BRONX	82-076
+410814	NY	BRONX	82-077
+410815	NY	BRONX	82-078
+410816	NY	BRONX	82-079
+410817	NY	BRONX	82-080
+410818	NY	BRONX	82-081
+410819	NY	BRONX	82-082
+410820	NY	BRONX	82-083
+410821	NY	BRONX	82-084
+410822	NY	BRONX	82-085
+410823	NY	BRONX	82-086
+410824	NY	BRONX	82-087
+410825	NY	BRONX	82-088
+410826	NY	BRONX	82-089
+410827	NY	BRONX	82-090
+410828	NY	BRONX	82-091
+410829	NY	BRONX	82-092
+410830	NY	BRONX	82-093
+410831	NY	BRONX	82-094
+410832	NY	BRONX	82-095
+410833	NY	BRONX	82-096
+410834	NY	BRONX	82-097
+410835	NY	BRONX	82-098
+410836	NY	BRONX	82-099
+410837	NY	BRONX	82-100
+410838	NY	BRONX	82-101
+410839	NY	BRONX	82-102
+410840	NY	BRONX	82-103
+410841	NY	BRONX	82-104
+410842	NY	BRONX	82-105
+410843	NY	BRONX	82-106
+410844	NY	BRONX	82-107
+410845	NY	BRONX	82-108
+410846	NY	BRONX	82-109
+410847	NY	BRONX	82-115
+410848	NY	BRONX	83-001
+410849	NY	BRONX	83-002
+410850	NY	BRONX	83-003
+410851	NY	BRONX	83-004
+410852	NY	BRONX	83-005
+410853	NY	BRONX	83-006
+410854	NY	BRONX	83-007
+410855	NY	BRONX	83-008
+410856	NY	BRONX	83-009
+410857	NY	BRONX	83-010
+410858	NY	BRONX	83-011
+410859	NY	BRONX	83-013
+410860	NY	BRONX	83-014
+410861	NY	BRONX	83-015
+410862	NY	BRONX	83-016
+410863	NY	BRONX	83-017
+410864	NY	BRONX	83-018
+410865	NY	BRONX	83-019
+410866	NY	BRONX	83-020
+410867	NY	BRONX	83-021
+410868	NY	BRONX	83-022
+410869	NY	BRONX	83-023
+410870	NY	BRONX	83-024
+410871	NY	BRONX	83-025
+410872	NY	BRONX	83-026
+410873	NY	BRONX	83-027
+410874	NY	BRONX	83-028
+410875	NY	BRONX	83-029
+410876	NY	BRONX	83-030
+410877	NY	BRONX	83-031
+410878	NY	BRONX	83-032
+410879	NY	BRONX	83-033
+410880	NY	BRONX	83-034
+410881	NY	BRONX	83-035
+410882	NY	BRONX	83-036
+410883	NY	BRONX	83-037
+410884	NY	BRONX	83-038
+410885	NY	BRONX	83-039
+410886	NY	BRONX	83-040
+410887	NY	BRONX	83-041
+410888	NY	BRONX	83-042
+410889	NY	BRONX	83-043
+410890	NY	BRONX	83-044
+410891	NY	BRONX	83-045
+410892	NY	BRONX	83-046
+410893	NY	BRONX	83-047
+410894	NY	BRONX	83-048
+410895	NY	BRONX	83-049
+410896	NY	BRONX	83-050
+410897	NY	BRONX	83-051
+410898	NY	BRONX	83-052
+410899	NY	BRONX	83-053
+410900	NY	BRONX	83-054
+410901	NY	BRONX	83-055
+410902	NY	BRONX	83-056
+410903	NY	BRONX	83-057
+410904	NY	BRONX	83-058
+410905	NY	BRONX	83-059
+410906	NY	BRONX	83-060
+410907	NY	BRONX	83-061
+410908	NY	BRONX	83-062
+410909	NY	BRONX	83-063
+410910	NY	BRONX	83-064
+410911	NY	BRONX	83-065
+410912	NY	BRONX	83-066
+410913	NY	BRONX	83-067
+410914	NY	BRONX	83-069
+410915	NY	BRONX	83-070
+410916	NY	BRONX	83-071
+410917	NY	BRONX	83-072
+410918	NY	BRONX	83-073
+410919	NY	BRONX	83-074
+410920	NY	BRONX	83-075
+410921	NY	BRONX	83-076
+410922	NY	BRONX	83-077
+410923	NY	BRONX	83-078
+410924	NY	BRONX	83-079
+410925	NY	BRONX	83-080
+410926	NY	BRONX	83-081
+410927	NY	BRONX	83-082
+410928	NY	BRONX	83-083
+410929	NY	BRONX	83-084
+410930	NY	BRONX	83-085
+410931	NY	BRONX	83-086
+410932	NY	BRONX	84-001
+410933	NY	BRONX	84-002
+410934	NY	BRONX	84-003
+410935	NY	BRONX	84-004
+410936	NY	BRONX	84-005
+410937	NY	BRONX	84-006
+410938	NY	BRONX	84-007
+410939	NY	BRONX	84-008
+410940	NY	BRONX	84-009
+410941	NY	BRONX	84-010
+410942	NY	BRONX	84-011
+410943	NY	BRONX	84-012
+410944	NY	BRONX	84-013
+410945	NY	BRONX	84-014
+410946	NY	BRONX	84-015
+410947	NY	BRONX	84-016
+410948	NY	BRONX	84-017
+410949	NY	BRONX	84-018
+410950	NY	BRONX	84-019
+410951	NY	BRONX	84-020
+410952	NY	BRONX	84-021
+410953	NY	BRONX	84-022
+410954	NY	BRONX	84-023
+410955	NY	BRONX	84-024
+410956	NY	BRONX	84-025
+410957	NY	BRONX	84-026
+410958	NY	BRONX	84-027
+410959	NY	BRONX	84-028
+410960	NY	BRONX	84-029
+410961	NY	BRONX	84-030
+410962	NY	BRONX	84-031
+410963	NY	BRONX	84-032
+410964	NY	BRONX	84-033
+410965	NY	BRONX	84-034
+410966	NY	BRONX	84-035
+410967	NY	BRONX	84-036
+410968	NY	BRONX	84-037
+410969	NY	BRONX	84-038
+410970	NY	BRONX	84-039
+410971	NY	BRONX	84-040
+410972	NY	BRONX	84-041
+410973	NY	BRONX	84-042
+410974	NY	BRONX	84-043
+410975	NY	BRONX	84-044
+410976	NY	BRONX	84-045
+410977	NY	BRONX	84-046
+410978	NY	BRONX	84-047
+410979	NY	BRONX	84-048
+410980	NY	BRONX	84-049
+410981	NY	BRONX	84-050
+410982	NY	BRONX	84-051
+410983	NY	BRONX	84-052
+410984	NY	BRONX	84-053
+410985	NY	BRONX	84-054
+410986	NY	BRONX	84-055
+410987	NY	BRONX	84-056
+410988	NY	BRONX	84-057
+410989	NY	BRONX	84-058
+410990	NY	BRONX	84-059
+410991	NY	BRONX	84-060
+410992	NY	BRONX	84-061
+410993	NY	BRONX	84-062
+410994	NY	BRONX	84-063
+410995	NY	BRONX	84-064
+410996	NY	BRONX	84-065
+410997	NY	BRONX	84-066
+410998	NY	BRONX	84-067
+410999	NY	BRONX	84-068
+411000	NY	BRONX	84-069
+411001	NY	BRONX	84-070
+411002	NY	BRONX	84-071
+411003	NY	BRONX	84-072
+411004	NY	BRONX	84-073
+411005	NY	BRONX	84-074
+411006	NY	BRONX	84-075
+411007	NY	BRONX	84-076
+411008	NY	BRONX	84-077
+411009	NY	BRONX	84-078
+411010	NY	BRONX	84-079
+411011	NY	BRONX	84-080
+411012	NY	BRONX	85-001
+411013	NY	BRONX	85-002
+411014	NY	BRONX	85-003
+411015	NY	BRONX	85-004
+411016	NY	BRONX	85-005
+411017	NY	BRONX	85-006
+411018	NY	BRONX	85-007
+411019	NY	BRONX	85-008
+411020	NY	BRONX	85-009
+411021	NY	BRONX	85-010
+411022	NY	BRONX	85-011
+411023	NY	BRONX	85-012
+411024	NY	BRONX	85-013
+411025	NY	BRONX	85-014
+411026	NY	BRONX	85-015
+411027	NY	BRONX	85-016
+411028	NY	BRONX	85-017
+411029	NY	BRONX	85-018
+411030	NY	BRONX	85-019
+411031	NY	BRONX	85-020
+411032	NY	BRONX	85-021
+411033	NY	BRONX	85-022
+411034	NY	BRONX	85-023
+411035	NY	BRONX	85-024
+411036	NY	BRONX	85-025
+411037	NY	BRONX	85-026
+411038	NY	BRONX	85-027
+411039	NY	BRONX	85-028
+411040	NY	BRONX	85-029
+411041	NY	BRONX	85-030
+411042	NY	BRONX	85-031
+411043	NY	BRONX	85-032
+411044	NY	BRONX	85-033
+411045	NY	BRONX	85-034
+411046	NY	BRONX	85-036
+411047	NY	BRONX	85-037
+411048	NY	BRONX	85-038
+411049	NY	BRONX	85-039
+411050	NY	BRONX	85-040
+411051	NY	BRONX	85-041
+411052	NY	BRONX	85-042
+411053	NY	BRONX	85-043
+411054	NY	BRONX	85-044
+411055	NY	BRONX	85-045
+411056	NY	BRONX	85-046
+411057	NY	BRONX	85-047
+411058	NY	BRONX	85-048
+411059	NY	BRONX	85-049
+411060	NY	BRONX	85-050
+411061	NY	BRONX	85-051
+411062	NY	BRONX	85-052
+411063	NY	BRONX	85-053
+411064	NY	BRONX	85-054
+411065	NY	BRONX	85-055
+411066	NY	BRONX	85-056
+411067	NY	BRONX	85-057
+411068	NY	BRONX	85-058
+411069	NY	BRONX	85-059
+411070	NY	BRONX	85-060
+411071	NY	BRONX	85-061
+411072	NY	BRONX	85-062
+411073	NY	BRONX	85-063
+411074	NY	BRONX	85-064
+411075	NY	BRONX	85-065
+411076	NY	BRONX	85-066
+411077	NY	BRONX	85-067
+411078	NY	BRONX	85-068
+411079	NY	BRONX	85-069
+411080	NY	BRONX	85-070
+411081	NY	BRONX	85-080
+411082	NY	BRONX	86-001
+411083	NY	BRONX	86-002
+411084	NY	BRONX	86-003
+411085	NY	BRONX	86-004
+411086	NY	BRONX	86-005
+411087	NY	BRONX	86-006
+411088	NY	BRONX	86-007
+411089	NY	BRONX	86-008
+411090	NY	BRONX	86-009
+411091	NY	BRONX	86-010
+411092	NY	BRONX	86-011
+411093	NY	BRONX	86-012
+411094	NY	BRONX	86-013
+411095	NY	BRONX	86-014
+411096	NY	BRONX	86-015
+411097	NY	BRONX	86-016
+411098	NY	BRONX	86-017
+411099	NY	BRONX	86-018
+411100	NY	BRONX	86-019
+411101	NY	BRONX	86-020
+411102	NY	BRONX	86-021
+411103	NY	BRONX	86-022
+411104	NY	BRONX	86-023
+411105	NY	BRONX	86-024
+411106	NY	BRONX	86-025
+411107	NY	BRONX	86-026
+411108	NY	BRONX	86-027
+411109	NY	BRONX	86-028
+411110	NY	BRONX	86-029
+411111	NY	BRONX	86-030
+411112	NY	BRONX	86-031
+411113	NY	BRONX	86-032
+411114	NY	BRONX	86-033
+411115	NY	BRONX	86-034
+411116	NY	BRONX	86-035
+411117	NY	BRONX	86-036
+411118	NY	BRONX	86-037
+411119	NY	BRONX	86-038
+411120	NY	BRONX	86-039
+411121	NY	BRONX	86-040
+411122	NY	BRONX	86-041
+411123	NY	BRONX	86-042
+411124	NY	BRONX	86-043
+411125	NY	BRONX	86-044
+411126	NY	BRONX	86-045
+411127	NY	BRONX	86-046
+411128	NY	BRONX	86-047
+411129	NY	BRONX	86-048
+411130	NY	BRONX	86-049
+411131	NY	BRONX	86-050
+411132	NY	BRONX	86-051
+411133	NY	BRONX	86-052
+411134	NY	BRONX	86-053
+411135	NY	BRONX	86-054
+411136	NY	BRONX	86-055
+411137	NY	BRONX	86-056
+411138	NY	BRONX	86-057
+411139	NY	BRONX	86-058
+411140	NY	BRONX	86-059
+411141	NY	BRONX	86-060
+411142	NY	BRONX	86-061
+411143	NY	BRONX	86-062
+411144	NY	BRONX	86-063
+411145	NY	BRONX	86-064
+411146	NY	BRONX	86-065
+411147	NY	BRONX	86-066
+411148	NY	BRONX	86-067
+411149	NY	BROOME	City Binghamton-01
+411150	NY	BROOME	City Binghamton-02
+411151	NY	BROOME	City Binghamton-03
+411152	NY	BROOME	City Binghamton-04
+411153	NY	BROOME	City Binghamton-05
+411154	NY	BROOME	City Binghamton-06
+411155	NY	BROOME	City Binghamton-07
+411156	NY	BROOME	City Binghamton-08
+411157	NY	BROOME	City Binghamton-09
+411158	NY	BROOME	City Binghamton-10
+411159	NY	BROOME	City Binghamton-11
+411160	NY	BROOME	City Binghamton-12
+411161	NY	BROOME	City Binghamton-13
+411162	NY	BROOME	City Binghamton-14
+411163	NY	BROOME	City Binghamton-15
+411164	NY	BROOME	City Binghamton-16
+411165	NY	BROOME	City Binghamton-17
+411166	NY	BROOME	City Binghamton-18
+411167	NY	BROOME	City Binghamton-19
+411168	NY	BROOME	City Binghamton-20
+411169	NY	BROOME	City Binghamton-21
+411170	NY	BROOME	City Binghamton-22
+411171	NY	BROOME	City Binghamton-23
+411172	NY	BROOME	City Binghamton-24
+411173	NY	BROOME	City Binghamton-25
+411174	NY	BROOME	City Binghamton-26
+411175	NY	BROOME	City Binghamton-27
+411176	NY	BROOME	City Binghamton-28
+411177	NY	BROOME	City Binghamton-29
+411178	NY	BROOME	City Binghamton-30
+411179	NY	BROOME	City Binghamton-31
+411180	NY	BROOME	City Binghamton-32
+411181	NY	BROOME	Barker-01
+411182	NY	BROOME	Barker-02
+411183	NY	BROOME	Town Binghamton-01
+411184	NY	BROOME	Town Binghamton-02
+411185	NY	BROOME	Town Binghamton-03
+411186	NY	BROOME	Chenango-01
+411187	NY	BROOME	Chenango-02
+411188	NY	BROOME	Chenango-03
+411189	NY	BROOME	Chenango-04
+411190	NY	BROOME	Chenango-05
+411191	NY	BROOME	Chenango-06
+411192	NY	BROOME	Chenango-07
+411193	NY	BROOME	Chenango-08
+411194	NY	BROOME	Colesville-01
+411195	NY	BROOME	Colesville-02
+411196	NY	BROOME	Colesville-03
+411197	NY	BROOME	Conklin-01
+411198	NY	BROOME	Conklin-02
+411199	NY	BROOME	Conklin-03
+411200	NY	BROOME	Conklin-04
+411201	NY	BROOME	Dickinson-01
+411202	NY	BROOME	Dickinson-02
+411203	NY	BROOME	Dickinson-03
+411204	NY	BROOME	Dickinson-04
+411205	NY	BROOME	Fenton-01
+411206	NY	BROOME	Fenton-02
+411207	NY	BROOME	Fenton-03
+411208	NY	BROOME	Fenton-04
+411209	NY	BROOME	Fenton-05
+411210	NY	BROOME	Kirkwood-01
+411211	NY	BROOME	Kirkwood-02
+411212	NY	BROOME	Kirkwood-03
+411213	NY	BROOME	Kirkwood-04
+411214	NY	BROOME	Lisle-01
+411215	NY	BROOME	Lisle-02
+411216	NY	BROOME	Maine-01
+411217	NY	BROOME	Maine-02
+411218	NY	BROOME	Maine-03
+411219	NY	BROOME	Maine-04
+411220	NY	BROOME	Nanticoke-01
+411221	NY	BROOME	Sanford-01
+411222	NY	BROOME	Sanford-02
+411223	NY	BROOME	Sanford-03
+411224	NY	BROOME	Triangle-01
+411225	NY	BROOME	Triangle-02
+411226	NY	BROOME	Windsor-01
+411227	NY	BROOME	Windsor-02
+411228	NY	BROOME	Windsor-03
+411229	NY	BROOME	Windsor-04
+411230	NY	BROOME	Windsor-05
+411231	NY	BROOME	Vestal-01
+411232	NY	BROOME	Vestal-02
+411233	NY	BROOME	Vestal-03
+411234	NY	BROOME	Vestal-04
+411235	NY	BROOME	Vestal-05
+411236	NY	BROOME	Vestal-06
+411237	NY	BROOME	Vestal-07
+411238	NY	BROOME	Vestal-08
+411239	NY	BROOME	Vestal-09
+411240	NY	BROOME	Vestal-10
+411241	NY	BROOME	Vestal-11
+411242	NY	BROOME	Vestal-12
+411243	NY	BROOME	Vestal-13
+411244	NY	BROOME	Vestal-14
+411245	NY	BROOME	Vestal-15
+411246	NY	BROOME	Vestal-16
+411247	NY	BROOME	Vestal-17
+411248	NY	BROOME	Vestal-18
+411249	NY	BROOME	Vestal-19
+411250	NY	BROOME	Union-04
+411251	NY	BROOME	Union-06
+411252	NY	BROOME	Union-10
+411253	NY	BROOME	Union-12
+411254	NY	BROOME	Union-13
+411255	NY	BROOME	Union-14
+411256	NY	BROOME	Union-15
+411257	NY	BROOME	Union-17
+411258	NY	BROOME	Union-19
+411259	NY	BROOME	Union-20
+411260	NY	BROOME	Union-21
+411261	NY	BROOME	Union-22
+411262	NY	BROOME	Union-23
+411263	NY	BROOME	Union-24
+411264	NY	BROOME	Union-25
+411265	NY	BROOME	Union-26
+411266	NY	BROOME	Union-27
+411267	NY	BROOME	Union-28
+411268	NY	BROOME	Union-29
+411269	NY	BROOME	Union-30
+411270	NY	BROOME	Union-31
+411271	NY	BROOME	Union-32
+411272	NY	BROOME	Union-33
+411273	NY	BROOME	Union-34
+411274	NY	BROOME	Union-35
+411275	NY	BROOME	Union-36
+411276	NY	BROOME	Union-37
+411277	NY	BROOME	Union-38
+411278	NY	BROOME	Union-39
+411279	NY	CATTARAUGUS	Allegany-01
+411280	NY	CATTARAUGUS	Allegany-02
+411281	NY	CATTARAUGUS	Allegany-03
+411282	NY	CATTARAUGUS	Allegany-04
+411283	NY	CATTARAUGUS	Allegany-05
+411284	NY	CATTARAUGUS	Ashford-01
+411285	NY	CATTARAUGUS	Ashford-02
+411286	NY	CATTARAUGUS	Carrollton-01
+411287	NY	CATTARAUGUS	Coldspring-01
+411288	NY	CATTARAUGUS	Conewango-01
+411289	NY	CATTARAUGUS	Dayton-01
+411290	NY	CATTARAUGUS	East Otto-01
+411291	NY	CATTARAUGUS	Ellicottville-01
+411292	NY	CATTARAUGUS	Farmersville-01
+411293	NY	CATTARAUGUS	Franklinville-01
+411294	NY	CATTARAUGUS	Franklinville-02
+411295	NY	CATTARAUGUS	Freedom-01
+411296	NY	CATTARAUGUS	Great Valley-01
+411297	NY	CATTARAUGUS	Great Valley-02
+411298	NY	CATTARAUGUS	Hinsdale-01
+411299	NY	CATTARAUGUS	Humphrey-01
+411300	NY	CATTARAUGUS	Ischua-01
+411301	NY	CATTARAUGUS	Leon-01
+411302	NY	CATTARAUGUS	Little Valley-01
+411303	NY	CATTARAUGUS	Lyndon-01
+411304	NY	CATTARAUGUS	Machias-01
+411305	NY	CATTARAUGUS	Mansfield-01
+411306	NY	CATTARAUGUS	Napoli-01
+411307	NY	CATTARAUGUS	New Albion-01
+411308	NY	CATTARAUGUS	Town Of Olean-01
+411309	NY	CATTARAUGUS	Town Of Olean-02
+411310	NY	CATTARAUGUS	Otto-01
+411311	NY	CATTARAUGUS	Perrysburg-01
+411312	NY	CATTARAUGUS	Persia-01
+411313	NY	CATTARAUGUS	Portville-01
+411314	NY	CATTARAUGUS	Portville-02
+411315	NY	CATTARAUGUS	Randolph-01
+411316	NY	CATTARAUGUS	Randolph-02
+411317	NY	CATTARAUGUS	Red House-01
+411318	NY	CATTARAUGUS	Town Of Salamanca-01
+411319	NY	CATTARAUGUS	South Valley-01
+411320	NY	CATTARAUGUS	Yorkshire-01
+411321	NY	CATTARAUGUS	Yorkshire-02
+411322	NY	CATTARAUGUS	City Olean-001-01
+411323	NY	CATTARAUGUS	City Olean-002-01
+411324	NY	CATTARAUGUS	City Olean-003-01
+411325	NY	CATTARAUGUS	City Olean-004-01
+411326	NY	CATTARAUGUS	City Olean-005-01
+411327	NY	CATTARAUGUS	City Olean-006-01
+411328	NY	CATTARAUGUS	City Olean-007-01
+411329	NY	CATTARAUGUS	City Salamanca-001-01
+411330	NY	CATTARAUGUS	City Salamanca-002-01
+411331	NY	CATTARAUGUS	City Salamanca-003-01
+411332	NY	CATTARAUGUS	City Salamanca-004-01
+411333	NY	CATTARAUGUS	City Salamanca-005-01
+411334	NY	CAYUGA	Aurelius-01
+411335	NY	CAYUGA	Aurelius-02
+411336	NY	CAYUGA	Brutus-01
+411337	NY	CAYUGA	Brutus-02
+411338	NY	CAYUGA	Cato-01
+411339	NY	CAYUGA	Conquest-01
+411340	NY	CAYUGA	Fleming-01
+411341	NY	CAYUGA	Genoa-01
+411342	NY	CAYUGA	Ira-01
+411343	NY	CAYUGA	Ledyard-01
+411344	NY	CAYUGA	Locke-01
+411345	NY	CAYUGA	Mentz-01
+411346	NY	CAYUGA	Montezuma-01
+411347	NY	CAYUGA	Moravia-01
+411348	NY	CAYUGA	Niles-01
+411349	NY	CAYUGA	Owasco-01
+411350	NY	CAYUGA	Owasco-02
+411351	NY	CAYUGA	Scipio-01
+411352	NY	CAYUGA	Sempronius-01
+411353	NY	CAYUGA	Sennett-01
+411354	NY	CAYUGA	Sennett-02
+411355	NY	CAYUGA	Springport-01
+411356	NY	CAYUGA	Sterling-01
+411357	NY	CAYUGA	Sterling-02
+411358	NY	CAYUGA	Summerhill-01
+411359	NY	CAYUGA	Throop-01
+411360	NY	CAYUGA	Venice-01
+411361	NY	CAYUGA	Victory-01
+411362	NY	CHAUTAUQUA	Arkwright-01
+411363	NY	CHAUTAUQUA	Busti-01
+411364	NY	CHAUTAUQUA	Busti-02
+411365	NY	CHAUTAUQUA	Busti-03
+411366	NY	CHAUTAUQUA	Busti-04
+411367	NY	CHAUTAUQUA	Busti-05
+411368	NY	CHAUTAUQUA	Carroll-01
+411369	NY	CHAUTAUQUA	Carroll-02
+411370	NY	CHAUTAUQUA	Charlotte-01
+411371	NY	CHAUTAUQUA	Chautauqua-01
+411372	NY	CHAUTAUQUA	Chautauqua-02
+411373	NY	CHAUTAUQUA	Chautauqua-03
+411374	NY	CHAUTAUQUA	Chautauqua-04
+411375	NY	CHAUTAUQUA	Cherry Creek-01
+411376	NY	CHAUTAUQUA	Clymer-01
+411377	NY	CHAUTAUQUA	Dunkirk (Town)-01
+411378	NY	CHAUTAUQUA	Dunkirk (Town)-02
+411379	NY	CHAUTAUQUA	Dunkirk City-001-01
+411380	NY	CHAUTAUQUA	Dunkirk City-001-02
+411381	NY	CHAUTAUQUA	Dunkirk City-001-03
+411382	NY	CHAUTAUQUA	Dunkirk City-002-01
+411383	NY	CHAUTAUQUA	Dunkirk City-002-02
+411384	NY	CHAUTAUQUA	Dunkirk City-002-03
+411385	NY	CHAUTAUQUA	Dunkirk City-003-01
+411386	NY	CHAUTAUQUA	Dunkirk City-003-02
+411387	NY	CHAUTAUQUA	Dunkirk City-003-03
+411388	NY	CHAUTAUQUA	Dunkirk City-004-01
+411389	NY	CHAUTAUQUA	Dunkirk City-004-02
+411390	NY	CHAUTAUQUA	Dunkirk City-004-03
+411391	NY	CHAUTAUQUA	Ellery-01
+411392	NY	CHAUTAUQUA	Ellery-02
+411393	NY	CHAUTAUQUA	Ellery-03
+411394	NY	CHAUTAUQUA	Ellicott-001-01
+411395	NY	CHAUTAUQUA	Ellicott-001-02
+411396	NY	CHAUTAUQUA	Ellicott-002-01
+411397	NY	CHAUTAUQUA	Ellicott-002-02
+411398	NY	CHAUTAUQUA	Ellicott-003-01
+411399	NY	CHAUTAUQUA	Ellicott-003-02
+411400	NY	CHAUTAUQUA	Ellicott-004-01
+411401	NY	CHAUTAUQUA	Ellicott-004-02
+411402	NY	CHAUTAUQUA	Ellicott-004-03
+411403	NY	CHAUTAUQUA	Ellington-01
+411404	NY	CHAUTAUQUA	French Creek-01
+411405	NY	CHAUTAUQUA	Gerry-01
+411406	NY	CHAUTAUQUA	Hanover-01
+411407	NY	CHAUTAUQUA	Hanover-02
+411408	NY	CHAUTAUQUA	Hanover-03
+411409	NY	CHAUTAUQUA	Hanover-04
+411410	NY	CHAUTAUQUA	Hanover-05
+411411	NY	CHAUTAUQUA	Harmony-01
+411412	NY	CHAUTAUQUA	Harmony-02
+411413	NY	CHAUTAUQUA	Jamestown City-001-01
+411414	NY	CHAUTAUQUA	Jamestown City-001-02
+411415	NY	CHAUTAUQUA	Jamestown City-001-03
+411416	NY	CHAUTAUQUA	Jamestown City-002-01
+411417	NY	CHAUTAUQUA	Jamestown City-002-02
+411418	NY	CHAUTAUQUA	Jamestown City-002-03
+411419	NY	CHAUTAUQUA	Jamestown City-003-01
+411420	NY	CHAUTAUQUA	Jamestown City-003-02
+411421	NY	CHAUTAUQUA	Jamestown City-003-03
+411422	NY	CHAUTAUQUA	Jamestown City-003-04
+411423	NY	CHAUTAUQUA	Jamestown City-004-01
+411424	NY	CHAUTAUQUA	Jamestown City-004-02
+411425	NY	CHAUTAUQUA	Jamestown City-004-03
+411426	NY	CHAUTAUQUA	Jamestown City-005-01
+411427	NY	CHAUTAUQUA	Jamestown City-005-02
+411428	NY	CHAUTAUQUA	Jamestown City-005-03
+411429	NY	CHAUTAUQUA	Jamestown City-006-01
+411430	NY	CHAUTAUQUA	Jamestown City-006-02
+411431	NY	CHAUTAUQUA	Jamestown City-006-03
+411432	NY	CHAUTAUQUA	Mina-01
+411433	NY	CHAUTAUQUA	North Harmony-01
+411434	NY	CHAUTAUQUA	North Harmony-02
+411435	NY	CHAUTAUQUA	Poland-01
+411436	NY	CHAUTAUQUA	Poland-02
+411437	NY	CHAUTAUQUA	Pomfret-01
+411438	NY	CHAUTAUQUA	Pomfret-02
+411439	NY	CHAUTAUQUA	Pomfret-03
+411440	NY	CHAUTAUQUA	Pomfret-04
+411441	NY	CHAUTAUQUA	Pomfret-05
+411442	NY	CHAUTAUQUA	Pomfret-06
+411443	NY	CHAUTAUQUA	Pomfret-07
+411444	NY	CHAUTAUQUA	Pomfret-08
+411445	NY	CHAUTAUQUA	Portland-01
+411446	NY	CHAUTAUQUA	Portland-02
+411447	NY	CHAUTAUQUA	Portland-03
+411448	NY	CHAUTAUQUA	Ripley-01
+411449	NY	CHAUTAUQUA	Ripley-02
+411450	NY	CHAUTAUQUA	Sheridan-01
+411451	NY	CHAUTAUQUA	Sheridan-02
+411452	NY	CHAUTAUQUA	Sherman-01
+411453	NY	CHAUTAUQUA	Stockton-01
+411454	NY	CHAUTAUQUA	Stockton-02
+411455	NY	CHAUTAUQUA	Villenova-01
+411456	NY	CHAUTAUQUA	Westfield-01
+411457	NY	CHAUTAUQUA	Westfield-02
+411458	NY	CHAUTAUQUA	Westfield-03
+411459	NY	CHEMUNG	Baldwin-006-01
+411460	NY	CHEMUNG	Big Flats-002-01
+411461	NY	CHEMUNG	Big Flats-002-02
+411462	NY	CHEMUNG	Big Flats-002-03
+411463	NY	CHEMUNG	Big Flats-002-04
+411464	NY	CHEMUNG	Big Flats-002-05
+411465	NY	CHEMUNG	Big Flats-002-06
+411466	NY	CHEMUNG	Big Flats-004-05
+411467	NY	CHEMUNG	Big Flats-007-06
+411468	NY	CHEMUNG	Catlin-001-01
+411469	NY	CHEMUNG	Catlin-001-05
+411470	NY	CHEMUNG	Chemung-006-02
+411471	NY	CHEMUNG	Chemung-006-06
+411472	NY	CHEMUNG	City Of Elmira-009-01
+411473	NY	CHEMUNG	City Of Elmira-009-02
+411474	NY	CHEMUNG	City Of Elmira-009-03
+411475	NY	CHEMUNG	City Of Elmira-009-04
+411476	NY	CHEMUNG	City Of Elmira-009-05
+411477	NY	CHEMUNG	City Of Elmira-009-06
+411478	NY	CHEMUNG	City Of Elmira-010-01
+411479	NY	CHEMUNG	City Of Elmira-010-02
+411480	NY	CHEMUNG	City Of Elmira-010-03
+411481	NY	CHEMUNG	City Of Elmira-010-04
+411482	NY	CHEMUNG	City Of Elmira-010-05
+411483	NY	CHEMUNG	City Of Elmira-010-06
+411484	NY	CHEMUNG	City Of Elmira-010-07
+411485	NY	CHEMUNG	City Of Elmira-011-01
+411486	NY	CHEMUNG	City Of Elmira-011-02
+411487	NY	CHEMUNG	City Of Elmira-011-03
+411488	NY	CHEMUNG	City Of Elmira-011-04
+411489	NY	CHEMUNG	City Of Elmira-011-05
+411490	NY	CHEMUNG	City Of Elmira-012-01
+411491	NY	CHEMUNG	City Of Elmira-012-02
+411492	NY	CHEMUNG	City Of Elmira-012-03
+411493	NY	CHEMUNG	City Of Elmira-012-04
+411494	NY	CHEMUNG	City Of Elmira-012-05
+411495	NY	CHEMUNG	City Of Elmira-012-06
+411496	NY	CHEMUNG	City Of Elmira-013-01
+411497	NY	CHEMUNG	City Of Elmira-013-02
+411498	NY	CHEMUNG	City Of Elmira-013-03
+411499	NY	CHEMUNG	City Of Elmira-013-04
+411500	NY	CHEMUNG	City Of Elmira-013-05
+411501	NY	CHEMUNG	Elmira-007-01
+411502	NY	CHEMUNG	Elmira-007-02
+411503	NY	CHEMUNG	Elmira-007-03
+411504	NY	CHEMUNG	Elmira-007-04
+411505	NY	CHEMUNG	Elmira-007-05
+411506	NY	CHEMUNG	Elmira-008-04
+411507	NY	CHEMUNG	Erin-005-03
+411508	NY	CHEMUNG	Erin-006-04
+411509	NY	CHEMUNG	Horseheads-003-01
+411510	NY	CHEMUNG	Horseheads-003-02
+411511	NY	CHEMUNG	Horseheads-003-03
+411512	NY	CHEMUNG	Horseheads-003-04
+411513	NY	CHEMUNG	Horseheads-004-01
+411514	NY	CHEMUNG	Horseheads-004-02
+411515	NY	CHEMUNG	Horseheads-004-03
+411516	NY	CHEMUNG	Horseheads-004-04
+411517	NY	CHEMUNG	Horseheads-004-06
+411518	NY	CHEMUNG	Horseheads-005-01
+411519	NY	CHEMUNG	Horseheads-005-02
+411520	NY	CHEMUNG	Horseheads-005-04
+411521	NY	CHEMUNG	Horseheads-008-01
+411522	NY	CHEMUNG	Horseheads-008-02
+411523	NY	CHEMUNG	Horseheads-008-03
+411524	NY	CHEMUNG	Southport-013-06
+411525	NY	CHEMUNG	Southport-014-01
+411526	NY	CHEMUNG	Southport-014-02
+411527	NY	CHEMUNG	Southport-014-03
+411528	NY	CHEMUNG	Southport-014-04
+411529	NY	CHEMUNG	Southport-014-05
+411530	NY	CHEMUNG	Southport-015-02
+411531	NY	CHEMUNG	Southport-015-03
+411532	NY	CHEMUNG	Southport-015-04
+411533	NY	CHEMUNG	Southport-015-05
+411534	NY	CHEMUNG	Elmira-015-06
+411535	NY	CHEMUNG	Van Etten-006-05
+411536	NY	CHEMUNG	Veteran-001-02
+411537	NY	CHEMUNG	Veteran-001-03
+411538	NY	CHEMUNG	Veteran-001-04
+411539	NY	CHENANGO	Afton-01
+411540	NY	CHENANGO	Bainbridge-01
+411541	NY	CHENANGO	Columbus-01
+411542	NY	CHENANGO	Coventry-01
+411543	NY	CHENANGO	German-01
+411544	NY	CHENANGO	Greene-01
+411545	NY	CHENANGO	Greene-02
+411546	NY	CHENANGO	Guilford-01
+411547	NY	CHENANGO	Lincklaen-01
+411548	NY	CHENANGO	McDonough-01
+411549	NY	CHENANGO	New Berlin-01
+411550	NY	CHENANGO	North Norwich-01
+411551	NY	CHENANGO	Town Of Norwich-01
+411552	NY	CHENANGO	Town Of Norwich-02
+411553	NY	CHENANGO	City Of Norwich-001-01
+411554	NY	CHENANGO	City Of Norwich-003-01
+411555	NY	CHENANGO	City Of Norwich-004-01
+411556	NY	CHENANGO	City Of Norwich-005-01
+411557	NY	CHENANGO	City Of Norwich-006-01
+411558	NY	CHENANGO	Otselic-01
+411559	NY	CHENANGO	Oxford-01
+411560	NY	CHENANGO	Oxford-02
+411561	NY	CHENANGO	Pharsalia-01
+411562	NY	CHENANGO	Pitcher-01
+411563	NY	CHENANGO	Plymouth-01
+411564	NY	CHENANGO	Preston-01
+411565	NY	CHENANGO	Sherburne-01
+411566	NY	CHENANGO	Sherburne-02
+411567	NY	CHENANGO	Smithville-01
+411568	NY	CHENANGO	Smyrna-01
+411569	NY	CLINTON	Altona-01
+411570	NY	CLINTON	Altona-02
+411571	NY	CLINTON	Ausable-01
+411572	NY	CLINTON	Ausable-02
+411573	NY	CLINTON	Beekmantown-01
+411574	NY	CLINTON	Beekmantown-02
+411575	NY	CLINTON	Beekmantown-03
+411576	NY	CLINTON	Beekmantown-04
+411577	NY	CLINTON	Black Brook-01
+411578	NY	CLINTON	Black Brook-02
+411579	NY	CLINTON	Champlain-01
+411580	NY	CLINTON	Champlain-02
+411581	NY	CLINTON	Champlain-03
+411582	NY	CLINTON	Chazy-01
+411583	NY	CLINTON	Chazy-02
+411584	NY	CLINTON	Dannemora-01
+411585	NY	CLINTON	Dannemora-02
+411586	NY	CLINTON	Dannemora-03
+411587	NY	CLINTON	Ellenburg-01
+411588	NY	CLINTON	Ellenburg-02
+411589	NY	CLINTON	Ellenburg-03
+411590	NY	CLINTON	Mooers-01
+411591	NY	CLINTON	Mooers-02
+411592	NY	CLINTON	Peru-01
+411593	NY	CLINTON	Peru-02
+411594	NY	CLINTON	Peru-03
+411595	NY	CLINTON	Peru-04
+411596	NY	CLINTON	Plattsburgh-01
+411597	NY	CLINTON	Plattsburgh-02
+411598	NY	CLINTON	Plattsburgh-03
+411599	NY	CLINTON	Plattsburgh-04
+411600	NY	CLINTON	Plattsburgh-05
+411601	NY	CLINTON	Plattsburgh-06
+411602	NY	CLINTON	Plattsburgh-07
+411603	NY	CLINTON	Saranac-01
+411604	NY	CLINTON	Saranac-02
+411605	NY	CLINTON	Saranac-03
+411606	NY	CLINTON	Schuyler Falls-01
+411607	NY	CLINTON	Schuyler Falls-02
+411608	NY	CLINTON	Schuyler Falls-03
+411609	NY	CLINTON	City Of Plattsburgh-001-01
+411610	NY	CLINTON	City Of Plattsburgh-001-02
+411611	NY	CLINTON	City Of Plattsburgh-001-03
+411612	NY	CLINTON	City Of Plattsburgh-002-01
+411613	NY	CLINTON	City Of Plattsburgh-002-02
+411614	NY	CLINTON	City Of Plattsburgh-003-01
+411615	NY	CLINTON	City Of Plattsburgh-003-02
+411616	NY	CLINTON	City Of Plattsburgh-004-01
+411617	NY	CLINTON	City Of Plattsburgh-004-02
+411618	NY	CLINTON	City Of Plattsburgh-005-01
+411619	NY	CLINTON	City Of Plattsburgh-005-02
+411620	NY	CLINTON	City Of Plattsburgh-006-01
+411621	NY	CLINTON	City Of Plattsburgh-006-02
+411622	NY	COLUMBIA	Ancram-01
+411623	NY	COLUMBIA	Ancram-02
+411624	NY	COLUMBIA	Austerlitz-01
+411625	NY	COLUMBIA	Canaan-01
+411626	NY	COLUMBIA	Chatham-01
+411627	NY	COLUMBIA	Chatham-02
+411628	NY	COLUMBIA	Chatham-03
+411629	NY	COLUMBIA	Claverack-01
+411630	NY	COLUMBIA	Claverack-02
+411631	NY	COLUMBIA	Claverack-03
+411632	NY	COLUMBIA	Claverack-04
+411633	NY	COLUMBIA	Claverack-05
+411634	NY	COLUMBIA	Clermont-01
+411635	NY	COLUMBIA	Copake-01
+411636	NY	COLUMBIA	Copake-02
+411637	NY	COLUMBIA	Gallatin-01
+411638	NY	COLUMBIA	Germantown-01
+411639	NY	COLUMBIA	Germantown-02
+411640	NY	COLUMBIA	Ghent-01
+411641	NY	COLUMBIA	Ghent-02
+411642	NY	COLUMBIA	Ghent-03
+411643	NY	COLUMBIA	Greenport-01
+411644	NY	COLUMBIA	Greenport-02
+411645	NY	COLUMBIA	Greenport-03
+411646	NY	COLUMBIA	Hillsdale-01
+411647	NY	COLUMBIA	Hudson-001-01
+411648	NY	COLUMBIA	Hudson-002-01
+411649	NY	COLUMBIA	Hudson-003-01
+411650	NY	COLUMBIA	Hudson-004-01
+411651	NY	COLUMBIA	Hudson-005-01
+411652	NY	COLUMBIA	Hudson-005-02
+411653	NY	COLUMBIA	Kinderhook-01
+411654	NY	COLUMBIA	Kinderhook-02
+411655	NY	COLUMBIA	Kinderhook-03
+411656	NY	COLUMBIA	Kinderhook-04
+411657	NY	COLUMBIA	Kinderhook-05
+411658	NY	COLUMBIA	Kinderhook-06
+411659	NY	COLUMBIA	Kinderhook-07
+411660	NY	COLUMBIA	Kinderhook-08
+411661	NY	COLUMBIA	Livingston-01
+411662	NY	COLUMBIA	Livingston-02
+411663	NY	COLUMBIA	New Lebanon-01
+411664	NY	COLUMBIA	New Lebanon-02
+411665	NY	COLUMBIA	Stockport-01
+411666	NY	COLUMBIA	Stockport-02
+411667	NY	COLUMBIA	Stuyvesant-01
+411668	NY	COLUMBIA	Stuyvesant-02
+411669	NY	COLUMBIA	Taghkanic-01
+411670	NY	CORTLAND	Cortland-001-01
+411671	NY	CORTLAND	Cortland-001-02
+411672	NY	CORTLAND	Cortland-002-01
+411673	NY	CORTLAND	Cortland-002-02
+411674	NY	CORTLAND	Cortland-003-01
+411675	NY	CORTLAND	Cortland-003-02
+411676	NY	CORTLAND	Cortland-004-01
+411677	NY	CORTLAND	Cortland-004-02
+411678	NY	CORTLAND	Cortland-005-01
+411679	NY	CORTLAND	Cortland-005-02
+411680	NY	CORTLAND	Cortland-006-01
+411681	NY	CORTLAND	Cortland-006-02
+411682	NY	CORTLAND	Cortland-007-01
+411683	NY	CORTLAND	Cortland-007-02
+411684	NY	CORTLAND	Cortland-008-01
+411685	NY	CORTLAND	Cortland-008-02
+411686	NY	CORTLAND	Homer-01
+411687	NY	CORTLAND	Homer-02
+411688	NY	CORTLAND	Homer-03
+411689	NY	CORTLAND	Homer-04
+411690	NY	CORTLAND	Homer-05
+411691	NY	CORTLAND	Cortlandville-01
+411692	NY	CORTLAND	Cortlandville-02
+411693	NY	CORTLAND	Cortlandville-03
+411694	NY	CORTLAND	Cortlandville-04
+411695	NY	CORTLAND	Cortlandville-05
+411696	NY	CORTLAND	Cortlandville-06
+411697	NY	CORTLAND	Preble-01
+411698	NY	CORTLAND	Scott-01
+411699	NY	CORTLAND	Cuyler-01
+411700	NY	CORTLAND	Solon-01
+411701	NY	CORTLAND	Truxton-01
+411702	NY	CORTLAND	Cincinnatus-01
+411703	NY	CORTLAND	Freetown-01
+411704	NY	CORTLAND	Taylor-01
+411705	NY	CORTLAND	Willet-01
+411706	NY	CORTLAND	Lapeer-01
+411707	NY	CORTLAND	Marathon-01
+411708	NY	CORTLAND	Marathon-02
+411709	NY	CORTLAND	Harford-01
+411710	NY	CORTLAND	Virgil-01
+411711	NY	DELAWARE	Andes-01
+411712	NY	DELAWARE	Andes-02
+411713	NY	DELAWARE	Bovina-01
+411714	NY	DELAWARE	Colchester-01
+411715	NY	DELAWARE	Colchester-02
+411716	NY	DELAWARE	Colchester-03
+411717	NY	DELAWARE	Colchester-04
+411718	NY	DELAWARE	Davenport-01
+411719	NY	DELAWARE	Davenport-02
+411720	NY	DELAWARE	Delhi-01
+411721	NY	DELAWARE	Delhi-02
+411722	NY	DELAWARE	Delhi-03
+411723	NY	DELAWARE	Delhi-04
+411724	NY	DELAWARE	Deposit-01
+411725	NY	DELAWARE	Deposit-02
+411726	NY	DELAWARE	Franklin-01
+411727	NY	DELAWARE	Franklin-03
+411728	NY	DELAWARE	Hamden-01
+411729	NY	DELAWARE	Hancock-01
+411730	NY	DELAWARE	Hancock-02
+411731	NY	DELAWARE	Hancock-03
+411732	NY	DELAWARE	Hancock-04
+411733	NY	DELAWARE	Hancock-05
+411734	NY	DELAWARE	Hancock-06
+411735	NY	DELAWARE	Harpersfield-01
+411736	NY	DELAWARE	Kortright-01
+411737	NY	DELAWARE	Kortright-02
+411738	NY	DELAWARE	Masonville-01
+411739	NY	DELAWARE	Meredith-01
+411740	NY	DELAWARE	Meredith-02
+411741	NY	DELAWARE	Middletown-01
+411742	NY	DELAWARE	Middletown-02
+411743	NY	DELAWARE	Middletown-03
+411744	NY	DELAWARE	Middletown-04
+411745	NY	DELAWARE	Middletown-05
+411746	NY	DELAWARE	Roxbury-01
+411747	NY	DELAWARE	Roxbury-02
+411748	NY	DELAWARE	Roxbury-03
+411749	NY	DELAWARE	Roxbury-04
+411750	NY	DELAWARE	Sidney-01
+411751	NY	DELAWARE	Sidney-02
+411752	NY	DELAWARE	Sidney-03
+411753	NY	DELAWARE	Sidney-04
+411754	NY	DELAWARE	Sidney-05
+411755	NY	DELAWARE	Sidney-06
+411756	NY	DELAWARE	Sidney-07
+411757	NY	DELAWARE	Stamford-01
+411758	NY	DELAWARE	Stamford-02
+411759	NY	DELAWARE	Tompkins-01
+411760	NY	DELAWARE	Walton-01
+411761	NY	DELAWARE	Walton-02
+411762	NY	DELAWARE	Walton-03
+411763	NY	DELAWARE	Walton-04
+411764	NY	DELAWARE	Walton-05
+411765	NY	DUTCHESS	Amenia-01
+411766	NY	DUTCHESS	Amenia-02
+411767	NY	DUTCHESS	Amenia-03
+411768	NY	DUTCHESS	Beekman-01
+411769	NY	DUTCHESS	Beekman-02
+411770	NY	DUTCHESS	Beekman-03
+411771	NY	DUTCHESS	Beekman-04
+411772	NY	DUTCHESS	Beekman-05
+411773	NY	DUTCHESS	Beekman-06
+411774	NY	DUTCHESS	Beekman-07
+411775	NY	DUTCHESS	Beekman-08
+411776	NY	DUTCHESS	Beekman-09
+411777	NY	DUTCHESS	Clinton-01
+411778	NY	DUTCHESS	Clinton-02
+411779	NY	DUTCHESS	Clinton-03
+411780	NY	DUTCHESS	Dover-01
+411781	NY	DUTCHESS	Dover-02
+411782	NY	DUTCHESS	Dover-03
+411783	NY	DUTCHESS	Dover-04
+411784	NY	DUTCHESS	Dover-05
+411785	NY	DUTCHESS	Dover-06
+411786	NY	DUTCHESS	East Fishkill-01
+411787	NY	DUTCHESS	East Fishkill-02
+411788	NY	DUTCHESS	East Fishkill-03
+411789	NY	DUTCHESS	East Fishkill-04
+411790	NY	DUTCHESS	East Fishkill-05
+411791	NY	DUTCHESS	East Fishkill-06
+411792	NY	DUTCHESS	East Fishkill-07
+411793	NY	DUTCHESS	East Fishkill-08
+411794	NY	DUTCHESS	East Fishkill-09
+411795	NY	DUTCHESS	East Fishkill-10
+411796	NY	DUTCHESS	East Fishkill-11
+411797	NY	DUTCHESS	East Fishkill-12
+411798	NY	DUTCHESS	East Fishkill-13
+411799	NY	DUTCHESS	East Fishkill-14
+411800	NY	DUTCHESS	East Fishkill-15
+411801	NY	DUTCHESS	East Fishkill-17
+411802	NY	DUTCHESS	East Fishkill-18
+411803	NY	DUTCHESS	East Fishkill-19
+411804	NY	DUTCHESS	East Fishkill-20
+411805	NY	DUTCHESS	East Fishkill-21
+411806	NY	DUTCHESS	Fishkill-01
+411807	NY	DUTCHESS	Fishkill-02
+411808	NY	DUTCHESS	Fishkill-03
+411809	NY	DUTCHESS	Fishkill-04
+411810	NY	DUTCHESS	Fishkill-05
+411811	NY	DUTCHESS	Fishkill-06
+411812	NY	DUTCHESS	Fishkill-07
+411813	NY	DUTCHESS	Fishkill-08
+411814	NY	DUTCHESS	Fishkill-09
+411815	NY	DUTCHESS	Fishkill-10
+411816	NY	DUTCHESS	Fishkill-11
+411817	NY	DUTCHESS	Fishkill-12
+411818	NY	DUTCHESS	Fishkill-13
+411819	NY	DUTCHESS	Fishkill-14
+411820	NY	DUTCHESS	Fishkill-15
+411821	NY	DUTCHESS	Fishkill-16
+411822	NY	DUTCHESS	Hyde Park-001-01
+411823	NY	DUTCHESS	Hyde Park-001-02
+411824	NY	DUTCHESS	Hyde Park-001-03
+411825	NY	DUTCHESS	Hyde Park-001-04
+411826	NY	DUTCHESS	Hyde Park-002-01
+411827	NY	DUTCHESS	Hyde Park-002-02
+411828	NY	DUTCHESS	Hyde Park-002-03
+411829	NY	DUTCHESS	Hyde Park-002-04
+411830	NY	DUTCHESS	Hyde Park-003-01
+411831	NY	DUTCHESS	Hyde Park-003-02
+411832	NY	DUTCHESS	Hyde Park-003-03
+411833	NY	DUTCHESS	Hyde Park-003-04
+411834	NY	DUTCHESS	Hyde Park-004-01
+411835	NY	DUTCHESS	Hyde Park-004-02
+411836	NY	DUTCHESS	Hyde Park-004-03
+411837	NY	DUTCHESS	Hyde Park-004-04
+411838	NY	DUTCHESS	Lagrange-01
+411839	NY	DUTCHESS	Lagrange-02
+411840	NY	DUTCHESS	Lagrange-03
+411841	NY	DUTCHESS	Lagrange-04
+411842	NY	DUTCHESS	Lagrange-05
+411843	NY	DUTCHESS	Lagrange-06
+411844	NY	DUTCHESS	Lagrange-07
+411845	NY	DUTCHESS	Lagrange-08
+411846	NY	DUTCHESS	Lagrange-09
+411847	NY	DUTCHESS	Lagrange-10
+411848	NY	DUTCHESS	Lagrange-11
+411849	NY	DUTCHESS	Lagrange-12
+411850	NY	DUTCHESS	Milan-01
+411851	NY	DUTCHESS	Milan-02
+411852	NY	DUTCHESS	Pawling-01
+411853	NY	DUTCHESS	Pawling-02
+411854	NY	DUTCHESS	Pawling-03
+411855	NY	DUTCHESS	Pawling-04
+411856	NY	DUTCHESS	Pawling-05
+411857	NY	DUTCHESS	Pawling-06
+411858	NY	DUTCHESS	Pine Plains-01
+411859	NY	DUTCHESS	Pine Plains-02
+411860	NY	DUTCHESS	Pleasant Valley-01
+411861	NY	DUTCHESS	Pleasant Valley-02
+411862	NY	DUTCHESS	Pleasant Valley-03
+411863	NY	DUTCHESS	Pleasant Valley-04
+411864	NY	DUTCHESS	Pleasant Valley-05
+411865	NY	DUTCHESS	Pleasant Valley-06
+411866	NY	DUTCHESS	Town Poughkeepsie-001-01
+411867	NY	DUTCHESS	Town Poughkeepsie-001-02
+411868	NY	DUTCHESS	Town Poughkeepsie-001-03
+411869	NY	DUTCHESS	Town Poughkeepsie-001-04
+411870	NY	DUTCHESS	Town Poughkeepsie-001-05
+411871	NY	DUTCHESS	Town Poughkeepsie-002-01
+411872	NY	DUTCHESS	Town Poughkeepsie-002-02
+411873	NY	DUTCHESS	Town Poughkeepsie-002-03
+411874	NY	DUTCHESS	Town Poughkeepsie-002-04
+411875	NY	DUTCHESS	Town Poughkeepsie-002-05
+411876	NY	DUTCHESS	Town Poughkeepsie-003-01
+411877	NY	DUTCHESS	Town Poughkeepsie-003-02
+411878	NY	DUTCHESS	Town Poughkeepsie-003-03
+411879	NY	DUTCHESS	Town Poughkeepsie-003-04
+411880	NY	DUTCHESS	Town Poughkeepsie-003-05
+411881	NY	DUTCHESS	Town Poughkeepsie-003-06
+411882	NY	DUTCHESS	Town Poughkeepsie-004-01
+411883	NY	DUTCHESS	Town Poughkeepsie-004-02
+411884	NY	DUTCHESS	Town Poughkeepsie-004-03
+411885	NY	DUTCHESS	Town Poughkeepsie-004-04
+411886	NY	DUTCHESS	Town Poughkeepsie-004-05
+411887	NY	DUTCHESS	Town Poughkeepsie-005-01
+411888	NY	DUTCHESS	Town Poughkeepsie-005-02
+411889	NY	DUTCHESS	Town Poughkeepsie-005-03
+411890	NY	DUTCHESS	Town Poughkeepsie-005-04
+411891	NY	DUTCHESS	Town Poughkeepsie-006-01
+411892	NY	DUTCHESS	Town Poughkeepsie-006-02
+411893	NY	DUTCHESS	Town Poughkeepsie-006-03
+411894	NY	DUTCHESS	Town Poughkeepsie-006-04
+411895	NY	DUTCHESS	Town Poughkeepsie-006-05
+411896	NY	DUTCHESS	Town Poughkeepsie-006-06
+411897	NY	DUTCHESS	Red Hook-01
+411898	NY	DUTCHESS	Red Hook-02
+411899	NY	DUTCHESS	Red Hook-03
+411900	NY	DUTCHESS	Red Hook-04
+411901	NY	DUTCHESS	Red Hook-05
+411902	NY	DUTCHESS	Red Hook-06
+411903	NY	DUTCHESS	Red Hook-07
+411904	NY	DUTCHESS	Rhinebeck-01
+411905	NY	DUTCHESS	Rhinebeck-02
+411906	NY	DUTCHESS	Rhinebeck-03
+411907	NY	DUTCHESS	Rhinebeck-04
+411908	NY	DUTCHESS	Rhinebeck-05
+411909	NY	DUTCHESS	Rhinebeck-06
+411910	NY	DUTCHESS	Rhinebeck-07
+411911	NY	DUTCHESS	Stanford-01
+411912	NY	DUTCHESS	Stanford-02
+411913	NY	DUTCHESS	Stanford-03
+411914	NY	DUTCHESS	Union Vale-01
+411915	NY	DUTCHESS	Union Vale-02
+411916	NY	DUTCHESS	Union Vale-03
+411917	NY	DUTCHESS	Union Vale-04
+411918	NY	DUTCHESS	Wappinger-001-01
+411919	NY	DUTCHESS	Wappinger-001-02
+411920	NY	DUTCHESS	Wappinger-001-03
+411921	NY	DUTCHESS	Wappinger-001-04
+411922	NY	DUTCHESS	Wappinger-001-05
+411923	NY	DUTCHESS	Wappinger-002-01
+411924	NY	DUTCHESS	Wappinger-002-02
+411925	NY	DUTCHESS	Wappinger-002-03
+411926	NY	DUTCHESS	Wappinger-002-04
+411927	NY	DUTCHESS	Wappinger-002-05
+411928	NY	DUTCHESS	Wappinger-003-01
+411929	NY	DUTCHESS	Wappinger-003-02
+411930	NY	DUTCHESS	Wappinger-003-03
+411931	NY	DUTCHESS	Wappinger-003-04
+411932	NY	DUTCHESS	Wappinger-003-05
+411933	NY	DUTCHESS	Wappinger-003-06
+411934	NY	DUTCHESS	Wappinger-004-01
+411935	NY	DUTCHESS	Wappinger-004-02
+411936	NY	DUTCHESS	Wappinger-004-03
+411937	NY	DUTCHESS	Wappinger-004-04
+411938	NY	DUTCHESS	Wappinger-004-05
+411939	NY	DUTCHESS	Washington-01
+411940	NY	DUTCHESS	Washington-02
+411941	NY	DUTCHESS	Washington-03
+411942	NY	DUTCHESS	Washington-04
+411943	NY	DUTCHESS	City Beacon-001-01
+411944	NY	DUTCHESS	City Beacon-001-02
+411945	NY	DUTCHESS	City Beacon-002-01
+411946	NY	DUTCHESS	City Beacon-002-02
+411947	NY	DUTCHESS	City Beacon-002-03
+411948	NY	DUTCHESS	City Beacon-003-01
+411949	NY	DUTCHESS	City Beacon-003-02
+411950	NY	DUTCHESS	City Beacon-004-01
+411951	NY	DUTCHESS	City Beacon-004-02
+411952	NY	DUTCHESS	City Poughkeepsie-001-01
+411953	NY	DUTCHESS	City Poughkeepsie-001-02
+411954	NY	DUTCHESS	City Poughkeepsie-002-01
+411955	NY	DUTCHESS	City Poughkeepsie-002-02
+411956	NY	DUTCHESS	City Poughkeepsie-002-03
+411957	NY	DUTCHESS	City Poughkeepsie-003-01
+411958	NY	DUTCHESS	City Poughkeepsie-003-02
+411959	NY	DUTCHESS	City Poughkeepsie-004-01
+411960	NY	DUTCHESS	City Poughkeepsie-004-02
+411961	NY	DUTCHESS	City Poughkeepsie-004-03
+411962	NY	DUTCHESS	City Poughkeepsie-004-04
+411963	NY	DUTCHESS	City Poughkeepsie-005-01
+411964	NY	DUTCHESS	City Poughkeepsie-005-02
+411965	NY	DUTCHESS	City Poughkeepsie-005-03
+411966	NY	DUTCHESS	City Poughkeepsie-006-01
+411967	NY	DUTCHESS	City Poughkeepsie-006-02
+411968	NY	DUTCHESS	City Poughkeepsie-006-03
+411969	NY	DUTCHESS	City Poughkeepsie-007-01
+411970	NY	DUTCHESS	City Poughkeepsie-007-02
+411971	NY	DUTCHESS	City Poughkeepsie-008-01
+411972	NY	DUTCHESS	City Poughkeepsie-008-02
+411973	NY	DUTCHESS	City Poughkeepsie-008-03
+411974	NY	DUTCHESS	City Poughkeepsie-008-04
+411975	NY	ERIE	Bflo-Del-001
+411976	NY	ERIE	Bflo-Del-002
+411977	NY	ERIE	Bflo-Del-003
+411978	NY	ERIE	Bflo-Del-004
+411979	NY	ERIE	Bflo-Del-005
+411980	NY	ERIE	Bflo-Del-006
+411981	NY	ERIE	Bflo-Del-007
+411982	NY	ERIE	Bflo-Del-008
+411983	NY	ERIE	Bflo-Del-009
+411984	NY	ERIE	Bflo-Del-010
+411985	NY	ERIE	Bflo-Del-011
+411986	NY	ERIE	Bflo-Del-012
+411987	NY	ERIE	Bflo-Del-013
+411988	NY	ERIE	Bflo-Del-014
+411989	NY	ERIE	Bflo-Del-015
+411990	NY	ERIE	Bflo-Del-016
+411991	NY	ERIE	Bflo-Del-017
+411992	NY	ERIE	Bflo-Del-018
+411993	NY	ERIE	Bflo-Del-019
+411994	NY	ERIE	Bflo-Del-020
+411995	NY	ERIE	Bflo-Del-021
+411996	NY	ERIE	Bflo-Del-022
+411997	NY	ERIE	Bflo-Del-023
+411998	NY	ERIE	Bflo-Del-024
+411999	NY	ERIE	Bflo-Del-025
+412000	NY	ERIE	Bflo-Del-026
+412001	NY	ERIE	Bflo-Del-027
+412002	NY	ERIE	Bflo-Del-028
+412003	NY	ERIE	Bflo-Del-029
+412004	NY	ERIE	Bflo-Del-030
+412005	NY	ERIE	Bflo-Del-031
+412006	NY	ERIE	Bflo-Del-032
+412007	NY	ERIE	Bflo-Del-033
+412008	NY	ERIE	Bflo-Del-034
+412009	NY	ERIE	Bflo-Ell-001
+412010	NY	ERIE	Bflo-Ell-002
+412011	NY	ERIE	Bflo-Ell-003
+412012	NY	ERIE	Bflo-Ell-004
+412013	NY	ERIE	Bflo-Ell-005
+412014	NY	ERIE	Bflo-Ell-006
+412015	NY	ERIE	Bflo-Ell-007
+412016	NY	ERIE	Bflo-Ell-008
+412017	NY	ERIE	Bflo-Ell-009
+412018	NY	ERIE	Bflo-Ell-011
+412019	NY	ERIE	Bflo-Ell-012
+412020	NY	ERIE	Bflo-Ell-013
+412021	NY	ERIE	Bflo-Ell-014
+412022	NY	ERIE	Bflo-Ell-015
+412023	NY	ERIE	Bflo-Ell-016
+412024	NY	ERIE	Bflo-Ell-017
+412025	NY	ERIE	Bflo-Ell-018
+412026	NY	ERIE	Bflo-Ell-019
+412027	NY	ERIE	Bflo-Ell-020
+412028	NY	ERIE	Bflo-Ell-021
+412029	NY	ERIE	Bflo-Ell-022
+412030	NY	ERIE	Bflo-Ell-023
+412031	NY	ERIE	Bflo-Ell-024
+412032	NY	ERIE	Bflo-Ell-025
+412033	NY	ERIE	Bflo-Ell-026
+412034	NY	ERIE	Bflo-Ell-027
+412035	NY	ERIE	Bflo-Ell-028
+412036	NY	ERIE	Bflo-Ell-029
+412037	NY	ERIE	Bflo-Ell-030
+412038	NY	ERIE	Bflo-Ell-031
+412039	NY	ERIE	Bflo-Ell-032
+412040	NY	ERIE	Bflo-Ell-033
+412041	NY	ERIE	Bflo-Ell-034
+412042	NY	ERIE	Bflo-Ell-035
+412043	NY	ERIE	Bflo-Ell-036
+412044	NY	ERIE	Bflo-Fil-001
+412045	NY	ERIE	Bflo-Fil-002
+412046	NY	ERIE	Bflo-Fil-003
+412047	NY	ERIE	Bflo-Fil-004
+412048	NY	ERIE	Bflo-Fil-005
+412049	NY	ERIE	Bflo-Fil-006
+412050	NY	ERIE	Bflo-Fil-007
+412051	NY	ERIE	Bflo-Fil-008
+412052	NY	ERIE	Bflo-Fil-009
+412053	NY	ERIE	Bflo-Fil-010
+412054	NY	ERIE	Bflo-Fil-011
+412055	NY	ERIE	Bflo-Fil-012
+412056	NY	ERIE	Bflo-Fil-013
+412057	NY	ERIE	Bflo-Fil-014
+412058	NY	ERIE	Bflo-Fil-015
+412059	NY	ERIE	Bflo-Fil-016
+412060	NY	ERIE	Bflo-Fil-017
+412061	NY	ERIE	Bflo-Fil-018
+412062	NY	ERIE	Bflo-Fil-019
+412063	NY	ERIE	Bflo-Fil-020
+412064	NY	ERIE	Bflo-Fil-021
+412065	NY	ERIE	Bflo-Fil-022
+412066	NY	ERIE	Bflo-Fil-023
+412067	NY	ERIE	Bflo-Fil-024
+412068	NY	ERIE	Bflo-Fil-025
+412069	NY	ERIE	Bflo-Fil-026
+412070	NY	ERIE	Bflo-Fil-027
+412071	NY	ERIE	Bflo-Fil-028
+412072	NY	ERIE	Bflo-Fil-029
+412073	NY	ERIE	Bflo-Fil-030
+412074	NY	ERIE	Bflo-Fil-031
+412075	NY	ERIE	Bflo-Fil-032
+412076	NY	ERIE	Bflo-Fil-033
+412077	NY	ERIE	Bflo-Fil-034
+412078	NY	ERIE	Bflo-Fil-035
+412079	NY	ERIE	Bflo-Lov-001
+412080	NY	ERIE	Bflo-Lov-002
+412081	NY	ERIE	Bflo-Lov-003
+412082	NY	ERIE	Bflo-Lov-004
+412083	NY	ERIE	Bflo-Lov-005
+412084	NY	ERIE	Bflo-Lov-006
+412085	NY	ERIE	Bflo-Lov-007
+412086	NY	ERIE	Bflo-Lov-008
+412087	NY	ERIE	Bflo-Lov-009
+412088	NY	ERIE	Bflo-Lov-010
+412089	NY	ERIE	Bflo-Lov-011
+412090	NY	ERIE	Bflo-Lov-012
+412091	NY	ERIE	Bflo-Lov-013
+412092	NY	ERIE	Bflo-Lov-014
+412093	NY	ERIE	Bflo-Lov-015
+412094	NY	ERIE	Bflo-Lov-016
+412095	NY	ERIE	Bflo-Lov-017
+412096	NY	ERIE	Bflo-Lov-018
+412097	NY	ERIE	Bflo-Lov-019
+412098	NY	ERIE	Bflo-Lov-020
+412099	NY	ERIE	Bflo-Lov-021
+412100	NY	ERIE	Bflo-Lov-022
+412101	NY	ERIE	Bflo-Lov-023
+412102	NY	ERIE	Bflo-Lov-024
+412103	NY	ERIE	Bflo-Lov-025
+412104	NY	ERIE	Bflo-Lov-026
+412105	NY	ERIE	Bflo-Lov-027
+412106	NY	ERIE	Bflo-Lov-028
+412107	NY	ERIE	Bflo-Lov-029
+412108	NY	ERIE	Bflo-Lov-030
+412109	NY	ERIE	Bflo-Lov-031
+412110	NY	ERIE	Bflo-Mas-001
+412111	NY	ERIE	Bflo-Mas-002
+412112	NY	ERIE	Bflo-Mas-003
+412113	NY	ERIE	Bflo-Mas-004
+412114	NY	ERIE	Bflo-Mas-005
+412115	NY	ERIE	Bflo-Mas-006
+412116	NY	ERIE	Bflo-Mas-007
+412117	NY	ERIE	Bflo-Mas-008
+412118	NY	ERIE	Bflo-Mas-009
+412119	NY	ERIE	Bflo-Mas-010
+412120	NY	ERIE	Bflo-Mas-011
+412121	NY	ERIE	Bflo-Mas-012
+412122	NY	ERIE	Bflo-Mas-013
+412123	NY	ERIE	Bflo-Mas-014
+412124	NY	ERIE	Bflo-Mas-015
+412125	NY	ERIE	Bflo-Mas-016
+412126	NY	ERIE	Bflo-Mas-017
+412127	NY	ERIE	Bflo-Mas-018
+412128	NY	ERIE	Bflo-Mas-019
+412129	NY	ERIE	Bflo-Mas-020
+412130	NY	ERIE	Bflo-Mas-021
+412131	NY	ERIE	Bflo-Mas-022
+412132	NY	ERIE	Bflo-Mas-023
+412133	NY	ERIE	Bflo-Mas-024
+412134	NY	ERIE	Bflo-Mas-025
+412135	NY	ERIE	Bflo-Mas-026
+412136	NY	ERIE	Bflo-Mas-027
+412137	NY	ERIE	Bflo-Mas-028
+412138	NY	ERIE	Bflo-Mas-029
+412139	NY	ERIE	Bflo-Mas-030
+412140	NY	ERIE	Bflo-Mas-031
+412141	NY	ERIE	Bflo-Mas-032
+412142	NY	ERIE	Bflo-Mas-033
+412143	NY	ERIE	Bflo-Mas-034
+412144	NY	ERIE	Bflo-Mas-035
+412145	NY	ERIE	Bflo-Mas-036
+412146	NY	ERIE	Bflo-Mas-037
+412147	NY	ERIE	Bflo-Mas-038
+412148	NY	ERIE	Bflo-Mas-039
+412149	NY	ERIE	Bflo-Mas-040
+412150	NY	ERIE	Bflo-Mas-041
+412151	NY	ERIE	Bflo-Nia-001
+412152	NY	ERIE	Bflo-Nia-002
+412153	NY	ERIE	Bflo-Nia-003
+412154	NY	ERIE	Bflo-Nia-004
+412155	NY	ERIE	Bflo-Nia-005
+412156	NY	ERIE	Bflo-Nia-006
+412157	NY	ERIE	Bflo-Nia-007
+412158	NY	ERIE	Bflo-Nia-008
+412159	NY	ERIE	Bflo-Nia-009
+412160	NY	ERIE	Bflo-Nia-010
+412161	NY	ERIE	Bflo-Nia-011
+412162	NY	ERIE	Bflo-Nia-012
+412163	NY	ERIE	Bflo-Nia-013
+412164	NY	ERIE	Bflo-Nia-014
+412165	NY	ERIE	Bflo-Nia-015
+412166	NY	ERIE	Bflo-Nia-016
+412167	NY	ERIE	Bflo-Nia-017
+412168	NY	ERIE	Bflo-Nia-018
+412169	NY	ERIE	Bflo-Nia-019
+412170	NY	ERIE	Bflo-Nia-020
+412171	NY	ERIE	Bflo-Nia-021
+412172	NY	ERIE	Bflo-Nia-022
+412173	NY	ERIE	Bflo-Nia-023
+412174	NY	ERIE	Bflo-Nia-024
+412175	NY	ERIE	Bflo-Nia-025
+412176	NY	ERIE	Bflo-Nia-026
+412177	NY	ERIE	Bflo-Nia-027
+412178	NY	ERIE	Bflo-Nia-028
+412179	NY	ERIE	Bflo-Nor-001
+412180	NY	ERIE	Bflo-Nor-002
+412181	NY	ERIE	Bflo-Nor-003
+412182	NY	ERIE	Bflo-Nor-004
+412183	NY	ERIE	Bflo-Nor-005
+412184	NY	ERIE	Bflo-Nor-006
+412185	NY	ERIE	Bflo-Nor-007
+412186	NY	ERIE	Bflo-Nor-008
+412187	NY	ERIE	Bflo-Nor-009
+412188	NY	ERIE	Bflo-Nor-010
+412189	NY	ERIE	Bflo-Nor-011
+412190	NY	ERIE	Bflo-Nor-012
+412191	NY	ERIE	Bflo-Nor-013
+412192	NY	ERIE	Bflo-Nor-014
+412193	NY	ERIE	Bflo-Nor-015
+412194	NY	ERIE	Bflo-Nor-016
+412195	NY	ERIE	Bflo-Nor-017
+412196	NY	ERIE	Bflo-Nor-018
+412197	NY	ERIE	Bflo-Nor-019
+412198	NY	ERIE	Bflo-Nor-020
+412199	NY	ERIE	Bflo-Nor-021
+412200	NY	ERIE	Bflo-Nor-022
+412201	NY	ERIE	Bflo-Nor-023
+412202	NY	ERIE	Bflo-Nor-024
+412203	NY	ERIE	Bflo-Nor-025
+412204	NY	ERIE	Bflo-Nor-026
+412205	NY	ERIE	Bflo-Nor-027
+412206	NY	ERIE	Bflo-Sou-001
+412207	NY	ERIE	Bflo-Sou-002
+412208	NY	ERIE	Bflo-Sou-003
+412209	NY	ERIE	Bflo-Sou-004
+412210	NY	ERIE	Bflo-Sou-005
+412211	NY	ERIE	Bflo-Sou-006
+412212	NY	ERIE	Bflo-Sou-007
+412213	NY	ERIE	Bflo-Sou-008
+412214	NY	ERIE	Bflo-Sou-009
+412215	NY	ERIE	Bflo-Sou-010
+412216	NY	ERIE	Bflo-Sou-011
+412217	NY	ERIE	Bflo-Sou-012
+412218	NY	ERIE	Bflo-Sou-013
+412219	NY	ERIE	Bflo-Sou-014
+412220	NY	ERIE	Bflo-Sou-015
+412221	NY	ERIE	Bflo-Sou-016
+412222	NY	ERIE	Bflo-Sou-017
+412223	NY	ERIE	Bflo-Sou-018
+412224	NY	ERIE	Bflo-Sou-019
+412225	NY	ERIE	Bflo-Sou-020
+412226	NY	ERIE	Bflo-Sou-021
+412227	NY	ERIE	Bflo-Sou-022
+412228	NY	ERIE	Bflo-Sou-023
+412229	NY	ERIE	Bflo-Sou-024
+412230	NY	ERIE	Bflo-Sou-025
+412231	NY	ERIE	Bflo-Sou-026
+412232	NY	ERIE	Bflo-Sou-027
+412233	NY	ERIE	Bflo-Sou-028
+412234	NY	ERIE	Bflo-Sou-029
+412235	NY	ERIE	Bflo-Sou-030
+412236	NY	ERIE	Bflo-Uni-001
+412237	NY	ERIE	Bflo-Uni-002
+412238	NY	ERIE	Bflo-Uni-003
+412239	NY	ERIE	Bflo-Uni-004
+412240	NY	ERIE	Bflo-Uni-005
+412241	NY	ERIE	Bflo-Uni-006
+412242	NY	ERIE	Bflo-Uni-008
+412243	NY	ERIE	Bflo-Uni-009
+412244	NY	ERIE	Bflo-Uni-010
+412245	NY	ERIE	Bflo-Uni-011
+412246	NY	ERIE	Bflo-Uni-012
+412247	NY	ERIE	Bflo-Uni-013
+412248	NY	ERIE	Bflo-Uni-014
+412249	NY	ERIE	Bflo-Uni-015
+412250	NY	ERIE	Bflo-Uni-016
+412251	NY	ERIE	Bflo-Uni-017
+412252	NY	ERIE	Bflo-Uni-018
+412253	NY	ERIE	Bflo-Uni-019
+412254	NY	ERIE	Bflo-Uni-020
+412255	NY	ERIE	Bflo-Uni-021
+412256	NY	ERIE	Bflo-Uni-022
+412257	NY	ERIE	Bflo-Uni-023
+412258	NY	ERIE	Bflo-Uni-024
+412259	NY	ERIE	Bflo-Uni-025
+412260	NY	ERIE	Bflo-Uni-026
+412261	NY	ERIE	Bflo-Uni-027
+412262	NY	ERIE	Lack-01-001
+412263	NY	ERIE	Lack-01-002
+412264	NY	ERIE	Lack-01-003
+412265	NY	ERIE	Lack-01-004
+412266	NY	ERIE	Lack-01-005
+412267	NY	ERIE	Lack-02-001
+412268	NY	ERIE	Lack-02-002
+412269	NY	ERIE	Lack-02-003
+412270	NY	ERIE	Lack-02-004
+412271	NY	ERIE	Lack-02-005
+412272	NY	ERIE	Lack-03-001
+412273	NY	ERIE	Lack-03-002
+412274	NY	ERIE	Lack-03-003
+412275	NY	ERIE	Lack-03-004
+412276	NY	ERIE	Lack-03-005
+412277	NY	ERIE	Lack-04-001
+412278	NY	ERIE	Lack-04-002
+412279	NY	ERIE	Lack-04-003
+412280	NY	ERIE	Lack-04-004
+412281	NY	ERIE	Lack-04-005
+412282	NY	ERIE	Cton-01-001
+412283	NY	ERIE	Cton-01-002
+412284	NY	ERIE	Cton-01-003
+412285	NY	ERIE	Cton-02-001
+412286	NY	ERIE	Cton-02-002
+412287	NY	ERIE	Cton-02-003
+412288	NY	ERIE	Cton-03-001
+412289	NY	ERIE	Cton-03-002
+412290	NY	ERIE	Cton-03-003
+412291	NY	ERIE	Cton-04-001
+412292	NY	ERIE	Cton-04-002
+412293	NY	ERIE	Cton-04-003
+412294	NY	ERIE	Aldn-001
+412295	NY	ERIE	Aldn-002
+412296	NY	ERIE	Aldn-003
+412297	NY	ERIE	Aldn-004
+412298	NY	ERIE	Aldn-005
+412299	NY	ERIE	Aldn-006
+412300	NY	ERIE	Aldn-007
+412301	NY	ERIE	Amhs-001
+412302	NY	ERIE	Amhs-002
+412303	NY	ERIE	Amhs-003
+412304	NY	ERIE	Amhs-004
+412305	NY	ERIE	Amhs-005
+412306	NY	ERIE	Amhs-006
+412307	NY	ERIE	Amhs-007
+412308	NY	ERIE	Amhs-008
+412309	NY	ERIE	Amhs-009
+412310	NY	ERIE	Amhs-010
+412311	NY	ERIE	Amhs-011
+412312	NY	ERIE	Amhs-012
+412313	NY	ERIE	Amhs-013
+412314	NY	ERIE	Amhs-014
+412315	NY	ERIE	Amhs-015
+412316	NY	ERIE	Amhs-016
+412317	NY	ERIE	Amhs-017
+412318	NY	ERIE	Amhs-018
+412319	NY	ERIE	Amhs-019
+412320	NY	ERIE	Amhs-020
+412321	NY	ERIE	Amhs-021
+412322	NY	ERIE	Amhs-022
+412323	NY	ERIE	Amhs-023
+412324	NY	ERIE	Amhs-024
+412325	NY	ERIE	Amhs-025
+412326	NY	ERIE	Amhs-026
+412327	NY	ERIE	Amhs-027
+412328	NY	ERIE	Amhs-028
+412329	NY	ERIE	Amhs-029
+412330	NY	ERIE	Amhs-030
+412331	NY	ERIE	Amhs-031
+412332	NY	ERIE	Amhs-032
+412333	NY	ERIE	Amhs-033
+412334	NY	ERIE	Amhs-034
+412335	NY	ERIE	Amhs-035
+412336	NY	ERIE	Amhs-036
+412337	NY	ERIE	Amhs-037
+412338	NY	ERIE	Amhs-038
+412339	NY	ERIE	Amhs-039
+412340	NY	ERIE	Amhs-040
+412341	NY	ERIE	Amhs-041
+412342	NY	ERIE	Amhs-042
+412343	NY	ERIE	Amhs-043
+412344	NY	ERIE	Amhs-044
+412345	NY	ERIE	Amhs-045
+412346	NY	ERIE	Amhs-046
+412347	NY	ERIE	Amhs-047
+412348	NY	ERIE	Amhs-048
+412349	NY	ERIE	Amhs-049
+412350	NY	ERIE	Amhs-050
+412351	NY	ERIE	Amhs-051
+412352	NY	ERIE	Amhs-052
+412353	NY	ERIE	Amhs-053
+412354	NY	ERIE	Amhs-054
+412355	NY	ERIE	Amhs-055
+412356	NY	ERIE	Amhs-056
+412357	NY	ERIE	Amhs-057
+412358	NY	ERIE	Amhs-058
+412359	NY	ERIE	Amhs-059
+412360	NY	ERIE	Amhs-060
+412361	NY	ERIE	Amhs-061
+412362	NY	ERIE	Amhs-062
+412363	NY	ERIE	Amhs-063
+412364	NY	ERIE	Amhs-064
+412365	NY	ERIE	Amhs-065
+412366	NY	ERIE	Amhs-066
+412367	NY	ERIE	Amhs-067
+412368	NY	ERIE	Amhs-068
+412369	NY	ERIE	Amhs-069
+412370	NY	ERIE	Amhs-070
+412371	NY	ERIE	Amhs-071
+412372	NY	ERIE	Amhs-072
+412373	NY	ERIE	Amhs-073
+412374	NY	ERIE	Amhs-074
+412375	NY	ERIE	Amhs-075
+412376	NY	ERIE	Amhs-076
+412377	NY	ERIE	Amhs-077
+412378	NY	ERIE	Amhs-078
+412379	NY	ERIE	Amhs-079
+412380	NY	ERIE	Aura-001
+412381	NY	ERIE	Aura-002
+412382	NY	ERIE	Aura-003
+412383	NY	ERIE	Aura-004
+412384	NY	ERIE	Aura-005
+412385	NY	ERIE	Aura-006
+412386	NY	ERIE	Aura-007
+412387	NY	ERIE	Aura-008
+412388	NY	ERIE	Aura-009
+412389	NY	ERIE	Aura-010
+412390	NY	ERIE	Bost-001
+412391	NY	ERIE	Bost-002
+412392	NY	ERIE	Bost-003
+412393	NY	ERIE	Bost-004
+412394	NY	ERIE	Bost-005
+412395	NY	ERIE	Bost-006
+412396	NY	ERIE	Brnt-001
+412397	NY	ERIE	Brnt-002
+412398	NY	ERIE	Brnt-003
+412399	NY	ERIE	Brnt-004
+412400	NY	ERIE	Cktw-001
+412401	NY	ERIE	Cktw-002
+412402	NY	ERIE	Cktw-003
+412403	NY	ERIE	Cktw-004
+412404	NY	ERIE	Cktw-005
+412405	NY	ERIE	Cktw-006
+412406	NY	ERIE	Cktw-007
+412407	NY	ERIE	Cktw-008
+412408	NY	ERIE	Cktw-009
+412409	NY	ERIE	Cktw-010
+412410	NY	ERIE	Cktw-011
+412411	NY	ERIE	Cktw-012
+412412	NY	ERIE	Cktw-013
+412413	NY	ERIE	Cktw-014
+412414	NY	ERIE	Cktw-015
+412415	NY	ERIE	Cktw-016
+412416	NY	ERIE	Cktw-017
+412417	NY	ERIE	Cktw-018
+412418	NY	ERIE	Cktw-019
+412419	NY	ERIE	Cktw-020
+412420	NY	ERIE	Cktw-021
+412421	NY	ERIE	Cktw-022
+412422	NY	ERIE	Cktw-023
+412423	NY	ERIE	Cktw-024
+412424	NY	ERIE	Cktw-025
+412425	NY	ERIE	Cktw-026
+412426	NY	ERIE	Cktw-027
+412427	NY	ERIE	Cktw-028
+412428	NY	ERIE	Cktw-029
+412429	NY	ERIE	Cktw-030
+412430	NY	ERIE	Cktw-031
+412431	NY	ERIE	Cktw-032
+412432	NY	ERIE	Cktw-033
+412433	NY	ERIE	Cktw-034
+412434	NY	ERIE	Cktw-035
+412435	NY	ERIE	Cktw-036
+412436	NY	ERIE	Cktw-037
+412437	NY	ERIE	Cktw-038
+412438	NY	ERIE	Cktw-039
+412439	NY	ERIE	Cktw-040
+412440	NY	ERIE	Cktw-041
+412441	NY	ERIE	Cktw-042
+412442	NY	ERIE	Cktw-043
+412443	NY	ERIE	Cktw-044
+412444	NY	ERIE	Cktw-045
+412445	NY	ERIE	Cktw-046
+412446	NY	ERIE	Cktw-047
+412447	NY	ERIE	Cktw-048
+412448	NY	ERIE	Cktw-049
+412449	NY	ERIE	Cktw-050
+412450	NY	ERIE	Cktw-051
+412451	NY	ERIE	Cktw-052
+412452	NY	ERIE	Cktw-053
+412453	NY	ERIE	Cktw-054
+412454	NY	ERIE	Cktw-055
+412455	NY	ERIE	Cktw-056
+412456	NY	ERIE	Cktw-057
+412457	NY	ERIE	Cktw-058
+412458	NY	ERIE	Cktw-059
+412459	NY	ERIE	Cktw-060
+412460	NY	ERIE	Cktw-061
+412461	NY	ERIE	Cktw-062
+412462	NY	ERIE	Cktw-063
+412463	NY	ERIE	Cktw-064
+412464	NY	ERIE	Cktw-065
+412465	NY	ERIE	Cktw-066
+412466	NY	ERIE	Cktw-067
+412467	NY	ERIE	Cktw-068
+412468	NY	ERIE	Cktw-069
+412469	NY	ERIE	Cktw-070
+412470	NY	ERIE	Cktw-071
+412471	NY	ERIE	Cktw-072
+412472	NY	ERIE	Cktw-073
+412473	NY	ERIE	Cktw-074
+412474	NY	ERIE	Cktw-075
+412475	NY	ERIE	Cktw-076
+412476	NY	ERIE	Cktw-077
+412477	NY	ERIE	Cktw-078
+412478	NY	ERIE	Cktw-079
+412479	NY	ERIE	Cktw-080
+412480	NY	ERIE	Cktw-081
+412481	NY	ERIE	Cktw-082
+412482	NY	ERIE	Cktw-083
+412483	NY	ERIE	Cktw-084
+412484	NY	ERIE	Cktw-085
+412485	NY	ERIE	Cktw-086
+412486	NY	ERIE	Cktw-087
+412487	NY	ERIE	Cktw-088
+412488	NY	ERIE	Cktw-089
+412489	NY	ERIE	Cktw-090
+412490	NY	ERIE	Cktw-091
+412491	NY	ERIE	Cktw-092
+412492	NY	ERIE	Cktw-093
+412493	NY	ERIE	Cktw-094
+412494	NY	ERIE	Cktw-095
+412495	NY	ERIE	Clar-001
+412496	NY	ERIE	Clar-002
+412497	NY	ERIE	Clar-003
+412498	NY	ERIE	Clar-004
+412499	NY	ERIE	Clar-005
+412500	NY	ERIE	Clar-006
+412501	NY	ERIE	Clar-007
+412502	NY	ERIE	Clar-008
+412503	NY	ERIE	Clar-009
+412504	NY	ERIE	Clar-010
+412505	NY	ERIE	Clar-011
+412506	NY	ERIE	Clar-012
+412507	NY	ERIE	Clar-013
+412508	NY	ERIE	Clar-014
+412509	NY	ERIE	Clar-015
+412510	NY	ERIE	Clar-016
+412511	NY	ERIE	Clar-017
+412512	NY	ERIE	Clar-018
+412513	NY	ERIE	Clar-019
+412514	NY	ERIE	Clar-020
+412515	NY	ERIE	Clar-021
+412516	NY	ERIE	Clar-022
+412517	NY	ERIE	Cldn-001
+412518	NY	ERIE	Cldn-002
+412519	NY	ERIE	Cldn-003
+412520	NY	ERIE	Coll-001
+412521	NY	ERIE	Coll-002
+412522	NY	ERIE	Coll-003
+412523	NY	ERIE	Coll-004
+412524	NY	ERIE	Conc-001
+412525	NY	ERIE	Conc-002
+412526	NY	ERIE	Conc-003
+412527	NY	ERIE	Conc-004
+412528	NY	ERIE	Conc-005
+412529	NY	ERIE	Conc-006
+412530	NY	ERIE	Conc-007
+412531	NY	ERIE	Conc-008
+412532	NY	ERIE	Eden-001
+412533	NY	ERIE	Eden-002
+412534	NY	ERIE	Eden-003
+412535	NY	ERIE	Eden-004
+412536	NY	ERIE	Eden-005
+412537	NY	ERIE	Eden-006
+412538	NY	ERIE	Elma-001
+412539	NY	ERIE	Elma-002
+412540	NY	ERIE	Elma-003
+412541	NY	ERIE	Elma-004
+412542	NY	ERIE	Elma-005
+412543	NY	ERIE	Elma-006
+412544	NY	ERIE	Elma-007
+412545	NY	ERIE	Elma-008
+412546	NY	ERIE	Evns-001
+412547	NY	ERIE	Evns-002
+412548	NY	ERIE	Evns-003
+412549	NY	ERIE	Evns-004
+412550	NY	ERIE	Evns-005
+412551	NY	ERIE	Evns-006
+412552	NY	ERIE	Evns-007
+412553	NY	ERIE	Evns-008
+412554	NY	ERIE	Evns-009
+412555	NY	ERIE	Evns-010
+412556	NY	ERIE	Evns-011
+412557	NY	ERIE	Evns-012
+412558	NY	ERIE	Evns-013
+412559	NY	ERIE	Evns-014
+412560	NY	ERIE	Evns-015
+412561	NY	ERIE	Evns-016
+412562	NY	ERIE	Evns-017
+412563	NY	ERIE	Gris-001
+412564	NY	ERIE	Gris-002
+412565	NY	ERIE	Gris-003
+412566	NY	ERIE	Gris-004
+412567	NY	ERIE	Gris-005
+412568	NY	ERIE	Gris-006
+412569	NY	ERIE	Gris-007
+412570	NY	ERIE	Gris-008
+412571	NY	ERIE	Gris-009
+412572	NY	ERIE	Gris-010
+412573	NY	ERIE	Gris-011
+412574	NY	ERIE	Gris-012
+412575	NY	ERIE	Gris-013
+412576	NY	ERIE	Hamb-001
+412577	NY	ERIE	Hamb-002
+412578	NY	ERIE	Hamb-003
+412579	NY	ERIE	Hamb-004
+412580	NY	ERIE	Hamb-005
+412581	NY	ERIE	Hamb-006
+412582	NY	ERIE	Hamb-007
+412583	NY	ERIE	Hamb-008
+412584	NY	ERIE	Hamb-009
+412585	NY	ERIE	Hamb-010
+412586	NY	ERIE	Hamb-011
+412587	NY	ERIE	Hamb-012
+412588	NY	ERIE	Hamb-013
+412589	NY	ERIE	Hamb-014
+412590	NY	ERIE	Hamb-015
+412591	NY	ERIE	Hamb-016
+412592	NY	ERIE	Hamb-017
+412593	NY	ERIE	Hamb-018
+412594	NY	ERIE	Hamb-019
+412595	NY	ERIE	Hamb-020
+412596	NY	ERIE	Hamb-021
+412597	NY	ERIE	Hamb-022
+412598	NY	ERIE	Hamb-023
+412599	NY	ERIE	Hamb-024
+412600	NY	ERIE	Hamb-025
+412601	NY	ERIE	Hamb-026
+412602	NY	ERIE	Hamb-027
+412603	NY	ERIE	Hamb-028
+412604	NY	ERIE	Hamb-029
+412605	NY	ERIE	Hamb-030
+412606	NY	ERIE	Hamb-031
+412607	NY	ERIE	Hamb-032
+412608	NY	ERIE	Hamb-033
+412609	NY	ERIE	Hamb-034
+412610	NY	ERIE	Hamb-035
+412611	NY	ERIE	Hamb-036
+412612	NY	ERIE	Hamb-037
+412613	NY	ERIE	Hamb-038
+412614	NY	ERIE	Hamb-039
+412615	NY	ERIE	Hamb-040
+412616	NY	ERIE	Hamb-041
+412617	NY	ERIE	Holl-001
+412618	NY	ERIE	Holl-002
+412619	NY	ERIE	Holl-003
+412620	NY	ERIE	Lanc-001
+412621	NY	ERIE	Lanc-002
+412622	NY	ERIE	Lanc-003
+412623	NY	ERIE	Lanc-004
+412624	NY	ERIE	Lanc-005
+412625	NY	ERIE	Lanc-006
+412626	NY	ERIE	Lanc-007
+412627	NY	ERIE	Lanc-008
+412628	NY	ERIE	Lanc-009
+412629	NY	ERIE	Lanc-010
+412630	NY	ERIE	Lanc-011
+412631	NY	ERIE	Lanc-012
+412632	NY	ERIE	Lanc-013
+412633	NY	ERIE	Lanc-014
+412634	NY	ERIE	Lanc-015
+412635	NY	ERIE	Lanc-016
+412636	NY	ERIE	Lanc-017
+412637	NY	ERIE	Lanc-018
+412638	NY	ERIE	Lanc-019
+412639	NY	ERIE	Lanc-020
+412640	NY	ERIE	Lanc-021
+412641	NY	ERIE	Lanc-022
+412642	NY	ERIE	Lanc-023
+412643	NY	ERIE	Lanc-024
+412644	NY	ERIE	Lanc-025
+412645	NY	ERIE	Lanc-026
+412646	NY	ERIE	Lanc-027
+412647	NY	ERIE	Lanc-028
+412648	NY	ERIE	Lanc-029
+412649	NY	ERIE	Lanc-030
+412650	NY	ERIE	Lanc-031
+412651	NY	ERIE	Lanc-032
+412652	NY	ERIE	Lanc-033
+412653	NY	ERIE	Lanc-034
+412654	NY	ERIE	Marl-001
+412655	NY	ERIE	Marl-002
+412656	NY	ERIE	Marl-003
+412657	NY	ERIE	Marl-004
+412658	NY	ERIE	News-001
+412659	NY	ERIE	News-002
+412660	NY	ERIE	News-003
+412661	NY	ERIE	News-004
+412662	NY	ERIE	News-005
+412663	NY	ERIE	News-006
+412664	NY	ERIE	Ncol-001
+412665	NY	ERIE	Ncol-002
+412666	NY	ERIE	Ncol-003
+412667	NY	ERIE	Orpk-001
+412668	NY	ERIE	Orpk-002
+412669	NY	ERIE	Orpk-003
+412670	NY	ERIE	Orpk-004
+412671	NY	ERIE	Orpk-005
+412672	NY	ERIE	Orpk-006
+412673	NY	ERIE	Orpk-007
+412674	NY	ERIE	Orpk-008
+412675	NY	ERIE	Orpk-009
+412676	NY	ERIE	Orpk-010
+412677	NY	ERIE	Orpk-011
+412678	NY	ERIE	Orpk-012
+412679	NY	ERIE	Orpk-013
+412680	NY	ERIE	Orpk-014
+412681	NY	ERIE	Orpk-015
+412682	NY	ERIE	Orpk-016
+412683	NY	ERIE	Orpk-017
+412684	NY	ERIE	Orpk-018
+412685	NY	ERIE	Orpk-019
+412686	NY	ERIE	Orpk-020
+412687	NY	ERIE	Orpk-021
+412688	NY	ERIE	Sard-001
+412689	NY	ERIE	Sard-002
+412690	NY	ERIE	Tton-001
+412691	NY	ERIE	Tton-002
+412692	NY	ERIE	Tton-003
+412693	NY	ERIE	Tton-004
+412694	NY	ERIE	Tton-005
+412695	NY	ERIE	Tton-006
+412696	NY	ERIE	Tton-007
+412697	NY	ERIE	Tton-008
+412698	NY	ERIE	Tton-009
+412699	NY	ERIE	Tton-010
+412700	NY	ERIE	Tton-011
+412701	NY	ERIE	Tton-012
+412702	NY	ERIE	Tton-013
+412703	NY	ERIE	Tton-014
+412704	NY	ERIE	Tton-015
+412705	NY	ERIE	Tton-016
+412706	NY	ERIE	Tton-017
+412707	NY	ERIE	Tton-018
+412708	NY	ERIE	Tton-019
+412709	NY	ERIE	Tton-020
+412710	NY	ERIE	Tton-021
+412711	NY	ERIE	Tton-022
+412712	NY	ERIE	Tton-023
+412713	NY	ERIE	Tton-024
+412714	NY	ERIE	Tton-025
+412715	NY	ERIE	Tton-026
+412716	NY	ERIE	Tton-027
+412717	NY	ERIE	Tton-028
+412718	NY	ERIE	Tton-029
+412719	NY	ERIE	Tton-030
+412720	NY	ERIE	Tton-031
+412721	NY	ERIE	Tton-032
+412722	NY	ERIE	Tton-033
+412723	NY	ERIE	Tton-034
+412724	NY	ERIE	Tton-035
+412725	NY	ERIE	Tton-036
+412726	NY	ERIE	Tton-037
+412727	NY	ERIE	Tton-038
+412728	NY	ERIE	Tton-039
+412729	NY	ERIE	Tton-040
+412730	NY	ERIE	Tton-041
+412731	NY	ERIE	Tton-042
+412732	NY	ERIE	Tton-043
+412733	NY	ERIE	Tton-044
+412734	NY	ERIE	Tton-045
+412735	NY	ERIE	Tton-046
+412736	NY	ERIE	Tton-047
+412737	NY	ERIE	Tton-048
+412738	NY	ERIE	Tton-049
+412739	NY	ERIE	Tton-050
+412740	NY	ERIE	Tton-051
+412741	NY	ERIE	Tton-052
+412742	NY	ERIE	Tton-053
+412743	NY	ERIE	Tton-054
+412744	NY	ERIE	Tton-055
+412745	NY	ERIE	Tton-056
+412746	NY	ERIE	Tton-057
+412747	NY	ERIE	Tton-058
+412748	NY	ERIE	Tton-059
+412749	NY	ERIE	Tton-060
+412750	NY	ERIE	Tton-061
+412751	NY	ERIE	Tton-062
+412752	NY	ERIE	Tton-063
+412753	NY	ERIE	Tton-064
+412754	NY	ERIE	Tton-065
+412755	NY	ERIE	Tton-066
+412756	NY	ERIE	Tton-067
+412757	NY	ERIE	Tton-068
+412758	NY	ERIE	Tton-069
+412759	NY	ERIE	Tton-070
+412760	NY	ERIE	Tton-071
+412761	NY	ERIE	Tton-072
+412762	NY	ERIE	Tton-073
+412763	NY	ERIE	Tton-074
+412764	NY	ERIE	Tton-075
+412765	NY	ERIE	Wals-001
+412766	NY	ERIE	Wals-002
+412767	NY	ERIE	Wsen-001
+412768	NY	ERIE	Wsen-002
+412769	NY	ERIE	Wsen-003
+412770	NY	ERIE	Wsen-004
+412771	NY	ERIE	Wsen-005
+412772	NY	ERIE	Wsen-006
+412773	NY	ERIE	Wsen-007
+412774	NY	ERIE	Wsen-008
+412775	NY	ERIE	Wsen-009
+412776	NY	ERIE	Wsen-010
+412777	NY	ERIE	Wsen-011
+412778	NY	ERIE	Wsen-012
+412779	NY	ERIE	Wsen-013
+412780	NY	ERIE	Wsen-014
+412781	NY	ERIE	Wsen-015
+412782	NY	ERIE	Wsen-016
+412783	NY	ERIE	Wsen-017
+412784	NY	ERIE	Wsen-018
+412785	NY	ERIE	Wsen-019
+412786	NY	ERIE	Wsen-020
+412787	NY	ERIE	Wsen-021
+412788	NY	ERIE	Wsen-022
+412789	NY	ERIE	Wsen-023
+412790	NY	ERIE	Wsen-024
+412791	NY	ERIE	Wsen-025
+412792	NY	ERIE	Wsen-026
+412793	NY	ERIE	Wsen-027
+412794	NY	ERIE	Wsen-028
+412795	NY	ERIE	Wsen-029
+412796	NY	ERIE	Wsen-030
+412797	NY	ERIE	Wsen-031
+412798	NY	ERIE	Wsen-032
+412799	NY	ERIE	Wsen-033
+412800	NY	ERIE	Wsen-034
+412801	NY	ERIE	Wsen-035
+412802	NY	ERIE	Wsen-036
+412803	NY	ERIE	Wsen-037
+412804	NY	ERIE	Wsen-038
+412805	NY	ERIE	Wsen-039
+412806	NY	ERIE	Wsen-040
+412807	NY	ERIE	Wsen-041
+412808	NY	ESSEX	Chesterfield-01
+412809	NY	ESSEX	Chesterfield-02
+412810	NY	ESSEX	Chesterfield-04
+412811	NY	ESSEX	Crown Point-01
+412812	NY	ESSEX	Crown Point-02
+412813	NY	ESSEX	Crown Point-03
+412814	NY	ESSEX	Essex-01
+412815	NY	ESSEX	Essex-02
+412816	NY	ESSEX	Jay-01
+412817	NY	ESSEX	Jay-02
+412818	NY	ESSEX	Keene-01
+412819	NY	ESSEX	Keene-02
+412820	NY	ESSEX	Moriah-01
+412821	NY	ESSEX	Moriah-02
+412822	NY	ESSEX	Moriah-03
+412823	NY	ESSEX	Moriah-04
+412824	NY	ESSEX	North Elba-01
+412825	NY	ESSEX	North Elba-02
+412826	NY	ESSEX	North Elba-03
+412827	NY	ESSEX	North Elba-04
+412828	NY	ESSEX	North Elba-05
+412829	NY	ESSEX	North Elba-06
+412830	NY	ESSEX	North Elba-07
+412831	NY	ESSEX	Schroon-01
+412832	NY	ESSEX	Schroon-02
+412833	NY	ESSEX	Ticonderoga-01
+412834	NY	ESSEX	Ticonderoga-02
+412835	NY	ESSEX	Ticonderoga-03
+412836	NY	ESSEX	Ticonderoga-04
+412837	NY	ESSEX	Ticonderoga-05
+412838	NY	ESSEX	Ticonderoga-06
+412839	NY	ESSEX	Westport-01
+412840	NY	ESSEX	Westport-02
+412841	NY	ESSEX	Willsboro-01
+412842	NY	ESSEX	Willsboro-02
+412843	NY	FRANKLIN	Tupper Lake-01
+412844	NY	FRANKLIN	Tupper Lake-02
+412845	NY	FRANKLIN	Tupper Lake-03
+412846	NY	FRANKLIN	Tupper Lake-04
+412847	NY	FRANKLIN	Tupper Lake-05
+412848	NY	FRANKLIN	Tupper Lake-06
+412849	NY	FRANKLIN	Bangor-01
+412850	NY	FRANKLIN	Bangor-02
+412851	NY	FRANKLIN	Bellmont-01
+412852	NY	FRANKLIN	Bellmont-02
+412853	NY	FRANKLIN	Bellmont-03
+412854	NY	FRANKLIN	Bombay-01
+412855	NY	FRANKLIN	Bombay-02
+412856	NY	FRANKLIN	Brandon-01
+412857	NY	FRANKLIN	Brighton-01
+412858	NY	FRANKLIN	Burke-01
+412859	NY	FRANKLIN	Chateaugay-01
+412860	NY	FRANKLIN	Chateaugay-02
+412861	NY	FRANKLIN	Constable-01
+412862	NY	FRANKLIN	Constable-02
+412863	NY	FRANKLIN	Duane-01
+412864	NY	FRANKLIN	Ft. Covington-01
+412865	NY	FRANKLIN	Ft. Covington-02
+412866	NY	FRANKLIN	Ft. Covington-03
+412867	NY	FRANKLIN	Franklin-02
+412868	NY	FRANKLIN	Harrietstown-01
+412869	NY	FRANKLIN	Harrietstown-02
+412870	NY	FRANKLIN	Harrietstown-03
+412871	NY	FRANKLIN	Harrietstown-04
+412872	NY	FRANKLIN	Harrietstown-05
+412873	NY	FRANKLIN	Malone-01
+412874	NY	FRANKLIN	Malone-02
+412875	NY	FRANKLIN	Malone-03
+412876	NY	FRANKLIN	Malone-04
+412877	NY	FRANKLIN	Malone-05
+412878	NY	FRANKLIN	Malone-06
+412879	NY	FRANKLIN	Malone-07
+412880	NY	FRANKLIN	Malone-08
+412881	NY	FRANKLIN	Malone-09
+412882	NY	FRANKLIN	Malone-10
+412883	NY	FRANKLIN	Moira-01
+412884	NY	FRANKLIN	Moira-02
+412885	NY	FRANKLIN	Santa Clara-01
+412886	NY	FRANKLIN	Santa Clara-02
+412887	NY	FRANKLIN	Waverly-01
+412888	NY	FRANKLIN	Westville-01
+412889	NY	FULTON	City Of Johnstown-001-01
+412890	NY	FULTON	City Of Johnstown-001-02
+412891	NY	FULTON	City Of Johnstown-002-01
+412892	NY	FULTON	City Of Johnstown-002-02
+412893	NY	FULTON	City Of Johnstown-003-01
+412894	NY	FULTON	City Of Johnstown-003-02
+412895	NY	FULTON	City Of Johnstown-004-01
+412896	NY	FULTON	City Of Johnstown-004-02
+412897	NY	FULTON	Gloversville-001-01
+412898	NY	FULTON	Gloversville-001-02
+412899	NY	FULTON	Gloversville-002-01
+412900	NY	FULTON	Gloversville-002-02
+412901	NY	FULTON	Gloversville-003-01
+412902	NY	FULTON	Gloversville-003-02
+412903	NY	FULTON	Gloversville-004-01
+412904	NY	FULTON	Gloversville-004-02
+412905	NY	FULTON	Gloversville-005-01
+412906	NY	FULTON	Gloversville-005-02
+412907	NY	FULTON	Gloversville-006-01
+412908	NY	FULTON	Gloversville-006-02
+412909	NY	FULTON	Bleecker-01
+412910	NY	FULTON	Broadalbin-01
+412911	NY	FULTON	Broadalbin-02
+412912	NY	FULTON	Broadalbin-03
+412913	NY	FULTON	Broadalbin-04
+412914	NY	FULTON	Caroga-01
+412915	NY	FULTON	Ephratah-01
+412916	NY	FULTON	Johnstown-01
+412917	NY	FULTON	Johnstown-02
+412918	NY	FULTON	Johnstown-03
+412919	NY	FULTON	Johnstown-04
+412920	NY	FULTON	Mayfield-01
+412921	NY	FULTON	Mayfield-02
+412922	NY	FULTON	Mayfield-03
+412923	NY	FULTON	Mayfield-04
+412924	NY	FULTON	Northampton-01
+412925	NY	FULTON	Northampton-02
+412926	NY	FULTON	Northampton-03
+412927	NY	FULTON	Oppenheim-01
+412928	NY	FULTON	Perth-01
+412929	NY	FULTON	Perth-02
+412930	NY	FULTON	Stratford-01
+412931	NY	GENESEE	City Of Batavia-001-01
+412932	NY	GENESEE	City Of Batavia-001-02
+412933	NY	GENESEE	City Of Batavia-001-03
+412934	NY	GENESEE	City Of Batavia-002-01
+412935	NY	GENESEE	City Of Batavia-002-02
+412936	NY	GENESEE	City Of Batavia-002-03
+412937	NY	GENESEE	City Of Batavia-003-01
+412938	NY	GENESEE	City Of Batavia-003-02
+412939	NY	GENESEE	City Of Batavia-004-01
+412940	NY	GENESEE	City Of Batavia-004-02
+412941	NY	GENESEE	City Of Batavia-004-03
+412942	NY	GENESEE	City Of Batavia-005-01
+412943	NY	GENESEE	City Of Batavia-005-02
+412944	NY	GENESEE	City Of Batavia-005-03
+412945	NY	GENESEE	City Of Batavia-006-01
+412946	NY	GENESEE	City Of Batavia-006-02
+412947	NY	GENESEE	Alabama-01
+412948	NY	GENESEE	Alabama-02
+412949	NY	GENESEE	Alexander-01
+412950	NY	GENESEE	Alexander-02
+412951	NY	GENESEE	Batavia-01
+412952	NY	GENESEE	Batavia-02
+412953	NY	GENESEE	Batavia-03
+412954	NY	GENESEE	Batavia-04
+412955	NY	GENESEE	Bergen-01
+412956	NY	GENESEE	Bergen-02
+412957	NY	GENESEE	Bethany-01
+412958	NY	GENESEE	Byron-01
+412959	NY	GENESEE	Byron-02
+412960	NY	GENESEE	Darien-01
+412961	NY	GENESEE	Darien-02
+412962	NY	GENESEE	Elba-01
+412963	NY	GENESEE	Elba-02
+412964	NY	GENESEE	Leroy-01
+412965	NY	GENESEE	Leroy-02
+412966	NY	GENESEE	Leroy-03
+412967	NY	GENESEE	Leroy-04
+412968	NY	GENESEE	Leroy-05
+412969	NY	GENESEE	Leroy-06
+412970	NY	GENESEE	Leroy-07
+412971	NY	GENESEE	Leroy-08
+412972	NY	GENESEE	Oakfield-01
+412973	NY	GENESEE	Oakfield-02
+412974	NY	GENESEE	Oakfield-03
+412975	NY	GENESEE	Pavilion-01
+412976	NY	GENESEE	Pavilion-02
+412977	NY	GENESEE	Pembroke-01
+412978	NY	GENESEE	Pembroke-02
+412979	NY	GENESEE	Pembroke-03
+412980	NY	GENESEE	Pembroke-04
+412981	NY	GENESEE	Stafford-01
+412982	NY	GENESEE	Stafford-02
+412983	NY	GENESEE	Stafford-03
+412984	NY	GREENE	Ashland-01
+412985	NY	GREENE	Athens-01
+412986	NY	GREENE	Athens-02
+412987	NY	GREENE	Athens-03
+412988	NY	GREENE	Athens-04
+412989	NY	GREENE	Cairo-01
+412990	NY	GREENE	Cairo-02
+412991	NY	GREENE	Cairo-03
+412992	NY	GREENE	Cairo-04
+412993	NY	GREENE	Cairo-05
+412994	NY	GREENE	Cairo-06
+412995	NY	GREENE	Cairo-07
+412996	NY	GREENE	Catskill-01
+412997	NY	GREENE	Catskill-02
+412998	NY	GREENE	Catskill-03
+412999	NY	GREENE	Catskill-04
+413000	NY	GREENE	Catskill-05
+413001	NY	GREENE	Catskill-06
+413002	NY	GREENE	Catskill-07
+413003	NY	GREENE	Catskill-08
+413004	NY	GREENE	Catskill-09
+413005	NY	GREENE	Catskill-10
+413006	NY	GREENE	Catskill-11
+413007	NY	GREENE	Catskill-12
+413008	NY	GREENE	Catskill-13
+413009	NY	GREENE	Catskill-14
+413010	NY	GREENE	Coxsackie-01
+413011	NY	GREENE	Coxsackie-02
+413012	NY	GREENE	Coxsackie-03
+413013	NY	GREENE	Coxsackie-04
+413014	NY	GREENE	Coxsackie-05
+413015	NY	GREENE	Coxsackie-06
+413016	NY	GREENE	Durham-01
+413017	NY	GREENE	Durham-02
+413018	NY	GREENE	Greenville-01
+413019	NY	GREENE	Greenville-03
+413020	NY	GREENE	Halcott-01
+413021	NY	GREENE	Hunter-01
+413022	NY	GREENE	Hunter-02
+413023	NY	GREENE	Hunter-03
+413024	NY	GREENE	Hunter-04
+413025	NY	GREENE	Jewett-01
+413026	NY	GREENE	Lexington-01
+413027	NY	GREENE	Lexington-02
+413028	NY	GREENE	New Baltimore-01
+413029	NY	GREENE	New Baltimore-02
+413030	NY	GREENE	New Baltimore-03
+413031	NY	GREENE	New Baltimore-04
+413032	NY	GREENE	Prattsville-01
+413033	NY	GREENE	Windham-01
+413034	NY	GREENE	Windham-02
+413035	NY	HAMILTON	Arietta-01
+413036	NY	HAMILTON	Benson-01
+413037	NY	HAMILTON	Hope-01
+413038	NY	HAMILTON	Indian Lake-01
+413039	NY	HAMILTON	Indian Lake-02
+413040	NY	HAMILTON	Inlet-01
+413041	NY	HAMILTON	Lake Pleasant-01
+413042	NY	HAMILTON	Long Lake-01
+413043	NY	HAMILTON	Long Lake-02
+413044	NY	HAMILTON	Morehouse-01
+413045	NY	HAMILTON	Wells-01
+413046	NY	HERKIMER	Columbia-02
+413047	NY	HERKIMER	Danube-01
+413048	NY	HERKIMER	Fairfield-01
+413049	NY	HERKIMER	Frankfort-01
+413050	NY	HERKIMER	Frankfort-02
+413051	NY	HERKIMER	Frankfort-03
+413052	NY	HERKIMER	Frankfort-04
+413053	NY	HERKIMER	Frankfort-05
+413054	NY	HERKIMER	Frankfort-06
+413055	NY	HERKIMER	German Flatts-01
+413056	NY	HERKIMER	German Flatts-02
+413057	NY	HERKIMER	German Flatts-03
+413058	NY	HERKIMER	German Flatts-04
+413059	NY	HERKIMER	German Flatts-05
+413060	NY	HERKIMER	German Flatts-06
+413061	NY	HERKIMER	German Flatts-07
+413062	NY	HERKIMER	German Flatts-08
+413063	NY	HERKIMER	German Flatts-09
+413064	NY	HERKIMER	German Flatts-10
+413065	NY	HERKIMER	German Flatts-11
+413066	NY	HERKIMER	German Flatts-12
+413067	NY	HERKIMER	German Flatts-13
+413068	NY	HERKIMER	German Flatts-14
+413069	NY	HERKIMER	Herkimer-01
+413070	NY	HERKIMER	Herkimer-02
+413071	NY	HERKIMER	Herkimer-03
+413072	NY	HERKIMER	Herkimer-04
+413073	NY	HERKIMER	Herkimer-05
+413074	NY	HERKIMER	Herkimer-06
+413075	NY	HERKIMER	Herkimer-07
+413076	NY	HERKIMER	Herkimer-08
+413077	NY	HERKIMER	Herkimer-09
+413078	NY	HERKIMER	Litchfield-01
+413079	NY	HERKIMER	T Little Falls-01
+413080	NY	HERKIMER	Manheim-01
+413081	NY	HERKIMER	Manheim-02
+413082	NY	HERKIMER	Manheim-03
+413083	NY	HERKIMER	Newport-01
+413084	NY	HERKIMER	Norway-01
+413085	NY	HERKIMER	Ohio-01
+413086	NY	HERKIMER	Russia-01
+413087	NY	HERKIMER	Russia-02
+413088	NY	HERKIMER	Salisbury-01
+413089	NY	HERKIMER	Schuyler-01
+413090	NY	HERKIMER	Schuyler-02
+413091	NY	HERKIMER	Schuyler-03
+413092	NY	HERKIMER	Stark-01
+413093	NY	HERKIMER	Warren-01
+413094	NY	HERKIMER	Webb-01
+413095	NY	HERKIMER	Webb-02
+413096	NY	HERKIMER	Winfield-01
+413097	NY	HERKIMER	Winfield-02
+413098	NY	HERKIMER	C Little Falls-001-01
+413099	NY	HERKIMER	C Little Falls-002-01
+413100	NY	HERKIMER	C Little Falls-003-01
+413101	NY	HERKIMER	C Little Falls-003-02
+413102	NY	HERKIMER	C Little Falls-004-01
+413103	NY	JEFFERSON	Adams-01
+413104	NY	JEFFERSON	Adams-02
+413105	NY	JEFFERSON	Adams-03
+413106	NY	JEFFERSON	Alexandria-01
+413107	NY	JEFFERSON	Alexandria-02
+413108	NY	JEFFERSON	Alexandria-03
+413109	NY	JEFFERSON	Antwerp-01
+413110	NY	JEFFERSON	Antwerp-02
+413111	NY	JEFFERSON	Brownville-01
+413112	NY	JEFFERSON	Brownville-02
+413113	NY	JEFFERSON	Brownville-03
+413114	NY	JEFFERSON	Brownville-04
+413115	NY	JEFFERSON	Brownville-05
+413116	NY	JEFFERSON	Cape Vincent-01
+413117	NY	JEFFERSON	Cape Vincent-02
+413118	NY	JEFFERSON	Champion-01
+413119	NY	JEFFERSON	Champion-02
+413120	NY	JEFFERSON	Clayton-01
+413121	NY	JEFFERSON	Clayton-02
+413122	NY	JEFFERSON	Clayton-03
+413123	NY	JEFFERSON	Ellisburg-01
+413124	NY	JEFFERSON	Ellisburg-02
+413125	NY	JEFFERSON	Ellisburg-03
+413126	NY	JEFFERSON	Henderson-01
+413127	NY	JEFFERSON	Hounsfield-01
+413128	NY	JEFFERSON	Hounsfield-02
+413129	NY	JEFFERSON	Leray-01
+413130	NY	JEFFERSON	Leray-02
+413131	NY	JEFFERSON	Leray-03
+413132	NY	JEFFERSON	Leray-04
+413133	NY	JEFFERSON	Leray-05
+413134	NY	JEFFERSON	Leray-06
+413135	NY	JEFFERSON	Leray-07
+413136	NY	JEFFERSON	Leray-08
+413137	NY	JEFFERSON	Lorraine-01
+413138	NY	JEFFERSON	Lyme-01
+413139	NY	JEFFERSON	Lyme-02
+413140	NY	JEFFERSON	Orleans-01
+413141	NY	JEFFERSON	Orleans-02
+413142	NY	JEFFERSON	Pamelia-01
+413143	NY	JEFFERSON	Pamelia-02
+413144	NY	JEFFERSON	Philadelphia-01
+413145	NY	JEFFERSON	Philadelphia-02
+413146	NY	JEFFERSON	Rodman-01
+413147	NY	JEFFERSON	Rutland-01
+413148	NY	JEFFERSON	Rutland-02
+413149	NY	JEFFERSON	Rutland-03
+413150	NY	JEFFERSON	Theresa-01
+413151	NY	JEFFERSON	Watertown-01
+413152	NY	JEFFERSON	Watertown-02
+413153	NY	JEFFERSON	Wilna-01
+413154	NY	JEFFERSON	Wilna-02
+413155	NY	JEFFERSON	Wilna-03
+413156	NY	JEFFERSON	Wilna-04
+413157	NY	JEFFERSON	Wilna-05
+413158	NY	JEFFERSON	Worth-01
+413159	NY	JEFFERSON	Watertown City-030-01
+413160	NY	JEFFERSON	Watertown City-030-02
+413161	NY	JEFFERSON	Watertown City-030-03
+413162	NY	JEFFERSON	Watertown City-031-01
+413163	NY	JEFFERSON	Watertown City-031-02
+413164	NY	JEFFERSON	Watertown City-031-03
+413165	NY	JEFFERSON	Watertown City-032-01
+413166	NY	JEFFERSON	Watertown City-032-02
+413167	NY	JEFFERSON	Watertown City-033-01
+413168	NY	JEFFERSON	Watertown City-033-02
+413169	NY	JEFFERSON	Watertown City-033-03
+413170	NY	KINGS	41-001
+413171	NY	KINGS	41-002
+413172	NY	KINGS	41-003
+413173	NY	KINGS	41-004
+413174	NY	KINGS	41-006
+413175	NY	KINGS	41-007
+413176	NY	KINGS	41-008
+413177	NY	KINGS	41-009
+413178	NY	KINGS	41-010
+413179	NY	KINGS	41-011
+413180	NY	KINGS	41-012
+413181	NY	KINGS	41-013
+413182	NY	KINGS	41-014
+413183	NY	KINGS	41-015
+413184	NY	KINGS	41-016
+413185	NY	KINGS	41-017
+413186	NY	KINGS	41-018
+413187	NY	KINGS	41-019
+413188	NY	KINGS	41-020
+413189	NY	KINGS	41-021
+413190	NY	KINGS	41-022
+413191	NY	KINGS	41-023
+413192	NY	KINGS	41-024
+413193	NY	KINGS	41-025
+413194	NY	KINGS	41-026
+413195	NY	KINGS	41-027
+413196	NY	KINGS	41-028
+413197	NY	KINGS	41-029
+413198	NY	KINGS	41-030
+413199	NY	KINGS	41-031
+413200	NY	KINGS	41-032
+413201	NY	KINGS	41-033
+413202	NY	KINGS	41-034
+413203	NY	KINGS	41-035
+413204	NY	KINGS	41-036
+413205	NY	KINGS	41-037
+413206	NY	KINGS	41-038
+413207	NY	KINGS	41-039
+413208	NY	KINGS	41-040
+413209	NY	KINGS	41-041
+413210	NY	KINGS	41-042
+413211	NY	KINGS	41-043
+413212	NY	KINGS	41-044
+413213	NY	KINGS	41-045
+413214	NY	KINGS	41-046
+413215	NY	KINGS	41-047
+413216	NY	KINGS	41-048
+413217	NY	KINGS	41-049
+413218	NY	KINGS	41-050
+413219	NY	KINGS	41-051
+413220	NY	KINGS	41-052
+413221	NY	KINGS	41-053
+413222	NY	KINGS	41-054
+413223	NY	KINGS	41-055
+413224	NY	KINGS	41-056
+413225	NY	KINGS	41-057
+413226	NY	KINGS	41-058
+413227	NY	KINGS	41-059
+413228	NY	KINGS	41-060
+413229	NY	KINGS	41-061
+413230	NY	KINGS	41-062
+413231	NY	KINGS	41-063
+413232	NY	KINGS	41-064
+413233	NY	KINGS	41-065
+413234	NY	KINGS	41-066
+413235	NY	KINGS	41-067
+413236	NY	KINGS	41-068
+413237	NY	KINGS	41-069
+413238	NY	KINGS	41-070
+413239	NY	KINGS	41-071
+413240	NY	KINGS	41-072
+413241	NY	KINGS	41-073
+413242	NY	KINGS	41-074
+413243	NY	KINGS	41-075
+413244	NY	KINGS	41-076
+413245	NY	KINGS	41-077
+413246	NY	KINGS	41-078
+413247	NY	KINGS	41-079
+413248	NY	KINGS	41-080
+413249	NY	KINGS	41-081
+413250	NY	KINGS	41-082
+413251	NY	KINGS	41-083
+413252	NY	KINGS	41-084
+413253	NY	KINGS	41-085
+413254	NY	KINGS	41-086
+413255	NY	KINGS	41-087
+413256	NY	KINGS	41-088
+413257	NY	KINGS	41-089
+413258	NY	KINGS	41-090
+413259	NY	KINGS	41-091
+413260	NY	KINGS	41-093
+413261	NY	KINGS	41-094
+413262	NY	KINGS	42-001
+413263	NY	KINGS	42-002
+413264	NY	KINGS	42-003
+413265	NY	KINGS	42-004
+413266	NY	KINGS	42-005
+413267	NY	KINGS	42-006
+413268	NY	KINGS	42-007
+413269	NY	KINGS	42-008
+413270	NY	KINGS	42-009
+413271	NY	KINGS	42-010
+413272	NY	KINGS	42-011
+413273	NY	KINGS	42-012
+413274	NY	KINGS	42-013
+413275	NY	KINGS	42-014
+413276	NY	KINGS	42-015
+413277	NY	KINGS	42-016
+413278	NY	KINGS	42-017
+413279	NY	KINGS	42-018
+413280	NY	KINGS	42-019
+413281	NY	KINGS	42-020
+413282	NY	KINGS	42-021
+413283	NY	KINGS	42-022
+413284	NY	KINGS	42-023
+413285	NY	KINGS	42-024
+413286	NY	KINGS	42-025
+413287	NY	KINGS	42-026
+413288	NY	KINGS	42-027
+413289	NY	KINGS	42-028
+413290	NY	KINGS	42-029
+413291	NY	KINGS	42-030
+413292	NY	KINGS	42-031
+413293	NY	KINGS	42-032
+413294	NY	KINGS	42-033
+413295	NY	KINGS	42-034
+413296	NY	KINGS	42-035
+413297	NY	KINGS	42-036
+413298	NY	KINGS	42-037
+413299	NY	KINGS	42-038
+413300	NY	KINGS	42-039
+413301	NY	KINGS	42-040
+413302	NY	KINGS	42-041
+413303	NY	KINGS	42-042
+413304	NY	KINGS	42-043
+413305	NY	KINGS	42-044
+413306	NY	KINGS	42-045
+413307	NY	KINGS	42-046
+413308	NY	KINGS	42-047
+413309	NY	KINGS	42-048
+413310	NY	KINGS	42-049
+413311	NY	KINGS	42-050
+413312	NY	KINGS	42-051
+413313	NY	KINGS	42-052
+413314	NY	KINGS	42-053
+413315	NY	KINGS	42-054
+413316	NY	KINGS	42-055
+413317	NY	KINGS	42-056
+413318	NY	KINGS	42-057
+413319	NY	KINGS	42-058
+413320	NY	KINGS	42-059
+413321	NY	KINGS	42-060
+413322	NY	KINGS	42-061
+413323	NY	KINGS	42-062
+413324	NY	KINGS	42-063
+413325	NY	KINGS	42-064
+413326	NY	KINGS	42-065
+413327	NY	KINGS	42-066
+413328	NY	KINGS	42-067
+413329	NY	KINGS	42-068
+413330	NY	KINGS	42-069
+413331	NY	KINGS	42-070
+413332	NY	KINGS	42-071
+413333	NY	KINGS	42-072
+413334	NY	KINGS	42-073
+413335	NY	KINGS	42-074
+413336	NY	KINGS	43-001
+413337	NY	KINGS	43-002
+413338	NY	KINGS	43-003
+413339	NY	KINGS	43-004
+413340	NY	KINGS	43-005
+413341	NY	KINGS	43-006
+413342	NY	KINGS	43-007
+413343	NY	KINGS	43-008
+413344	NY	KINGS	43-009
+413345	NY	KINGS	43-010
+413346	NY	KINGS	43-011
+413347	NY	KINGS	43-012
+413348	NY	KINGS	43-013
+413349	NY	KINGS	43-014
+413350	NY	KINGS	43-015
+413351	NY	KINGS	43-016
+413352	NY	KINGS	43-017
+413353	NY	KINGS	43-018
+413354	NY	KINGS	43-019
+413355	NY	KINGS	43-020
+413356	NY	KINGS	43-021
+413357	NY	KINGS	43-022
+413358	NY	KINGS	43-023
+413359	NY	KINGS	43-024
+413360	NY	KINGS	43-025
+413361	NY	KINGS	43-026
+413362	NY	KINGS	43-027
+413363	NY	KINGS	43-028
+413364	NY	KINGS	43-029
+413365	NY	KINGS	43-030
+413366	NY	KINGS	43-031
+413367	NY	KINGS	43-032
+413368	NY	KINGS	43-033
+413369	NY	KINGS	43-034
+413370	NY	KINGS	43-035
+413371	NY	KINGS	43-036
+413372	NY	KINGS	43-037
+413373	NY	KINGS	43-038
+413374	NY	KINGS	43-039
+413375	NY	KINGS	43-040
+413376	NY	KINGS	43-041
+413377	NY	KINGS	43-042
+413378	NY	KINGS	43-043
+413379	NY	KINGS	43-044
+413380	NY	KINGS	43-045
+413381	NY	KINGS	43-046
+413382	NY	KINGS	43-047
+413383	NY	KINGS	43-048
+413384	NY	KINGS	43-049
+413385	NY	KINGS	43-050
+413386	NY	KINGS	43-051
+413387	NY	KINGS	43-052
+413388	NY	KINGS	43-053
+413389	NY	KINGS	43-054
+413390	NY	KINGS	43-055
+413391	NY	KINGS	43-056
+413392	NY	KINGS	43-057
+413393	NY	KINGS	43-058
+413394	NY	KINGS	43-059
+413395	NY	KINGS	43-060
+413396	NY	KINGS	43-061
+413397	NY	KINGS	43-062
+413398	NY	KINGS	43-063
+413399	NY	KINGS	43-064
+413400	NY	KINGS	43-065
+413401	NY	KINGS	43-066
+413402	NY	KINGS	43-067
+413403	NY	KINGS	43-068
+413404	NY	KINGS	43-069
+413405	NY	KINGS	43-070
+413406	NY	KINGS	43-071
+413407	NY	KINGS	43-072
+413408	NY	KINGS	43-073
+413409	NY	KINGS	43-074
+413410	NY	KINGS	43-075
+413411	NY	KINGS	43-076
+413412	NY	KINGS	43-077
+413413	NY	KINGS	43-078
+413414	NY	KINGS	43-079
+413415	NY	KINGS	44-001
+413416	NY	KINGS	44-002
+413417	NY	KINGS	44-003
+413418	NY	KINGS	44-004
+413419	NY	KINGS	44-005
+413420	NY	KINGS	44-006
+413421	NY	KINGS	44-007
+413422	NY	KINGS	44-008
+413423	NY	KINGS	44-009
+413424	NY	KINGS	44-010
+413425	NY	KINGS	44-011
+413426	NY	KINGS	44-012
+413427	NY	KINGS	44-013
+413428	NY	KINGS	44-014
+413429	NY	KINGS	44-015
+413430	NY	KINGS	44-016
+413431	NY	KINGS	44-017
+413432	NY	KINGS	44-018
+413433	NY	KINGS	44-019
+413434	NY	KINGS	44-020
+413435	NY	KINGS	44-021
+413436	NY	KINGS	44-022
+413437	NY	KINGS	44-023
+413438	NY	KINGS	44-024
+413439	NY	KINGS	44-025
+413440	NY	KINGS	44-026
+413441	NY	KINGS	44-027
+413442	NY	KINGS	44-028
+413443	NY	KINGS	44-029
+413444	NY	KINGS	44-030
+413445	NY	KINGS	44-031
+413446	NY	KINGS	44-032
+413447	NY	KINGS	44-033
+413448	NY	KINGS	44-034
+413449	NY	KINGS	44-035
+413450	NY	KINGS	44-036
+413451	NY	KINGS	44-037
+413452	NY	KINGS	44-038
+413453	NY	KINGS	44-039
+413454	NY	KINGS	44-040
+413455	NY	KINGS	44-041
+413456	NY	KINGS	44-042
+413457	NY	KINGS	44-043
+413458	NY	KINGS	44-044
+413459	NY	KINGS	44-045
+413460	NY	KINGS	44-046
+413461	NY	KINGS	44-047
+413462	NY	KINGS	44-048
+413463	NY	KINGS	44-049
+413464	NY	KINGS	44-050
+413465	NY	KINGS	44-051
+413466	NY	KINGS	44-052
+413467	NY	KINGS	44-053
+413468	NY	KINGS	44-054
+413469	NY	KINGS	44-055
+413470	NY	KINGS	44-056
+413471	NY	KINGS	44-057
+413472	NY	KINGS	44-058
+413473	NY	KINGS	44-059
+413474	NY	KINGS	44-060
+413475	NY	KINGS	44-061
+413476	NY	KINGS	44-062
+413477	NY	KINGS	44-063
+413478	NY	KINGS	44-064
+413479	NY	KINGS	44-065
+413480	NY	KINGS	44-066
+413481	NY	KINGS	44-067
+413482	NY	KINGS	44-068
+413483	NY	KINGS	44-069
+413484	NY	KINGS	44-070
+413485	NY	KINGS	44-071
+413486	NY	KINGS	44-072
+413487	NY	KINGS	44-073
+413488	NY	KINGS	44-074
+413489	NY	KINGS	44-075
+413490	NY	KINGS	44-076
+413491	NY	KINGS	44-077
+413492	NY	KINGS	44-078
+413493	NY	KINGS	44-079
+413494	NY	KINGS	44-080
+413495	NY	KINGS	44-081
+413496	NY	KINGS	44-083
+413497	NY	KINGS	44-085
+413498	NY	KINGS	44-086
+413499	NY	KINGS	44-087
+413500	NY	KINGS	45-001
+413501	NY	KINGS	45-002
+413502	NY	KINGS	45-003
+413503	NY	KINGS	45-004
+413504	NY	KINGS	45-005
+413505	NY	KINGS	45-006
+413506	NY	KINGS	45-007
+413507	NY	KINGS	45-008
+413508	NY	KINGS	45-009
+413509	NY	KINGS	45-010
+413510	NY	KINGS	45-011
+413511	NY	KINGS	45-012
+413512	NY	KINGS	45-013
+413513	NY	KINGS	45-014
+413514	NY	KINGS	45-015
+413515	NY	KINGS	45-016
+413516	NY	KINGS	45-017
+413517	NY	KINGS	45-018
+413518	NY	KINGS	45-019
+413519	NY	KINGS	45-020
+413520	NY	KINGS	45-021
+413521	NY	KINGS	45-022
+413522	NY	KINGS	45-023
+413523	NY	KINGS	45-024
+413524	NY	KINGS	45-025
+413525	NY	KINGS	45-026
+413526	NY	KINGS	45-027
+413527	NY	KINGS	45-028
+413528	NY	KINGS	45-029
+413529	NY	KINGS	45-030
+413530	NY	KINGS	45-031
+413531	NY	KINGS	45-032
+413532	NY	KINGS	45-033
+413533	NY	KINGS	45-034
+413534	NY	KINGS	45-035
+413535	NY	KINGS	45-036
+413536	NY	KINGS	45-037
+413537	NY	KINGS	45-038
+413538	NY	KINGS	45-039
+413539	NY	KINGS	45-040
+413540	NY	KINGS	45-041
+413541	NY	KINGS	45-042
+413542	NY	KINGS	45-043
+413543	NY	KINGS	45-044
+413544	NY	KINGS	45-045
+413545	NY	KINGS	45-046
+413546	NY	KINGS	45-047
+413547	NY	KINGS	45-048
+413548	NY	KINGS	45-049
+413549	NY	KINGS	45-050
+413550	NY	KINGS	45-051
+413551	NY	KINGS	45-052
+413552	NY	KINGS	45-053
+413553	NY	KINGS	45-054
+413554	NY	KINGS	45-055
+413555	NY	KINGS	45-056
+413556	NY	KINGS	45-057
+413557	NY	KINGS	45-058
+413558	NY	KINGS	45-059
+413559	NY	KINGS	45-060
+413560	NY	KINGS	45-061
+413561	NY	KINGS	45-062
+413562	NY	KINGS	45-063
+413563	NY	KINGS	45-064
+413564	NY	KINGS	45-065
+413565	NY	KINGS	45-066
+413566	NY	KINGS	45-067
+413567	NY	KINGS	45-068
+413568	NY	KINGS	45-069
+413569	NY	KINGS	45-070
+413570	NY	KINGS	45-071
+413571	NY	KINGS	45-072
+413572	NY	KINGS	45-073
+413573	NY	KINGS	45-074
+413574	NY	KINGS	45-075
+413575	NY	KINGS	46-001
+413576	NY	KINGS	46-002
+413577	NY	KINGS	46-003
+413578	NY	KINGS	46-004
+413579	NY	KINGS	46-005
+413580	NY	KINGS	46-006
+413581	NY	KINGS	46-007
+413582	NY	KINGS	46-008
+413583	NY	KINGS	46-009
+413584	NY	KINGS	46-010
+413585	NY	KINGS	46-011
+413586	NY	KINGS	46-012
+413587	NY	KINGS	46-013
+413588	NY	KINGS	46-014
+413589	NY	KINGS	46-015
+413590	NY	KINGS	46-016
+413591	NY	KINGS	46-017
+413592	NY	KINGS	46-018
+413593	NY	KINGS	46-019
+413594	NY	KINGS	46-020
+413595	NY	KINGS	46-021
+413596	NY	KINGS	46-022
+413597	NY	KINGS	46-023
+413598	NY	KINGS	46-024
+413599	NY	KINGS	46-025
+413600	NY	KINGS	46-026
+413601	NY	KINGS	46-027
+413602	NY	KINGS	46-028
+413603	NY	KINGS	46-029
+413604	NY	KINGS	46-030
+413605	NY	KINGS	46-031
+413606	NY	KINGS	46-032
+413607	NY	KINGS	46-033
+413608	NY	KINGS	46-034
+413609	NY	KINGS	46-035
+413610	NY	KINGS	46-036
+413611	NY	KINGS	46-037
+413612	NY	KINGS	46-038
+413613	NY	KINGS	46-039
+413614	NY	KINGS	46-040
+413615	NY	KINGS	46-041
+413616	NY	KINGS	46-042
+413617	NY	KINGS	46-043
+413618	NY	KINGS	46-044
+413619	NY	KINGS	46-045
+413620	NY	KINGS	46-046
+413621	NY	KINGS	46-047
+413622	NY	KINGS	46-048
+413623	NY	KINGS	46-049
+413624	NY	KINGS	46-050
+413625	NY	KINGS	46-051
+413626	NY	KINGS	46-052
+413627	NY	KINGS	46-053
+413628	NY	KINGS	46-054
+413629	NY	KINGS	46-055
+413630	NY	KINGS	46-056
+413631	NY	KINGS	46-057
+413632	NY	KINGS	46-058
+413633	NY	KINGS	46-059
+413634	NY	KINGS	46-060
+413635	NY	KINGS	46-061
+413636	NY	KINGS	46-062
+413637	NY	KINGS	46-063
+413638	NY	KINGS	46-064
+413639	NY	KINGS	46-065
+413640	NY	KINGS	46-066
+413641	NY	KINGS	46-067
+413642	NY	KINGS	46-068
+413643	NY	KINGS	46-069
+413644	NY	KINGS	46-070
+413645	NY	KINGS	46-071
+413646	NY	KINGS	46-072
+413647	NY	KINGS	46-073
+413648	NY	KINGS	46-074
+413649	NY	KINGS	46-078
+413650	NY	KINGS	46-079
+413651	NY	KINGS	47-001
+413652	NY	KINGS	47-002
+413653	NY	KINGS	47-003
+413654	NY	KINGS	47-004
+413655	NY	KINGS	47-005
+413656	NY	KINGS	47-006
+413657	NY	KINGS	47-007
+413658	NY	KINGS	47-008
+413659	NY	KINGS	47-009
+413660	NY	KINGS	47-010
+413661	NY	KINGS	47-011
+413662	NY	KINGS	47-012
+413663	NY	KINGS	47-013
+413664	NY	KINGS	47-014
+413665	NY	KINGS	47-015
+413666	NY	KINGS	47-016
+413667	NY	KINGS	47-017
+413668	NY	KINGS	47-018
+413669	NY	KINGS	47-019
+413670	NY	KINGS	47-020
+413671	NY	KINGS	47-021
+413672	NY	KINGS	47-022
+413673	NY	KINGS	47-023
+413674	NY	KINGS	47-024
+413675	NY	KINGS	47-025
+413676	NY	KINGS	47-026
+413677	NY	KINGS	47-027
+413678	NY	KINGS	47-028
+413679	NY	KINGS	47-029
+413680	NY	KINGS	47-030
+413681	NY	KINGS	47-031
+413682	NY	KINGS	47-032
+413683	NY	KINGS	47-033
+413684	NY	KINGS	47-034
+413685	NY	KINGS	47-035
+413686	NY	KINGS	47-036
+413687	NY	KINGS	47-037
+413688	NY	KINGS	47-038
+413689	NY	KINGS	47-039
+413690	NY	KINGS	47-040
+413691	NY	KINGS	47-041
+413692	NY	KINGS	47-042
+413693	NY	KINGS	47-043
+413694	NY	KINGS	47-044
+413695	NY	KINGS	47-045
+413696	NY	KINGS	47-046
+413697	NY	KINGS	47-047
+413698	NY	KINGS	47-048
+413699	NY	KINGS	47-049
+413700	NY	KINGS	47-050
+413701	NY	KINGS	47-051
+413702	NY	KINGS	47-052
+413703	NY	KINGS	47-053
+413704	NY	KINGS	47-054
+413705	NY	KINGS	47-055
+413706	NY	KINGS	47-056
+413707	NY	KINGS	47-057
+413708	NY	KINGS	47-058
+413709	NY	KINGS	47-059
+413710	NY	KINGS	47-060
+413711	NY	KINGS	47-061
+413712	NY	KINGS	47-062
+413713	NY	KINGS	47-063
+413714	NY	KINGS	47-064
+413715	NY	KINGS	47-065
+413716	NY	KINGS	47-066
+413717	NY	KINGS	47-067
+413718	NY	KINGS	47-068
+413719	NY	KINGS	48-001
+413720	NY	KINGS	48-002
+413721	NY	KINGS	48-003
+413722	NY	KINGS	48-004
+413723	NY	KINGS	48-005
+413724	NY	KINGS	48-006
+413725	NY	KINGS	48-007
+413726	NY	KINGS	48-008
+413727	NY	KINGS	48-009
+413728	NY	KINGS	48-010
+413729	NY	KINGS	48-011
+413730	NY	KINGS	48-012
+413731	NY	KINGS	48-013
+413732	NY	KINGS	48-014
+413733	NY	KINGS	48-015
+413734	NY	KINGS	48-016
+413735	NY	KINGS	48-017
+413736	NY	KINGS	48-018
+413737	NY	KINGS	48-019
+413738	NY	KINGS	48-020
+413739	NY	KINGS	48-021
+413740	NY	KINGS	48-022
+413741	NY	KINGS	48-023
+413742	NY	KINGS	48-024
+413743	NY	KINGS	48-025
+413744	NY	KINGS	48-026
+413745	NY	KINGS	48-027
+413746	NY	KINGS	48-028
+413747	NY	KINGS	48-029
+413748	NY	KINGS	48-030
+413749	NY	KINGS	48-031
+413750	NY	KINGS	48-032
+413751	NY	KINGS	48-033
+413752	NY	KINGS	48-034
+413753	NY	KINGS	48-035
+413754	NY	KINGS	48-036
+413755	NY	KINGS	48-037
+413756	NY	KINGS	48-038
+413757	NY	KINGS	48-039
+413758	NY	KINGS	48-040
+413759	NY	KINGS	48-041
+413760	NY	KINGS	48-042
+413761	NY	KINGS	48-043
+413762	NY	KINGS	48-044
+413763	NY	KINGS	48-045
+413764	NY	KINGS	48-046
+413765	NY	KINGS	48-047
+413766	NY	KINGS	48-048
+413767	NY	KINGS	48-049
+413768	NY	KINGS	48-050
+413769	NY	KINGS	48-051
+413770	NY	KINGS	48-052
+413771	NY	KINGS	48-053
+413772	NY	KINGS	48-054
+413773	NY	KINGS	48-055
+413774	NY	KINGS	48-056
+413775	NY	KINGS	48-057
+413776	NY	KINGS	48-058
+413777	NY	KINGS	48-059
+413778	NY	KINGS	48-060
+413779	NY	KINGS	48-061
+413780	NY	KINGS	48-062
+413781	NY	KINGS	48-063
+413782	NY	KINGS	48-064
+413783	NY	KINGS	48-065
+413784	NY	KINGS	48-066
+413785	NY	KINGS	48-067
+413786	NY	KINGS	48-068
+413787	NY	KINGS	48-069
+413788	NY	KINGS	48-070
+413789	NY	KINGS	48-071
+413790	NY	KINGS	49-001
+413791	NY	KINGS	49-002
+413792	NY	KINGS	49-003
+413793	NY	KINGS	49-004
+413794	NY	KINGS	49-005
+413795	NY	KINGS	49-006
+413796	NY	KINGS	49-007
+413797	NY	KINGS	49-008
+413798	NY	KINGS	49-009
+413799	NY	KINGS	49-010
+413800	NY	KINGS	49-011
+413801	NY	KINGS	49-012
+413802	NY	KINGS	49-013
+413803	NY	KINGS	49-014
+413804	NY	KINGS	49-015
+413805	NY	KINGS	49-016
+413806	NY	KINGS	49-017
+413807	NY	KINGS	49-018
+413808	NY	KINGS	49-019
+413809	NY	KINGS	49-020
+413810	NY	KINGS	49-021
+413811	NY	KINGS	49-022
+413812	NY	KINGS	49-023
+413813	NY	KINGS	49-024
+413814	NY	KINGS	49-025
+413815	NY	KINGS	49-026
+413816	NY	KINGS	49-027
+413817	NY	KINGS	49-028
+413818	NY	KINGS	49-029
+413819	NY	KINGS	49-030
+413820	NY	KINGS	49-031
+413821	NY	KINGS	49-032
+413822	NY	KINGS	49-033
+413823	NY	KINGS	49-034
+413824	NY	KINGS	49-035
+413825	NY	KINGS	49-036
+413826	NY	KINGS	49-037
+413827	NY	KINGS	49-038
+413828	NY	KINGS	49-039
+413829	NY	KINGS	49-040
+413830	NY	KINGS	49-041
+413831	NY	KINGS	49-042
+413832	NY	KINGS	49-043
+413833	NY	KINGS	49-044
+413834	NY	KINGS	49-045
+413835	NY	KINGS	49-046
+413836	NY	KINGS	49-047
+413837	NY	KINGS	49-048
+413838	NY	KINGS	49-049
+413839	NY	KINGS	49-050
+413840	NY	KINGS	49-051
+413841	NY	KINGS	49-052
+413842	NY	KINGS	49-053
+413843	NY	KINGS	49-054
+413844	NY	KINGS	49-055
+413845	NY	KINGS	49-056
+413846	NY	KINGS	49-057
+413847	NY	KINGS	49-058
+413848	NY	KINGS	49-059
+413849	NY	KINGS	49-060
+413850	NY	KINGS	49-061
+413851	NY	KINGS	49-062
+413852	NY	KINGS	49-063
+413853	NY	KINGS	49-064
+413854	NY	KINGS	49-066
+413855	NY	KINGS	49-067
+413856	NY	KINGS	50-001
+413857	NY	KINGS	50-002
+413858	NY	KINGS	50-003
+413859	NY	KINGS	50-004
+413860	NY	KINGS	50-005
+413861	NY	KINGS	50-006
+413862	NY	KINGS	50-007
+413863	NY	KINGS	50-008
+413864	NY	KINGS	50-009
+413865	NY	KINGS	50-010
+413866	NY	KINGS	50-011
+413867	NY	KINGS	50-012
+413868	NY	KINGS	50-013
+413869	NY	KINGS	50-014
+413870	NY	KINGS	50-015
+413871	NY	KINGS	50-016
+413872	NY	KINGS	50-017
+413873	NY	KINGS	50-018
+413874	NY	KINGS	50-019
+413875	NY	KINGS	50-020
+413876	NY	KINGS	50-022
+413877	NY	KINGS	50-023
+413878	NY	KINGS	50-024
+413879	NY	KINGS	50-025
+413880	NY	KINGS	50-026
+413881	NY	KINGS	50-027
+413882	NY	KINGS	50-028
+413883	NY	KINGS	50-029
+413884	NY	KINGS	50-030
+413885	NY	KINGS	50-031
+413886	NY	KINGS	50-032
+413887	NY	KINGS	50-033
+413888	NY	KINGS	50-034
+413889	NY	KINGS	50-035
+413890	NY	KINGS	50-036
+413891	NY	KINGS	50-037
+413892	NY	KINGS	50-038
+413893	NY	KINGS	50-039
+413894	NY	KINGS	50-040
+413895	NY	KINGS	50-041
+413896	NY	KINGS	50-042
+413897	NY	KINGS	50-043
+413898	NY	KINGS	50-044
+413899	NY	KINGS	50-045
+413900	NY	KINGS	50-046
+413901	NY	KINGS	50-047
+413902	NY	KINGS	50-048
+413903	NY	KINGS	50-049
+413904	NY	KINGS	50-050
+413905	NY	KINGS	50-051
+413906	NY	KINGS	50-052
+413907	NY	KINGS	50-053
+413908	NY	KINGS	50-054
+413909	NY	KINGS	50-055
+413910	NY	KINGS	50-056
+413911	NY	KINGS	50-057
+413912	NY	KINGS	50-058
+413913	NY	KINGS	50-059
+413914	NY	KINGS	50-060
+413915	NY	KINGS	50-061
+413916	NY	KINGS	50-062
+413917	NY	KINGS	50-063
+413918	NY	KINGS	50-064
+413919	NY	KINGS	50-065
+413920	NY	KINGS	50-066
+413921	NY	KINGS	50-067
+413922	NY	KINGS	50-068
+413923	NY	KINGS	50-069
+413924	NY	KINGS	50-070
+413925	NY	KINGS	50-071
+413926	NY	KINGS	50-072
+413927	NY	KINGS	50-073
+413928	NY	KINGS	50-074
+413929	NY	KINGS	50-075
+413930	NY	KINGS	50-076
+413931	NY	KINGS	50-077
+413932	NY	KINGS	50-078
+413933	NY	KINGS	50-079
+413934	NY	KINGS	50-080
+413935	NY	KINGS	50-081
+413936	NY	KINGS	50-082
+413937	NY	KINGS	50-083
+413938	NY	KINGS	50-084
+413939	NY	KINGS	50-085
+413940	NY	KINGS	50-086
+413941	NY	KINGS	50-087
+413942	NY	KINGS	50-088
+413943	NY	KINGS	50-089
+413944	NY	KINGS	50-090
+413945	NY	KINGS	50-092
+413946	NY	KINGS	50-093
+413947	NY	KINGS	50-094
+413948	NY	KINGS	50-100
+413949	NY	KINGS	51-001
+413950	NY	KINGS	51-002
+413951	NY	KINGS	51-003
+413952	NY	KINGS	51-004
+413953	NY	KINGS	51-005
+413954	NY	KINGS	51-006
+413955	NY	KINGS	51-007
+413956	NY	KINGS	51-008
+413957	NY	KINGS	51-009
+413958	NY	KINGS	51-010
+413959	NY	KINGS	51-012
+413960	NY	KINGS	51-013
+413961	NY	KINGS	51-014
+413962	NY	KINGS	51-015
+413963	NY	KINGS	51-016
+413964	NY	KINGS	51-017
+413965	NY	KINGS	51-018
+413966	NY	KINGS	51-019
+413967	NY	KINGS	51-020
+413968	NY	KINGS	51-021
+413969	NY	KINGS	51-022
+413970	NY	KINGS	51-023
+413971	NY	KINGS	51-025
+413972	NY	KINGS	51-026
+413973	NY	KINGS	51-027
+413974	NY	KINGS	51-028
+413975	NY	KINGS	51-029
+413976	NY	KINGS	51-030
+413977	NY	KINGS	51-031
+413978	NY	KINGS	51-032
+413979	NY	KINGS	51-033
+413980	NY	KINGS	51-034
+413981	NY	KINGS	51-035
+413982	NY	KINGS	51-036
+413983	NY	KINGS	51-037
+413984	NY	KINGS	51-038
+413985	NY	KINGS	51-039
+413986	NY	KINGS	51-040
+413987	NY	KINGS	51-041
+413988	NY	KINGS	51-042
+413989	NY	KINGS	51-043
+413990	NY	KINGS	51-044
+413991	NY	KINGS	51-045
+413992	NY	KINGS	51-046
+413993	NY	KINGS	51-047
+413994	NY	KINGS	51-048
+413995	NY	KINGS	51-049
+413996	NY	KINGS	51-050
+413997	NY	KINGS	51-051
+413998	NY	KINGS	51-052
+413999	NY	KINGS	51-053
+414000	NY	KINGS	51-054
+414001	NY	KINGS	51-055
+414002	NY	KINGS	51-056
+414003	NY	KINGS	51-057
+414004	NY	KINGS	51-058
+414005	NY	KINGS	51-059
+414006	NY	KINGS	51-061
+414007	NY	KINGS	51-062
+414008	NY	KINGS	51-063
+414009	NY	KINGS	51-064
+414010	NY	KINGS	51-065
+414011	NY	KINGS	51-066
+414012	NY	KINGS	51-067
+414013	NY	KINGS	51-068
+414014	NY	KINGS	51-069
+414015	NY	KINGS	51-070
+414016	NY	KINGS	51-071
+414017	NY	KINGS	51-072
+414018	NY	KINGS	51-073
+414019	NY	KINGS	51-074
+414020	NY	KINGS	51-079
+414021	NY	KINGS	51-080
+414022	NY	KINGS	51-081
+414023	NY	KINGS	52-001
+414024	NY	KINGS	52-002
+414025	NY	KINGS	52-003
+414026	NY	KINGS	52-004
+414027	NY	KINGS	52-005
+414028	NY	KINGS	52-006
+414029	NY	KINGS	52-007
+414030	NY	KINGS	52-008
+414031	NY	KINGS	52-010
+414032	NY	KINGS	52-011
+414033	NY	KINGS	52-012
+414034	NY	KINGS	52-013
+414035	NY	KINGS	52-014
+414036	NY	KINGS	52-015
+414037	NY	KINGS	52-016
+414038	NY	KINGS	52-017
+414039	NY	KINGS	52-018
+414040	NY	KINGS	52-019
+414041	NY	KINGS	52-020
+414042	NY	KINGS	52-021
+414043	NY	KINGS	52-022
+414044	NY	KINGS	52-023
+414045	NY	KINGS	52-024
+414046	NY	KINGS	52-025
+414047	NY	KINGS	52-026
+414048	NY	KINGS	52-027
+414049	NY	KINGS	52-028
+414050	NY	KINGS	52-029
+414051	NY	KINGS	52-030
+414052	NY	KINGS	52-031
+414053	NY	KINGS	52-032
+414054	NY	KINGS	52-033
+414055	NY	KINGS	52-034
+414056	NY	KINGS	52-035
+414057	NY	KINGS	52-036
+414058	NY	KINGS	52-037
+414059	NY	KINGS	52-038
+414060	NY	KINGS	52-039
+414061	NY	KINGS	52-040
+414062	NY	KINGS	52-041
+414063	NY	KINGS	52-042
+414064	NY	KINGS	52-043
+414065	NY	KINGS	52-044
+414066	NY	KINGS	52-045
+414067	NY	KINGS	52-046
+414068	NY	KINGS	52-047
+414069	NY	KINGS	52-048
+414070	NY	KINGS	52-049
+414071	NY	KINGS	52-050
+414072	NY	KINGS	52-051
+414073	NY	KINGS	52-052
+414074	NY	KINGS	52-053
+414075	NY	KINGS	52-054
+414076	NY	KINGS	52-055
+414077	NY	KINGS	52-056
+414078	NY	KINGS	52-057
+414079	NY	KINGS	52-058
+414080	NY	KINGS	52-059
+414081	NY	KINGS	52-060
+414082	NY	KINGS	52-061
+414083	NY	KINGS	52-062
+414084	NY	KINGS	52-063
+414085	NY	KINGS	52-064
+414086	NY	KINGS	52-065
+414087	NY	KINGS	52-066
+414088	NY	KINGS	52-067
+414089	NY	KINGS	52-068
+414090	NY	KINGS	52-069
+414091	NY	KINGS	52-070
+414092	NY	KINGS	52-071
+414093	NY	KINGS	52-072
+414094	NY	KINGS	52-073
+414095	NY	KINGS	52-074
+414096	NY	KINGS	52-075
+414097	NY	KINGS	52-076
+414098	NY	KINGS	52-077
+414099	NY	KINGS	52-078
+414100	NY	KINGS	52-079
+414101	NY	KINGS	52-080
+414102	NY	KINGS	52-081
+414103	NY	KINGS	52-082
+414104	NY	KINGS	52-083
+414105	NY	KINGS	52-084
+414106	NY	KINGS	52-085
+414107	NY	KINGS	52-086
+414108	NY	KINGS	52-087
+414109	NY	KINGS	52-088
+414110	NY	KINGS	52-089
+414111	NY	KINGS	52-090
+414112	NY	KINGS	52-091
+414113	NY	KINGS	52-092
+414114	NY	KINGS	52-093
+414115	NY	KINGS	52-094
+414116	NY	KINGS	52-095
+414117	NY	KINGS	52-096
+414118	NY	KINGS	52-097
+414119	NY	KINGS	52-098
+414120	NY	KINGS	52-099
+414121	NY	KINGS	52-100
+414122	NY	KINGS	52-101
+414123	NY	KINGS	52-103
+414124	NY	KINGS	52-104
+414125	NY	KINGS	52-105
+414126	NY	KINGS	52-106
+414127	NY	KINGS	52-115
+414128	NY	KINGS	52-116
+414129	NY	KINGS	53-001
+414130	NY	KINGS	53-002
+414131	NY	KINGS	53-003
+414132	NY	KINGS	53-004
+414133	NY	KINGS	53-005
+414134	NY	KINGS	53-006
+414135	NY	KINGS	53-007
+414136	NY	KINGS	53-008
+414137	NY	KINGS	53-009
+414138	NY	KINGS	53-010
+414139	NY	KINGS	53-011
+414140	NY	KINGS	53-012
+414141	NY	KINGS	53-013
+414142	NY	KINGS	53-014
+414143	NY	KINGS	53-015
+414144	NY	KINGS	53-016
+414145	NY	KINGS	53-017
+414146	NY	KINGS	53-018
+414147	NY	KINGS	53-019
+414148	NY	KINGS	53-020
+414149	NY	KINGS	53-021
+414150	NY	KINGS	53-022
+414151	NY	KINGS	53-023
+414152	NY	KINGS	53-024
+414153	NY	KINGS	53-025
+414154	NY	KINGS	53-026
+414155	NY	KINGS	53-027
+414156	NY	KINGS	53-028
+414157	NY	KINGS	53-029
+414158	NY	KINGS	53-030
+414159	NY	KINGS	53-031
+414160	NY	KINGS	53-032
+414161	NY	KINGS	53-033
+414162	NY	KINGS	53-034
+414163	NY	KINGS	53-035
+414164	NY	KINGS	53-036
+414165	NY	KINGS	53-037
+414166	NY	KINGS	53-038
+414167	NY	KINGS	53-039
+414168	NY	KINGS	53-040
+414169	NY	KINGS	53-041
+414170	NY	KINGS	53-042
+414171	NY	KINGS	53-043
+414172	NY	KINGS	53-044
+414173	NY	KINGS	53-045
+414174	NY	KINGS	53-046
+414175	NY	KINGS	53-047
+414176	NY	KINGS	53-048
+414177	NY	KINGS	53-049
+414178	NY	KINGS	53-050
+414179	NY	KINGS	53-051
+414180	NY	KINGS	53-052
+414181	NY	KINGS	53-053
+414182	NY	KINGS	53-054
+414183	NY	KINGS	53-055
+414184	NY	KINGS	53-056
+414185	NY	KINGS	53-057
+414186	NY	KINGS	53-058
+414187	NY	KINGS	53-059
+414188	NY	KINGS	53-060
+414189	NY	KINGS	53-061
+414190	NY	KINGS	53-062
+414191	NY	KINGS	53-063
+414192	NY	KINGS	53-064
+414193	NY	KINGS	53-065
+414194	NY	KINGS	53-066
+414195	NY	KINGS	53-067
+414196	NY	KINGS	53-068
+414197	NY	KINGS	53-069
+414198	NY	KINGS	53-070
+414199	NY	KINGS	53-071
+414200	NY	KINGS	53-072
+414201	NY	KINGS	53-073
+414202	NY	KINGS	53-074
+414203	NY	KINGS	53-075
+414204	NY	KINGS	53-076
+414205	NY	KINGS	53-077
+414206	NY	KINGS	53-078
+414207	NY	KINGS	53-079
+414208	NY	KINGS	53-080
+414209	NY	KINGS	53-081
+414210	NY	KINGS	54-001
+414211	NY	KINGS	54-002
+414212	NY	KINGS	54-003
+414213	NY	KINGS	54-004
+414214	NY	KINGS	54-005
+414215	NY	KINGS	54-006
+414216	NY	KINGS	54-007
+414217	NY	KINGS	54-008
+414218	NY	KINGS	54-009
+414219	NY	KINGS	54-010
+414220	NY	KINGS	54-011
+414221	NY	KINGS	54-012
+414222	NY	KINGS	54-013
+414223	NY	KINGS	54-014
+414224	NY	KINGS	54-015
+414225	NY	KINGS	54-016
+414226	NY	KINGS	54-017
+414227	NY	KINGS	54-018
+414228	NY	KINGS	54-019
+414229	NY	KINGS	54-020
+414230	NY	KINGS	54-021
+414231	NY	KINGS	54-022
+414232	NY	KINGS	54-023
+414233	NY	KINGS	54-024
+414234	NY	KINGS	54-025
+414235	NY	KINGS	54-026
+414236	NY	KINGS	54-027
+414237	NY	KINGS	54-028
+414238	NY	KINGS	54-029
+414239	NY	KINGS	54-030
+414240	NY	KINGS	54-031
+414241	NY	KINGS	54-032
+414242	NY	KINGS	54-033
+414243	NY	KINGS	54-034
+414244	NY	KINGS	54-035
+414245	NY	KINGS	54-036
+414246	NY	KINGS	54-037
+414247	NY	KINGS	54-038
+414248	NY	KINGS	54-039
+414249	NY	KINGS	54-040
+414250	NY	KINGS	54-041
+414251	NY	KINGS	54-042
+414252	NY	KINGS	54-043
+414253	NY	KINGS	54-044
+414254	NY	KINGS	54-045
+414255	NY	KINGS	54-046
+414256	NY	KINGS	54-047
+414257	NY	KINGS	54-048
+414258	NY	KINGS	54-049
+414259	NY	KINGS	54-050
+414260	NY	KINGS	54-051
+414261	NY	KINGS	54-052
+414262	NY	KINGS	54-053
+414263	NY	KINGS	54-055
+414264	NY	KINGS	54-056
+414265	NY	KINGS	54-057
+414266	NY	KINGS	54-058
+414267	NY	KINGS	54-059
+414268	NY	KINGS	54-060
+414269	NY	KINGS	54-061
+414270	NY	KINGS	54-062
+414271	NY	KINGS	54-063
+414272	NY	KINGS	54-064
+414273	NY	KINGS	54-065
+414274	NY	KINGS	54-066
+414275	NY	KINGS	54-067
+414276	NY	KINGS	54-068
+414277	NY	KINGS	54-069
+414278	NY	KINGS	54-070
+414279	NY	KINGS	54-071
+414280	NY	KINGS	54-072
+414281	NY	KINGS	54-073
+414282	NY	KINGS	54-074
+414283	NY	KINGS	54-075
+414284	NY	KINGS	54-076
+414285	NY	KINGS	54-077
+414286	NY	KINGS	54-078
+414287	NY	KINGS	54-079
+414288	NY	KINGS	54-080
+414289	NY	KINGS	54-081
+414290	NY	KINGS	55-001
+414291	NY	KINGS	55-002
+414292	NY	KINGS	55-003
+414293	NY	KINGS	55-004
+414294	NY	KINGS	55-005
+414295	NY	KINGS	55-006
+414296	NY	KINGS	55-007
+414297	NY	KINGS	55-008
+414298	NY	KINGS	55-009
+414299	NY	KINGS	55-010
+414300	NY	KINGS	55-011
+414301	NY	KINGS	55-012
+414302	NY	KINGS	55-013
+414303	NY	KINGS	55-014
+414304	NY	KINGS	55-015
+414305	NY	KINGS	55-016
+414306	NY	KINGS	55-017
+414307	NY	KINGS	55-018
+414308	NY	KINGS	55-019
+414309	NY	KINGS	55-020
+414310	NY	KINGS	55-021
+414311	NY	KINGS	55-022
+414312	NY	KINGS	55-023
+414313	NY	KINGS	55-024
+414314	NY	KINGS	55-025
+414315	NY	KINGS	55-026
+414316	NY	KINGS	55-027
+414317	NY	KINGS	55-028
+414318	NY	KINGS	55-029
+414319	NY	KINGS	55-030
+414320	NY	KINGS	55-031
+414321	NY	KINGS	55-032
+414322	NY	KINGS	55-033
+414323	NY	KINGS	55-034
+414324	NY	KINGS	55-035
+414325	NY	KINGS	55-036
+414326	NY	KINGS	55-037
+414327	NY	KINGS	55-038
+414328	NY	KINGS	55-039
+414329	NY	KINGS	55-040
+414330	NY	KINGS	55-041
+414331	NY	KINGS	55-042
+414332	NY	KINGS	55-043
+414333	NY	KINGS	55-044
+414334	NY	KINGS	55-045
+414335	NY	KINGS	55-046
+414336	NY	KINGS	55-047
+414337	NY	KINGS	55-048
+414338	NY	KINGS	55-049
+414339	NY	KINGS	55-050
+414340	NY	KINGS	55-051
+414341	NY	KINGS	55-052
+414342	NY	KINGS	55-053
+414343	NY	KINGS	55-054
+414344	NY	KINGS	55-055
+414345	NY	KINGS	55-057
+414346	NY	KINGS	55-058
+414347	NY	KINGS	55-059
+414348	NY	KINGS	55-060
+414349	NY	KINGS	55-061
+414350	NY	KINGS	55-062
+414351	NY	KINGS	55-063
+414352	NY	KINGS	55-064
+414353	NY	KINGS	55-065
+414354	NY	KINGS	55-066
+414355	NY	KINGS	55-067
+414356	NY	KINGS	55-068
+414357	NY	KINGS	55-069
+414358	NY	KINGS	55-070
+414359	NY	KINGS	55-071
+414360	NY	KINGS	55-072
+414361	NY	KINGS	55-073
+414362	NY	KINGS	55-074
+414363	NY	KINGS	55-075
+414364	NY	KINGS	55-076
+414365	NY	KINGS	55-077
+414366	NY	KINGS	55-078
+414367	NY	KINGS	55-079
+414368	NY	KINGS	55-080
+414369	NY	KINGS	55-081
+414370	NY	KINGS	55-082
+414371	NY	KINGS	55-083
+414372	NY	KINGS	55-084
+414373	NY	KINGS	55-085
+414374	NY	KINGS	55-086
+414375	NY	KINGS	55-087
+414376	NY	KINGS	55-088
+414377	NY	KINGS	55-089
+414378	NY	KINGS	55-090
+414379	NY	KINGS	55-091
+414380	NY	KINGS	55-092
+414381	NY	KINGS	55-093
+414382	NY	KINGS	55-094
+414383	NY	KINGS	55-095
+414384	NY	KINGS	55-096
+414385	NY	KINGS	55-097
+414386	NY	KINGS	55-098
+414387	NY	KINGS	55-099
+414388	NY	KINGS	55-100
+414389	NY	KINGS	55-101
+414390	NY	KINGS	55-102
+414391	NY	KINGS	55-103
+414392	NY	KINGS	55-104
+414393	NY	KINGS	55-108
+414394	NY	KINGS	56-001
+414395	NY	KINGS	56-002
+414396	NY	KINGS	56-003
+414397	NY	KINGS	56-004
+414398	NY	KINGS	56-005
+414399	NY	KINGS	56-006
+414400	NY	KINGS	56-007
+414401	NY	KINGS	56-008
+414402	NY	KINGS	56-009
+414403	NY	KINGS	56-010
+414404	NY	KINGS	56-011
+414405	NY	KINGS	56-012
+414406	NY	KINGS	56-013
+414407	NY	KINGS	56-014
+414408	NY	KINGS	56-015
+414409	NY	KINGS	56-016
+414410	NY	KINGS	56-017
+414411	NY	KINGS	56-018
+414412	NY	KINGS	56-019
+414413	NY	KINGS	56-020
+414414	NY	KINGS	56-021
+414415	NY	KINGS	56-022
+414416	NY	KINGS	56-023
+414417	NY	KINGS	56-024
+414418	NY	KINGS	56-025
+414419	NY	KINGS	56-026
+414420	NY	KINGS	56-027
+414421	NY	KINGS	56-028
+414422	NY	KINGS	56-029
+414423	NY	KINGS	56-030
+414424	NY	KINGS	56-031
+414425	NY	KINGS	56-032
+414426	NY	KINGS	56-033
+414427	NY	KINGS	56-034
+414428	NY	KINGS	56-035
+414429	NY	KINGS	56-036
+414430	NY	KINGS	56-037
+414431	NY	KINGS	56-038
+414432	NY	KINGS	56-039
+414433	NY	KINGS	56-040
+414434	NY	KINGS	56-041
+414435	NY	KINGS	56-042
+414436	NY	KINGS	56-043
+414437	NY	KINGS	56-044
+414438	NY	KINGS	56-045
+414439	NY	KINGS	56-046
+414440	NY	KINGS	56-047
+414441	NY	KINGS	56-048
+414442	NY	KINGS	56-049
+414443	NY	KINGS	56-050
+414444	NY	KINGS	56-051
+414445	NY	KINGS	56-052
+414446	NY	KINGS	56-053
+414447	NY	KINGS	56-054
+414448	NY	KINGS	56-055
+414449	NY	KINGS	56-056
+414450	NY	KINGS	56-057
+414451	NY	KINGS	56-058
+414452	NY	KINGS	56-059
+414453	NY	KINGS	56-060
+414454	NY	KINGS	56-061
+414455	NY	KINGS	56-062
+414456	NY	KINGS	56-063
+414457	NY	KINGS	56-064
+414458	NY	KINGS	56-065
+414459	NY	KINGS	56-066
+414460	NY	KINGS	56-067
+414461	NY	KINGS	56-068
+414462	NY	KINGS	56-069
+414463	NY	KINGS	56-070
+414464	NY	KINGS	56-071
+414465	NY	KINGS	56-072
+414466	NY	KINGS	56-073
+414467	NY	KINGS	56-074
+414468	NY	KINGS	56-075
+414469	NY	KINGS	56-076
+414470	NY	KINGS	56-077
+414471	NY	KINGS	56-078
+414472	NY	KINGS	56-079
+414473	NY	KINGS	56-080
+414474	NY	KINGS	56-082
+414475	NY	KINGS	56-083
+414476	NY	KINGS	56-084
+414477	NY	KINGS	57-001
+414478	NY	KINGS	57-002
+414479	NY	KINGS	57-003
+414480	NY	KINGS	57-004
+414481	NY	KINGS	57-005
+414482	NY	KINGS	57-006
+414483	NY	KINGS	57-007
+414484	NY	KINGS	57-008
+414485	NY	KINGS	57-009
+414486	NY	KINGS	57-010
+414487	NY	KINGS	57-011
+414488	NY	KINGS	57-012
+414489	NY	KINGS	57-013
+414490	NY	KINGS	57-014
+414491	NY	KINGS	57-015
+414492	NY	KINGS	57-016
+414493	NY	KINGS	57-017
+414494	NY	KINGS	57-018
+414495	NY	KINGS	57-019
+414496	NY	KINGS	57-020
+414497	NY	KINGS	57-021
+414498	NY	KINGS	57-022
+414499	NY	KINGS	57-023
+414500	NY	KINGS	57-024
+414501	NY	KINGS	57-025
+414502	NY	KINGS	57-026
+414503	NY	KINGS	57-027
+414504	NY	KINGS	57-028
+414505	NY	KINGS	57-029
+414506	NY	KINGS	57-030
+414507	NY	KINGS	57-031
+414508	NY	KINGS	57-032
+414509	NY	KINGS	57-033
+414510	NY	KINGS	57-034
+414511	NY	KINGS	57-035
+414512	NY	KINGS	57-036
+414513	NY	KINGS	57-037
+414514	NY	KINGS	57-038
+414515	NY	KINGS	57-039
+414516	NY	KINGS	57-040
+414517	NY	KINGS	57-041
+414518	NY	KINGS	57-042
+414519	NY	KINGS	57-043
+414520	NY	KINGS	57-044
+414521	NY	KINGS	57-045
+414522	NY	KINGS	57-046
+414523	NY	KINGS	57-047
+414524	NY	KINGS	57-048
+414525	NY	KINGS	57-049
+414526	NY	KINGS	57-050
+414527	NY	KINGS	57-051
+414528	NY	KINGS	57-052
+414529	NY	KINGS	57-053
+414530	NY	KINGS	57-054
+414531	NY	KINGS	57-055
+414532	NY	KINGS	57-056
+414533	NY	KINGS	57-057
+414534	NY	KINGS	57-058
+414535	NY	KINGS	57-059
+414536	NY	KINGS	57-060
+414537	NY	KINGS	57-061
+414538	NY	KINGS	57-062
+414539	NY	KINGS	57-063
+414540	NY	KINGS	57-064
+414541	NY	KINGS	57-065
+414542	NY	KINGS	57-066
+414543	NY	KINGS	57-067
+414544	NY	KINGS	57-068
+414545	NY	KINGS	57-069
+414546	NY	KINGS	57-070
+414547	NY	KINGS	57-071
+414548	NY	KINGS	57-072
+414549	NY	KINGS	57-073
+414550	NY	KINGS	57-074
+414551	NY	KINGS	57-075
+414552	NY	KINGS	57-076
+414553	NY	KINGS	57-077
+414554	NY	KINGS	57-078
+414555	NY	KINGS	57-079
+414556	NY	KINGS	57-080
+414557	NY	KINGS	57-081
+414558	NY	KINGS	57-082
+414559	NY	KINGS	57-083
+414560	NY	KINGS	57-084
+414561	NY	KINGS	57-085
+414562	NY	KINGS	57-086
+414563	NY	KINGS	57-087
+414564	NY	KINGS	57-088
+414565	NY	KINGS	57-089
+414566	NY	KINGS	57-090
+414567	NY	KINGS	57-091
+414568	NY	KINGS	57-092
+414569	NY	KINGS	57-093
+414570	NY	KINGS	57-094
+414571	NY	KINGS	57-095
+414572	NY	KINGS	57-097
+414573	NY	KINGS	58-001
+414574	NY	KINGS	58-002
+414575	NY	KINGS	58-003
+414576	NY	KINGS	58-004
+414577	NY	KINGS	58-005
+414578	NY	KINGS	58-006
+414579	NY	KINGS	58-007
+414580	NY	KINGS	58-008
+414581	NY	KINGS	58-009
+414582	NY	KINGS	58-010
+414583	NY	KINGS	58-011
+414584	NY	KINGS	58-012
+414585	NY	KINGS	58-013
+414586	NY	KINGS	58-014
+414587	NY	KINGS	58-015
+414588	NY	KINGS	58-016
+414589	NY	KINGS	58-017
+414590	NY	KINGS	58-018
+414591	NY	KINGS	58-019
+414592	NY	KINGS	58-020
+414593	NY	KINGS	58-021
+414594	NY	KINGS	58-022
+414595	NY	KINGS	58-023
+414596	NY	KINGS	58-024
+414597	NY	KINGS	58-025
+414598	NY	KINGS	58-026
+414599	NY	KINGS	58-027
+414600	NY	KINGS	58-028
+414601	NY	KINGS	58-029
+414602	NY	KINGS	58-030
+414603	NY	KINGS	58-031
+414604	NY	KINGS	58-032
+414605	NY	KINGS	58-033
+414606	NY	KINGS	58-034
+414607	NY	KINGS	58-035
+414608	NY	KINGS	58-036
+414609	NY	KINGS	58-037
+414610	NY	KINGS	58-038
+414611	NY	KINGS	58-039
+414612	NY	KINGS	58-040
+414613	NY	KINGS	58-041
+414614	NY	KINGS	58-042
+414615	NY	KINGS	58-043
+414616	NY	KINGS	58-044
+414617	NY	KINGS	58-045
+414618	NY	KINGS	58-046
+414619	NY	KINGS	58-047
+414620	NY	KINGS	58-048
+414621	NY	KINGS	58-049
+414622	NY	KINGS	58-050
+414623	NY	KINGS	58-051
+414624	NY	KINGS	58-052
+414625	NY	KINGS	58-053
+414626	NY	KINGS	58-054
+414627	NY	KINGS	58-055
+414628	NY	KINGS	58-056
+414629	NY	KINGS	58-057
+414630	NY	KINGS	58-058
+414631	NY	KINGS	58-059
+414632	NY	KINGS	58-060
+414633	NY	KINGS	58-061
+414634	NY	KINGS	58-062
+414635	NY	KINGS	58-063
+414636	NY	KINGS	58-064
+414637	NY	KINGS	58-065
+414638	NY	KINGS	58-066
+414639	NY	KINGS	58-067
+414640	NY	KINGS	58-068
+414641	NY	KINGS	58-069
+414642	NY	KINGS	58-070
+414643	NY	KINGS	58-071
+414644	NY	KINGS	58-072
+414645	NY	KINGS	58-073
+414646	NY	KINGS	58-074
+414647	NY	KINGS	58-075
+414648	NY	KINGS	58-076
+414649	NY	KINGS	58-077
+414650	NY	KINGS	58-078
+414651	NY	KINGS	58-079
+414652	NY	KINGS	58-080
+414653	NY	KINGS	58-081
+414654	NY	KINGS	58-082
+414655	NY	KINGS	58-083
+414656	NY	KINGS	59-001
+414657	NY	KINGS	59-002
+414658	NY	KINGS	59-003
+414659	NY	KINGS	59-004
+414660	NY	KINGS	59-005
+414661	NY	KINGS	59-006
+414662	NY	KINGS	59-007
+414663	NY	KINGS	59-008
+414664	NY	KINGS	59-009
+414665	NY	KINGS	59-010
+414666	NY	KINGS	59-011
+414667	NY	KINGS	59-012
+414668	NY	KINGS	59-013
+414669	NY	KINGS	59-014
+414670	NY	KINGS	59-015
+414671	NY	KINGS	59-016
+414672	NY	KINGS	59-017
+414673	NY	KINGS	59-018
+414674	NY	KINGS	59-019
+414675	NY	KINGS	59-020
+414676	NY	KINGS	59-021
+414677	NY	KINGS	59-022
+414678	NY	KINGS	59-023
+414679	NY	KINGS	59-024
+414680	NY	KINGS	59-025
+414681	NY	KINGS	59-026
+414682	NY	KINGS	59-027
+414683	NY	KINGS	59-028
+414684	NY	KINGS	59-029
+414685	NY	KINGS	59-030
+414686	NY	KINGS	59-031
+414687	NY	KINGS	59-032
+414688	NY	KINGS	59-033
+414689	NY	KINGS	59-034
+414690	NY	KINGS	59-036
+414691	NY	KINGS	59-037
+414692	NY	KINGS	59-038
+414693	NY	KINGS	59-039
+414694	NY	KINGS	59-040
+414695	NY	KINGS	59-041
+414696	NY	KINGS	59-042
+414697	NY	KINGS	59-043
+414698	NY	KINGS	59-044
+414699	NY	KINGS	59-045
+414700	NY	KINGS	59-046
+414701	NY	KINGS	59-047
+414702	NY	KINGS	59-048
+414703	NY	KINGS	59-049
+414704	NY	KINGS	59-050
+414705	NY	KINGS	59-051
+414706	NY	KINGS	59-052
+414707	NY	KINGS	59-053
+414708	NY	KINGS	59-054
+414709	NY	KINGS	59-055
+414710	NY	KINGS	59-056
+414711	NY	KINGS	59-057
+414712	NY	KINGS	59-058
+414713	NY	KINGS	59-059
+414714	NY	KINGS	59-060
+414715	NY	KINGS	59-061
+414716	NY	KINGS	59-062
+414717	NY	KINGS	59-063
+414718	NY	KINGS	59-064
+414719	NY	KINGS	59-065
+414720	NY	KINGS	59-066
+414721	NY	KINGS	59-067
+414722	NY	KINGS	59-068
+414723	NY	KINGS	59-069
+414724	NY	KINGS	59-070
+414725	NY	KINGS	59-071
+414726	NY	KINGS	59-072
+414727	NY	KINGS	59-073
+414728	NY	KINGS	59-074
+414729	NY	KINGS	59-075
+414730	NY	KINGS	59-076
+414731	NY	KINGS	59-082
+414732	NY	KINGS	59-083
+414733	NY	KINGS	59-084
+414734	NY	KINGS	59-085
+414735	NY	KINGS	59-086
+414736	NY	KINGS	59-087
+414737	NY	KINGS	60-075
+414738	NY	KINGS	60-076
+414739	NY	KINGS	60-077
+414740	NY	KINGS	60-078
+414741	NY	KINGS	60-079
+414742	NY	KINGS	60-080
+414743	NY	KINGS	60-081
+414744	NY	KINGS	60-082
+414745	NY	KINGS	60-083
+414746	NY	KINGS	60-084
+414747	NY	KINGS	60-085
+414748	NY	KINGS	60-086
+414749	NY	KINGS	60-087
+414750	NY	KINGS	60-088
+414751	NY	KINGS	60-089
+414752	NY	LEWIS	Croghan-01
+414753	NY	LEWIS	Croghan-02
+414754	NY	LEWIS	Croghan-03
+414755	NY	LEWIS	Croghan-04
+414756	NY	LEWIS	Denmark-01
+414757	NY	LEWIS	Denmark-02
+414758	NY	LEWIS	Denmark-03
+414759	NY	LEWIS	Diana-01
+414760	NY	LEWIS	Diana-02
+414761	NY	LEWIS	Greig-01
+414762	NY	LEWIS	Harrisburg-01
+414763	NY	LEWIS	Lewis-01
+414764	NY	LEWIS	Leyden-01
+414765	NY	LEWIS	Leyden-02
+414766	NY	LEWIS	Lowville-01
+414767	NY	LEWIS	Lowville-02
+414768	NY	LEWIS	Lowville-03
+414769	NY	LEWIS	Lowville-04
+414770	NY	LEWIS	Lyonsdale-01
+414771	NY	LEWIS	Martinsburg-01
+414772	NY	LEWIS	Montague-01
+414773	NY	LEWIS	New Bremen-01
+414774	NY	LEWIS	New Bremen-02
+414775	NY	LEWIS	Osceola-01
+414776	NY	LEWIS	Pinckney-01
+414777	NY	LEWIS	Turin-01
+414778	NY	LEWIS	Watson-01
+414779	NY	LEWIS	West Turin-01
+414780	NY	LEWIS	West Turin-02
+414781	NY	LIVINGSTON	Avon-01
+414782	NY	LIVINGSTON	Avon-02
+414783	NY	LIVINGSTON	Avon-03
+414784	NY	LIVINGSTON	Avon-04
+414785	NY	LIVINGSTON	Caledonia-01
+414786	NY	LIVINGSTON	Caledonia-02
+414787	NY	LIVINGSTON	Caledonia-03
+414788	NY	LIVINGSTON	Conesus-01
+414789	NY	LIVINGSTON	Conesus-02
+414790	NY	LIVINGSTON	Geneseo-01
+414791	NY	LIVINGSTON	Geneseo-02
+414792	NY	LIVINGSTON	Geneseo-03
+414793	NY	LIVINGSTON	Geneseo-04
+414794	NY	LIVINGSTON	Groveland-01
+414795	NY	LIVINGSTON	Groveland-02
+414796	NY	LIVINGSTON	Leicester-01
+414797	NY	LIVINGSTON	Lima-01
+414798	NY	LIVINGSTON	Lima-02
+414799	NY	LIVINGSTON	Livonia-01
+414800	NY	LIVINGSTON	Livonia-02
+414801	NY	LIVINGSTON	Livonia-03
+414802	NY	LIVINGSTON	Livonia-04
+414803	NY	LIVINGSTON	Livonia-05
+414804	NY	LIVINGSTON	Mt. Morris-01
+414805	NY	LIVINGSTON	Mt. Morris-02
+414806	NY	LIVINGSTON	Mt. Morris-03
+414807	NY	LIVINGSTON	North Dansville-01
+414808	NY	LIVINGSTON	North Dansville-02
+414809	NY	LIVINGSTON	North Dansville-03
+414810	NY	LIVINGSTON	North Dansville-04
+414811	NY	LIVINGSTON	Nunda-01
+414812	NY	LIVINGSTON	Nunda-02
+414813	NY	LIVINGSTON	Ossian-01
+414814	NY	LIVINGSTON	Portage-01
+414815	NY	LIVINGSTON	Sparta-01
+414816	NY	LIVINGSTON	Springwater-01
+414817	NY	LIVINGSTON	West Sparta-01
+414818	NY	LIVINGSTON	York-01
+414819	NY	LIVINGSTON	York-02
+414820	NY	MADISON	Town Of Brookfield-01
+414821	NY	MADISON	Town Of Brookfield-02
+414822	NY	MADISON	Town Of Brookfield-03
+414823	NY	MADISON	Town Of Cazenovia-01
+414824	NY	MADISON	Town Of Cazenovia-02
+414825	NY	MADISON	Town Of Cazenovia-03
+414826	NY	MADISON	Town Of Cazenovia-04
+414827	NY	MADISON	Town Of Cazenovia-05
+414828	NY	MADISON	Town Of Deruyter-01
+414829	NY	MADISON	Town Of Eaton-01
+414830	NY	MADISON	Town Of Eaton-02
+414831	NY	MADISON	Town Of Fenner-01
+414832	NY	MADISON	Town Of Georgetown-01
+414833	NY	MADISON	Town Of Hamilton-01
+414834	NY	MADISON	Town Of Hamilton-02
+414835	NY	MADISON	Town Of Hamilton-03
+414836	NY	MADISON	Town Of Hamilton-04
+414837	NY	MADISON	Town Of Lebanon-01
+414838	NY	MADISON	Town Of Lebanon-02
+414839	NY	MADISON	Town Of Lincoln-01
+414840	NY	MADISON	Town Of Lenox-01
+414841	NY	MADISON	Town Of Lenox-02
+414842	NY	MADISON	Town Of Lenox-03
+414843	NY	MADISON	Town Of Lenox-04
+414844	NY	MADISON	Town Of Lenox-05
+414845	NY	MADISON	Town Of Lenox-06
+414846	NY	MADISON	Town Of Madison-01
+414847	NY	MADISON	Town Of Madison-02
+414848	NY	MADISON	Town Of Nelson-01
+414849	NY	MADISON	Town Of Nelson-02
+414850	NY	MADISON	City Of Oneida-001-01
+414851	NY	MADISON	City Of Oneida-002-01
+414852	NY	MADISON	City Of Oneida-003-01
+414853	NY	MADISON	City Of Oneida-004-01
+414854	NY	MADISON	City Of Oneida-005-01
+414855	NY	MADISON	City Of Oneida-006-01
+414856	NY	MADISON	Town Of Smithfield-01
+414857	NY	MADISON	Town Of Stockbridge-01
+414858	NY	MADISON	Town Of Sullivan-01
+414859	NY	MADISON	Town Of Sullivan-02
+414860	NY	MADISON	Town Of Sullivan-03
+414861	NY	MADISON	Town Of Sullivan-04
+414862	NY	MADISON	Town Of Sullivan-05
+414863	NY	MADISON	Town Of Sullivan-06
+414864	NY	MADISON	Town Of Sullivan-07
+414865	NY	MADISON	Town Of Sullivan-08
+414866	NY	MADISON	Town Of Sullivan-09
+414867	NY	MADISON	Town Of Sullivan-10
+414868	NY	MONROE	Brighton-045-001
+414869	NY	MONROE	Brighton-045-002
+414870	NY	MONROE	Brighton-045-003
+414871	NY	MONROE	Brighton-045-004
+414872	NY	MONROE	Brighton-045-005
+414873	NY	MONROE	Brighton-045-006
+414874	NY	MONROE	Brighton-045-007
+414875	NY	MONROE	Brighton-045-008
+414876	NY	MONROE	Brighton-045-009
+414877	NY	MONROE	Brighton-045-010
+414878	NY	MONROE	Brighton-045-011
+414879	NY	MONROE	Brighton-045-012
+414880	NY	MONROE	Brighton-045-013
+414881	NY	MONROE	Brighton-045-014
+414882	NY	MONROE	Brighton-045-015
+414883	NY	MONROE	Brighton-045-016
+414884	NY	MONROE	Brighton-045-017
+414885	NY	MONROE	Brighton-045-018
+414886	NY	MONROE	Brighton-045-019
+414887	NY	MONROE	Brighton-045-020
+414888	NY	MONROE	Brighton-045-021
+414889	NY	MONROE	Brighton-045-022
+414890	NY	MONROE	Brighton-045-023
+414891	NY	MONROE	Brighton-045-024
+414892	NY	MONROE	Brighton-045-025
+414893	NY	MONROE	Brighton-045-026
+414894	NY	MONROE	Brighton-045-027
+414895	NY	MONROE	Brighton-045-028
+414896	NY	MONROE	Brighton-045-029
+414897	NY	MONROE	Brighton-045-030
+414898	NY	MONROE	Brighton-045-031
+414899	NY	MONROE	Brighton-045-032
+414900	NY	MONROE	Brighton-045-033
+414901	NY	MONROE	Brighton-045-034
+414902	NY	MONROE	Brighton-045-035
+414903	NY	MONROE	Brighton-045-036
+414904	NY	MONROE	Brighton-045-037
+414905	NY	MONROE	Brighton-045-038
+414906	NY	MONROE	Brighton-045-039
+414907	NY	MONROE	Brighton-045-040
+414908	NY	MONROE	Brighton-045-041
+414909	NY	MONROE	Brighton-045-042
+414910	NY	MONROE	Brighton-045-043
+414911	NY	MONROE	Brighton-045-044
+414912	NY	MONROE	Brighton-045-045
+414913	NY	MONROE	Brighton-045-046
+414914	NY	MONROE	Chili-046-001
+414915	NY	MONROE	Chili-046-002
+414916	NY	MONROE	Chili-046-003
+414917	NY	MONROE	Chili-046-004
+414918	NY	MONROE	Chili-046-005
+414919	NY	MONROE	Chili-046-006
+414920	NY	MONROE	Chili-046-007
+414921	NY	MONROE	Chili-046-008
+414922	NY	MONROE	Chili-046-009
+414923	NY	MONROE	Chili-046-010
+414924	NY	MONROE	Chili-046-011
+414925	NY	MONROE	Chili-046-012
+414926	NY	MONROE	Chili-046-013
+414927	NY	MONROE	Chili-046-014
+414928	NY	MONROE	Chili-046-015
+414929	NY	MONROE	Chili-046-016
+414930	NY	MONROE	Chili-046-017
+414931	NY	MONROE	Chili-046-018
+414932	NY	MONROE	Chili-046-019
+414933	NY	MONROE	Chili-046-020
+414934	NY	MONROE	Chili-046-021
+414935	NY	MONROE	Chili-046-022
+414936	NY	MONROE	Chili-046-023
+414937	NY	MONROE	Chili-046-024
+414938	NY	MONROE	Chili-046-025
+414939	NY	MONROE	Chili-046-026
+414940	NY	MONROE	Chili-046-027
+414941	NY	MONROE	Chili-046-028
+414942	NY	MONROE	Chili-046-029
+414943	NY	MONROE	Chili-046-030
+414944	NY	MONROE	Chili-046-031
+414945	NY	MONROE	Clarkson-047-001
+414946	NY	MONROE	Clarkson-047-002
+414947	NY	MONROE	Clarkson-047-003
+414948	NY	MONROE	Clarkson-047-004
+414949	NY	MONROE	Clarkson-047-005
+414950	NY	MONROE	Clarkson-047-006
+414951	NY	MONROE	East Rochester-048-001
+414952	NY	MONROE	East Rochester-048-002
+414953	NY	MONROE	East Rochester-048-003
+414954	NY	MONROE	East Rochester-048-004
+414955	NY	MONROE	East Rochester-048-005
+414956	NY	MONROE	East Rochester-048-006
+414957	NY	MONROE	East Rochester-048-007
+414958	NY	MONROE	Gates-049-001
+414959	NY	MONROE	Gates-049-002
+414960	NY	MONROE	Gates-049-003
+414961	NY	MONROE	Gates-049-004
+414962	NY	MONROE	Gates-049-005
+414963	NY	MONROE	Gates-049-006
+414964	NY	MONROE	Gates-049-007
+414965	NY	MONROE	Gates-049-008
+414966	NY	MONROE	Gates-049-009
+414967	NY	MONROE	Gates-049-010
+414968	NY	MONROE	Gates-049-011
+414969	NY	MONROE	Gates-049-012
+414970	NY	MONROE	Gates-049-013
+414971	NY	MONROE	Gates-049-014
+414972	NY	MONROE	Gates-049-015
+414973	NY	MONROE	Gates-049-016
+414974	NY	MONROE	Gates-049-017
+414975	NY	MONROE	Gates-049-018
+414976	NY	MONROE	Gates-049-019
+414977	NY	MONROE	Gates-049-020
+414978	NY	MONROE	Gates-049-021
+414979	NY	MONROE	Gates-049-022
+414980	NY	MONROE	Gates-049-023
+414981	NY	MONROE	Gates-049-024
+414982	NY	MONROE	Gates-049-025
+414983	NY	MONROE	Gates-049-026
+414984	NY	MONROE	Gates-049-027
+414985	NY	MONROE	Gates-049-028
+414986	NY	MONROE	Gates-049-029
+414987	NY	MONROE	Gates-049-030
+414988	NY	MONROE	Gates-049-031
+414989	NY	MONROE	Gates-049-032
+414990	NY	MONROE	Gates-049-033
+414991	NY	MONROE	Gates-049-034
+414992	NY	MONROE	Gates-049-035
+414993	NY	MONROE	Greece-050-001
+414994	NY	MONROE	Greece-050-002
+414995	NY	MONROE	Greece-050-003
+414996	NY	MONROE	Greece-050-004
+414997	NY	MONROE	Greece-050-005
+414998	NY	MONROE	Greece-050-006
+414999	NY	MONROE	Greece-050-007
+415000	NY	MONROE	Greece-050-008
+415001	NY	MONROE	Greece-050-009
+415002	NY	MONROE	Greece-050-010
+415003	NY	MONROE	Greece-050-011
+415004	NY	MONROE	Greece-050-012
+415005	NY	MONROE	Greece-050-013
+415006	NY	MONROE	Greece-050-014
+415007	NY	MONROE	Greece-050-015
+415008	NY	MONROE	Greece-050-016
+415009	NY	MONROE	Greece-050-017
+415010	NY	MONROE	Greece-050-018
+415011	NY	MONROE	Greece-050-019
+415012	NY	MONROE	Greece-050-020
+415013	NY	MONROE	Greece-050-021
+415014	NY	MONROE	Greece-050-022
+415015	NY	MONROE	Greece-050-023
+415016	NY	MONROE	Greece-050-024
+415017	NY	MONROE	Greece-050-025
+415018	NY	MONROE	Greece-050-026
+415019	NY	MONROE	Greece-050-027
+415020	NY	MONROE	Greece-050-028
+415021	NY	MONROE	Greece-050-029
+415022	NY	MONROE	Greece-050-030
+415023	NY	MONROE	Greece-050-031
+415024	NY	MONROE	Greece-050-032
+415025	NY	MONROE	Greece-050-033
+415026	NY	MONROE	Greece-050-034
+415027	NY	MONROE	Greece-050-035
+415028	NY	MONROE	Greece-050-036
+415029	NY	MONROE	Greece-050-037
+415030	NY	MONROE	Greece-050-038
+415031	NY	MONROE	Greece-050-039
+415032	NY	MONROE	Greece-050-040
+415033	NY	MONROE	Greece-050-041
+415034	NY	MONROE	Greece-050-042
+415035	NY	MONROE	Greece-050-043
+415036	NY	MONROE	Greece-050-044
+415037	NY	MONROE	Greece-050-045
+415038	NY	MONROE	Greece-050-046
+415039	NY	MONROE	Greece-050-047
+415040	NY	MONROE	Greece-050-048
+415041	NY	MONROE	Greece-050-049
+415042	NY	MONROE	Greece-050-050
+415043	NY	MONROE	Greece-050-051
+415044	NY	MONROE	Greece-050-052
+415045	NY	MONROE	Greece-050-053
+415046	NY	MONROE	Greece-050-054
+415047	NY	MONROE	Greece-050-055
+415048	NY	MONROE	Greece-050-056
+415049	NY	MONROE	Greece-050-057
+415050	NY	MONROE	Greece-050-058
+415051	NY	MONROE	Greece-050-059
+415052	NY	MONROE	Greece-050-060
+415053	NY	MONROE	Greece-050-061
+415054	NY	MONROE	Greece-050-062
+415055	NY	MONROE	Greece-050-063
+415056	NY	MONROE	Greece-050-064
+415057	NY	MONROE	Greece-050-065
+415058	NY	MONROE	Greece-050-066
+415059	NY	MONROE	Greece-050-067
+415060	NY	MONROE	Greece-050-068
+415061	NY	MONROE	Greece-050-069
+415062	NY	MONROE	Greece-050-070
+415063	NY	MONROE	Greece-050-071
+415064	NY	MONROE	Greece-050-072
+415065	NY	MONROE	Greece-050-073
+415066	NY	MONROE	Greece-050-074
+415067	NY	MONROE	Greece-050-075
+415068	NY	MONROE	Greece-050-076
+415069	NY	MONROE	Greece-050-077
+415070	NY	MONROE	Greece-050-078
+415071	NY	MONROE	Greece-050-079
+415072	NY	MONROE	Greece-050-080
+415073	NY	MONROE	Greece-050-081
+415074	NY	MONROE	Greece-050-082
+415075	NY	MONROE	Greece-050-083
+415076	NY	MONROE	Greece-050-084
+415077	NY	MONROE	Greece-050-085
+415078	NY	MONROE	Greece-050-086
+415079	NY	MONROE	Greece-050-087
+415080	NY	MONROE	Greece-050-088
+415081	NY	MONROE	Greece-050-089
+415082	NY	MONROE	Greece-050-090
+415083	NY	MONROE	Greece-050-091
+415084	NY	MONROE	Greece-050-092
+415085	NY	MONROE	Greece-050-093
+415086	NY	MONROE	Greece-050-094
+415087	NY	MONROE	Greece-050-095
+415088	NY	MONROE	Greece-050-096
+415089	NY	MONROE	Greece-050-097
+415090	NY	MONROE	Greece-050-098
+415091	NY	MONROE	Greece-050-099
+415092	NY	MONROE	Greece-050-100
+415093	NY	MONROE	Greece-050-101
+415094	NY	MONROE	Greece-050-102
+415095	NY	MONROE	Greece-050-103
+415096	NY	MONROE	Greece-050-104
+415097	NY	MONROE	Greece-050-105
+415098	NY	MONROE	Greece-050-106
+415099	NY	MONROE	Hamlin-051-001
+415100	NY	MONROE	Hamlin-051-002
+415101	NY	MONROE	Hamlin-051-003
+415102	NY	MONROE	Hamlin-051-004
+415103	NY	MONROE	Hamlin-051-005
+415104	NY	MONROE	Hamlin-051-006
+415105	NY	MONROE	Hamlin-051-007
+415106	NY	MONROE	Hamlin-051-008
+415107	NY	MONROE	Hamlin-051-009
+415108	NY	MONROE	Hamlin-051-010
+415109	NY	MONROE	Henrietta-052-001
+415110	NY	MONROE	Henrietta-052-002
+415111	NY	MONROE	Henrietta-052-003
+415112	NY	MONROE	Henrietta-052-004
+415113	NY	MONROE	Henrietta-052-005
+415114	NY	MONROE	Henrietta-052-006
+415115	NY	MONROE	Henrietta-052-007
+415116	NY	MONROE	Henrietta-052-008
+415117	NY	MONROE	Henrietta-052-009
+415118	NY	MONROE	Henrietta-052-010
+415119	NY	MONROE	Henrietta-052-011
+415120	NY	MONROE	Henrietta-052-012
+415121	NY	MONROE	Henrietta-052-013
+415122	NY	MONROE	Henrietta-052-014
+415123	NY	MONROE	Henrietta-052-015
+415124	NY	MONROE	Henrietta-052-016
+415125	NY	MONROE	Henrietta-052-017
+415126	NY	MONROE	Henrietta-052-018
+415127	NY	MONROE	Henrietta-052-019
+415128	NY	MONROE	Henrietta-052-020
+415129	NY	MONROE	Henrietta-052-021
+415130	NY	MONROE	Henrietta-052-022
+415131	NY	MONROE	Henrietta-052-023
+415132	NY	MONROE	Henrietta-052-024
+415133	NY	MONROE	Henrietta-052-025
+415134	NY	MONROE	Henrietta-052-026
+415135	NY	MONROE	Henrietta-052-027
+415136	NY	MONROE	Henrietta-052-028
+415137	NY	MONROE	Henrietta-052-029
+415138	NY	MONROE	Henrietta-052-030
+415139	NY	MONROE	Henrietta-052-031
+415140	NY	MONROE	Henrietta-052-032
+415141	NY	MONROE	Henrietta-052-033
+415142	NY	MONROE	Henrietta-052-034
+415143	NY	MONROE	Henrietta-052-035
+415144	NY	MONROE	Irondequoit-053-001
+415145	NY	MONROE	Irondequoit-053-002
+415146	NY	MONROE	Irondequoit-053-003
+415147	NY	MONROE	Irondequoit-053-004
+415148	NY	MONROE	Irondequoit-053-005
+415149	NY	MONROE	Irondequoit-053-006
+415150	NY	MONROE	Irondequoit-053-007
+415151	NY	MONROE	Irondequoit-053-008
+415152	NY	MONROE	Irondequoit-053-009
+415153	NY	MONROE	Irondequoit-053-010
+415154	NY	MONROE	Irondequoit-053-011
+415155	NY	MONROE	Irondequoit-053-012
+415156	NY	MONROE	Irondequoit-053-013
+415157	NY	MONROE	Irondequoit-053-014
+415158	NY	MONROE	Irondequoit-053-015
+415159	NY	MONROE	Irondequoit-053-016
+415160	NY	MONROE	Irondequoit-053-017
+415161	NY	MONROE	Irondequoit-053-018
+415162	NY	MONROE	Irondequoit-053-019
+415163	NY	MONROE	Irondequoit-053-020
+415164	NY	MONROE	Irondequoit-053-021
+415165	NY	MONROE	Irondequoit-053-022
+415166	NY	MONROE	Irondequoit-053-023
+415167	NY	MONROE	Irondequoit-053-024
+415168	NY	MONROE	Irondequoit-053-025
+415169	NY	MONROE	Irondequoit-053-026
+415170	NY	MONROE	Irondequoit-053-027
+415171	NY	MONROE	Irondequoit-053-028
+415172	NY	MONROE	Irondequoit-053-029
+415173	NY	MONROE	Irondequoit-053-030
+415174	NY	MONROE	Irondequoit-053-031
+415175	NY	MONROE	Irondequoit-053-032
+415176	NY	MONROE	Irondequoit-053-033
+415177	NY	MONROE	Irondequoit-053-034
+415178	NY	MONROE	Irondequoit-053-035
+415179	NY	MONROE	Irondequoit-053-036
+415180	NY	MONROE	Irondequoit-053-037
+415181	NY	MONROE	Irondequoit-053-038
+415182	NY	MONROE	Irondequoit-053-039
+415183	NY	MONROE	Irondequoit-053-040
+415184	NY	MONROE	Irondequoit-053-041
+415185	NY	MONROE	Irondequoit-053-042
+415186	NY	MONROE	Irondequoit-053-043
+415187	NY	MONROE	Irondequoit-053-044
+415188	NY	MONROE	Irondequoit-053-045
+415189	NY	MONROE	Irondequoit-053-046
+415190	NY	MONROE	Irondequoit-053-047
+415191	NY	MONROE	Irondequoit-053-048
+415192	NY	MONROE	Irondequoit-053-049
+415193	NY	MONROE	Irondequoit-053-050
+415194	NY	MONROE	Irondequoit-053-051
+415195	NY	MONROE	Irondequoit-053-052
+415196	NY	MONROE	Irondequoit-053-053
+415197	NY	MONROE	Irondequoit-053-054
+415198	NY	MONROE	Irondequoit-053-055
+415199	NY	MONROE	Irondequoit-053-056
+415200	NY	MONROE	Irondequoit-053-057
+415201	NY	MONROE	Irondequoit-053-058
+415202	NY	MONROE	Irondequoit-053-059
+415203	NY	MONROE	Irondequoit-053-060
+415204	NY	MONROE	Irondequoit-053-061
+415205	NY	MONROE	Irondequoit-053-062
+415206	NY	MONROE	Irondequoit-053-063
+415207	NY	MONROE	Irondequoit-053-064
+415208	NY	MONROE	Irondequoit-053-065
+415209	NY	MONROE	Irondequoit-053-066
+415210	NY	MONROE	Irondequoit-053-067
+415211	NY	MONROE	Irondequoit-053-068
+415212	NY	MONROE	Mendon-054-001
+415213	NY	MONROE	Mendon-054-002
+415214	NY	MONROE	Mendon-054-003
+415215	NY	MONROE	Mendon-054-004
+415216	NY	MONROE	Mendon-054-005
+415217	NY	MONROE	Mendon-054-006
+415218	NY	MONROE	Mendon-054-007
+415219	NY	MONROE	Mendon-054-008
+415220	NY	MONROE	Mendon-054-009
+415221	NY	MONROE	Ogden-055-001
+415222	NY	MONROE	Ogden-055-002
+415223	NY	MONROE	Ogden-055-003
+415224	NY	MONROE	Ogden-055-004
+415225	NY	MONROE	Ogden-055-005
+415226	NY	MONROE	Ogden-055-006
+415227	NY	MONROE	Ogden-055-007
+415228	NY	MONROE	Ogden-055-008
+415229	NY	MONROE	Ogden-055-009
+415230	NY	MONROE	Ogden-055-010
+415231	NY	MONROE	Ogden-055-011
+415232	NY	MONROE	Ogden-055-012
+415233	NY	MONROE	Ogden-055-013
+415234	NY	MONROE	Ogden-055-014
+415235	NY	MONROE	Ogden-055-015
+415236	NY	MONROE	Ogden-055-016
+415237	NY	MONROE	Ogden-055-017
+415238	NY	MONROE	Ogden-055-018
+415239	NY	MONROE	Ogden-055-019
+415240	NY	MONROE	Ogden-055-020
+415241	NY	MONROE	Parma-056-001
+415242	NY	MONROE	Parma-056-002
+415243	NY	MONROE	Parma-056-003
+415244	NY	MONROE	Parma-056-004
+415245	NY	MONROE	Parma-056-005
+415246	NY	MONROE	Parma-056-006
+415247	NY	MONROE	Parma-056-007
+415248	NY	MONROE	Parma-056-008
+415249	NY	MONROE	Parma-056-009
+415250	NY	MONROE	Parma-056-010
+415251	NY	MONROE	Parma-056-011
+415252	NY	MONROE	Parma-056-012
+415253	NY	MONROE	Parma-056-013
+415254	NY	MONROE	Parma-056-014
+415255	NY	MONROE	Parma-056-015
+415256	NY	MONROE	Penfield-057-001
+415257	NY	MONROE	Penfield-057-002
+415258	NY	MONROE	Penfield-057-003
+415259	NY	MONROE	Penfield-057-004
+415260	NY	MONROE	Penfield-057-005
+415261	NY	MONROE	Penfield-057-006
+415262	NY	MONROE	Penfield-057-007
+415263	NY	MONROE	Penfield-057-008
+415264	NY	MONROE	Penfield-057-009
+415265	NY	MONROE	Penfield-057-010
+415266	NY	MONROE	Penfield-057-011
+415267	NY	MONROE	Penfield-057-012
+415268	NY	MONROE	Penfield-057-013
+415269	NY	MONROE	Penfield-057-014
+415270	NY	MONROE	Penfield-057-015
+415271	NY	MONROE	Penfield-057-016
+415272	NY	MONROE	Penfield-057-017
+415273	NY	MONROE	Penfield-057-018
+415274	NY	MONROE	Penfield-057-019
+415275	NY	MONROE	Penfield-057-020
+415276	NY	MONROE	Penfield-057-021
+415277	NY	MONROE	Penfield-057-022
+415278	NY	MONROE	Penfield-057-023
+415279	NY	MONROE	Penfield-057-024
+415280	NY	MONROE	Penfield-057-025
+415281	NY	MONROE	Penfield-057-026
+415282	NY	MONROE	Penfield-057-027
+415283	NY	MONROE	Penfield-057-028
+415284	NY	MONROE	Penfield-057-029
+415285	NY	MONROE	Penfield-057-030
+415286	NY	MONROE	Penfield-057-031
+415287	NY	MONROE	Penfield-057-032
+415288	NY	MONROE	Penfield-057-033
+415289	NY	MONROE	Penfield-057-034
+415290	NY	MONROE	Penfield-057-035
+415291	NY	MONROE	Penfield-057-036
+415292	NY	MONROE	Penfield-057-037
+415293	NY	MONROE	Penfield-057-038
+415294	NY	MONROE	Penfield-057-039
+415295	NY	MONROE	Penfield-057-040
+415296	NY	MONROE	Perinton-058-001
+415297	NY	MONROE	Perinton-058-002
+415298	NY	MONROE	Perinton-058-003
+415299	NY	MONROE	Perinton-058-004
+415300	NY	MONROE	Perinton-058-005
+415301	NY	MONROE	Perinton-058-006
+415302	NY	MONROE	Perinton-058-007
+415303	NY	MONROE	Perinton-058-008
+415304	NY	MONROE	Perinton-058-009
+415305	NY	MONROE	Perinton-058-010
+415306	NY	MONROE	Perinton-058-011
+415307	NY	MONROE	Perinton-058-012
+415308	NY	MONROE	Perinton-058-013
+415309	NY	MONROE	Perinton-058-014
+415310	NY	MONROE	Perinton-058-015
+415311	NY	MONROE	Perinton-058-016
+415312	NY	MONROE	Perinton-058-017
+415313	NY	MONROE	Perinton-058-018
+415314	NY	MONROE	Perinton-058-019
+415315	NY	MONROE	Perinton-058-020
+415316	NY	MONROE	Perinton-058-021
+415317	NY	MONROE	Perinton-058-022
+415318	NY	MONROE	Perinton-058-023
+415319	NY	MONROE	Perinton-058-024
+415320	NY	MONROE	Perinton-058-025
+415321	NY	MONROE	Perinton-058-026
+415322	NY	MONROE	Perinton-058-027
+415323	NY	MONROE	Perinton-058-028
+415324	NY	MONROE	Perinton-058-029
+415325	NY	MONROE	Perinton-058-030
+415326	NY	MONROE	Perinton-058-031
+415327	NY	MONROE	Perinton-058-032
+415328	NY	MONROE	Perinton-058-033
+415329	NY	MONROE	Perinton-058-034
+415330	NY	MONROE	Perinton-058-035
+415331	NY	MONROE	Perinton-058-036
+415332	NY	MONROE	Perinton-058-037
+415333	NY	MONROE	Perinton-058-038
+415334	NY	MONROE	Perinton-058-039
+415335	NY	MONROE	Perinton-058-040
+415336	NY	MONROE	Perinton-058-041
+415337	NY	MONROE	Perinton-058-042
+415338	NY	MONROE	Perinton-058-043
+415339	NY	MONROE	Perinton-058-044
+415340	NY	MONROE	Perinton-058-045
+415341	NY	MONROE	Perinton-058-046
+415342	NY	MONROE	Perinton-058-047
+415343	NY	MONROE	Perinton-058-048
+415344	NY	MONROE	Perinton-058-049
+415345	NY	MONROE	Perinton-058-050
+415346	NY	MONROE	Perinton-058-051
+415347	NY	MONROE	Perinton-058-052
+415348	NY	MONROE	Perinton-058-053
+415349	NY	MONROE	Perinton-058-054
+415350	NY	MONROE	Perinton-058-055
+415351	NY	MONROE	Perinton-058-056
+415352	NY	MONROE	Pittsford-059-001
+415353	NY	MONROE	Pittsford-059-002
+415354	NY	MONROE	Pittsford-059-003
+415355	NY	MONROE	Pittsford-059-004
+415356	NY	MONROE	Pittsford-059-005
+415357	NY	MONROE	Pittsford-059-006
+415358	NY	MONROE	Pittsford-059-007
+415359	NY	MONROE	Pittsford-059-008
+415360	NY	MONROE	Pittsford-059-009
+415361	NY	MONROE	Pittsford-059-010
+415362	NY	MONROE	Pittsford-059-011
+415363	NY	MONROE	Pittsford-059-012
+415364	NY	MONROE	Pittsford-059-013
+415365	NY	MONROE	Pittsford-059-014
+415366	NY	MONROE	Pittsford-059-015
+415367	NY	MONROE	Pittsford-059-016
+415368	NY	MONROE	Pittsford-059-017
+415369	NY	MONROE	Pittsford-059-018
+415370	NY	MONROE	Pittsford-059-019
+415371	NY	MONROE	Pittsford-059-020
+415372	NY	MONROE	Pittsford-059-021
+415373	NY	MONROE	Pittsford-059-022
+415374	NY	MONROE	Pittsford-059-023
+415375	NY	MONROE	Pittsford-059-024
+415376	NY	MONROE	Pittsford-059-025
+415377	NY	MONROE	Pittsford-059-026
+415378	NY	MONROE	Pittsford-059-027
+415379	NY	MONROE	Pittsford-059-028
+415380	NY	MONROE	Pittsford-059-029
+415381	NY	MONROE	Pittsford-059-030
+415382	NY	MONROE	Pittsford-059-031
+415383	NY	MONROE	Pittsford-059-032
+415384	NY	MONROE	Pittsford-059-033
+415385	NY	MONROE	Riga-060-001
+415386	NY	MONROE	Riga-060-002
+415387	NY	MONROE	Riga-060-003
+415388	NY	MONROE	Riga-060-004
+415389	NY	MONROE	Riga-060-005
+415390	NY	MONROE	Riga-060-006
+415391	NY	MONROE	Rochester-021-001
+415392	NY	MONROE	Rochester-021-002
+415393	NY	MONROE	Rochester-021-003
+415394	NY	MONROE	Rochester-021-004
+415395	NY	MONROE	Rochester-021-005
+415396	NY	MONROE	Rochester-021-006
+415397	NY	MONROE	Rochester-021-007
+415398	NY	MONROE	Rochester-021-008
+415399	NY	MONROE	Rochester-021-009
+415400	NY	MONROE	Rochester-021-010
+415401	NY	MONROE	Rochester-021-011
+415402	NY	MONROE	Rochester-021-012
+415403	NY	MONROE	Rochester-021-013
+415404	NY	MONROE	Rochester-021-014
+415405	NY	MONROE	Rochester-021-015
+415406	NY	MONROE	Rochester-021-016
+415407	NY	MONROE	Rochester-021-017
+415408	NY	MONROE	Rochester-021-018
+415409	NY	MONROE	Rochester-021-019
+415410	NY	MONROE	Rochester-021-020
+415411	NY	MONROE	Rochester-021-021
+415412	NY	MONROE	Rochester-021-022
+415413	NY	MONROE	Rochester-021-023
+415414	NY	MONROE	Rochester-021-024
+415415	NY	MONROE	Rochester-021-025
+415416	NY	MONROE	Rochester-021-026
+415417	NY	MONROE	Rochester-021-027
+415418	NY	MONROE	Rochester-022-001
+415419	NY	MONROE	Rochester-022-002
+415420	NY	MONROE	Rochester-022-003
+415421	NY	MONROE	Rochester-022-004
+415422	NY	MONROE	Rochester-022-005
+415423	NY	MONROE	Rochester-022-006
+415424	NY	MONROE	Rochester-022-007
+415425	NY	MONROE	Rochester-022-008
+415426	NY	MONROE	Rochester-022-009
+415427	NY	MONROE	Rochester-022-010
+415428	NY	MONROE	Rochester-022-011
+415429	NY	MONROE	Rochester-022-012
+415430	NY	MONROE	Rochester-022-013
+415431	NY	MONROE	Rochester-022-014
+415432	NY	MONROE	Rochester-022-015
+415433	NY	MONROE	Rochester-022-016
+415434	NY	MONROE	Rochester-022-017
+415435	NY	MONROE	Rochester-022-018
+415436	NY	MONROE	Rochester-022-019
+415437	NY	MONROE	Rochester-022-020
+415438	NY	MONROE	Rochester-022-021
+415439	NY	MONROE	Rochester-022-022
+415440	NY	MONROE	Rochester-022-023
+415441	NY	MONROE	Rochester-022-024
+415442	NY	MONROE	Rochester-023-001
+415443	NY	MONROE	Rochester-023-002
+415444	NY	MONROE	Rochester-023-003
+415445	NY	MONROE	Rochester-023-004
+415446	NY	MONROE	Rochester-023-005
+415447	NY	MONROE	Rochester-023-006
+415448	NY	MONROE	Rochester-023-007
+415449	NY	MONROE	Rochester-023-008
+415450	NY	MONROE	Rochester-023-009
+415451	NY	MONROE	Rochester-023-010
+415452	NY	MONROE	Rochester-023-011
+415453	NY	MONROE	Rochester-023-012
+415454	NY	MONROE	Rochester-023-013
+415455	NY	MONROE	Rochester-023-014
+415456	NY	MONROE	Rochester-023-015
+415457	NY	MONROE	Rochester-023-016
+415458	NY	MONROE	Rochester-023-017
+415459	NY	MONROE	Rochester-023-018
+415460	NY	MONROE	Rochester-023-019
+415461	NY	MONROE	Rochester-023-020
+415462	NY	MONROE	Rochester-023-021
+415463	NY	MONROE	Rochester-023-022
+415464	NY	MONROE	Rochester-023-023
+415465	NY	MONROE	Rochester-023-024
+415466	NY	MONROE	Rochester-023-025
+415467	NY	MONROE	Rochester-023-026
+415468	NY	MONROE	Rochester-023-027
+415469	NY	MONROE	Rochester-024-001
+415470	NY	MONROE	Rochester-024-002
+415471	NY	MONROE	Rochester-024-003
+415472	NY	MONROE	Rochester-024-004
+415473	NY	MONROE	Rochester-024-005
+415474	NY	MONROE	Rochester-024-006
+415475	NY	MONROE	Rochester-024-007
+415476	NY	MONROE	Rochester-024-008
+415477	NY	MONROE	Rochester-024-009
+415478	NY	MONROE	Rochester-024-010
+415479	NY	MONROE	Rochester-024-011
+415480	NY	MONROE	Rochester-024-012
+415481	NY	MONROE	Rochester-024-013
+415482	NY	MONROE	Rochester-024-014
+415483	NY	MONROE	Rochester-024-015
+415484	NY	MONROE	Rochester-024-016
+415485	NY	MONROE	Rochester-024-017
+415486	NY	MONROE	Rochester-025-001
+415487	NY	MONROE	Rochester-025-002
+415488	NY	MONROE	Rochester-025-003
+415489	NY	MONROE	Rochester-025-004
+415490	NY	MONROE	Rochester-025-005
+415491	NY	MONROE	Rochester-025-006
+415492	NY	MONROE	Rochester-025-007
+415493	NY	MONROE	Rochester-025-008
+415494	NY	MONROE	Rochester-025-009
+415495	NY	MONROE	Rochester-025-010
+415496	NY	MONROE	Rochester-025-011
+415497	NY	MONROE	Rochester-025-012
+415498	NY	MONROE	Rochester-025-013
+415499	NY	MONROE	Rochester-025-014
+415500	NY	MONROE	Rochester-025-015
+415501	NY	MONROE	Rochester-025-016
+415502	NY	MONROE	Rochester-025-017
+415503	NY	MONROE	Rochester-025-018
+415504	NY	MONROE	Rochester-025-019
+415505	NY	MONROE	Rochester-025-020
+415506	NY	MONROE	Rochester-025-021
+415507	NY	MONROE	Rochester-025-022
+415508	NY	MONROE	Rochester-025-023
+415509	NY	MONROE	Rochester-025-024
+415510	NY	MONROE	Rochester-025-025
+415511	NY	MONROE	Rochester-026-001
+415512	NY	MONROE	Rochester-026-002
+415513	NY	MONROE	Rochester-026-003
+415514	NY	MONROE	Rochester-026-004
+415515	NY	MONROE	Rochester-026-005
+415516	NY	MONROE	Rochester-026-007
+415517	NY	MONROE	Rochester-026-008
+415518	NY	MONROE	Rochester-026-009
+415519	NY	MONROE	Rochester-026-010
+415520	NY	MONROE	Rochester-026-011
+415521	NY	MONROE	Rochester-026-012
+415522	NY	MONROE	Rochester-026-013
+415523	NY	MONROE	Rochester-026-014
+415524	NY	MONROE	Rochester-026-015
+415525	NY	MONROE	Rochester-026-016
+415526	NY	MONROE	Rochester-026-017
+415527	NY	MONROE	Rochester-027-001
+415528	NY	MONROE	Rochester-027-002
+415529	NY	MONROE	Rochester-027-003
+415530	NY	MONROE	Rochester-027-004
+415531	NY	MONROE	Rochester-027-005
+415532	NY	MONROE	Rochester-027-006
+415533	NY	MONROE	Rochester-027-007
+415534	NY	MONROE	Rochester-027-008
+415535	NY	MONROE	Rochester-027-009
+415536	NY	MONROE	Rochester-027-010
+415537	NY	MONROE	Rochester-027-011
+415538	NY	MONROE	Rochester-027-012
+415539	NY	MONROE	Rochester-027-013
+415540	NY	MONROE	Rochester-027-014
+415541	NY	MONROE	Rochester-027-015
+415542	NY	MONROE	Rochester-027-016
+415543	NY	MONROE	Rochester-027-017
+415544	NY	MONROE	Rochester-027-018
+415545	NY	MONROE	Rochester-027-019
+415546	NY	MONROE	Rochester-027-020
+415547	NY	MONROE	Rochester-027-021
+415548	NY	MONROE	Rochester-027-022
+415549	NY	MONROE	Rochester-027-023
+415550	NY	MONROE	Rochester-028-001
+415551	NY	MONROE	Rochester-028-002
+415552	NY	MONROE	Rochester-028-003
+415553	NY	MONROE	Rochester-028-004
+415554	NY	MONROE	Rochester-028-005
+415555	NY	MONROE	Rochester-028-006
+415556	NY	MONROE	Rochester-028-007
+415557	NY	MONROE	Rochester-028-008
+415558	NY	MONROE	Rochester-028-009
+415559	NY	MONROE	Rochester-028-010
+415560	NY	MONROE	Rochester-028-011
+415561	NY	MONROE	Rochester-028-012
+415562	NY	MONROE	Rochester-028-013
+415563	NY	MONROE	Rochester-028-014
+415564	NY	MONROE	Rochester-028-015
+415565	NY	MONROE	Rochester-028-016
+415566	NY	MONROE	Rochester-028-017
+415567	NY	MONROE	Rochester-028-018
+415568	NY	MONROE	Rochester-028-019
+415569	NY	MONROE	Rochester-028-021
+415570	NY	MONROE	Rochester-028-022
+415571	NY	MONROE	Rochester-029-001
+415572	NY	MONROE	Rochester-029-002
+415573	NY	MONROE	Rochester-029-003
+415574	NY	MONROE	Rochester-029-004
+415575	NY	MONROE	Rochester-029-005
+415576	NY	MONROE	Rochester-029-006
+415577	NY	MONROE	Rochester-029-007
+415578	NY	MONROE	Rochester-029-008
+415579	NY	MONROE	Rochester-029-009
+415580	NY	MONROE	Rochester-029-010
+415581	NY	MONROE	Rochester-029-011
+415582	NY	MONROE	Rochester-029-012
+415583	NY	MONROE	Rochester-029-013
+415584	NY	MONROE	Rochester-029-014
+415585	NY	MONROE	Rochester-029-015
+415586	NY	MONROE	Rochester-029-016
+415587	NY	MONROE	Rochester-029-017
+415588	NY	MONROE	Rochester-029-018
+415589	NY	MONROE	Rochester-029-019
+415590	NY	MONROE	Rochester-029-020
+415591	NY	MONROE	Rochester-029-021
+415592	NY	MONROE	Rochester-029-022
+415593	NY	MONROE	Rochester-029-023
+415594	NY	MONROE	Rochester-029-024
+415595	NY	MONROE	Rochester-029-025
+415596	NY	MONROE	Rochester-029-026
+415597	NY	MONROE	Rush-061-001
+415598	NY	MONROE	Rush-061-002
+415599	NY	MONROE	Rush-061-003
+415600	NY	MONROE	Rush-061-004
+415601	NY	MONROE	Sweden-062-001
+415602	NY	MONROE	Sweden-062-002
+415603	NY	MONROE	Sweden-062-003
+415604	NY	MONROE	Sweden-062-004
+415605	NY	MONROE	Sweden-062-005
+415606	NY	MONROE	Sweden-062-006
+415607	NY	MONROE	Sweden-062-007
+415608	NY	MONROE	Sweden-062-008
+415609	NY	MONROE	Sweden-062-009
+415610	NY	MONROE	Sweden-062-010
+415611	NY	MONROE	Sweden-062-011
+415612	NY	MONROE	Sweden-062-012
+415613	NY	MONROE	Webster-063-001
+415614	NY	MONROE	Webster-063-002
+415615	NY	MONROE	Webster-063-003
+415616	NY	MONROE	Webster-063-004
+415617	NY	MONROE	Webster-063-005
+415618	NY	MONROE	Webster-063-006
+415619	NY	MONROE	Webster-063-007
+415620	NY	MONROE	Webster-063-008
+415621	NY	MONROE	Webster-063-009
+415622	NY	MONROE	Webster-063-010
+415623	NY	MONROE	Webster-063-011
+415624	NY	MONROE	Webster-063-012
+415625	NY	MONROE	Webster-063-013
+415626	NY	MONROE	Webster-063-014
+415627	NY	MONROE	Webster-063-015
+415628	NY	MONROE	Webster-063-016
+415629	NY	MONROE	Webster-063-017
+415630	NY	MONROE	Webster-063-018
+415631	NY	MONROE	Webster-063-019
+415632	NY	MONROE	Webster-063-020
+415633	NY	MONROE	Webster-063-021
+415634	NY	MONROE	Webster-063-022
+415635	NY	MONROE	Webster-063-023
+415636	NY	MONROE	Webster-063-024
+415637	NY	MONROE	Webster-063-025
+415638	NY	MONROE	Webster-063-026
+415639	NY	MONROE	Webster-063-027
+415640	NY	MONROE	Webster-063-028
+415641	NY	MONROE	Webster-063-029
+415642	NY	MONROE	Webster-063-030
+415643	NY	MONROE	Webster-063-031
+415644	NY	MONROE	Webster-063-032
+415645	NY	MONROE	Webster-063-033
+415646	NY	MONROE	Webster-063-034
+415647	NY	MONROE	Webster-063-035
+415648	NY	MONROE	Webster-063-036
+415649	NY	MONROE	Webster-063-037
+415650	NY	MONROE	Webster-063-038
+415651	NY	MONROE	Webster-063-039
+415652	NY	MONROE	Webster-063-040
+415653	NY	MONROE	Webster-063-041
+415654	NY	MONROE	Webster-063-042
+415655	NY	MONROE	Webster-063-043
+415656	NY	MONROE	Wheatland-064-001
+415657	NY	MONROE	Wheatland-064-002
+415658	NY	MONROE	Wheatland-064-003
+415659	NY	MONROE	Wheatland-064-004
+415660	NY	MONROE	Wheatland-064-005
+415661	NY	MONTGOMERY	City Of Amsterdam-001-01
+415662	NY	MONTGOMERY	City Of Amsterdam-001-02
+415663	NY	MONTGOMERY	City Of Amsterdam-001-03
+415664	NY	MONTGOMERY	City Of Amsterdam-001-04
+415665	NY	MONTGOMERY	City Of Amsterdam-002-01
+415666	NY	MONTGOMERY	City Of Amsterdam-002-02
+415667	NY	MONTGOMERY	City Of Amsterdam-002-03
+415668	NY	MONTGOMERY	City Of Amsterdam-002-04
+415669	NY	MONTGOMERY	City Of Amsterdam-003-01
+415670	NY	MONTGOMERY	City Of Amsterdam-003-02
+415671	NY	MONTGOMERY	City Of Amsterdam-003-03
+415672	NY	MONTGOMERY	City Of Amsterdam-004-01
+415673	NY	MONTGOMERY	City Of Amsterdam-004-02
+415674	NY	MONTGOMERY	City Of Amsterdam-005-01
+415675	NY	MONTGOMERY	City Of Amsterdam-005-02
+415676	NY	MONTGOMERY	City Of Amsterdam-005-03
+415677	NY	MONTGOMERY	City Of Amsterdam-005-04
+415678	NY	MONTGOMERY	Town Of Amsterdam-01
+415679	NY	MONTGOMERY	Town Of Amsterdam-02
+415680	NY	MONTGOMERY	Town Of Amsterdam-03
+415681	NY	MONTGOMERY	Town Of Amsterdam-04
+415682	NY	MONTGOMERY	Canajoharie-01
+415683	NY	MONTGOMERY	Canajoharie-02
+415684	NY	MONTGOMERY	Canajoharie-03
+415685	NY	MONTGOMERY	Charleston-01
+415686	NY	MONTGOMERY	Florida-01
+415687	NY	MONTGOMERY	Florida-02
+415688	NY	MONTGOMERY	Florida-03
+415689	NY	MONTGOMERY	Glen-01
+415690	NY	MONTGOMERY	Glen-02
+415691	NY	MONTGOMERY	Minden-01
+415692	NY	MONTGOMERY	Minden-02
+415693	NY	MONTGOMERY	Mohawk-01
+415694	NY	MONTGOMERY	Mohawk-02
+415695	NY	MONTGOMERY	Mohawk-03
+415696	NY	MONTGOMERY	Palatine-01
+415697	NY	MONTGOMERY	Palatine-02
+415698	NY	MONTGOMERY	Palatine-03
+415699	NY	MONTGOMERY	Root-01
+415700	NY	MONTGOMERY	St Johnsville-01
+415701	NY	MONTGOMERY	St Johnsville-02
+415702	NY	NASSAU	Gc-13-001
+415703	NY	NASSAU	Gc-13-002
+415704	NY	NASSAU	Gc-13-003
+415705	NY	NASSAU	Gc-13-004
+415706	NY	NASSAU	Gc-13-005
+415707	NY	NASSAU	Gc-13-006
+415708	NY	NASSAU	Gc-13-007
+415709	NY	NASSAU	Gc-13-008
+415710	NY	NASSAU	Gc-13-009
+415711	NY	NASSAU	Gc-13-010
+415712	NY	NASSAU	Gc-13-011
+415713	NY	NASSAU	Gc-13-012
+415714	NY	NASSAU	Gc-13-013
+415715	NY	NASSAU	Gc-13-014
+415716	NY	NASSAU	Gc-13-015
+415717	NY	NASSAU	Gc-13-016
+415718	NY	NASSAU	Gc-13-017
+415719	NY	NASSAU	Gc-13-018
+415720	NY	NASSAU	Gc-13-019
+415721	NY	NASSAU	Hem-14-001
+415722	NY	NASSAU	Hem-14-002
+415723	NY	NASSAU	Hem-14-003
+415724	NY	NASSAU	Hem-14-004
+415725	NY	NASSAU	Hem-14-005
+415726	NY	NASSAU	Hem-14-006
+415727	NY	NASSAU	Hem-14-007
+415728	NY	NASSAU	Hem-14-008
+415729	NY	NASSAU	Hem-14-009
+415730	NY	NASSAU	Hem-14-010
+415731	NY	NASSAU	Hem-14-011
+415732	NY	NASSAU	Hem-14-012
+415733	NY	NASSAU	Hem-14-013
+415734	NY	NASSAU	Hem-14-014
+415735	NY	NASSAU	Hem-14-015
+415736	NY	NASSAU	Hem-14-016
+415737	NY	NASSAU	Hem-14-017
+415738	NY	NASSAU	Hem-14-018
+415739	NY	NASSAU	Hem-14-019
+415740	NY	NASSAU	Hem-14-020
+415741	NY	NASSAU	Hem-14-021
+415742	NY	NASSAU	Hem-14-022
+415743	NY	NASSAU	Hem-14-023
+415744	NY	NASSAU	Hem-14-024
+415745	NY	NASSAU	Hem-14-025
+415746	NY	NASSAU	Hem-14-026
+415747	NY	NASSAU	Hem-14-027
+415748	NY	NASSAU	Hem-14-028
+415749	NY	NASSAU	Hem-14-029
+415750	NY	NASSAU	Hem-14-030
+415751	NY	NASSAU	Hem-14-031
+415752	NY	NASSAU	Hem-14-032
+415753	NY	NASSAU	Hem-14-033
+415754	NY	NASSAU	Hem-14-034
+415755	NY	NASSAU	Hem-14-035
+415756	NY	NASSAU	Hem-14-036
+415757	NY	NASSAU	Hem-14-037
+415758	NY	NASSAU	Hem-14-038
+415759	NY	NASSAU	Hem-14-039
+415760	NY	NASSAU	Hem-14-040
+415761	NY	NASSAU	Hem-14-041
+415762	NY	NASSAU	Hem-14-042
+415763	NY	NASSAU	Hem-14-043
+415764	NY	NASSAU	Hem-14-044
+415765	NY	NASSAU	Hem-14-045
+415766	NY	NASSAU	Hem-14-046
+415767	NY	NASSAU	Hem-14-047
+415768	NY	NASSAU	Hem-14-048
+415769	NY	NASSAU	Hem-14-049
+415770	NY	NASSAU	Hem-14-050
+415771	NY	NASSAU	Hem-14-051
+415772	NY	NASSAU	Hem-14-052
+415773	NY	NASSAU	Hem-14-053
+415774	NY	NASSAU	Hem-14-054
+415775	NY	NASSAU	Hem-14-055
+415776	NY	NASSAU	Hem-14-056
+415777	NY	NASSAU	Hem-14-057
+415778	NY	NASSAU	Hem-14-058
+415779	NY	NASSAU	Hem-14-059
+415780	NY	NASSAU	Hem-14-060
+415781	NY	NASSAU	Hem-14-061
+415782	NY	NASSAU	Hem-14-062
+415783	NY	NASSAU	Hem-14-063
+415784	NY	NASSAU	Hem-14-064
+415785	NY	NASSAU	Hem-14-065
+415786	NY	NASSAU	Hem-14-066
+415787	NY	NASSAU	Hem-14-067
+415788	NY	NASSAU	Hem-14-068
+415789	NY	NASSAU	Hem-14-069
+415790	NY	NASSAU	Hem-14-070
+415791	NY	NASSAU	Hem-14-071
+415792	NY	NASSAU	Hem-14-072
+415793	NY	NASSAU	Hem-14-073
+415794	NY	NASSAU	Hem-14-074
+415795	NY	NASSAU	Hem-14-075
+415796	NY	NASSAU	Hem-14-076
+415797	NY	NASSAU	Hem-14-077
+415798	NY	NASSAU	Hem-14-078
+415799	NY	NASSAU	Hem-14-079
+415800	NY	NASSAU	Hem-14-080
+415801	NY	NASSAU	Hem-14-081
+415802	NY	NASSAU	Hem-14-082
+415803	NY	NASSAU	Hem-14-083
+415804	NY	NASSAU	Hem-14-084
+415805	NY	NASSAU	Hem-14-085
+415806	NY	NASSAU	Hem-14-086
+415807	NY	NASSAU	Hem-14-087
+415808	NY	NASSAU	Hem-14-088
+415809	NY	NASSAU	Hem-14-089
+415810	NY	NASSAU	Hem-14-090
+415811	NY	NASSAU	Hem-14-091
+415812	NY	NASSAU	Hem-14-092
+415813	NY	NASSAU	Hem-14-093
+415814	NY	NASSAU	Hem-14-094
+415815	NY	NASSAU	Hem-14-095
+415816	NY	NASSAU	Hem-14-096
+415817	NY	NASSAU	Hem-14-097
+415818	NY	NASSAU	Hem-14-098
+415819	NY	NASSAU	Hem-14-099
+415820	NY	NASSAU	Hem-14-100
+415821	NY	NASSAU	Hem-14-101
+415822	NY	NASSAU	Hem-14-102
+415823	NY	NASSAU	Hem-14-103
+415824	NY	NASSAU	Hem-14-104
+415825	NY	NASSAU	Hem-14-105
+415826	NY	NASSAU	Hem-14-106
+415827	NY	NASSAU	Hem-14-107
+415828	NY	NASSAU	Hem-14-108
+415829	NY	NASSAU	Hem-14-109
+415830	NY	NASSAU	Hem-14-110
+415831	NY	NASSAU	Hem-14-111
+415832	NY	NASSAU	Hem-15-001
+415833	NY	NASSAU	Hem-15-002
+415834	NY	NASSAU	Hem-15-003
+415835	NY	NASSAU	Hem-15-004
+415836	NY	NASSAU	Hem-15-005
+415837	NY	NASSAU	Hem-15-006
+415838	NY	NASSAU	Hem-15-007
+415839	NY	NASSAU	Hem-15-008
+415840	NY	NASSAU	Hem-15-009
+415841	NY	NASSAU	Hem-15-010
+415842	NY	NASSAU	Hem-15-011
+415843	NY	NASSAU	Hem-17-001
+415844	NY	NASSAU	Hem-17-002
+415845	NY	NASSAU	Hem-17-003
+415846	NY	NASSAU	Hem-17-004
+415847	NY	NASSAU	Hem-17-005
+415848	NY	NASSAU	Hem-17-006
+415849	NY	NASSAU	Hem-17-007
+415850	NY	NASSAU	Hem-17-008
+415851	NY	NASSAU	Hem-17-009
+415852	NY	NASSAU	Hem-17-010
+415853	NY	NASSAU	Hem-17-011
+415854	NY	NASSAU	Hem-17-012
+415855	NY	NASSAU	Hem-17-013
+415856	NY	NASSAU	Hem-17-014
+415857	NY	NASSAU	Hem-17-015
+415858	NY	NASSAU	Hem-17-016
+415859	NY	NASSAU	Hem-17-017
+415860	NY	NASSAU	Hem-17-018
+415861	NY	NASSAU	Hem-17-019
+415862	NY	NASSAU	Hem-17-020
+415863	NY	NASSAU	Hem-17-021
+415864	NY	NASSAU	Hem-17-022
+415865	NY	NASSAU	Hem-17-023
+415866	NY	NASSAU	Hem-17-024
+415867	NY	NASSAU	Hem-17-025
+415868	NY	NASSAU	Hem-17-026
+415869	NY	NASSAU	Hem-17-027
+415870	NY	NASSAU	Hem-17-028
+415871	NY	NASSAU	Hem-17-029
+415872	NY	NASSAU	Hem-17-030
+415873	NY	NASSAU	Hem-17-031
+415874	NY	NASSAU	Hem-17-032
+415875	NY	NASSAU	Hem-17-033
+415876	NY	NASSAU	Hem-17-034
+415877	NY	NASSAU	Hem-17-035
+415878	NY	NASSAU	Hem-17-036
+415879	NY	NASSAU	Hem-17-037
+415880	NY	NASSAU	Hem-17-038
+415881	NY	NASSAU	Hem-17-039
+415882	NY	NASSAU	Hem-17-040
+415883	NY	NASSAU	Hem-17-041
+415884	NY	NASSAU	Hem-17-042
+415885	NY	NASSAU	Hem-17-043
+415886	NY	NASSAU	Hem-17-044
+415887	NY	NASSAU	Hem-17-045
+415888	NY	NASSAU	Hem-17-046
+415889	NY	NASSAU	Hem-17-047
+415890	NY	NASSAU	Hem-17-048
+415891	NY	NASSAU	Hem-17-049
+415892	NY	NASSAU	Hem-17-050
+415893	NY	NASSAU	Hem-17-051
+415894	NY	NASSAU	Hem-17-052
+415895	NY	NASSAU	Hem-17-053
+415896	NY	NASSAU	Hem-17-054
+415897	NY	NASSAU	Hem-17-055
+415898	NY	NASSAU	Hem-17-056
+415899	NY	NASSAU	Hem-17-057
+415900	NY	NASSAU	Hem-17-058
+415901	NY	NASSAU	Hem-17-059
+415902	NY	NASSAU	Hem-17-060
+415903	NY	NASSAU	Hem-17-061
+415904	NY	NASSAU	Hem-17-062
+415905	NY	NASSAU	Hem-17-063
+415906	NY	NASSAU	Hem-17-064
+415907	NY	NASSAU	Hem-18-001
+415908	NY	NASSAU	Hem-18-002
+415909	NY	NASSAU	Hem-18-003
+415910	NY	NASSAU	Hem-18-004
+415911	NY	NASSAU	Hem-18-005
+415912	NY	NASSAU	Hem-18-006
+415913	NY	NASSAU	Hem-18-007
+415914	NY	NASSAU	Hem-18-008
+415915	NY	NASSAU	Hem-18-009
+415916	NY	NASSAU	Hem-18-010
+415917	NY	NASSAU	Hem-18-011
+415918	NY	NASSAU	Hem-18-012
+415919	NY	NASSAU	Hem-18-013
+415920	NY	NASSAU	Hem-18-014
+415921	NY	NASSAU	Hem-18-015
+415922	NY	NASSAU	Hem-18-016
+415923	NY	NASSAU	Hem-18-017
+415924	NY	NASSAU	Hem-18-018
+415925	NY	NASSAU	Hem-18-019
+415926	NY	NASSAU	Hem-18-020
+415927	NY	NASSAU	Hem-18-021
+415928	NY	NASSAU	Hem-18-022
+415929	NY	NASSAU	Hem-18-023
+415930	NY	NASSAU	Hem-18-024
+415931	NY	NASSAU	Hem-18-025
+415932	NY	NASSAU	Hem-18-026
+415933	NY	NASSAU	Hem-18-027
+415934	NY	NASSAU	Hem-18-028
+415935	NY	NASSAU	Hem-18-029
+415936	NY	NASSAU	Hem-18-030
+415937	NY	NASSAU	Hem-18-031
+415938	NY	NASSAU	Hem-18-032
+415939	NY	NASSAU	Hem-18-033
+415940	NY	NASSAU	Hem-18-034
+415941	NY	NASSAU	Hem-18-035
+415942	NY	NASSAU	Hem-18-036
+415943	NY	NASSAU	Hem-18-037
+415944	NY	NASSAU	Hem-18-038
+415945	NY	NASSAU	Hem-18-039
+415946	NY	NASSAU	Hem-18-040
+415947	NY	NASSAU	Hem-18-041
+415948	NY	NASSAU	Hem-18-042
+415949	NY	NASSAU	Hem-18-043
+415950	NY	NASSAU	Hem-18-044
+415951	NY	NASSAU	Hem-18-045
+415952	NY	NASSAU	Hem-18-046
+415953	NY	NASSAU	Hem-18-047
+415954	NY	NASSAU	Hem-18-048
+415955	NY	NASSAU	Hem-18-049
+415956	NY	NASSAU	Hem-18-050
+415957	NY	NASSAU	Hem-18-051
+415958	NY	NASSAU	Hem-18-052
+415959	NY	NASSAU	Hem-18-053
+415960	NY	NASSAU	Hem-18-054
+415961	NY	NASSAU	Hem-18-055
+415962	NY	NASSAU	Hem-18-056
+415963	NY	NASSAU	Hem-18-057
+415964	NY	NASSAU	Hem-18-058
+415965	NY	NASSAU	Hem-18-059
+415966	NY	NASSAU	Hem-18-060
+415967	NY	NASSAU	Hem-18-061
+415968	NY	NASSAU	Hem-18-062
+415969	NY	NASSAU	Hem-18-063
+415970	NY	NASSAU	Hem-18-064
+415971	NY	NASSAU	Hem-18-065
+415972	NY	NASSAU	Hem-18-066
+415973	NY	NASSAU	Hem-18-067
+415974	NY	NASSAU	Hem-18-068
+415975	NY	NASSAU	Hem-18-069
+415976	NY	NASSAU	Hem-18-070
+415977	NY	NASSAU	Hem-18-071
+415978	NY	NASSAU	Hem-18-072
+415979	NY	NASSAU	Hem-18-074
+415980	NY	NASSAU	Hem-18-075
+415981	NY	NASSAU	Hem-18-076
+415982	NY	NASSAU	Hem-18-077
+415983	NY	NASSAU	Hem-18-079
+415984	NY	NASSAU	Hem-18-080
+415985	NY	NASSAU	Hem-18-081
+415986	NY	NASSAU	Hem-18-082
+415987	NY	NASSAU	Hem-18-083
+415988	NY	NASSAU	Hem-18-084
+415989	NY	NASSAU	Hem-18-085
+415990	NY	NASSAU	Hem-18-086
+415991	NY	NASSAU	Hem-18-087
+415992	NY	NASSAU	Hem-18-088
+415993	NY	NASSAU	Hem-19-001
+415994	NY	NASSAU	Hem-19-002
+415995	NY	NASSAU	Hem-19-003
+415996	NY	NASSAU	Hem-19-004
+415997	NY	NASSAU	Hem-19-005
+415998	NY	NASSAU	Hem-19-006
+415999	NY	NASSAU	Hem-19-007
+416000	NY	NASSAU	Hem-19-008
+416001	NY	NASSAU	Hem-19-009
+416002	NY	NASSAU	Hem-19-010
+416003	NY	NASSAU	Hem-19-011
+416004	NY	NASSAU	Hem-19-012
+416005	NY	NASSAU	Hem-19-013
+416006	NY	NASSAU	Hem-19-014
+416007	NY	NASSAU	Hem-19-015
+416008	NY	NASSAU	Hem-19-016
+416009	NY	NASSAU	Hem-19-017
+416010	NY	NASSAU	Hem-19-018
+416011	NY	NASSAU	Hem-19-019
+416012	NY	NASSAU	Hem-19-020
+416013	NY	NASSAU	Hem-19-021
+416014	NY	NASSAU	Hem-19-022
+416015	NY	NASSAU	Hem-19-023
+416016	NY	NASSAU	Hem-19-024
+416017	NY	NASSAU	Hem-19-025
+416018	NY	NASSAU	Hem-19-026
+416019	NY	NASSAU	Hem-19-027
+416020	NY	NASSAU	Hem-19-028
+416021	NY	NASSAU	Hem-19-029
+416022	NY	NASSAU	Hem-19-030
+416023	NY	NASSAU	Hem-19-031
+416024	NY	NASSAU	Hem-19-032
+416025	NY	NASSAU	Hem-19-033
+416026	NY	NASSAU	Hem-19-034
+416027	NY	NASSAU	Hem-19-035
+416028	NY	NASSAU	Hem-19-036
+416029	NY	NASSAU	Hem-19-037
+416030	NY	NASSAU	Hem-19-038
+416031	NY	NASSAU	Hem-19-039
+416032	NY	NASSAU	Hem-19-040
+416033	NY	NASSAU	Hem-19-041
+416034	NY	NASSAU	Hem-19-042
+416035	NY	NASSAU	Hem-19-043
+416036	NY	NASSAU	Hem-19-044
+416037	NY	NASSAU	Hem-19-045
+416038	NY	NASSAU	Hem-19-046
+416039	NY	NASSAU	Hem-19-047
+416040	NY	NASSAU	Hem-19-048
+416041	NY	NASSAU	Hem-19-049
+416042	NY	NASSAU	Hem-19-050
+416043	NY	NASSAU	Hem-19-051
+416044	NY	NASSAU	Hem-19-052
+416045	NY	NASSAU	Hem-19-053
+416046	NY	NASSAU	Hem-19-054
+416047	NY	NASSAU	Hem-19-055
+416048	NY	NASSAU	Hem-19-056
+416049	NY	NASSAU	Hem-19-057
+416050	NY	NASSAU	Hem-19-058
+416051	NY	NASSAU	Hem-19-059
+416052	NY	NASSAU	Hem-19-060
+416053	NY	NASSAU	Hem-19-065
+416054	NY	NASSAU	Hem-19-080
+416055	NY	NASSAU	Hem-20-001
+416056	NY	NASSAU	Hem-20-002
+416057	NY	NASSAU	Hem-20-003
+416058	NY	NASSAU	Hem-20-004
+416059	NY	NASSAU	Hem-20-005
+416060	NY	NASSAU	Hem-20-006
+416061	NY	NASSAU	Hem-20-007
+416062	NY	NASSAU	Hem-20-008
+416063	NY	NASSAU	Hem-20-009
+416064	NY	NASSAU	Hem-20-010
+416065	NY	NASSAU	Hem-20-011
+416066	NY	NASSAU	Hem-20-012
+416067	NY	NASSAU	Hem-20-013
+416068	NY	NASSAU	Hem-20-014
+416069	NY	NASSAU	Hem-20-015
+416070	NY	NASSAU	Hem-20-016
+416071	NY	NASSAU	Hem-20-017
+416072	NY	NASSAU	Hem-20-018
+416073	NY	NASSAU	Hem-20-019
+416074	NY	NASSAU	Hem-20-020
+416075	NY	NASSAU	Hem-20-021
+416076	NY	NASSAU	Hem-20-022
+416077	NY	NASSAU	Hem-20-023
+416078	NY	NASSAU	Hem-20-024
+416079	NY	NASSAU	Hem-20-025
+416080	NY	NASSAU	Hem-20-026
+416081	NY	NASSAU	Hem-20-027
+416082	NY	NASSAU	Hem-20-028
+416083	NY	NASSAU	Hem-20-029
+416084	NY	NASSAU	Hem-20-030
+416085	NY	NASSAU	Hem-20-031
+416086	NY	NASSAU	Hem-20-032
+416087	NY	NASSAU	Hem-20-033
+416088	NY	NASSAU	Hem-20-034
+416089	NY	NASSAU	Hem-20-035
+416090	NY	NASSAU	Hem-20-036
+416091	NY	NASSAU	Hem-20-037
+416092	NY	NASSAU	Hem-20-038
+416093	NY	NASSAU	Hem-20-039
+416094	NY	NASSAU	Hem-20-040
+416095	NY	NASSAU	Hem-20-041
+416096	NY	NASSAU	Hem-20-042
+416097	NY	NASSAU	Hem-20-043
+416098	NY	NASSAU	Hem-20-044
+416099	NY	NASSAU	Hem-20-045
+416100	NY	NASSAU	Hem-20-046
+416101	NY	NASSAU	Hem-20-047
+416102	NY	NASSAU	Hem-20-048
+416103	NY	NASSAU	Hem-20-049
+416104	NY	NASSAU	Hem-20-050
+416105	NY	NASSAU	Hem-20-051
+416106	NY	NASSAU	Hem-20-052
+416107	NY	NASSAU	Hem-20-053
+416108	NY	NASSAU	Hem-20-054
+416109	NY	NASSAU	Hem-20-055
+416110	NY	NASSAU	Hem-20-056
+416111	NY	NASSAU	Hem-20-057
+416112	NY	NASSAU	Hem-20-058
+416113	NY	NASSAU	Hem-20-059
+416114	NY	NASSAU	Hem-20-060
+416115	NY	NASSAU	Hem-20-061
+416116	NY	NASSAU	Hem-20-062
+416117	NY	NASSAU	Hem-20-063
+416118	NY	NASSAU	Hem-20-064
+416119	NY	NASSAU	Hem-20-065
+416120	NY	NASSAU	Hem-20-066
+416121	NY	NASSAU	Hem-20-067
+416122	NY	NASSAU	Hem-20-068
+416123	NY	NASSAU	Hem-20-069
+416124	NY	NASSAU	Hem-20-070
+416125	NY	NASSAU	Hem-20-071
+416126	NY	NASSAU	Hem-20-072
+416127	NY	NASSAU	Hem-20-073
+416128	NY	NASSAU	Hem-20-074
+416129	NY	NASSAU	Hem-20-075
+416130	NY	NASSAU	Hem-20-076
+416131	NY	NASSAU	Hem-20-077
+416132	NY	NASSAU	Hem-20-078
+416133	NY	NASSAU	Hem-20-079
+416134	NY	NASSAU	Hem-20-080
+416135	NY	NASSAU	Hem-20-081
+416136	NY	NASSAU	Hem-20-082
+416137	NY	NASSAU	Hem-20-083
+416138	NY	NASSAU	Hem-20-084
+416139	NY	NASSAU	Hem-20-085
+416140	NY	NASSAU	Hem-20-086
+416141	NY	NASSAU	Hem-21-001
+416142	NY	NASSAU	Hem-21-002
+416143	NY	NASSAU	Hem-21-003
+416144	NY	NASSAU	Hem-21-004
+416145	NY	NASSAU	Hem-21-005
+416146	NY	NASSAU	Hem-21-006
+416147	NY	NASSAU	Hem-21-007
+416148	NY	NASSAU	Hem-21-008
+416149	NY	NASSAU	Hem-21-009
+416150	NY	NASSAU	Hem-21-010
+416151	NY	NASSAU	Hem-21-011
+416152	NY	NASSAU	Hem-21-012
+416153	NY	NASSAU	Hem-21-013
+416154	NY	NASSAU	Hem-21-014
+416155	NY	NASSAU	Hem-21-015
+416156	NY	NASSAU	Hem-21-016
+416157	NY	NASSAU	Hem-21-017
+416158	NY	NASSAU	Hem-21-018
+416159	NY	NASSAU	Hem-21-019
+416160	NY	NASSAU	Hem-21-020
+416161	NY	NASSAU	Hem-21-021
+416162	NY	NASSAU	Hem-21-022
+416163	NY	NASSAU	Hem-21-023
+416164	NY	NASSAU	Hem-21-024
+416165	NY	NASSAU	Hem-21-025
+416166	NY	NASSAU	Hem-21-026
+416167	NY	NASSAU	Hem-21-027
+416168	NY	NASSAU	Hem-21-028
+416169	NY	NASSAU	Hem-21-029
+416170	NY	NASSAU	Hem-21-030
+416171	NY	NASSAU	Hem-21-031
+416172	NY	NASSAU	Hem-21-032
+416173	NY	NASSAU	Hem-21-033
+416174	NY	NASSAU	Hem-21-034
+416175	NY	NASSAU	Hem-21-035
+416176	NY	NASSAU	Hem-21-036
+416177	NY	NASSAU	Hem-21-037
+416178	NY	NASSAU	Hem-21-038
+416179	NY	NASSAU	Hem-21-039
+416180	NY	NASSAU	Hem-21-040
+416181	NY	NASSAU	Hem-21-041
+416182	NY	NASSAU	Hem-21-042
+416183	NY	NASSAU	Hem-21-043
+416184	NY	NASSAU	Hem-21-044
+416185	NY	NASSAU	Hem-21-045
+416186	NY	NASSAU	Hem-21-046
+416187	NY	NASSAU	Hem-21-047
+416188	NY	NASSAU	Hem-21-048
+416189	NY	NASSAU	Hem-21-049
+416190	NY	NASSAU	Hem-21-050
+416191	NY	NASSAU	Hem-21-051
+416192	NY	NASSAU	Hem-21-052
+416193	NY	NASSAU	Hem-21-053
+416194	NY	NASSAU	Hem-21-054
+416195	NY	NASSAU	Hem-21-055
+416196	NY	NASSAU	Hem-21-056
+416197	NY	NASSAU	Hem-21-057
+416198	NY	NASSAU	Hem-21-058
+416199	NY	NASSAU	Hem-21-059
+416200	NY	NASSAU	Hem-21-060
+416201	NY	NASSAU	Hem-21-061
+416202	NY	NASSAU	Hem-21-062
+416203	NY	NASSAU	Hem-21-063
+416204	NY	NASSAU	Hem-21-064
+416205	NY	NASSAU	Hem-21-065
+416206	NY	NASSAU	Hem-21-066
+416207	NY	NASSAU	Hem-21-067
+416208	NY	NASSAU	Hem-21-068
+416209	NY	NASSAU	Hem-21-069
+416210	NY	NASSAU	Hem-21-070
+416211	NY	NASSAU	Hem-21-071
+416212	NY	NASSAU	Hem-21-072
+416213	NY	NASSAU	Hem-21-073
+416214	NY	NASSAU	Hem-21-074
+416215	NY	NASSAU	Hem-21-075
+416216	NY	NASSAU	Hem-21-076
+416217	NY	NASSAU	Hem-21-077
+416218	NY	NASSAU	Hem-21-078
+416219	NY	NASSAU	Hem-21-079
+416220	NY	NASSAU	Hem-21-080
+416221	NY	NASSAU	Hem-21-081
+416222	NY	NASSAU	Hem-21-082
+416223	NY	NASSAU	Hem-21-083
+416224	NY	NASSAU	Hem-21-084
+416225	NY	NASSAU	Hem-21-085
+416226	NY	NASSAU	Hem-21-086
+416227	NY	NASSAU	Hem-21-087
+416228	NY	NASSAU	Hem-21-088
+416229	NY	NASSAU	Hem-21-089
+416230	NY	NASSAU	Hem-21-090
+416231	NY	NASSAU	Hem-21-091
+416232	NY	NASSAU	Hem-21-092
+416233	NY	NASSAU	Hem-21-093
+416234	NY	NASSAU	Hem-21-094
+416235	NY	NASSAU	Hem-21-095
+416236	NY	NASSAU	Hem-21-096
+416237	NY	NASSAU	Hem-21-097
+416238	NY	NASSAU	Hem-21-098
+416239	NY	NASSAU	Hem-21-099
+416240	NY	NASSAU	Hem-21-100
+416241	NY	NASSAU	Hem-21-101
+416242	NY	NASSAU	Hem-21-102
+416243	NY	NASSAU	Hem-21-103
+416244	NY	NASSAU	Hem-21-104
+416245	NY	NASSAU	Hem-21-105
+416246	NY	NASSAU	Hem-21-106
+416247	NY	NASSAU	Hem-21-107
+416248	NY	NASSAU	Hem-21-108
+416249	NY	NASSAU	Hem-21-109
+416250	NY	NASSAU	Hem-21-110
+416251	NY	NASSAU	Hem-21-111
+416252	NY	NASSAU	Lb-20-001
+416253	NY	NASSAU	Lb-20-002
+416254	NY	NASSAU	Lb-20-003
+416255	NY	NASSAU	Lb-20-004
+416256	NY	NASSAU	Lb-20-005
+416257	NY	NASSAU	Lb-20-006
+416258	NY	NASSAU	Lb-20-007
+416259	NY	NASSAU	Lb-20-008
+416260	NY	NASSAU	Lb-20-009
+416261	NY	NASSAU	Lb-20-010
+416262	NY	NASSAU	Lb-20-011
+416263	NY	NASSAU	Lb-20-012
+416264	NY	NASSAU	Lb-20-013
+416265	NY	NASSAU	Lb-20-014
+416266	NY	NASSAU	Lb-20-015
+416267	NY	NASSAU	Lb-20-016
+416268	NY	NASSAU	Lb-20-017
+416269	NY	NASSAU	Lb-20-018
+416270	NY	NASSAU	Lb-20-019
+416271	NY	NASSAU	Lb-20-020
+416272	NY	NASSAU	Lb-20-021
+416273	NY	NASSAU	Lb-20-022
+416274	NY	NASSAU	Lb-20-023
+416275	NY	NASSAU	Lb-20-024
+416276	NY	NASSAU	Nh-13-001
+416277	NY	NASSAU	Nh-13-002
+416278	NY	NASSAU	Nh-13-003
+416279	NY	NASSAU	Nh-13-004
+416280	NY	NASSAU	Nh-13-005
+416281	NY	NASSAU	Nh-13-006
+416282	NY	NASSAU	Nh-13-007
+416283	NY	NASSAU	Nh-13-008
+416284	NY	NASSAU	Nh-13-009
+416285	NY	NASSAU	Nh-13-010
+416286	NY	NASSAU	Nh-13-011
+416287	NY	NASSAU	Nh-13-012
+416288	NY	NASSAU	Nh-13-013
+416289	NY	NASSAU	Nh-13-014
+416290	NY	NASSAU	Nh-13-015
+416291	NY	NASSAU	Nh-13-016
+416292	NY	NASSAU	Nh-15-001
+416293	NY	NASSAU	Nh-15-002
+416294	NY	NASSAU	Nh-15-003
+416295	NY	NASSAU	Nh-15-004
+416296	NY	NASSAU	Nh-15-005
+416297	NY	NASSAU	Nh-15-006
+416298	NY	NASSAU	Nh-15-007
+416299	NY	NASSAU	Nh-15-008
+416300	NY	NASSAU	Nh-15-009
+416301	NY	NASSAU	Nh-15-010
+416302	NY	NASSAU	Nh-15-011
+416303	NY	NASSAU	Nh-16-001
+416304	NY	NASSAU	Nh-16-002
+416305	NY	NASSAU	Nh-16-003
+416306	NY	NASSAU	Nh-16-004
+416307	NY	NASSAU	Nh-16-005
+416308	NY	NASSAU	Nh-16-006
+416309	NY	NASSAU	Nh-16-007
+416310	NY	NASSAU	Nh-16-008
+416311	NY	NASSAU	Nh-16-009
+416312	NY	NASSAU	Nh-16-010
+416313	NY	NASSAU	Nh-16-011
+416314	NY	NASSAU	Nh-16-012
+416315	NY	NASSAU	Nh-16-013
+416316	NY	NASSAU	Nh-16-014
+416317	NY	NASSAU	Nh-16-015
+416318	NY	NASSAU	Nh-16-016
+416319	NY	NASSAU	Nh-16-017
+416320	NY	NASSAU	Nh-16-018
+416321	NY	NASSAU	Nh-16-019
+416322	NY	NASSAU	Nh-16-020
+416323	NY	NASSAU	Nh-16-021
+416324	NY	NASSAU	Nh-16-022
+416325	NY	NASSAU	Nh-16-023
+416326	NY	NASSAU	Nh-16-024
+416327	NY	NASSAU	Nh-16-025
+416328	NY	NASSAU	Nh-16-026
+416329	NY	NASSAU	Nh-16-027
+416330	NY	NASSAU	Nh-16-028
+416331	NY	NASSAU	Nh-16-029
+416332	NY	NASSAU	Nh-16-030
+416333	NY	NASSAU	Nh-16-031
+416334	NY	NASSAU	Nh-16-032
+416335	NY	NASSAU	Nh-16-033
+416336	NY	NASSAU	Nh-16-034
+416337	NY	NASSAU	Nh-16-035
+416338	NY	NASSAU	Nh-16-036
+416339	NY	NASSAU	Nh-16-037
+416340	NY	NASSAU	Nh-16-038
+416341	NY	NASSAU	Nh-16-039
+416342	NY	NASSAU	Nh-16-040
+416343	NY	NASSAU	Nh-16-041
+416344	NY	NASSAU	Nh-16-042
+416345	NY	NASSAU	Nh-16-043
+416346	NY	NASSAU	Nh-16-044
+416347	NY	NASSAU	Nh-16-045
+416348	NY	NASSAU	Nh-16-046
+416349	NY	NASSAU	Nh-16-047
+416350	NY	NASSAU	Nh-16-048
+416351	NY	NASSAU	Nh-16-049
+416352	NY	NASSAU	Nh-16-050
+416353	NY	NASSAU	Nh-16-051
+416354	NY	NASSAU	Nh-16-052
+416355	NY	NASSAU	Nh-16-053
+416356	NY	NASSAU	Nh-16-054
+416357	NY	NASSAU	Nh-16-055
+416358	NY	NASSAU	Nh-16-056
+416359	NY	NASSAU	Nh-16-057
+416360	NY	NASSAU	Nh-16-058
+416361	NY	NASSAU	Nh-16-059
+416362	NY	NASSAU	Nh-16-060
+416363	NY	NASSAU	Nh-16-061
+416364	NY	NASSAU	Nh-16-062
+416365	NY	NASSAU	Nh-16-063
+416366	NY	NASSAU	Nh-16-064
+416367	NY	NASSAU	Nh-16-065
+416368	NY	NASSAU	Nh-16-066
+416369	NY	NASSAU	Nh-16-067
+416370	NY	NASSAU	Nh-16-068
+416371	NY	NASSAU	Nh-16-069
+416372	NY	NASSAU	Nh-16-070
+416373	NY	NASSAU	Nh-16-071
+416374	NY	NASSAU	Nh-16-072
+416375	NY	NASSAU	Nh-16-073
+416376	NY	NASSAU	Nh-16-074
+416377	NY	NASSAU	Nh-16-075
+416378	NY	NASSAU	Nh-16-076
+416379	NY	NASSAU	Nh-16-077
+416380	NY	NASSAU	Nh-16-078
+416381	NY	NASSAU	Nh-16-079
+416382	NY	NASSAU	Nh-16-080
+416383	NY	NASSAU	Nh-16-081
+416384	NY	NASSAU	Nh-16-082
+416385	NY	NASSAU	Nh-16-083
+416386	NY	NASSAU	Nh-16-084
+416387	NY	NASSAU	Nh-16-085
+416388	NY	NASSAU	Nh-16-086
+416389	NY	NASSAU	Nh-16-087
+416390	NY	NASSAU	Nh-16-088
+416391	NY	NASSAU	Nh-16-089
+416392	NY	NASSAU	Nh-16-090
+416393	NY	NASSAU	Nh-16-091
+416394	NY	NASSAU	Nh-16-092
+416395	NY	NASSAU	Nh-16-093
+416396	NY	NASSAU	Nh-16-094
+416397	NY	NASSAU	Nh-16-095
+416398	NY	NASSAU	Nh-16-096
+416399	NY	NASSAU	Nh-16-097
+416400	NY	NASSAU	Nh-16-098
+416401	NY	NASSAU	Nh-16-099
+416402	NY	NASSAU	Nh-16-100
+416403	NY	NASSAU	Nh-16-101
+416404	NY	NASSAU	Nh-16-102
+416405	NY	NASSAU	Nh-16-103
+416406	NY	NASSAU	Nh-16-104
+416407	NY	NASSAU	Nh-16-105
+416408	NY	NASSAU	Nh-16-106
+416409	NY	NASSAU	Nh-16-107
+416410	NY	NASSAU	Nh-16-108
+416411	NY	NASSAU	Nh-16-109
+416412	NY	NASSAU	Nh-16-110
+416413	NY	NASSAU	Nh-16-111
+416414	NY	NASSAU	Nh-16-112
+416415	NY	NASSAU	Nh-16-113
+416416	NY	NASSAU	Nh-16-114
+416417	NY	NASSAU	Nh-16-115
+416418	NY	NASSAU	Nh-16-116
+416419	NY	NASSAU	Nh-16-117
+416420	NY	NASSAU	Nh-16-118
+416421	NY	NASSAU	Nh-17-024
+416422	NY	NASSAU	Nh-17-038
+416423	NY	NASSAU	Ob-13-001
+416424	NY	NASSAU	Ob-13-002
+416425	NY	NASSAU	Ob-13-003
+416426	NY	NASSAU	Ob-13-004
+416427	NY	NASSAU	Ob-13-005
+416428	NY	NASSAU	Ob-13-006
+416429	NY	NASSAU	Ob-13-007
+416430	NY	NASSAU	Ob-13-008
+416431	NY	NASSAU	Ob-13-009
+416432	NY	NASSAU	Ob-13-010
+416433	NY	NASSAU	Ob-13-011
+416434	NY	NASSAU	Ob-13-012
+416435	NY	NASSAU	Ob-13-013
+416436	NY	NASSAU	Ob-13-014
+416437	NY	NASSAU	Ob-13-015
+416438	NY	NASSAU	Ob-13-016
+416439	NY	NASSAU	Ob-13-017
+416440	NY	NASSAU	Ob-13-018
+416441	NY	NASSAU	Ob-13-019
+416442	NY	NASSAU	Ob-13-020
+416443	NY	NASSAU	Ob-13-021
+416444	NY	NASSAU	Ob-13-022
+416445	NY	NASSAU	Ob-13-023
+416446	NY	NASSAU	Ob-13-024
+416447	NY	NASSAU	Ob-13-025
+416448	NY	NASSAU	Ob-13-026
+416449	NY	NASSAU	Ob-13-027
+416450	NY	NASSAU	Ob-13-028
+416451	NY	NASSAU	Ob-13-029
+416452	NY	NASSAU	Ob-13-030
+416453	NY	NASSAU	Ob-13-031
+416454	NY	NASSAU	Ob-13-032
+416455	NY	NASSAU	Ob-13-033
+416456	NY	NASSAU	Ob-13-034
+416457	NY	NASSAU	Ob-13-035
+416458	NY	NASSAU	Ob-13-036
+416459	NY	NASSAU	Ob-13-037
+416460	NY	NASSAU	Ob-13-038
+416461	NY	NASSAU	Ob-13-039
+416462	NY	NASSAU	Ob-13-040
+416463	NY	NASSAU	Ob-13-041
+416464	NY	NASSAU	Ob-13-042
+416465	NY	NASSAU	Ob-13-043
+416466	NY	NASSAU	Ob-13-044
+416467	NY	NASSAU	Ob-13-045
+416468	NY	NASSAU	Ob-13-046
+416469	NY	NASSAU	Ob-13-047
+416470	NY	NASSAU	Ob-13-048
+416471	NY	NASSAU	Ob-13-049
+416472	NY	NASSAU	Ob-13-050
+416473	NY	NASSAU	Ob-13-051
+416474	NY	NASSAU	Ob-13-052
+416475	NY	NASSAU	Ob-13-053
+416476	NY	NASSAU	Ob-13-054
+416477	NY	NASSAU	Ob-13-055
+416478	NY	NASSAU	Ob-13-056
+416479	NY	NASSAU	Ob-13-057
+416480	NY	NASSAU	Ob-13-058
+416481	NY	NASSAU	Ob-13-059
+416482	NY	NASSAU	Ob-13-060
+416483	NY	NASSAU	Ob-13-061
+416484	NY	NASSAU	Ob-13-062
+416485	NY	NASSAU	Ob-13-063
+416486	NY	NASSAU	Ob-13-064
+416487	NY	NASSAU	Ob-13-065
+416488	NY	NASSAU	Ob-13-066
+416489	NY	NASSAU	Ob-13-067
+416490	NY	NASSAU	Ob-13-068
+416491	NY	NASSAU	Ob-13-069
+416492	NY	NASSAU	Ob-13-070
+416493	NY	NASSAU	Ob-13-071
+416494	NY	NASSAU	Ob-15-001
+416495	NY	NASSAU	Ob-15-002
+416496	NY	NASSAU	Ob-15-003
+416497	NY	NASSAU	Ob-15-004
+416498	NY	NASSAU	Ob-15-005
+416499	NY	NASSAU	Ob-15-006
+416500	NY	NASSAU	Ob-15-007
+416501	NY	NASSAU	Ob-15-008
+416502	NY	NASSAU	Ob-15-009
+416503	NY	NASSAU	Ob-15-010
+416504	NY	NASSAU	Ob-15-011
+416505	NY	NASSAU	Ob-15-012
+416506	NY	NASSAU	Ob-15-013
+416507	NY	NASSAU	Ob-15-014
+416508	NY	NASSAU	Ob-15-015
+416509	NY	NASSAU	Ob-15-016
+416510	NY	NASSAU	Ob-15-017
+416511	NY	NASSAU	Ob-15-018
+416512	NY	NASSAU	Ob-15-019
+416513	NY	NASSAU	Ob-15-020
+416514	NY	NASSAU	Ob-15-021
+416515	NY	NASSAU	Ob-15-022
+416516	NY	NASSAU	Ob-15-023
+416517	NY	NASSAU	Ob-15-024
+416518	NY	NASSAU	Ob-15-025
+416519	NY	NASSAU	Ob-15-026
+416520	NY	NASSAU	Ob-15-027
+416521	NY	NASSAU	Ob-15-028
+416522	NY	NASSAU	Ob-15-029
+416523	NY	NASSAU	Ob-15-030
+416524	NY	NASSAU	Ob-15-031
+416525	NY	NASSAU	Ob-15-032
+416526	NY	NASSAU	Ob-15-033
+416527	NY	NASSAU	Ob-15-034
+416528	NY	NASSAU	Ob-15-035
+416529	NY	NASSAU	Ob-15-036
+416530	NY	NASSAU	Ob-15-037
+416531	NY	NASSAU	Ob-15-038
+416532	NY	NASSAU	Ob-15-039
+416533	NY	NASSAU	Ob-15-040
+416534	NY	NASSAU	Ob-15-041
+416535	NY	NASSAU	Ob-15-042
+416536	NY	NASSAU	Ob-15-043
+416537	NY	NASSAU	Ob-15-044
+416538	NY	NASSAU	Ob-15-045
+416539	NY	NASSAU	Ob-15-046
+416540	NY	NASSAU	Ob-15-047
+416541	NY	NASSAU	Ob-15-048
+416542	NY	NASSAU	Ob-15-049
+416543	NY	NASSAU	Ob-15-050
+416544	NY	NASSAU	Ob-15-051
+416545	NY	NASSAU	Ob-15-052
+416546	NY	NASSAU	Ob-15-053
+416547	NY	NASSAU	Ob-15-054
+416548	NY	NASSAU	Ob-15-055
+416549	NY	NASSAU	Ob-15-056
+416550	NY	NASSAU	Ob-15-057
+416551	NY	NASSAU	Ob-15-058
+416552	NY	NASSAU	Ob-15-059
+416553	NY	NASSAU	Ob-15-060
+416554	NY	NASSAU	Ob-15-061
+416555	NY	NASSAU	Ob-15-062
+416556	NY	NASSAU	Ob-15-063
+416557	NY	NASSAU	Ob-15-064
+416558	NY	NASSAU	Ob-15-065
+416559	NY	NASSAU	Ob-15-066
+416560	NY	NASSAU	Ob-15-067
+416561	NY	NASSAU	Ob-15-068
+416562	NY	NASSAU	Ob-15-069
+416563	NY	NASSAU	Ob-15-070
+416564	NY	NASSAU	Ob-15-071
+416565	NY	NASSAU	Ob-15-072
+416566	NY	NASSAU	Ob-15-073
+416567	NY	NEW YORK	65-001
+416568	NY	NEW YORK	65-002
+416569	NY	NEW YORK	65-003
+416570	NY	NEW YORK	65-004
+416571	NY	NEW YORK	65-005
+416572	NY	NEW YORK	65-006
+416573	NY	NEW YORK	65-007
+416574	NY	NEW YORK	65-008
+416575	NY	NEW YORK	65-009
+416576	NY	NEW YORK	65-010
+416577	NY	NEW YORK	65-011
+416578	NY	NEW YORK	65-012
+416579	NY	NEW YORK	65-013
+416580	NY	NEW YORK	65-014
+416581	NY	NEW YORK	65-015
+416582	NY	NEW YORK	65-016
+416583	NY	NEW YORK	65-017
+416584	NY	NEW YORK	65-018
+416585	NY	NEW YORK	65-019
+416586	NY	NEW YORK	65-020
+416587	NY	NEW YORK	65-021
+416588	NY	NEW YORK	65-022
+416589	NY	NEW YORK	65-023
+416590	NY	NEW YORK	65-024
+416591	NY	NEW YORK	65-025
+416592	NY	NEW YORK	65-026
+416593	NY	NEW YORK	65-027
+416594	NY	NEW YORK	65-028
+416595	NY	NEW YORK	65-029
+416596	NY	NEW YORK	65-030
+416597	NY	NEW YORK	65-031
+416598	NY	NEW YORK	65-032
+416599	NY	NEW YORK	65-033
+416600	NY	NEW YORK	65-034
+416601	NY	NEW YORK	65-035
+416602	NY	NEW YORK	65-036
+416603	NY	NEW YORK	65-037
+416604	NY	NEW YORK	65-038
+416605	NY	NEW YORK	65-039
+416606	NY	NEW YORK	65-040
+416607	NY	NEW YORK	65-041
+416608	NY	NEW YORK	65-042
+416609	NY	NEW YORK	65-043
+416610	NY	NEW YORK	65-044
+416611	NY	NEW YORK	65-045
+416612	NY	NEW YORK	65-046
+416613	NY	NEW YORK	65-047
+416614	NY	NEW YORK	65-048
+416615	NY	NEW YORK	65-049
+416616	NY	NEW YORK	65-050
+416617	NY	NEW YORK	65-051
+416618	NY	NEW YORK	65-052
+416619	NY	NEW YORK	65-053
+416620	NY	NEW YORK	65-054
+416621	NY	NEW YORK	65-055
+416622	NY	NEW YORK	65-056
+416623	NY	NEW YORK	65-057
+416624	NY	NEW YORK	65-058
+416625	NY	NEW YORK	65-059
+416626	NY	NEW YORK	65-060
+416627	NY	NEW YORK	65-061
+416628	NY	NEW YORK	65-062
+416629	NY	NEW YORK	65-063
+416630	NY	NEW YORK	65-064
+416631	NY	NEW YORK	65-065
+416632	NY	NEW YORK	65-066
+416633	NY	NEW YORK	65-067
+416634	NY	NEW YORK	65-068
+416635	NY	NEW YORK	65-069
+416636	NY	NEW YORK	65-070
+416637	NY	NEW YORK	65-071
+416638	NY	NEW YORK	65-072
+416639	NY	NEW YORK	65-074
+416640	NY	NEW YORK	65-075
+416641	NY	NEW YORK	65-076
+416642	NY	NEW YORK	65-077
+416643	NY	NEW YORK	65-078
+416644	NY	NEW YORK	65-080
+416645	NY	NEW YORK	65-081
+416646	NY	NEW YORK	65-082
+416647	NY	NEW YORK	65-083
+416648	NY	NEW YORK	65-085
+416649	NY	NEW YORK	65-086
+416650	NY	NEW YORK	65-087
+416651	NY	NEW YORK	65-089
+416652	NY	NEW YORK	65-090
+416653	NY	NEW YORK	65-091
+416654	NY	NEW YORK	65-092
+416655	NY	NEW YORK	66-001
+416656	NY	NEW YORK	66-002
+416657	NY	NEW YORK	66-003
+416658	NY	NEW YORK	66-004
+416659	NY	NEW YORK	66-005
+416660	NY	NEW YORK	66-006
+416661	NY	NEW YORK	66-007
+416662	NY	NEW YORK	66-008
+416663	NY	NEW YORK	66-009
+416664	NY	NEW YORK	66-010
+416665	NY	NEW YORK	66-011
+416666	NY	NEW YORK	66-012
+416667	NY	NEW YORK	66-013
+416668	NY	NEW YORK	66-014
+416669	NY	NEW YORK	66-015
+416670	NY	NEW YORK	66-016
+416671	NY	NEW YORK	66-017
+416672	NY	NEW YORK	66-018
+416673	NY	NEW YORK	66-019
+416674	NY	NEW YORK	66-020
+416675	NY	NEW YORK	66-021
+416676	NY	NEW YORK	66-022
+416677	NY	NEW YORK	66-023
+416678	NY	NEW YORK	66-024
+416679	NY	NEW YORK	66-025
+416680	NY	NEW YORK	66-026
+416681	NY	NEW YORK	66-027
+416682	NY	NEW YORK	66-028
+416683	NY	NEW YORK	66-029
+416684	NY	NEW YORK	66-030
+416685	NY	NEW YORK	66-031
+416686	NY	NEW YORK	66-032
+416687	NY	NEW YORK	66-033
+416688	NY	NEW YORK	66-034
+416689	NY	NEW YORK	66-035
+416690	NY	NEW YORK	66-036
+416691	NY	NEW YORK	66-037
+416692	NY	NEW YORK	66-038
+416693	NY	NEW YORK	66-039
+416694	NY	NEW YORK	66-040
+416695	NY	NEW YORK	66-041
+416696	NY	NEW YORK	66-042
+416697	NY	NEW YORK	66-044
+416698	NY	NEW YORK	66-045
+416699	NY	NEW YORK	66-046
+416700	NY	NEW YORK	66-047
+416701	NY	NEW YORK	66-048
+416702	NY	NEW YORK	66-049
+416703	NY	NEW YORK	66-050
+416704	NY	NEW YORK	66-051
+416705	NY	NEW YORK	66-052
+416706	NY	NEW YORK	66-053
+416707	NY	NEW YORK	66-054
+416708	NY	NEW YORK	66-055
+416709	NY	NEW YORK	66-057
+416710	NY	NEW YORK	66-058
+416711	NY	NEW YORK	66-059
+416712	NY	NEW YORK	66-060
+416713	NY	NEW YORK	66-061
+416714	NY	NEW YORK	66-062
+416715	NY	NEW YORK	66-063
+416716	NY	NEW YORK	66-064
+416717	NY	NEW YORK	66-065
+416718	NY	NEW YORK	66-066
+416719	NY	NEW YORK	66-067
+416720	NY	NEW YORK	66-068
+416721	NY	NEW YORK	66-069
+416722	NY	NEW YORK	66-070
+416723	NY	NEW YORK	66-071
+416724	NY	NEW YORK	66-072
+416725	NY	NEW YORK	66-073
+416726	NY	NEW YORK	66-074
+416727	NY	NEW YORK	66-075
+416728	NY	NEW YORK	66-076
+416729	NY	NEW YORK	66-077
+416730	NY	NEW YORK	66-078
+416731	NY	NEW YORK	66-079
+416732	NY	NEW YORK	66-080
+416733	NY	NEW YORK	66-082
+416734	NY	NEW YORK	66-083
+416735	NY	NEW YORK	66-084
+416736	NY	NEW YORK	66-085
+416737	NY	NEW YORK	66-086
+416738	NY	NEW YORK	66-087
+416739	NY	NEW YORK	66-088
+416740	NY	NEW YORK	66-089
+416741	NY	NEW YORK	66-090
+416742	NY	NEW YORK	66-091
+416743	NY	NEW YORK	66-093
+416744	NY	NEW YORK	67-001
+416745	NY	NEW YORK	67-002
+416746	NY	NEW YORK	67-003
+416747	NY	NEW YORK	67-004
+416748	NY	NEW YORK	67-005
+416749	NY	NEW YORK	67-006
+416750	NY	NEW YORK	67-007
+416751	NY	NEW YORK	67-008
+416752	NY	NEW YORK	67-009
+416753	NY	NEW YORK	67-010
+416754	NY	NEW YORK	67-011
+416755	NY	NEW YORK	67-012
+416756	NY	NEW YORK	67-013
+416757	NY	NEW YORK	67-014
+416758	NY	NEW YORK	67-015
+416759	NY	NEW YORK	67-016
+416760	NY	NEW YORK	67-017
+416761	NY	NEW YORK	67-018
+416762	NY	NEW YORK	67-019
+416763	NY	NEW YORK	67-020
+416764	NY	NEW YORK	67-021
+416765	NY	NEW YORK	67-022
+416766	NY	NEW YORK	67-023
+416767	NY	NEW YORK	67-024
+416768	NY	NEW YORK	67-025
+416769	NY	NEW YORK	67-026
+416770	NY	NEW YORK	67-027
+416771	NY	NEW YORK	67-028
+416772	NY	NEW YORK	67-029
+416773	NY	NEW YORK	67-030
+416774	NY	NEW YORK	67-031
+416775	NY	NEW YORK	67-032
+416776	NY	NEW YORK	67-033
+416777	NY	NEW YORK	67-034
+416778	NY	NEW YORK	67-035
+416779	NY	NEW YORK	67-036
+416780	NY	NEW YORK	67-037
+416781	NY	NEW YORK	67-038
+416782	NY	NEW YORK	67-039
+416783	NY	NEW YORK	67-040
+416784	NY	NEW YORK	67-041
+416785	NY	NEW YORK	67-042
+416786	NY	NEW YORK	67-043
+416787	NY	NEW YORK	67-044
+416788	NY	NEW YORK	67-045
+416789	NY	NEW YORK	67-046
+416790	NY	NEW YORK	67-047
+416791	NY	NEW YORK	67-048
+416792	NY	NEW YORK	67-049
+416793	NY	NEW YORK	67-050
+416794	NY	NEW YORK	67-051
+416795	NY	NEW YORK	67-052
+416796	NY	NEW YORK	67-053
+416797	NY	NEW YORK	67-054
+416798	NY	NEW YORK	67-055
+416799	NY	NEW YORK	67-056
+416800	NY	NEW YORK	67-057
+416801	NY	NEW YORK	67-058
+416802	NY	NEW YORK	67-059
+416803	NY	NEW YORK	67-060
+416804	NY	NEW YORK	67-061
+416805	NY	NEW YORK	67-062
+416806	NY	NEW YORK	67-063
+416807	NY	NEW YORK	67-064
+416808	NY	NEW YORK	67-065
+416809	NY	NEW YORK	67-066
+416810	NY	NEW YORK	67-067
+416811	NY	NEW YORK	67-068
+416812	NY	NEW YORK	67-069
+416813	NY	NEW YORK	67-070
+416814	NY	NEW YORK	67-071
+416815	NY	NEW YORK	67-072
+416816	NY	NEW YORK	67-073
+416817	NY	NEW YORK	67-074
+416818	NY	NEW YORK	67-075
+416819	NY	NEW YORK	67-076
+416820	NY	NEW YORK	67-077
+416821	NY	NEW YORK	67-078
+416822	NY	NEW YORK	67-079
+416823	NY	NEW YORK	67-080
+416824	NY	NEW YORK	67-081
+416825	NY	NEW YORK	67-082
+416826	NY	NEW YORK	67-083
+416827	NY	NEW YORK	67-084
+416828	NY	NEW YORK	67-085
+416829	NY	NEW YORK	67-086
+416830	NY	NEW YORK	67-087
+416831	NY	NEW YORK	67-088
+416832	NY	NEW YORK	67-089
+416833	NY	NEW YORK	67-090
+416834	NY	NEW YORK	67-091
+416835	NY	NEW YORK	67-092
+416836	NY	NEW YORK	67-093
+416837	NY	NEW YORK	67-094
+416838	NY	NEW YORK	67-095
+416839	NY	NEW YORK	67-096
+416840	NY	NEW YORK	67-097
+416841	NY	NEW YORK	67-098
+416842	NY	NEW YORK	67-099
+416843	NY	NEW YORK	67-100
+416844	NY	NEW YORK	67-101
+416845	NY	NEW YORK	68-001
+416846	NY	NEW YORK	68-002
+416847	NY	NEW YORK	68-003
+416848	NY	NEW YORK	68-004
+416849	NY	NEW YORK	68-005
+416850	NY	NEW YORK	68-006
+416851	NY	NEW YORK	68-007
+416852	NY	NEW YORK	68-008
+416853	NY	NEW YORK	68-009
+416854	NY	NEW YORK	68-010
+416855	NY	NEW YORK	68-011
+416856	NY	NEW YORK	68-012
+416857	NY	NEW YORK	68-013
+416858	NY	NEW YORK	68-014
+416859	NY	NEW YORK	68-015
+416860	NY	NEW YORK	68-016
+416861	NY	NEW YORK	68-017
+416862	NY	NEW YORK	68-018
+416863	NY	NEW YORK	68-019
+416864	NY	NEW YORK	68-020
+416865	NY	NEW YORK	68-021
+416866	NY	NEW YORK	68-022
+416867	NY	NEW YORK	68-023
+416868	NY	NEW YORK	68-024
+416869	NY	NEW YORK	68-025
+416870	NY	NEW YORK	68-026
+416871	NY	NEW YORK	68-027
+416872	NY	NEW YORK	68-028
+416873	NY	NEW YORK	68-029
+416874	NY	NEW YORK	68-030
+416875	NY	NEW YORK	68-031
+416876	NY	NEW YORK	68-032
+416877	NY	NEW YORK	68-033
+416878	NY	NEW YORK	68-034
+416879	NY	NEW YORK	68-035
+416880	NY	NEW YORK	68-036
+416881	NY	NEW YORK	68-037
+416882	NY	NEW YORK	68-038
+416883	NY	NEW YORK	68-039
+416884	NY	NEW YORK	68-040
+416885	NY	NEW YORK	68-041
+416886	NY	NEW YORK	68-042
+416887	NY	NEW YORK	68-043
+416888	NY	NEW YORK	68-044
+416889	NY	NEW YORK	68-045
+416890	NY	NEW YORK	68-046
+416891	NY	NEW YORK	68-047
+416892	NY	NEW YORK	68-048
+416893	NY	NEW YORK	68-049
+416894	NY	NEW YORK	68-050
+416895	NY	NEW YORK	68-051
+416896	NY	NEW YORK	68-052
+416897	NY	NEW YORK	68-053
+416898	NY	NEW YORK	68-054
+416899	NY	NEW YORK	68-055
+416900	NY	NEW YORK	68-056
+416901	NY	NEW YORK	68-057
+416902	NY	NEW YORK	68-058
+416903	NY	NEW YORK	68-059
+416904	NY	NEW YORK	68-060
+416905	NY	NEW YORK	68-061
+416906	NY	NEW YORK	68-062
+416907	NY	NEW YORK	68-063
+416908	NY	NEW YORK	68-064
+416909	NY	NEW YORK	68-065
+416910	NY	NEW YORK	68-066
+416911	NY	NEW YORK	68-067
+416912	NY	NEW YORK	68-068
+416913	NY	NEW YORK	68-069
+416914	NY	NEW YORK	68-070
+416915	NY	NEW YORK	68-071
+416916	NY	NEW YORK	68-072
+416917	NY	NEW YORK	68-073
+416918	NY	NEW YORK	68-074
+416919	NY	NEW YORK	68-075
+416920	NY	NEW YORK	68-076
+416921	NY	NEW YORK	68-077
+416922	NY	NEW YORK	68-078
+416923	NY	NEW YORK	68-079
+416924	NY	NEW YORK	68-080
+416925	NY	NEW YORK	68-081
+416926	NY	NEW YORK	68-082
+416927	NY	NEW YORK	68-083
+416928	NY	NEW YORK	68-084
+416929	NY	NEW YORK	68-085
+416930	NY	NEW YORK	68-086
+416931	NY	NEW YORK	68-087
+416932	NY	NEW YORK	68-088
+416933	NY	NEW YORK	68-089
+416934	NY	NEW YORK	68-090
+416935	NY	NEW YORK	68-091
+416936	NY	NEW YORK	68-092
+416937	NY	NEW YORK	68-093
+416938	NY	NEW YORK	68-094
+416939	NY	NEW YORK	68-095
+416940	NY	NEW YORK	68-096
+416941	NY	NEW YORK	68-097
+416942	NY	NEW YORK	68-098
+416943	NY	NEW YORK	69-001
+416944	NY	NEW YORK	69-002
+416945	NY	NEW YORK	69-003
+416946	NY	NEW YORK	69-004
+416947	NY	NEW YORK	69-005
+416948	NY	NEW YORK	69-006
+416949	NY	NEW YORK	69-007
+416950	NY	NEW YORK	69-008
+416951	NY	NEW YORK	69-009
+416952	NY	NEW YORK	69-010
+416953	NY	NEW YORK	69-011
+416954	NY	NEW YORK	69-012
+416955	NY	NEW YORK	69-013
+416956	NY	NEW YORK	69-014
+416957	NY	NEW YORK	69-015
+416958	NY	NEW YORK	69-016
+416959	NY	NEW YORK	69-017
+416960	NY	NEW YORK	69-018
+416961	NY	NEW YORK	69-019
+416962	NY	NEW YORK	69-020
+416963	NY	NEW YORK	69-021
+416964	NY	NEW YORK	69-022
+416965	NY	NEW YORK	69-023
+416966	NY	NEW YORK	69-024
+416967	NY	NEW YORK	69-025
+416968	NY	NEW YORK	69-026
+416969	NY	NEW YORK	69-027
+416970	NY	NEW YORK	69-028
+416971	NY	NEW YORK	69-029
+416972	NY	NEW YORK	69-030
+416973	NY	NEW YORK	69-031
+416974	NY	NEW YORK	69-032
+416975	NY	NEW YORK	69-033
+416976	NY	NEW YORK	69-034
+416977	NY	NEW YORK	69-035
+416978	NY	NEW YORK	69-036
+416979	NY	NEW YORK	69-037
+416980	NY	NEW YORK	69-038
+416981	NY	NEW YORK	69-039
+416982	NY	NEW YORK	69-040
+416983	NY	NEW YORK	69-041
+416984	NY	NEW YORK	69-042
+416985	NY	NEW YORK	69-043
+416986	NY	NEW YORK	69-044
+416987	NY	NEW YORK	69-045
+416988	NY	NEW YORK	69-046
+416989	NY	NEW YORK	69-047
+416990	NY	NEW YORK	69-048
+416991	NY	NEW YORK	69-049
+416992	NY	NEW YORK	69-050
+416993	NY	NEW YORK	69-051
+416994	NY	NEW YORK	69-052
+416995	NY	NEW YORK	69-053
+416996	NY	NEW YORK	69-054
+416997	NY	NEW YORK	69-055
+416998	NY	NEW YORK	69-056
+416999	NY	NEW YORK	69-057
+417000	NY	NEW YORK	69-058
+417001	NY	NEW YORK	69-059
+417002	NY	NEW YORK	69-060
+417003	NY	NEW YORK	69-061
+417004	NY	NEW YORK	69-062
+417005	NY	NEW YORK	69-063
+417006	NY	NEW YORK	69-064
+417007	NY	NEW YORK	69-065
+417008	NY	NEW YORK	69-066
+417009	NY	NEW YORK	69-067
+417010	NY	NEW YORK	69-068
+417011	NY	NEW YORK	69-069
+417012	NY	NEW YORK	69-070
+417013	NY	NEW YORK	69-071
+417014	NY	NEW YORK	69-072
+417015	NY	NEW YORK	69-073
+417016	NY	NEW YORK	69-074
+417017	NY	NEW YORK	69-075
+417018	NY	NEW YORK	69-076
+417019	NY	NEW YORK	69-077
+417020	NY	NEW YORK	69-078
+417021	NY	NEW YORK	69-079
+417022	NY	NEW YORK	69-080
+417023	NY	NEW YORK	69-081
+417024	NY	NEW YORK	69-082
+417025	NY	NEW YORK	69-083
+417026	NY	NEW YORK	69-084
+417027	NY	NEW YORK	69-085
+417028	NY	NEW YORK	69-086
+417029	NY	NEW YORK	69-087
+417030	NY	NEW YORK	69-088
+417031	NY	NEW YORK	69-089
+417032	NY	NEW YORK	69-091
+417033	NY	NEW YORK	69-092
+417034	NY	NEW YORK	69-093
+417035	NY	NEW YORK	69-095
+417036	NY	NEW YORK	69-096
+417037	NY	NEW YORK	69-097
+417038	NY	NEW YORK	69-098
+417039	NY	NEW YORK	69-099
+417040	NY	NEW YORK	69-100
+417041	NY	NEW YORK	69-101
+417042	NY	NEW YORK	69-102
+417043	NY	NEW YORK	69-104
+417044	NY	NEW YORK	70-001
+417045	NY	NEW YORK	70-002
+417046	NY	NEW YORK	70-003
+417047	NY	NEW YORK	70-004
+417048	NY	NEW YORK	70-005
+417049	NY	NEW YORK	70-006
+417050	NY	NEW YORK	70-007
+417051	NY	NEW YORK	70-008
+417052	NY	NEW YORK	70-009
+417053	NY	NEW YORK	70-010
+417054	NY	NEW YORK	70-011
+417055	NY	NEW YORK	70-012
+417056	NY	NEW YORK	70-013
+417057	NY	NEW YORK	70-014
+417058	NY	NEW YORK	70-015
+417059	NY	NEW YORK	70-016
+417060	NY	NEW YORK	70-017
+417061	NY	NEW YORK	70-018
+417062	NY	NEW YORK	70-019
+417063	NY	NEW YORK	70-020
+417064	NY	NEW YORK	70-021
+417065	NY	NEW YORK	70-022
+417066	NY	NEW YORK	70-023
+417067	NY	NEW YORK	70-024
+417068	NY	NEW YORK	70-025
+417069	NY	NEW YORK	70-026
+417070	NY	NEW YORK	70-027
+417071	NY	NEW YORK	70-028
+417072	NY	NEW YORK	70-029
+417073	NY	NEW YORK	70-030
+417074	NY	NEW YORK	70-031
+417075	NY	NEW YORK	70-032
+417076	NY	NEW YORK	70-033
+417077	NY	NEW YORK	70-034
+417078	NY	NEW YORK	70-035
+417079	NY	NEW YORK	70-036
+417080	NY	NEW YORK	70-037
+417081	NY	NEW YORK	70-038
+417082	NY	NEW YORK	70-039
+417083	NY	NEW YORK	70-040
+417084	NY	NEW YORK	70-041
+417085	NY	NEW YORK	70-042
+417086	NY	NEW YORK	70-043
+417087	NY	NEW YORK	70-044
+417088	NY	NEW YORK	70-045
+417089	NY	NEW YORK	70-046
+417090	NY	NEW YORK	70-047
+417091	NY	NEW YORK	70-048
+417092	NY	NEW YORK	70-049
+417093	NY	NEW YORK	70-050
+417094	NY	NEW YORK	70-051
+417095	NY	NEW YORK	70-052
+417096	NY	NEW YORK	70-053
+417097	NY	NEW YORK	70-054
+417098	NY	NEW YORK	70-055
+417099	NY	NEW YORK	70-056
+417100	NY	NEW YORK	70-057
+417101	NY	NEW YORK	70-058
+417102	NY	NEW YORK	70-059
+417103	NY	NEW YORK	70-060
+417104	NY	NEW YORK	70-061
+417105	NY	NEW YORK	70-062
+417106	NY	NEW YORK	70-063
+417107	NY	NEW YORK	70-064
+417108	NY	NEW YORK	70-065
+417109	NY	NEW YORK	70-066
+417110	NY	NEW YORK	70-067
+417111	NY	NEW YORK	70-068
+417112	NY	NEW YORK	70-069
+417113	NY	NEW YORK	70-070
+417114	NY	NEW YORK	70-071
+417115	NY	NEW YORK	70-072
+417116	NY	NEW YORK	70-073
+417117	NY	NEW YORK	70-074
+417118	NY	NEW YORK	70-075
+417119	NY	NEW YORK	70-076
+417120	NY	NEW YORK	70-077
+417121	NY	NEW YORK	70-078
+417122	NY	NEW YORK	70-079
+417123	NY	NEW YORK	70-080
+417124	NY	NEW YORK	70-081
+417125	NY	NEW YORK	70-082
+417126	NY	NEW YORK	70-083
+417127	NY	NEW YORK	70-084
+417128	NY	NEW YORK	70-085
+417129	NY	NEW YORK	70-086
+417130	NY	NEW YORK	70-087
+417131	NY	NEW YORK	70-088
+417132	NY	NEW YORK	70-089
+417133	NY	NEW YORK	70-090
+417134	NY	NEW YORK	70-091
+417135	NY	NEW YORK	70-092
+417136	NY	NEW YORK	70-093
+417137	NY	NEW YORK	71-001
+417138	NY	NEW YORK	71-002
+417139	NY	NEW YORK	71-003
+417140	NY	NEW YORK	71-004
+417141	NY	NEW YORK	71-005
+417142	NY	NEW YORK	71-006
+417143	NY	NEW YORK	71-007
+417144	NY	NEW YORK	71-008
+417145	NY	NEW YORK	71-009
+417146	NY	NEW YORK	71-010
+417147	NY	NEW YORK	71-011
+417148	NY	NEW YORK	71-012
+417149	NY	NEW YORK	71-013
+417150	NY	NEW YORK	71-014
+417151	NY	NEW YORK	71-015
+417152	NY	NEW YORK	71-016
+417153	NY	NEW YORK	71-017
+417154	NY	NEW YORK	71-018
+417155	NY	NEW YORK	71-019
+417156	NY	NEW YORK	71-020
+417157	NY	NEW YORK	71-022
+417158	NY	NEW YORK	71-023
+417159	NY	NEW YORK	71-024
+417160	NY	NEW YORK	71-025
+417161	NY	NEW YORK	71-026
+417162	NY	NEW YORK	71-027
+417163	NY	NEW YORK	71-028
+417164	NY	NEW YORK	71-029
+417165	NY	NEW YORK	71-030
+417166	NY	NEW YORK	71-031
+417167	NY	NEW YORK	71-032
+417168	NY	NEW YORK	71-033
+417169	NY	NEW YORK	71-034
+417170	NY	NEW YORK	71-035
+417171	NY	NEW YORK	71-036
+417172	NY	NEW YORK	71-037
+417173	NY	NEW YORK	71-038
+417174	NY	NEW YORK	71-039
+417175	NY	NEW YORK	71-040
+417176	NY	NEW YORK	71-041
+417177	NY	NEW YORK	71-042
+417178	NY	NEW YORK	71-043
+417179	NY	NEW YORK	71-044
+417180	NY	NEW YORK	71-045
+417181	NY	NEW YORK	71-046
+417182	NY	NEW YORK	71-048
+417183	NY	NEW YORK	71-049
+417184	NY	NEW YORK	71-051
+417185	NY	NEW YORK	71-052
+417186	NY	NEW YORK	71-053
+417187	NY	NEW YORK	71-054
+417188	NY	NEW YORK	71-055
+417189	NY	NEW YORK	71-056
+417190	NY	NEW YORK	71-057
+417191	NY	NEW YORK	71-058
+417192	NY	NEW YORK	71-059
+417193	NY	NEW YORK	71-060
+417194	NY	NEW YORK	71-061
+417195	NY	NEW YORK	71-062
+417196	NY	NEW YORK	71-063
+417197	NY	NEW YORK	71-064
+417198	NY	NEW YORK	71-065
+417199	NY	NEW YORK	71-066
+417200	NY	NEW YORK	71-067
+417201	NY	NEW YORK	71-068
+417202	NY	NEW YORK	71-069
+417203	NY	NEW YORK	71-070
+417204	NY	NEW YORK	71-071
+417205	NY	NEW YORK	71-072
+417206	NY	NEW YORK	71-073
+417207	NY	NEW YORK	71-074
+417208	NY	NEW YORK	71-075
+417209	NY	NEW YORK	71-076
+417210	NY	NEW YORK	71-077
+417211	NY	NEW YORK	71-078
+417212	NY	NEW YORK	71-079
+417213	NY	NEW YORK	71-080
+417214	NY	NEW YORK	71-081
+417215	NY	NEW YORK	71-082
+417216	NY	NEW YORK	71-083
+417217	NY	NEW YORK	71-084
+417218	NY	NEW YORK	71-085
+417219	NY	NEW YORK	71-086
+417220	NY	NEW YORK	71-087
+417221	NY	NEW YORK	71-088
+417222	NY	NEW YORK	71-090
+417223	NY	NEW YORK	71-096
+417224	NY	NEW YORK	72-001
+417225	NY	NEW YORK	72-002
+417226	NY	NEW YORK	72-003
+417227	NY	NEW YORK	72-004
+417228	NY	NEW YORK	72-005
+417229	NY	NEW YORK	72-006
+417230	NY	NEW YORK	72-007
+417231	NY	NEW YORK	72-008
+417232	NY	NEW YORK	72-009
+417233	NY	NEW YORK	72-010
+417234	NY	NEW YORK	72-011
+417235	NY	NEW YORK	72-012
+417236	NY	NEW YORK	72-013
+417237	NY	NEW YORK	72-014
+417238	NY	NEW YORK	72-015
+417239	NY	NEW YORK	72-016
+417240	NY	NEW YORK	72-017
+417241	NY	NEW YORK	72-018
+417242	NY	NEW YORK	72-019
+417243	NY	NEW YORK	72-020
+417244	NY	NEW YORK	72-021
+417245	NY	NEW YORK	72-022
+417246	NY	NEW YORK	72-023
+417247	NY	NEW YORK	72-024
+417248	NY	NEW YORK	72-025
+417249	NY	NEW YORK	72-026
+417250	NY	NEW YORK	72-027
+417251	NY	NEW YORK	72-028
+417252	NY	NEW YORK	72-029
+417253	NY	NEW YORK	72-030
+417254	NY	NEW YORK	72-031
+417255	NY	NEW YORK	72-032
+417256	NY	NEW YORK	72-033
+417257	NY	NEW YORK	72-034
+417258	NY	NEW YORK	72-035
+417259	NY	NEW YORK	72-036
+417260	NY	NEW YORK	72-037
+417261	NY	NEW YORK	72-038
+417262	NY	NEW YORK	72-039
+417263	NY	NEW YORK	72-040
+417264	NY	NEW YORK	72-041
+417265	NY	NEW YORK	72-042
+417266	NY	NEW YORK	72-043
+417267	NY	NEW YORK	72-044
+417268	NY	NEW YORK	72-045
+417269	NY	NEW YORK	72-046
+417270	NY	NEW YORK	72-047
+417271	NY	NEW YORK	72-048
+417272	NY	NEW YORK	72-049
+417273	NY	NEW YORK	72-050
+417274	NY	NEW YORK	72-051
+417275	NY	NEW YORK	72-052
+417276	NY	NEW YORK	72-053
+417277	NY	NEW YORK	72-054
+417278	NY	NEW YORK	72-055
+417279	NY	NEW YORK	72-056
+417280	NY	NEW YORK	72-057
+417281	NY	NEW YORK	72-058
+417282	NY	NEW YORK	72-059
+417283	NY	NEW YORK	72-060
+417284	NY	NEW YORK	72-061
+417285	NY	NEW YORK	72-062
+417286	NY	NEW YORK	72-063
+417287	NY	NEW YORK	72-065
+417288	NY	NEW YORK	72-066
+417289	NY	NEW YORK	72-067
+417290	NY	NEW YORK	72-068
+417291	NY	NEW YORK	72-069
+417292	NY	NEW YORK	72-070
+417293	NY	NEW YORK	72-071
+417294	NY	NEW YORK	72-072
+417295	NY	NEW YORK	73-001
+417296	NY	NEW YORK	73-002
+417297	NY	NEW YORK	73-003
+417298	NY	NEW YORK	73-004
+417299	NY	NEW YORK	73-005
+417300	NY	NEW YORK	73-006
+417301	NY	NEW YORK	73-007
+417302	NY	NEW YORK	73-008
+417303	NY	NEW YORK	73-009
+417304	NY	NEW YORK	73-010
+417305	NY	NEW YORK	73-011
+417306	NY	NEW YORK	73-012
+417307	NY	NEW YORK	73-013
+417308	NY	NEW YORK	73-014
+417309	NY	NEW YORK	73-015
+417310	NY	NEW YORK	73-016
+417311	NY	NEW YORK	73-017
+417312	NY	NEW YORK	73-018
+417313	NY	NEW YORK	73-019
+417314	NY	NEW YORK	73-020
+417315	NY	NEW YORK	73-021
+417316	NY	NEW YORK	73-022
+417317	NY	NEW YORK	73-023
+417318	NY	NEW YORK	73-024
+417319	NY	NEW YORK	73-025
+417320	NY	NEW YORK	73-026
+417321	NY	NEW YORK	73-027
+417322	NY	NEW YORK	73-028
+417323	NY	NEW YORK	73-029
+417324	NY	NEW YORK	73-030
+417325	NY	NEW YORK	73-031
+417326	NY	NEW YORK	73-032
+417327	NY	NEW YORK	73-033
+417328	NY	NEW YORK	73-034
+417329	NY	NEW YORK	73-035
+417330	NY	NEW YORK	73-036
+417331	NY	NEW YORK	73-037
+417332	NY	NEW YORK	73-038
+417333	NY	NEW YORK	73-039
+417334	NY	NEW YORK	73-040
+417335	NY	NEW YORK	73-041
+417336	NY	NEW YORK	73-042
+417337	NY	NEW YORK	73-043
+417338	NY	NEW YORK	73-044
+417339	NY	NEW YORK	73-045
+417340	NY	NEW YORK	73-046
+417341	NY	NEW YORK	73-047
+417342	NY	NEW YORK	73-048
+417343	NY	NEW YORK	73-049
+417344	NY	NEW YORK	73-050
+417345	NY	NEW YORK	73-051
+417346	NY	NEW YORK	73-052
+417347	NY	NEW YORK	73-053
+417348	NY	NEW YORK	73-054
+417349	NY	NEW YORK	73-055
+417350	NY	NEW YORK	73-056
+417351	NY	NEW YORK	73-057
+417352	NY	NEW YORK	73-058
+417353	NY	NEW YORK	73-059
+417354	NY	NEW YORK	73-060
+417355	NY	NEW YORK	73-061
+417356	NY	NEW YORK	73-062
+417357	NY	NEW YORK	73-063
+417358	NY	NEW YORK	73-064
+417359	NY	NEW YORK	73-065
+417360	NY	NEW YORK	73-066
+417361	NY	NEW YORK	73-067
+417362	NY	NEW YORK	73-068
+417363	NY	NEW YORK	73-069
+417364	NY	NEW YORK	73-070
+417365	NY	NEW YORK	73-072
+417366	NY	NEW YORK	73-073
+417367	NY	NEW YORK	73-074
+417368	NY	NEW YORK	73-075
+417369	NY	NEW YORK	73-076
+417370	NY	NEW YORK	73-077
+417371	NY	NEW YORK	73-078
+417372	NY	NEW YORK	73-080
+417373	NY	NEW YORK	73-081
+417374	NY	NEW YORK	73-082
+417375	NY	NEW YORK	73-083
+417376	NY	NEW YORK	73-086
+417377	NY	NEW YORK	73-087
+417378	NY	NEW YORK	73-088
+417379	NY	NEW YORK	73-089
+417380	NY	NEW YORK	73-090
+417381	NY	NEW YORK	73-091
+417382	NY	NEW YORK	73-093
+417383	NY	NEW YORK	73-097
+417384	NY	NEW YORK	74-001
+417385	NY	NEW YORK	74-002
+417386	NY	NEW YORK	74-003
+417387	NY	NEW YORK	74-004
+417388	NY	NEW YORK	74-005
+417389	NY	NEW YORK	74-006
+417390	NY	NEW YORK	74-007
+417391	NY	NEW YORK	74-008
+417392	NY	NEW YORK	74-009
+417393	NY	NEW YORK	74-010
+417394	NY	NEW YORK	74-011
+417395	NY	NEW YORK	74-012
+417396	NY	NEW YORK	74-013
+417397	NY	NEW YORK	74-014
+417398	NY	NEW YORK	74-015
+417399	NY	NEW YORK	74-016
+417400	NY	NEW YORK	74-017
+417401	NY	NEW YORK	74-018
+417402	NY	NEW YORK	74-019
+417403	NY	NEW YORK	74-020
+417404	NY	NEW YORK	74-021
+417405	NY	NEW YORK	74-022
+417406	NY	NEW YORK	74-023
+417407	NY	NEW YORK	74-024
+417408	NY	NEW YORK	74-025
+417409	NY	NEW YORK	74-026
+417410	NY	NEW YORK	74-027
+417411	NY	NEW YORK	74-028
+417412	NY	NEW YORK	74-029
+417413	NY	NEW YORK	74-030
+417414	NY	NEW YORK	74-031
+417415	NY	NEW YORK	74-032
+417416	NY	NEW YORK	74-033
+417417	NY	NEW YORK	74-034
+417418	NY	NEW YORK	74-035
+417419	NY	NEW YORK	74-036
+417420	NY	NEW YORK	74-037
+417421	NY	NEW YORK	74-038
+417422	NY	NEW YORK	74-039
+417423	NY	NEW YORK	74-040
+417424	NY	NEW YORK	74-041
+417425	NY	NEW YORK	74-042
+417426	NY	NEW YORK	74-043
+417427	NY	NEW YORK	74-044
+417428	NY	NEW YORK	74-045
+417429	NY	NEW YORK	74-046
+417430	NY	NEW YORK	74-047
+417431	NY	NEW YORK	74-048
+417432	NY	NEW YORK	74-049
+417433	NY	NEW YORK	74-050
+417434	NY	NEW YORK	74-051
+417435	NY	NEW YORK	74-052
+417436	NY	NEW YORK	74-053
+417437	NY	NEW YORK	74-054
+417438	NY	NEW YORK	74-055
+417439	NY	NEW YORK	74-056
+417440	NY	NEW YORK	74-057
+417441	NY	NEW YORK	74-058
+417442	NY	NEW YORK	74-060
+417443	NY	NEW YORK	74-061
+417444	NY	NEW YORK	74-062
+417445	NY	NEW YORK	74-063
+417446	NY	NEW YORK	74-064
+417447	NY	NEW YORK	74-065
+417448	NY	NEW YORK	74-066
+417449	NY	NEW YORK	74-067
+417450	NY	NEW YORK	74-068
+417451	NY	NEW YORK	74-069
+417452	NY	NEW YORK	74-070
+417453	NY	NEW YORK	74-071
+417454	NY	NEW YORK	74-072
+417455	NY	NEW YORK	74-073
+417456	NY	NEW YORK	74-074
+417457	NY	NEW YORK	74-075
+417458	NY	NEW YORK	74-076
+417459	NY	NEW YORK	74-077
+417460	NY	NEW YORK	74-078
+417461	NY	NEW YORK	74-079
+417462	NY	NEW YORK	74-080
+417463	NY	NEW YORK	74-081
+417464	NY	NEW YORK	74-082
+417465	NY	NEW YORK	74-083
+417466	NY	NEW YORK	74-084
+417467	NY	NEW YORK	74-085
+417468	NY	NEW YORK	74-086
+417469	NY	NEW YORK	74-087
+417470	NY	NEW YORK	74-088
+417471	NY	NEW YORK	74-089
+417472	NY	NEW YORK	74-090
+417473	NY	NEW YORK	74-091
+417474	NY	NEW YORK	74-092
+417475	NY	NEW YORK	75-001
+417476	NY	NEW YORK	75-002
+417477	NY	NEW YORK	75-003
+417478	NY	NEW YORK	75-004
+417479	NY	NEW YORK	75-005
+417480	NY	NEW YORK	75-006
+417481	NY	NEW YORK	75-007
+417482	NY	NEW YORK	75-008
+417483	NY	NEW YORK	75-009
+417484	NY	NEW YORK	75-010
+417485	NY	NEW YORK	75-011
+417486	NY	NEW YORK	75-012
+417487	NY	NEW YORK	75-013
+417488	NY	NEW YORK	75-014
+417489	NY	NEW YORK	75-015
+417490	NY	NEW YORK	75-016
+417491	NY	NEW YORK	75-017
+417492	NY	NEW YORK	75-018
+417493	NY	NEW YORK	75-019
+417494	NY	NEW YORK	75-020
+417495	NY	NEW YORK	75-021
+417496	NY	NEW YORK	75-022
+417497	NY	NEW YORK	75-023
+417498	NY	NEW YORK	75-024
+417499	NY	NEW YORK	75-025
+417500	NY	NEW YORK	75-026
+417501	NY	NEW YORK	75-027
+417502	NY	NEW YORK	75-028
+417503	NY	NEW YORK	75-029
+417504	NY	NEW YORK	75-030
+417505	NY	NEW YORK	75-031
+417506	NY	NEW YORK	75-032
+417507	NY	NEW YORK	75-033
+417508	NY	NEW YORK	75-034
+417509	NY	NEW YORK	75-035
+417510	NY	NEW YORK	75-036
+417511	NY	NEW YORK	75-037
+417512	NY	NEW YORK	75-038
+417513	NY	NEW YORK	75-039
+417514	NY	NEW YORK	75-040
+417515	NY	NEW YORK	75-041
+417516	NY	NEW YORK	75-042
+417517	NY	NEW YORK	75-043
+417518	NY	NEW YORK	75-044
+417519	NY	NEW YORK	75-045
+417520	NY	NEW YORK	75-046
+417521	NY	NEW YORK	75-047
+417522	NY	NEW YORK	75-049
+417523	NY	NEW YORK	75-050
+417524	NY	NEW YORK	75-051
+417525	NY	NEW YORK	75-052
+417526	NY	NEW YORK	75-053
+417527	NY	NEW YORK	75-054
+417528	NY	NEW YORK	75-055
+417529	NY	NEW YORK	75-056
+417530	NY	NEW YORK	75-057
+417531	NY	NEW YORK	75-058
+417532	NY	NEW YORK	75-059
+417533	NY	NEW YORK	75-060
+417534	NY	NEW YORK	75-061
+417535	NY	NEW YORK	75-062
+417536	NY	NEW YORK	75-063
+417537	NY	NEW YORK	75-064
+417538	NY	NEW YORK	75-065
+417539	NY	NEW YORK	75-066
+417540	NY	NEW YORK	75-067
+417541	NY	NEW YORK	75-068
+417542	NY	NEW YORK	75-069
+417543	NY	NEW YORK	75-070
+417544	NY	NEW YORK	75-071
+417545	NY	NEW YORK	75-072
+417546	NY	NEW YORK	75-073
+417547	NY	NEW YORK	75-074
+417548	NY	NEW YORK	75-075
+417549	NY	NEW YORK	75-076
+417550	NY	NEW YORK	75-077
+417551	NY	NEW YORK	75-078
+417552	NY	NEW YORK	75-079
+417553	NY	NEW YORK	75-080
+417554	NY	NEW YORK	75-081
+417555	NY	NEW YORK	75-084
+417556	NY	NEW YORK	75-085
+417557	NY	NEW YORK	75-086
+417558	NY	NEW YORK	75-087
+417559	NY	NEW YORK	75-088
+417560	NY	NEW YORK	75-089
+417561	NY	NEW YORK	75-090
+417562	NY	NEW YORK	75-091
+417563	NY	NEW YORK	75-092
+417564	NY	NEW YORK	75-093
+417565	NY	NEW YORK	75-094
+417566	NY	NEW YORK	75-095
+417567	NY	NEW YORK	75-096
+417568	NY	NEW YORK	75-097
+417569	NY	NEW YORK	75-098
+417570	NY	NEW YORK	75-099
+417571	NY	NEW YORK	75-100
+417572	NY	NIAGARA	Cambria-01
+417573	NY	NIAGARA	Cambria-02
+417574	NY	NIAGARA	Cambria-03
+417575	NY	NIAGARA	Cambria-04
+417576	NY	NIAGARA	Hartland-01
+417577	NY	NIAGARA	Hartland-02
+417578	NY	NIAGARA	Hartland-03
+417579	NY	NIAGARA	Lewiston-01
+417580	NY	NIAGARA	Lewiston-02
+417581	NY	NIAGARA	Lewiston-03
+417582	NY	NIAGARA	Lewiston-04
+417583	NY	NIAGARA	Lewiston-05
+417584	NY	NIAGARA	Lewiston-06
+417585	NY	NIAGARA	Lewiston-07
+417586	NY	NIAGARA	Lewiston-08
+417587	NY	NIAGARA	Lewiston-09
+417588	NY	NIAGARA	Lewiston-10
+417589	NY	NIAGARA	Lewiston-11
+417590	NY	NIAGARA	Lewiston-12
+417591	NY	NIAGARA	Lewiston-13
+417592	NY	NIAGARA	Town Of Lockport-01
+417593	NY	NIAGARA	Town Of Lockport-02
+417594	NY	NIAGARA	Town Of Lockport-03
+417595	NY	NIAGARA	Town Of Lockport-04
+417596	NY	NIAGARA	Town Of Lockport-05
+417597	NY	NIAGARA	Town Of Lockport-06
+417598	NY	NIAGARA	Town Of Lockport-07
+417599	NY	NIAGARA	Town Of Lockport-08
+417600	NY	NIAGARA	Town Of Lockport-09
+417601	NY	NIAGARA	Town Of Lockport-10
+417602	NY	NIAGARA	Town Of Lockport-11
+417603	NY	NIAGARA	Town Of Lockport-12
+417604	NY	NIAGARA	Town Of Lockport-13
+417605	NY	NIAGARA	Town Of Lockport-14
+417606	NY	NIAGARA	Newfane-01
+417607	NY	NIAGARA	Newfane-02
+417608	NY	NIAGARA	Newfane-03
+417609	NY	NIAGARA	Newfane-04
+417610	NY	NIAGARA	Newfane-05
+417611	NY	NIAGARA	Newfane-06
+417612	NY	NIAGARA	Newfane-07
+417613	NY	NIAGARA	Newfane-08
+417614	NY	NIAGARA	Town Of Niagara-01
+417615	NY	NIAGARA	Town Of Niagara-02
+417616	NY	NIAGARA	Town Of Niagara-03
+417617	NY	NIAGARA	Town Of Niagara-04
+417618	NY	NIAGARA	Town Of Niagara-05
+417619	NY	NIAGARA	Town Of Niagara-06
+417620	NY	NIAGARA	Town Of Niagara-07
+417621	NY	NIAGARA	Pendleton-01
+417622	NY	NIAGARA	Pendleton-02
+417623	NY	NIAGARA	Pendleton-03
+417624	NY	NIAGARA	Pendleton-04
+417625	NY	NIAGARA	Pendleton-05
+417626	NY	NIAGARA	Pendleton-06
+417627	NY	NIAGARA	Porter-01
+417628	NY	NIAGARA	Porter-02
+417629	NY	NIAGARA	Porter-03
+417630	NY	NIAGARA	Porter-04
+417631	NY	NIAGARA	Porter-05
+417632	NY	NIAGARA	Porter-06
+417633	NY	NIAGARA	Royalton-01
+417634	NY	NIAGARA	Royalton-02
+417635	NY	NIAGARA	Royalton-03
+417636	NY	NIAGARA	Royalton-04
+417637	NY	NIAGARA	Royalton-05
+417638	NY	NIAGARA	Royalton-06
+417639	NY	NIAGARA	Somerset-01
+417640	NY	NIAGARA	Somerset-02
+417641	NY	NIAGARA	Wheatfield-01
+417642	NY	NIAGARA	Wheatfield-02
+417643	NY	NIAGARA	Wheatfield-03
+417644	NY	NIAGARA	Wheatfield-04
+417645	NY	NIAGARA	Wheatfield-05
+417646	NY	NIAGARA	Wheatfield-06
+417647	NY	NIAGARA	Wheatfield-07
+417648	NY	NIAGARA	Wheatfield-08
+417649	NY	NIAGARA	Wheatfield-09
+417650	NY	NIAGARA	Wheatfield-10
+417651	NY	NIAGARA	Wheatfield-11
+417652	NY	NIAGARA	Wilson-01
+417653	NY	NIAGARA	Wilson-02
+417654	NY	NIAGARA	Wilson-03
+417655	NY	NIAGARA	Wilson-04
+417656	NY	NIAGARA	Wilson-05
+417657	NY	NIAGARA	Niagara Falls-003-01
+417658	NY	NIAGARA	Niagara Falls-003-02
+417659	NY	NIAGARA	Niagara Falls-003-03
+417660	NY	NIAGARA	Niagara Falls-003-04
+417661	NY	NIAGARA	Niagara Falls-003-05
+417662	NY	NIAGARA	Niagara Falls-003-06
+417663	NY	NIAGARA	Niagara Falls-003-07
+417664	NY	NIAGARA	Niagara Falls-004-01
+417665	NY	NIAGARA	Niagara Falls-004-02
+417666	NY	NIAGARA	Niagara Falls-004-03
+417667	NY	NIAGARA	Niagara Falls-004-04
+417668	NY	NIAGARA	Niagara Falls-004-05
+417669	NY	NIAGARA	Niagara Falls-004-06
+417670	NY	NIAGARA	Niagara Falls-004-07
+417671	NY	NIAGARA	Niagara Falls-004-08
+417672	NY	NIAGARA	Niagara Falls-005-01
+417673	NY	NIAGARA	Niagara Falls-005-02
+417674	NY	NIAGARA	Niagara Falls-005-03
+417675	NY	NIAGARA	Niagara Falls-005-04
+417676	NY	NIAGARA	Niagara Falls-005-05
+417677	NY	NIAGARA	Niagara Falls-005-06
+417678	NY	NIAGARA	City Of Lockport-001-01
+417679	NY	NIAGARA	City Of Lockport-001-02
+417680	NY	NIAGARA	City Of Lockport-001-03
+417681	NY	NIAGARA	City Of Lockport-001-04
+417682	NY	NIAGARA	City Of Lockport-002-01
+417683	NY	NIAGARA	City Of Lockport-002-02
+417684	NY	NIAGARA	City Of Lockport-002-03
+417685	NY	NIAGARA	City Of Lockport-003-01
+417686	NY	NIAGARA	City Of Lockport-003-02
+417687	NY	NIAGARA	City Of Lockport-003-03
+417688	NY	NIAGARA	City Of Lockport-004-01
+417689	NY	NIAGARA	City Of Lockport-004-02
+417690	NY	NIAGARA	City Of Lockport-004-03
+417691	NY	NIAGARA	City Of Lockport-004-04
+417692	NY	NIAGARA	City Of Lockport-005-01
+417693	NY	NIAGARA	City Of Lockport-005-02
+417694	NY	NIAGARA	City Of Lockport-005-03
+417695	NY	NIAGARA	City Of Lockport-005-04
+417696	NY	NIAGARA	N Tonawanda-001-01
+417697	NY	NIAGARA	N Tonawanda-001-02
+417698	NY	NIAGARA	N Tonawanda-001-03
+417699	NY	NIAGARA	N Tonawanda-001-04
+417700	NY	NIAGARA	N Tonawanda-001-05
+417701	NY	NIAGARA	N Tonawanda-001-06
+417702	NY	NIAGARA	N Tonawanda-001-07
+417703	NY	NIAGARA	N Tonawanda-001-08
+417704	NY	NIAGARA	N Tonawanda-001-09
+417705	NY	NIAGARA	N Tonawanda-001-10
+417706	NY	NIAGARA	N Tonawanda-002-01
+417707	NY	NIAGARA	N Tonawanda-002-02
+417708	NY	NIAGARA	N Tonawanda-002-03
+417709	NY	NIAGARA	N Tonawanda-002-04
+417710	NY	NIAGARA	N Tonawanda-002-05
+417711	NY	NIAGARA	N Tonawanda-002-06
+417712	NY	NIAGARA	N Tonawanda-002-07
+417713	NY	NIAGARA	N Tonawanda-002-08
+417714	NY	NIAGARA	N Tonawanda-002-09
+417715	NY	NIAGARA	N Tonawanda-002-10
+417716	NY	NIAGARA	N Tonawanda-002-11
+417717	NY	NIAGARA	N Tonawanda-003-01
+417718	NY	NIAGARA	N Tonawanda-003-02
+417719	NY	NIAGARA	N Tonawanda-003-03
+417720	NY	NIAGARA	N Tonawanda-003-04
+417721	NY	NIAGARA	N Tonawanda-003-05
+417722	NY	NIAGARA	N Tonawanda-003-06
+417723	NY	NIAGARA	N Tonawanda-003-07
+417724	NY	NIAGARA	N Tonawanda-003-08
+417725	NY	NIAGARA	N Tonawanda-003-09
+417726	NY	NIAGARA	N Tonawanda-003-10
+417727	NY	NIAGARA	N Tonawanda-003-11
+417728	NY	NIAGARA	N Tonawanda-003-12
+417729	NY	ONEIDA	Rome-001-01
+417730	NY	ONEIDA	Rome-001-02
+417731	NY	ONEIDA	Rome-001-03
+417732	NY	ONEIDA	Rome-001-04
+417733	NY	ONEIDA	Rome-002-01
+417734	NY	ONEIDA	Rome-002-02
+417735	NY	ONEIDA	Rome-002-03
+417736	NY	ONEIDA	Rome-003-01
+417737	NY	ONEIDA	Rome-003-02
+417738	NY	ONEIDA	Rome-003-03
+417739	NY	ONEIDA	Rome-003-04
+417740	NY	ONEIDA	Rome-003-05
+417741	NY	ONEIDA	Rome-004-01
+417742	NY	ONEIDA	Rome-004-02
+417743	NY	ONEIDA	Rome-004-03
+417744	NY	ONEIDA	Rome-004-04
+417745	NY	ONEIDA	Rome-005-01
+417746	NY	ONEIDA	Rome-005-02
+417747	NY	ONEIDA	Rome-005-03
+417748	NY	ONEIDA	Rome-005-04
+417749	NY	ONEIDA	Rome-006-01
+417750	NY	ONEIDA	Rome-006-02
+417751	NY	ONEIDA	Rome-006-03
+417752	NY	ONEIDA	Rome-006-04
+417753	NY	ONEIDA	Rome-007-01
+417754	NY	ONEIDA	Rome-007-02
+417755	NY	ONEIDA	Rome-007-03
+417756	NY	ONEIDA	Rome-007-04
+417757	NY	ONEIDA	Rome-007-05
+417758	NY	ONEIDA	Utica-001-01
+417759	NY	ONEIDA	Utica-001-02
+417760	NY	ONEIDA	Utica-001-03
+417761	NY	ONEIDA	Utica-001-04
+417762	NY	ONEIDA	Utica-001-05
+417763	NY	ONEIDA	Utica-001-06
+417764	NY	ONEIDA	Utica-001-07
+417765	NY	ONEIDA	Utica-001-08
+417766	NY	ONEIDA	Utica-002-01
+417767	NY	ONEIDA	Utica-002-02
+417768	NY	ONEIDA	Utica-002-03
+417769	NY	ONEIDA	Utica-002-04
+417770	NY	ONEIDA	Utica-002-05
+417771	NY	ONEIDA	Utica-002-06
+417772	NY	ONEIDA	Utica-002-07
+417773	NY	ONEIDA	Utica-002-08
+417774	NY	ONEIDA	Utica-003-01
+417775	NY	ONEIDA	Utica-003-02
+417776	NY	ONEIDA	Utica-003-03
+417777	NY	ONEIDA	Utica-003-04
+417778	NY	ONEIDA	Utica-003-05
+417779	NY	ONEIDA	Utica-003-06
+417780	NY	ONEIDA	Utica-003-07
+417781	NY	ONEIDA	Utica-003-08
+417782	NY	ONEIDA	Utica-003-09
+417783	NY	ONEIDA	Utica-003-10
+417784	NY	ONEIDA	Utica-004-01
+417785	NY	ONEIDA	Utica-004-02
+417786	NY	ONEIDA	Utica-004-03
+417787	NY	ONEIDA	Utica-004-04
+417788	NY	ONEIDA	Utica-004-05
+417789	NY	ONEIDA	Utica-004-06
+417790	NY	ONEIDA	Utica-004-07
+417791	NY	ONEIDA	Utica-004-08
+417792	NY	ONEIDA	Utica-004-09
+417793	NY	ONEIDA	Utica-005-01
+417794	NY	ONEIDA	Utica-005-02
+417795	NY	ONEIDA	Utica-005-03
+417796	NY	ONEIDA	Utica-005-04
+417797	NY	ONEIDA	Utica-005-05
+417798	NY	ONEIDA	Utica-005-06
+417799	NY	ONEIDA	Utica-005-07
+417800	NY	ONEIDA	Utica-006-01
+417801	NY	ONEIDA	Utica-006-02
+417802	NY	ONEIDA	Utica-006-03
+417803	NY	ONEIDA	Utica-006-04
+417804	NY	ONEIDA	Utica-006-05
+417805	NY	ONEIDA	Utica-006-06
+417806	NY	ONEIDA	Utica-006-07
+417807	NY	ONEIDA	Utica-006-08
+417808	NY	ONEIDA	Utica-006-09
+417809	NY	ONEIDA	Annsville-01
+417810	NY	ONEIDA	Annsville-02
+417811	NY	ONEIDA	Annsville-03
+417812	NY	ONEIDA	Augusta-01
+417813	NY	ONEIDA	Augusta-02
+417814	NY	ONEIDA	Ava-01
+417815	NY	ONEIDA	Boonville-01
+417816	NY	ONEIDA	Boonville-02
+417817	NY	ONEIDA	Boonville-03
+417818	NY	ONEIDA	Boonville-04
+417819	NY	ONEIDA	Bridgewater-01
+417820	NY	ONEIDA	Camden-01
+417821	NY	ONEIDA	Camden-02
+417822	NY	ONEIDA	Camden-03
+417823	NY	ONEIDA	Deerfield-01
+417824	NY	ONEIDA	Deerfield-02
+417825	NY	ONEIDA	Deerfield-03
+417826	NY	ONEIDA	Florence-01
+417827	NY	ONEIDA	Floyd-01
+417828	NY	ONEIDA	Floyd-02
+417829	NY	ONEIDA	Floyd-03
+417830	NY	ONEIDA	Forestport-01
+417831	NY	ONEIDA	Forestport-02
+417832	NY	ONEIDA	Kirkland-01
+417833	NY	ONEIDA	Kirkland-02
+417834	NY	ONEIDA	Kirkland-03
+417835	NY	ONEIDA	Kirkland-04
+417836	NY	ONEIDA	Kirkland-05
+417837	NY	ONEIDA	Kirkland-06
+417838	NY	ONEIDA	Kirkland-07
+417839	NY	ONEIDA	Kirkland-08
+417840	NY	ONEIDA	Kirkland-09
+417841	NY	ONEIDA	Kirkland-10
+417842	NY	ONEIDA	Lee-01
+417843	NY	ONEIDA	Lee-02
+417844	NY	ONEIDA	Lee-03
+417845	NY	ONEIDA	Lee-04
+417846	NY	ONEIDA	Lee-05
+417847	NY	ONEIDA	Marcy-01
+417848	NY	ONEIDA	Marcy-02
+417849	NY	ONEIDA	Marcy-03
+417850	NY	ONEIDA	Marcy-04
+417851	NY	ONEIDA	Marshall-01
+417852	NY	ONEIDA	Marshall-02
+417853	NY	ONEIDA	New Hartford-001-01
+417854	NY	ONEIDA	New Hartford-001-02
+417855	NY	ONEIDA	New Hartford-001-03
+417856	NY	ONEIDA	New Hartford-001-04
+417857	NY	ONEIDA	New Hartford-001-05
+417858	NY	ONEIDA	New Hartford-002-01
+417859	NY	ONEIDA	New Hartford-002-02
+417860	NY	ONEIDA	New Hartford-002-03
+417861	NY	ONEIDA	New Hartford-002-04
+417862	NY	ONEIDA	New Hartford-003-01
+417863	NY	ONEIDA	New Hartford-003-02
+417864	NY	ONEIDA	New Hartford-003-03
+417865	NY	ONEIDA	New Hartford-003-04
+417866	NY	ONEIDA	New Hartford-004-01
+417867	NY	ONEIDA	New Hartford-004-02
+417868	NY	ONEIDA	New Hartford-004-03
+417869	NY	ONEIDA	New Hartford-004-04
+417870	NY	ONEIDA	Paris-01
+417871	NY	ONEIDA	Paris-02
+417872	NY	ONEIDA	Paris-03
+417873	NY	ONEIDA	Remsen-01
+417874	NY	ONEIDA	Sangerfield-01
+417875	NY	ONEIDA	Sangerfield-02
+417876	NY	ONEIDA	Steuben-01
+417877	NY	ONEIDA	Trenton-01
+417878	NY	ONEIDA	Trenton-02
+417879	NY	ONEIDA	Trenton-03
+417880	NY	ONEIDA	Trenton-04
+417881	NY	ONEIDA	Vernon-01
+417882	NY	ONEIDA	Vernon-02
+417883	NY	ONEIDA	Vernon-03
+417884	NY	ONEIDA	Vernon-04
+417885	NY	ONEIDA	Vernon-05
+417886	NY	ONEIDA	Verona-01
+417887	NY	ONEIDA	Verona-02
+417888	NY	ONEIDA	Verona-03
+417889	NY	ONEIDA	Verona-04
+417890	NY	ONEIDA	Verona-05
+417891	NY	ONEIDA	Verona-06
+417892	NY	ONEIDA	Vienna-01
+417893	NY	ONEIDA	Vienna-02
+417894	NY	ONEIDA	Vienna-03
+417895	NY	ONEIDA	Vienna-04
+417896	NY	ONEIDA	Western-01
+417897	NY	ONEIDA	Western-02
+417898	NY	ONEIDA	Western-03
+417899	NY	ONEIDA	Westmoreland-01
+417900	NY	ONEIDA	Westmoreland-02
+417901	NY	ONEIDA	Westmoreland-03
+417902	NY	ONEIDA	Westmoreland-04
+417903	NY	ONEIDA	Whitestown-01
+417904	NY	ONEIDA	Whitestown-02
+417905	NY	ONEIDA	Whitestown-03
+417906	NY	ONEIDA	Whitestown-04
+417907	NY	ONEIDA	Whitestown-05
+417908	NY	ONEIDA	Whitestown-06
+417909	NY	ONEIDA	Whitestown-07
+417910	NY	ONEIDA	Whitestown-08
+417911	NY	ONEIDA	Whitestown-09
+417912	NY	ONEIDA	Whitestown-10
+417913	NY	ONEIDA	Whitestown-11
+417914	NY	ONEIDA	Whitestown-12
+417915	NY	ONEIDA	Whitestown-13
+417916	NY	ONEIDA	Whitestown-14
+417917	NY	ONEIDA	Whitestown-15
+417918	NY	ONEIDA	Whitestown-16
+417919	NY	ONONDAGA	Syracuse-001-01
+417920	NY	ONONDAGA	Syracuse-001-02
+417921	NY	ONONDAGA	Syracuse-001-03
+417922	NY	ONONDAGA	Syracuse-001-04
+417923	NY	ONONDAGA	Syracuse-001-05
+417924	NY	ONONDAGA	Syracuse-001-06
+417925	NY	ONONDAGA	Syracuse-001-07
+417926	NY	ONONDAGA	Syracuse-001-08
+417927	NY	ONONDAGA	Syracuse-002-01
+417928	NY	ONONDAGA	Syracuse-002-02
+417929	NY	ONONDAGA	Syracuse-003-01
+417930	NY	ONONDAGA	Syracuse-003-02
+417931	NY	ONONDAGA	Syracuse-003-03
+417932	NY	ONONDAGA	Syracuse-003-04
+417933	NY	ONONDAGA	Syracuse-003-05
+417934	NY	ONONDAGA	Syracuse-003-06
+417935	NY	ONONDAGA	Syracuse-003-07
+417936	NY	ONONDAGA	Syracuse-004-01
+417937	NY	ONONDAGA	Syracuse-004-02
+417938	NY	ONONDAGA	Syracuse-004-03
+417939	NY	ONONDAGA	Syracuse-004-04
+417940	NY	ONONDAGA	Syracuse-004-05
+417941	NY	ONONDAGA	Syracuse-004-06
+417942	NY	ONONDAGA	Syracuse-004-07
+417943	NY	ONONDAGA	Syracuse-004-08
+417944	NY	ONONDAGA	Syracuse-004-09
+417945	NY	ONONDAGA	Syracuse-005-01
+417946	NY	ONONDAGA	Syracuse-005-02
+417947	NY	ONONDAGA	Syracuse-005-03
+417948	NY	ONONDAGA	Syracuse-005-04
+417949	NY	ONONDAGA	Syracuse-005-05
+417950	NY	ONONDAGA	Syracuse-005-06
+417951	NY	ONONDAGA	Syracuse-005-07
+417952	NY	ONONDAGA	Syracuse-005-08
+417953	NY	ONONDAGA	Syracuse-005-09
+417954	NY	ONONDAGA	Syracuse-005-10
+417955	NY	ONONDAGA	Syracuse-005-11
+417956	NY	ONONDAGA	Syracuse-006-01
+417957	NY	ONONDAGA	Syracuse-006-02
+417958	NY	ONONDAGA	Syracuse-006-03
+417959	NY	ONONDAGA	Syracuse-006-04
+417960	NY	ONONDAGA	Syracuse-006-05
+417961	NY	ONONDAGA	Syracuse-006-06
+417962	NY	ONONDAGA	Syracuse-007-01
+417963	NY	ONONDAGA	Syracuse-007-02
+417964	NY	ONONDAGA	Syracuse-008-01
+417965	NY	ONONDAGA	Syracuse-008-02
+417966	NY	ONONDAGA	Syracuse-008-03
+417967	NY	ONONDAGA	Syracuse-008-04
+417968	NY	ONONDAGA	Syracuse-009-01
+417969	NY	ONONDAGA	Syracuse-009-02
+417970	NY	ONONDAGA	Syracuse-009-03
+417971	NY	ONONDAGA	Syracuse-009-04
+417972	NY	ONONDAGA	Syracuse-009-05
+417973	NY	ONONDAGA	Syracuse-010-01
+417974	NY	ONONDAGA	Syracuse-010-02
+417975	NY	ONONDAGA	Syracuse-010-03
+417976	NY	ONONDAGA	Syracuse-010-04
+417977	NY	ONONDAGA	Syracuse-010-05
+417978	NY	ONONDAGA	Syracuse-010-06
+417979	NY	ONONDAGA	Syracuse-011-01
+417980	NY	ONONDAGA	Syracuse-011-02
+417981	NY	ONONDAGA	Syracuse-011-03
+417982	NY	ONONDAGA	Syracuse-011-04
+417983	NY	ONONDAGA	Syracuse-011-05
+417984	NY	ONONDAGA	Syracuse-011-06
+417985	NY	ONONDAGA	Syracuse-011-07
+417986	NY	ONONDAGA	Syracuse-011-08
+417987	NY	ONONDAGA	Syracuse-012-01
+417988	NY	ONONDAGA	Syracuse-012-02
+417989	NY	ONONDAGA	Syracuse-012-03
+417990	NY	ONONDAGA	Syracuse-012-04
+417991	NY	ONONDAGA	Syracuse-012-05
+417992	NY	ONONDAGA	Syracuse-013-01
+417993	NY	ONONDAGA	Syracuse-013-02
+417994	NY	ONONDAGA	Syracuse-013-03
+417995	NY	ONONDAGA	Syracuse-013-04
+417996	NY	ONONDAGA	Syracuse-013-05
+417997	NY	ONONDAGA	Syracuse-013-06
+417998	NY	ONONDAGA	Syracuse-013-07
+417999	NY	ONONDAGA	Syracuse-013-08
+418000	NY	ONONDAGA	Syracuse-013-09
+418001	NY	ONONDAGA	Syracuse-014-01
+418002	NY	ONONDAGA	Syracuse-014-02
+418003	NY	ONONDAGA	Syracuse-014-03
+418004	NY	ONONDAGA	Syracuse-014-04
+418005	NY	ONONDAGA	Syracuse-014-05
+418006	NY	ONONDAGA	Syracuse-014-06
+418007	NY	ONONDAGA	Syracuse-014-07
+418008	NY	ONONDAGA	Syracuse-014-08
+418009	NY	ONONDAGA	Syracuse-014-09
+418010	NY	ONONDAGA	Syracuse-014-10
+418011	NY	ONONDAGA	Syracuse-014-11
+418012	NY	ONONDAGA	Syracuse-014-12
+418013	NY	ONONDAGA	Syracuse-015-01
+418014	NY	ONONDAGA	Syracuse-015-02
+418015	NY	ONONDAGA	Syracuse-015-03
+418016	NY	ONONDAGA	Syracuse-015-04
+418017	NY	ONONDAGA	Syracuse-016-01
+418018	NY	ONONDAGA	Syracuse-016-02
+418019	NY	ONONDAGA	Syracuse-016-03
+418020	NY	ONONDAGA	Syracuse-016-04
+418021	NY	ONONDAGA	Syracuse-017-01
+418022	NY	ONONDAGA	Syracuse-017-02
+418023	NY	ONONDAGA	Syracuse-017-03
+418024	NY	ONONDAGA	Syracuse-017-04
+418025	NY	ONONDAGA	Syracuse-017-05
+418026	NY	ONONDAGA	Syracuse-017-06
+418027	NY	ONONDAGA	Syracuse-017-07
+418028	NY	ONONDAGA	Syracuse-017-08
+418029	NY	ONONDAGA	Syracuse-017-09
+418030	NY	ONONDAGA	Syracuse-017-10
+418031	NY	ONONDAGA	Syracuse-017-11
+418032	NY	ONONDAGA	Syracuse-017-12
+418033	NY	ONONDAGA	Syracuse-017-13
+418034	NY	ONONDAGA	Syracuse-017-14
+418035	NY	ONONDAGA	Syracuse-017-15
+418036	NY	ONONDAGA	Syracuse-017-16
+418037	NY	ONONDAGA	Syracuse-017-17
+418038	NY	ONONDAGA	Syracuse-017-18
+418039	NY	ONONDAGA	Syracuse-018-01
+418040	NY	ONONDAGA	Syracuse-018-02
+418041	NY	ONONDAGA	Syracuse-019-01
+418042	NY	ONONDAGA	Syracuse-019-02
+418043	NY	ONONDAGA	Syracuse-019-03
+418044	NY	ONONDAGA	Syracuse-019-04
+418045	NY	ONONDAGA	Syracuse-019-05
+418046	NY	ONONDAGA	Syracuse-019-06
+418047	NY	ONONDAGA	Syracuse-019-07
+418048	NY	ONONDAGA	Camillus-01
+418049	NY	ONONDAGA	Camillus-02
+418050	NY	ONONDAGA	Camillus-03
+418051	NY	ONONDAGA	Camillus-04
+418052	NY	ONONDAGA	Camillus-05
+418053	NY	ONONDAGA	Camillus-06
+418054	NY	ONONDAGA	Camillus-07
+418055	NY	ONONDAGA	Camillus-08
+418056	NY	ONONDAGA	Camillus-09
+418057	NY	ONONDAGA	Camillus-10
+418058	NY	ONONDAGA	Camillus-11
+418059	NY	ONONDAGA	Camillus-12
+418060	NY	ONONDAGA	Camillus-13
+418061	NY	ONONDAGA	Camillus-14
+418062	NY	ONONDAGA	Camillus-15
+418063	NY	ONONDAGA	Camillus-16
+418064	NY	ONONDAGA	Camillus-17
+418065	NY	ONONDAGA	Camillus-18
+418066	NY	ONONDAGA	Camillus-19
+418067	NY	ONONDAGA	Camillus-20
+418068	NY	ONONDAGA	Camillus-21
+418069	NY	ONONDAGA	Camillus-22
+418070	NY	ONONDAGA	Camillus-23
+418071	NY	ONONDAGA	Camillus-24
+418072	NY	ONONDAGA	Cicero-01
+418073	NY	ONONDAGA	Cicero-02
+418074	NY	ONONDAGA	Cicero-03
+418075	NY	ONONDAGA	Cicero-04
+418076	NY	ONONDAGA	Cicero-05
+418077	NY	ONONDAGA	Cicero-06
+418078	NY	ONONDAGA	Cicero-07
+418079	NY	ONONDAGA	Cicero-08
+418080	NY	ONONDAGA	Cicero-09
+418081	NY	ONONDAGA	Cicero-10
+418082	NY	ONONDAGA	Cicero-11
+418083	NY	ONONDAGA	Cicero-12
+418084	NY	ONONDAGA	Cicero-13
+418085	NY	ONONDAGA	Cicero-14
+418086	NY	ONONDAGA	Cicero-15
+418087	NY	ONONDAGA	Cicero-16
+418088	NY	ONONDAGA	Cicero-17
+418089	NY	ONONDAGA	Cicero-18
+418090	NY	ONONDAGA	Cicero-19
+418091	NY	ONONDAGA	Cicero-20
+418092	NY	ONONDAGA	Cicero-21
+418093	NY	ONONDAGA	Cicero-22
+418094	NY	ONONDAGA	Cicero-23
+418095	NY	ONONDAGA	Cicero-24
+418096	NY	ONONDAGA	Cicero-25
+418097	NY	ONONDAGA	Cicero-26
+418098	NY	ONONDAGA	Clay-01
+418099	NY	ONONDAGA	Clay-02
+418100	NY	ONONDAGA	Clay-03
+418101	NY	ONONDAGA	Clay-04
+418102	NY	ONONDAGA	Clay-05
+418103	NY	ONONDAGA	Clay-06
+418104	NY	ONONDAGA	Clay-07
+418105	NY	ONONDAGA	Clay-08
+418106	NY	ONONDAGA	Clay-09
+418107	NY	ONONDAGA	Clay-10
+418108	NY	ONONDAGA	Clay-11
+418109	NY	ONONDAGA	Clay-12
+418110	NY	ONONDAGA	Clay-13
+418111	NY	ONONDAGA	Clay-14
+418112	NY	ONONDAGA	Clay-15
+418113	NY	ONONDAGA	Clay-16
+418114	NY	ONONDAGA	Clay-17
+418115	NY	ONONDAGA	Clay-18
+418116	NY	ONONDAGA	Clay-19
+418117	NY	ONONDAGA	Clay-20
+418118	NY	ONONDAGA	Clay-21
+418119	NY	ONONDAGA	Clay-22
+418120	NY	ONONDAGA	Clay-23
+418121	NY	ONONDAGA	Clay-24
+418122	NY	ONONDAGA	Clay-25
+418123	NY	ONONDAGA	Clay-26
+418124	NY	ONONDAGA	Clay-27
+418125	NY	ONONDAGA	Clay-28
+418126	NY	ONONDAGA	Clay-29
+418127	NY	ONONDAGA	Clay-30
+418128	NY	ONONDAGA	Clay-31
+418129	NY	ONONDAGA	Clay-32
+418130	NY	ONONDAGA	Clay-33
+418131	NY	ONONDAGA	Clay-34
+418132	NY	ONONDAGA	Clay-35
+418133	NY	ONONDAGA	Clay-36
+418134	NY	ONONDAGA	Clay-37
+418135	NY	ONONDAGA	Clay-38
+418136	NY	ONONDAGA	Clay-39
+418137	NY	ONONDAGA	Clay-40
+418138	NY	ONONDAGA	Clay-41
+418139	NY	ONONDAGA	Clay-42
+418140	NY	ONONDAGA	Clay-43
+418141	NY	ONONDAGA	Clay-44
+418142	NY	ONONDAGA	Clay-45
+418143	NY	ONONDAGA	Clay-46
+418144	NY	ONONDAGA	Dewitt-01
+418145	NY	ONONDAGA	Dewitt-02
+418146	NY	ONONDAGA	Dewitt-03
+418147	NY	ONONDAGA	Dewitt-04
+418148	NY	ONONDAGA	Dewitt-05
+418149	NY	ONONDAGA	Dewitt-06
+418150	NY	ONONDAGA	Dewitt-07
+418151	NY	ONONDAGA	Dewitt-08
+418152	NY	ONONDAGA	Dewitt-09
+418153	NY	ONONDAGA	Dewitt-10
+418154	NY	ONONDAGA	Dewitt-11
+418155	NY	ONONDAGA	Dewitt-12
+418156	NY	ONONDAGA	Dewitt-13
+418157	NY	ONONDAGA	Dewitt-14
+418158	NY	ONONDAGA	Dewitt-15
+418159	NY	ONONDAGA	Dewitt-16
+418160	NY	ONONDAGA	Dewitt-17
+418161	NY	ONONDAGA	Dewitt-18
+418162	NY	ONONDAGA	Dewitt-19
+418163	NY	ONONDAGA	Dewitt-20
+418164	NY	ONONDAGA	Dewitt-21
+418165	NY	ONONDAGA	Dewitt-22
+418166	NY	ONONDAGA	Dewitt-23
+418167	NY	ONONDAGA	Dewitt-24
+418168	NY	ONONDAGA	Dewitt-25
+418169	NY	ONONDAGA	Elbridge-01
+418170	NY	ONONDAGA	Elbridge-02
+418171	NY	ONONDAGA	Elbridge-03
+418172	NY	ONONDAGA	Elbridge-04
+418173	NY	ONONDAGA	Elbridge-05
+418174	NY	ONONDAGA	Fabius-01
+418175	NY	ONONDAGA	Fabius-02
+418176	NY	ONONDAGA	Geddes-01
+418177	NY	ONONDAGA	Geddes-02
+418178	NY	ONONDAGA	Geddes-03
+418179	NY	ONONDAGA	Geddes-04
+418180	NY	ONONDAGA	Geddes-05
+418181	NY	ONONDAGA	Geddes-06
+418182	NY	ONONDAGA	Geddes-07
+418183	NY	ONONDAGA	Geddes-08
+418184	NY	ONONDAGA	Geddes-09
+418185	NY	ONONDAGA	Geddes-10
+418186	NY	ONONDAGA	Geddes-11
+418187	NY	ONONDAGA	Geddes-12
+418188	NY	ONONDAGA	Geddes-13
+418189	NY	ONONDAGA	Geddes-14
+418190	NY	ONONDAGA	Geddes-15
+418191	NY	ONONDAGA	Geddes-16
+418192	NY	ONONDAGA	Geddes-17
+418193	NY	ONONDAGA	Geddes-18
+418194	NY	ONONDAGA	Geddes-19
+418195	NY	ONONDAGA	Geddes-20
+418196	NY	ONONDAGA	Lafayette-01
+418197	NY	ONONDAGA	Lafayette-02
+418198	NY	ONONDAGA	Lafayette-03
+418199	NY	ONONDAGA	Lafayette-04
+418200	NY	ONONDAGA	Lafayette-05
+418201	NY	ONONDAGA	Lysander-01
+418202	NY	ONONDAGA	Lysander-02
+418203	NY	ONONDAGA	Lysander-03
+418204	NY	ONONDAGA	Lysander-04
+418205	NY	ONONDAGA	Lysander-05
+418206	NY	ONONDAGA	Lysander-06
+418207	NY	ONONDAGA	Lysander-07
+418208	NY	ONONDAGA	Lysander-08
+418209	NY	ONONDAGA	Lysander-09
+418210	NY	ONONDAGA	Lysander-10
+418211	NY	ONONDAGA	Lysander-11
+418212	NY	ONONDAGA	Lysander-12
+418213	NY	ONONDAGA	Lysander-13
+418214	NY	ONONDAGA	Lysander-14
+418215	NY	ONONDAGA	Lysander-15
+418216	NY	ONONDAGA	Lysander-16
+418217	NY	ONONDAGA	Lysander-17
+418218	NY	ONONDAGA	Lysander-18
+418219	NY	ONONDAGA	Manlius-01
+418220	NY	ONONDAGA	Manlius-02
+418221	NY	ONONDAGA	Manlius-03
+418222	NY	ONONDAGA	Manlius-04
+418223	NY	ONONDAGA	Manlius-05
+418224	NY	ONONDAGA	Manlius-06
+418225	NY	ONONDAGA	Manlius-07
+418226	NY	ONONDAGA	Manlius-08
+418227	NY	ONONDAGA	Manlius-09
+418228	NY	ONONDAGA	Manlius-10
+418229	NY	ONONDAGA	Manlius-11
+418230	NY	ONONDAGA	Manlius-12
+418231	NY	ONONDAGA	Manlius-13
+418232	NY	ONONDAGA	Manlius-14
+418233	NY	ONONDAGA	Manlius-15
+418234	NY	ONONDAGA	Manlius-16
+418235	NY	ONONDAGA	Manlius-17
+418236	NY	ONONDAGA	Manlius-18
+418237	NY	ONONDAGA	Manlius-19
+418238	NY	ONONDAGA	Manlius-20
+418239	NY	ONONDAGA	Manlius-21
+418240	NY	ONONDAGA	Manlius-22
+418241	NY	ONONDAGA	Manlius-23
+418242	NY	ONONDAGA	Manlius-24
+418243	NY	ONONDAGA	Manlius-25
+418244	NY	ONONDAGA	Manlius-26
+418245	NY	ONONDAGA	Manlius-27
+418246	NY	ONONDAGA	Manlius-28
+418247	NY	ONONDAGA	Manlius-29
+418248	NY	ONONDAGA	Manlius-30
+418249	NY	ONONDAGA	Manlius-31
+418250	NY	ONONDAGA	Manlius-32
+418251	NY	ONONDAGA	Manlius-33
+418252	NY	ONONDAGA	Marcellus-01
+418253	NY	ONONDAGA	Marcellus-02
+418254	NY	ONONDAGA	Marcellus-03
+418255	NY	ONONDAGA	Marcellus-04
+418256	NY	ONONDAGA	Marcellus-05
+418257	NY	ONONDAGA	Marcellus-06
+418258	NY	ONONDAGA	Onondaga-01
+418259	NY	ONONDAGA	Onondaga-02
+418260	NY	ONONDAGA	Onondaga-03
+418261	NY	ONONDAGA	Onondaga-04
+418262	NY	ONONDAGA	Onondaga-05
+418263	NY	ONONDAGA	Onondaga-06
+418264	NY	ONONDAGA	Onondaga-07
+418265	NY	ONONDAGA	Onondaga-08
+418266	NY	ONONDAGA	Onondaga-09
+418267	NY	ONONDAGA	Onondaga-10
+418268	NY	ONONDAGA	Onondaga-11
+418269	NY	ONONDAGA	Onondaga-12
+418270	NY	ONONDAGA	Onondaga-13
+418271	NY	ONONDAGA	Onondaga-14
+418272	NY	ONONDAGA	Onondaga-15
+418273	NY	ONONDAGA	Onondaga-16
+418274	NY	ONONDAGA	Onondaga-17
+418275	NY	ONONDAGA	Onondaga-18
+418276	NY	ONONDAGA	Onondaga-19
+418277	NY	ONONDAGA	Otisco-01
+418278	NY	ONONDAGA	Otisco-02
+418279	NY	ONONDAGA	Pompey-01
+418280	NY	ONONDAGA	Pompey-02
+418281	NY	ONONDAGA	Pompey-03
+418282	NY	ONONDAGA	Pompey-04
+418283	NY	ONONDAGA	Pompey-05
+418284	NY	ONONDAGA	Pompey-06
+418285	NY	ONONDAGA	Salina-01
+418286	NY	ONONDAGA	Salina-02
+418287	NY	ONONDAGA	Salina-03
+418288	NY	ONONDAGA	Salina-04
+418289	NY	ONONDAGA	Salina-05
+418290	NY	ONONDAGA	Salina-06
+418291	NY	ONONDAGA	Salina-07
+418292	NY	ONONDAGA	Salina-08
+418293	NY	ONONDAGA	Salina-09
+418294	NY	ONONDAGA	Salina-10
+418295	NY	ONONDAGA	Salina-11
+418296	NY	ONONDAGA	Salina-12
+418297	NY	ONONDAGA	Salina-13
+418298	NY	ONONDAGA	Salina-14
+418299	NY	ONONDAGA	Salina-15
+418300	NY	ONONDAGA	Salina-16
+418301	NY	ONONDAGA	Salina-17
+418302	NY	ONONDAGA	Salina-18
+418303	NY	ONONDAGA	Salina-19
+418304	NY	ONONDAGA	Salina-20
+418305	NY	ONONDAGA	Salina-21
+418306	NY	ONONDAGA	Salina-22
+418307	NY	ONONDAGA	Salina-23
+418308	NY	ONONDAGA	Salina-24
+418309	NY	ONONDAGA	Salina-25
+418310	NY	ONONDAGA	Salina-26
+418311	NY	ONONDAGA	Salina-27
+418312	NY	ONONDAGA	Salina-28
+418313	NY	ONONDAGA	Salina-29
+418314	NY	ONONDAGA	Salina-30
+418315	NY	ONONDAGA	Skaneateles-01
+418316	NY	ONONDAGA	Skaneateles-02
+418317	NY	ONONDAGA	Skaneateles-03
+418318	NY	ONONDAGA	Skaneateles-04
+418319	NY	ONONDAGA	Skaneateles-05
+418320	NY	ONONDAGA	Skaneateles-06
+418321	NY	ONONDAGA	Skaneateles-07
+418322	NY	ONONDAGA	Skaneateles-08
+418323	NY	ONONDAGA	Spafford-01
+418324	NY	ONONDAGA	Spafford-02
+418325	NY	ONONDAGA	Tully-01
+418326	NY	ONONDAGA	Tully-02
+418327	NY	ONONDAGA	Tully-03
+418328	NY	ONONDAGA	Van Buren-01
+418329	NY	ONONDAGA	Van Buren-02
+418330	NY	ONONDAGA	Van Buren-03
+418331	NY	ONONDAGA	Van Buren-04
+418332	NY	ONONDAGA	Van Buren-05
+418333	NY	ONONDAGA	Van Buren-06
+418334	NY	ONONDAGA	Van Buren-07
+418335	NY	ONONDAGA	Van Buren-08
+418336	NY	ONONDAGA	Van Buren-09
+418337	NY	ONONDAGA	Van Buren-10
+418338	NY	ONONDAGA	Van Buren-11
+418339	NY	ONTARIO	City Cdga-001-01
+418340	NY	ONTARIO	City Cdga-001-02
+418341	NY	ONTARIO	City Cdga-002-01
+418342	NY	ONTARIO	City Cdga-002-02
+418343	NY	ONTARIO	City Cdga-003-01
+418344	NY	ONTARIO	City Cdga-003-02
+418345	NY	ONTARIO	City Cdga-004-01
+418346	NY	ONTARIO	City Cdga-004-02
+418347	NY	ONTARIO	City Geneva-001-01
+418348	NY	ONTARIO	City Geneva-001-02
+418349	NY	ONTARIO	City Geneva-002-01
+418350	NY	ONTARIO	City Geneva-002-02
+418351	NY	ONTARIO	City Geneva-003-01
+418352	NY	ONTARIO	City Geneva-003-02
+418353	NY	ONTARIO	City Geneva-004-01
+418354	NY	ONTARIO	City Geneva-004-02
+418355	NY	ONTARIO	City Geneva-005-01
+418356	NY	ONTARIO	City Geneva-005-02
+418357	NY	ONTARIO	City Geneva-006-01
+418358	NY	ONTARIO	City Geneva-006-02
+418359	NY	ONTARIO	Bristol-01
+418360	NY	ONTARIO	Bristol-02
+418361	NY	ONTARIO	Canadice-01
+418362	NY	ONTARIO	Canadice-02
+418363	NY	ONTARIO	Canandaiguat-01
+418364	NY	ONTARIO	Canandaiguat-02
+418365	NY	ONTARIO	Canandaiguat-03
+418366	NY	ONTARIO	Canandaiguat-04
+418367	NY	ONTARIO	Canandaiguat-05
+418368	NY	ONTARIO	Canandaiguat-06
+418369	NY	ONTARIO	Canandaiguat-07
+418370	NY	ONTARIO	E.Bloomfield-01
+418371	NY	ONTARIO	E.Bloomfield-02
+418372	NY	ONTARIO	E.Bloomfield-03
+418373	NY	ONTARIO	Farmington-01
+418374	NY	ONTARIO	Farmington-02
+418375	NY	ONTARIO	Farmington-03
+418376	NY	ONTARIO	Farmington-04
+418377	NY	ONTARIO	Farmington-05
+418378	NY	ONTARIO	Farmington-06
+418379	NY	ONTARIO	Farmington-07
+418380	NY	ONTARIO	Farmington-08
+418381	NY	ONTARIO	Farmington-09
+418382	NY	ONTARIO	Farmington-10
+418383	NY	ONTARIO	Genevat-01
+418384	NY	ONTARIO	Genevat-02
+418385	NY	ONTARIO	Genevat-03
+418386	NY	ONTARIO	Gorham-01
+418387	NY	ONTARIO	Gorham-02
+418388	NY	ONTARIO	Gorham-03
+418389	NY	ONTARIO	Gorham-04
+418390	NY	ONTARIO	Hopewell-01
+418391	NY	ONTARIO	Hopewell-02
+418392	NY	ONTARIO	Hopewell-03
+418393	NY	ONTARIO	Manchester-01
+418394	NY	ONTARIO	Manchester-02
+418395	NY	ONTARIO	Manchester-03
+418396	NY	ONTARIO	Manchester-04
+418397	NY	ONTARIO	Manchester-05
+418398	NY	ONTARIO	Manchester-06
+418399	NY	ONTARIO	Manchester-07
+418400	NY	ONTARIO	Manchester-08
+418401	NY	ONTARIO	Naples-01
+418402	NY	ONTARIO	Naples-02
+418403	NY	ONTARIO	Phelps-01
+418404	NY	ONTARIO	Phelps-02
+418405	NY	ONTARIO	Phelps-03
+418406	NY	ONTARIO	Phelps-04
+418407	NY	ONTARIO	Phelps-05
+418408	NY	ONTARIO	Phelps-06
+418409	NY	ONTARIO	Richmond-01
+418410	NY	ONTARIO	Richmond-02
+418411	NY	ONTARIO	Richmond-03
+418412	NY	ONTARIO	Seneca-01
+418413	NY	ONTARIO	Seneca-02
+418414	NY	ONTARIO	Seneca-03
+418415	NY	ONTARIO	S Bristol-01
+418416	NY	ONTARIO	S Bristol-02
+418417	NY	ONTARIO	Victor-01
+418418	NY	ONTARIO	Victor-02
+418419	NY	ONTARIO	Victor-03
+418420	NY	ONTARIO	Victor-04
+418421	NY	ONTARIO	Victor-05
+418422	NY	ONTARIO	Victor-06
+418423	NY	ONTARIO	Victor-07
+418424	NY	ONTARIO	Victor-08
+418425	NY	ONTARIO	Victor-09
+418426	NY	ONTARIO	Victor-10
+418427	NY	ONTARIO	Victor-11
+418428	NY	ONTARIO	Victor-12
+418429	NY	ONTARIO	W.Bloomfield-01
+418430	NY	ONTARIO	W.Bloomfield-02
+418431	NY	ORANGE	Blooming Grove-01
+418432	NY	ORANGE	Blooming Grove-02
+418433	NY	ORANGE	Blooming Grove-03
+418434	NY	ORANGE	Blooming Grove-04
+418435	NY	ORANGE	Blooming Grove-05
+418436	NY	ORANGE	Blooming Grove-06
+418437	NY	ORANGE	Blooming Grove-07
+418438	NY	ORANGE	Blooming Grove-08
+418439	NY	ORANGE	Blooming Grove-09
+418440	NY	ORANGE	Blooming Grove-10
+418441	NY	ORANGE	Blooming Grove-11
+418442	NY	ORANGE	Blooming Grove-12
+418443	NY	ORANGE	Blooming Grove-13
+418444	NY	ORANGE	Blooming Grove-14
+418445	NY	ORANGE	Blooming Grove-15
+418446	NY	ORANGE	Chester-03
+418447	NY	ORANGE	Chester-04
+418448	NY	ORANGE	Chester-05
+418449	NY	ORANGE	Chester-06
+418450	NY	ORANGE	Chester-07
+418451	NY	ORANGE	Chester-08
+418452	NY	ORANGE	Chester-09
+418453	NY	ORANGE	Chester-10
+418454	NY	ORANGE	Chester-11
+418455	NY	ORANGE	Crawford-01
+418456	NY	ORANGE	Crawford-02
+418457	NY	ORANGE	Crawford-03
+418458	NY	ORANGE	Crawford-04
+418459	NY	ORANGE	Crawford-05
+418460	NY	ORANGE	Crawford-06
+418461	NY	ORANGE	Crawford-07
+418462	NY	ORANGE	Crawford-08
+418463	NY	ORANGE	Cornwall-01
+418464	NY	ORANGE	Cornwall-02
+418465	NY	ORANGE	Cornwall-03
+418466	NY	ORANGE	Cornwall-04
+418467	NY	ORANGE	Cornwall-05
+418468	NY	ORANGE	Cornwall-06
+418469	NY	ORANGE	Cornwall-07
+418470	NY	ORANGE	Cornwall-08
+418471	NY	ORANGE	Cornwall-09
+418472	NY	ORANGE	Cornwall-10
+418473	NY	ORANGE	Cornwall-11
+418474	NY	ORANGE	Cornwall-12
+418475	NY	ORANGE	Cornwall-13
+418476	NY	ORANGE	Cornwall-14
+418477	NY	ORANGE	Deerpark-01
+418478	NY	ORANGE	Deerpark-02
+418479	NY	ORANGE	Deerpark-03
+418480	NY	ORANGE	Deerpark-04
+418481	NY	ORANGE	Deerpark-05
+418482	NY	ORANGE	Deerpark-06
+418483	NY	ORANGE	Deerpark-07
+418484	NY	ORANGE	Goshen-01
+418485	NY	ORANGE	Goshen-02
+418486	NY	ORANGE	Goshen-03
+418487	NY	ORANGE	Goshen-04
+418488	NY	ORANGE	Goshen-05
+418489	NY	ORANGE	Goshen-06
+418490	NY	ORANGE	Goshen-07
+418491	NY	ORANGE	Goshen-08
+418492	NY	ORANGE	Goshen-09
+418493	NY	ORANGE	Goshen-10
+418494	NY	ORANGE	Goshen-11
+418495	NY	ORANGE	Goshen-12
+418496	NY	ORANGE	Greenville-02
+418497	NY	ORANGE	Greenville-04
+418498	NY	ORANGE	Hamptonburgh-01
+418499	NY	ORANGE	Hamptonburgh-02
+418500	NY	ORANGE	Hamptonburgh-03
+418501	NY	ORANGE	Hamptonburgh-04
+418502	NY	ORANGE	Hamptonburgh-05
+418503	NY	ORANGE	Highlands-01
+418504	NY	ORANGE	Highlands-02
+418505	NY	ORANGE	Highlands-03
+418506	NY	ORANGE	Highlands-04
+418507	NY	ORANGE	Highlands-05
+418508	NY	ORANGE	Highlands-06
+418509	NY	ORANGE	Montgomery-01
+418510	NY	ORANGE	Montgomery-02
+418511	NY	ORANGE	Montgomery-03
+418512	NY	ORANGE	Montgomery-04
+418513	NY	ORANGE	Montgomery-05
+418514	NY	ORANGE	Montgomery-06
+418515	NY	ORANGE	Montgomery-07
+418516	NY	ORANGE	Montgomery-08
+418517	NY	ORANGE	Montgomery-09
+418518	NY	ORANGE	Montgomery-10
+418519	NY	ORANGE	Montgomery-11
+418520	NY	ORANGE	Montgomery-12
+418521	NY	ORANGE	Montgomery-13
+418522	NY	ORANGE	Montgomery-14
+418523	NY	ORANGE	Montgomery-15
+418524	NY	ORANGE	Montgomery-16
+418525	NY	ORANGE	Montgomery-17
+418526	NY	ORANGE	Montgomery-18
+418527	NY	ORANGE	Mount Hope-01
+418528	NY	ORANGE	Mount Hope-02
+418529	NY	ORANGE	Mount Hope-03
+418530	NY	ORANGE	Mount Hope-04
+418531	NY	ORANGE	Middletown/City-001-01
+418532	NY	ORANGE	Middletown/City-001-02
+418533	NY	ORANGE	Middletown/City-001-03
+418534	NY	ORANGE	Middletown/City-001-04
+418535	NY	ORANGE	Middletown/City-001-05
+418536	NY	ORANGE	Middletown/City-001-06
+418537	NY	ORANGE	Middletown/City-002-01
+418538	NY	ORANGE	Middletown/City-002-02
+418539	NY	ORANGE	Middletown/City-002-03
+418540	NY	ORANGE	Middletown/City-002-04
+418541	NY	ORANGE	Middletown/City-002-05
+418542	NY	ORANGE	Middletown/City-002-06
+418543	NY	ORANGE	Middletown/City-002-07
+418544	NY	ORANGE	Middletown/City-003-01
+418545	NY	ORANGE	Middletown/City-003-02
+418546	NY	ORANGE	Middletown/City-003-03
+418547	NY	ORANGE	Middletown/City-003-04
+418548	NY	ORANGE	Middletown/City-003-05
+418549	NY	ORANGE	Middletown/City-004-01
+418550	NY	ORANGE	Middletown/City-004-02
+418551	NY	ORANGE	Middletown/City-004-03
+418552	NY	ORANGE	Middletown/City-004-04
+418553	NY	ORANGE	Middletown/City-004-05
+418554	NY	ORANGE	Middletown/City-004-06
+418555	NY	ORANGE	Minisink-01
+418556	NY	ORANGE	Minisink-02
+418557	NY	ORANGE	Minisink-03
+418558	NY	ORANGE	Minisink-04
+418559	NY	ORANGE	Monroe-01
+418560	NY	ORANGE	Monroe-02
+418561	NY	ORANGE	Monroe-03
+418562	NY	ORANGE	Monroe-04
+418563	NY	ORANGE	Monroe-05
+418564	NY	ORANGE	Monroe-06
+418565	NY	ORANGE	Monroe-07
+418566	NY	ORANGE	Monroe-08
+418567	NY	ORANGE	Monroe-09
+418568	NY	ORANGE	Monroe-10
+418569	NY	ORANGE	Monroe-11
+418570	NY	ORANGE	Monroe-12
+418571	NY	ORANGE	Monroe-13
+418572	NY	ORANGE	Monroe-14
+418573	NY	ORANGE	Monroe-15
+418574	NY	ORANGE	Monroe-16
+418575	NY	ORANGE	Monroe-17
+418576	NY	ORANGE	Monroe-18
+418577	NY	ORANGE	Monroe-19
+418578	NY	ORANGE	Monroe-20
+418579	NY	ORANGE	Monroe-21
+418580	NY	ORANGE	Monroe-22
+418581	NY	ORANGE	Monroe-23
+418582	NY	ORANGE	Monroe-24
+418583	NY	ORANGE	Monroe-25
+418584	NY	ORANGE	Monroe-26
+418585	NY	ORANGE	Monroe-27
+418586	NY	ORANGE	Monroe-28
+418587	NY	ORANGE	Monroe-29
+418588	NY	ORANGE	Monroe-30
+418589	NY	ORANGE	Monroe-31
+418590	NY	ORANGE	Newburgh/City-001-01
+418591	NY	ORANGE	Newburgh/City-001-02
+418592	NY	ORANGE	Newburgh/City-001-03
+418593	NY	ORANGE	Newburgh/City-001-04
+418594	NY	ORANGE	Newburgh/City-002-01
+418595	NY	ORANGE	Newburgh/City-002-02
+418596	NY	ORANGE	Newburgh/City-003-01
+418597	NY	ORANGE	Newburgh/City-003-02
+418598	NY	ORANGE	Newburgh/City-004-01
+418599	NY	ORANGE	Newburgh/City-004-02
+418600	NY	ORANGE	Newburgh/City-004-03
+418601	NY	ORANGE	New Windsor-01
+418602	NY	ORANGE	New Windsor-02
+418603	NY	ORANGE	New Windsor-03
+418604	NY	ORANGE	New Windsor-04
+418605	NY	ORANGE	New Windsor-05
+418606	NY	ORANGE	New Windsor-06
+418607	NY	ORANGE	New Windsor-07
+418608	NY	ORANGE	New Windsor-08
+418609	NY	ORANGE	New Windsor-09
+418610	NY	ORANGE	New Windsor-10
+418611	NY	ORANGE	New Windsor-11
+418612	NY	ORANGE	New Windsor-12
+418613	NY	ORANGE	New Windsor-13
+418614	NY	ORANGE	New Windsor-14
+418615	NY	ORANGE	New Windsor-15
+418616	NY	ORANGE	New Windsor-16
+418617	NY	ORANGE	New Windsor-17
+418618	NY	ORANGE	New Windsor-18
+418619	NY	ORANGE	New Windsor-19
+418620	NY	ORANGE	New Windsor-20
+418621	NY	ORANGE	New Windsor-21
+418622	NY	ORANGE	Newburgh-01
+418623	NY	ORANGE	Newburgh-02
+418624	NY	ORANGE	Newburgh-03
+418625	NY	ORANGE	Newburgh-04
+418626	NY	ORANGE	Newburgh-05
+418627	NY	ORANGE	Newburgh-06
+418628	NY	ORANGE	Newburgh-07
+418629	NY	ORANGE	Newburgh-08
+418630	NY	ORANGE	Newburgh-09
+418631	NY	ORANGE	Newburgh-10
+418632	NY	ORANGE	Newburgh-11
+418633	NY	ORANGE	Newburgh-12
+418634	NY	ORANGE	Newburgh-13
+418635	NY	ORANGE	Newburgh-14
+418636	NY	ORANGE	Newburgh-15
+418637	NY	ORANGE	Newburgh-16
+418638	NY	ORANGE	Newburgh-17
+418639	NY	ORANGE	Newburgh-18
+418640	NY	ORANGE	Newburgh-19
+418641	NY	ORANGE	Newburgh-20
+418642	NY	ORANGE	Newburgh-21
+418643	NY	ORANGE	Newburgh-22
+418644	NY	ORANGE	Newburgh-23
+418645	NY	ORANGE	Newburgh-24
+418646	NY	ORANGE	Newburgh-25
+418647	NY	ORANGE	Newburgh-26
+418648	NY	ORANGE	Portjervis/City-001-01
+418649	NY	ORANGE	Portjervis/City-001-02
+418650	NY	ORANGE	Portjervis/City-002-01
+418651	NY	ORANGE	Portjervis/City-002-02
+418652	NY	ORANGE	Portjervis/City-003-01
+418653	NY	ORANGE	Portjervis/City-003-02
+418654	NY	ORANGE	Portjervis/City-004-01
+418655	NY	ORANGE	Portjervis/City-004-02
+418656	NY	ORANGE	Tuxedo-01
+418657	NY	ORANGE	Tuxedo-02
+418658	NY	ORANGE	Tuxedo-03
+418659	NY	ORANGE	Tuxedo-04
+418660	NY	ORANGE	Warwick-01
+418661	NY	ORANGE	Warwick-02
+418662	NY	ORANGE	Warwick-03
+418663	NY	ORANGE	Warwick-04
+418664	NY	ORANGE	Warwick-05
+418665	NY	ORANGE	Warwick-06
+418666	NY	ORANGE	Warwick-07
+418667	NY	ORANGE	Warwick-08
+418668	NY	ORANGE	Warwick-09
+418669	NY	ORANGE	Warwick-10
+418670	NY	ORANGE	Warwick-11
+418671	NY	ORANGE	Warwick-12
+418672	NY	ORANGE	Warwick-13
+418673	NY	ORANGE	Warwick-14
+418674	NY	ORANGE	Warwick-15
+418675	NY	ORANGE	Warwick-16
+418676	NY	ORANGE	Warwick-17
+418677	NY	ORANGE	Warwick-18
+418678	NY	ORANGE	Warwick-19
+418679	NY	ORANGE	Warwick-20
+418680	NY	ORANGE	Warwick-21
+418681	NY	ORANGE	Warwick-22
+418682	NY	ORANGE	Warwick-23
+418683	NY	ORANGE	Warwick-24
+418684	NY	ORANGE	Warwick-25
+418685	NY	ORANGE	Warwick-26
+418686	NY	ORANGE	Warwick-27
+418687	NY	ORANGE	Warwick-28
+418688	NY	ORANGE	Warwick-29
+418689	NY	ORANGE	Warwick-30
+418690	NY	ORANGE	Warwick-31
+418691	NY	ORANGE	Wawayanda-01
+418692	NY	ORANGE	Wawayanda-02
+418693	NY	ORANGE	Wawayanda-03
+418694	NY	ORANGE	Wawayanda-04
+418695	NY	ORANGE	Wawayanda-05
+418696	NY	ORANGE	Wawayanda-06
+418697	NY	ORANGE	Wallkill-001-01
+418698	NY	ORANGE	Wallkill-001-02
+418699	NY	ORANGE	Wallkill-001-03
+418700	NY	ORANGE	Wallkill-001-04
+418701	NY	ORANGE	Wallkill-001-05
+418702	NY	ORANGE	Wallkill-001-06
+418703	NY	ORANGE	Wallkill-002-01
+418704	NY	ORANGE	Wallkill-002-02
+418705	NY	ORANGE	Wallkill-002-03
+418706	NY	ORANGE	Wallkill-002-04
+418707	NY	ORANGE	Wallkill-002-05
+418708	NY	ORANGE	Wallkill-002-06
+418709	NY	ORANGE	Wallkill-002-07
+418710	NY	ORANGE	Wallkill-003-01
+418711	NY	ORANGE	Wallkill-003-02
+418712	NY	ORANGE	Wallkill-003-03
+418713	NY	ORANGE	Wallkill-003-04
+418714	NY	ORANGE	Wallkill-003-05
+418715	NY	ORANGE	Wallkill-003-06
+418716	NY	ORANGE	Wallkill-003-07
+418717	NY	ORANGE	Wallkill-004-01
+418718	NY	ORANGE	Wallkill-004-02
+418719	NY	ORANGE	Wallkill-004-03
+418720	NY	ORANGE	Wallkill-004-04
+418721	NY	ORANGE	Wallkill-004-05
+418722	NY	ORANGE	Woodbury-01
+418723	NY	ORANGE	Woodbury-02
+418724	NY	ORANGE	Woodbury-03
+418725	NY	ORANGE	Woodbury-04
+418726	NY	ORANGE	Woodbury-05
+418727	NY	ORANGE	Woodbury-06
+418728	NY	ORANGE	Woodbury-07
+418729	NY	ORANGE	Woodbury-08
+418730	NY	ORANGE	Woodbury-09
+418731	NY	ORANGE	Woodbury-10
+418732	NY	ORLEANS	Albion-03
+418733	NY	ORLEANS	Albion-04
+418734	NY	ORLEANS	Albion-05
+418735	NY	ORLEANS	Albion-06
+418736	NY	ORLEANS	Barre-01
+418737	NY	ORLEANS	Barre-02
+418738	NY	ORLEANS	Carlton-01
+418739	NY	ORLEANS	Carlton-02
+418740	NY	ORLEANS	Carlton-03
+418741	NY	ORLEANS	Clarendon-01
+418742	NY	ORLEANS	Clarendon-02
+418743	NY	ORLEANS	Clarendon-03
+418744	NY	ORLEANS	Gaines-01
+418745	NY	ORLEANS	Gaines-02
+418746	NY	ORLEANS	Gaines-03
+418747	NY	ORLEANS	Gaines-04
+418748	NY	ORLEANS	Kendall-01
+418749	NY	ORLEANS	Kendall-02
+418750	NY	ORLEANS	Kendall-03
+418751	NY	ORLEANS	Murray-01
+418752	NY	ORLEANS	Murray-02
+418753	NY	ORLEANS	Murray-03
+418754	NY	ORLEANS	Murray-04
+418755	NY	ORLEANS	Murray-05
+418756	NY	ORLEANS	Murray-06
+418757	NY	ORLEANS	Ridgeway-01
+418758	NY	ORLEANS	Ridgeway-02
+418759	NY	ORLEANS	Ridgeway-03
+418760	NY	ORLEANS	Ridgeway-04
+418761	NY	ORLEANS	Ridgeway-05
+418762	NY	ORLEANS	Ridgeway-06
+418763	NY	ORLEANS	Ridgeway-07
+418764	NY	ORLEANS	Shelby-01
+418765	NY	ORLEANS	Shelby-02
+418766	NY	ORLEANS	Shelby-03
+418767	NY	ORLEANS	Shelby-04
+418768	NY	ORLEANS	Yates-01
+418769	NY	ORLEANS	Yates-02
+418770	NY	OSWEGO	Albion-01
+418771	NY	OSWEGO	Albion-02
+418772	NY	OSWEGO	Amboy-01
+418773	NY	OSWEGO	Boylston-01
+418774	NY	OSWEGO	Constantia-01
+418775	NY	OSWEGO	Constantia-02
+418776	NY	OSWEGO	Constantia-03
+418777	NY	OSWEGO	Constantia-04
+418778	NY	OSWEGO	Granby-01
+418779	NY	OSWEGO	Granby-02
+418780	NY	OSWEGO	Granby-03
+418781	NY	OSWEGO	Granby-04
+418782	NY	OSWEGO	Granby-05
+418783	NY	OSWEGO	Hannibal-01
+418784	NY	OSWEGO	Hannibal-02
+418785	NY	OSWEGO	Hannibal-03
+418786	NY	OSWEGO	Hannibal-04
+418787	NY	OSWEGO	Hastings-01
+418788	NY	OSWEGO	Hastings-02
+418789	NY	OSWEGO	Hastings-03
+418790	NY	OSWEGO	Hastings-04
+418791	NY	OSWEGO	Hastings-05
+418792	NY	OSWEGO	Hastings-06
+418793	NY	OSWEGO	Hastings-07
+418794	NY	OSWEGO	Hastings-08
+418795	NY	OSWEGO	Mexico-01
+418796	NY	OSWEGO	Mexico-02
+418797	NY	OSWEGO	Mexico-03
+418798	NY	OSWEGO	Mexico-04
+418799	NY	OSWEGO	Minetto-01
+418800	NY	OSWEGO	Minetto-02
+418801	NY	OSWEGO	New Haven-01
+418802	NY	OSWEGO	New Haven-02
+418803	NY	OSWEGO	Orwell-01
+418804	NY	OSWEGO	Oswego Town-01
+418805	NY	OSWEGO	Oswego Town-02
+418806	NY	OSWEGO	Oswego Town-03
+418807	NY	OSWEGO	Oswego Town-04
+418808	NY	OSWEGO	Oswego Town-05
+418809	NY	OSWEGO	Oswego Town-06
+418810	NY	OSWEGO	Palermo-01
+418811	NY	OSWEGO	Palermo-02
+418812	NY	OSWEGO	Palermo-03
+418813	NY	OSWEGO	Parish-01
+418814	NY	OSWEGO	Parish-02
+418815	NY	OSWEGO	Redfield-01
+418816	NY	OSWEGO	Richland-01
+418817	NY	OSWEGO	Richland-02
+418818	NY	OSWEGO	Richland-03
+418819	NY	OSWEGO	Richland-04
+418820	NY	OSWEGO	Richland-05
+418821	NY	OSWEGO	Richland-06
+418822	NY	OSWEGO	Sandy Creek-01
+418823	NY	OSWEGO	Sandy Creek-02
+418824	NY	OSWEGO	Sandy Creek-03
+418825	NY	OSWEGO	Schroeppel-01
+418826	NY	OSWEGO	Schroeppel-02
+418827	NY	OSWEGO	Schroeppel-03
+418828	NY	OSWEGO	Schroeppel-04
+418829	NY	OSWEGO	Schroeppel-05
+418830	NY	OSWEGO	Scriba-01
+418831	NY	OSWEGO	Scriba-02
+418832	NY	OSWEGO	Scriba-03
+418833	NY	OSWEGO	Scriba-04
+418834	NY	OSWEGO	Scriba-05
+418835	NY	OSWEGO	Scriba-06
+418836	NY	OSWEGO	Volney-01
+418837	NY	OSWEGO	Volney-02
+418838	NY	OSWEGO	Volney-03
+418839	NY	OSWEGO	Volney-04
+418840	NY	OSWEGO	Volney-05
+418841	NY	OSWEGO	West Monroe-01
+418842	NY	OSWEGO	West Monroe-02
+418843	NY	OSWEGO	West Monroe-03
+418844	NY	OSWEGO	Williamstown-01
+418845	NY	OSWEGO	Oswego City-001-01
+418846	NY	OSWEGO	Oswego City-001-02
+418847	NY	OSWEGO	Oswego City-002-01
+418848	NY	OSWEGO	Oswego City-002-02
+418849	NY	OSWEGO	Oswego City-003-01
+418850	NY	OSWEGO	Oswego City-003-02
+418851	NY	OSWEGO	Oswego City-004-01
+418852	NY	OSWEGO	Oswego City-004-02
+418853	NY	OSWEGO	Oswego City-004-03
+418854	NY	OSWEGO	Oswego City-005-01
+418855	NY	OSWEGO	Oswego City-005-02
+418856	NY	OSWEGO	Oswego City-005-03
+418857	NY	OSWEGO	Oswego City-005-04
+418858	NY	OSWEGO	Oswego City-006-01
+418859	NY	OSWEGO	Oswego City-006-02
+418860	NY	OSWEGO	Oswego City-007-01
+418861	NY	OSWEGO	Oswego City-007-02
+418862	NY	OSWEGO	Oswego City-007-03
+418863	NY	OSWEGO	Fulton City-001-01
+418864	NY	OSWEGO	Fulton City-001-02
+418865	NY	OSWEGO	Fulton City-002-01
+418866	NY	OSWEGO	Fulton City-002-02
+418867	NY	OSWEGO	Fulton City-003-01
+418868	NY	OSWEGO	Fulton City-003-02
+418869	NY	OSWEGO	Fulton City-004-01
+418870	NY	OSWEGO	Fulton City-004-02
+418871	NY	OSWEGO	Fulton City-005-01
+418872	NY	OSWEGO	Fulton City-005-02
+418873	NY	OSWEGO	Fulton City-006-01
+418874	NY	OSWEGO	Fulton City-006-02
+418875	NY	OTSEGO	Burlington-01
+418876	NY	OTSEGO	Butternuts-01
+418877	NY	OTSEGO	Butternuts-02
+418878	NY	OTSEGO	Cherry Valley-01
+418879	NY	OTSEGO	Decatur-01
+418880	NY	OTSEGO	Edmeston-01
+418881	NY	OTSEGO	Exeter-01
+418882	NY	OTSEGO	Hartwick-01
+418883	NY	OTSEGO	Hartwick-02
+418884	NY	OTSEGO	Laurens-01
+418885	NY	OTSEGO	Laurens-02
+418886	NY	OTSEGO	Maryland-01
+418887	NY	OTSEGO	Maryland-02
+418888	NY	OTSEGO	Middlefield-01
+418889	NY	OTSEGO	Middlefield-02
+418890	NY	OTSEGO	Milford-01
+418891	NY	OTSEGO	Milford-02
+418892	NY	OTSEGO	Morris-01
+418893	NY	OTSEGO	New Lisbon-01
+418894	NY	OTSEGO	Town Of Oneonta-01
+418895	NY	OTSEGO	Town Of Oneonta-02
+418896	NY	OTSEGO	Town Of Oneonta-03
+418897	NY	OTSEGO	Town Of Oneonta-04
+418898	NY	OTSEGO	City Of Oneonta-001-01
+418899	NY	OTSEGO	City Of Oneonta-002-01
+418900	NY	OTSEGO	City Of Oneonta-003-01
+418901	NY	OTSEGO	City Of Oneonta-004-01
+418902	NY	OTSEGO	City Of Oneonta-005-01
+418903	NY	OTSEGO	City Of Oneonta-006-01
+418904	NY	OTSEGO	City Of Oneonta-007-01
+418905	NY	OTSEGO	City Of Oneonta-008-01
+418906	NY	OTSEGO	Otego-01
+418907	NY	OTSEGO	Otego-02
+418908	NY	OTSEGO	Otsego-01
+418909	NY	OTSEGO	Otsego-02
+418910	NY	OTSEGO	Otsego-03
+418911	NY	OTSEGO	Pittsfield-01
+418912	NY	OTSEGO	Plainfield-01
+418913	NY	OTSEGO	Richfield-01
+418914	NY	OTSEGO	Richfield-02
+418915	NY	OTSEGO	Roseboom-01
+418916	NY	OTSEGO	Springfield-01
+418917	NY	OTSEGO	Unadilla-01
+418918	NY	OTSEGO	Unadilla-02
+418919	NY	OTSEGO	Unadilla-03
+418920	NY	OTSEGO	Westford-01
+418921	NY	OTSEGO	Worcester-01
+418922	NY	OTSEGO	Worcester-02
+418923	NY	OTSEGO	Worcester-03
+418924	NY	PUTNAM	Carmel-01
+418925	NY	PUTNAM	Carmel-02
+418926	NY	PUTNAM	Carmel-03
+418927	NY	PUTNAM	Carmel-04
+418928	NY	PUTNAM	Carmel-05
+418929	NY	PUTNAM	Carmel-06
+418930	NY	PUTNAM	Carmel-07
+418931	NY	PUTNAM	Carmel-08
+418932	NY	PUTNAM	Carmel-09
+418933	NY	PUTNAM	Carmel-10
+418934	NY	PUTNAM	Carmel-11
+418935	NY	PUTNAM	Carmel-12
+418936	NY	PUTNAM	Carmel-13
+418937	NY	PUTNAM	Carmel-14
+418938	NY	PUTNAM	Carmel-15
+418939	NY	PUTNAM	Carmel-16
+418940	NY	PUTNAM	Carmel-17
+418941	NY	PUTNAM	Carmel-18
+418942	NY	PUTNAM	Carmel-19
+418943	NY	PUTNAM	Carmel-20
+418944	NY	PUTNAM	Carmel-21
+418945	NY	PUTNAM	Carmel-22
+418946	NY	PUTNAM	Carmel-23
+418947	NY	PUTNAM	Carmel-24
+418948	NY	PUTNAM	Carmel-25
+418949	NY	PUTNAM	Carmel-26
+418950	NY	PUTNAM	Carmel-27
+418951	NY	PUTNAM	Carmel-28
+418952	NY	PUTNAM	Carmel-29
+418953	NY	PUTNAM	Carmel-30
+418954	NY	PUTNAM	Kent-01
+418955	NY	PUTNAM	Kent-02
+418956	NY	PUTNAM	Kent-03
+418957	NY	PUTNAM	Kent-04
+418958	NY	PUTNAM	Kent-05
+418959	NY	PUTNAM	Kent-06
+418960	NY	PUTNAM	Kent-07
+418961	NY	PUTNAM	Kent-08
+418962	NY	PUTNAM	Kent-09
+418963	NY	PUTNAM	Kent-10
+418964	NY	PUTNAM	Kent-11
+418965	NY	PUTNAM	Kent-12
+418966	NY	PUTNAM	Patterson-01
+418967	NY	PUTNAM	Patterson-02
+418968	NY	PUTNAM	Patterson-03
+418969	NY	PUTNAM	Patterson-04
+418970	NY	PUTNAM	Patterson-05
+418971	NY	PUTNAM	Patterson-06
+418972	NY	PUTNAM	Patterson-07
+418973	NY	PUTNAM	Patterson-08
+418974	NY	PUTNAM	Philipstown-01
+418975	NY	PUTNAM	Philipstown-02
+418976	NY	PUTNAM	Philipstown-03
+418977	NY	PUTNAM	Philipstown-04
+418978	NY	PUTNAM	Philipstown-05
+418979	NY	PUTNAM	Philipstown-06
+418980	NY	PUTNAM	Philipstown-07
+418981	NY	PUTNAM	Philipstown-08
+418982	NY	PUTNAM	Philipstown-09
+418983	NY	PUTNAM	Philipstown-10
+418984	NY	PUTNAM	Putnam Valley-01
+418985	NY	PUTNAM	Putnam Valley-02
+418986	NY	PUTNAM	Putnam Valley-03
+418987	NY	PUTNAM	Putnam Valley-04
+418988	NY	PUTNAM	Putnam Valley-05
+418989	NY	PUTNAM	Putnam Valley-06
+418990	NY	PUTNAM	Putnam Valley-07
+418991	NY	PUTNAM	Putnam Valley-08
+418992	NY	PUTNAM	Putnam Valley-09
+418993	NY	PUTNAM	Putnam Valley-10
+418994	NY	PUTNAM	Southeast-01
+418995	NY	PUTNAM	Southeast-02
+418996	NY	PUTNAM	Southeast-03
+418997	NY	PUTNAM	Southeast-04
+418998	NY	PUTNAM	Southeast-05
+418999	NY	PUTNAM	Southeast-06
+419000	NY	PUTNAM	Southeast-07
+419001	NY	PUTNAM	Southeast-08
+419002	NY	PUTNAM	Southeast-09
+419003	NY	PUTNAM	Southeast-10
+419004	NY	PUTNAM	Southeast-11
+419005	NY	PUTNAM	Southeast-12
+419006	NY	PUTNAM	Southeast-13
+419007	NY	PUTNAM	Southeast-14
+419008	NY	PUTNAM	Southeast-15
+419009	NY	QUEENS	23-004
+419010	NY	QUEENS	23-005
+419011	NY	QUEENS	23-006
+419012	NY	QUEENS	23-007
+419013	NY	QUEENS	23-008
+419014	NY	QUEENS	23-009
+419015	NY	QUEENS	23-010
+419016	NY	QUEENS	23-011
+419017	NY	QUEENS	23-012
+419018	NY	QUEENS	23-013
+419019	NY	QUEENS	23-014
+419020	NY	QUEENS	23-015
+419021	NY	QUEENS	23-016
+419022	NY	QUEENS	23-017
+419023	NY	QUEENS	23-018
+419024	NY	QUEENS	23-019
+419025	NY	QUEENS	23-021
+419026	NY	QUEENS	23-022
+419027	NY	QUEENS	23-023
+419028	NY	QUEENS	23-024
+419029	NY	QUEENS	23-025
+419030	NY	QUEENS	23-026
+419031	NY	QUEENS	23-027
+419032	NY	QUEENS	23-028
+419033	NY	QUEENS	23-029
+419034	NY	QUEENS	23-030
+419035	NY	QUEENS	23-031
+419036	NY	QUEENS	23-032
+419037	NY	QUEENS	23-033
+419038	NY	QUEENS	23-034
+419039	NY	QUEENS	23-035
+419040	NY	QUEENS	23-036
+419041	NY	QUEENS	23-037
+419042	NY	QUEENS	23-038
+419043	NY	QUEENS	23-039
+419044	NY	QUEENS	23-040
+419045	NY	QUEENS	23-041
+419046	NY	QUEENS	23-042
+419047	NY	QUEENS	23-043
+419048	NY	QUEENS	23-044
+419049	NY	QUEENS	23-045
+419050	NY	QUEENS	23-046
+419051	NY	QUEENS	23-047
+419052	NY	QUEENS	23-048
+419053	NY	QUEENS	23-049
+419054	NY	QUEENS	23-050
+419055	NY	QUEENS	23-051
+419056	NY	QUEENS	23-052
+419057	NY	QUEENS	23-053
+419058	NY	QUEENS	23-054
+419059	NY	QUEENS	23-055
+419060	NY	QUEENS	23-056
+419061	NY	QUEENS	23-057
+419062	NY	QUEENS	23-058
+419063	NY	QUEENS	23-059
+419064	NY	QUEENS	23-060
+419065	NY	QUEENS	23-061
+419066	NY	QUEENS	23-062
+419067	NY	QUEENS	23-063
+419068	NY	QUEENS	23-064
+419069	NY	QUEENS	23-065
+419070	NY	QUEENS	23-066
+419071	NY	QUEENS	23-067
+419072	NY	QUEENS	23-068
+419073	NY	QUEENS	23-069
+419074	NY	QUEENS	23-070
+419075	NY	QUEENS	23-071
+419076	NY	QUEENS	23-080
+419077	NY	QUEENS	23-085
+419078	NY	QUEENS	23-086
+419079	NY	QUEENS	24-002
+419080	NY	QUEENS	24-006
+419081	NY	QUEENS	24-007
+419082	NY	QUEENS	24-008
+419083	NY	QUEENS	24-009
+419084	NY	QUEENS	24-010
+419085	NY	QUEENS	24-011
+419086	NY	QUEENS	24-012
+419087	NY	QUEENS	24-013
+419088	NY	QUEENS	24-014
+419089	NY	QUEENS	24-015
+419090	NY	QUEENS	24-016
+419091	NY	QUEENS	24-017
+419092	NY	QUEENS	24-018
+419093	NY	QUEENS	24-019
+419094	NY	QUEENS	24-020
+419095	NY	QUEENS	24-021
+419096	NY	QUEENS	24-022
+419097	NY	QUEENS	24-023
+419098	NY	QUEENS	24-024
+419099	NY	QUEENS	24-025
+419100	NY	QUEENS	24-026
+419101	NY	QUEENS	24-027
+419102	NY	QUEENS	24-028
+419103	NY	QUEENS	24-029
+419104	NY	QUEENS	24-030
+419105	NY	QUEENS	24-031
+419106	NY	QUEENS	24-032
+419107	NY	QUEENS	24-033
+419108	NY	QUEENS	24-034
+419109	NY	QUEENS	24-035
+419110	NY	QUEENS	24-036
+419111	NY	QUEENS	24-037
+419112	NY	QUEENS	24-038
+419113	NY	QUEENS	24-039
+419114	NY	QUEENS	24-040
+419115	NY	QUEENS	24-041
+419116	NY	QUEENS	24-042
+419117	NY	QUEENS	24-043
+419118	NY	QUEENS	24-044
+419119	NY	QUEENS	24-045
+419120	NY	QUEENS	24-046
+419121	NY	QUEENS	24-047
+419122	NY	QUEENS	24-048
+419123	NY	QUEENS	24-049
+419124	NY	QUEENS	24-050
+419125	NY	QUEENS	24-051
+419126	NY	QUEENS	24-052
+419127	NY	QUEENS	24-053
+419128	NY	QUEENS	24-054
+419129	NY	QUEENS	24-055
+419130	NY	QUEENS	24-056
+419131	NY	QUEENS	24-057
+419132	NY	QUEENS	24-058
+419133	NY	QUEENS	24-059
+419134	NY	QUEENS	24-060
+419135	NY	QUEENS	24-061
+419136	NY	QUEENS	24-062
+419137	NY	QUEENS	24-063
+419138	NY	QUEENS	24-064
+419139	NY	QUEENS	24-065
+419140	NY	QUEENS	24-066
+419141	NY	QUEENS	24-067
+419142	NY	QUEENS	24-068
+419143	NY	QUEENS	24-069
+419144	NY	QUEENS	24-070
+419145	NY	QUEENS	24-071
+419146	NY	QUEENS	24-072
+419147	NY	QUEENS	24-073
+419148	NY	QUEENS	24-074
+419149	NY	QUEENS	24-075
+419150	NY	QUEENS	24-076
+419151	NY	QUEENS	24-077
+419152	NY	QUEENS	24-078
+419153	NY	QUEENS	24-079
+419154	NY	QUEENS	25-007
+419155	NY	QUEENS	25-011
+419156	NY	QUEENS	25-017
+419157	NY	QUEENS	25-018
+419158	NY	QUEENS	25-019
+419159	NY	QUEENS	25-020
+419160	NY	QUEENS	25-021
+419161	NY	QUEENS	25-022
+419162	NY	QUEENS	25-023
+419163	NY	QUEENS	25-024
+419164	NY	QUEENS	25-025
+419165	NY	QUEENS	25-026
+419166	NY	QUEENS	25-027
+419167	NY	QUEENS	25-028
+419168	NY	QUEENS	25-029
+419169	NY	QUEENS	25-030
+419170	NY	QUEENS	25-031
+419171	NY	QUEENS	25-032
+419172	NY	QUEENS	25-033
+419173	NY	QUEENS	25-034
+419174	NY	QUEENS	25-035
+419175	NY	QUEENS	25-036
+419176	NY	QUEENS	25-037
+419177	NY	QUEENS	25-038
+419178	NY	QUEENS	25-039
+419179	NY	QUEENS	25-040
+419180	NY	QUEENS	25-041
+419181	NY	QUEENS	25-042
+419182	NY	QUEENS	25-043
+419183	NY	QUEENS	25-044
+419184	NY	QUEENS	25-045
+419185	NY	QUEENS	25-046
+419186	NY	QUEENS	25-047
+419187	NY	QUEENS	25-048
+419188	NY	QUEENS	25-049
+419189	NY	QUEENS	25-050
+419190	NY	QUEENS	25-051
+419191	NY	QUEENS	25-052
+419192	NY	QUEENS	25-053
+419193	NY	QUEENS	25-054
+419194	NY	QUEENS	25-055
+419195	NY	QUEENS	25-056
+419196	NY	QUEENS	25-057
+419197	NY	QUEENS	25-058
+419198	NY	QUEENS	25-059
+419199	NY	QUEENS	25-060
+419200	NY	QUEENS	25-061
+419201	NY	QUEENS	25-062
+419202	NY	QUEENS	25-063
+419203	NY	QUEENS	25-064
+419204	NY	QUEENS	25-065
+419205	NY	QUEENS	25-066
+419206	NY	QUEENS	25-068
+419207	NY	QUEENS	26-005
+419208	NY	QUEENS	26-013
+419209	NY	QUEENS	26-017
+419210	NY	QUEENS	26-031
+419211	NY	QUEENS	26-034
+419212	NY	QUEENS	26-035
+419213	NY	QUEENS	26-036
+419214	NY	QUEENS	26-037
+419215	NY	QUEENS	26-038
+419216	NY	QUEENS	26-039
+419217	NY	QUEENS	26-040
+419218	NY	QUEENS	26-041
+419219	NY	QUEENS	26-042
+419220	NY	QUEENS	26-043
+419221	NY	QUEENS	26-044
+419222	NY	QUEENS	26-045
+419223	NY	QUEENS	26-046
+419224	NY	QUEENS	26-047
+419225	NY	QUEENS	26-048
+419226	NY	QUEENS	26-049
+419227	NY	QUEENS	26-050
+419228	NY	QUEENS	26-051
+419229	NY	QUEENS	26-052
+419230	NY	QUEENS	26-053
+419231	NY	QUEENS	26-054
+419232	NY	QUEENS	26-055
+419233	NY	QUEENS	26-056
+419234	NY	QUEENS	26-057
+419235	NY	QUEENS	26-058
+419236	NY	QUEENS	26-059
+419237	NY	QUEENS	26-060
+419238	NY	QUEENS	26-061
+419239	NY	QUEENS	26-062
+419240	NY	QUEENS	26-063
+419241	NY	QUEENS	26-064
+419242	NY	QUEENS	26-065
+419243	NY	QUEENS	26-066
+419244	NY	QUEENS	26-067
+419245	NY	QUEENS	26-068
+419246	NY	QUEENS	26-069
+419247	NY	QUEENS	26-070
+419248	NY	QUEENS	26-071
+419249	NY	QUEENS	26-072
+419250	NY	QUEENS	26-073
+419251	NY	QUEENS	26-074
+419252	NY	QUEENS	26-075
+419253	NY	QUEENS	26-076
+419254	NY	QUEENS	27-003
+419255	NY	QUEENS	27-004
+419256	NY	QUEENS	27-012
+419257	NY	QUEENS	27-037
+419258	NY	QUEENS	27-039
+419259	NY	QUEENS	27-051
+419260	NY	QUEENS	27-054
+419261	NY	QUEENS	27-068
+419262	NY	QUEENS	27-079
+419263	NY	QUEENS	27-080
+419264	NY	QUEENS	27-081
+419265	NY	QUEENS	28-003
+419266	NY	QUEENS	28-014
+419267	NY	QUEENS	28-016
+419268	NY	QUEENS	28-017
+419269	NY	QUEENS	28-018
+419270	NY	QUEENS	28-019
+419271	NY	QUEENS	28-020
+419272	NY	QUEENS	28-021
+419273	NY	QUEENS	28-022
+419274	NY	QUEENS	28-023
+419275	NY	QUEENS	28-024
+419276	NY	QUEENS	28-025
+419277	NY	QUEENS	28-026
+419278	NY	QUEENS	28-027
+419279	NY	QUEENS	28-028
+419280	NY	QUEENS	28-029
+419281	NY	QUEENS	28-030
+419282	NY	QUEENS	28-031
+419283	NY	QUEENS	28-032
+419284	NY	QUEENS	28-033
+419285	NY	QUEENS	28-034
+419286	NY	QUEENS	28-035
+419287	NY	QUEENS	28-036
+419288	NY	QUEENS	28-037
+419289	NY	QUEENS	28-038
+419290	NY	QUEENS	28-039
+419291	NY	QUEENS	28-040
+419292	NY	QUEENS	28-041
+419293	NY	QUEENS	28-042
+419294	NY	QUEENS	28-043
+419295	NY	QUEENS	28-044
+419296	NY	QUEENS	28-045
+419297	NY	QUEENS	28-046
+419298	NY	QUEENS	28-047
+419299	NY	QUEENS	28-048
+419300	NY	QUEENS	28-049
+419301	NY	QUEENS	28-050
+419302	NY	QUEENS	28-051
+419303	NY	QUEENS	28-052
+419304	NY	QUEENS	28-053
+419305	NY	QUEENS	28-054
+419306	NY	QUEENS	28-055
+419307	NY	QUEENS	28-056
+419308	NY	QUEENS	28-057
+419309	NY	QUEENS	28-058
+419310	NY	QUEENS	28-059
+419311	NY	QUEENS	28-060
+419312	NY	QUEENS	28-061
+419313	NY	QUEENS	28-062
+419314	NY	QUEENS	28-063
+419315	NY	QUEENS	28-064
+419316	NY	QUEENS	28-065
+419317	NY	QUEENS	28-066
+419318	NY	QUEENS	28-067
+419319	NY	QUEENS	28-068
+419320	NY	QUEENS	28-069
+419321	NY	QUEENS	28-070
+419322	NY	QUEENS	28-071
+419323	NY	QUEENS	28-072
+419324	NY	QUEENS	28-073
+419325	NY	QUEENS	28-074
+419326	NY	QUEENS	28-075
+419327	NY	QUEENS	28-076
+419328	NY	QUEENS	28-077
+419329	NY	QUEENS	28-078
+419330	NY	QUEENS	29-004
+419331	NY	QUEENS	29-005
+419332	NY	QUEENS	29-006
+419333	NY	QUEENS	29-007
+419334	NY	QUEENS	29-008
+419335	NY	QUEENS	29-009
+419336	NY	QUEENS	29-010
+419337	NY	QUEENS	29-011
+419338	NY	QUEENS	29-012
+419339	NY	QUEENS	29-013
+419340	NY	QUEENS	29-014
+419341	NY	QUEENS	29-015
+419342	NY	QUEENS	29-016
+419343	NY	QUEENS	29-017
+419344	NY	QUEENS	29-018
+419345	NY	QUEENS	29-019
+419346	NY	QUEENS	29-020
+419347	NY	QUEENS	29-021
+419348	NY	QUEENS	29-022
+419349	NY	QUEENS	29-023
+419350	NY	QUEENS	29-024
+419351	NY	QUEENS	29-025
+419352	NY	QUEENS	29-026
+419353	NY	QUEENS	29-027
+419354	NY	QUEENS	29-028
+419355	NY	QUEENS	29-029
+419356	NY	QUEENS	29-030
+419357	NY	QUEENS	29-031
+419358	NY	QUEENS	29-032
+419359	NY	QUEENS	29-033
+419360	NY	QUEENS	29-034
+419361	NY	QUEENS	29-035
+419362	NY	QUEENS	29-036
+419363	NY	QUEENS	29-037
+419364	NY	QUEENS	29-038
+419365	NY	QUEENS	29-039
+419366	NY	QUEENS	29-040
+419367	NY	QUEENS	29-041
+419368	NY	QUEENS	29-042
+419369	NY	QUEENS	29-043
+419370	NY	QUEENS	29-044
+419371	NY	QUEENS	29-045
+419372	NY	QUEENS	29-046
+419373	NY	QUEENS	29-047
+419374	NY	QUEENS	29-048
+419375	NY	QUEENS	29-049
+419376	NY	QUEENS	29-050
+419377	NY	QUEENS	29-051
+419378	NY	QUEENS	29-052
+419379	NY	QUEENS	29-053
+419380	NY	QUEENS	29-054
+419381	NY	QUEENS	29-055
+419382	NY	QUEENS	29-056
+419383	NY	QUEENS	29-057
+419384	NY	QUEENS	29-058
+419385	NY	QUEENS	29-059
+419386	NY	QUEENS	29-060
+419387	NY	QUEENS	29-061
+419388	NY	QUEENS	29-062
+419389	NY	QUEENS	29-063
+419390	NY	QUEENS	29-064
+419391	NY	QUEENS	29-065
+419392	NY	QUEENS	29-066
+419393	NY	QUEENS	29-067
+419394	NY	QUEENS	29-068
+419395	NY	QUEENS	29-069
+419396	NY	QUEENS	29-070
+419397	NY	QUEENS	29-071
+419398	NY	QUEENS	29-072
+419399	NY	QUEENS	30-001
+419400	NY	QUEENS	30-002
+419401	NY	QUEENS	30-003
+419402	NY	QUEENS	30-004
+419403	NY	QUEENS	30-005
+419404	NY	QUEENS	30-006
+419405	NY	QUEENS	30-007
+419406	NY	QUEENS	30-008
+419407	NY	QUEENS	30-009
+419408	NY	QUEENS	30-010
+419409	NY	QUEENS	30-011
+419410	NY	QUEENS	30-012
+419411	NY	QUEENS	30-013
+419412	NY	QUEENS	30-014
+419413	NY	QUEENS	30-015
+419414	NY	QUEENS	30-016
+419415	NY	QUEENS	30-017
+419416	NY	QUEENS	30-018
+419417	NY	QUEENS	30-020
+419418	NY	QUEENS	30-021
+419419	NY	QUEENS	30-022
+419420	NY	QUEENS	30-023
+419421	NY	QUEENS	30-024
+419422	NY	QUEENS	30-025
+419423	NY	QUEENS	30-026
+419424	NY	QUEENS	30-027
+419425	NY	QUEENS	30-028
+419426	NY	QUEENS	30-029
+419427	NY	QUEENS	30-030
+419428	NY	QUEENS	30-031
+419429	NY	QUEENS	30-032
+419430	NY	QUEENS	30-033
+419431	NY	QUEENS	30-034
+419432	NY	QUEENS	30-035
+419433	NY	QUEENS	30-036
+419434	NY	QUEENS	30-037
+419435	NY	QUEENS	30-038
+419436	NY	QUEENS	30-039
+419437	NY	QUEENS	30-040
+419438	NY	QUEENS	30-041
+419439	NY	QUEENS	30-042
+419440	NY	QUEENS	30-043
+419441	NY	QUEENS	30-044
+419442	NY	QUEENS	30-045
+419443	NY	QUEENS	30-046
+419444	NY	QUEENS	30-047
+419445	NY	QUEENS	30-048
+419446	NY	QUEENS	30-050
+419447	NY	QUEENS	30-051
+419448	NY	QUEENS	30-052
+419449	NY	QUEENS	30-053
+419450	NY	QUEENS	30-054
+419451	NY	QUEENS	30-055
+419452	NY	QUEENS	30-056
+419453	NY	QUEENS	30-057
+419454	NY	QUEENS	30-058
+419455	NY	QUEENS	30-059
+419456	NY	QUEENS	30-060
+419457	NY	QUEENS	30-061
+419458	NY	QUEENS	30-062
+419459	NY	QUEENS	30-063
+419460	NY	QUEENS	30-064
+419461	NY	QUEENS	30-065
+419462	NY	QUEENS	30-066
+419463	NY	QUEENS	30-067
+419464	NY	QUEENS	30-068
+419465	NY	QUEENS	30-069
+419466	NY	QUEENS	31-001
+419467	NY	QUEENS	31-002
+419468	NY	QUEENS	31-003
+419469	NY	QUEENS	31-004
+419470	NY	QUEENS	31-005
+419471	NY	QUEENS	31-006
+419472	NY	QUEENS	31-007
+419473	NY	QUEENS	31-008
+419474	NY	QUEENS	31-009
+419475	NY	QUEENS	31-010
+419476	NY	QUEENS	31-011
+419477	NY	QUEENS	31-012
+419478	NY	QUEENS	31-013
+419479	NY	QUEENS	31-014
+419480	NY	QUEENS	31-015
+419481	NY	QUEENS	31-016
+419482	NY	QUEENS	31-017
+419483	NY	QUEENS	31-018
+419484	NY	QUEENS	31-019
+419485	NY	QUEENS	31-020
+419486	NY	QUEENS	31-021
+419487	NY	QUEENS	31-022
+419488	NY	QUEENS	31-023
+419489	NY	QUEENS	31-024
+419490	NY	QUEENS	31-025
+419491	NY	QUEENS	31-026
+419492	NY	QUEENS	31-027
+419493	NY	QUEENS	31-028
+419494	NY	QUEENS	31-029
+419495	NY	QUEENS	31-030
+419496	NY	QUEENS	31-031
+419497	NY	QUEENS	31-032
+419498	NY	QUEENS	31-033
+419499	NY	QUEENS	31-034
+419500	NY	QUEENS	31-035
+419501	NY	QUEENS	31-036
+419502	NY	QUEENS	31-037
+419503	NY	QUEENS	31-038
+419504	NY	QUEENS	31-039
+419505	NY	QUEENS	31-040
+419506	NY	QUEENS	31-041
+419507	NY	QUEENS	31-042
+419508	NY	QUEENS	31-043
+419509	NY	QUEENS	31-044
+419510	NY	QUEENS	31-045
+419511	NY	QUEENS	31-046
+419512	NY	QUEENS	31-047
+419513	NY	QUEENS	31-048
+419514	NY	QUEENS	31-049
+419515	NY	QUEENS	31-050
+419516	NY	QUEENS	31-051
+419517	NY	QUEENS	31-052
+419518	NY	QUEENS	31-053
+419519	NY	QUEENS	31-054
+419520	NY	QUEENS	31-055
+419521	NY	QUEENS	31-056
+419522	NY	QUEENS	31-057
+419523	NY	QUEENS	31-058
+419524	NY	QUEENS	31-059
+419525	NY	QUEENS	31-060
+419526	NY	QUEENS	31-061
+419527	NY	QUEENS	31-062
+419528	NY	QUEENS	31-063
+419529	NY	QUEENS	31-064
+419530	NY	QUEENS	31-078
+419531	NY	QUEENS	31-079
+419532	NY	QUEENS	32-001
+419533	NY	QUEENS	32-002
+419534	NY	QUEENS	32-003
+419535	NY	QUEENS	32-004
+419536	NY	QUEENS	32-005
+419537	NY	QUEENS	32-006
+419538	NY	QUEENS	32-007
+419539	NY	QUEENS	32-008
+419540	NY	QUEENS	32-009
+419541	NY	QUEENS	32-010
+419542	NY	QUEENS	32-011
+419543	NY	QUEENS	32-012
+419544	NY	QUEENS	32-013
+419545	NY	QUEENS	32-014
+419546	NY	QUEENS	32-015
+419547	NY	QUEENS	32-016
+419548	NY	QUEENS	32-017
+419549	NY	QUEENS	32-018
+419550	NY	QUEENS	32-019
+419551	NY	QUEENS	32-020
+419552	NY	QUEENS	32-021
+419553	NY	QUEENS	32-022
+419554	NY	QUEENS	32-023
+419555	NY	QUEENS	32-024
+419556	NY	QUEENS	32-025
+419557	NY	QUEENS	32-026
+419558	NY	QUEENS	32-027
+419559	NY	QUEENS	32-028
+419560	NY	QUEENS	32-029
+419561	NY	QUEENS	32-030
+419562	NY	QUEENS	32-031
+419563	NY	QUEENS	32-032
+419564	NY	QUEENS	32-033
+419565	NY	QUEENS	32-034
+419566	NY	QUEENS	32-035
+419567	NY	QUEENS	32-036
+419568	NY	QUEENS	32-037
+419569	NY	QUEENS	32-038
+419570	NY	QUEENS	32-039
+419571	NY	QUEENS	32-040
+419572	NY	QUEENS	32-041
+419573	NY	QUEENS	32-042
+419574	NY	QUEENS	32-043
+419575	NY	QUEENS	32-044
+419576	NY	QUEENS	32-045
+419577	NY	QUEENS	32-046
+419578	NY	QUEENS	32-047
+419579	NY	QUEENS	32-048
+419580	NY	QUEENS	32-049
+419581	NY	QUEENS	32-050
+419582	NY	QUEENS	32-051
+419583	NY	QUEENS	32-052
+419584	NY	QUEENS	32-053
+419585	NY	QUEENS	32-054
+419586	NY	QUEENS	32-055
+419587	NY	QUEENS	32-056
+419588	NY	QUEENS	32-057
+419589	NY	QUEENS	32-058
+419590	NY	QUEENS	32-059
+419591	NY	QUEENS	32-060
+419592	NY	QUEENS	32-061
+419593	NY	QUEENS	32-062
+419594	NY	QUEENS	32-063
+419595	NY	QUEENS	32-064
+419596	NY	QUEENS	32-065
+419597	NY	QUEENS	32-066
+419598	NY	QUEENS	32-067
+419599	NY	QUEENS	32-068
+419600	NY	QUEENS	32-069
+419601	NY	QUEENS	32-070
+419602	NY	QUEENS	32-071
+419603	NY	QUEENS	32-072
+419604	NY	QUEENS	32-073
+419605	NY	QUEENS	32-074
+419606	NY	QUEENS	32-075
+419607	NY	QUEENS	32-076
+419608	NY	QUEENS	32-077
+419609	NY	QUEENS	32-078
+419610	NY	QUEENS	32-079
+419611	NY	QUEENS	33-001
+419612	NY	QUEENS	33-002
+419613	NY	QUEENS	33-003
+419614	NY	QUEENS	33-004
+419615	NY	QUEENS	33-005
+419616	NY	QUEENS	33-006
+419617	NY	QUEENS	33-007
+419618	NY	QUEENS	33-008
+419619	NY	QUEENS	33-009
+419620	NY	QUEENS	33-010
+419621	NY	QUEENS	33-011
+419622	NY	QUEENS	33-012
+419623	NY	QUEENS	33-013
+419624	NY	QUEENS	33-014
+419625	NY	QUEENS	33-015
+419626	NY	QUEENS	33-016
+419627	NY	QUEENS	33-017
+419628	NY	QUEENS	33-018
+419629	NY	QUEENS	33-019
+419630	NY	QUEENS	33-020
+419631	NY	QUEENS	33-021
+419632	NY	QUEENS	33-022
+419633	NY	QUEENS	33-023
+419634	NY	QUEENS	33-024
+419635	NY	QUEENS	33-025
+419636	NY	QUEENS	33-026
+419637	NY	QUEENS	33-027
+419638	NY	QUEENS	33-028
+419639	NY	QUEENS	33-029
+419640	NY	QUEENS	33-030
+419641	NY	QUEENS	33-031
+419642	NY	QUEENS	33-032
+419643	NY	QUEENS	33-033
+419644	NY	QUEENS	33-034
+419645	NY	QUEENS	33-035
+419646	NY	QUEENS	33-036
+419647	NY	QUEENS	33-037
+419648	NY	QUEENS	33-038
+419649	NY	QUEENS	33-039
+419650	NY	QUEENS	33-040
+419651	NY	QUEENS	33-041
+419652	NY	QUEENS	33-042
+419653	NY	QUEENS	33-043
+419654	NY	QUEENS	33-044
+419655	NY	QUEENS	33-045
+419656	NY	QUEENS	33-046
+419657	NY	QUEENS	33-047
+419658	NY	QUEENS	33-048
+419659	NY	QUEENS	33-049
+419660	NY	QUEENS	33-050
+419661	NY	QUEENS	33-051
+419662	NY	QUEENS	33-052
+419663	NY	QUEENS	33-053
+419664	NY	QUEENS	33-054
+419665	NY	QUEENS	33-055
+419666	NY	QUEENS	33-056
+419667	NY	QUEENS	33-057
+419668	NY	QUEENS	33-058
+419669	NY	QUEENS	33-059
+419670	NY	QUEENS	33-060
+419671	NY	QUEENS	33-061
+419672	NY	QUEENS	33-062
+419673	NY	QUEENS	33-063
+419674	NY	QUEENS	33-064
+419675	NY	QUEENS	33-065
+419676	NY	QUEENS	33-066
+419677	NY	QUEENS	33-067
+419678	NY	QUEENS	33-068
+419679	NY	QUEENS	33-069
+419680	NY	QUEENS	33-070
+419681	NY	QUEENS	33-071
+419682	NY	QUEENS	33-072
+419683	NY	QUEENS	33-073
+419684	NY	QUEENS	33-074
+419685	NY	QUEENS	34-001
+419686	NY	QUEENS	34-002
+419687	NY	QUEENS	34-003
+419688	NY	QUEENS	34-004
+419689	NY	QUEENS	34-005
+419690	NY	QUEENS	34-006
+419691	NY	QUEENS	34-007
+419692	NY	QUEENS	34-008
+419693	NY	QUEENS	34-009
+419694	NY	QUEENS	34-010
+419695	NY	QUEENS	34-011
+419696	NY	QUEENS	34-012
+419697	NY	QUEENS	34-013
+419698	NY	QUEENS	34-014
+419699	NY	QUEENS	34-015
+419700	NY	QUEENS	34-016
+419701	NY	QUEENS	34-017
+419702	NY	QUEENS	34-018
+419703	NY	QUEENS	34-019
+419704	NY	QUEENS	34-020
+419705	NY	QUEENS	34-021
+419706	NY	QUEENS	34-022
+419707	NY	QUEENS	34-023
+419708	NY	QUEENS	34-024
+419709	NY	QUEENS	34-025
+419710	NY	QUEENS	34-026
+419711	NY	QUEENS	34-027
+419712	NY	QUEENS	34-028
+419713	NY	QUEENS	34-029
+419714	NY	QUEENS	34-030
+419715	NY	QUEENS	34-031
+419716	NY	QUEENS	34-032
+419717	NY	QUEENS	34-033
+419718	NY	QUEENS	34-034
+419719	NY	QUEENS	34-035
+419720	NY	QUEENS	34-036
+419721	NY	QUEENS	34-037
+419722	NY	QUEENS	34-038
+419723	NY	QUEENS	34-039
+419724	NY	QUEENS	34-040
+419725	NY	QUEENS	34-041
+419726	NY	QUEENS	34-042
+419727	NY	QUEENS	34-043
+419728	NY	QUEENS	34-044
+419729	NY	QUEENS	34-045
+419730	NY	QUEENS	34-046
+419731	NY	QUEENS	34-047
+419732	NY	QUEENS	34-048
+419733	NY	QUEENS	34-050
+419734	NY	QUEENS	34-051
+419735	NY	QUEENS	34-052
+419736	NY	QUEENS	34-053
+419737	NY	QUEENS	34-054
+419738	NY	QUEENS	34-055
+419739	NY	QUEENS	34-056
+419740	NY	QUEENS	34-057
+419741	NY	QUEENS	34-058
+419742	NY	QUEENS	34-059
+419743	NY	QUEENS	34-060
+419744	NY	QUEENS	34-061
+419745	NY	QUEENS	34-062
+419746	NY	QUEENS	34-063
+419747	NY	QUEENS	35-002
+419748	NY	QUEENS	35-003
+419749	NY	QUEENS	35-004
+419750	NY	QUEENS	35-005
+419751	NY	QUEENS	35-006
+419752	NY	QUEENS	35-007
+419753	NY	QUEENS	35-008
+419754	NY	QUEENS	35-009
+419755	NY	QUEENS	35-010
+419756	NY	QUEENS	35-011
+419757	NY	QUEENS	35-012
+419758	NY	QUEENS	35-013
+419759	NY	QUEENS	35-014
+419760	NY	QUEENS	35-015
+419761	NY	QUEENS	35-016
+419762	NY	QUEENS	35-017
+419763	NY	QUEENS	35-018
+419764	NY	QUEENS	35-019
+419765	NY	QUEENS	35-020
+419766	NY	QUEENS	35-021
+419767	NY	QUEENS	35-022
+419768	NY	QUEENS	35-023
+419769	NY	QUEENS	35-024
+419770	NY	QUEENS	35-025
+419771	NY	QUEENS	35-026
+419772	NY	QUEENS	35-027
+419773	NY	QUEENS	35-028
+419774	NY	QUEENS	35-029
+419775	NY	QUEENS	35-030
+419776	NY	QUEENS	35-032
+419777	NY	QUEENS	35-033
+419778	NY	QUEENS	35-035
+419779	NY	QUEENS	35-036
+419780	NY	QUEENS	35-037
+419781	NY	QUEENS	35-038
+419782	NY	QUEENS	35-039
+419783	NY	QUEENS	35-040
+419784	NY	QUEENS	35-041
+419785	NY	QUEENS	35-042
+419786	NY	QUEENS	35-043
+419787	NY	QUEENS	35-044
+419788	NY	QUEENS	35-045
+419789	NY	QUEENS	35-046
+419790	NY	QUEENS	35-047
+419791	NY	QUEENS	35-048
+419792	NY	QUEENS	35-049
+419793	NY	QUEENS	35-050
+419794	NY	QUEENS	35-051
+419795	NY	QUEENS	35-052
+419796	NY	QUEENS	35-053
+419797	NY	QUEENS	36-001
+419798	NY	QUEENS	36-002
+419799	NY	QUEENS	36-003
+419800	NY	QUEENS	36-004
+419801	NY	QUEENS	36-006
+419802	NY	QUEENS	36-007
+419803	NY	QUEENS	36-008
+419804	NY	QUEENS	36-009
+419805	NY	QUEENS	36-010
+419806	NY	QUEENS	36-011
+419807	NY	QUEENS	36-012
+419808	NY	QUEENS	36-013
+419809	NY	QUEENS	36-014
+419810	NY	QUEENS	36-015
+419811	NY	QUEENS	36-016
+419812	NY	QUEENS	36-017
+419813	NY	QUEENS	36-018
+419814	NY	QUEENS	36-019
+419815	NY	QUEENS	36-020
+419816	NY	QUEENS	36-021
+419817	NY	QUEENS	36-022
+419818	NY	QUEENS	36-023
+419819	NY	QUEENS	36-024
+419820	NY	QUEENS	36-025
+419821	NY	QUEENS	36-026
+419822	NY	QUEENS	36-027
+419823	NY	QUEENS	36-028
+419824	NY	QUEENS	36-029
+419825	NY	QUEENS	36-030
+419826	NY	QUEENS	36-031
+419827	NY	QUEENS	36-032
+419828	NY	QUEENS	36-033
+419829	NY	QUEENS	36-034
+419830	NY	QUEENS	36-035
+419831	NY	QUEENS	36-036
+419832	NY	QUEENS	36-037
+419833	NY	QUEENS	36-038
+419834	NY	QUEENS	36-039
+419835	NY	QUEENS	36-040
+419836	NY	QUEENS	36-041
+419837	NY	QUEENS	36-042
+419838	NY	QUEENS	36-043
+419839	NY	QUEENS	36-044
+419840	NY	QUEENS	36-045
+419841	NY	QUEENS	36-046
+419842	NY	QUEENS	36-047
+419843	NY	QUEENS	36-048
+419844	NY	QUEENS	36-049
+419845	NY	QUEENS	36-050
+419846	NY	QUEENS	36-051
+419847	NY	QUEENS	36-052
+419848	NY	QUEENS	36-053
+419849	NY	QUEENS	36-054
+419850	NY	QUEENS	36-055
+419851	NY	QUEENS	36-056
+419852	NY	QUEENS	36-057
+419853	NY	QUEENS	36-058
+419854	NY	QUEENS	36-059
+419855	NY	QUEENS	36-060
+419856	NY	QUEENS	36-061
+419857	NY	QUEENS	36-062
+419858	NY	QUEENS	36-063
+419859	NY	QUEENS	36-064
+419860	NY	QUEENS	36-065
+419861	NY	QUEENS	36-066
+419862	NY	QUEENS	36-067
+419863	NY	QUEENS	37-001
+419864	NY	QUEENS	37-002
+419865	NY	QUEENS	37-003
+419866	NY	QUEENS	37-004
+419867	NY	QUEENS	37-005
+419868	NY	QUEENS	37-006
+419869	NY	QUEENS	37-007
+419870	NY	QUEENS	37-008
+419871	NY	QUEENS	37-009
+419872	NY	QUEENS	37-010
+419873	NY	QUEENS	37-011
+419874	NY	QUEENS	37-012
+419875	NY	QUEENS	37-013
+419876	NY	QUEENS	37-014
+419877	NY	QUEENS	37-015
+419878	NY	QUEENS	37-016
+419879	NY	QUEENS	37-017
+419880	NY	QUEENS	37-018
+419881	NY	QUEENS	37-019
+419882	NY	QUEENS	37-020
+419883	NY	QUEENS	37-021
+419884	NY	QUEENS	37-022
+419885	NY	QUEENS	37-023
+419886	NY	QUEENS	37-024
+419887	NY	QUEENS	37-025
+419888	NY	QUEENS	37-026
+419889	NY	QUEENS	37-027
+419890	NY	QUEENS	37-028
+419891	NY	QUEENS	37-029
+419892	NY	QUEENS	37-030
+419893	NY	QUEENS	37-031
+419894	NY	QUEENS	37-032
+419895	NY	QUEENS	37-033
+419896	NY	QUEENS	37-034
+419897	NY	QUEENS	37-035
+419898	NY	QUEENS	37-036
+419899	NY	QUEENS	37-037
+419900	NY	QUEENS	37-038
+419901	NY	QUEENS	37-039
+419902	NY	QUEENS	37-041
+419903	NY	QUEENS	37-042
+419904	NY	QUEENS	37-043
+419905	NY	QUEENS	37-044
+419906	NY	QUEENS	37-045
+419907	NY	QUEENS	37-046
+419908	NY	QUEENS	37-047
+419909	NY	QUEENS	37-048
+419910	NY	QUEENS	37-049
+419911	NY	QUEENS	37-050
+419912	NY	QUEENS	37-051
+419913	NY	QUEENS	37-052
+419914	NY	QUEENS	37-053
+419915	NY	QUEENS	37-054
+419916	NY	QUEENS	37-055
+419917	NY	QUEENS	37-056
+419918	NY	QUEENS	37-057
+419919	NY	QUEENS	37-058
+419920	NY	QUEENS	37-059
+419921	NY	QUEENS	37-060
+419922	NY	QUEENS	37-061
+419923	NY	QUEENS	37-062
+419924	NY	QUEENS	37-063
+419925	NY	QUEENS	37-064
+419926	NY	QUEENS	37-065
+419927	NY	QUEENS	37-066
+419928	NY	QUEENS	37-067
+419929	NY	QUEENS	37-068
+419930	NY	QUEENS	37-075
+419931	NY	QUEENS	37-076
+419932	NY	QUEENS	38-001
+419933	NY	QUEENS	38-002
+419934	NY	QUEENS	38-003
+419935	NY	QUEENS	38-004
+419936	NY	QUEENS	38-005
+419937	NY	QUEENS	38-006
+419938	NY	QUEENS	38-007
+419939	NY	QUEENS	38-008
+419940	NY	QUEENS	38-009
+419941	NY	QUEENS	38-010
+419942	NY	QUEENS	38-011
+419943	NY	QUEENS	38-012
+419944	NY	QUEENS	38-013
+419945	NY	QUEENS	38-014
+419946	NY	QUEENS	38-015
+419947	NY	QUEENS	38-016
+419948	NY	QUEENS	38-017
+419949	NY	QUEENS	38-018
+419950	NY	QUEENS	38-019
+419951	NY	QUEENS	38-020
+419952	NY	QUEENS	38-021
+419953	NY	QUEENS	38-022
+419954	NY	QUEENS	38-023
+419955	NY	QUEENS	38-024
+419956	NY	QUEENS	38-025
+419957	NY	QUEENS	38-026
+419958	NY	QUEENS	38-027
+419959	NY	QUEENS	38-028
+419960	NY	QUEENS	38-029
+419961	NY	QUEENS	38-030
+419962	NY	QUEENS	38-031
+419963	NY	QUEENS	38-032
+419964	NY	QUEENS	38-033
+419965	NY	QUEENS	38-034
+419966	NY	QUEENS	38-035
+419967	NY	QUEENS	38-036
+419968	NY	QUEENS	38-037
+419969	NY	QUEENS	38-038
+419970	NY	QUEENS	38-039
+419971	NY	QUEENS	38-040
+419972	NY	QUEENS	38-041
+419973	NY	QUEENS	38-042
+419974	NY	QUEENS	38-043
+419975	NY	QUEENS	38-044
+419976	NY	QUEENS	38-045
+419977	NY	QUEENS	38-046
+419978	NY	QUEENS	38-047
+419979	NY	QUEENS	38-048
+419980	NY	QUEENS	38-049
+419981	NY	QUEENS	38-050
+419982	NY	QUEENS	38-051
+419983	NY	QUEENS	38-052
+419984	NY	QUEENS	38-053
+419985	NY	QUEENS	38-054
+419986	NY	QUEENS	38-055
+419987	NY	QUEENS	38-056
+419988	NY	QUEENS	38-057
+419989	NY	QUEENS	38-058
+419990	NY	QUEENS	38-059
+419991	NY	QUEENS	38-062
+419992	NY	QUEENS	38-063
+419993	NY	QUEENS	39-001
+419994	NY	QUEENS	39-002
+419995	NY	QUEENS	39-003
+419996	NY	QUEENS	39-004
+419997	NY	QUEENS	39-005
+419998	NY	QUEENS	39-006
+419999	NY	QUEENS	39-007
+420000	NY	QUEENS	39-008
+420001	NY	QUEENS	39-009
+420002	NY	QUEENS	39-010
+420003	NY	QUEENS	39-011
+420004	NY	QUEENS	39-012
+420005	NY	QUEENS	39-013
+420006	NY	QUEENS	39-014
+420007	NY	QUEENS	39-015
+420008	NY	QUEENS	39-016
+420009	NY	QUEENS	39-017
+420010	NY	QUEENS	39-018
+420011	NY	QUEENS	39-019
+420012	NY	QUEENS	39-020
+420013	NY	QUEENS	39-021
+420014	NY	QUEENS	39-022
+420015	NY	QUEENS	39-023
+420016	NY	QUEENS	39-024
+420017	NY	QUEENS	39-025
+420018	NY	QUEENS	39-026
+420019	NY	QUEENS	39-027
+420020	NY	QUEENS	39-028
+420021	NY	QUEENS	39-029
+420022	NY	QUEENS	39-030
+420023	NY	QUEENS	39-031
+420024	NY	QUEENS	39-032
+420025	NY	QUEENS	39-033
+420026	NY	QUEENS	39-034
+420027	NY	QUEENS	39-035
+420028	NY	QUEENS	39-036
+420029	NY	QUEENS	39-037
+420030	NY	QUEENS	39-038
+420031	NY	QUEENS	39-040
+420032	NY	QUEENS	39-041
+420033	NY	QUEENS	39-042
+420034	NY	QUEENS	39-043
+420035	NY	QUEENS	39-044
+420036	NY	QUEENS	39-046
+420037	NY	QUEENS	39-047
+420038	NY	QUEENS	39-048
+420039	NY	QUEENS	39-049
+420040	NY	QUEENS	39-050
+420041	NY	QUEENS	39-051
+420042	NY	QUEENS	39-052
+420043	NY	RENSSELAER	Berlin-01
+420044	NY	RENSSELAER	Berlin-02
+420045	NY	RENSSELAER	Brunswick-01
+420046	NY	RENSSELAER	Brunswick-02
+420047	NY	RENSSELAER	Brunswick-03
+420048	NY	RENSSELAER	Brunswick-04
+420049	NY	RENSSELAER	Brunswick-05
+420050	NY	RENSSELAER	Brunswick-06
+420051	NY	RENSSELAER	Brunswick-07
+420052	NY	RENSSELAER	Brunswick-08
+420053	NY	RENSSELAER	Brunswick-09
+420054	NY	RENSSELAER	Brunswick-10
+420055	NY	RENSSELAER	East Greenbush-01
+420056	NY	RENSSELAER	East Greenbush-02
+420057	NY	RENSSELAER	East Greenbush-03
+420058	NY	RENSSELAER	East Greenbush-04
+420059	NY	RENSSELAER	East Greenbush-05
+420060	NY	RENSSELAER	East Greenbush-06
+420061	NY	RENSSELAER	East Greenbush-07
+420062	NY	RENSSELAER	East Greenbush-08
+420063	NY	RENSSELAER	East Greenbush-09
+420064	NY	RENSSELAER	East Greenbush-10
+420065	NY	RENSSELAER	East Greenbush-11
+420066	NY	RENSSELAER	East Greenbush-12
+420067	NY	RENSSELAER	Grafton-01
+420068	NY	RENSSELAER	Grafton-02
+420069	NY	RENSSELAER	Hoosick-01
+420070	NY	RENSSELAER	Hoosick-02
+420071	NY	RENSSELAER	Hoosick-03
+420072	NY	RENSSELAER	Hoosick-04
+420073	NY	RENSSELAER	Hoosick-05
+420074	NY	RENSSELAER	Hoosick-06
+420075	NY	RENSSELAER	Hoosick-07
+420076	NY	RENSSELAER	Nassau-01
+420077	NY	RENSSELAER	Nassau-02
+420078	NY	RENSSELAER	Nassau-03
+420079	NY	RENSSELAER	Nassau-04
+420080	NY	RENSSELAER	North Greenbush-01
+420081	NY	RENSSELAER	North Greenbush-02
+420082	NY	RENSSELAER	North Greenbush-03
+420083	NY	RENSSELAER	North Greenbush-04
+420084	NY	RENSSELAER	North Greenbush-05
+420085	NY	RENSSELAER	North Greenbush-06
+420086	NY	RENSSELAER	North Greenbush-07
+420087	NY	RENSSELAER	North Greenbush-08
+420088	NY	RENSSELAER	Petersburgh-01
+420089	NY	RENSSELAER	Pittstown-01
+420090	NY	RENSSELAER	Pittstown-02
+420091	NY	RENSSELAER	Pittstown-03
+420092	NY	RENSSELAER	Pittstown-04
+420093	NY	RENSSELAER	Pittstown-05
+420094	NY	RENSSELAER	Pittstown-06
+420095	NY	RENSSELAER	Poestenkill-01
+420096	NY	RENSSELAER	Poestenkill-02
+420097	NY	RENSSELAER	Poestenkill-03
+420098	NY	RENSSELAER	Poestenkill-04
+420099	NY	RENSSELAER	City Of Rensselaer-01
+420100	NY	RENSSELAER	City Of Rensselaer-02
+420101	NY	RENSSELAER	City Of Rensselaer-03
+420102	NY	RENSSELAER	City Of Rensselaer-04
+420103	NY	RENSSELAER	City Of Rensselaer-05
+420104	NY	RENSSELAER	City Of Rensselaer-06
+420105	NY	RENSSELAER	Sand Lake-01
+420106	NY	RENSSELAER	Sand Lake-02
+420107	NY	RENSSELAER	Sand Lake-03
+420108	NY	RENSSELAER	Sand Lake-04
+420109	NY	RENSSELAER	Sand Lake-05
+420110	NY	RENSSELAER	Sand Lake-06
+420111	NY	RENSSELAER	Schaghticoke-01
+420112	NY	RENSSELAER	Schaghticoke-02
+420113	NY	RENSSELAER	Schaghticoke-03
+420114	NY	RENSSELAER	Schaghticoke-04
+420115	NY	RENSSELAER	Schaghticoke-05
+420116	NY	RENSSELAER	Schaghticoke-06
+420117	NY	RENSSELAER	Schaghticoke-07
+420118	NY	RENSSELAER	Schodack-01
+420119	NY	RENSSELAER	Schodack-02
+420120	NY	RENSSELAER	Schodack-03
+420121	NY	RENSSELAER	Schodack-04
+420122	NY	RENSSELAER	Schodack-05
+420123	NY	RENSSELAER	Schodack-06
+420124	NY	RENSSELAER	Schodack-07
+420125	NY	RENSSELAER	Schodack-08
+420126	NY	RENSSELAER	Schodack-09
+420127	NY	RENSSELAER	Schodack-10
+420128	NY	RENSSELAER	Stephentown-01
+420129	NY	RENSSELAER	Stephentown-02
+420130	NY	RENSSELAER	City Of Troy-01
+420131	NY	RENSSELAER	City Of Troy-02
+420132	NY	RENSSELAER	City Of Troy-03
+420133	NY	RENSSELAER	City Of Troy-04
+420134	NY	RENSSELAER	City Of Troy-05
+420135	NY	RENSSELAER	City Of Troy-06
+420136	NY	RENSSELAER	City Of Troy-07
+420137	NY	RENSSELAER	City Of Troy-08
+420138	NY	RENSSELAER	City Of Troy-09
+420139	NY	RENSSELAER	City Of Troy-10
+420140	NY	RENSSELAER	City Of Troy-11
+420141	NY	RENSSELAER	City Of Troy-12
+420142	NY	RENSSELAER	City Of Troy-13
+420143	NY	RENSSELAER	City Of Troy-14
+420144	NY	RENSSELAER	City Of Troy-15
+420145	NY	RENSSELAER	City Of Troy-16
+420146	NY	RENSSELAER	City Of Troy-17
+420147	NY	RENSSELAER	City Of Troy-18
+420148	NY	RENSSELAER	City Of Troy-19
+420149	NY	RENSSELAER	City Of Troy-20
+420150	NY	RENSSELAER	City Of Troy-21
+420151	NY	RENSSELAER	City Of Troy-22
+420152	NY	RENSSELAER	City Of Troy-23
+420153	NY	RENSSELAER	City Of Troy-24
+420154	NY	RENSSELAER	City Of Troy-25
+420155	NY	RENSSELAER	City Of Troy-26
+420156	NY	RENSSELAER	City Of Troy-27
+420157	NY	RENSSELAER	City Of Troy-28
+420158	NY	RENSSELAER	City Of Troy-29
+420159	NY	RENSSELAER	City Of Troy-30
+420160	NY	RICHMOND	61-001
+420161	NY	RICHMOND	61-002
+420162	NY	RICHMOND	61-003
+420163	NY	RICHMOND	61-004
+420164	NY	RICHMOND	61-005
+420165	NY	RICHMOND	61-006
+420166	NY	RICHMOND	61-007
+420167	NY	RICHMOND	61-008
+420168	NY	RICHMOND	61-009
+420169	NY	RICHMOND	61-010
+420170	NY	RICHMOND	61-011
+420171	NY	RICHMOND	61-012
+420172	NY	RICHMOND	61-013
+420173	NY	RICHMOND	61-014
+420174	NY	RICHMOND	61-015
+420175	NY	RICHMOND	61-016
+420176	NY	RICHMOND	61-017
+420177	NY	RICHMOND	61-018
+420178	NY	RICHMOND	61-019
+420179	NY	RICHMOND	61-020
+420180	NY	RICHMOND	61-021
+420181	NY	RICHMOND	61-022
+420182	NY	RICHMOND	61-023
+420183	NY	RICHMOND	61-024
+420184	NY	RICHMOND	61-025
+420185	NY	RICHMOND	61-026
+420186	NY	RICHMOND	61-027
+420187	NY	RICHMOND	61-028
+420188	NY	RICHMOND	61-029
+420189	NY	RICHMOND	61-030
+420190	NY	RICHMOND	61-031
+420191	NY	RICHMOND	61-032
+420192	NY	RICHMOND	61-033
+420193	NY	RICHMOND	61-034
+420194	NY	RICHMOND	61-035
+420195	NY	RICHMOND	61-036
+420196	NY	RICHMOND	61-037
+420197	NY	RICHMOND	61-038
+420198	NY	RICHMOND	61-039
+420199	NY	RICHMOND	61-040
+420200	NY	RICHMOND	61-041
+420201	NY	RICHMOND	61-042
+420202	NY	RICHMOND	61-043
+420203	NY	RICHMOND	61-044
+420204	NY	RICHMOND	61-045
+420205	NY	RICHMOND	61-046
+420206	NY	RICHMOND	61-047
+420207	NY	RICHMOND	61-048
+420208	NY	RICHMOND	61-049
+420209	NY	RICHMOND	61-050
+420210	NY	RICHMOND	61-051
+420211	NY	RICHMOND	61-052
+420212	NY	RICHMOND	61-053
+420213	NY	RICHMOND	61-054
+420214	NY	RICHMOND	61-055
+420215	NY	RICHMOND	61-056
+420216	NY	RICHMOND	61-057
+420217	NY	RICHMOND	61-058
+420218	NY	RICHMOND	61-059
+420219	NY	RICHMOND	61-060
+420220	NY	RICHMOND	61-061
+420221	NY	RICHMOND	61-062
+420222	NY	RICHMOND	61-063
+420223	NY	RICHMOND	61-064
+420224	NY	RICHMOND	61-065
+420225	NY	RICHMOND	61-069
+420226	NY	RICHMOND	61-070
+420227	NY	RICHMOND	62-001
+420228	NY	RICHMOND	62-002
+420229	NY	RICHMOND	62-003
+420230	NY	RICHMOND	62-004
+420231	NY	RICHMOND	62-005
+420232	NY	RICHMOND	62-006
+420233	NY	RICHMOND	62-007
+420234	NY	RICHMOND	62-008
+420235	NY	RICHMOND	62-009
+420236	NY	RICHMOND	62-010
+420237	NY	RICHMOND	62-011
+420238	NY	RICHMOND	62-012
+420239	NY	RICHMOND	62-013
+420240	NY	RICHMOND	62-014
+420241	NY	RICHMOND	62-015
+420242	NY	RICHMOND	62-016
+420243	NY	RICHMOND	62-017
+420244	NY	RICHMOND	62-018
+420245	NY	RICHMOND	62-019
+420246	NY	RICHMOND	62-020
+420247	NY	RICHMOND	62-021
+420248	NY	RICHMOND	62-022
+420249	NY	RICHMOND	62-023
+420250	NY	RICHMOND	62-024
+420251	NY	RICHMOND	62-025
+420252	NY	RICHMOND	62-026
+420253	NY	RICHMOND	62-027
+420254	NY	RICHMOND	62-028
+420255	NY	RICHMOND	62-029
+420256	NY	RICHMOND	62-030
+420257	NY	RICHMOND	62-031
+420258	NY	RICHMOND	62-032
+420259	NY	RICHMOND	62-033
+420260	NY	RICHMOND	62-034
+420261	NY	RICHMOND	62-035
+420262	NY	RICHMOND	62-036
+420263	NY	RICHMOND	62-037
+420264	NY	RICHMOND	62-038
+420265	NY	RICHMOND	62-039
+420266	NY	RICHMOND	62-040
+420267	NY	RICHMOND	62-041
+420268	NY	RICHMOND	62-042
+420269	NY	RICHMOND	62-043
+420270	NY	RICHMOND	62-044
+420271	NY	RICHMOND	62-045
+420272	NY	RICHMOND	62-046
+420273	NY	RICHMOND	62-047
+420274	NY	RICHMOND	62-048
+420275	NY	RICHMOND	62-049
+420276	NY	RICHMOND	62-050
+420277	NY	RICHMOND	62-051
+420278	NY	RICHMOND	62-052
+420279	NY	RICHMOND	62-053
+420280	NY	RICHMOND	62-054
+420281	NY	RICHMOND	62-055
+420282	NY	RICHMOND	62-056
+420283	NY	RICHMOND	62-057
+420284	NY	RICHMOND	62-058
+420285	NY	RICHMOND	62-059
+420286	NY	RICHMOND	62-060
+420287	NY	RICHMOND	62-061
+420288	NY	RICHMOND	62-062
+420289	NY	RICHMOND	62-063
+420290	NY	RICHMOND	62-064
+420291	NY	RICHMOND	62-065
+420292	NY	RICHMOND	62-066
+420293	NY	RICHMOND	62-067
+420294	NY	RICHMOND	62-068
+420295	NY	RICHMOND	62-069
+420296	NY	RICHMOND	62-070
+420297	NY	RICHMOND	62-071
+420298	NY	RICHMOND	62-072
+420299	NY	RICHMOND	62-073
+420300	NY	RICHMOND	62-076
+420301	NY	RICHMOND	63-001
+420302	NY	RICHMOND	63-002
+420303	NY	RICHMOND	63-003
+420304	NY	RICHMOND	63-004
+420305	NY	RICHMOND	63-005
+420306	NY	RICHMOND	63-006
+420307	NY	RICHMOND	63-007
+420308	NY	RICHMOND	63-008
+420309	NY	RICHMOND	63-009
+420310	NY	RICHMOND	63-010
+420311	NY	RICHMOND	63-011
+420312	NY	RICHMOND	63-012
+420313	NY	RICHMOND	63-013
+420314	NY	RICHMOND	63-014
+420315	NY	RICHMOND	63-015
+420316	NY	RICHMOND	63-016
+420317	NY	RICHMOND	63-017
+420318	NY	RICHMOND	63-018
+420319	NY	RICHMOND	63-019
+420320	NY	RICHMOND	63-020
+420321	NY	RICHMOND	63-021
+420322	NY	RICHMOND	63-022
+420323	NY	RICHMOND	63-023
+420324	NY	RICHMOND	63-024
+420325	NY	RICHMOND	63-025
+420326	NY	RICHMOND	63-026
+420327	NY	RICHMOND	63-027
+420328	NY	RICHMOND	63-028
+420329	NY	RICHMOND	63-029
+420330	NY	RICHMOND	63-030
+420331	NY	RICHMOND	63-031
+420332	NY	RICHMOND	63-032
+420333	NY	RICHMOND	63-033
+420334	NY	RICHMOND	63-034
+420335	NY	RICHMOND	63-035
+420336	NY	RICHMOND	63-036
+420337	NY	RICHMOND	63-037
+420338	NY	RICHMOND	63-038
+420339	NY	RICHMOND	63-039
+420340	NY	RICHMOND	63-040
+420341	NY	RICHMOND	63-041
+420342	NY	RICHMOND	63-042
+420343	NY	RICHMOND	63-043
+420344	NY	RICHMOND	63-044
+420345	NY	RICHMOND	63-045
+420346	NY	RICHMOND	63-046
+420347	NY	RICHMOND	63-047
+420348	NY	RICHMOND	63-048
+420349	NY	RICHMOND	63-049
+420350	NY	RICHMOND	63-050
+420351	NY	RICHMOND	63-051
+420352	NY	RICHMOND	63-052
+420353	NY	RICHMOND	63-053
+420354	NY	RICHMOND	63-054
+420355	NY	RICHMOND	63-055
+420356	NY	RICHMOND	63-056
+420357	NY	RICHMOND	63-057
+420358	NY	RICHMOND	63-058
+420359	NY	RICHMOND	63-059
+420360	NY	RICHMOND	63-060
+420361	NY	RICHMOND	63-061
+420362	NY	RICHMOND	63-062
+420363	NY	RICHMOND	63-063
+420364	NY	RICHMOND	63-064
+420365	NY	RICHMOND	63-065
+420366	NY	RICHMOND	63-066
+420367	NY	RICHMOND	63-067
+420368	NY	RICHMOND	63-068
+420369	NY	RICHMOND	63-069
+420370	NY	RICHMOND	63-070
+420371	NY	RICHMOND	63-071
+420372	NY	RICHMOND	63-072
+420373	NY	RICHMOND	63-073
+420374	NY	RICHMOND	63-074
+420375	NY	RICHMOND	63-075
+420376	NY	RICHMOND	63-081
+420377	NY	ROCKLAND	Clarkstown-01
+420378	NY	ROCKLAND	Clarkstown-02
+420379	NY	ROCKLAND	Clarkstown-03
+420380	NY	ROCKLAND	Clarkstown-04
+420381	NY	ROCKLAND	Clarkstown-05
+420382	NY	ROCKLAND	Clarkstown-06
+420383	NY	ROCKLAND	Clarkstown-08
+420384	NY	ROCKLAND	Clarkstown-09
+420385	NY	ROCKLAND	Clarkstown-10
+420386	NY	ROCKLAND	Clarkstown-11
+420387	NY	ROCKLAND	Clarkstown-12
+420388	NY	ROCKLAND	Clarkstown-13
+420389	NY	ROCKLAND	Clarkstown-14
+420390	NY	ROCKLAND	Clarkstown-15
+420391	NY	ROCKLAND	Clarkstown-16
+420392	NY	ROCKLAND	Clarkstown-17
+420393	NY	ROCKLAND	Clarkstown-18
+420394	NY	ROCKLAND	Clarkstown-19
+420395	NY	ROCKLAND	Clarkstown-20
+420396	NY	ROCKLAND	Clarkstown-21
+420397	NY	ROCKLAND	Clarkstown-22
+420398	NY	ROCKLAND	Clarkstown-23
+420399	NY	ROCKLAND	Clarkstown-24
+420400	NY	ROCKLAND	Clarkstown-25
+420401	NY	ROCKLAND	Clarkstown-27
+420402	NY	ROCKLAND	Clarkstown-28
+420403	NY	ROCKLAND	Clarkstown-29
+420404	NY	ROCKLAND	Clarkstown-30
+420405	NY	ROCKLAND	Clarkstown-31
+420406	NY	ROCKLAND	Clarkstown-32
+420407	NY	ROCKLAND	Clarkstown-33
+420408	NY	ROCKLAND	Clarkstown-34
+420409	NY	ROCKLAND	Clarkstown-35
+420410	NY	ROCKLAND	Clarkstown-36
+420411	NY	ROCKLAND	Clarkstown-37
+420412	NY	ROCKLAND	Clarkstown-38
+420413	NY	ROCKLAND	Clarkstown-40
+420414	NY	ROCKLAND	Clarkstown-42
+420415	NY	ROCKLAND	Clarkstown-43
+420416	NY	ROCKLAND	Clarkstown-44
+420417	NY	ROCKLAND	Clarkstown-45
+420418	NY	ROCKLAND	Clarkstown-46
+420419	NY	ROCKLAND	Clarkstown-47
+420420	NY	ROCKLAND	Clarkstown-48
+420421	NY	ROCKLAND	Clarkstown-49
+420422	NY	ROCKLAND	Clarkstown-50
+420423	NY	ROCKLAND	Clarkstown-51
+420424	NY	ROCKLAND	Clarkstown-52
+420425	NY	ROCKLAND	Clarkstown-53
+420426	NY	ROCKLAND	Clarkstown-54
+420427	NY	ROCKLAND	Clarkstown-55
+420428	NY	ROCKLAND	Clarkstown-57
+420429	NY	ROCKLAND	Clarkstown-58
+420430	NY	ROCKLAND	Clarkstown-59
+420431	NY	ROCKLAND	Clarkstown-60
+420432	NY	ROCKLAND	Clarkstown-61
+420433	NY	ROCKLAND	Clarkstown-63
+420434	NY	ROCKLAND	Clarkstown-64
+420435	NY	ROCKLAND	Clarkstown-65
+420436	NY	ROCKLAND	Clarkstown-66
+420437	NY	ROCKLAND	Clarkstown-67
+420438	NY	ROCKLAND	Clarkstown-68
+420439	NY	ROCKLAND	Clarkstown-69
+420440	NY	ROCKLAND	Clarkstown-70
+420441	NY	ROCKLAND	Clarkstown-71
+420442	NY	ROCKLAND	Clarkstown-72
+420443	NY	ROCKLAND	Clarkstown-73
+420444	NY	ROCKLAND	Clarkstown-74
+420445	NY	ROCKLAND	Clarkstown-75
+420446	NY	ROCKLAND	Clarkstown-76
+420447	NY	ROCKLAND	Clarkstown-77
+420448	NY	ROCKLAND	Clarkstown-79
+420449	NY	ROCKLAND	Clarkstown-80
+420450	NY	ROCKLAND	Clarkstown-81
+420451	NY	ROCKLAND	Clarkstown-82
+420452	NY	ROCKLAND	Haverstraw-01
+420453	NY	ROCKLAND	Haverstraw-02
+420454	NY	ROCKLAND	Haverstraw-03
+420455	NY	ROCKLAND	Haverstraw-04
+420456	NY	ROCKLAND	Haverstraw-06
+420457	NY	ROCKLAND	Haverstraw-07
+420458	NY	ROCKLAND	Haverstraw-08
+420459	NY	ROCKLAND	Haverstraw-09
+420460	NY	ROCKLAND	Haverstraw-10
+420461	NY	ROCKLAND	Haverstraw-11
+420462	NY	ROCKLAND	Haverstraw-12
+420463	NY	ROCKLAND	Haverstraw-13
+420464	NY	ROCKLAND	Haverstraw-14
+420465	NY	ROCKLAND	Haverstraw-15
+420466	NY	ROCKLAND	Haverstraw-16
+420467	NY	ROCKLAND	Haverstraw-17
+420468	NY	ROCKLAND	Haverstraw-18
+420469	NY	ROCKLAND	Haverstraw-19
+420470	NY	ROCKLAND	Haverstraw-20
+420471	NY	ROCKLAND	Haverstraw-21
+420472	NY	ROCKLAND	Haverstraw-22
+420473	NY	ROCKLAND	Haverstraw-23
+420474	NY	ROCKLAND	Haverstraw-24
+420475	NY	ROCKLAND	Haverstraw-25
+420476	NY	ROCKLAND	Haverstraw-26
+420477	NY	ROCKLAND	Haverstraw-27
+420478	NY	ROCKLAND	Haverstraw-28
+420479	NY	ROCKLAND	Haverstraw-29
+420480	NY	ROCKLAND	Haverstraw-30
+420481	NY	ROCKLAND	Orangetown-01
+420482	NY	ROCKLAND	Orangetown-02
+420483	NY	ROCKLAND	Orangetown-03
+420484	NY	ROCKLAND	Orangetown-05
+420485	NY	ROCKLAND	Orangetown-07
+420486	NY	ROCKLAND	Orangetown-08
+420487	NY	ROCKLAND	Orangetown-09
+420488	NY	ROCKLAND	Orangetown-10
+420489	NY	ROCKLAND	Orangetown-11
+420490	NY	ROCKLAND	Orangetown-12
+420491	NY	ROCKLAND	Orangetown-13
+420492	NY	ROCKLAND	Orangetown-14
+420493	NY	ROCKLAND	Orangetown-15
+420494	NY	ROCKLAND	Orangetown-16
+420495	NY	ROCKLAND	Orangetown-17
+420496	NY	ROCKLAND	Orangetown-18
+420497	NY	ROCKLAND	Orangetown-19
+420498	NY	ROCKLAND	Orangetown-20
+420499	NY	ROCKLAND	Orangetown-21
+420500	NY	ROCKLAND	Orangetown-22
+420501	NY	ROCKLAND	Orangetown-23
+420502	NY	ROCKLAND	Orangetown-24
+420503	NY	ROCKLAND	Orangetown-25
+420504	NY	ROCKLAND	Orangetown-26
+420505	NY	ROCKLAND	Orangetown-28
+420506	NY	ROCKLAND	Orangetown-29
+420507	NY	ROCKLAND	Orangetown-30
+420508	NY	ROCKLAND	Orangetown-32
+420509	NY	ROCKLAND	Orangetown-33
+420510	NY	ROCKLAND	Orangetown-34
+420511	NY	ROCKLAND	Orangetown-36
+420512	NY	ROCKLAND	Orangetown-39
+420513	NY	ROCKLAND	Orangetown-40
+420514	NY	ROCKLAND	Orangetown-41
+420515	NY	ROCKLAND	Orangetown-42
+420516	NY	ROCKLAND	Orangetown-43
+420517	NY	ROCKLAND	Orangetown-45
+420518	NY	ROCKLAND	Orangetown-46
+420519	NY	ROCKLAND	Orangetown-47
+420520	NY	ROCKLAND	Orangetown-48
+420521	NY	ROCKLAND	Orangetown-49
+420522	NY	ROCKLAND	Orangetown-50
+420523	NY	ROCKLAND	Orangetown-51
+420524	NY	ROCKLAND	Orangetown-53
+420525	NY	ROCKLAND	Orangetown-54
+420526	NY	ROCKLAND	Orangetown-55
+420527	NY	ROCKLAND	Orangetown-56
+420528	NY	ROCKLAND	Orangetown-57
+420529	NY	ROCKLAND	Ramapo-01
+420530	NY	ROCKLAND	Ramapo-02
+420531	NY	ROCKLAND	Ramapo-03
+420532	NY	ROCKLAND	Ramapo-04
+420533	NY	ROCKLAND	Ramapo-05
+420534	NY	ROCKLAND	Ramapo-06
+420535	NY	ROCKLAND	Ramapo-07
+420536	NY	ROCKLAND	Ramapo-08
+420537	NY	ROCKLAND	Ramapo-09
+420538	NY	ROCKLAND	Ramapo-10
+420539	NY	ROCKLAND	Ramapo-11
+420540	NY	ROCKLAND	Ramapo-12
+420541	NY	ROCKLAND	Ramapo-13
+420542	NY	ROCKLAND	Ramapo-14
+420543	NY	ROCKLAND	Ramapo-15
+420544	NY	ROCKLAND	Ramapo-16
+420545	NY	ROCKLAND	Ramapo-17
+420546	NY	ROCKLAND	Ramapo-18
+420547	NY	ROCKLAND	Ramapo-19
+420548	NY	ROCKLAND	Ramapo-20
+420549	NY	ROCKLAND	Ramapo-21
+420550	NY	ROCKLAND	Ramapo-22
+420551	NY	ROCKLAND	Ramapo-23
+420552	NY	ROCKLAND	Ramapo-24
+420553	NY	ROCKLAND	Ramapo-25
+420554	NY	ROCKLAND	Ramapo-26
+420555	NY	ROCKLAND	Ramapo-27
+420556	NY	ROCKLAND	Ramapo-28
+420557	NY	ROCKLAND	Ramapo-29
+420558	NY	ROCKLAND	Ramapo-30
+420559	NY	ROCKLAND	Ramapo-31
+420560	NY	ROCKLAND	Ramapo-32
+420561	NY	ROCKLAND	Ramapo-33
+420562	NY	ROCKLAND	Ramapo-34
+420563	NY	ROCKLAND	Ramapo-35
+420564	NY	ROCKLAND	Ramapo-36
+420565	NY	ROCKLAND	Ramapo-37
+420566	NY	ROCKLAND	Ramapo-38
+420567	NY	ROCKLAND	Ramapo-39
+420568	NY	ROCKLAND	Ramapo-40
+420569	NY	ROCKLAND	Ramapo-41
+420570	NY	ROCKLAND	Ramapo-42
+420571	NY	ROCKLAND	Ramapo-43
+420572	NY	ROCKLAND	Ramapo-44
+420573	NY	ROCKLAND	Ramapo-45
+420574	NY	ROCKLAND	Ramapo-46
+420575	NY	ROCKLAND	Ramapo-47
+420576	NY	ROCKLAND	Ramapo-48
+420577	NY	ROCKLAND	Ramapo-49
+420578	NY	ROCKLAND	Ramapo-50
+420579	NY	ROCKLAND	Ramapo-51
+420580	NY	ROCKLAND	Ramapo-53
+420581	NY	ROCKLAND	Ramapo-54
+420582	NY	ROCKLAND	Ramapo-55
+420583	NY	ROCKLAND	Ramapo-56
+420584	NY	ROCKLAND	Ramapo-57
+420585	NY	ROCKLAND	Ramapo-58
+420586	NY	ROCKLAND	Ramapo-59
+420587	NY	ROCKLAND	Ramapo-60
+420588	NY	ROCKLAND	Ramapo-61
+420589	NY	ROCKLAND	Ramapo-62
+420590	NY	ROCKLAND	Ramapo-63
+420591	NY	ROCKLAND	Ramapo-64
+420592	NY	ROCKLAND	Ramapo-65
+420593	NY	ROCKLAND	Ramapo-66
+420594	NY	ROCKLAND	Ramapo-67
+420595	NY	ROCKLAND	Ramapo-68
+420596	NY	ROCKLAND	Ramapo-69
+420597	NY	ROCKLAND	Ramapo-70
+420598	NY	ROCKLAND	Ramapo-71
+420599	NY	ROCKLAND	Ramapo-72
+420600	NY	ROCKLAND	Ramapo-73
+420601	NY	ROCKLAND	Ramapo-74
+420602	NY	ROCKLAND	Ramapo-75
+420603	NY	ROCKLAND	Ramapo-76
+420604	NY	ROCKLAND	Ramapo-77
+420605	NY	ROCKLAND	Ramapo-78
+420606	NY	ROCKLAND	Ramapo-79
+420607	NY	ROCKLAND	Ramapo-80
+420608	NY	ROCKLAND	Ramapo-81
+420609	NY	ROCKLAND	Ramapo-82
+420610	NY	ROCKLAND	Ramapo-83
+420611	NY	ROCKLAND	Ramapo-84
+420612	NY	ROCKLAND	Ramapo-85
+420613	NY	ROCKLAND	Ramapo-86
+420614	NY	ROCKLAND	Ramapo-87
+420615	NY	ROCKLAND	Ramapo-88
+420616	NY	ROCKLAND	Ramapo-89
+420617	NY	ROCKLAND	Ramapo-90
+420618	NY	ROCKLAND	Stony Point-01
+420619	NY	ROCKLAND	Stony Point-02
+420620	NY	ROCKLAND	Stony Point-03
+420621	NY	ROCKLAND	Stony Point-04
+420622	NY	ROCKLAND	Stony Point-05
+420623	NY	ROCKLAND	Stony Point-06
+420624	NY	ROCKLAND	Stony Point-07
+420625	NY	ROCKLAND	Stony Point-08
+420626	NY	ROCKLAND	Stony Point-09
+420627	NY	ROCKLAND	Stony Point-10
+420628	NY	ROCKLAND	Stony Point-11
+420629	NY	ROCKLAND	Stony Point-12
+420630	NY	ROCKLAND	Stony Point-13
+420631	NY	SARATOGA	Ballston-01
+420632	NY	SARATOGA	Ballston-02
+420633	NY	SARATOGA	Ballston-03
+420634	NY	SARATOGA	Ballston-04
+420635	NY	SARATOGA	Ballston-05
+420636	NY	SARATOGA	Ballston-06
+420637	NY	SARATOGA	Ballston-07
+420638	NY	SARATOGA	Ballston-08
+420639	NY	SARATOGA	Ballston-09
+420640	NY	SARATOGA	Charlton-01
+420641	NY	SARATOGA	Charlton-02
+420642	NY	SARATOGA	Charlton-03
+420643	NY	SARATOGA	Charlton-04
+420644	NY	SARATOGA	Clifton Park-01
+420645	NY	SARATOGA	Clifton Park-02
+420646	NY	SARATOGA	Clifton Park-03
+420647	NY	SARATOGA	Clifton Park-04
+420648	NY	SARATOGA	Clifton Park-05
+420649	NY	SARATOGA	Clifton Park-06
+420650	NY	SARATOGA	Clifton Park-07
+420651	NY	SARATOGA	Clifton Park-08
+420652	NY	SARATOGA	Clifton Park-09
+420653	NY	SARATOGA	Clifton Park-10
+420654	NY	SARATOGA	Clifton Park-11
+420655	NY	SARATOGA	Clifton Park-12
+420656	NY	SARATOGA	Clifton Park-13
+420657	NY	SARATOGA	Clifton Park-14
+420658	NY	SARATOGA	Clifton Park-15
+420659	NY	SARATOGA	Clifton Park-16
+420660	NY	SARATOGA	Clifton Park-17
+420661	NY	SARATOGA	Clifton Park-18
+420662	NY	SARATOGA	Clifton Park-19
+420663	NY	SARATOGA	Clifton Park-20
+420664	NY	SARATOGA	Clifton Park-21
+420665	NY	SARATOGA	Clifton Park-22
+420666	NY	SARATOGA	Clifton Park-23
+420667	NY	SARATOGA	Clifton Park-24
+420668	NY	SARATOGA	Clifton Park-25
+420669	NY	SARATOGA	Clifton Park-26
+420670	NY	SARATOGA	Clifton Park-27
+420671	NY	SARATOGA	Clifton Park-28
+420672	NY	SARATOGA	Clifton Park-29
+420673	NY	SARATOGA	Clifton Park-30
+420674	NY	SARATOGA	Clifton Park-31
+420675	NY	SARATOGA	Clifton Park-32
+420676	NY	SARATOGA	Clifton Park-33
+420677	NY	SARATOGA	Clifton Park-34
+420678	NY	SARATOGA	Corinth-01
+420679	NY	SARATOGA	Corinth-02
+420680	NY	SARATOGA	Corinth-03
+420681	NY	SARATOGA	Corinth-04
+420682	NY	SARATOGA	Corinth-05
+420683	NY	SARATOGA	Day-01
+420684	NY	SARATOGA	Edinburg-01
+420685	NY	SARATOGA	Galway-01
+420686	NY	SARATOGA	Galway-02
+420687	NY	SARATOGA	Galway-03
+420688	NY	SARATOGA	Greenfield-01
+420689	NY	SARATOGA	Greenfield-02
+420690	NY	SARATOGA	Greenfield-03
+420691	NY	SARATOGA	Greenfield-04
+420692	NY	SARATOGA	Greenfield-05
+420693	NY	SARATOGA	Greenfield-06
+420694	NY	SARATOGA	Greenfield-07
+420695	NY	SARATOGA	Greenfield-08
+420696	NY	SARATOGA	Hadley-01
+420697	NY	SARATOGA	Hadley-02
+420698	NY	SARATOGA	Halfmoon-01
+420699	NY	SARATOGA	Halfmoon-02
+420700	NY	SARATOGA	Halfmoon-03
+420701	NY	SARATOGA	Halfmoon-04
+420702	NY	SARATOGA	Halfmoon-05
+420703	NY	SARATOGA	Halfmoon-06
+420704	NY	SARATOGA	Halfmoon-07
+420705	NY	SARATOGA	Halfmoon-08
+420706	NY	SARATOGA	Halfmoon-09
+420707	NY	SARATOGA	Halfmoon-10
+420708	NY	SARATOGA	Halfmoon-11
+420709	NY	SARATOGA	Halfmoon-12
+420710	NY	SARATOGA	Halfmoon-13
+420711	NY	SARATOGA	Halfmoon-14
+420712	NY	SARATOGA	Halfmoon-15
+420713	NY	SARATOGA	Halfmoon-16
+420714	NY	SARATOGA	Halfmoon-17
+420715	NY	SARATOGA	Malta-01
+420716	NY	SARATOGA	Malta-02
+420717	NY	SARATOGA	Malta-03
+420718	NY	SARATOGA	Malta-04
+420719	NY	SARATOGA	Malta-05
+420720	NY	SARATOGA	Malta-06
+420721	NY	SARATOGA	Malta-07
+420722	NY	SARATOGA	Malta-08
+420723	NY	SARATOGA	Malta-09
+420724	NY	SARATOGA	Malta-10
+420725	NY	SARATOGA	Malta-11
+420726	NY	SARATOGA	Malta-12
+420727	NY	SARATOGA	Mechanicville-01
+420728	NY	SARATOGA	Mechanicville-02
+420729	NY	SARATOGA	Mechanicville-03
+420730	NY	SARATOGA	Mechanicville-04
+420731	NY	SARATOGA	Mechanicville-05
+420732	NY	SARATOGA	Mechanicville-06
+420733	NY	SARATOGA	Milton-01
+420734	NY	SARATOGA	Milton-02
+420735	NY	SARATOGA	Milton-03
+420736	NY	SARATOGA	Milton-04
+420737	NY	SARATOGA	Milton-05
+420738	NY	SARATOGA	Milton-06
+420739	NY	SARATOGA	Milton-07
+420740	NY	SARATOGA	Milton-08
+420741	NY	SARATOGA	Milton-09
+420742	NY	SARATOGA	Milton-10
+420743	NY	SARATOGA	Milton-11
+420744	NY	SARATOGA	Milton-12
+420745	NY	SARATOGA	Milton-13
+420746	NY	SARATOGA	Moreau-01
+420747	NY	SARATOGA	Moreau-02
+420748	NY	SARATOGA	Moreau-03
+420749	NY	SARATOGA	Moreau-04
+420750	NY	SARATOGA	Moreau-05
+420751	NY	SARATOGA	Moreau-06
+420752	NY	SARATOGA	Moreau-07
+420753	NY	SARATOGA	Moreau-08
+420754	NY	SARATOGA	Moreau-09
+420755	NY	SARATOGA	Moreau-10
+420756	NY	SARATOGA	Moreau-11
+420757	NY	SARATOGA	Northumberland-01
+420758	NY	SARATOGA	Northumberland-02
+420759	NY	SARATOGA	Northumberland-03
+420760	NY	SARATOGA	Northumberland-04
+420761	NY	SARATOGA	Providence-01
+420762	NY	SARATOGA	Providence-02
+420763	NY	SARATOGA	Saratoga-01
+420764	NY	SARATOGA	Saratoga-02
+420765	NY	SARATOGA	Saratoga-03
+420766	NY	SARATOGA	Saratoga-04
+420767	NY	SARATOGA	Saratoga-05
+420768	NY	SARATOGA	Saratoga Spgs-01
+420769	NY	SARATOGA	Saratoga Spgs-02
+420770	NY	SARATOGA	Saratoga Spgs-03
+420771	NY	SARATOGA	Saratoga Spgs-04
+420772	NY	SARATOGA	Saratoga Spgs-05
+420773	NY	SARATOGA	Saratoga Spgs-06
+420774	NY	SARATOGA	Saratoga Spgs-07
+420775	NY	SARATOGA	Saratoga Spgs-08
+420776	NY	SARATOGA	Saratoga Spgs-09
+420777	NY	SARATOGA	Saratoga Spgs-10
+420778	NY	SARATOGA	Saratoga Spgs-11
+420779	NY	SARATOGA	Saratoga Spgs-12
+420780	NY	SARATOGA	Saratoga Spgs-13
+420781	NY	SARATOGA	Saratoga Spgs-14
+420782	NY	SARATOGA	Saratoga Spgs-15
+420783	NY	SARATOGA	Saratoga Spgs-16
+420784	NY	SARATOGA	Saratoga Spgs-17
+420785	NY	SARATOGA	Saratoga Spgs-18
+420786	NY	SARATOGA	Saratoga Spgs-19
+420787	NY	SARATOGA	Saratoga Spgs-20
+420788	NY	SARATOGA	Saratoga Spgs-21
+420789	NY	SARATOGA	Saratoga Spgs-22
+420790	NY	SARATOGA	Saratoga Spgs-23
+420791	NY	SARATOGA	Saratoga Spgs-24
+420792	NY	SARATOGA	Saratoga Spgs-25
+420793	NY	SARATOGA	Stillwater-01
+420794	NY	SARATOGA	Stillwater-02
+420795	NY	SARATOGA	Stillwater-03
+420796	NY	SARATOGA	Stillwater-04
+420797	NY	SARATOGA	Stillwater-05
+420798	NY	SARATOGA	Stillwater-06
+420799	NY	SARATOGA	Stillwater-07
+420800	NY	SARATOGA	Stillwater-08
+420801	NY	SARATOGA	Waterford-01
+420802	NY	SARATOGA	Waterford-02
+420803	NY	SARATOGA	Waterford-03
+420804	NY	SARATOGA	Waterford-04
+420805	NY	SARATOGA	Waterford-05
+420806	NY	SARATOGA	Waterford-06
+420807	NY	SARATOGA	Waterford-07
+420808	NY	SARATOGA	Waterford-08
+420809	NY	SARATOGA	Wilton-01
+420810	NY	SARATOGA	Wilton-02
+420811	NY	SARATOGA	Wilton-03
+420812	NY	SARATOGA	Wilton-04
+420813	NY	SARATOGA	Wilton-05
+420814	NY	SARATOGA	Wilton-06
+420815	NY	SARATOGA	Wilton-07
+420816	NY	SARATOGA	Wilton-08
+420817	NY	SARATOGA	Wilton-09
+420818	NY	SARATOGA	Wilton-10
+420819	NY	SARATOGA	Wilton-11
+420820	NY	SARATOGA	Wilton-12
+420821	NY	SARATOGA	Wilton-13
+420822	NY	SARATOGA	Wilton-14
+420823	NY	SARATOGA	Wilton-15
+420824	NY	ST LAWRENCE	Brasher-01
+420825	NY	ST LAWRENCE	Brasher-02
+420826	NY	ST LAWRENCE	Canton-01
+420827	NY	ST LAWRENCE	Canton-02
+420828	NY	ST LAWRENCE	Canton-03
+420829	NY	ST LAWRENCE	Canton-04
+420830	NY	ST LAWRENCE	Canton-05
+420831	NY	ST LAWRENCE	Canton-06
+420832	NY	ST LAWRENCE	Canton-07
+420833	NY	ST LAWRENCE	Canton-08
+420834	NY	ST LAWRENCE	Clare-01
+420835	NY	ST LAWRENCE	Clifton-01
+420836	NY	ST LAWRENCE	Clifton-02
+420837	NY	ST LAWRENCE	Colton-01
+420838	NY	ST LAWRENCE	Dekalb-01
+420839	NY	ST LAWRENCE	Dekalb-02
+420840	NY	ST LAWRENCE	Depeyster-01
+420841	NY	ST LAWRENCE	Edwards-01
+420842	NY	ST LAWRENCE	Fine-01
+420843	NY	ST LAWRENCE	Fowler-01
+420844	NY	ST LAWRENCE	Fowler-02
+420845	NY	ST LAWRENCE	Gouverneur-01
+420846	NY	ST LAWRENCE	Gouverneur-02
+420847	NY	ST LAWRENCE	Gouverneur-03
+420848	NY	ST LAWRENCE	Gouverneur-04
+420849	NY	ST LAWRENCE	Hammond-01
+420850	NY	ST LAWRENCE	Hermon-01
+420851	NY	ST LAWRENCE	Hopkinton-01
+420852	NY	ST LAWRENCE	Lawrence-01
+420853	NY	ST LAWRENCE	Lisbon-01
+420854	NY	ST LAWRENCE	Lisbon-02
+420855	NY	ST LAWRENCE	Lisbon-03
+420856	NY	ST LAWRENCE	Louisville-01
+420857	NY	ST LAWRENCE	Louisville-02
+420858	NY	ST LAWRENCE	Louisville-03
+420859	NY	ST LAWRENCE	Louisville-04
+420860	NY	ST LAWRENCE	Macomb-01
+420861	NY	ST LAWRENCE	Madrid-01
+420862	NY	ST LAWRENCE	Massena-01
+420863	NY	ST LAWRENCE	Massena-02
+420864	NY	ST LAWRENCE	Massena-03
+420865	NY	ST LAWRENCE	Massena-04
+420866	NY	ST LAWRENCE	Massena-05
+420867	NY	ST LAWRENCE	Massena-06
+420868	NY	ST LAWRENCE	Massena-07
+420869	NY	ST LAWRENCE	Massena-08
+420870	NY	ST LAWRENCE	Morristown-01
+420871	NY	ST LAWRENCE	Morristown-02
+420872	NY	ST LAWRENCE	Norfolk-01
+420873	NY	ST LAWRENCE	Norfolk-02
+420874	NY	ST LAWRENCE	Norfolk-03
+420875	NY	ST LAWRENCE	Oswegatchie-01
+420876	NY	ST LAWRENCE	Oswegatchie-02
+420877	NY	ST LAWRENCE	Oswegatchie-03
+420878	NY	ST LAWRENCE	Parishville-01
+420879	NY	ST LAWRENCE	Parishville-02
+420880	NY	ST LAWRENCE	Piercefield-01
+420881	NY	ST LAWRENCE	Pierrepont-01
+420882	NY	ST LAWRENCE	Pierrepont-02
+420883	NY	ST LAWRENCE	Pitcairn-01
+420884	NY	ST LAWRENCE	Potsdam-01
+420885	NY	ST LAWRENCE	Potsdam-02
+420886	NY	ST LAWRENCE	Potsdam-03
+420887	NY	ST LAWRENCE	Potsdam-04
+420888	NY	ST LAWRENCE	Potsdam-05
+420889	NY	ST LAWRENCE	Potsdam-06
+420890	NY	ST LAWRENCE	Potsdam-07
+420891	NY	ST LAWRENCE	Potsdam-08
+420892	NY	ST LAWRENCE	Rossie-01
+420893	NY	ST LAWRENCE	Russell-01
+420894	NY	ST LAWRENCE	Stockholm-01
+420895	NY	ST LAWRENCE	Stockholm-02
+420896	NY	ST LAWRENCE	Stockholm-03
+420897	NY	ST LAWRENCE	Waddington-01
+420898	NY	ST LAWRENCE	Waddington-02
+420899	NY	ST LAWRENCE	City Of Ogdensburg-01
+420900	NY	ST LAWRENCE	City Of Ogdensburg-02
+420901	NY	ST LAWRENCE	City Of Ogdensburg-03
+420902	NY	ST LAWRENCE	City Of Ogdensburg-04
+420903	NY	ST LAWRENCE	City Of Ogdensburg-05
+420904	NY	ST LAWRENCE	City Of Ogdensburg-06
+420905	NY	SCHENECTADY	Schenectady-01
+420906	NY	SCHENECTADY	Schenectady-02
+420907	NY	SCHENECTADY	Schenectady-03
+420908	NY	SCHENECTADY	Schenectady-04
+420909	NY	SCHENECTADY	Schenectady-05
+420910	NY	SCHENECTADY	Schenectady-06
+420911	NY	SCHENECTADY	Schenectady-07
+420912	NY	SCHENECTADY	Schenectady-08
+420913	NY	SCHENECTADY	Schenectady-09
+420914	NY	SCHENECTADY	Schenectady-10
+420915	NY	SCHENECTADY	Schenectady-11
+420916	NY	SCHENECTADY	Schenectady-12
+420917	NY	SCHENECTADY	Schenectady-13
+420918	NY	SCHENECTADY	Schenectady-14
+420919	NY	SCHENECTADY	Schenectady-15
+420920	NY	SCHENECTADY	Schenectady-16
+420921	NY	SCHENECTADY	Schenectady-17
+420922	NY	SCHENECTADY	Schenectady-18
+420923	NY	SCHENECTADY	Schenectady-19
+420924	NY	SCHENECTADY	Schenectady-20
+420925	NY	SCHENECTADY	Schenectady-21
+420926	NY	SCHENECTADY	Schenectady-22
+420927	NY	SCHENECTADY	Schenectady-23
+420928	NY	SCHENECTADY	Schenectady-24
+420929	NY	SCHENECTADY	Schenectady-25
+420930	NY	SCHENECTADY	Schenectady-26
+420931	NY	SCHENECTADY	Schenectady-27
+420932	NY	SCHENECTADY	Schenectady-28
+420933	NY	SCHENECTADY	Schenectady-29
+420934	NY	SCHENECTADY	Schenectady-30
+420935	NY	SCHENECTADY	Schenectady-31
+420936	NY	SCHENECTADY	Schenectady-32
+420937	NY	SCHENECTADY	Schenectady-33
+420938	NY	SCHENECTADY	Schenectady-34
+420939	NY	SCHENECTADY	Schenectady-35
+420940	NY	SCHENECTADY	Duanesburg-01
+420941	NY	SCHENECTADY	Duanesburg-02
+420942	NY	SCHENECTADY	Duanesburg-03
+420943	NY	SCHENECTADY	Duanesburg-04
+420944	NY	SCHENECTADY	Duanesburg-05
+420945	NY	SCHENECTADY	Glenville-01
+420946	NY	SCHENECTADY	Glenville-02
+420947	NY	SCHENECTADY	Glenville-03
+420948	NY	SCHENECTADY	Glenville-04
+420949	NY	SCHENECTADY	Glenville-05
+420950	NY	SCHENECTADY	Glenville-06
+420951	NY	SCHENECTADY	Glenville-07
+420952	NY	SCHENECTADY	Glenville-08
+420953	NY	SCHENECTADY	Glenville-09
+420954	NY	SCHENECTADY	Glenville-10
+420955	NY	SCHENECTADY	Glenville-11
+420956	NY	SCHENECTADY	Glenville-12
+420957	NY	SCHENECTADY	Glenville-13
+420958	NY	SCHENECTADY	Glenville-14
+420959	NY	SCHENECTADY	Glenville-15
+420960	NY	SCHENECTADY	Glenville-16
+420961	NY	SCHENECTADY	Glenville-17
+420962	NY	SCHENECTADY	Glenville-18
+420963	NY	SCHENECTADY	Glenville-19
+420964	NY	SCHENECTADY	Glenville-20
+420965	NY	SCHENECTADY	Glenville-21
+420966	NY	SCHENECTADY	Glenville-22
+420967	NY	SCHENECTADY	Niskayuna-01
+420968	NY	SCHENECTADY	Niskayuna-02
+420969	NY	SCHENECTADY	Niskayuna-03
+420970	NY	SCHENECTADY	Niskayuna-04
+420971	NY	SCHENECTADY	Niskayuna-05
+420972	NY	SCHENECTADY	Niskayuna-06
+420973	NY	SCHENECTADY	Niskayuna-07
+420974	NY	SCHENECTADY	Niskayuna-08
+420975	NY	SCHENECTADY	Niskayuna-09
+420976	NY	SCHENECTADY	Niskayuna-10
+420977	NY	SCHENECTADY	Niskayuna-11
+420978	NY	SCHENECTADY	Niskayuna-12
+420979	NY	SCHENECTADY	Niskayuna-13
+420980	NY	SCHENECTADY	Niskayuna-14
+420981	NY	SCHENECTADY	Niskayuna-15
+420982	NY	SCHENECTADY	Niskayuna-16
+420983	NY	SCHENECTADY	Niskayuna-17
+420984	NY	SCHENECTADY	Princetown-01
+420985	NY	SCHENECTADY	Princetown-02
+420986	NY	SCHENECTADY	Rotterdam-01
+420987	NY	SCHENECTADY	Rotterdam-02
+420988	NY	SCHENECTADY	Rotterdam-03
+420989	NY	SCHENECTADY	Rotterdam-04
+420990	NY	SCHENECTADY	Rotterdam-05
+420991	NY	SCHENECTADY	Rotterdam-06
+420992	NY	SCHENECTADY	Rotterdam-07
+420993	NY	SCHENECTADY	Rotterdam-08
+420994	NY	SCHENECTADY	Rotterdam-09
+420995	NY	SCHENECTADY	Rotterdam-10
+420996	NY	SCHENECTADY	Rotterdam-11
+420997	NY	SCHENECTADY	Rotterdam-12
+420998	NY	SCHENECTADY	Rotterdam-13
+420999	NY	SCHENECTADY	Rotterdam-14
+421000	NY	SCHENECTADY	Rotterdam-15
+421001	NY	SCHENECTADY	Rotterdam-16
+421002	NY	SCHENECTADY	Rotterdam-17
+421003	NY	SCHENECTADY	Rotterdam-18
+421004	NY	SCHENECTADY	Rotterdam-19
+421005	NY	SCHENECTADY	Rotterdam-20
+421006	NY	SCHENECTADY	Rotterdam-21
+421007	NY	SCHOHARIE	Blenheim-01
+421008	NY	SCHOHARIE	Broome-01
+421009	NY	SCHOHARIE	Carlisle-01
+421010	NY	SCHOHARIE	Cobleskill-01
+421011	NY	SCHOHARIE	Cobleskill-02
+421012	NY	SCHOHARIE	Conesville-01
+421013	NY	SCHOHARIE	Esperance-01
+421014	NY	SCHOHARIE	Esperance-02
+421015	NY	SCHOHARIE	Fulton-01
+421016	NY	SCHOHARIE	Gilboa-01
+421017	NY	SCHOHARIE	Middleburgh-01
+421018	NY	SCHOHARIE	Middleburgh-02
+421019	NY	SCHOHARIE	Richmondville-01
+421020	NY	SCHOHARIE	Richmondville-02
+421021	NY	SCHOHARIE	Schoharie-01
+421022	NY	SCHOHARIE	Schoharie-02
+421023	NY	SCHOHARIE	Seward-01
+421024	NY	SCHOHARIE	Sharon-01
+421025	NY	SCHOHARIE	Summit-01
+421026	NY	SCHOHARIE	Wright-01
+421027	NY	SCHUYLER	Catharine-01
+421028	NY	SCHUYLER	Cayuta-01
+421029	NY	SCHUYLER	Dix-01
+421030	NY	SCHUYLER	Dix-02
+421031	NY	SCHUYLER	Dix-03
+421032	NY	SCHUYLER	Hector-01
+421033	NY	SCHUYLER	Hector-02
+421034	NY	SCHUYLER	Hector-03
+421035	NY	SCHUYLER	Hector-04
+421036	NY	SCHUYLER	Hector-05
+421037	NY	SCHUYLER	Montour-01
+421038	NY	SCHUYLER	Montour-02
+421039	NY	SCHUYLER	Orange-01
+421040	NY	SCHUYLER	Reading-01
+421041	NY	SCHUYLER	Reading-02
+421042	NY	SCHUYLER	Tyrone-01
+421043	NY	SENECA	Covert-01
+421044	NY	SENECA	Covert-02
+421045	NY	SENECA	Fayette-01
+421046	NY	SENECA	Fayette-02
+421047	NY	SENECA	Fayette-03
+421048	NY	SENECA	Junius-01
+421049	NY	SENECA	Lodi-01
+421050	NY	SENECA	Ovid-01
+421051	NY	SENECA	Ovid-02
+421052	NY	SENECA	Romulus-01
+421053	NY	SENECA	Romulus-02
+421054	NY	SENECA	Romulus-03
+421055	NY	SENECA	Seneca Falls-01
+421056	NY	SENECA	Seneca Falls-02
+421057	NY	SENECA	Seneca Falls-03
+421058	NY	SENECA	Seneca Falls-04
+421059	NY	SENECA	Seneca Falls-05
+421060	NY	SENECA	Seneca Falls-06
+421061	NY	SENECA	Seneca Falls-07
+421062	NY	SENECA	Seneca Falls-08
+421063	NY	SENECA	Tyre-01
+421064	NY	SENECA	Varick-01
+421065	NY	SENECA	Waterloo-01
+421066	NY	SENECA	Waterloo-02
+421067	NY	SENECA	Waterloo-03
+421068	NY	SENECA	Waterloo-04
+421069	NY	SENECA	Waterloo-05
+421070	NY	STEUBEN	Addison-01
+421071	NY	STEUBEN	Addison-02
+421072	NY	STEUBEN	Avoca-01
+421073	NY	STEUBEN	Bath-01
+421074	NY	STEUBEN	Bath-02
+421075	NY	STEUBEN	Bath-03
+421076	NY	STEUBEN	Bath-04
+421077	NY	STEUBEN	Bath-05
+421078	NY	STEUBEN	Bath-06
+421079	NY	STEUBEN	Bath-07
+421080	NY	STEUBEN	Bath-08
+421081	NY	STEUBEN	Bath-09
+421082	NY	STEUBEN	Bradford-01
+421083	NY	STEUBEN	Cameron-01
+421084	NY	STEUBEN	Campbell-01
+421085	NY	STEUBEN	Campbell-02
+421086	NY	STEUBEN	Campbell-03
+421087	NY	STEUBEN	Canisteo-01
+421088	NY	STEUBEN	Canisteo-02
+421089	NY	STEUBEN	Canisteo-03
+421090	NY	STEUBEN	Canisteo-04
+421091	NY	STEUBEN	Caton-01
+421092	NY	STEUBEN	Caton-02
+421093	NY	STEUBEN	Cohocton-01
+421094	NY	STEUBEN	Cohocton-02
+421095	NY	STEUBEN	Corning City-001-01
+421096	NY	STEUBEN	Corning City-002-02
+421097	NY	STEUBEN	Corning City-003-03
+421098	NY	STEUBEN	Corning City-004-04
+421099	NY	STEUBEN	Corning City-005-05
+421100	NY	STEUBEN	Corning City-006-06
+421101	NY	STEUBEN	Corning City-007-07
+421102	NY	STEUBEN	Corning City-008-08
+421103	NY	STEUBEN	Corning Town-01
+421104	NY	STEUBEN	Corning Town-02
+421105	NY	STEUBEN	Corning Town-03
+421106	NY	STEUBEN	Corning Town-04
+421107	NY	STEUBEN	Corning Town-05
+421108	NY	STEUBEN	Dansville-01
+421109	NY	STEUBEN	Erwin-01
+421110	NY	STEUBEN	Erwin-02
+421111	NY	STEUBEN	Erwin-03
+421112	NY	STEUBEN	Erwin-04
+421113	NY	STEUBEN	Erwin-05
+421114	NY	STEUBEN	Erwin-06
+421115	NY	STEUBEN	Erwin-07
+421116	NY	STEUBEN	Erwin-08
+421117	NY	STEUBEN	Fremont-01
+421118	NY	STEUBEN	Greenwood-01
+421119	NY	STEUBEN	Hartsville-01
+421120	NY	STEUBEN	Hornby-01
+421121	NY	STEUBEN	Hornell City-001-01
+421122	NY	STEUBEN	Hornell City-002-02
+421123	NY	STEUBEN	Hornell City-003-03
+421124	NY	STEUBEN	Hornell City-004-04
+421125	NY	STEUBEN	Hornell City-005-05
+421126	NY	STEUBEN	Hornell City-006-06
+421127	NY	STEUBEN	Hornell City-007-07
+421128	NY	STEUBEN	Hornell City-008-08
+421129	NY	STEUBEN	Hornell City-009-09
+421130	NY	STEUBEN	Hornell City-010-10
+421131	NY	STEUBEN	Hornellsville-01
+421132	NY	STEUBEN	Hornellsville-02
+421133	NY	STEUBEN	Hornellsville-03
+421134	NY	STEUBEN	Hornellsville-04
+421135	NY	STEUBEN	Howard-01
+421136	NY	STEUBEN	Jasper-01
+421137	NY	STEUBEN	Lindley-01
+421138	NY	STEUBEN	Prattsburgh-01
+421139	NY	STEUBEN	Prattsburgh-02
+421140	NY	STEUBEN	Pulteney-01
+421141	NY	STEUBEN	Rathbone-01
+421142	NY	STEUBEN	Thurston-01
+421143	NY	STEUBEN	Troupsburg-01
+421144	NY	STEUBEN	Tuscarora-01
+421145	NY	STEUBEN	Urbana-01
+421146	NY	STEUBEN	Urbana-02
+421147	NY	STEUBEN	Wayland-01
+421148	NY	STEUBEN	Wayland-02
+421149	NY	STEUBEN	Wayland-03
+421150	NY	STEUBEN	Wayne-01
+421151	NY	STEUBEN	West Union-01
+421152	NY	STEUBEN	Wheeler-01
+421153	NY	STEUBEN	Woodhull-01
+421154	NY	SUFFOLK	Shelter Island-001
+421155	NY	SUFFOLK	Shelter Island-002
+421156	NY	SUFFOLK	Shelter Island-003
+421157	NY	SUFFOLK	Shelter Island-004
+421158	NY	SUFFOLK	Brookhaven-01-001
+421159	NY	SUFFOLK	Brookhaven-01-002
+421160	NY	SUFFOLK	Brookhaven-01-003
+421161	NY	SUFFOLK	Brookhaven-01-004
+421162	NY	SUFFOLK	Brookhaven-01-005
+421163	NY	SUFFOLK	Brookhaven-01-006
+421164	NY	SUFFOLK	Brookhaven-01-007
+421165	NY	SUFFOLK	Brookhaven-02-008
+421166	NY	SUFFOLK	Brookhaven-06-009
+421167	NY	SUFFOLK	Brookhaven-04-010
+421168	NY	SUFFOLK	Brookhaven-05-011
+421169	NY	SUFFOLK	Brookhaven-03-012
+421170	NY	SUFFOLK	Brookhaven-05-013
+421171	NY	SUFFOLK	Brookhaven-05-014
+421172	NY	SUFFOLK	Brookhaven-05-015
+421173	NY	SUFFOLK	Brookhaven-05-016
+421174	NY	SUFFOLK	Brookhaven-05-017
+421175	NY	SUFFOLK	Brookhaven-05-018
+421176	NY	SUFFOLK	Brookhaven-05-019
+421177	NY	SUFFOLK	Brookhaven-05-020
+421178	NY	SUFFOLK	Brookhaven-05-021
+421179	NY	SUFFOLK	Brookhaven-05-022
+421180	NY	SUFFOLK	Brookhaven-05-023
+421181	NY	SUFFOLK	Brookhaven-05-024
+421182	NY	SUFFOLK	Brookhaven-05-025
+421183	NY	SUFFOLK	Brookhaven-04-026
+421184	NY	SUFFOLK	Brookhaven-04-027
+421185	NY	SUFFOLK	Brookhaven-04-028
+421186	NY	SUFFOLK	Brookhaven-06-029
+421187	NY	SUFFOLK	Brookhaven-06-030
+421188	NY	SUFFOLK	Brookhaven-06-031
+421189	NY	SUFFOLK	Brookhaven-06-032
+421190	NY	SUFFOLK	Brookhaven-02-033
+421191	NY	SUFFOLK	Brookhaven-05-034
+421192	NY	SUFFOLK	Brookhaven-02-035
+421193	NY	SUFFOLK	Brookhaven-03-036
+421194	NY	SUFFOLK	Brookhaven-02-037
+421195	NY	SUFFOLK	Brookhaven-06-038
+421196	NY	SUFFOLK	Brookhaven-06-039
+421197	NY	SUFFOLK	Brookhaven-02-040
+421198	NY	SUFFOLK	Brookhaven-05-041
+421199	NY	SUFFOLK	Brookhaven-06-042
+421200	NY	SUFFOLK	Brookhaven-03-043
+421201	NY	SUFFOLK	Brookhaven-05-044
+421202	NY	SUFFOLK	Brookhaven-05-045
+421203	NY	SUFFOLK	Brookhaven-04-046
+421204	NY	SUFFOLK	Brookhaven-02-047
+421205	NY	SUFFOLK	Brookhaven-05-048
+421206	NY	SUFFOLK	Brookhaven-05-049
+421207	NY	SUFFOLK	Brookhaven-03-050
+421208	NY	SUFFOLK	Brookhaven-05-051
+421209	NY	SUFFOLK	Brookhaven-05-052
+421210	NY	SUFFOLK	Brookhaven-04-053
+421211	NY	SUFFOLK	Brookhaven-03-055
+421212	NY	SUFFOLK	Brookhaven-03-056
+421213	NY	SUFFOLK	Brookhaven-05-057
+421214	NY	SUFFOLK	Brookhaven-05-058
+421215	NY	SUFFOLK	Brookhaven-03-059
+421216	NY	SUFFOLK	Brookhaven-01-060
+421217	NY	SUFFOLK	Brookhaven-01-061
+421218	NY	SUFFOLK	Brookhaven-01-062
+421219	NY	SUFFOLK	Brookhaven-02-063
+421220	NY	SUFFOLK	Brookhaven-04-064
+421221	NY	SUFFOLK	Brookhaven-04-065
+421222	NY	SUFFOLK	Brookhaven-02-066
+421223	NY	SUFFOLK	Brookhaven-04-067
+421224	NY	SUFFOLK	Brookhaven-02-068
+421225	NY	SUFFOLK	Brookhaven-05-069
+421226	NY	SUFFOLK	Brookhaven-03-070
+421227	NY	SUFFOLK	Brookhaven-03-071
+421228	NY	SUFFOLK	Brookhaven-06-072
+421229	NY	SUFFOLK	Brookhaven-06-073
+421230	NY	SUFFOLK	Brookhaven-05-074
+421231	NY	SUFFOLK	Brookhaven-03-075
+421232	NY	SUFFOLK	Brookhaven-03-076
+421233	NY	SUFFOLK	Brookhaven-05-077
+421234	NY	SUFFOLK	Brookhaven-03-078
+421235	NY	SUFFOLK	Brookhaven-06-079
+421236	NY	SUFFOLK	Brookhaven-06-080
+421237	NY	SUFFOLK	Brookhaven-05-081
+421238	NY	SUFFOLK	Brookhaven-05-082
+421239	NY	SUFFOLK	Brookhaven-03-083
+421240	NY	SUFFOLK	Brookhaven-06-084
+421241	NY	SUFFOLK	Brookhaven-01-086
+421242	NY	SUFFOLK	Brookhaven-01-087
+421243	NY	SUFFOLK	Brookhaven-01-088
+421244	NY	SUFFOLK	Brookhaven-01-089
+421245	NY	SUFFOLK	Brookhaven-01-090
+421246	NY	SUFFOLK	Brookhaven-01-091
+421247	NY	SUFFOLK	Brookhaven-03-092
+421248	NY	SUFFOLK	Brookhaven-02-093
+421249	NY	SUFFOLK	Brookhaven-03-094
+421250	NY	SUFFOLK	Brookhaven-01-095
+421251	NY	SUFFOLK	Brookhaven-04-096
+421252	NY	SUFFOLK	Brookhaven-04-097
+421253	NY	SUFFOLK	Brookhaven-02-098
+421254	NY	SUFFOLK	Brookhaven-03-099
+421255	NY	SUFFOLK	Brookhaven-03-100
+421256	NY	SUFFOLK	Brookhaven-01-101
+421257	NY	SUFFOLK	Brookhaven-01-102
+421258	NY	SUFFOLK	Brookhaven-05-103
+421259	NY	SUFFOLK	Brookhaven-06-104
+421260	NY	SUFFOLK	Brookhaven-03-105
+421261	NY	SUFFOLK	Brookhaven-05-106
+421262	NY	SUFFOLK	Brookhaven-05-107
+421263	NY	SUFFOLK	Brookhaven-01-108
+421264	NY	SUFFOLK	Brookhaven-03-109
+421265	NY	SUFFOLK	Brookhaven-01-111
+421266	NY	SUFFOLK	Brookhaven-01-112
+421267	NY	SUFFOLK	Brookhaven-06-113
+421268	NY	SUFFOLK	Brookhaven-05-114
+421269	NY	SUFFOLK	Brookhaven-05-115
+421270	NY	SUFFOLK	Brookhaven-01-116
+421271	NY	SUFFOLK	Brookhaven-01-117
+421272	NY	SUFFOLK	Brookhaven-01-118
+421273	NY	SUFFOLK	Brookhaven-05-119
+421274	NY	SUFFOLK	Brookhaven-04-120
+421275	NY	SUFFOLK	Brookhaven-01-121
+421276	NY	SUFFOLK	Brookhaven-02-122
+421277	NY	SUFFOLK	Brookhaven-04-123
+421278	NY	SUFFOLK	Brookhaven-03-124
+421279	NY	SUFFOLK	Brookhaven-03-125
+421280	NY	SUFFOLK	Brookhaven-03-126
+421281	NY	SUFFOLK	Brookhaven-03-127
+421282	NY	SUFFOLK	Brookhaven-04-128
+421283	NY	SUFFOLK	Brookhaven-01-129
+421284	NY	SUFFOLK	Brookhaven-02-130
+421285	NY	SUFFOLK	Brookhaven-05-131
+421286	NY	SUFFOLK	Brookhaven-03-132
+421287	NY	SUFFOLK	Brookhaven-04-133
+421288	NY	SUFFOLK	Brookhaven-01-134
+421289	NY	SUFFOLK	Brookhaven-02-135
+421290	NY	SUFFOLK	Brookhaven-02-136
+421291	NY	SUFFOLK	Brookhaven-04-137
+421292	NY	SUFFOLK	Brookhaven-05-138
+421293	NY	SUFFOLK	Brookhaven-06-139
+421294	NY	SUFFOLK	Brookhaven-01-140
+421295	NY	SUFFOLK	Brookhaven-06-141
+421296	NY	SUFFOLK	Brookhaven-03-142
+421297	NY	SUFFOLK	Brookhaven-01-143
+421298	NY	SUFFOLK	Brookhaven-05-144
+421299	NY	SUFFOLK	Brookhaven-01-146
+421300	NY	SUFFOLK	Brookhaven-02-147
+421301	NY	SUFFOLK	Brookhaven-01-148
+421302	NY	SUFFOLK	Brookhaven-04-149
+421303	NY	SUFFOLK	Brookhaven-04-150
+421304	NY	SUFFOLK	Brookhaven-06-151
+421305	NY	SUFFOLK	Brookhaven-03-152
+421306	NY	SUFFOLK	Brookhaven-02-153
+421307	NY	SUFFOLK	Brookhaven-06-154
+421308	NY	SUFFOLK	Brookhaven-05-155
+421309	NY	SUFFOLK	Brookhaven-06-156
+421310	NY	SUFFOLK	Brookhaven-03-158
+421311	NY	SUFFOLK	Brookhaven-02-159
+421312	NY	SUFFOLK	Brookhaven-06-160
+421313	NY	SUFFOLK	Brookhaven-01-161
+421314	NY	SUFFOLK	Brookhaven-03-162
+421315	NY	SUFFOLK	Brookhaven-01-163
+421316	NY	SUFFOLK	Brookhaven-05-164
+421317	NY	SUFFOLK	Brookhaven-01-165
+421318	NY	SUFFOLK	Brookhaven-01-166
+421319	NY	SUFFOLK	Brookhaven-02-167
+421320	NY	SUFFOLK	Brookhaven-02-168
+421321	NY	SUFFOLK	Brookhaven-02-169
+421322	NY	SUFFOLK	Brookhaven-01-170
+421323	NY	SUFFOLK	Brookhaven-05-171
+421324	NY	SUFFOLK	Brookhaven-03-172
+421325	NY	SUFFOLK	Brookhaven-05-173
+421326	NY	SUFFOLK	Brookhaven-05-174
+421327	NY	SUFFOLK	Brookhaven-03-175
+421328	NY	SUFFOLK	Brookhaven-03-176
+421329	NY	SUFFOLK	Brookhaven-01-177
+421330	NY	SUFFOLK	Brookhaven-01-178
+421331	NY	SUFFOLK	Brookhaven-03-179
+421332	NY	SUFFOLK	Brookhaven-03-180
+421333	NY	SUFFOLK	Brookhaven-02-181
+421334	NY	SUFFOLK	Brookhaven-02-182
+421335	NY	SUFFOLK	Brookhaven-05-183
+421336	NY	SUFFOLK	Brookhaven-06-184
+421337	NY	SUFFOLK	Brookhaven-02-185
+421338	NY	SUFFOLK	Brookhaven-02-187
+421339	NY	SUFFOLK	Brookhaven-02-188
+421340	NY	SUFFOLK	Brookhaven-02-189
+421341	NY	SUFFOLK	Brookhaven-02-190
+421342	NY	SUFFOLK	Brookhaven-01-191
+421343	NY	SUFFOLK	Brookhaven-04-192
+421344	NY	SUFFOLK	Brookhaven-02-193
+421345	NY	SUFFOLK	Brookhaven-04-194
+421346	NY	SUFFOLK	Brookhaven-02-195
+421347	NY	SUFFOLK	Brookhaven-05-196
+421348	NY	SUFFOLK	Brookhaven-02-197
+421349	NY	SUFFOLK	Brookhaven-04-198
+421350	NY	SUFFOLK	Brookhaven-04-199
+421351	NY	SUFFOLK	Brookhaven-04-200
+421352	NY	SUFFOLK	Brookhaven-02-201
+421353	NY	SUFFOLK	Brookhaven-02-202
+421354	NY	SUFFOLK	Brookhaven-06-203
+421355	NY	SUFFOLK	Brookhaven-06-204
+421356	NY	SUFFOLK	Brookhaven-01-205
+421357	NY	SUFFOLK	Brookhaven-03-206
+421358	NY	SUFFOLK	Brookhaven-06-207
+421359	NY	SUFFOLK	Brookhaven-06-208
+421360	NY	SUFFOLK	Brookhaven-02-209
+421361	NY	SUFFOLK	Brookhaven-04-210
+421362	NY	SUFFOLK	Brookhaven-05-211
+421363	NY	SUFFOLK	Brookhaven-01-212
+421364	NY	SUFFOLK	Brookhaven-04-213
+421365	NY	SUFFOLK	Brookhaven-05-214
+421366	NY	SUFFOLK	Brookhaven-06-215
+421367	NY	SUFFOLK	Brookhaven-02-216
+421368	NY	SUFFOLK	Brookhaven-04-218
+421369	NY	SUFFOLK	Brookhaven-03-219
+421370	NY	SUFFOLK	Brookhaven-02-220
+421371	NY	SUFFOLK	Brookhaven-03-221
+421372	NY	SUFFOLK	Brookhaven-03-222
+421373	NY	SUFFOLK	Brookhaven-01-223
+421374	NY	SUFFOLK	Brookhaven-01-224
+421375	NY	SUFFOLK	Brookhaven-01-225
+421376	NY	SUFFOLK	Brookhaven-01-226
+421377	NY	SUFFOLK	Brookhaven-06-227
+421378	NY	SUFFOLK	Brookhaven-04-228
+421379	NY	SUFFOLK	Brookhaven-06-229
+421380	NY	SUFFOLK	Brookhaven-03-230
+421381	NY	SUFFOLK	Brookhaven-05-231
+421382	NY	SUFFOLK	Brookhaven-03-232
+421383	NY	SUFFOLK	Brookhaven-01-233
+421384	NY	SUFFOLK	Brookhaven-04-234
+421385	NY	SUFFOLK	Brookhaven-05-235
+421386	NY	SUFFOLK	Brookhaven-02-236
+421387	NY	SUFFOLK	Brookhaven-03-237
+421388	NY	SUFFOLK	Brookhaven-05-238
+421389	NY	SUFFOLK	Brookhaven-01-239
+421390	NY	SUFFOLK	Brookhaven-05-240
+421391	NY	SUFFOLK	Brookhaven-04-241
+421392	NY	SUFFOLK	Brookhaven-03-242
+421393	NY	SUFFOLK	Brookhaven-03-244
+421394	NY	SUFFOLK	Brookhaven-05-246
+421395	NY	SUFFOLK	Brookhaven-04-247
+421396	NY	SUFFOLK	Brookhaven-02-248
+421397	NY	SUFFOLK	Brookhaven-06-249
+421398	NY	SUFFOLK	Brookhaven-03-250
+421399	NY	SUFFOLK	Brookhaven-01-251
+421400	NY	SUFFOLK	Brookhaven-02-252
+421401	NY	SUFFOLK	Brookhaven-04-253
+421402	NY	SUFFOLK	Brookhaven-05-254
+421403	NY	SUFFOLK	Brookhaven-04-255
+421404	NY	SUFFOLK	Brookhaven-04-256
+421405	NY	SUFFOLK	Brookhaven-02-257
+421406	NY	SUFFOLK	Brookhaven-02-258
+421407	NY	SUFFOLK	Brookhaven-04-259
+421408	NY	SUFFOLK	Brookhaven-02-260
+421409	NY	SUFFOLK	Brookhaven-03-262
+421410	NY	SUFFOLK	Brookhaven-02-263
+421411	NY	SUFFOLK	Brookhaven-06-264
+421412	NY	SUFFOLK	Brookhaven-06-265
+421413	NY	SUFFOLK	Brookhaven-04-266
+421414	NY	SUFFOLK	Brookhaven-02-267
+421415	NY	SUFFOLK	Brookhaven-06-268
+421416	NY	SUFFOLK	Brookhaven-04-269
+421417	NY	SUFFOLK	Brookhaven-02-270
+421418	NY	SUFFOLK	Brookhaven-05-271
+421419	NY	SUFFOLK	Brookhaven-06-272
+421420	NY	SUFFOLK	Brookhaven-04-273
+421421	NY	SUFFOLK	Brookhaven-06-274
+421422	NY	SUFFOLK	Brookhaven-04-275
+421423	NY	SUFFOLK	Brookhaven-04-276
+421424	NY	SUFFOLK	Brookhaven-04-277
+421425	NY	SUFFOLK	Brookhaven-06-279
+421426	NY	SUFFOLK	Brookhaven-03-282
+421427	NY	SUFFOLK	Brookhaven-06-283
+421428	NY	SUFFOLK	Brookhaven-04-284
+421429	NY	SUFFOLK	Brookhaven-06-285
+421430	NY	SUFFOLK	Brookhaven-02-286
+421431	NY	SUFFOLK	Brookhaven-06-287
+421432	NY	SUFFOLK	Huntington-001
+421433	NY	SUFFOLK	Huntington-002
+421434	NY	SUFFOLK	Huntington-003
+421435	NY	SUFFOLK	Huntington-004
+421436	NY	SUFFOLK	Huntington-005
+421437	NY	SUFFOLK	Huntington-006
+421438	NY	SUFFOLK	Huntington-007
+421439	NY	SUFFOLK	Huntington-008
+421440	NY	SUFFOLK	Huntington-009
+421441	NY	SUFFOLK	Huntington-010
+421442	NY	SUFFOLK	Huntington-011
+421443	NY	SUFFOLK	Huntington-012
+421444	NY	SUFFOLK	Huntington-013
+421445	NY	SUFFOLK	Huntington-014
+421446	NY	SUFFOLK	Huntington-015
+421447	NY	SUFFOLK	Huntington-016
+421448	NY	SUFFOLK	Huntington-017
+421449	NY	SUFFOLK	Huntington-018
+421450	NY	SUFFOLK	Huntington-019
+421451	NY	SUFFOLK	Huntington-020
+421452	NY	SUFFOLK	Huntington-021
+421453	NY	SUFFOLK	Huntington-022
+421454	NY	SUFFOLK	Huntington-023
+421455	NY	SUFFOLK	Huntington-024
+421456	NY	SUFFOLK	Huntington-025
+421457	NY	SUFFOLK	Huntington-026
+421458	NY	SUFFOLK	Huntington-027
+421459	NY	SUFFOLK	Huntington-028
+421460	NY	SUFFOLK	Huntington-029
+421461	NY	SUFFOLK	Huntington-030
+421462	NY	SUFFOLK	Huntington-031
+421463	NY	SUFFOLK	Huntington-032
+421464	NY	SUFFOLK	Huntington-033
+421465	NY	SUFFOLK	Huntington-034
+421466	NY	SUFFOLK	Huntington-035
+421467	NY	SUFFOLK	Huntington-036
+421468	NY	SUFFOLK	Huntington-037
+421469	NY	SUFFOLK	Huntington-038
+421470	NY	SUFFOLK	Huntington-039
+421471	NY	SUFFOLK	Huntington-040
+421472	NY	SUFFOLK	Huntington-041
+421473	NY	SUFFOLK	Huntington-042
+421474	NY	SUFFOLK	Huntington-043
+421475	NY	SUFFOLK	Huntington-044
+421476	NY	SUFFOLK	Huntington-045
+421477	NY	SUFFOLK	Huntington-046
+421478	NY	SUFFOLK	Huntington-047
+421479	NY	SUFFOLK	Huntington-048
+421480	NY	SUFFOLK	Huntington-049
+421481	NY	SUFFOLK	Huntington-050
+421482	NY	SUFFOLK	Huntington-051
+421483	NY	SUFFOLK	Huntington-052
+421484	NY	SUFFOLK	Huntington-053
+421485	NY	SUFFOLK	Huntington-054
+421486	NY	SUFFOLK	Huntington-055
+421487	NY	SUFFOLK	Huntington-056
+421488	NY	SUFFOLK	Huntington-057
+421489	NY	SUFFOLK	Huntington-058
+421490	NY	SUFFOLK	Huntington-059
+421491	NY	SUFFOLK	Huntington-060
+421492	NY	SUFFOLK	Huntington-061
+421493	NY	SUFFOLK	Huntington-062
+421494	NY	SUFFOLK	Huntington-063
+421495	NY	SUFFOLK	Huntington-064
+421496	NY	SUFFOLK	Huntington-065
+421497	NY	SUFFOLK	Huntington-066
+421498	NY	SUFFOLK	Huntington-067
+421499	NY	SUFFOLK	Huntington-068
+421500	NY	SUFFOLK	Huntington-069
+421501	NY	SUFFOLK	Huntington-070
+421502	NY	SUFFOLK	Huntington-071
+421503	NY	SUFFOLK	Huntington-072
+421504	NY	SUFFOLK	Huntington-073
+421505	NY	SUFFOLK	Huntington-074
+421506	NY	SUFFOLK	Huntington-075
+421507	NY	SUFFOLK	Huntington-076
+421508	NY	SUFFOLK	Huntington-077
+421509	NY	SUFFOLK	Huntington-078
+421510	NY	SUFFOLK	Huntington-079
+421511	NY	SUFFOLK	Huntington-080
+421512	NY	SUFFOLK	Huntington-081
+421513	NY	SUFFOLK	Huntington-082
+421514	NY	SUFFOLK	Huntington-083
+421515	NY	SUFFOLK	Huntington-084
+421516	NY	SUFFOLK	Huntington-085
+421517	NY	SUFFOLK	Huntington-086
+421518	NY	SUFFOLK	Huntington-087
+421519	NY	SUFFOLK	Huntington-088
+421520	NY	SUFFOLK	Huntington-089
+421521	NY	SUFFOLK	Huntington-090
+421522	NY	SUFFOLK	Huntington-091
+421523	NY	SUFFOLK	Huntington-092
+421524	NY	SUFFOLK	Huntington-093
+421525	NY	SUFFOLK	Huntington-094
+421526	NY	SUFFOLK	Huntington-095
+421527	NY	SUFFOLK	Huntington-096
+421528	NY	SUFFOLK	Huntington-097
+421529	NY	SUFFOLK	Huntington-098
+421530	NY	SUFFOLK	Huntington-099
+421531	NY	SUFFOLK	Huntington-100
+421532	NY	SUFFOLK	Huntington-101
+421533	NY	SUFFOLK	Huntington-102
+421534	NY	SUFFOLK	Huntington-103
+421535	NY	SUFFOLK	Huntington-104
+421536	NY	SUFFOLK	Huntington-105
+421537	NY	SUFFOLK	Huntington-106
+421538	NY	SUFFOLK	Huntington-107
+421539	NY	SUFFOLK	Huntington-108
+421540	NY	SUFFOLK	Huntington-109
+421541	NY	SUFFOLK	Huntington-110
+421542	NY	SUFFOLK	Huntington-111
+421543	NY	SUFFOLK	Huntington-112
+421544	NY	SUFFOLK	Huntington-113
+421545	NY	SUFFOLK	Huntington-114
+421546	NY	SUFFOLK	Huntington-115
+421547	NY	SUFFOLK	Huntington-116
+421548	NY	SUFFOLK	Huntington-117
+421549	NY	SUFFOLK	Huntington-118
+421550	NY	SUFFOLK	Huntington-119
+421551	NY	SUFFOLK	Huntington-120
+421552	NY	SUFFOLK	Huntington-121
+421553	NY	SUFFOLK	Huntington-122
+421554	NY	SUFFOLK	Huntington-123
+421555	NY	SUFFOLK	Huntington-124
+421556	NY	SUFFOLK	Huntington-125
+421557	NY	SUFFOLK	Huntington-126
+421558	NY	SUFFOLK	Huntington-127
+421559	NY	SUFFOLK	Huntington-128
+421560	NY	SUFFOLK	Huntington-129
+421561	NY	SUFFOLK	Huntington-130
+421562	NY	SUFFOLK	Huntington-131
+421563	NY	SUFFOLK	Huntington-132
+421564	NY	SUFFOLK	Huntington-133
+421565	NY	SUFFOLK	Huntington-134
+421566	NY	SUFFOLK	Huntington-135
+421567	NY	SUFFOLK	Huntington-136
+421568	NY	SUFFOLK	Huntington-137
+421569	NY	SUFFOLK	Huntington-138
+421570	NY	SUFFOLK	Huntington-139
+421571	NY	SUFFOLK	Huntington-140
+421572	NY	SUFFOLK	Huntington-141
+421573	NY	SUFFOLK	Huntington-142
+421574	NY	SUFFOLK	Huntington-143
+421575	NY	SUFFOLK	Huntington-144
+421576	NY	SUFFOLK	Huntington-145
+421577	NY	SUFFOLK	Huntington-146
+421578	NY	SUFFOLK	Huntington-147
+421579	NY	SUFFOLK	Huntington-148
+421580	NY	SUFFOLK	Huntington-149
+421581	NY	SUFFOLK	Huntington-150
+421582	NY	SUFFOLK	Huntington-151
+421583	NY	SUFFOLK	Huntington-152
+421584	NY	SUFFOLK	Huntington-153
+421585	NY	SUFFOLK	Huntington-154
+421586	NY	SUFFOLK	Huntington-155
+421587	NY	SUFFOLK	Huntington-156
+421588	NY	SUFFOLK	Huntington-157
+421589	NY	SUFFOLK	Huntington-158
+421590	NY	SUFFOLK	Huntington-159
+421591	NY	SUFFOLK	Huntington-160
+421592	NY	SUFFOLK	Huntington-161
+421593	NY	SUFFOLK	Huntington-162
+421594	NY	SUFFOLK	Huntington-163
+421595	NY	SUFFOLK	Huntington-164
+421596	NY	SUFFOLK	Huntington-165
+421597	NY	SUFFOLK	Huntington-166
+421598	NY	SUFFOLK	Huntington-167
+421599	NY	SUFFOLK	Huntington-168
+421600	NY	SUFFOLK	Huntington-169
+421601	NY	SUFFOLK	Huntington-170
+421602	NY	SUFFOLK	Huntington-171
+421603	NY	SUFFOLK	Huntington-172
+421604	NY	SUFFOLK	Huntington-173
+421605	NY	SUFFOLK	Huntington-174
+421606	NY	SUFFOLK	Huntington-175
+421607	NY	SUFFOLK	Huntington-176
+421608	NY	SUFFOLK	Huntington-177
+421609	NY	SUFFOLK	Islip-001
+421610	NY	SUFFOLK	Islip-002
+421611	NY	SUFFOLK	Islip-003
+421612	NY	SUFFOLK	Islip-004
+421613	NY	SUFFOLK	Islip-005
+421614	NY	SUFFOLK	Islip-006
+421615	NY	SUFFOLK	Islip-007
+421616	NY	SUFFOLK	Islip-008
+421617	NY	SUFFOLK	Islip-009
+421618	NY	SUFFOLK	Islip-010
+421619	NY	SUFFOLK	Islip-011
+421620	NY	SUFFOLK	Islip-012
+421621	NY	SUFFOLK	Islip-013
+421622	NY	SUFFOLK	Islip-014
+421623	NY	SUFFOLK	Islip-015
+421624	NY	SUFFOLK	Islip-016
+421625	NY	SUFFOLK	Islip-017
+421626	NY	SUFFOLK	Islip-018
+421627	NY	SUFFOLK	Islip-019
+421628	NY	SUFFOLK	Islip-020
+421629	NY	SUFFOLK	Islip-021
+421630	NY	SUFFOLK	Islip-022
+421631	NY	SUFFOLK	Islip-023
+421632	NY	SUFFOLK	Islip-024
+421633	NY	SUFFOLK	Islip-025
+421634	NY	SUFFOLK	Islip-026
+421635	NY	SUFFOLK	Islip-027
+421636	NY	SUFFOLK	Islip-028
+421637	NY	SUFFOLK	Islip-029
+421638	NY	SUFFOLK	Islip-030
+421639	NY	SUFFOLK	Islip-031
+421640	NY	SUFFOLK	Islip-032
+421641	NY	SUFFOLK	Islip-033
+421642	NY	SUFFOLK	Islip-034
+421643	NY	SUFFOLK	Islip-035
+421644	NY	SUFFOLK	Islip-036
+421645	NY	SUFFOLK	Islip-037
+421646	NY	SUFFOLK	Islip-038
+421647	NY	SUFFOLK	Islip-039
+421648	NY	SUFFOLK	Islip-040
+421649	NY	SUFFOLK	Islip-041
+421650	NY	SUFFOLK	Islip-042
+421651	NY	SUFFOLK	Islip-043
+421652	NY	SUFFOLK	Islip-044
+421653	NY	SUFFOLK	Islip-045
+421654	NY	SUFFOLK	Islip-046
+421655	NY	SUFFOLK	Islip-047
+421656	NY	SUFFOLK	Islip-048
+421657	NY	SUFFOLK	Islip-049
+421658	NY	SUFFOLK	Islip-050
+421659	NY	SUFFOLK	Islip-051
+421660	NY	SUFFOLK	Islip-052
+421661	NY	SUFFOLK	Islip-053
+421662	NY	SUFFOLK	Islip-054
+421663	NY	SUFFOLK	Islip-055
+421664	NY	SUFFOLK	Islip-056
+421665	NY	SUFFOLK	Islip-057
+421666	NY	SUFFOLK	Islip-058
+421667	NY	SUFFOLK	Islip-059
+421668	NY	SUFFOLK	Islip-060
+421669	NY	SUFFOLK	Islip-061
+421670	NY	SUFFOLK	Islip-062
+421671	NY	SUFFOLK	Islip-063
+421672	NY	SUFFOLK	Islip-064
+421673	NY	SUFFOLK	Islip-065
+421674	NY	SUFFOLK	Islip-066
+421675	NY	SUFFOLK	Islip-067
+421676	NY	SUFFOLK	Islip-068
+421677	NY	SUFFOLK	Islip-069
+421678	NY	SUFFOLK	Islip-070
+421679	NY	SUFFOLK	Islip-071
+421680	NY	SUFFOLK	Islip-072
+421681	NY	SUFFOLK	Islip-073
+421682	NY	SUFFOLK	Islip-074
+421683	NY	SUFFOLK	Islip-075
+421684	NY	SUFFOLK	Islip-076
+421685	NY	SUFFOLK	Islip-077
+421686	NY	SUFFOLK	Islip-078
+421687	NY	SUFFOLK	Islip-079
+421688	NY	SUFFOLK	Islip-080
+421689	NY	SUFFOLK	Islip-081
+421690	NY	SUFFOLK	Islip-082
+421691	NY	SUFFOLK	Islip-083
+421692	NY	SUFFOLK	Islip-084
+421693	NY	SUFFOLK	Islip-085
+421694	NY	SUFFOLK	Islip-086
+421695	NY	SUFFOLK	Islip-087
+421696	NY	SUFFOLK	Islip-088
+421697	NY	SUFFOLK	Islip-089
+421698	NY	SUFFOLK	Islip-090
+421699	NY	SUFFOLK	Islip-091
+421700	NY	SUFFOLK	Islip-092
+421701	NY	SUFFOLK	Islip-093
+421702	NY	SUFFOLK	Islip-094
+421703	NY	SUFFOLK	Islip-095
+421704	NY	SUFFOLK	Islip-096
+421705	NY	SUFFOLK	Islip-097
+421706	NY	SUFFOLK	Islip-098
+421707	NY	SUFFOLK	Islip-099
+421708	NY	SUFFOLK	Islip-100
+421709	NY	SUFFOLK	Islip-101
+421710	NY	SUFFOLK	Islip-102
+421711	NY	SUFFOLK	Islip-103
+421712	NY	SUFFOLK	Islip-104
+421713	NY	SUFFOLK	Islip-105
+421714	NY	SUFFOLK	Islip-106
+421715	NY	SUFFOLK	Islip-107
+421716	NY	SUFFOLK	Islip-108
+421717	NY	SUFFOLK	Islip-109
+421718	NY	SUFFOLK	Islip-110
+421719	NY	SUFFOLK	Islip-111
+421720	NY	SUFFOLK	Islip-112
+421721	NY	SUFFOLK	Islip-113
+421722	NY	SUFFOLK	Islip-114
+421723	NY	SUFFOLK	Islip-115
+421724	NY	SUFFOLK	Islip-116
+421725	NY	SUFFOLK	Islip-117
+421726	NY	SUFFOLK	Islip-118
+421727	NY	SUFFOLK	Islip-119
+421728	NY	SUFFOLK	Islip-120
+421729	NY	SUFFOLK	Islip-121
+421730	NY	SUFFOLK	Islip-122
+421731	NY	SUFFOLK	Islip-123
+421732	NY	SUFFOLK	Islip-124
+421733	NY	SUFFOLK	Islip-125
+421734	NY	SUFFOLK	Islip-126
+421735	NY	SUFFOLK	Islip-127
+421736	NY	SUFFOLK	Islip-128
+421737	NY	SUFFOLK	Islip-129
+421738	NY	SUFFOLK	Islip-130
+421739	NY	SUFFOLK	Islip-131
+421740	NY	SUFFOLK	Islip-132
+421741	NY	SUFFOLK	Islip-133
+421742	NY	SUFFOLK	Islip-134
+421743	NY	SUFFOLK	Islip-135
+421744	NY	SUFFOLK	Islip-136
+421745	NY	SUFFOLK	Islip-137
+421746	NY	SUFFOLK	Islip-138
+421747	NY	SUFFOLK	Islip-139
+421748	NY	SUFFOLK	Islip-140
+421749	NY	SUFFOLK	Islip-141
+421750	NY	SUFFOLK	Islip-142
+421751	NY	SUFFOLK	Islip-143
+421752	NY	SUFFOLK	Islip-144
+421753	NY	SUFFOLK	Islip-145
+421754	NY	SUFFOLK	Islip-146
+421755	NY	SUFFOLK	Islip-147
+421756	NY	SUFFOLK	Islip-148
+421757	NY	SUFFOLK	Islip-149
+421758	NY	SUFFOLK	Islip-150
+421759	NY	SUFFOLK	Islip-151
+421760	NY	SUFFOLK	Islip-152
+421761	NY	SUFFOLK	Islip-153
+421762	NY	SUFFOLK	Islip-154
+421763	NY	SUFFOLK	Islip-155
+421764	NY	SUFFOLK	Islip-156
+421765	NY	SUFFOLK	Islip-157
+421766	NY	SUFFOLK	Islip-158
+421767	NY	SUFFOLK	Islip-159
+421768	NY	SUFFOLK	Islip-160
+421769	NY	SUFFOLK	Islip-161
+421770	NY	SUFFOLK	Islip-162
+421771	NY	SUFFOLK	Islip-163
+421772	NY	SUFFOLK	Islip-164
+421773	NY	SUFFOLK	Islip-165
+421774	NY	SUFFOLK	Islip-166
+421775	NY	SUFFOLK	Islip-167
+421776	NY	SUFFOLK	Islip-168
+421777	NY	SUFFOLK	Islip-169
+421778	NY	SUFFOLK	Islip-170
+421779	NY	SUFFOLK	Islip-171
+421780	NY	SUFFOLK	Islip-172
+421781	NY	SUFFOLK	Islip-173
+421782	NY	SUFFOLK	Islip-174
+421783	NY	SUFFOLK	Islip-175
+421784	NY	SUFFOLK	Islip-176
+421785	NY	SUFFOLK	Islip-177
+421786	NY	SUFFOLK	Islip-178
+421787	NY	SUFFOLK	Islip-179
+421788	NY	SUFFOLK	Islip-180
+421789	NY	SUFFOLK	Islip-181
+421790	NY	SUFFOLK	Islip-182
+421791	NY	SUFFOLK	Islip-183
+421792	NY	SUFFOLK	Islip-184
+421793	NY	SUFFOLK	Islip-186
+421794	NY	SUFFOLK	Islip-187
+421795	NY	SUFFOLK	Islip-188
+421796	NY	SUFFOLK	Islip-189
+421797	NY	SUFFOLK	Islip-190
+421798	NY	SUFFOLK	Islip-191
+421799	NY	SUFFOLK	Islip-192
+421800	NY	SUFFOLK	Islip-193
+421801	NY	SUFFOLK	Islip-194
+421802	NY	SUFFOLK	Islip-195
+421803	NY	SUFFOLK	Islip-196
+421804	NY	SUFFOLK	Islip-197
+421805	NY	SUFFOLK	Islip-198
+421806	NY	SUFFOLK	Islip-199
+421807	NY	SUFFOLK	Islip-200
+421808	NY	SUFFOLK	Islip-201
+421809	NY	SUFFOLK	Islip-202
+421810	NY	SUFFOLK	Islip-203
+421811	NY	SUFFOLK	Islip-204
+421812	NY	SUFFOLK	Islip-205
+421813	NY	SUFFOLK	Islip-206
+421814	NY	SUFFOLK	Islip-207
+421815	NY	SUFFOLK	Islip-208
+421816	NY	SUFFOLK	Islip-209
+421817	NY	SUFFOLK	Islip-210
+421818	NY	SUFFOLK	Islip-211
+421819	NY	SUFFOLK	Islip-212
+421820	NY	SUFFOLK	Islip-213
+421821	NY	SUFFOLK	Islip-214
+421822	NY	SUFFOLK	Islip-215
+421823	NY	SUFFOLK	Islip-216
+421824	NY	SUFFOLK	Islip-217
+421825	NY	SUFFOLK	Islip-218
+421826	NY	SUFFOLK	Islip-220
+421827	NY	SUFFOLK	Islip-221
+421828	NY	SUFFOLK	Islip-222
+421829	NY	SUFFOLK	Islip-223
+421830	NY	SUFFOLK	Babylon-001
+421831	NY	SUFFOLK	Babylon-002
+421832	NY	SUFFOLK	Babylon-003
+421833	NY	SUFFOLK	Babylon-004
+421834	NY	SUFFOLK	Babylon-005
+421835	NY	SUFFOLK	Babylon-006
+421836	NY	SUFFOLK	Babylon-007
+421837	NY	SUFFOLK	Babylon-008
+421838	NY	SUFFOLK	Babylon-009
+421839	NY	SUFFOLK	Babylon-010
+421840	NY	SUFFOLK	Babylon-011
+421841	NY	SUFFOLK	Babylon-012
+421842	NY	SUFFOLK	Babylon-013
+421843	NY	SUFFOLK	Babylon-014
+421844	NY	SUFFOLK	Babylon-015
+421845	NY	SUFFOLK	Babylon-016
+421846	NY	SUFFOLK	Babylon-017
+421847	NY	SUFFOLK	Babylon-018
+421848	NY	SUFFOLK	Babylon-019
+421849	NY	SUFFOLK	Babylon-020
+421850	NY	SUFFOLK	Babylon-021
+421851	NY	SUFFOLK	Babylon-022
+421852	NY	SUFFOLK	Babylon-023
+421853	NY	SUFFOLK	Babylon-024
+421854	NY	SUFFOLK	Babylon-025
+421855	NY	SUFFOLK	Babylon-026
+421856	NY	SUFFOLK	Babylon-027
+421857	NY	SUFFOLK	Babylon-028
+421858	NY	SUFFOLK	Babylon-029
+421859	NY	SUFFOLK	Babylon-030
+421860	NY	SUFFOLK	Babylon-031
+421861	NY	SUFFOLK	Babylon-032
+421862	NY	SUFFOLK	Babylon-033
+421863	NY	SUFFOLK	Babylon-034
+421864	NY	SUFFOLK	Babylon-035
+421865	NY	SUFFOLK	Babylon-036
+421866	NY	SUFFOLK	Babylon-037
+421867	NY	SUFFOLK	Babylon-038
+421868	NY	SUFFOLK	Babylon-039
+421869	NY	SUFFOLK	Babylon-040
+421870	NY	SUFFOLK	Babylon-041
+421871	NY	SUFFOLK	Babylon-042
+421872	NY	SUFFOLK	Babylon-043
+421873	NY	SUFFOLK	Babylon-044
+421874	NY	SUFFOLK	Babylon-045
+421875	NY	SUFFOLK	Babylon-046
+421876	NY	SUFFOLK	Babylon-047
+421877	NY	SUFFOLK	Babylon-048
+421878	NY	SUFFOLK	Babylon-049
+421879	NY	SUFFOLK	Babylon-050
+421880	NY	SUFFOLK	Babylon-051
+421881	NY	SUFFOLK	Babylon-052
+421882	NY	SUFFOLK	Babylon-053
+421883	NY	SUFFOLK	Babylon-054
+421884	NY	SUFFOLK	Babylon-055
+421885	NY	SUFFOLK	Babylon-056
+421886	NY	SUFFOLK	Babylon-057
+421887	NY	SUFFOLK	Babylon-058
+421888	NY	SUFFOLK	Babylon-059
+421889	NY	SUFFOLK	Babylon-060
+421890	NY	SUFFOLK	Babylon-061
+421891	NY	SUFFOLK	Babylon-062
+421892	NY	SUFFOLK	Babylon-063
+421893	NY	SUFFOLK	Babylon-064
+421894	NY	SUFFOLK	Babylon-065
+421895	NY	SUFFOLK	Babylon-066
+421896	NY	SUFFOLK	Babylon-067
+421897	NY	SUFFOLK	Babylon-068
+421898	NY	SUFFOLK	Babylon-069
+421899	NY	SUFFOLK	Babylon-070
+421900	NY	SUFFOLK	Babylon-071
+421901	NY	SUFFOLK	Babylon-072
+421902	NY	SUFFOLK	Babylon-073
+421903	NY	SUFFOLK	Babylon-074
+421904	NY	SUFFOLK	Babylon-075
+421905	NY	SUFFOLK	Babylon-076
+421906	NY	SUFFOLK	Babylon-077
+421907	NY	SUFFOLK	Babylon-078
+421908	NY	SUFFOLK	Babylon-079
+421909	NY	SUFFOLK	Babylon-080
+421910	NY	SUFFOLK	Babylon-081
+421911	NY	SUFFOLK	Babylon-082
+421912	NY	SUFFOLK	Babylon-083
+421913	NY	SUFFOLK	Babylon-084
+421914	NY	SUFFOLK	Babylon-085
+421915	NY	SUFFOLK	Babylon-086
+421916	NY	SUFFOLK	Babylon-087
+421917	NY	SUFFOLK	Babylon-088
+421918	NY	SUFFOLK	Babylon-089
+421919	NY	SUFFOLK	Babylon-090
+421920	NY	SUFFOLK	Babylon-091
+421921	NY	SUFFOLK	Babylon-092
+421922	NY	SUFFOLK	Babylon-093
+421923	NY	SUFFOLK	Babylon-094
+421924	NY	SUFFOLK	Babylon-095
+421925	NY	SUFFOLK	Babylon-096
+421926	NY	SUFFOLK	Babylon-097
+421927	NY	SUFFOLK	Babylon-098
+421928	NY	SUFFOLK	Babylon-099
+421929	NY	SUFFOLK	Babylon-100
+421930	NY	SUFFOLK	Babylon-101
+421931	NY	SUFFOLK	Babylon-102
+421932	NY	SUFFOLK	Babylon-103
+421933	NY	SUFFOLK	Babylon-104
+421934	NY	SUFFOLK	Babylon-105
+421935	NY	SUFFOLK	Babylon-106
+421936	NY	SUFFOLK	Babylon-107
+421937	NY	SUFFOLK	Babylon-108
+421938	NY	SUFFOLK	Babylon-109
+421939	NY	SUFFOLK	Babylon-110
+421940	NY	SUFFOLK	Babylon-111
+421941	NY	SUFFOLK	Babylon-112
+421942	NY	SUFFOLK	Babylon-113
+421943	NY	SUFFOLK	Babylon-114
+421944	NY	SUFFOLK	Babylon-115
+421945	NY	SUFFOLK	Babylon-116
+421946	NY	SUFFOLK	Babylon-117
+421947	NY	SUFFOLK	Babylon-118
+421948	NY	SUFFOLK	Babylon-119
+421949	NY	SUFFOLK	Babylon-120
+421950	NY	SUFFOLK	Babylon-121
+421951	NY	SUFFOLK	Babylon-122
+421952	NY	SUFFOLK	Babylon-123
+421953	NY	SUFFOLK	Babylon-124
+421954	NY	SUFFOLK	Babylon-125
+421955	NY	SUFFOLK	Babylon-126
+421956	NY	SUFFOLK	Babylon-127
+421957	NY	SUFFOLK	Babylon-128
+421958	NY	SUFFOLK	Babylon-129
+421959	NY	SUFFOLK	Babylon-130
+421960	NY	SUFFOLK	Babylon-131
+421961	NY	SUFFOLK	Babylon-132
+421962	NY	SUFFOLK	Babylon-133
+421963	NY	SUFFOLK	Babylon-134
+421964	NY	SUFFOLK	Babylon-135
+421965	NY	SUFFOLK	Babylon-136
+421966	NY	SUFFOLK	Babylon-137
+421967	NY	SUFFOLK	Babylon-138
+421968	NY	SUFFOLK	Babylon-139
+421969	NY	SUFFOLK	Babylon-140
+421970	NY	SUFFOLK	Babylon-141
+421971	NY	SUFFOLK	Babylon-142
+421972	NY	SUFFOLK	Babylon-143
+421973	NY	SUFFOLK	Babylon-144
+421974	NY	SUFFOLK	Babylon-145
+421975	NY	SUFFOLK	Babylon-146
+421976	NY	SUFFOLK	Babylon-147
+421977	NY	SUFFOLK	Babylon-148
+421978	NY	SUFFOLK	Babylon-149
+421979	NY	SUFFOLK	Babylon-150
+421980	NY	SUFFOLK	Babylon-151
+421981	NY	SUFFOLK	Babylon-152
+421982	NY	SUFFOLK	Babylon-153
+421983	NY	SUFFOLK	Babylon-154
+421984	NY	SUFFOLK	Smithtown-001
+421985	NY	SUFFOLK	Smithtown-002
+421986	NY	SUFFOLK	Smithtown-003
+421987	NY	SUFFOLK	Smithtown-004
+421988	NY	SUFFOLK	Smithtown-005
+421989	NY	SUFFOLK	Smithtown-006
+421990	NY	SUFFOLK	Smithtown-007
+421991	NY	SUFFOLK	Smithtown-008
+421992	NY	SUFFOLK	Smithtown-009
+421993	NY	SUFFOLK	Smithtown-010
+421994	NY	SUFFOLK	Smithtown-011
+421995	NY	SUFFOLK	Smithtown-012
+421996	NY	SUFFOLK	Smithtown-013
+421997	NY	SUFFOLK	Smithtown-014
+421998	NY	SUFFOLK	Smithtown-015
+421999	NY	SUFFOLK	Smithtown-016
+422000	NY	SUFFOLK	Smithtown-017
+422001	NY	SUFFOLK	Smithtown-018
+422002	NY	SUFFOLK	Smithtown-019
+422003	NY	SUFFOLK	Smithtown-020
+422004	NY	SUFFOLK	Smithtown-021
+422005	NY	SUFFOLK	Smithtown-022
+422006	NY	SUFFOLK	Smithtown-023
+422007	NY	SUFFOLK	Smithtown-024
+422008	NY	SUFFOLK	Smithtown-025
+422009	NY	SUFFOLK	Smithtown-026
+422010	NY	SUFFOLK	Smithtown-027
+422011	NY	SUFFOLK	Smithtown-028
+422012	NY	SUFFOLK	Smithtown-029
+422013	NY	SUFFOLK	Smithtown-030
+422014	NY	SUFFOLK	Smithtown-031
+422015	NY	SUFFOLK	Smithtown-032
+422016	NY	SUFFOLK	Smithtown-033
+422017	NY	SUFFOLK	Smithtown-034
+422018	NY	SUFFOLK	Smithtown-035
+422019	NY	SUFFOLK	Smithtown-036
+422020	NY	SUFFOLK	Smithtown-037
+422021	NY	SUFFOLK	Smithtown-038
+422022	NY	SUFFOLK	Smithtown-039
+422023	NY	SUFFOLK	Smithtown-040
+422024	NY	SUFFOLK	Smithtown-041
+422025	NY	SUFFOLK	Smithtown-042
+422026	NY	SUFFOLK	Smithtown-043
+422027	NY	SUFFOLK	Smithtown-044
+422028	NY	SUFFOLK	Smithtown-045
+422029	NY	SUFFOLK	Smithtown-046
+422030	NY	SUFFOLK	Smithtown-047
+422031	NY	SUFFOLK	Smithtown-048
+422032	NY	SUFFOLK	Smithtown-049
+422033	NY	SUFFOLK	Smithtown-050
+422034	NY	SUFFOLK	Smithtown-051
+422035	NY	SUFFOLK	Smithtown-052
+422036	NY	SUFFOLK	Smithtown-053
+422037	NY	SUFFOLK	Smithtown-054
+422038	NY	SUFFOLK	Smithtown-055
+422039	NY	SUFFOLK	Smithtown-056
+422040	NY	SUFFOLK	Smithtown-057
+422041	NY	SUFFOLK	Smithtown-058
+422042	NY	SUFFOLK	Smithtown-059
+422043	NY	SUFFOLK	Smithtown-060
+422044	NY	SUFFOLK	Smithtown-061
+422045	NY	SUFFOLK	Smithtown-062
+422046	NY	SUFFOLK	Smithtown-063
+422047	NY	SUFFOLK	Smithtown-064
+422048	NY	SUFFOLK	Smithtown-065
+422049	NY	SUFFOLK	Smithtown-066
+422050	NY	SUFFOLK	Smithtown-067
+422051	NY	SUFFOLK	Smithtown-068
+422052	NY	SUFFOLK	Smithtown-069
+422053	NY	SUFFOLK	Smithtown-070
+422054	NY	SUFFOLK	Smithtown-071
+422055	NY	SUFFOLK	Smithtown-072
+422056	NY	SUFFOLK	Smithtown-073
+422057	NY	SUFFOLK	Smithtown-074
+422058	NY	SUFFOLK	Smithtown-075
+422059	NY	SUFFOLK	Smithtown-076
+422060	NY	SUFFOLK	Smithtown-077
+422061	NY	SUFFOLK	Smithtown-078
+422062	NY	SUFFOLK	Smithtown-079
+422063	NY	SUFFOLK	Smithtown-080
+422064	NY	SUFFOLK	Smithtown-081
+422065	NY	SUFFOLK	Smithtown-082
+422066	NY	SUFFOLK	Smithtown-083
+422067	NY	SUFFOLK	Smithtown-084
+422068	NY	SUFFOLK	Smithtown-085
+422069	NY	SUFFOLK	Smithtown-086
+422070	NY	SUFFOLK	Smithtown-087
+422071	NY	SUFFOLK	Smithtown-088
+422072	NY	SUFFOLK	Smithtown-089
+422073	NY	SUFFOLK	Smithtown-090
+422074	NY	SUFFOLK	Smithtown-091
+422075	NY	SUFFOLK	Smithtown-092
+422076	NY	SUFFOLK	Southampton-001
+422077	NY	SUFFOLK	Southampton-002
+422078	NY	SUFFOLK	Southampton-003
+422079	NY	SUFFOLK	Southampton-004
+422080	NY	SUFFOLK	Southampton-005
+422081	NY	SUFFOLK	Southampton-006
+422082	NY	SUFFOLK	Southampton-007
+422083	NY	SUFFOLK	Southampton-008
+422084	NY	SUFFOLK	Southampton-009
+422085	NY	SUFFOLK	Southampton-010
+422086	NY	SUFFOLK	Southampton-011
+422087	NY	SUFFOLK	Southampton-012
+422088	NY	SUFFOLK	Southampton-013
+422089	NY	SUFFOLK	Southampton-014
+422090	NY	SUFFOLK	Southampton-015
+422091	NY	SUFFOLK	Southampton-016
+422092	NY	SUFFOLK	Southampton-017
+422093	NY	SUFFOLK	Southampton-018
+422094	NY	SUFFOLK	Southampton-019
+422095	NY	SUFFOLK	Southampton-020
+422096	NY	SUFFOLK	Southampton-021
+422097	NY	SUFFOLK	Southampton-022
+422098	NY	SUFFOLK	Southampton-023
+422099	NY	SUFFOLK	Southampton-024
+422100	NY	SUFFOLK	Southampton-025
+422101	NY	SUFFOLK	Southampton-026
+422102	NY	SUFFOLK	Southampton-027
+422103	NY	SUFFOLK	Southampton-028
+422104	NY	SUFFOLK	Southampton-029
+422105	NY	SUFFOLK	Southampton-030
+422106	NY	SUFFOLK	Southampton-031
+422107	NY	SUFFOLK	Southampton-032
+422108	NY	SUFFOLK	Southampton-033
+422109	NY	SUFFOLK	Southampton-034
+422110	NY	SUFFOLK	Southampton-035
+422111	NY	SUFFOLK	Southampton-036
+422112	NY	SUFFOLK	Southampton-037
+422113	NY	SUFFOLK	Southampton-038
+422114	NY	SUFFOLK	Southampton-039
+422115	NY	SUFFOLK	Southampton-040
+422116	NY	SUFFOLK	Southampton-041
+422117	NY	SUFFOLK	East Hampton-001
+422118	NY	SUFFOLK	East Hampton-002
+422119	NY	SUFFOLK	East Hampton-003
+422120	NY	SUFFOLK	East Hampton-004
+422121	NY	SUFFOLK	East Hampton-005
+422122	NY	SUFFOLK	East Hampton-006
+422123	NY	SUFFOLK	East Hampton-007
+422124	NY	SUFFOLK	East Hampton-008
+422125	NY	SUFFOLK	East Hampton-009
+422126	NY	SUFFOLK	East Hampton-010
+422127	NY	SUFFOLK	East Hampton-011
+422128	NY	SUFFOLK	East Hampton-012
+422129	NY	SUFFOLK	East Hampton-013
+422130	NY	SUFFOLK	East Hampton-014
+422131	NY	SUFFOLK	East Hampton-015
+422132	NY	SUFFOLK	East Hampton-016
+422133	NY	SUFFOLK	East Hampton-017
+422134	NY	SUFFOLK	East Hampton-018
+422135	NY	SUFFOLK	East Hampton-019
+422136	NY	SUFFOLK	Southold-001
+422137	NY	SUFFOLK	Southold-002
+422138	NY	SUFFOLK	Southold-003
+422139	NY	SUFFOLK	Southold-004
+422140	NY	SUFFOLK	Southold-005
+422141	NY	SUFFOLK	Southold-006
+422142	NY	SUFFOLK	Southold-007
+422143	NY	SUFFOLK	Southold-008
+422144	NY	SUFFOLK	Southold-009
+422145	NY	SUFFOLK	Southold-010
+422146	NY	SUFFOLK	Southold-011
+422147	NY	SUFFOLK	Southold-012
+422148	NY	SUFFOLK	Southold-013
+422149	NY	SUFFOLK	Southold-014
+422150	NY	SUFFOLK	Southold-015
+422151	NY	SUFFOLK	Southold-016
+422152	NY	SUFFOLK	Southold-017
+422153	NY	SUFFOLK	Southold-018
+422154	NY	SUFFOLK	Southold-019
+422155	NY	SUFFOLK	Riverhead-001
+422156	NY	SUFFOLK	Riverhead-002
+422157	NY	SUFFOLK	Riverhead-003
+422158	NY	SUFFOLK	Riverhead-004
+422159	NY	SUFFOLK	Riverhead-005
+422160	NY	SUFFOLK	Riverhead-006
+422161	NY	SUFFOLK	Riverhead-007
+422162	NY	SUFFOLK	Riverhead-008
+422163	NY	SUFFOLK	Riverhead-009
+422164	NY	SUFFOLK	Riverhead-010
+422165	NY	SUFFOLK	Riverhead-011
+422166	NY	SUFFOLK	Riverhead-012
+422167	NY	SUFFOLK	Riverhead-013
+422168	NY	SUFFOLK	Riverhead-014
+422169	NY	SUFFOLK	Riverhead-015
+422170	NY	SUFFOLK	Riverhead-016
+422171	NY	SUFFOLK	Riverhead-017
+422172	NY	SUFFOLK	Riverhead-018
+422173	NY	SUFFOLK	Riverhead-019
+422174	NY	SUFFOLK	Riverhead-020
+422175	NY	SUFFOLK	Riverhead-021
+422176	NY	SUFFOLK	Riverhead-022
+422177	NY	SULLIVAN	Bethel-01
+422178	NY	SULLIVAN	Bethel-02
+422179	NY	SULLIVAN	Bethel-03
+422180	NY	SULLIVAN	Bethel-04
+422181	NY	SULLIVAN	Callicoon-01
+422182	NY	SULLIVAN	Callicoon-02
+422183	NY	SULLIVAN	Callicoon-03
+422184	NY	SULLIVAN	Cochecton-01
+422185	NY	SULLIVAN	Delaware-01
+422186	NY	SULLIVAN	Delaware-02
+422187	NY	SULLIVAN	Fallsburg-01
+422188	NY	SULLIVAN	Fallsburg-02
+422189	NY	SULLIVAN	Fallsburg-03
+422190	NY	SULLIVAN	Fallsburg-04
+422191	NY	SULLIVAN	Fallsburg-05
+422192	NY	SULLIVAN	Fallsburg-06
+422193	NY	SULLIVAN	Fallsburg-07
+422194	NY	SULLIVAN	Fallsburg-08
+422195	NY	SULLIVAN	Fallsburg-09
+422196	NY	SULLIVAN	Forestburgh-01
+422197	NY	SULLIVAN	Fremont-02
+422198	NY	SULLIVAN	Highland-01
+422199	NY	SULLIVAN	Highland-02
+422200	NY	SULLIVAN	Liberty-01
+422201	NY	SULLIVAN	Liberty-02
+422202	NY	SULLIVAN	Liberty-03
+422203	NY	SULLIVAN	Liberty-04
+422204	NY	SULLIVAN	Liberty-05
+422205	NY	SULLIVAN	Liberty-06
+422206	NY	SULLIVAN	Liberty-07
+422207	NY	SULLIVAN	Liberty-08
+422208	NY	SULLIVAN	Liberty-09
+422209	NY	SULLIVAN	Lumberland-01
+422210	NY	SULLIVAN	Lumberland-02
+422211	NY	SULLIVAN	Mamakating-01
+422212	NY	SULLIVAN	Mamakating-02
+422213	NY	SULLIVAN	Mamakating-03
+422214	NY	SULLIVAN	Mamakating-04
+422215	NY	SULLIVAN	Mamakating-05
+422216	NY	SULLIVAN	Mamakating-06
+422217	NY	SULLIVAN	Mamakating-07
+422218	NY	SULLIVAN	Neversink-01
+422219	NY	SULLIVAN	Neversink-02
+422220	NY	SULLIVAN	Neversink-03
+422221	NY	SULLIVAN	Neversink-04
+422222	NY	SULLIVAN	Rockland-01
+422223	NY	SULLIVAN	Rockland-02
+422224	NY	SULLIVAN	Rockland-03
+422225	NY	SULLIVAN	Rockland-04
+422226	NY	SULLIVAN	Rockland-05
+422227	NY	SULLIVAN	Rockland-06
+422228	NY	SULLIVAN	Thompson-01
+422229	NY	SULLIVAN	Thompson-02
+422230	NY	SULLIVAN	Thompson-03
+422231	NY	SULLIVAN	Thompson-04
+422232	NY	SULLIVAN	Thompson-05
+422233	NY	SULLIVAN	Thompson-06
+422234	NY	SULLIVAN	Thompson-07
+422235	NY	SULLIVAN	Thompson-08
+422236	NY	SULLIVAN	Thompson-09
+422237	NY	SULLIVAN	Thompson-10
+422238	NY	SULLIVAN	Tusten-01
+422239	NY	TIOGA	Barton-01
+422240	NY	TIOGA	Barton-02
+422241	NY	TIOGA	Barton-03
+422242	NY	TIOGA	Barton-04
+422243	NY	TIOGA	Barton-05
+422244	NY	TIOGA	Barton-07
+422245	NY	TIOGA	Berkshire-01
+422246	NY	TIOGA	Candor-01
+422247	NY	TIOGA	Candor-02
+422248	NY	TIOGA	Candor-03
+422249	NY	TIOGA	Candor-04
+422250	NY	TIOGA	Newark Valley-01
+422251	NY	TIOGA	Newark Valley-02
+422252	NY	TIOGA	Newark Valley-03
+422253	NY	TIOGA	Nichols-01
+422254	NY	TIOGA	Nichols-02
+422255	NY	TIOGA	Owego-01
+422256	NY	TIOGA	Owego-02
+422257	NY	TIOGA	Owego-03
+422258	NY	TIOGA	Owego-04
+422259	NY	TIOGA	Owego-05
+422260	NY	TIOGA	Owego-06
+422261	NY	TIOGA	Owego-07
+422262	NY	TIOGA	Owego-08
+422263	NY	TIOGA	Owego-10
+422264	NY	TIOGA	Owego-11
+422265	NY	TIOGA	Owego-12
+422266	NY	TIOGA	Owego-13
+422267	NY	TIOGA	Owego-14
+422268	NY	TIOGA	Owego-15
+422269	NY	TIOGA	Owego-16
+422270	NY	TIOGA	Owego-17
+422271	NY	TIOGA	Owego-18
+422272	NY	TIOGA	Owego-19
+422273	NY	TIOGA	Richford-01
+422274	NY	TIOGA	Spencer-01
+422275	NY	TIOGA	Spencer-02
+422276	NY	TIOGA	Tioga-01
+422277	NY	TIOGA	Tioga-02
+422278	NY	TIOGA	Tioga-04
+422279	NY	TOMPKINS	Ithaca City-001-01
+422280	NY	TOMPKINS	Ithaca City-001-02
+422281	NY	TOMPKINS	Ithaca City-001-03
+422282	NY	TOMPKINS	Ithaca City-001-04
+422283	NY	TOMPKINS	Ithaca City-002-01
+422284	NY	TOMPKINS	Ithaca City-002-02
+422285	NY	TOMPKINS	Ithaca City-002-03
+422286	NY	TOMPKINS	Ithaca City-002-04
+422287	NY	TOMPKINS	Ithaca City-003-01
+422288	NY	TOMPKINS	Ithaca City-003-02
+422289	NY	TOMPKINS	Ithaca City-003-03
+422290	NY	TOMPKINS	Ithaca City-004-01
+422291	NY	TOMPKINS	Ithaca City-005-01
+422292	NY	TOMPKINS	Ithaca City-005-02
+422293	NY	TOMPKINS	Ithaca City-005-03
+422294	NY	TOMPKINS	Caroline-01
+422295	NY	TOMPKINS	Caroline-02
+422296	NY	TOMPKINS	Caroline-03
+422297	NY	TOMPKINS	Danby-01
+422298	NY	TOMPKINS	Danby-02
+422299	NY	TOMPKINS	Danby-03
+422300	NY	TOMPKINS	Dryden-01
+422301	NY	TOMPKINS	Dryden-02
+422302	NY	TOMPKINS	Dryden-03
+422303	NY	TOMPKINS	Dryden-04
+422304	NY	TOMPKINS	Dryden-05
+422305	NY	TOMPKINS	Dryden-06
+422306	NY	TOMPKINS	Dryden-07
+422307	NY	TOMPKINS	Dryden-08
+422308	NY	TOMPKINS	Dryden-09
+422309	NY	TOMPKINS	Dryden-10
+422310	NY	TOMPKINS	Enfield-01
+422311	NY	TOMPKINS	Enfield-02
+422312	NY	TOMPKINS	Groton-01
+422313	NY	TOMPKINS	Groton-02
+422314	NY	TOMPKINS	Groton-03
+422315	NY	TOMPKINS	Groton-04
+422316	NY	TOMPKINS	Ithaca Town-01
+422317	NY	TOMPKINS	Ithaca Town-02
+422318	NY	TOMPKINS	Ithaca Town-03
+422319	NY	TOMPKINS	Ithaca Town-04
+422320	NY	TOMPKINS	Ithaca Town-05
+422321	NY	TOMPKINS	Ithaca Town-06
+422322	NY	TOMPKINS	Ithaca Town-07
+422323	NY	TOMPKINS	Ithaca Town-08
+422324	NY	TOMPKINS	Ithaca Town-09
+422325	NY	TOMPKINS	Ithaca Town-10
+422326	NY	TOMPKINS	Ithaca Town-11
+422327	NY	TOMPKINS	Ithaca Town-12
+422328	NY	TOMPKINS	Lansing-01
+422329	NY	TOMPKINS	Lansing-02
+422330	NY	TOMPKINS	Lansing-03
+422331	NY	TOMPKINS	Lansing-04
+422332	NY	TOMPKINS	Lansing-05
+422333	NY	TOMPKINS	Lansing-06
+422334	NY	TOMPKINS	Lansing-07
+422335	NY	TOMPKINS	Lansing-08
+422336	NY	TOMPKINS	Newfield-01
+422337	NY	TOMPKINS	Newfield-02
+422338	NY	TOMPKINS	Newfield-03
+422339	NY	TOMPKINS	Ulysses-01
+422340	NY	TOMPKINS	Ulysses-02
+422341	NY	TOMPKINS	Ulysses-03
+422342	NY	TOMPKINS	Ulysses-04
+422343	NY	ULSTER	Denning-01
+422344	NY	ULSTER	Denning-02
+422345	NY	ULSTER	Esopus-01
+422346	NY	ULSTER	Esopus-02
+422347	NY	ULSTER	Esopus-03
+422348	NY	ULSTER	Esopus-04
+422349	NY	ULSTER	Esopus-05
+422350	NY	ULSTER	Esopus-06
+422351	NY	ULSTER	Esopus-07
+422352	NY	ULSTER	Gardiner-01
+422353	NY	ULSTER	Gardiner-02
+422354	NY	ULSTER	Gardiner-03
+422355	NY	ULSTER	Gardiner-04
+422356	NY	ULSTER	Hardenburgh-01
+422357	NY	ULSTER	Hardenburgh-02
+422358	NY	ULSTER	Hurley-01
+422359	NY	ULSTER	Hurley-02
+422360	NY	ULSTER	Hurley-03
+422361	NY	ULSTER	Hurley-04
+422362	NY	ULSTER	Hurley-05
+422363	NY	ULSTER	Hurley-06
+422364	NY	ULSTER	Hurley-07
+422365	NY	ULSTER	Hurley-08
+422366	NY	ULSTER	Kingston-01
+422367	NY	ULSTER	Lloyd-01
+422368	NY	ULSTER	Lloyd-02
+422369	NY	ULSTER	Lloyd-03
+422370	NY	ULSTER	Lloyd-04
+422371	NY	ULSTER	Lloyd-05
+422372	NY	ULSTER	Lloyd-06
+422373	NY	ULSTER	Lloyd-07
+422374	NY	ULSTER	Marbletown-01
+422375	NY	ULSTER	Marbletown-02
+422376	NY	ULSTER	Marbletown-03
+422377	NY	ULSTER	Marbletown-04
+422378	NY	ULSTER	Marbletown-05
+422379	NY	ULSTER	Marbletown-06
+422380	NY	ULSTER	Marbletown-07
+422381	NY	ULSTER	Marlborough-01
+422382	NY	ULSTER	Marlborough-02
+422383	NY	ULSTER	Marlborough-03
+422384	NY	ULSTER	Marlborough-04
+422385	NY	ULSTER	Marlborough-05
+422386	NY	ULSTER	Marlborough-06
+422387	NY	ULSTER	New Paltz-01
+422388	NY	ULSTER	New Paltz-02
+422389	NY	ULSTER	New Paltz-03
+422390	NY	ULSTER	New Paltz-04
+422391	NY	ULSTER	New Paltz-05
+422392	NY	ULSTER	New Paltz-06
+422393	NY	ULSTER	New Paltz-07
+422394	NY	ULSTER	New Paltz-08
+422395	NY	ULSTER	New Paltz-09
+422396	NY	ULSTER	New Paltz-10
+422397	NY	ULSTER	Olive-01
+422398	NY	ULSTER	Olive-02
+422399	NY	ULSTER	Olive-03
+422400	NY	ULSTER	Olive-04
+422401	NY	ULSTER	Olive-05
+422402	NY	ULSTER	Plattekill-01
+422403	NY	ULSTER	Plattekill-02
+422404	NY	ULSTER	Plattekill-03
+422405	NY	ULSTER	Plattekill-04
+422406	NY	ULSTER	Plattekill-05
+422407	NY	ULSTER	Plattekill-06
+422408	NY	ULSTER	Rochester-01
+422409	NY	ULSTER	Rochester-02
+422410	NY	ULSTER	Rochester-03
+422411	NY	ULSTER	Rochester-04
+422412	NY	ULSTER	Rochester-05
+422413	NY	ULSTER	Rosendale-01
+422414	NY	ULSTER	Rosendale-02
+422415	NY	ULSTER	Rosendale-03
+422416	NY	ULSTER	Rosendale-04
+422417	NY	ULSTER	Rosendale-05
+422418	NY	ULSTER	Saugerties-01
+422419	NY	ULSTER	Saugerties-02
+422420	NY	ULSTER	Saugerties-03
+422421	NY	ULSTER	Saugerties-04
+422422	NY	ULSTER	Saugerties-05
+422423	NY	ULSTER	Saugerties-06
+422424	NY	ULSTER	Saugerties-07
+422425	NY	ULSTER	Saugerties-08
+422426	NY	ULSTER	Saugerties-09
+422427	NY	ULSTER	Saugerties-10
+422428	NY	ULSTER	Saugerties-11
+422429	NY	ULSTER	Saugerties-12
+422430	NY	ULSTER	Saugerties-13
+422431	NY	ULSTER	Saugerties-14
+422432	NY	ULSTER	Saugerties-15
+422433	NY	ULSTER	Saugerties-16
+422434	NY	ULSTER	Shandaken-01
+422435	NY	ULSTER	Shandaken-02
+422436	NY	ULSTER	Shandaken-03
+422437	NY	ULSTER	Shandaken-04
+422438	NY	ULSTER	Shawangunk-01
+422439	NY	ULSTER	Shawangunk-02
+422440	NY	ULSTER	Shawangunk-03
+422441	NY	ULSTER	Shawangunk-04
+422442	NY	ULSTER	Shawangunk-05
+422443	NY	ULSTER	Shawangunk-06
+422444	NY	ULSTER	Shawangunk-07
+422445	NY	ULSTER	Ulster-01
+422446	NY	ULSTER	Ulster-02
+422447	NY	ULSTER	Ulster-03
+422448	NY	ULSTER	Ulster-04
+422449	NY	ULSTER	Ulster-05
+422450	NY	ULSTER	Ulster-06
+422451	NY	ULSTER	Ulster-07
+422452	NY	ULSTER	Ulster-08
+422453	NY	ULSTER	Ulster-09
+422454	NY	ULSTER	Ulster-10
+422455	NY	ULSTER	Ulster-11
+422456	NY	ULSTER	Ulster-12
+422457	NY	ULSTER	Ulster-13
+422458	NY	ULSTER	Ulster-14
+422459	NY	ULSTER	Wawarsing-01
+422460	NY	ULSTER	Wawarsing-02
+422461	NY	ULSTER	Wawarsing-03
+422462	NY	ULSTER	Wawarsing-04
+422463	NY	ULSTER	Wawarsing-05
+422464	NY	ULSTER	Wawarsing-06
+422465	NY	ULSTER	Wawarsing-07
+422466	NY	ULSTER	Wawarsing-08
+422467	NY	ULSTER	Wawarsing-09
+422468	NY	ULSTER	Wawarsing-10
+422469	NY	ULSTER	Wawarsing-11
+422470	NY	ULSTER	Wawarsing-12
+422471	NY	ULSTER	Woodstock-01
+422472	NY	ULSTER	Woodstock-02
+422473	NY	ULSTER	Woodstock-03
+422474	NY	ULSTER	Woodstock-04
+422475	NY	ULSTER	Woodstock-05
+422476	NY	ULSTER	Woodstock-06
+422477	NY	ULSTER	Woodstock-07
+422478	NY	ULSTER	Woodstock-08
+422479	NY	ULSTER	Woodstock-09
+422480	NY	ULSTER	City/Kng-001-01
+422481	NY	ULSTER	City/Kng-001-02
+422482	NY	ULSTER	City/Kng-001-03
+422483	NY	ULSTER	City/Kng-002-01
+422484	NY	ULSTER	City/Kng-002-02
+422485	NY	ULSTER	City/Kng-002-03
+422486	NY	ULSTER	City/Kng-003-01
+422487	NY	ULSTER	City/Kng-003-02
+422488	NY	ULSTER	City/Kng-003-03
+422489	NY	ULSTER	City/Kng-004-01
+422490	NY	ULSTER	City/Kng-004-02
+422491	NY	ULSTER	City/Kng-005-01
+422492	NY	ULSTER	City/Kng-005-02
+422493	NY	ULSTER	City/Kng-005-03
+422494	NY	ULSTER	City/Kng-006-01
+422495	NY	ULSTER	City/Kng-006-02
+422496	NY	ULSTER	City/Kng-006-03
+422497	NY	ULSTER	City/Kng-007-01
+422498	NY	ULSTER	City/Kng-007-02
+422499	NY	ULSTER	City/Kng-007-03
+422500	NY	ULSTER	City/Kng-008-01
+422501	NY	ULSTER	City/Kng-008-02
+422502	NY	ULSTER	City/Kng-008-03
+422503	NY	ULSTER	City/Kng-009-01
+422504	NY	ULSTER	City/Kng-009-02
+422505	NY	ULSTER	City/Kng-009-03
+422506	NY	WARREN	Bolton-01
+422507	NY	WARREN	Bolton-02
+422508	NY	WARREN	Chester-01
+422509	NY	WARREN	Chester-02
+422510	NY	WARREN	Hague-01
+422511	NY	WARREN	Horicon-01
+422512	NY	WARREN	Horicon-02
+422513	NY	WARREN	Johnsburg-01
+422514	NY	WARREN	Johnsburg-02
+422515	NY	WARREN	Lake George-01
+422516	NY	WARREN	Lake George-02
+422517	NY	WARREN	Queensbury-001-01
+422518	NY	WARREN	Queensbury-001-02
+422519	NY	WARREN	Queensbury-001-03
+422520	NY	WARREN	Queensbury-001-04
+422521	NY	WARREN	Queensbury-002-01
+422522	NY	WARREN	Queensbury-002-02
+422523	NY	WARREN	Queensbury-002-03
+422524	NY	WARREN	Queensbury-002-04
+422525	NY	WARREN	Queensbury-003-01
+422526	NY	WARREN	Queensbury-003-02
+422527	NY	WARREN	Queensbury-003-03
+422528	NY	WARREN	Queensbury-003-04
+422529	NY	WARREN	Queensbury-004-01
+422530	NY	WARREN	Queensbury-004-02
+422531	NY	WARREN	Queensbury-004-03
+422532	NY	WARREN	Queensbury-004-04
+422533	NY	WARREN	Queensbury-004-05
+422534	NY	WARREN	Queensbury-004-06
+422535	NY	WARREN	Stony Creek-01
+422536	NY	WARREN	Thurman-01
+422537	NY	WARREN	Warrensburg-01
+422538	NY	WARREN	Warrensburg-02
+422539	NY	WARREN	Warrensburg-03
+422540	NY	WARREN	Glens Falls-001-01
+422541	NY	WARREN	Glens Falls-002-01
+422542	NY	WARREN	Glens Falls-002-02
+422543	NY	WARREN	Glens Falls-003-01
+422544	NY	WARREN	Glens Falls-003-02
+422545	NY	WARREN	Glens Falls-004-01
+422546	NY	WARREN	Glens Falls-005-01
+422547	NY	WARREN	Glens Falls-005-02
+422548	NY	WASHINGTON	Argyle-01
+422549	NY	WASHINGTON	Argyle-02
+422550	NY	WASHINGTON	Argyle-03
+422551	NY	WASHINGTON	Cambridge-01
+422552	NY	WASHINGTON	Cambridge-02
+422553	NY	WASHINGTON	Dresden-01
+422554	NY	WASHINGTON	Easton-01
+422555	NY	WASHINGTON	Easton-02
+422556	NY	WASHINGTON	Fort Ann-01
+422557	NY	WASHINGTON	Fort Ann-02
+422558	NY	WASHINGTON	Fort Ann-03
+422559	NY	WASHINGTON	Fort Edward-01
+422560	NY	WASHINGTON	Fort Edward-02
+422561	NY	WASHINGTON	Fort Edward-03
+422562	NY	WASHINGTON	Fort Edward-04
+422563	NY	WASHINGTON	Fort Edward-05
+422564	NY	WASHINGTON	Granville-01
+422565	NY	WASHINGTON	Granville-02
+422566	NY	WASHINGTON	Granville-03
+422567	NY	WASHINGTON	Granville-04
+422568	NY	WASHINGTON	Granville-05
+422569	NY	WASHINGTON	Greenwich-01
+422570	NY	WASHINGTON	Greenwich-02
+422571	NY	WASHINGTON	Greenwich-03
+422572	NY	WASHINGTON	Greenwich-04
+422573	NY	WASHINGTON	Greenwich-05
+422574	NY	WASHINGTON	Hampton-01
+422575	NY	WASHINGTON	Hartford-01
+422576	NY	WASHINGTON	Hartford-02
+422577	NY	WASHINGTON	Hebron-01
+422578	NY	WASHINGTON	Jackson-01
+422579	NY	WASHINGTON	Kingsbury-01
+422580	NY	WASHINGTON	Kingsbury-02
+422581	NY	WASHINGTON	Kingsbury-03
+422582	NY	WASHINGTON	Kingsbury-04
+422583	NY	WASHINGTON	Kingsbury-05
+422584	NY	WASHINGTON	Kingsbury-06
+422585	NY	WASHINGTON	Kingsbury-07
+422586	NY	WASHINGTON	Kingsbury-08
+422587	NY	WASHINGTON	Kingsbury-09
+422588	NY	WASHINGTON	Putnam-01
+422589	NY	WASHINGTON	Salem-01
+422590	NY	WASHINGTON	Salem-02
+422591	NY	WASHINGTON	Salem-03
+422592	NY	WASHINGTON	White Creek-01
+422593	NY	WASHINGTON	White Creek-02
+422594	NY	WASHINGTON	White Creek-03
+422595	NY	WASHINGTON	Whitehall-01
+422596	NY	WASHINGTON	Whitehall-02
+422597	NY	WASHINGTON	Whitehall-03
+422598	NY	WAYNE	Arcadia-01
+422599	NY	WAYNE	Arcadia-02
+422600	NY	WAYNE	Arcadia-03
+422601	NY	WAYNE	Arcadia-04
+422602	NY	WAYNE	Arcadia-05
+422603	NY	WAYNE	Arcadia-06
+422604	NY	WAYNE	Arcadia-07
+422605	NY	WAYNE	Arcadia-08
+422606	NY	WAYNE	Arcadia-09
+422607	NY	WAYNE	Arcadia-10
+422608	NY	WAYNE	Butler-01
+422609	NY	WAYNE	Galen-01
+422610	NY	WAYNE	Galen-02
+422611	NY	WAYNE	Galen-03
+422612	NY	WAYNE	Galen-04
+422613	NY	WAYNE	Huron-01
+422614	NY	WAYNE	Huron-02
+422615	NY	WAYNE	Lyons-01
+422616	NY	WAYNE	Lyons-02
+422617	NY	WAYNE	Lyons-03
+422618	NY	WAYNE	Lyons-04
+422619	NY	WAYNE	Lyons-05
+422620	NY	WAYNE	MacEdon-01
+422621	NY	WAYNE	MacEdon-02
+422622	NY	WAYNE	MacEdon-03
+422623	NY	WAYNE	MacEdon-04
+422624	NY	WAYNE	MacEdon-05
+422625	NY	WAYNE	Marion-01
+422626	NY	WAYNE	Marion-02
+422627	NY	WAYNE	Marion-03
+422628	NY	WAYNE	Marion-04
+422629	NY	WAYNE	Ontario-01
+422630	NY	WAYNE	Ontario-02
+422631	NY	WAYNE	Ontario-03
+422632	NY	WAYNE	Ontario-04
+422633	NY	WAYNE	Ontario-05
+422634	NY	WAYNE	Ontario-06
+422635	NY	WAYNE	Palmyra-01
+422636	NY	WAYNE	Palmyra-02
+422637	NY	WAYNE	Palmyra-03
+422638	NY	WAYNE	Palmyra-04
+422639	NY	WAYNE	Palmyra-05
+422640	NY	WAYNE	Palmyra-06
+422641	NY	WAYNE	Rose-01
+422642	NY	WAYNE	Rose-02
+422643	NY	WAYNE	Savannah-01
+422644	NY	WAYNE	Savannah-02
+422645	NY	WAYNE	Sodus-01
+422646	NY	WAYNE	Sodus-02
+422647	NY	WAYNE	Sodus-03
+422648	NY	WAYNE	Sodus-04
+422649	NY	WAYNE	Sodus-05
+422650	NY	WAYNE	Sodus-06
+422651	NY	WAYNE	Walworth-01
+422652	NY	WAYNE	Walworth-02
+422653	NY	WAYNE	Walworth-03
+422654	NY	WAYNE	Walworth-04
+422655	NY	WAYNE	Walworth-05
+422656	NY	WAYNE	Williamson-01
+422657	NY	WAYNE	Williamson-02
+422658	NY	WAYNE	Williamson-03
+422659	NY	WAYNE	Williamson-04
+422660	NY	WAYNE	Williamson-05
+422661	NY	WAYNE	Wolcott-01
+422662	NY	WAYNE	Wolcott-02
+422663	NY	WAYNE	Wolcott-03
+422664	NY	WAYNE	Wolcott-04
+422665	NY	WESTCHESTER	Bdfd-01
+422666	NY	WESTCHESTER	Bdfd-02
+422667	NY	WESTCHESTER	Bdfd-03
+422668	NY	WESTCHESTER	Bdfd-04
+422669	NY	WESTCHESTER	Bdfd-05
+422670	NY	WESTCHESTER	Bdfd-06
+422671	NY	WESTCHESTER	Bdfd-07
+422672	NY	WESTCHESTER	Bdfd-08
+422673	NY	WESTCHESTER	Bdfd-09
+422674	NY	WESTCHESTER	Bdfd-10
+422675	NY	WESTCHESTER	Bdfd-11
+422676	NY	WESTCHESTER	Bdfd-12
+422677	NY	WESTCHESTER	Bdfd-13
+422678	NY	WESTCHESTER	Bdfd-14
+422679	NY	WESTCHESTER	Bdfd-15
+422680	NY	WESTCHESTER	Bdfd-16
+422681	NY	WESTCHESTER	Bdfd-17
+422682	NY	WESTCHESTER	Bdfd-18
+422683	NY	WESTCHESTER	Cort-01
+422684	NY	WESTCHESTER	Cort-02
+422685	NY	WESTCHESTER	Cort-03
+422686	NY	WESTCHESTER	Cort-04
+422687	NY	WESTCHESTER	Cort-05
+422688	NY	WESTCHESTER	Cort-06
+422689	NY	WESTCHESTER	Cort-07
+422690	NY	WESTCHESTER	Cort-08
+422691	NY	WESTCHESTER	Cort-09
+422692	NY	WESTCHESTER	Cort-10
+422693	NY	WESTCHESTER	Cort-11
+422694	NY	WESTCHESTER	Cort-12
+422695	NY	WESTCHESTER	Cort-13
+422696	NY	WESTCHESTER	Cort-14
+422697	NY	WESTCHESTER	Cort-15
+422698	NY	WESTCHESTER	Cort-16
+422699	NY	WESTCHESTER	Cort-17
+422700	NY	WESTCHESTER	Cort-18
+422701	NY	WESTCHESTER	Cort-19
+422702	NY	WESTCHESTER	Cort-20
+422703	NY	WESTCHESTER	Cort-21
+422704	NY	WESTCHESTER	Cort-22
+422705	NY	WESTCHESTER	Cort-23
+422706	NY	WESTCHESTER	Cort-24
+422707	NY	WESTCHESTER	Cort-25
+422708	NY	WESTCHESTER	Cort-26
+422709	NY	WESTCHESTER	Cort-27
+422710	NY	WESTCHESTER	Cort-28
+422711	NY	WESTCHESTER	Cort-29
+422712	NY	WESTCHESTER	Cort-30
+422713	NY	WESTCHESTER	Cort-31
+422714	NY	WESTCHESTER	Cort-32
+422715	NY	WESTCHESTER	Cort-33
+422716	NY	WESTCHESTER	Cort-34
+422717	NY	WESTCHESTER	Cort-35
+422718	NY	WESTCHESTER	Cort-38
+422719	NY	WESTCHESTER	Estc-01
+422720	NY	WESTCHESTER	Estc-02
+422721	NY	WESTCHESTER	Estc-03
+422722	NY	WESTCHESTER	Estc-04
+422723	NY	WESTCHESTER	Estc-05
+422724	NY	WESTCHESTER	Estc-06
+422725	NY	WESTCHESTER	Estc-07
+422726	NY	WESTCHESTER	Estc-08
+422727	NY	WESTCHESTER	Estc-09
+422728	NY	WESTCHESTER	Estc-10
+422729	NY	WESTCHESTER	Estc-11
+422730	NY	WESTCHESTER	Estc-12
+422731	NY	WESTCHESTER	Estc-13
+422732	NY	WESTCHESTER	Estc-14
+422733	NY	WESTCHESTER	Estc-15
+422734	NY	WESTCHESTER	Estc-16
+422735	NY	WESTCHESTER	Estc-17
+422736	NY	WESTCHESTER	Estc-18
+422737	NY	WESTCHESTER	Estc-19
+422738	NY	WESTCHESTER	Estc-20
+422739	NY	WESTCHESTER	Estc-21
+422740	NY	WESTCHESTER	Estc-22
+422741	NY	WESTCHESTER	Estc-23
+422742	NY	WESTCHESTER	Estc-24
+422743	NY	WESTCHESTER	Estc-25
+422744	NY	WESTCHESTER	Estc-26
+422745	NY	WESTCHESTER	Estc-27
+422746	NY	WESTCHESTER	Estc-28
+422747	NY	WESTCHESTER	Estc-29
+422748	NY	WESTCHESTER	Estc-30
+422749	NY	WESTCHESTER	Estc-31
+422750	NY	WESTCHESTER	Estc-32
+422751	NY	WESTCHESTER	Estc-33
+422752	NY	WESTCHESTER	Estc-34
+422753	NY	WESTCHESTER	Estc-35
+422754	NY	WESTCHESTER	Estc-36
+422755	NY	WESTCHESTER	Estc-37
+422756	NY	WESTCHESTER	Estc-38
+422757	NY	WESTCHESTER	Estc-39
+422758	NY	WESTCHESTER	Grnb-01
+422759	NY	WESTCHESTER	Grnb-02
+422760	NY	WESTCHESTER	Grnb-03
+422761	NY	WESTCHESTER	Grnb-04
+422762	NY	WESTCHESTER	Grnb-05
+422763	NY	WESTCHESTER	Grnb-06
+422764	NY	WESTCHESTER	Grnb-07
+422765	NY	WESTCHESTER	Grnb-08
+422766	NY	WESTCHESTER	Grnb-09
+422767	NY	WESTCHESTER	Grnb-10
+422768	NY	WESTCHESTER	Grnb-11
+422769	NY	WESTCHESTER	Grnb-12
+422770	NY	WESTCHESTER	Grnb-13
+422771	NY	WESTCHESTER	Grnb-14
+422772	NY	WESTCHESTER	Grnb-15
+422773	NY	WESTCHESTER	Grnb-16
+422774	NY	WESTCHESTER	Grnb-17
+422775	NY	WESTCHESTER	Grnb-18
+422776	NY	WESTCHESTER	Grnb-19
+422777	NY	WESTCHESTER	Grnb-20
+422778	NY	WESTCHESTER	Grnb-21
+422779	NY	WESTCHESTER	Grnb-22
+422780	NY	WESTCHESTER	Grnb-23
+422781	NY	WESTCHESTER	Grnb-24
+422782	NY	WESTCHESTER	Grnb-25
+422783	NY	WESTCHESTER	Grnb-26
+422784	NY	WESTCHESTER	Grnb-27
+422785	NY	WESTCHESTER	Grnb-28
+422786	NY	WESTCHESTER	Grnb-29
+422787	NY	WESTCHESTER	Grnb-30
+422788	NY	WESTCHESTER	Grnb-31
+422789	NY	WESTCHESTER	Grnb-32
+422790	NY	WESTCHESTER	Grnb-33
+422791	NY	WESTCHESTER	Grnb-34
+422792	NY	WESTCHESTER	Grnb-35
+422793	NY	WESTCHESTER	Grnb-36
+422794	NY	WESTCHESTER	Grnb-37
+422795	NY	WESTCHESTER	Grnb-38
+422796	NY	WESTCHESTER	Grnb-39
+422797	NY	WESTCHESTER	Grnb-40
+422798	NY	WESTCHESTER	Grnb-41
+422799	NY	WESTCHESTER	Grnb-42
+422800	NY	WESTCHESTER	Grnb-43
+422801	NY	WESTCHESTER	Grnb-44
+422802	NY	WESTCHESTER	Grnb-45
+422803	NY	WESTCHESTER	Grnb-46
+422804	NY	WESTCHESTER	Grnb-47
+422805	NY	WESTCHESTER	Grnb-48
+422806	NY	WESTCHESTER	Grnb-49
+422807	NY	WESTCHESTER	Grnb-50
+422808	NY	WESTCHESTER	Grnb-51
+422809	NY	WESTCHESTER	Grnb-52
+422810	NY	WESTCHESTER	Grnb-53
+422811	NY	WESTCHESTER	Grnb-54
+422812	NY	WESTCHESTER	Grnb-55
+422813	NY	WESTCHESTER	Grnb-56
+422814	NY	WESTCHESTER	Grnb-57
+422815	NY	WESTCHESTER	Grnb-58
+422816	NY	WESTCHESTER	Grnb-59
+422817	NY	WESTCHESTER	Grnb-60
+422818	NY	WESTCHESTER	Grnb-61
+422819	NY	WESTCHESTER	Grnb-62
+422820	NY	WESTCHESTER	Grnb-63
+422821	NY	WESTCHESTER	Grnb-64
+422822	NY	WESTCHESTER	Grnb-65
+422823	NY	WESTCHESTER	Grnb-66
+422824	NY	WESTCHESTER	Grnb-67
+422825	NY	WESTCHESTER	Grnb-68
+422826	NY	WESTCHESTER	Grnb-69
+422827	NY	WESTCHESTER	Grnb-70
+422828	NY	WESTCHESTER	Grnb-71
+422829	NY	WESTCHESTER	Grnb-72
+422830	NY	WESTCHESTER	Grnb-73
+422831	NY	WESTCHESTER	Grnb-74
+422832	NY	WESTCHESTER	Grnb-75
+422833	NY	WESTCHESTER	Grnb-76
+422834	NY	WESTCHESTER	Grnb-77
+422835	NY	WESTCHESTER	Grnb-78
+422836	NY	WESTCHESTER	Grnb-79
+422837	NY	WESTCHESTER	Grnb-80
+422838	NY	WESTCHESTER	Grnb-81
+422839	NY	WESTCHESTER	Harr-01
+422840	NY	WESTCHESTER	Harr-02
+422841	NY	WESTCHESTER	Harr-03
+422842	NY	WESTCHESTER	Harr-04
+422843	NY	WESTCHESTER	Harr-05
+422844	NY	WESTCHESTER	Harr-06
+422845	NY	WESTCHESTER	Harr-07
+422846	NY	WESTCHESTER	Harr-08
+422847	NY	WESTCHESTER	Harr-09
+422848	NY	WESTCHESTER	Harr-10
+422849	NY	WESTCHESTER	Harr-11
+422850	NY	WESTCHESTER	Harr-12
+422851	NY	WESTCHESTER	Harr-13
+422852	NY	WESTCHESTER	Harr-14
+422853	NY	WESTCHESTER	Harr-15
+422854	NY	WESTCHESTER	Harr-16
+422855	NY	WESTCHESTER	Harr-17
+422856	NY	WESTCHESTER	Harr-18
+422857	NY	WESTCHESTER	Harr-19
+422858	NY	WESTCHESTER	Lewb-01
+422859	NY	WESTCHESTER	Lewb-02
+422860	NY	WESTCHESTER	Lewb-03
+422861	NY	WESTCHESTER	Lewb-04
+422862	NY	WESTCHESTER	Lewb-05
+422863	NY	WESTCHESTER	Lewb-06
+422864	NY	WESTCHESTER	Lewb-07
+422865	NY	WESTCHESTER	Lewb-08
+422866	NY	WESTCHESTER	Lewb-09
+422867	NY	WESTCHESTER	Lewb-10
+422868	NY	WESTCHESTER	Lewb-11
+422869	NY	WESTCHESTER	Lewb-12
+422870	NY	WESTCHESTER	Mama-01
+422871	NY	WESTCHESTER	Mama-02
+422872	NY	WESTCHESTER	Mama-03
+422873	NY	WESTCHESTER	Mama-04
+422874	NY	WESTCHESTER	Mama-05
+422875	NY	WESTCHESTER	Mama-06
+422876	NY	WESTCHESTER	Mama-07
+422877	NY	WESTCHESTER	Mama-08
+422878	NY	WESTCHESTER	Mama-09
+422879	NY	WESTCHESTER	Mama-10
+422880	NY	WESTCHESTER	Mama-11
+422881	NY	WESTCHESTER	Mama-12
+422882	NY	WESTCHESTER	Mama-13
+422883	NY	WESTCHESTER	Mama-14
+422884	NY	WESTCHESTER	Mama-15
+422885	NY	WESTCHESTER	Mama-16
+422886	NY	WESTCHESTER	Mama-17
+422887	NY	WESTCHESTER	Mama-18
+422888	NY	WESTCHESTER	Mama-19
+422889	NY	WESTCHESTER	Mama-20
+422890	NY	WESTCHESTER	Mama-21
+422891	NY	WESTCHESTER	Mama-22
+422892	NY	WESTCHESTER	Mama-23
+422893	NY	WESTCHESTER	Mama-24
+422894	NY	WESTCHESTER	Mama-25
+422895	NY	WESTCHESTER	Mama-26
+422896	NY	WESTCHESTER	Mama-27
+422897	NY	WESTCHESTER	Mama-28
+422898	NY	WESTCHESTER	Mtks-01
+422899	NY	WESTCHESTER	Mtks-02
+422900	NY	WESTCHESTER	Mtks-03
+422901	NY	WESTCHESTER	Mtks-04
+422902	NY	WESTCHESTER	Mtks-05
+422903	NY	WESTCHESTER	Mtks-06
+422904	NY	WESTCHESTER	Mtks-07
+422905	NY	WESTCHESTER	Mtpl-01
+422906	NY	WESTCHESTER	Mtpl-02
+422907	NY	WESTCHESTER	Mtpl-03
+422908	NY	WESTCHESTER	Mtpl-04
+422909	NY	WESTCHESTER	Mtpl-05
+422910	NY	WESTCHESTER	Mtpl-06
+422911	NY	WESTCHESTER	Mtpl-07
+422912	NY	WESTCHESTER	Mtpl-09
+422913	NY	WESTCHESTER	Mtpl-10
+422914	NY	WESTCHESTER	Mtpl-11
+422915	NY	WESTCHESTER	Mtpl-12
+422916	NY	WESTCHESTER	Mtpl-13
+422917	NY	WESTCHESTER	Mtpl-14
+422918	NY	WESTCHESTER	Mtpl-15
+422919	NY	WESTCHESTER	Mtpl-16
+422920	NY	WESTCHESTER	Mtpl-17
+422921	NY	WESTCHESTER	Mtpl-18
+422922	NY	WESTCHESTER	Mtpl-19
+422923	NY	WESTCHESTER	Mtpl-20
+422924	NY	WESTCHESTER	Mtpl-22
+422925	NY	WESTCHESTER	Mtpl-23
+422926	NY	WESTCHESTER	Mtpl-24
+422927	NY	WESTCHESTER	Mtpl-25
+422928	NY	WESTCHESTER	Mtpl-26
+422929	NY	WESTCHESTER	Mtpl-27
+422930	NY	WESTCHESTER	Mtpl-28
+422931	NY	WESTCHESTER	Mtpl-29
+422932	NY	WESTCHESTER	Mtpl-30
+422933	NY	WESTCHESTER	Mtpl-31
+422934	NY	WESTCHESTER	Mtpl-32
+422935	NY	WESTCHESTER	Mtpl-33
+422936	NY	WESTCHESTER	Mtpl-34
+422937	NY	WESTCHESTER	Mtpl-35
+422938	NY	WESTCHESTER	Mtpl-36
+422939	NY	WESTCHESTER	Mtpl-37
+422940	NY	WESTCHESTER	Mtpl-38
+422941	NY	WESTCHESTER	Mtpl-39
+422942	NY	WESTCHESTER	Mtpl-40
+422943	NY	WESTCHESTER	Mtpl-41
+422944	NY	WESTCHESTER	Mtpl-42
+422945	NY	WESTCHESTER	Mtpl-43
+422946	NY	WESTCHESTER	Mtpl-44
+422947	NY	WESTCHESTER	Nctl-01
+422948	NY	WESTCHESTER	Nctl-02
+422949	NY	WESTCHESTER	Nctl-03
+422950	NY	WESTCHESTER	Nctl-04
+422951	NY	WESTCHESTER	Nctl-05
+422952	NY	WESTCHESTER	Nctl-06
+422953	NY	WESTCHESTER	Nctl-07
+422954	NY	WESTCHESTER	Nctl-08
+422955	NY	WESTCHESTER	Nctl-09
+422956	NY	WESTCHESTER	Nctl-10
+422957	NY	WESTCHESTER	Nctl-11
+422958	NY	WESTCHESTER	Nctl-12
+422959	NY	WESTCHESTER	Nctl-13
+422960	NY	WESTCHESTER	Nctl-14
+422961	NY	WESTCHESTER	Nctl-15
+422962	NY	WESTCHESTER	Nctl-16
+422963	NY	WESTCHESTER	Ncas-01
+422964	NY	WESTCHESTER	Ncas-02
+422965	NY	WESTCHESTER	Ncas-03
+422966	NY	WESTCHESTER	Ncas-04
+422967	NY	WESTCHESTER	Ncas-05
+422968	NY	WESTCHESTER	Ncas-06
+422969	NY	WESTCHESTER	Ncas-07
+422970	NY	WESTCHESTER	Ncas-08
+422971	NY	WESTCHESTER	Ncas-09
+422972	NY	WESTCHESTER	Ncas-10
+422973	NY	WESTCHESTER	Nsal-01
+422974	NY	WESTCHESTER	Nsal-02
+422975	NY	WESTCHESTER	Nsal-03
+422976	NY	WESTCHESTER	Nsal-04
+422977	NY	WESTCHESTER	Nsal-05
+422978	NY	WESTCHESTER	Nsal-06
+422979	NY	WESTCHESTER	Nsal-07
+422980	NY	WESTCHESTER	Nsal-08
+422981	NY	WESTCHESTER	Ossi-01
+422982	NY	WESTCHESTER	Ossi-02
+422983	NY	WESTCHESTER	Ossi-03
+422984	NY	WESTCHESTER	Ossi-04
+422985	NY	WESTCHESTER	Ossi-05
+422986	NY	WESTCHESTER	Ossi-06
+422987	NY	WESTCHESTER	Ossi-07
+422988	NY	WESTCHESTER	Ossi-08
+422989	NY	WESTCHESTER	Ossi-09
+422990	NY	WESTCHESTER	Ossi-10
+422991	NY	WESTCHESTER	Ossi-11
+422992	NY	WESTCHESTER	Ossi-12
+422993	NY	WESTCHESTER	Ossi-13
+422994	NY	WESTCHESTER	Ossi-14
+422995	NY	WESTCHESTER	Ossi-15
+422996	NY	WESTCHESTER	Ossi-16
+422997	NY	WESTCHESTER	Ossi-17
+422998	NY	WESTCHESTER	Ossi-18
+422999	NY	WESTCHESTER	Ossi-19
+423000	NY	WESTCHESTER	Ossi-20
+423001	NY	WESTCHESTER	Ossi-21
+423002	NY	WESTCHESTER	Ossi-22
+423003	NY	WESTCHESTER	Ossi-23
+423004	NY	WESTCHESTER	Ossi-24
+423005	NY	WESTCHESTER	Ossi-25
+423006	NY	WESTCHESTER	Ossi-26
+423007	NY	WESTCHESTER	Ossi-27
+423008	NY	WESTCHESTER	Ossi-28
+423009	NY	WESTCHESTER	Ossi-29
+423010	NY	WESTCHESTER	Ossi-30
+423011	NY	WESTCHESTER	Pelh-01
+423012	NY	WESTCHESTER	Pelh-02
+423013	NY	WESTCHESTER	Pelh-03
+423014	NY	WESTCHESTER	Pelh-04
+423015	NY	WESTCHESTER	Pelh-05
+423016	NY	WESTCHESTER	Pelh-06
+423017	NY	WESTCHESTER	Pelh-07
+423018	NY	WESTCHESTER	Pelh-08
+423019	NY	WESTCHESTER	Pelh-09
+423020	NY	WESTCHESTER	Pelh-10
+423021	NY	WESTCHESTER	Prdg-01
+423022	NY	WESTCHESTER	Prdg-02
+423023	NY	WESTCHESTER	Prdg-03
+423024	NY	WESTCHESTER	Prdg-04
+423025	NY	WESTCHESTER	Ryet-01
+423026	NY	WESTCHESTER	Ryet-02
+423027	NY	WESTCHESTER	Ryet-03
+423028	NY	WESTCHESTER	Ryet-04
+423029	NY	WESTCHESTER	Ryet-05
+423030	NY	WESTCHESTER	Ryet-06
+423031	NY	WESTCHESTER	Ryet-07
+423032	NY	WESTCHESTER	Ryet-08
+423033	NY	WESTCHESTER	Ryet-09
+423034	NY	WESTCHESTER	Ryet-10
+423035	NY	WESTCHESTER	Ryet-11
+423036	NY	WESTCHESTER	Ryet-12
+423037	NY	WESTCHESTER	Ryet-13
+423038	NY	WESTCHESTER	Ryet-14
+423039	NY	WESTCHESTER	Ryet-15
+423040	NY	WESTCHESTER	Ryet-16
+423041	NY	WESTCHESTER	Ryet-17
+423042	NY	WESTCHESTER	Ryet-18
+423043	NY	WESTCHESTER	Ryet-19
+423044	NY	WESTCHESTER	Ryet-20
+423045	NY	WESTCHESTER	Ryet-21
+423046	NY	WESTCHESTER	Ryet-22
+423047	NY	WESTCHESTER	Ryet-23
+423048	NY	WESTCHESTER	Ryet-24
+423049	NY	WESTCHESTER	Ryet-25
+423050	NY	WESTCHESTER	Ryet-26
+423051	NY	WESTCHESTER	Ryet-27
+423052	NY	WESTCHESTER	Ryet-28
+423053	NY	WESTCHESTER	Ryet-29
+423054	NY	WESTCHESTER	Ryet-30
+423055	NY	WESTCHESTER	Ryet-31
+423056	NY	WESTCHESTER	Scrd-01
+423057	NY	WESTCHESTER	Scrd-02
+423058	NY	WESTCHESTER	Scrd-03
+423059	NY	WESTCHESTER	Scrd-04
+423060	NY	WESTCHESTER	Scrd-05
+423061	NY	WESTCHESTER	Scrd-06
+423062	NY	WESTCHESTER	Scrd-07
+423063	NY	WESTCHESTER	Scrd-08
+423064	NY	WESTCHESTER	Scrd-09
+423065	NY	WESTCHESTER	Scrd-10
+423066	NY	WESTCHESTER	Scrd-11
+423067	NY	WESTCHESTER	Scrd-12
+423068	NY	WESTCHESTER	Scrd-13
+423069	NY	WESTCHESTER	Scrd-14
+423070	NY	WESTCHESTER	Scrd-15
+423071	NY	WESTCHESTER	Scrd-16
+423072	NY	WESTCHESTER	Scrd-17
+423073	NY	WESTCHESTER	Scrd-18
+423074	NY	WESTCHESTER	Somr-01
+423075	NY	WESTCHESTER	Somr-02
+423076	NY	WESTCHESTER	Somr-03
+423077	NY	WESTCHESTER	Somr-04
+423078	NY	WESTCHESTER	Somr-05
+423079	NY	WESTCHESTER	Somr-06
+423080	NY	WESTCHESTER	Somr-07
+423081	NY	WESTCHESTER	Somr-08
+423082	NY	WESTCHESTER	Somr-09
+423083	NY	WESTCHESTER	Somr-10
+423084	NY	WESTCHESTER	Somr-11
+423085	NY	WESTCHESTER	Somr-12
+423086	NY	WESTCHESTER	Somr-13
+423087	NY	WESTCHESTER	Somr-14
+423088	NY	WESTCHESTER	Somr-15
+423089	NY	WESTCHESTER	Somr-16
+423090	NY	WESTCHESTER	Somr-17
+423091	NY	WESTCHESTER	Somr-18
+423092	NY	WESTCHESTER	Ytwn-01
+423093	NY	WESTCHESTER	Ytwn-02
+423094	NY	WESTCHESTER	Ytwn-03
+423095	NY	WESTCHESTER	Ytwn-04
+423096	NY	WESTCHESTER	Ytwn-05
+423097	NY	WESTCHESTER	Ytwn-06
+423098	NY	WESTCHESTER	Ytwn-07
+423099	NY	WESTCHESTER	Ytwn-08
+423100	NY	WESTCHESTER	Ytwn-09
+423101	NY	WESTCHESTER	Ytwn-10
+423102	NY	WESTCHESTER	Ytwn-11
+423103	NY	WESTCHESTER	Ytwn-12
+423104	NY	WESTCHESTER	Ytwn-13
+423105	NY	WESTCHESTER	Ytwn-14
+423106	NY	WESTCHESTER	Ytwn-15
+423107	NY	WESTCHESTER	Ytwn-16
+423108	NY	WESTCHESTER	Ytwn-17
+423109	NY	WESTCHESTER	Ytwn-18
+423110	NY	WESTCHESTER	Ytwn-19
+423111	NY	WESTCHESTER	Ytwn-20
+423112	NY	WESTCHESTER	Ytwn-21
+423113	NY	WESTCHESTER	Ytwn-22
+423114	NY	WESTCHESTER	Ytwn-23
+423115	NY	WESTCHESTER	Ytwn-24
+423116	NY	WESTCHESTER	Ytwn-25
+423117	NY	WESTCHESTER	Ytwn-26
+423118	NY	WESTCHESTER	Ytwn-27
+423119	NY	WESTCHESTER	Ytwn-28
+423120	NY	WESTCHESTER	Ytwn-29
+423121	NY	WESTCHESTER	Ytwn-30
+423122	NY	WESTCHESTER	Ytwn-31
+423123	NY	WESTCHESTER	Ytwn-32
+423124	NY	WESTCHESTER	Ytwn-33
+423125	NY	WESTCHESTER	Ytwn-34
+423126	NY	WESTCHESTER	Ytwn-35
+423127	NY	WESTCHESTER	Ytwn-36
+423128	NY	WESTCHESTER	Ytwn-37
+423129	NY	WESTCHESTER	Ytwn-38
+423130	NY	WESTCHESTER	Ytwn-39
+423131	NY	WESTCHESTER	Ytwn-40
+423132	NY	WESTCHESTER	Ytwn-41
+423133	NY	WESTCHESTER	Ytwn-42
+423134	NY	WESTCHESTER	Mtve-01
+423135	NY	WESTCHESTER	Mtve-02
+423136	NY	WESTCHESTER	Mtve-03
+423137	NY	WESTCHESTER	Mtve-04
+423138	NY	WESTCHESTER	Mtve-05
+423139	NY	WESTCHESTER	Mtve-06
+423140	NY	WESTCHESTER	Mtve-07
+423141	NY	WESTCHESTER	Mtve-08
+423142	NY	WESTCHESTER	Mtve-09
+423143	NY	WESTCHESTER	Mtve-10
+423144	NY	WESTCHESTER	Mtve-11
+423145	NY	WESTCHESTER	Mtve-12
+423146	NY	WESTCHESTER	Mtve-13
+423147	NY	WESTCHESTER	Mtve-14
+423148	NY	WESTCHESTER	Mtve-15
+423149	NY	WESTCHESTER	Mtve-16
+423150	NY	WESTCHESTER	Mtve-17
+423151	NY	WESTCHESTER	Mtve-18
+423152	NY	WESTCHESTER	Mtve-19
+423153	NY	WESTCHESTER	Mtve-20
+423154	NY	WESTCHESTER	Mtve-21
+423155	NY	WESTCHESTER	Mtve-22
+423156	NY	WESTCHESTER	Mtve-23
+423157	NY	WESTCHESTER	Mtve-24
+423158	NY	WESTCHESTER	Mtve-25
+423159	NY	WESTCHESTER	Mtve-26
+423160	NY	WESTCHESTER	Mtve-27
+423161	NY	WESTCHESTER	Mtve-28
+423162	NY	WESTCHESTER	Mtve-29
+423163	NY	WESTCHESTER	Mtve-30
+423164	NY	WESTCHESTER	Mtve-31
+423165	NY	WESTCHESTER	Mtve-32
+423166	NY	WESTCHESTER	Mtve-33
+423167	NY	WESTCHESTER	Mtve-34
+423168	NY	WESTCHESTER	Mtve-35
+423169	NY	WESTCHESTER	Mtve-36
+423170	NY	WESTCHESTER	Mtve-37
+423171	NY	WESTCHESTER	Mtve-38
+423172	NY	WESTCHESTER	Mtve-39
+423173	NY	WESTCHESTER	Mtve-40
+423174	NY	WESTCHESTER	Mtve-41
+423175	NY	WESTCHESTER	Mtve-42
+423176	NY	WESTCHESTER	Mtve-43
+423177	NY	WESTCHESTER	Mtve-44
+423178	NY	WESTCHESTER	Mtve-45
+423179	NY	WESTCHESTER	Mtve-46
+423180	NY	WESTCHESTER	Mtve-47
+423181	NY	WESTCHESTER	Mtve-48
+423182	NY	WESTCHESTER	Mtve-49
+423183	NY	WESTCHESTER	Mtve-50
+423184	NY	WESTCHESTER	Mtve-51
+423185	NY	WESTCHESTER	Mtve-52
+423186	NY	WESTCHESTER	Mtve-53
+423187	NY	WESTCHESTER	Mtve-54
+423188	NY	WESTCHESTER	Mtve-55
+423189	NY	WESTCHESTER	Mtve-56
+423190	NY	WESTCHESTER	Mtve-57
+423191	NY	WESTCHESTER	Mtve-58
+423192	NY	WESTCHESTER	Mtve-59
+423193	NY	WESTCHESTER	Mtve-60
+423194	NY	WESTCHESTER	Mtve-61
+423195	NY	WESTCHESTER	Mtve-62
+423196	NY	WESTCHESTER	Mtve-64
+423197	NY	WESTCHESTER	Mtve-65
+423198	NY	WESTCHESTER	Mtve-66
+423199	NY	WESTCHESTER	Mtve-67
+423200	NY	WESTCHESTER	Mtve-68
+423201	NY	WESTCHESTER	Mtve-69
+423202	NY	WESTCHESTER	Mtve-70
+423203	NY	WESTCHESTER	Mtve-71
+423204	NY	WESTCHESTER	Mtve-72
+423205	NY	WESTCHESTER	Mtve-73
+423206	NY	WESTCHESTER	Mtve-74
+423207	NY	WESTCHESTER	Newr-01
+423208	NY	WESTCHESTER	Newr-02
+423209	NY	WESTCHESTER	Newr-03
+423210	NY	WESTCHESTER	Newr-04
+423211	NY	WESTCHESTER	Newr-05
+423212	NY	WESTCHESTER	Newr-06
+423213	NY	WESTCHESTER	Newr-07
+423214	NY	WESTCHESTER	Newr-08
+423215	NY	WESTCHESTER	Newr-09
+423216	NY	WESTCHESTER	Newr-10
+423217	NY	WESTCHESTER	Newr-11
+423218	NY	WESTCHESTER	Newr-12
+423219	NY	WESTCHESTER	Newr-13
+423220	NY	WESTCHESTER	Newr-14
+423221	NY	WESTCHESTER	Newr-15
+423222	NY	WESTCHESTER	Newr-16
+423223	NY	WESTCHESTER	Newr-18
+423224	NY	WESTCHESTER	Newr-19
+423225	NY	WESTCHESTER	Newr-21
+423226	NY	WESTCHESTER	Newr-22
+423227	NY	WESTCHESTER	Newr-23
+423228	NY	WESTCHESTER	Newr-24
+423229	NY	WESTCHESTER	Newr-25
+423230	NY	WESTCHESTER	Newr-26
+423231	NY	WESTCHESTER	Newr-27
+423232	NY	WESTCHESTER	Newr-28
+423233	NY	WESTCHESTER	Newr-29
+423234	NY	WESTCHESTER	Newr-30
+423235	NY	WESTCHESTER	Newr-31
+423236	NY	WESTCHESTER	Newr-32
+423237	NY	WESTCHESTER	Newr-33
+423238	NY	WESTCHESTER	Newr-34
+423239	NY	WESTCHESTER	Newr-35
+423240	NY	WESTCHESTER	Newr-36
+423241	NY	WESTCHESTER	Newr-37
+423242	NY	WESTCHESTER	Newr-38
+423243	NY	WESTCHESTER	Newr-39
+423244	NY	WESTCHESTER	Newr-40
+423245	NY	WESTCHESTER	Newr-41
+423246	NY	WESTCHESTER	Newr-42
+423247	NY	WESTCHESTER	Newr-43
+423248	NY	WESTCHESTER	Newr-44
+423249	NY	WESTCHESTER	Newr-45
+423250	NY	WESTCHESTER	Newr-46
+423251	NY	WESTCHESTER	Newr-47
+423252	NY	WESTCHESTER	Newr-48
+423253	NY	WESTCHESTER	Newr-49
+423254	NY	WESTCHESTER	Newr-50
+423255	NY	WESTCHESTER	Newr-51
+423256	NY	WESTCHESTER	Newr-52
+423257	NY	WESTCHESTER	Newr-53
+423258	NY	WESTCHESTER	Newr-54
+423259	NY	WESTCHESTER	Newr-55
+423260	NY	WESTCHESTER	Newr-56
+423261	NY	WESTCHESTER	Newr-57
+423262	NY	WESTCHESTER	Newr-58
+423263	NY	WESTCHESTER	Newr-59
+423264	NY	WESTCHESTER	Newr-60
+423265	NY	WESTCHESTER	Newr-61
+423266	NY	WESTCHESTER	Newr-63
+423267	NY	WESTCHESTER	Newr-64
+423268	NY	WESTCHESTER	Newr-65
+423269	NY	WESTCHESTER	Newr-66
+423270	NY	WESTCHESTER	Newr-67
+423271	NY	WESTCHESTER	Newr-68
+423272	NY	WESTCHESTER	Newr-69
+423273	NY	WESTCHESTER	Newr-70
+423274	NY	WESTCHESTER	Newr-71
+423275	NY	WESTCHESTER	Newr-72
+423276	NY	WESTCHESTER	Newr-73
+423277	NY	WESTCHESTER	Newr-74
+423278	NY	WESTCHESTER	Peek-01
+423279	NY	WESTCHESTER	Peek-02
+423280	NY	WESTCHESTER	Peek-03
+423281	NY	WESTCHESTER	Peek-04
+423282	NY	WESTCHESTER	Peek-05
+423283	NY	WESTCHESTER	Peek-06
+423284	NY	WESTCHESTER	Peek-07
+423285	NY	WESTCHESTER	Peek-08
+423286	NY	WESTCHESTER	Peek-09
+423287	NY	WESTCHESTER	Peek-10
+423288	NY	WESTCHESTER	Peek-11
+423289	NY	WESTCHESTER	Peek-13
+423290	NY	WESTCHESTER	Peek-14
+423291	NY	WESTCHESTER	Peek-15
+423292	NY	WESTCHESTER	Peek-16
+423293	NY	WESTCHESTER	Peek-17
+423294	NY	WESTCHESTER	Peek-18
+423295	NY	WESTCHESTER	Peek-19
+423296	NY	WESTCHESTER	Peek-20
+423297	NY	WESTCHESTER	Peek-21
+423298	NY	WESTCHESTER	Peek-22
+423299	NY	WESTCHESTER	Peek-23
+423300	NY	WESTCHESTER	Rye-01
+423301	NY	WESTCHESTER	Rye-02
+423302	NY	WESTCHESTER	Rye-03
+423303	NY	WESTCHESTER	Rye-04
+423304	NY	WESTCHESTER	Rye-05
+423305	NY	WESTCHESTER	Rye-06
+423306	NY	WESTCHESTER	Rye-07
+423307	NY	WESTCHESTER	Rye-08
+423308	NY	WESTCHESTER	Rye-09
+423309	NY	WESTCHESTER	Rye-10
+423310	NY	WESTCHESTER	Rye-11
+423311	NY	WESTCHESTER	Rye-12
+423312	NY	WESTCHESTER	Rye-13
+423313	NY	WESTCHESTER	Rye-14
+423314	NY	WESTCHESTER	Whpl-01
+423315	NY	WESTCHESTER	Whpl-02
+423316	NY	WESTCHESTER	Whpl-03
+423317	NY	WESTCHESTER	Whpl-04
+423318	NY	WESTCHESTER	Whpl-05
+423319	NY	WESTCHESTER	Whpl-06
+423320	NY	WESTCHESTER	Whpl-07
+423321	NY	WESTCHESTER	Whpl-08
+423322	NY	WESTCHESTER	Whpl-09
+423323	NY	WESTCHESTER	Whpl-10
+423324	NY	WESTCHESTER	Whpl-11
+423325	NY	WESTCHESTER	Whpl-12
+423326	NY	WESTCHESTER	Whpl-13
+423327	NY	WESTCHESTER	Whpl-14
+423328	NY	WESTCHESTER	Whpl-15
+423329	NY	WESTCHESTER	Whpl-16
+423330	NY	WESTCHESTER	Whpl-17
+423331	NY	WESTCHESTER	Whpl-18
+423332	NY	WESTCHESTER	Whpl-19
+423333	NY	WESTCHESTER	Whpl-20
+423334	NY	WESTCHESTER	Whpl-21
+423335	NY	WESTCHESTER	Whpl-22
+423336	NY	WESTCHESTER	Whpl-23
+423337	NY	WESTCHESTER	Whpl-24
+423338	NY	WESTCHESTER	Whpl-25
+423339	NY	WESTCHESTER	Whpl-26
+423340	NY	WESTCHESTER	Whpl-27
+423341	NY	WESTCHESTER	Whpl-28
+423342	NY	WESTCHESTER	Whpl-29
+423343	NY	WESTCHESTER	Whpl-30
+423344	NY	WESTCHESTER	Whpl-31
+423345	NY	WESTCHESTER	Whpl-32
+423346	NY	WESTCHESTER	Whpl-33
+423347	NY	WESTCHESTER	Whpl-34
+423348	NY	WESTCHESTER	Whpl-35
+423349	NY	WESTCHESTER	Whpl-36
+423350	NY	WESTCHESTER	Whpl-37
+423351	NY	WESTCHESTER	Whpl-38
+423352	NY	WESTCHESTER	Whpl-39
+423353	NY	WESTCHESTER	Whpl-40
+423354	NY	WESTCHESTER	Whpl-41
+423355	NY	WESTCHESTER	Whpl-42
+423356	NY	WESTCHESTER	Whpl-43
+423357	NY	WESTCHESTER	Yonk-01-01
+423358	NY	WESTCHESTER	Yonk-01-02
+423359	NY	WESTCHESTER	Yonk-01-03
+423360	NY	WESTCHESTER	Yonk-01-04
+423361	NY	WESTCHESTER	Yonk-01-05
+423362	NY	WESTCHESTER	Yonk-01-06
+423363	NY	WESTCHESTER	Yonk-01-07
+423364	NY	WESTCHESTER	Yonk-01-08
+423365	NY	WESTCHESTER	Yonk-01-09
+423366	NY	WESTCHESTER	Yonk-01-10
+423367	NY	WESTCHESTER	Yonk-01-11
+423368	NY	WESTCHESTER	Yonk-01-12
+423369	NY	WESTCHESTER	Yonk-01-18
+423370	NY	WESTCHESTER	Yonk-01-22
+423371	NY	WESTCHESTER	Yonk-01-26
+423372	NY	WESTCHESTER	Yonk-02-01
+423373	NY	WESTCHESTER	Yonk-02-02
+423374	NY	WESTCHESTER	Yonk-02-03
+423375	NY	WESTCHESTER	Yonk-02-04
+423376	NY	WESTCHESTER	Yonk-02-05
+423377	NY	WESTCHESTER	Yonk-02-06
+423378	NY	WESTCHESTER	Yonk-02-07
+423379	NY	WESTCHESTER	Yonk-02-08
+423380	NY	WESTCHESTER	Yonk-02-09
+423381	NY	WESTCHESTER	Yonk-02-10
+423382	NY	WESTCHESTER	Yonk-02-11
+423383	NY	WESTCHESTER	Yonk-02-12
+423384	NY	WESTCHESTER	Yonk-02-13
+423385	NY	WESTCHESTER	Yonk-02-14
+423386	NY	WESTCHESTER	Yonk-02-16
+423387	NY	WESTCHESTER	Yonk-02-18
+423388	NY	WESTCHESTER	Yonk-02-20
+423389	NY	WESTCHESTER	Yonk-02-24
+423390	NY	WESTCHESTER	Yonk-02-26
+423391	NY	WESTCHESTER	Yonk-02-29
+423392	NY	WESTCHESTER	Yonk-03-01
+423393	NY	WESTCHESTER	Yonk-03-02
+423394	NY	WESTCHESTER	Yonk-03-03
+423395	NY	WESTCHESTER	Yonk-03-04
+423396	NY	WESTCHESTER	Yonk-03-06
+423397	NY	WESTCHESTER	Yonk-03-07
+423398	NY	WESTCHESTER	Yonk-03-08
+423399	NY	WESTCHESTER	Yonk-03-10
+423400	NY	WESTCHESTER	Yonk-03-11
+423401	NY	WESTCHESTER	Yonk-03-12
+423402	NY	WESTCHESTER	Yonk-03-13
+423403	NY	WESTCHESTER	Yonk-03-15
+423404	NY	WESTCHESTER	Yonk-03-16
+423405	NY	WESTCHESTER	Yonk-03-17
+423406	NY	WESTCHESTER	Yonk-03-19
+423407	NY	WESTCHESTER	Yonk-03-20
+423408	NY	WESTCHESTER	Yonk-03-21
+423409	NY	WESTCHESTER	Yonk-03-23
+423410	NY	WESTCHESTER	Yonk-03-24
+423411	NY	WESTCHESTER	Yonk-03-25
+423412	NY	WESTCHESTER	Yonk-03-26
+423413	NY	WESTCHESTER	Yonk-03-27
+423414	NY	WESTCHESTER	Yonk-03-28
+423415	NY	WESTCHESTER	Yonk-04-01
+423416	NY	WESTCHESTER	Yonk-04-02
+423417	NY	WESTCHESTER	Yonk-04-03
+423418	NY	WESTCHESTER	Yonk-04-04
+423419	NY	WESTCHESTER	Yonk-04-05
+423420	NY	WESTCHESTER	Yonk-04-06
+423421	NY	WESTCHESTER	Yonk-04-07
+423422	NY	WESTCHESTER	Yonk-04-08
+423423	NY	WESTCHESTER	Yonk-04-09
+423424	NY	WESTCHESTER	Yonk-04-10
+423425	NY	WESTCHESTER	Yonk-04-11
+423426	NY	WESTCHESTER	Yonk-04-12
+423427	NY	WESTCHESTER	Yonk-04-15
+423428	NY	WESTCHESTER	Yonk-04-16
+423429	NY	WESTCHESTER	Yonk-04-17
+423430	NY	WESTCHESTER	Yonk-04-18
+423431	NY	WESTCHESTER	Yonk-04-19
+423432	NY	WESTCHESTER	Yonk-04-21
+423433	NY	WESTCHESTER	Yonk-05-01
+423434	NY	WESTCHESTER	Yonk-05-02
+423435	NY	WESTCHESTER	Yonk-05-03
+423436	NY	WESTCHESTER	Yonk-05-04
+423437	NY	WESTCHESTER	Yonk-05-05
+423438	NY	WESTCHESTER	Yonk-05-06
+423439	NY	WESTCHESTER	Yonk-05-07
+423440	NY	WESTCHESTER	Yonk-05-08
+423441	NY	WESTCHESTER	Yonk-05-09
+423442	NY	WESTCHESTER	Yonk-05-10
+423443	NY	WESTCHESTER	Yonk-05-11
+423444	NY	WESTCHESTER	Yonk-05-12
+423445	NY	WESTCHESTER	Yonk-05-13
+423446	NY	WESTCHESTER	Yonk-05-14
+423447	NY	WESTCHESTER	Yonk-05-15
+423448	NY	WESTCHESTER	Yonk-05-16
+423449	NY	WESTCHESTER	Yonk-05-17
+423450	NY	WESTCHESTER	Yonk-05-18
+423451	NY	WESTCHESTER	Yonk-05-19
+423452	NY	WESTCHESTER	Yonk-05-20
+423453	NY	WESTCHESTER	Yonk-05-22
+423454	NY	WESTCHESTER	Yonk-05-23
+423455	NY	WESTCHESTER	Yonk-05-24
+423456	NY	WESTCHESTER	Yonk-06-01
+423457	NY	WESTCHESTER	Yonk-06-02
+423458	NY	WESTCHESTER	Yonk-06-03
+423459	NY	WESTCHESTER	Yonk-06-04
+423460	NY	WESTCHESTER	Yonk-06-06
+423461	NY	WESTCHESTER	Yonk-06-07
+423462	NY	WESTCHESTER	Yonk-06-08
+423463	NY	WESTCHESTER	Yonk-06-10
+423464	NY	WESTCHESTER	Yonk-06-11
+423465	NY	WESTCHESTER	Yonk-06-12
+423466	NY	WESTCHESTER	Yonk-06-13
+423467	NY	WESTCHESTER	Yonk-06-14
+423468	NY	WESTCHESTER	Yonk-06-16
+423469	NY	WESTCHESTER	Yonk-06-17
+423470	NY	WESTCHESTER	Yonk-06-18
+423471	NY	WESTCHESTER	Yonk-06-20
+423472	NY	WESTCHESTER	Yonk-06-21
+423473	NY	WESTCHESTER	Yonk-06-22
+423474	NY	WESTCHESTER	Yonk-06-24
+423475	NY	WESTCHESTER	Yonk-06-28
+423476	NY	WESTCHESTER	Yonk-06-32
+423477	NY	WESTCHESTER	Yonk-06-33
+423478	NY	WESTCHESTER	Yonk-07-01
+423479	NY	WESTCHESTER	Yonk-07-02
+423480	NY	WESTCHESTER	Yonk-07-03
+423481	NY	WESTCHESTER	Yonk-07-04
+423482	NY	WESTCHESTER	Yonk-07-05
+423483	NY	WESTCHESTER	Yonk-07-06
+423484	NY	WESTCHESTER	Yonk-07-07
+423485	NY	WESTCHESTER	Yonk-07-08
+423486	NY	WESTCHESTER	Yonk-07-09
+423487	NY	WESTCHESTER	Yonk-07-11
+423488	NY	WESTCHESTER	Yonk-07-13
+423489	NY	WESTCHESTER	Yonk-07-14
+423490	NY	WESTCHESTER	Yonk-07-15
+423491	NY	WESTCHESTER	Yonk-07-16
+423492	NY	WESTCHESTER	Yonk-07-17
+423493	NY	WESTCHESTER	Yonk-07-19
+423494	NY	WESTCHESTER	Yonk-07-20
+423495	NY	WESTCHESTER	Yonk-07-21
+423496	NY	WESTCHESTER	Yonk-07-23
+423497	NY	WESTCHESTER	Yonk-07-25
+423498	NY	WESTCHESTER	Yonk-07-26
+423499	NY	WESTCHESTER	Yonk-07-29
+423500	NY	WESTCHESTER	Yonk-07-30
+423501	NY	WESTCHESTER	Yonk-07-31
+423502	NY	WESTCHESTER	Yonk-08-01
+423503	NY	WESTCHESTER	Yonk-08-02
+423504	NY	WESTCHESTER	Yonk-08-03
+423505	NY	WESTCHESTER	Yonk-08-05
+423506	NY	WESTCHESTER	Yonk-08-06
+423507	NY	WESTCHESTER	Yonk-08-07
+423508	NY	WESTCHESTER	Yonk-08-09
+423509	NY	WESTCHESTER	Yonk-08-10
+423510	NY	WESTCHESTER	Yonk-08-11
+423511	NY	WESTCHESTER	Yonk-08-12
+423512	NY	WESTCHESTER	Yonk-08-13
+423513	NY	WESTCHESTER	Yonk-08-14
+423514	NY	WESTCHESTER	Yonk-08-15
+423515	NY	WESTCHESTER	Yonk-08-17
+423516	NY	WESTCHESTER	Yonk-08-22
+423517	NY	WESTCHESTER	Yonk-08-23
+423518	NY	WESTCHESTER	Yonk-08-24
+423519	NY	WESTCHESTER	Yonk-08-26
+423520	NY	WESTCHESTER	Yonk-08-28
+423521	NY	WESTCHESTER	Yonk-09-01
+423522	NY	WESTCHESTER	Yonk-09-02
+423523	NY	WESTCHESTER	Yonk-09-03
+423524	NY	WESTCHESTER	Yonk-09-04
+423525	NY	WESTCHESTER	Yonk-09-05
+423526	NY	WESTCHESTER	Yonk-09-06
+423527	NY	WESTCHESTER	Yonk-09-07
+423528	NY	WESTCHESTER	Yonk-09-08
+423529	NY	WESTCHESTER	Yonk-09-09
+423530	NY	WESTCHESTER	Yonk-09-10
+423531	NY	WESTCHESTER	Yonk-09-11
+423532	NY	WESTCHESTER	Yonk-09-12
+423533	NY	WESTCHESTER	Yonk-09-13
+423534	NY	WESTCHESTER	Yonk-09-15
+423535	NY	WESTCHESTER	Yonk-09-16
+423536	NY	WESTCHESTER	Yonk-09-17
+423537	NY	WESTCHESTER	Yonk-10-01
+423538	NY	WESTCHESTER	Yonk-10-02
+423539	NY	WESTCHESTER	Yonk-10-03
+423540	NY	WESTCHESTER	Yonk-10-04
+423541	NY	WESTCHESTER	Yonk-10-05
+423542	NY	WESTCHESTER	Yonk-10-06
+423543	NY	WESTCHESTER	Yonk-10-07
+423544	NY	WESTCHESTER	Yonk-10-08
+423545	NY	WESTCHESTER	Yonk-10-09
+423546	NY	WESTCHESTER	Yonk-10-11
+423547	NY	WESTCHESTER	Yonk-10-12
+423548	NY	WESTCHESTER	Yonk-10-13
+423549	NY	WESTCHESTER	Yonk-10-14
+423550	NY	WESTCHESTER	Yonk-10-15
+423551	NY	WESTCHESTER	Yonk-10-16
+423552	NY	WESTCHESTER	Yonk-10-17
+423553	NY	WESTCHESTER	Yonk-10-18
+423554	NY	WESTCHESTER	Yonk-10-20
+423555	NY	WESTCHESTER	Yonk-10-21
+423556	NY	WESTCHESTER	Yonk-10-25
+423557	NY	WESTCHESTER	Yonk-11-01
+423558	NY	WESTCHESTER	Yonk-11-02
+423559	NY	WESTCHESTER	Yonk-11-03
+423560	NY	WESTCHESTER	Yonk-11-04
+423561	NY	WESTCHESTER	Yonk-11-05
+423562	NY	WESTCHESTER	Yonk-11-06
+423563	NY	WESTCHESTER	Yonk-11-07
+423564	NY	WESTCHESTER	Yonk-11-08
+423565	NY	WESTCHESTER	Yonk-11-09
+423566	NY	WESTCHESTER	Yonk-11-10
+423567	NY	WESTCHESTER	Yonk-11-11
+423568	NY	WESTCHESTER	Yonk-11-12
+423569	NY	WESTCHESTER	Yonk-11-13
+423570	NY	WESTCHESTER	Yonk-11-14
+423571	NY	WESTCHESTER	Yonk-11-16
+423572	NY	WESTCHESTER	Yonk-11-17
+423573	NY	WESTCHESTER	Yonk-11-18
+423574	NY	WESTCHESTER	Yonk-11-19
+423575	NY	WESTCHESTER	Yonk-11-20
+423576	NY	WESTCHESTER	Yonk-11-21
+423577	NY	WESTCHESTER	Yonk-12-01
+423578	NY	WESTCHESTER	Yonk-12-02
+423579	NY	WESTCHESTER	Yonk-12-03
+423580	NY	WESTCHESTER	Yonk-12-04
+423581	NY	WESTCHESTER	Yonk-12-05
+423582	NY	WESTCHESTER	Yonk-12-06
+423583	NY	WESTCHESTER	Yonk-12-07
+423584	NY	WESTCHESTER	Yonk-12-08
+423585	NY	WESTCHESTER	Yonk-12-09
+423586	NY	WESTCHESTER	Yonk-12-10
+423587	NY	WESTCHESTER	Yonk-12-11
+423588	NY	WESTCHESTER	Yonk-12-12
+423589	NY	WESTCHESTER	Yonk-12-13
+423590	NY	WESTCHESTER	Yonk-12-15
+423591	NY	WESTCHESTER	Yonk-12-16
+423592	NY	WESTCHESTER	Yonk-12-17
+423593	NY	WESTCHESTER	Yonk-12-18
+423594	NY	WESTCHESTER	Yonk-12-19
+423595	NY	WYOMING	Arca-01
+423596	NY	WYOMING	Arca-02
+423597	NY	WYOMING	Arca-03
+423598	NY	WYOMING	Atti-01
+423599	NY	WYOMING	Atti-02
+423600	NY	WYOMING	Atti-03
+423601	NY	WYOMING	Atti-04
+423602	NY	WYOMING	Benn-01
+423603	NY	WYOMING	Benn-02
+423604	NY	WYOMING	Benn-03
+423605	NY	WYOMING	Cast-01
+423606	NY	WYOMING	Cast-02
+423607	NY	WYOMING	Cast-03
+423608	NY	WYOMING	Covi-01
+423609	NY	WYOMING	Eagl-01
+423610	NY	WYOMING	Gain-01
+423611	NY	WYOMING	Gain-02
+423612	NY	WYOMING	Gain-03
+423613	NY	WYOMING	Gain-04
+423614	NY	WYOMING	Gene-01
+423615	NY	WYOMING	Java-01
+423616	NY	WYOMING	Java-02
+423617	NY	WYOMING	Midd-01
+423618	NY	WYOMING	Midd-02
+423619	NY	WYOMING	Oran-01
+423620	NY	WYOMING	Perr-01
+423621	NY	WYOMING	Perr-02
+423622	NY	WYOMING	Perr-03
+423623	NY	WYOMING	Perr-04
+423624	NY	WYOMING	Pike-01
+423625	NY	WYOMING	Shel-01
+423626	NY	WYOMING	Shel-02
+423627	NY	WYOMING	Shel-03
+423628	NY	WYOMING	Wars-01
+423629	NY	WYOMING	Wars-02
+423630	NY	WYOMING	Wars-03
+423631	NY	WYOMING	Wars-04
+423632	NY	WYOMING	Wars-05
+423633	NY	WYOMING	Weth-01
+423634	NY	YATES	Barrington-01
+423635	NY	YATES	Italy-01
+423636	NY	YATES	Jerusalem-01
+423637	NY	YATES	Jerusalem-02
+423638	NY	YATES	Jerusalem-03
+423639	NY	YATES	Middlesex-01
+423640	NY	YATES	Milo-02
+423641	NY	YATES	Milo-03
+423642	NY	YATES	Milo-04
+423643	NY	YATES	Milo-05
+423644	NY	YATES	Milo-06
+423645	NY	YATES	Potter-01
+423646	NY	YATES	Starkey-01
+423647	NY	YATES	Starkey-02
+423648	NY	YATES	Torrey-01
+423649	NY	CHEMUNG	Southport-014-06
+423650	NY	COLUMBIA	Austerlitz-02
+423651	NY	COLUMBIA	Canaan-02
+423652	NY	COLUMBIA	Hillsdale-02
+423653	NY	DUTCHESS	Red Hook-08
+423654	NY	LEWIS	Lowville-05
+423655	NY	MONROE	Chili-046-032
+423656	NY	MONROE	Greece-050-107
+423657	NY	MONROE	Greece-050-108
+423658	NY	MONROE	Greece-050-109
+423659	NY	MONROE	Penfield-057-041
+423660	NY	MONROE	Penfield-057-042
+423661	NY	MONROE	Pittsford-059-034
+423662	NY	NEW YORK	65-079
+423663	NY	NEW YORK	65-093
+423664	NY	NEW YORK	66-056
+423665	NY	NEW YORK	66-081
+423666	NY	NEW YORK	75-082
+423667	NY	ORANGE	Blooming Grove-16
+423668	NY	ORANGE	Chester-12
+423669	NY	ORANGE	Middletown/City-004-07
+423670	NY	ORANGE	Wallkill-001-07
+423671	NY	OSWEGO	Oswego Town-07
+423672	NY	SARATOGA	Halfmoon-18
+423673	NY	SARATOGA	Halfmoon-19
+423674	NY	SARATOGA	Milton-14
+423675	NY	SUFFOLK	Brookhaven-01-288
+423676	NY	SUFFOLK	Brookhaven-04-289
+423677	NY	SUFFOLK	Brookhaven-06-290
+423678	NY	SUFFOLK	Brookhaven-06-291
+423679	NY	SUFFOLK	Brookhaven-01-292
+423680	NY	SUFFOLK	Brookhaven-02-293
+423681	NY	SUFFOLK	Huntington-178
+423682	NY	SUFFOLK	Southampton-042
+423683	NY	WESTCHESTER	Ytwn-43
+423684	NY	WESTCHESTER	Cort-39
+423685	NY	WESTCHESTER	Mtve-76
+423686	NY	CHEMUNG	Ashland-015-01
+423687	NY	STEUBEN	Avoca-02
+423688	NY	WYOMING	Arca-04
+423689	NY	MADISON	Town Of Stockbridge-02
+423690	NY	YATES	Jerusalem-04
+423691	NY	MADISON	Town Of Lincoln-02
+423692	NY	MADISON	Town Of Cazenovia-06
+423693	NY	CHENANGO	City Of Norwich-002-01
+423694	NY	FRANKLIN	Westville-02
+423695	NY	WESTCHESTER	Ncas-11
+423696	NY	CHAUTAUQUA	Kiantone-01
+423697	NY	PUTNAM	Philipstown-11
+423698	NY	WESTCHESTER	Newr-75
+423699	NY	NEW YORK	75-083
+423700	NY	KINGS	51-060
+423701	NY	QUEENS	39-045
+423702	NY	ALBANY	Albany-007-08
+423703	NY	NEW YORK	66-092
+423704	NY	MADISON	Town Of Sullivan-11
+423705	NY	DUTCHESS	City Poughkeepsie-001-03
+423706	NY	DUTCHESS	City Poughkeepsie-007-03
+423707	NY	KINGS	50-021
+423708	NY	KINGS	51-024
+423709	NY	KINGS	55-056
+423710	NY	QUEENS	26-014
+423711	NY	ROCKLAND	Ramapo-52
+423712	NY	BRONX	79-076
+423713	NY	QUEENS	36-005
+423714	NY	SUFFOLK	Brookhaven-02-245
+423715	NY	MONROE	Rochester-016-001
+423716	NY	MONROE	Rochester-022-025
+423717	NY	MONROE	Rochester-022-026
+423718	NY	MONROE	Rochester-022-027
+423719	NY	MONROE	Rochester-024-018
+423720	NY	MONROE	Rochester-024-019
+423721	NY	MONROE	Rochester-028-020
+423722	NY	WESTCHESTER	Yonk-03-29
+423723	NY	ALBANY	Cohoes-002-06
+423724	NY	ALBANY	Cohoes-005-05
+423725	NY	ALBANY	Colonie-61
+423726	NY	ALBANY	Knox-03
+423727	NY	ERIE	Bflo-Mas-042
+423728	NY	NIAGARA	City Of Lockport-002-04
+423729	NY	NIAGARA	Lewiston-14
+423730	NY	NIAGARA	Niagara Falls-003-10
+423731	NY	NIAGARA	Niagara Falls-003-11
+423732	NY	NIAGARA	Niagara Falls-003-12
+423733	NY	NIAGARA	Niagara Falls-003-08
+423734	NY	NIAGARA	Niagara Falls-003-09
+423735	NY	NIAGARA	Niagara Falls-006-01
+423736	NY	NIAGARA	Niagara Falls-006-10
+423737	NY	NIAGARA	Niagara Falls-006-02
+423738	NY	NIAGARA	Niagara Falls-006-03
+423739	NY	NIAGARA	Niagara Falls-006-04
+423740	NY	NIAGARA	Niagara Falls-006-05
+423741	NY	NIAGARA	Niagara Falls-006-06
+423742	NY	NIAGARA	Niagara Falls-006-07
+423743	NY	NIAGARA	Niagara Falls-006-08
+423744	NY	NIAGARA	Niagara Falls-006-09
+423745	NY	NIAGARA	Town Of Lockport-15
+423746	NY	NIAGARA	Town Of Lockport-16
+423747	NY	NIAGARA	Wheatfield-12
+423748	NY	NIAGARA	Wheatfield-13
+423749	NY	NIAGARA	Wheatfield-14
+423750	NY	ORANGE	Goshen-13
+423751	NY	ROCKLAND	Clarkstown-41
+423752	NY	ROCKLAND	Clarkstown-62
+423753	NY	ROCKLAND	Ramapo-91
+423754	NY	ROCKLAND	Ramapo-92
+423755	NY	ROCKLAND	Ramapo-93
+423756	NY	ROCKLAND	Ramapo-94
+423757	NY	ROCKLAND	Ramapo-95
+423758	NY	ROCKLAND	Ramapo-96
+423759	NY	ROCKLAND	Ramapo-97
+423760	NY	ROCKLAND	Ramapo-98
+423761	NY	WESTCHESTER	Harr-20
+423762	NY	BRONX	83-068
+423763	NY	BROOME	Fenton-06
+423764	NY	JEFFERSON	Lyme-03
+423765	NY	KINGS	51-011
+423766	NY	MONROE	Rochester-007-001
+423767	NY	MONROE	Rochester-007-002
+423768	NY	NEW YORK	65-088
+423769	NY	WARREN	Lakeluzerne-01
+423770	NY	WARREN	Lakeluzerne-02
+423771	NY	ALBANY	Albany-011-09
+423772	NY	BRONX	87-003
+423773	NY	BRONX	87-004
+423774	NY	BRONX	87-005
+423775	NY	BRONX	87-006
+423776	NY	BRONX	87-007
+423777	NY	BRONX	87-008
+423778	NY	BRONX	87-009
+423779	NY	BRONX	87-010
+423780	NY	BRONX	87-011
+423781	NY	BRONX	87-012
+423782	NY	BRONX	87-013
+423783	NY	BRONX	87-014
+423784	NY	BRONX	87-015
+423785	NY	BRONX	87-016
+423786	NY	BRONX	87-017
+423787	NY	BRONX	87-018
+423788	NY	BRONX	87-019
+423789	NY	BRONX	87-020
+423790	NY	BRONX	87-022
+423791	NY	BRONX	87-023
+423792	NY	BRONX	87-024
+423793	NY	BRONX	87-025
+423794	NY	BRONX	87-026
+423795	NY	BRONX	87-027
+423796	NY	BRONX	87-028
+423797	NY	BRONX	87-029
+423798	NY	BRONX	87-030
+423799	NY	BRONX	87-031
+423800	NY	BRONX	87-032
+423801	NY	BRONX	87-033
+423802	NY	BRONX	87-034
+423803	NY	BRONX	87-035
+423804	NY	BRONX	87-036
+423805	NY	BRONX	87-037
+423806	NY	BRONX	87-038
+423807	NY	BRONX	87-039
+423808	NY	BRONX	87-040
+423809	NY	BRONX	87-041
+423810	NY	BRONX	87-042
+423811	NY	BRONX	87-044
+423812	NY	BRONX	87-045
+423813	NY	BRONX	87-046
+423814	NY	BRONX	87-047
+423815	NY	BRONX	87-048
+423816	NY	BRONX	87-049
+423817	NY	BRONX	87-050
+423818	NY	BRONX	87-051
+423819	NY	BRONX	87-052
+423820	NY	BRONX	87-053
+423821	NY	BRONX	87-054
+423822	NY	BRONX	87-055
+423823	NY	BRONX	87-056
+423824	NY	BRONX	87-057
+423825	NY	BRONX	87-058
+423826	NY	BRONX	87-059
+423827	NY	BRONX	87-060
+423828	NY	BRONX	87-061
+423829	NY	BRONX	87-062
+423830	NY	BRONX	87-063
+423831	NY	BRONX	82-064
+423832	NY	BRONX	87-064
+423833	NY	BRONX	87-065
+423834	NY	BRONX	87-066
+423835	NY	BRONX	87-067
+423836	NY	BRONX	87-068
+423837	NY	BRONX	87-069
+423838	NY	BRONX	87-072
+423839	NY	BRONX	87-073
+423840	NY	BRONX	87-074
+423841	NY	BRONX	87-075
+423842	NY	BRONX	87-076
+423843	NY	BRONX	87-077
+423844	NY	BRONX	87-078
+423845	NY	BRONX	87-079
+423846	NY	BRONX	87-080
+423847	NY	BRONX	87-081
+423848	NY	BRONX	87-082
+423849	NY	BRONX	87-083
+423850	NY	BRONX	87-084
+423851	NY	BRONX	87-085
+423852	NY	BRONX	87-086
+423853	NY	BRONX	87-087
+423854	NY	BRONX	87-088
+423855	NY	BRONX	87-089
+423856	NY	BRONX	81-092
+423857	NY	BRONX	81-093
+423858	NY	BRONX	81-095
+423859	NY	BRONX	81-096
+423860	NY	BRONX	81-099
+423861	NY	BRONX	81-100
+423862	NY	BRONX	81-104
+423863	NY	CAYUGA	Auburn-010-01
+423864	NY	CAYUGA	Auburn-011-01
+423865	NY	CAYUGA	Auburn-012-01
+423866	NY	CAYUGA	Auburn-013-01
+423867	NY	CAYUGA	Auburn-014-01
+423868	NY	CAYUGA	Auburn-015-01
+423869	NY	CAYUGA	Auburn-010-02
+423870	NY	CAYUGA	Auburn-011-02
+423871	NY	CAYUGA	Auburn-012-02
+423872	NY	CAYUGA	Auburn-013-02
+423873	NY	CAYUGA	Auburn-014-02
+423874	NY	CAYUGA	Auburn-015-02
+423875	NY	CAYUGA	Auburn-010-03
+423876	NY	CAYUGA	Auburn-011-03
+423877	NY	CAYUGA	Auburn-012-03
+423878	NY	CAYUGA	Auburn-013-03
+423879	NY	CAYUGA	Auburn-014-03
+423880	NY	CAYUGA	Auburn-015-03
+423881	NY	HERKIMER	Russia-03
+423882	NY	KINGS	60-001
+423883	NY	KINGS	60-002
+423884	NY	KINGS	60-003
+423885	NY	KINGS	60-004
+423886	NY	KINGS	41-005
+423887	NY	KINGS	60-005
+423888	NY	KINGS	60-006
+423889	NY	KINGS	60-007
+423890	NY	KINGS	60-008
+423891	NY	KINGS	52-009
+423892	NY	KINGS	60-009
+423893	NY	KINGS	60-010
+423894	NY	KINGS	60-011
+423895	NY	KINGS	60-012
+423896	NY	KINGS	60-013
+423897	NY	KINGS	60-014
+423898	NY	KINGS	60-015
+423899	NY	KINGS	60-016
+423900	NY	KINGS	60-017
+423901	NY	KINGS	60-018
+423902	NY	KINGS	60-019
+423903	NY	KINGS	60-020
+423904	NY	KINGS	60-021
+423905	NY	KINGS	60-022
+423906	NY	KINGS	60-023
+423907	NY	KINGS	60-024
+423908	NY	KINGS	60-025
+423909	NY	KINGS	60-026
+423910	NY	KINGS	60-027
+423911	NY	KINGS	60-028
+423912	NY	KINGS	60-029
+423913	NY	KINGS	60-030
+423914	NY	KINGS	60-031
+423915	NY	KINGS	60-032
+423916	NY	KINGS	60-033
+423917	NY	KINGS	60-034
+423918	NY	KINGS	59-035
+423919	NY	KINGS	60-035
+423920	NY	KINGS	60-036
+423921	NY	KINGS	60-037
+423922	NY	KINGS	60-038
+423923	NY	KINGS	60-039
+423924	NY	KINGS	60-040
+423925	NY	KINGS	60-041
+423926	NY	KINGS	60-042
+423927	NY	KINGS	60-043
+423928	NY	KINGS	60-044
+423929	NY	KINGS	60-045
+423930	NY	KINGS	60-046
+423931	NY	KINGS	60-047
+423932	NY	KINGS	60-048
+423933	NY	KINGS	60-049
+423934	NY	KINGS	60-050
+423935	NY	KINGS	60-051
+423936	NY	KINGS	60-052
+423937	NY	KINGS	60-053
+423938	NY	KINGS	54-054
+423939	NY	KINGS	60-054
+423940	NY	KINGS	60-055
+423941	NY	KINGS	60-056
+423942	NY	KINGS	60-057
+423943	NY	KINGS	60-058
+423944	NY	KINGS	60-059
+423945	NY	KINGS	60-060
+423946	NY	KINGS	60-061
+423947	NY	KINGS	60-062
+423948	NY	KINGS	60-063
+423949	NY	KINGS	60-064
+423950	NY	KINGS	60-065
+423951	NY	KINGS	60-066
+423952	NY	KINGS	60-067
+423953	NY	KINGS	60-068
+423954	NY	KINGS	60-069
+423955	NY	KINGS	60-070
+423956	NY	KINGS	60-071
+423957	NY	KINGS	60-072
+423958	NY	KINGS	60-073
+423959	NY	KINGS	60-074
+423960	NY	KINGS	64-075
+423961	NY	KINGS	64-076
+423962	NY	KINGS	64-077
+423963	NY	KINGS	64-078
+423964	NY	KINGS	64-079
+423965	NY	KINGS	64-080
+423966	NY	KINGS	64-081
+423967	NY	KINGS	64-082
+423968	NY	KINGS	64-083
+423969	NY	KINGS	64-084
+423970	NY	KINGS	64-085
+423971	NY	KINGS	64-086
+423972	NY	KINGS	64-087
+423973	NY	KINGS	64-088
+423974	NY	KINGS	64-089
+423975	NY	KINGS	64-090
+423976	NY	KINGS	50-091
+423977	NY	KINGS	64-091
+423978	NY	MONROE	Rochester-026-006
+423979	NY	MONROE	Rochester-024-020
+423980	NY	MONROE	Rochester-024-021
+423981	NY	MONROE	Rochester-024-022
+423982	NY	MONROE	Rochester-024-023
+423983	NY	MONROE	Rochester-024-024
+423984	NY	MONROE	Rochester-027-025
+423985	NY	MONROE	Rochester-025-026
+423986	NY	MONROE	Rochester-027-026
+423987	NY	MONROE	Rochester-025-027
+423988	NY	MONROE	Rochester-023-028
+423989	NY	MONROE	Rochester-025-028
+423990	NY	MONROE	Rochester-029-028
+423991	NY	MONROE	Rochester-023-029
+423992	NY	MONROE	Rochester-025-029
+423993	NY	MONROE	Rochester-025-030
+423994	NY	NASSAU	Hem-22-001
+423995	NY	NASSAU	Nh-19-001
+423996	NY	NASSAU	Ob-09-001
+423997	NY	NASSAU	Ob-17-001
+423998	NY	NASSAU	Ob-19-001
+423999	NY	NASSAU	Hem-22-002
+424000	NY	NASSAU	Nh-19-002
+424001	NY	NASSAU	Ob-09-002
+424002	NY	NASSAU	Ob-17-002
+424003	NY	NASSAU	Ob-19-002
+424004	NY	NASSAU	Hem-22-003
+424005	NY	NASSAU	Nh-19-003
+424006	NY	NASSAU	Ob-09-003
+424007	NY	NASSAU	Ob-17-003
+424008	NY	NASSAU	Ob-19-003
+424009	NY	NASSAU	Hem-22-004
+424010	NY	NASSAU	Nh-19-004
+424011	NY	NASSAU	Ob-09-004
+424012	NY	NASSAU	Ob-17-004
+424013	NY	NASSAU	Ob-19-004
+424014	NY	NASSAU	Hem-22-005
+424015	NY	NASSAU	Nh-19-005
+424016	NY	NASSAU	Ob-09-005
+424017	NY	NASSAU	Ob-17-005
+424018	NY	NASSAU	Ob-19-005
+424019	NY	NASSAU	Hem-22-006
+424020	NY	NASSAU	Nh-19-006
+424021	NY	NASSAU	Ob-09-006
+424022	NY	NASSAU	Ob-17-006
+424023	NY	NASSAU	Ob-19-006
+424024	NY	NASSAU	Hem-22-007
+424025	NY	NASSAU	Nh-19-007
+424026	NY	NASSAU	Ob-09-007
+424027	NY	NASSAU	Ob-17-007
+424028	NY	NASSAU	Ob-19-007
+424029	NY	NASSAU	Hem-22-008
+424030	NY	NASSAU	Nh-19-008
+424031	NY	NASSAU	Ob-09-008
+424032	NY	NASSAU	Ob-17-008
+424033	NY	NASSAU	Ob-19-008
+424034	NY	NASSAU	Hem-22-009
+424035	NY	NASSAU	Nh-19-009
+424036	NY	NASSAU	Ob-09-009
+424037	NY	NASSAU	Ob-17-009
+424038	NY	NASSAU	Ob-19-009
+424039	NY	NASSAU	Hem-22-010
+424040	NY	NASSAU	Nh-19-010
+424041	NY	NASSAU	Ob-09-010
+424042	NY	NASSAU	Ob-17-010
+424043	NY	NASSAU	Hem-22-011
+424044	NY	NASSAU	Nh-19-011
+424045	NY	NASSAU	Ob-09-011
+424046	NY	NASSAU	Ob-17-011
+424047	NY	NASSAU	Hem-22-012
+424048	NY	NASSAU	Nh-19-012
+424049	NY	NASSAU	Ob-09-012
+424050	NY	NASSAU	Ob-17-012
+424051	NY	NASSAU	Hem-22-013
+424052	NY	NASSAU	Nh-19-013
+424053	NY	NASSAU	Ob-09-013
+424054	NY	NASSAU	Ob-17-013
+424055	NY	NASSAU	Hem-22-014
+424056	NY	NASSAU	Nh-19-014
+424057	NY	NASSAU	Ob-09-014
+424058	NY	NASSAU	Ob-17-014
+424059	NY	NASSAU	Hem-22-015
+424060	NY	NASSAU	Nh-19-015
+424061	NY	NASSAU	Ob-09-015
+424062	NY	NASSAU	Ob-17-015
+424063	NY	NASSAU	Hem-22-016
+424064	NY	NASSAU	Nh-19-016
+424065	NY	NASSAU	Ob-09-016
+424066	NY	NASSAU	Ob-17-016
+424067	NY	NASSAU	Hem-22-017
+424068	NY	NASSAU	Nh-13-017
+424069	NY	NASSAU	Nh-19-017
+424070	NY	NASSAU	Ob-09-017
+424071	NY	NASSAU	Hem-22-018
+424072	NY	NASSAU	Nh-13-018
+424073	NY	NASSAU	Nh-19-018
+424074	NY	NASSAU	Ob-09-018
+424075	NY	NASSAU	Ob-17-018
+424076	NY	NASSAU	Hem-22-019
+424077	NY	NASSAU	Nh-13-019
+424078	NY	NASSAU	Nh-19-019
+424079	NY	NASSAU	Ob-09-019
+424080	NY	NASSAU	Ob-17-019
+424081	NY	NASSAU	Hem-22-020
+424082	NY	NASSAU	Nh-13-020
+424083	NY	NASSAU	Nh-19-020
+424084	NY	NASSAU	Ob-09-020
+424085	NY	NASSAU	Ob-17-020
+424086	NY	NASSAU	Hem-22-021
+424087	NY	NASSAU	Nh-13-021
+424088	NY	NASSAU	Nh-19-021
+424089	NY	NASSAU	Ob-09-021
+424090	NY	NASSAU	Ob-17-021
+424091	NY	NASSAU	Hem-22-022
+424092	NY	NASSAU	Nh-19-022
+424093	NY	NASSAU	Ob-09-022
+424094	NY	NASSAU	Ob-17-022
+424095	NY	NASSAU	Hem-22-023
+424096	NY	NASSAU	Nh-19-023
+424097	NY	NASSAU	Ob-09-023
+424098	NY	NASSAU	Ob-17-023
+424099	NY	NASSAU	Hem-22-024
+424100	NY	NASSAU	Nh-19-024
+424101	NY	NASSAU	Ob-09-024
+424102	NY	NASSAU	Ob-17-024
+424103	NY	NASSAU	Hem-22-025
+424104	NY	NASSAU	Nh-19-025
+424105	NY	NASSAU	Ob-09-025
+424106	NY	NASSAU	Ob-17-025
+424107	NY	NASSAU	Hem-22-026
+424108	NY	NASSAU	Nh-19-026
+424109	NY	NASSAU	Ob-09-026
+424110	NY	NASSAU	Ob-17-026
+424111	NY	NASSAU	Hem-22-027
+424112	NY	NASSAU	Nh-19-027
+424113	NY	NASSAU	Ob-09-027
+424114	NY	NASSAU	Ob-17-027
+424115	NY	NASSAU	Hem-22-028
+424116	NY	NASSAU	Nh-19-028
+424117	NY	NASSAU	Ob-09-028
+424118	NY	NASSAU	Ob-17-028
+424119	NY	NASSAU	Hem-22-029
+424120	NY	NASSAU	Nh-19-029
+424121	NY	NASSAU	Ob-09-029
+424122	NY	NASSAU	Ob-17-029
+424123	NY	NASSAU	Hem-22-030
+424124	NY	NASSAU	Nh-19-030
+424125	NY	NASSAU	Ob-09-030
+424126	NY	NASSAU	Ob-17-030
+424127	NY	NASSAU	Hem-22-031
+424128	NY	NASSAU	Nh-19-031
+424129	NY	NASSAU	Ob-09-031
+424130	NY	NASSAU	Ob-17-031
+424131	NY	NASSAU	Hem-22-032
+424132	NY	NASSAU	Nh-19-032
+424133	NY	NASSAU	Ob-09-032
+424134	NY	NASSAU	Ob-17-032
+424135	NY	NASSAU	Hem-22-033
+424136	NY	NASSAU	Nh-19-033
+424137	NY	NASSAU	Ob-09-033
+424138	NY	NASSAU	Ob-17-033
+424139	NY	NASSAU	Hem-22-034
+424140	NY	NASSAU	Nh-19-034
+424141	NY	NASSAU	Ob-09-034
+424142	NY	NASSAU	Ob-17-034
+424143	NY	NASSAU	Hem-22-035
+424144	NY	NASSAU	Nh-19-035
+424145	NY	NASSAU	Ob-09-035
+424146	NY	NASSAU	Ob-17-035
+424147	NY	NASSAU	Hem-22-036
+424148	NY	NASSAU	Nh-19-036
+424149	NY	NASSAU	Ob-09-036
+424150	NY	NASSAU	Ob-17-036
+424151	NY	NASSAU	Hem-22-037
+424152	NY	NASSAU	Nh-19-037
+424153	NY	NASSAU	Ob-09-037
+424154	NY	NASSAU	Ob-17-037
+424155	NY	NASSAU	Hem-22-038
+424156	NY	NASSAU	Nh-19-038
+424157	NY	NASSAU	Ob-09-038
+424158	NY	NASSAU	Ob-17-038
+424159	NY	NASSAU	Hem-22-039
+424160	NY	NASSAU	Nh-19-039
+424161	NY	NASSAU	Ob-09-039
+424162	NY	NASSAU	Ob-17-039
+424163	NY	NASSAU	Hem-22-040
+424164	NY	NASSAU	Nh-19-040
+424165	NY	NASSAU	Ob-09-040
+424166	NY	NASSAU	Ob-17-040
+424167	NY	NASSAU	Hem-22-041
+424168	NY	NASSAU	Nh-19-041
+424169	NY	NASSAU	Ob-09-041
+424170	NY	NASSAU	Ob-17-041
+424171	NY	NASSAU	Hem-22-042
+424172	NY	NASSAU	Nh-19-042
+424173	NY	NASSAU	Ob-09-042
+424174	NY	NASSAU	Ob-17-042
+424175	NY	NASSAU	Hem-22-043
+424176	NY	NASSAU	Nh-19-043
+424177	NY	NASSAU	Ob-09-043
+424178	NY	NASSAU	Ob-17-043
+424179	NY	NASSAU	Hem-22-044
+424180	NY	NASSAU	Nh-19-044
+424181	NY	NASSAU	Ob-09-044
+424182	NY	NASSAU	Ob-17-044
+424183	NY	NASSAU	Hem-22-045
+424184	NY	NASSAU	Nh-19-045
+424185	NY	NASSAU	Ob-09-045
+424186	NY	NASSAU	Ob-17-045
+424187	NY	NASSAU	Hem-22-046
+424188	NY	NASSAU	Nh-19-046
+424189	NY	NASSAU	Hem-22-047
+424190	NY	NASSAU	Nh-19-047
+424191	NY	NASSAU	Hem-22-048
+424192	NY	NASSAU	Nh-19-048
+424193	NY	NASSAU	Hem-22-049
+424194	NY	NASSAU	Nh-19-049
+424195	NY	NASSAU	Hem-22-050
+424196	NY	NASSAU	Nh-19-050
+424197	NY	NASSAU	Hem-22-051
+424198	NY	NASSAU	Nh-19-051
+424199	NY	NASSAU	Hem-22-052
+424200	NY	NASSAU	Nh-19-052
+424201	NY	NASSAU	Hem-22-053
+424202	NY	NASSAU	Nh-19-053
+424203	NY	NASSAU	Hem-22-054
+424204	NY	NASSAU	Nh-19-054
+424205	NY	NASSAU	Hem-22-055
+424206	NY	NASSAU	Nh-19-055
+424207	NY	NASSAU	Hem-22-056
+424208	NY	NASSAU	Nh-19-056
+424209	NY	NASSAU	Hem-22-057
+424210	NY	NASSAU	Nh-19-057
+424211	NY	NASSAU	Hem-22-058
+424212	NY	NASSAU	Hem-22-059
+424213	NY	NASSAU	Hem-22-060
+424214	NY	NASSAU	Hem-22-061
+424215	NY	NASSAU	Hem-22-062
+424216	NY	NASSAU	Hem-22-063
+424217	NY	NASSAU	Hem-22-064
+424218	NY	NASSAU	Hem-22-065
+424219	NY	NASSAU	Hem-22-066
+424220	NY	NASSAU	Hem-22-067
+424221	NY	NASSAU	Hem-22-068
+424222	NY	NASSAU	Hem-22-069
+424223	NY	NASSAU	Hem-22-070
+424224	NY	NASSAU	Hem-22-071
+424225	NY	NASSAU	Hem-22-072
+424226	NY	NASSAU	Hem-22-073
+424227	NY	NASSAU	Hem-22-074
+424228	NY	NASSAU	Ob-15-074
+424229	NY	NASSAU	Hem-22-075
+424230	NY	NASSAU	Ob-15-075
+424231	NY	NASSAU	Hem-22-076
+424232	NY	NASSAU	Ob-15-076
+424233	NY	NASSAU	Hem-22-077
+424234	NY	NASSAU	Ob-15-077
+424235	NY	NASSAU	Hem-18-078
+424236	NY	NASSAU	Hem-22-078
+424237	NY	NASSAU	Ob-15-078
+424238	NY	NASSAU	Hem-22-079
+424239	NY	NASSAU	Ob-15-079
+424240	NY	NASSAU	Hem-22-080
+424241	NY	NASSAU	Ob-15-080
+424242	NY	NASSAU	Hem-22-081
+424243	NY	NASSAU	Ob-15-081
+424244	NY	NASSAU	Hem-22-082
+424245	NY	NASSAU	Ob-15-082
+424246	NY	NASSAU	Hem-22-083
+424247	NY	NASSAU	Ob-15-083
+424248	NY	NASSAU	Hem-22-084
+424249	NY	NASSAU	Ob-15-084
+424250	NY	NASSAU	Hem-22-085
+424251	NY	NASSAU	Ob-15-085
+424252	NY	NASSAU	Hem-22-086
+424253	NY	NASSAU	Ob-15-086
+424254	NY	NASSAU	Hem-20-087
+424255	NY	NASSAU	Hem-22-087
+424256	NY	NASSAU	Hem-22-088
+424257	NY	NASSAU	Ob-15-088
+424258	NY	NASSAU	Hem-22-089
+424259	NY	NASSAU	Ob-15-089
+424260	NY	NASSAU	Hem-22-090
+424261	NY	NASSAU	Ob-15-090
+424262	NY	NASSAU	Hem-22-091
+424263	NY	NASSAU	Ob-15-091
+424264	NY	NASSAU	Hem-22-092
+424265	NY	NASSAU	Ob-15-092
+424266	NY	NASSAU	Hem-22-093
+424267	NY	NASSAU	Ob-15-093
+424268	NY	NASSAU	Hem-22-094
+424269	NY	NASSAU	Ob-15-094
+424270	NY	NASSAU	Hem-22-095
+424271	NY	NASSAU	Ob-15-095
+424272	NY	NASSAU	Ob-15-096
+424273	NY	NASSAU	Ob-15-097
+424274	NY	NASSAU	Hem-22-098
+424275	NY	NASSAU	Ob-15-098
+424276	NY	NASSAU	Hem-22-099
+424277	NY	NASSAU	Ob-15-099
+424278	NY	NASSAU	Hem-22-100
+424279	NY	NASSAU	Ob-15-100
+424280	NY	NASSAU	Hem-22-101
+424281	NY	NASSAU	Ob-15-101
+424282	NY	NASSAU	Ob-15-102
+424283	NY	NASSAU	Ob-15-103
+424284	NY	NASSAU	Hem-21-112
+424285	NY	NASSAU	Hem-21-113
+424286	NY	NASSAU	Hem-21-114
+424287	NY	NASSAU	Hem-21-115
+424288	NY	NASSAU	Hem-21-116
+424289	NY	NASSAU	Hem-21-117
+424290	NY	NASSAU	Hem-21-118
+424291	NY	NASSAU	Hem-21-119
+424292	NY	NASSAU	Hem-21-120
+424293	NY	NASSAU	Hem-21-121
+424294	NY	NASSAU	Hem-21-122
+424295	NY	NASSAU	Hem-21-123
+424296	NY	NASSAU	Hem-21-124
+424297	NY	NASSAU	Hem-21-125
+424298	NY	NASSAU	Hem-21-126
+424299	NY	NASSAU	Hem-21-127
+424300	NY	NASSAU	Hem-21-128
+424301	NY	NEW YORK	76-001
+424302	NY	NEW YORK	76-002
+424303	NY	NEW YORK	76-003
+424304	NY	NEW YORK	76-004
+424305	NY	NEW YORK	76-005
+424306	NY	NEW YORK	76-006
+424307	NY	NEW YORK	76-007
+424308	NY	NEW YORK	76-008
+424309	NY	NEW YORK	76-009
+424310	NY	NEW YORK	76-010
+424311	NY	NEW YORK	76-011
+424312	NY	NEW YORK	76-012
+424313	NY	NEW YORK	76-013
+424314	NY	NEW YORK	76-014
+424315	NY	NEW YORK	76-015
+424316	NY	NEW YORK	76-016
+424317	NY	NEW YORK	76-017
+424318	NY	NEW YORK	76-018
+424319	NY	NEW YORK	76-019
+424320	NY	NEW YORK	76-020
+424321	NY	NEW YORK	71-021
+424322	NY	NEW YORK	76-021
+424323	NY	NEW YORK	76-022
+424324	NY	NEW YORK	76-023
+424325	NY	NEW YORK	76-024
+424326	NY	NEW YORK	76-025
+424327	NY	NEW YORK	76-026
+424328	NY	NEW YORK	76-027
+424329	NY	NEW YORK	76-028
+424330	NY	NEW YORK	76-029
+424331	NY	NEW YORK	76-030
+424332	NY	NEW YORK	76-031
+424333	NY	NEW YORK	76-032
+424334	NY	NEW YORK	76-033
+424335	NY	NEW YORK	76-034
+424336	NY	NEW YORK	76-035
+424337	NY	NEW YORK	76-036
+424338	NY	NEW YORK	76-037
+424339	NY	NEW YORK	76-038
+424340	NY	NEW YORK	76-039
+424341	NY	NEW YORK	76-040
+424342	NY	NEW YORK	76-041
+424343	NY	NEW YORK	76-042
+424344	NY	NEW YORK	66-043
+424345	NY	NEW YORK	76-043
+424346	NY	NEW YORK	76-044
+424347	NY	NEW YORK	76-045
+424348	NY	NEW YORK	76-046
+424349	NY	NEW YORK	71-047
+424350	NY	NEW YORK	76-047
+424351	NY	NEW YORK	75-048
+424352	NY	NEW YORK	76-048
+424353	NY	NEW YORK	76-049
+424354	NY	NEW YORK	71-050
+424355	NY	NEW YORK	76-050
+424356	NY	NEW YORK	76-051
+424357	NY	NEW YORK	76-052
+424358	NY	NEW YORK	76-053
+424359	NY	NEW YORK	76-054
+424360	NY	NEW YORK	76-055
+424361	NY	NEW YORK	76-056
+424362	NY	NEW YORK	76-057
+424363	NY	NEW YORK	76-058
+424364	NY	NEW YORK	74-059
+424365	NY	NEW YORK	76-059
+424366	NY	NEW YORK	76-060
+424367	NY	NEW YORK	76-061
+424368	NY	NEW YORK	76-062
+424369	NY	NEW YORK	76-063
+424370	NY	NEW YORK	72-064
+424371	NY	NEW YORK	76-064
+424372	NY	NEW YORK	76-065
+424373	NY	NEW YORK	76-066
+424374	NY	NEW YORK	76-067
+424375	NY	NEW YORK	76-068
+424376	NY	NEW YORK	76-069
+424377	NY	NEW YORK	76-070
+424378	NY	NEW YORK	73-071
+424379	NY	NEW YORK	76-071
+424380	NY	NEW YORK	76-072
+424381	NY	NEW YORK	65-073
+424382	NY	NEW YORK	72-073
+424383	NY	NEW YORK	76-073
+424384	NY	NEW YORK	72-074
+424385	NY	NEW YORK	76-074
+424386	NY	NEW YORK	72-075
+424387	NY	NEW YORK	76-075
+424388	NY	NEW YORK	72-076
+424389	NY	NEW YORK	76-076
+424390	NY	NEW YORK	72-077
+424391	NY	NEW YORK	76-077
+424392	NY	NEW YORK	76-078
+424393	NY	NEW YORK	73-079
+424394	NY	NEW YORK	76-079
+424395	NY	NEW YORK	76-080
+424396	NY	NEW YORK	76-081
+424397	NY	NEW YORK	76-082
+424398	NY	NEW YORK	76-083
+424399	NY	NEW YORK	73-084
+424400	NY	NEW YORK	76-084
+424401	NY	NEW YORK	73-085
+424402	NY	NEW YORK	76-085
+424403	NY	NEW YORK	76-086
+424404	NY	NEW YORK	76-087
+424405	NY	NEW YORK	71-089
+424406	NY	NEW YORK	69-090
+424407	NY	NEW YORK	71-091
+424408	NY	NEW YORK	73-092
+424409	NY	NEW YORK	69-094
+424410	NY	ONONDAGA	Syracuse-001-09
+424411	NY	ONONDAGA	Syracuse-011-09
+424412	NY	ONONDAGA	Syracuse-001-10
+424413	NY	ONONDAGA	Syracuse-011-10
+424414	NY	ONONDAGA	Syracuse-001-11
+424415	NY	ONONDAGA	Syracuse-017-19
+424416	NY	OSWEGO	New Haven-03
+424417	NY	QUEENS	35-001
+424418	NY	QUEENS	40-001
+424419	NY	QUEENS	40-002
+424420	NY	QUEENS	40-003
+424421	NY	QUEENS	40-004
+424422	NY	QUEENS	40-005
+424423	NY	QUEENS	40-006
+424424	NY	QUEENS	40-007
+424425	NY	QUEENS	40-009
+424426	NY	QUEENS	40-011
+424427	NY	QUEENS	40-013
+424428	NY	QUEENS	40-014
+424429	NY	QUEENS	40-015
+424430	NY	QUEENS	40-016
+424431	NY	QUEENS	40-017
+424432	NY	QUEENS	40-018
+424433	NY	QUEENS	30-019
+424434	NY	QUEENS	40-019
+424435	NY	QUEENS	40-020
+424436	NY	QUEENS	40-021
+424437	NY	QUEENS	40-022
+424438	NY	QUEENS	40-023
+424439	NY	QUEENS	40-025
+424440	NY	QUEENS	40-026
+424441	NY	QUEENS	40-027
+424442	NY	QUEENS	40-028
+424443	NY	QUEENS	40-029
+424444	NY	QUEENS	40-030
+424445	NY	QUEENS	40-031
+424446	NY	QUEENS	40-032
+424447	NY	QUEENS	40-033
+424448	NY	QUEENS	40-034
+424449	NY	QUEENS	40-035
+424450	NY	QUEENS	40-036
+424451	NY	QUEENS	40-037
+424452	NY	QUEENS	40-038
+424453	NY	QUEENS	40-039
+424454	NY	QUEENS	40-040
+424455	NY	QUEENS	40-041
+424456	NY	QUEENS	40-042
+424457	NY	QUEENS	40-043
+424458	NY	QUEENS	40-044
+424459	NY	QUEENS	40-045
+424460	NY	QUEENS	40-046
+424461	NY	QUEENS	27-047
+424462	NY	QUEENS	40-047
+424463	NY	QUEENS	40-048
+424464	NY	QUEENS	30-049
+424465	NY	QUEENS	34-049
+424466	NY	QUEENS	40-049
+424467	NY	QUEENS	40-050
+424468	NY	QUEENS	40-051
+424469	NY	RENSSELAER	Schodack-11
+424470	NY	RICHMOND	64-001
+424471	NY	RICHMOND	64-002
+424472	NY	RICHMOND	64-003
+424473	NY	RICHMOND	64-004
+424474	NY	RICHMOND	64-005
+424475	NY	RICHMOND	64-006
+424476	NY	RICHMOND	64-007
+424477	NY	RICHMOND	64-008
+424478	NY	RICHMOND	64-009
+424479	NY	RICHMOND	64-010
+424480	NY	RICHMOND	64-011
+424481	NY	RICHMOND	64-012
+424482	NY	RICHMOND	64-013
+424483	NY	RICHMOND	64-014
+424484	NY	RICHMOND	64-015
+424485	NY	RICHMOND	64-016
+424486	NY	RICHMOND	64-017
+424487	NY	RICHMOND	64-018
+424488	NY	RICHMOND	64-019
+424489	NY	RICHMOND	64-020
+424490	NY	RICHMOND	64-021
+424491	NY	RICHMOND	64-022
+424492	NY	RICHMOND	64-023
+424493	NY	RICHMOND	64-024
+424494	NY	RICHMOND	64-025
+424495	NY	RICHMOND	64-026
+424496	NY	RICHMOND	64-027
+424497	NY	RICHMOND	64-028
+424498	NY	RICHMOND	64-029
+424499	NY	RICHMOND	64-030
+424500	NY	RICHMOND	64-031
+424501	NY	RICHMOND	64-032
+424502	NY	RICHMOND	64-033
+424503	NY	RICHMOND	64-034
+424504	NY	RICHMOND	64-035
+424505	NY	RICHMOND	64-036
+424506	NY	RICHMOND	64-037
+424507	NY	RICHMOND	64-038
+424508	NY	RICHMOND	64-039
+424509	NY	RICHMOND	64-040
+424510	NY	RICHMOND	64-041
+424511	NY	RICHMOND	64-042
+424512	NY	RICHMOND	64-043
+424513	NY	RICHMOND	64-044
+424514	NY	RICHMOND	64-045
+424515	NY	RICHMOND	64-046
+424516	NY	RICHMOND	64-047
+424517	NY	RICHMOND	64-048
+424518	NY	RICHMOND	64-049
+424519	NY	RICHMOND	64-050
+424520	NY	RICHMOND	64-051
+424521	NY	RICHMOND	64-052
+424522	NY	RICHMOND	64-053
+424523	NY	ROCKLAND	Ramapo-100
+424524	NY	ROCKLAND	Ramapo-101
+424525	NY	ROCKLAND	Ramapo-102
+424526	NY	ROCKLAND	Ramapo-103
+424527	NY	ROCKLAND	Ramapo-104
+424528	NY	ROCKLAND	Ramapo-105
+424529	NY	ROCKLAND	Ramapo-106
+424530	NY	ROCKLAND	Ramapo-107
+424531	NY	ROCKLAND	Ramapo-108
+424532	NY	ROCKLAND	Ramapo-99
+424533	NY	SUFFOLK	Brookhaven-05-217
+424534	NY	SUFFOLK	Islip-224
+424535	NY	SUFFOLK	Brookhaven-04-261
+424536	NY	SUFFOLK	Brookhaven-04-262
+424537	NY	SUFFOLK	Brookhaven-06-278
+424538	NY	SUFFOLK	Brookhaven-06-280
+424539	NY	SUFFOLK	Brookhaven-06-281
+424540	NY	TIOGA	Nichols-03
+424541	NY	WESTCHESTER	Yonk-03-05
+424542	NY	WESTCHESTER	Scrd-19
+424543	NY	WESTCHESTER	Whpl-44
+424544	NY	WESTCHESTER	Whpl-45
+424545	NY	WESTCHESTER	Whpl-46
+424546	NY	ERIE	Bflo-Ell-010
+424547	NY	ERIE	Bflo-Lov-032
+424548	NY	ERIE	Bflo-Uni-007
+424549	NY	NASSAU	Ob-17-017
+424550	NY	LEWIS	Leyden-03
+424551	NY	LEWIS	Lyonsdale-02
+424552	NY	LEWIS	Lyonsdale-03
+424553	NY	LEWIS	West Turin-03
+424554	NY	LEWIS	West Turin-04
+424555	NY	SUFFOLK	Brookhaven-02-065
+424556	NY	ALBANY	Albany-011-10
+424557	NY	CHAUTAUQUA	Ellicott-002-03
+424558	NY	CORTLAND	Cortland-001-03
+424559	NY	CORTLAND	Cortland-002-03
+424560	NY	CORTLAND	Cortland-003-03
+424561	NY	CORTLAND	Cortland-003-04
+424562	NY	CORTLAND	Cortland-003-05
+424563	NY	CORTLAND	Cortland-005-03
+424564	NY	CORTLAND	Cortland-005-04
+424565	NY	CORTLAND	Cortland-007-03
+424566	NY	CORTLAND	Virgil-02
+424567	NY	DUTCHESS	Pleasant Valley-07
+424568	NY	MONTGOMERY	Palatine-04
+424569	NY	NEW YORK	71-093
+424570	NY	NIAGARA	Niagara Falls-003-13
+424571	NY	ORANGE	Monroe-32
+424572	NY	ORANGE	Monroe-33
+424573	NY	ORANGE	Monroe-34
+424574	NY	ORANGE	Monroe-35
+424575	NY	ORANGE	Newburgh/City-003-03
+424576	NY	ORANGE	Newburgh/City-003-04
+424577	NY	ORANGE	Newburgh/City-004-04
+424578	NY	ORANGE	Newburgh/City-004-05
+424579	NY	OSWEGO	Fulton City-004-03
+424580	NY	OSWEGO	Fulton City-005-03
+424581	NY	OSWEGO	Palermo-04
+424582	NY	SCHUYLER	Hector-06
+424583	NY	SCHUYLER	Montour-03
+424584	NY	SCHUYLER	Tyrone-02
+424585	NY	SUFFOLK	Brookhaven-01-110
+424586	NY	SUFFOLK	Brookhaven-03-054
+424587	NY	SUFFOLK	Brookhaven-03-085
+424588	NY	SUFFOLK	Brookhaven-03-145
+424589	NY	SUFFOLK	Brookhaven-03-157
+424590	NY	SUFFOLK	Brookhaven-03-186
+424591	NY	SUFFOLK	Brookhaven-03-294
+424592	NY	SUFFOLK	Brookhaven-04-033
+424593	NY	SUFFOLK	Brookhaven-04-243
+424594	NY	SUFFOLK	Brookhaven-06-296
+424595	NY	BRONX	87-001
+424596	NY	BRONX	87-002
+424597	NY	BRONX	87-021
+424598	NY	BRONX	87-070
+424599	NY	BRONX	87-071
+424600	NY	NASSAU	Hem-18-089
+424601	NY	NASSAU	Hem-18-090
+424602	NY	NASSAU	Hem-18-091
+424603	NY	NASSAU	Hem-20-088
+424604	NY	NASSAU	Hem-20-089
+424605	NY	NASSAU	Hem-21-129
+424606	NY	NASSAU	Hem-21-130
+424607	NY	NASSAU	Hem-21-132
+424608	NY	NASSAU	Hem-22-102
+424609	NY	NASSAU	Hem-22-103
+424610	NY	NASSAU	Hem-22-104
+424611	NY	NASSAU	Hem-22-105
+424612	NY	NASSAU	Nh-13-022
+424613	NY	NASSAU	Nh-13-023
+424614	NY	NASSAU	Nh-13-024
+424615	NY	NASSAU	Nh-13-025
+424616	NY	NASSAU	Ob-15-104
+424617	NY	NASSAU	Ob-15-105
+424618	NY	NASSAU	Ob-15-106
+424619	NY	NASSAU	Ob-15-107
+424620	NY	NASSAU	Ob-19-010
+424621	NY	NEW YORK	71-092
+424622	NY	NEW YORK	76-088
+424623	NY	NEW YORK	76-089
+424624	NY	QUEENS	40-052
+424625	NY	QUEENS	40-053
+424626	NY	TOMPKINS	Enfield-03
+424627	NY	ROCKLAND	Ramapo-109
+424628	NY	CHEMUNG	City Of Elmira-011-06
+424629	NY	CHEMUNG	Southport-012-07
+424630	NY	ONONDAGA	Syracuse-009-06
+424631	NY	BRONX	81-107
+424632	NY	CHEMUNG	City Of Elmira-009-07
+424633	NY	CHEMUNG	Elmira-009-08
+424634	NY	CHEMUNG	Horseheads-004-07
+424635	NY	CHEMUNG	Horseheads-008-05
+424636	NY	NASSAU	Hem-20-090
+424637	NY	ORANGE	Monroe-36
+424638	NY	ORANGE	New Windsor-22
+424639	NY	ORANGE	Newburgh-27
+424640	NY	SUFFOLK	Brookhaven-02-137
+424641	NY	SUFFOLK	Brookhaven-03-217
+424642	NY	DUTCHESS	North East-01
+424643	NY	DUTCHESS	North East-02
+424644	NY	DUTCHESS	North East-03
+424645	NY	JEFFERSON	Ellisburg-04
+424646	NY	ONEIDA	Rome-002-04
+424647	NY	ONEIDA	Rome-002-05
+424648	NY	ALBANY	Albany-010-09
+424649	NY	BRONX	85-081
+424650	NY	BRONX	85-082
+424651	NY	KINGS	64-098
+424652	NY	NEW YORK	72-078
+424653	NY	ROCKLAND	Ramapo-110
+424654	NY	BRONX	78-066
+424655	NY	BRONX	79-085
+424656	NY	NEW YORK	72-079
+424657	NY	QUEENS	23-084
+424658	NY	QUEENS	37-077
+424659	NY	RICHMOND	64-062
 \.
